@@ -1,0 +1,205 @@
+{
+  "matched": 33,
+  "total": 33,
+  "note": "All 33/33 packaged pubcap_ind8_rows files in phase7_accept_20261122 match bit-for-bit SHA-256 when truncate_synth_rows_to_public_cap is invoked on the 33 upstream phase6_accept_20261121/ind8_releases/R{1,2,3}/probe_sqlite/{db}.sqlite databases. In verify_1way_synth_factorial.py, txt_a != rows_txt occurred in default offline mode only because build_deterministic_1way_synth_db synthesizes a dummy 64-row/table DB from the frozen profile JSON rather than reading those 33 upstream probe SQLites.",
+  "entries": [
+    {
+      "rep": "release_01",
+      "db": "california_schools",
+      "sha256": "8f15160228c6b3774244dfa3da6d1207bf84c2cd3084ec69941299dd6d9d331a",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/california_schools.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "card_games",
+      "sha256": "9863380cce3926da88e4f51a1b75bfb6135398ba977a6755825e8ccc6bd97a47",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/card_games.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "codebase_community",
+      "sha256": "b988e5148ad96d8e949d40f10f6574db05ed8b5049400ccaee824b309fd76929",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/codebase_community.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "debit_card_specializing",
+      "sha256": "d1172d1b05212310e901d491813688eb6f002023379a7e9026111d20d1d8127e",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/debit_card_specializing.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "european_football_2",
+      "sha256": "76a9c25d0070179a57dc2e6b84e179fd58af12b1074e80e7b0f5c943b44089d0",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/european_football_2.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "financial",
+      "sha256": "f2f86480e11f732ca574c617e4e72b041a528473105b1df7d5901ad4538a3eb6",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/financial.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "formula_1",
+      "sha256": "e7dc28c324346227e54fc7a04a9df36e600f1b82dff8f15e754347139c3e7f9a",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/formula_1.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "student_club",
+      "sha256": "46f0c15f052a1b37c07842bf70c537d19eeab929a0ed2ce86e78f19eb0f17f51",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/student_club.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "superhero",
+      "sha256": "4626ff19c33c0b8af2bf1926d5c1bee01f65dae237741744648f847f9de5e653",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/superhero.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "thrombosis_prediction",
+      "sha256": "bdc8267fbfeb10b67f189490d6f2bfd71dcd15262b59f49c7b2dee386c0be3a2",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/thrombosis_prediction.sqlite"
+    },
+    {
+      "rep": "release_01",
+      "db": "toxicology",
+      "sha256": "132eff611563258f36c9742b79b93cc27aad7e4495373394d1fa269747c4c3f9",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R1/probe_sqlite/toxicology.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "california_schools",
+      "sha256": "788d0198924fd6bcdb1ce11df49b98cd1e6ad368582addc5f3287dc52c660d5f",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/california_schools.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "card_games",
+      "sha256": "3597507c24a3d5f6fc5238099cea880600f94f53a2dbbf1fad64e81e890a50e7",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/card_games.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "codebase_community",
+      "sha256": "0a76a6c517a0ef43b988130a008b82b05a836828342a4d93c1ca9d2705c5444f",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/codebase_community.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "debit_card_specializing",
+      "sha256": "62fdfe8e3b9cee7f4a256b2ca4a291e7c446696eb4b2f07cc684361852567460",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/debit_card_specializing.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "european_football_2",
+      "sha256": "f6873dcc8f8f3e4dfbb9e8bcb208ea6a53486bea6b4326f974fa3282197356ef",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/european_football_2.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "financial",
+      "sha256": "17c0e5cf9f322c6b1c5fd74d7353b205f8e729c43c12670cd032ed7214049388",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/financial.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "formula_1",
+      "sha256": "4fde028387d80410c9bb81bafce0ce20845cb9383fbfb02dfb71b37bb6ea1a1f",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/formula_1.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "student_club",
+      "sha256": "7cc25198c95d0dc1d5423c9bd3723f25e8c89b1fa4c096ecc27a260f9239a85a",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/student_club.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "superhero",
+      "sha256": "b13bcd76c96c0337a27d84887716672981c4bf9ac76bb1543050c3ee540de6b0",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/superhero.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "thrombosis_prediction",
+      "sha256": "c2570a192e9103e41059a133cc737c7bcd232ae2d1a98a2c6e4e09ebcf80c1a3",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/thrombosis_prediction.sqlite"
+    },
+    {
+      "rep": "release_02",
+      "db": "toxicology",
+      "sha256": "585d5a330b094e31b1f960d6277d8d1a63dd99236be5a0ee57ff6c23a2e4db36",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R2/probe_sqlite/toxicology.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "california_schools",
+      "sha256": "fa1bf1a67829682a6affa42a080e8e6943e18f222acac037f4c7e762e48e459f",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/california_schools.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "card_games",
+      "sha256": "90406d9b5e5e687e84ad5891f9006860f4df0442311d519f59870eb2b6459332",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/card_games.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "codebase_community",
+      "sha256": "03609b150c0c9e4c488e0a74c0389564d40179b43f720a8ef3eb9cc02bbf4636",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/codebase_community.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "debit_card_specializing",
+      "sha256": "55ceac5037c374a34bc2fffaa87a05f9f520512da5c3e2d7618fe252eb5ab985",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/debit_card_specializing.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "european_football_2",
+      "sha256": "fc2d77c900ef0e8f3d2984742123f52b22fd30ecaec28e1081a065eee7b40e33",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/european_football_2.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "financial",
+      "sha256": "e7d7f77e99d9a3b4e80f6dfb956b6ab9eb4b44438faa81632ac9b1621f7eb424",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/financial.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "formula_1",
+      "sha256": "be10d77038b1c208eba9c2fb9e6a91a1c47845de2f544fa2623bee23abc4621a",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/formula_1.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "student_club",
+      "sha256": "68fb404bfb5da83857938d53975bd7ead76e6ac32b3c5eb5fa684e3ec855bd3f",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/student_club.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "superhero",
+      "sha256": "c142a9140516a09d93cd47999979ae14629ddf555084fed9405435fdaecd3d98",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/superhero.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "thrombosis_prediction",
+      "sha256": "b17b8eec1aad0909ff2dc7539b8129a59c6815915c499271d89cf527825b0f0c",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/thrombosis_prediction.sqlite"
+    },
+    {
+      "rep": "release_03",
+      "db": "toxicology",
+      "sha256": "d63309f4e494bd0c0df3848daef3c4aa8ee73d338fa2453ac3034832adbeeaac",
+      "source_sqlite": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase6_accept_20261121/ind8_releases/R3/probe_sqlite/toxicology.sqlite"
+    }
+  ]
+}
