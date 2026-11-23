@@ -1,0 +1,32 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table account(account_id,district_id,frequency,date):
+[1,52,"POPLATEK MESICNE",null]
+[76,62,"POPLATEK TYDNE",null]
+[151,60,"POPLATEK MESICNE",null]
+Table card(card_id,disp_id,type,issued):
+[1,null,"classic",null]
+[15,null,"gold",null]
+[29,null,"gold",null]
+[43,null,"gold",null]
+Table client(client_id,gender,birth_date,district_id):
+[1,"M",null,10]
+[90,"M",null,null]
+[179,"M",null,17]
+Table disp(disp_id,client_id,account_id,type):
+[1,null,null,"OWNER"]
+[90,null,null,"OWNER"]
+[179,null,null,"OWNER"]
+Table district(district_id,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16):
+[1,null,null,null,null,null,null,934,3,62.41196896473103,-1625024541,2.5830565879690908,4.332946503519237,141,1958,6240]
+[2,null,null,null,null,null,null,4,7,72.56837153912595,10563,2.17272184935792,2.3092772331922764,114,3771,1654]
+[3,null,null,null,null,null,null,1,51,72.56837153912595,-1625024541,-555650329330.0138,34.83634971871805,114,2849,4177]
+Table loan(loan_id,account_id,date,amount,duration,payments,status):
+[1,null,null,276337,60,7284.944292356633,"C"]
+[12,null,null,136053,12,3121.6417609332975,"A"]
+Table order(order_id,account_id,bank_to,account_to,amount,k_symbol):
+[1,null,"KL",16161849,7859.598836402128,"POJISTNE"]
+[108,null,"KL",60594801,2148.315218116714,"POJISTNE"]
+Table trans(trans_id,account_id,date,type,operation,amount,balance,k_symbol,bank,account):
+[1,235,"1997-10-13","VYDAJ","VKLAD",119,32358,null,null,19418700]
+[17606,1509,"1996-12-28","VYDAJ","VYBER",7421,74062," ","AB",83980529]

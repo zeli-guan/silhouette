@@ -1,0 +1,344 @@
+{
+  "fig4b_retention_m20": {
+    "n_target_c1_values": 1112,
+    "M_releases": 20,
+    "by_epsilon": {
+      "1": {
+        "DG-v3": {
+          "mean_pct": 36.69,
+          "sd_pp": 2.1,
+          "min_pct": 32.37,
+          "max_pct": 39.84,
+          "mean_pct_exact": 36.686151,
+          "sd_pp_exact": 2.097358
+        },
+        "DG-FlatW": {
+          "mean_pct": 33.93,
+          "sd_pp": 2.06,
+          "min_pct": 29.77,
+          "max_pct": 37.95,
+          "mean_pct_exact": 33.92536,
+          "sd_pp_exact": 2.060795
+        }
+      },
+      "2": {
+        "DG-v3": {
+          "mean_pct": 46.54,
+          "sd_pp": 1.48,
+          "min_pct": 44.06,
+          "max_pct": 49.82,
+          "mean_pct_exact": 46.53777,
+          "sd_pp_exact": 1.483275
+        },
+        "DG-FlatW": {
+          "mean_pct": 45.09,
+          "sd_pp": 1.61,
+          "min_pct": 41.46,
+          "max_pct": 47.39,
+          "mean_pct_exact": 45.089928,
+          "sd_pp_exact": 1.607729
+        }
+      },
+      "4": {
+        "DG-v3": {
+          "mean_pct": 57.4,
+          "sd_pp": 1.55,
+          "min_pct": 55.13,
+          "max_pct": 60.43,
+          "mean_pct_exact": 57.401079,
+          "sd_pp_exact": 1.550231
+        },
+        "DG-FlatW": {
+          "mean_pct": 55.78,
+          "sd_pp": 1.06,
+          "min_pct": 52.79,
+          "max_pct": 57.28,
+          "mean_pct_exact": 55.777878,
+          "sd_pp_exact": 1.064793
+        }
+      },
+      "8": {
+        "DG-v3": {
+          "mean_pct": 65.69,
+          "sd_pp": 0.94,
+          "min_pct": 64.3,
+          "max_pct": 67.72,
+          "mean_pct_exact": 65.692446,
+          "sd_pp_exact": 0.940688
+        },
+        "DG-FlatW": {
+          "mean_pct": 62.76,
+          "sd_pp": 0.63,
+          "min_pct": 61.42,
+          "max_pct": 64.3,
+          "mean_pct_exact": 62.756295,
+          "sd_pp_exact": 0.626633
+        }
+      }
+    }
+  },
+  "fig5_legacy_scaling_rows_cov": {
+    "0.01": {
+      "cov_median_pct": 76.91,
+      "cov_min_pct": 76.85,
+      "cov_max_pct": 77.31,
+      "exact_median_pct": 69.97,
+      "exact_min_pct": 69.91,
+      "exact_max_pct": 71.06,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1209,
+          "norm_hits": 1328,
+          "total_targets": 1728,
+          "norm_pct": 76.85,
+          "exact_pct": 69.97
+        },
+        "20261211": {
+          "exact_hits": 1228,
+          "norm_hits": 1336,
+          "total_targets": 1728,
+          "norm_pct": 77.31,
+          "exact_pct": 71.06
+        },
+        "20261212": {
+          "exact_hits": 1208,
+          "norm_hits": 1329,
+          "total_targets": 1728,
+          "norm_pct": 76.91,
+          "exact_pct": 69.91
+        }
+      }
+    },
+    "0.03": {
+      "cov_median_pct": 80.38,
+      "cov_min_pct": 80.09,
+      "cov_max_pct": 80.38,
+      "exact_median_pct": 73.61,
+      "exact_min_pct": 73.5,
+      "exact_max_pct": 73.96,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1278,
+          "norm_hits": 1389,
+          "total_targets": 1728,
+          "norm_pct": 80.38,
+          "exact_pct": 73.96
+        },
+        "20261211": {
+          "exact_hits": 1270,
+          "norm_hits": 1389,
+          "total_targets": 1728,
+          "norm_pct": 80.38,
+          "exact_pct": 73.5
+        },
+        "20261212": {
+          "exact_hits": 1272,
+          "norm_hits": 1384,
+          "total_targets": 1728,
+          "norm_pct": 80.09,
+          "exact_pct": 73.61
+        }
+      }
+    },
+    "0.1": {
+      "cov_median_pct": 82.35,
+      "cov_min_pct": 82.29,
+      "cov_max_pct": 82.64,
+      "exact_median_pct": 76.27,
+      "exact_min_pct": 76.27,
+      "exact_max_pct": 76.33,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1318,
+          "norm_hits": 1422,
+          "total_targets": 1728,
+          "norm_pct": 82.29,
+          "exact_pct": 76.27
+        },
+        "20261211": {
+          "exact_hits": 1318,
+          "norm_hits": 1423,
+          "total_targets": 1728,
+          "norm_pct": 82.35,
+          "exact_pct": 76.27
+        },
+        "20261212": {
+          "exact_hits": 1319,
+          "norm_hits": 1428,
+          "total_targets": 1728,
+          "norm_pct": 82.64,
+          "exact_pct": 76.33
+        }
+      }
+    },
+    "0.3": {
+      "cov_median_pct": 83.22,
+      "cov_min_pct": 83.16,
+      "cov_max_pct": 83.28,
+      "exact_median_pct": 77.66,
+      "exact_min_pct": 77.6,
+      "exact_max_pct": 77.72,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1343,
+          "norm_hits": 1439,
+          "total_targets": 1728,
+          "norm_pct": 83.28,
+          "exact_pct": 77.72
+        },
+        "20261211": {
+          "exact_hits": 1342,
+          "norm_hits": 1438,
+          "total_targets": 1728,
+          "norm_pct": 83.22,
+          "exact_pct": 77.66
+        },
+        "20261212": {
+          "exact_hits": 1341,
+          "norm_hits": 1437,
+          "total_targets": 1728,
+          "norm_pct": 83.16,
+          "exact_pct": 77.6
+        }
+      }
+    },
+    "1.0": {
+      "cov_median_pct": 85.71,
+      "cov_min_pct": 85.71,
+      "cov_max_pct": 85.76,
+      "exact_median_pct": 80.27,
+      "exact_min_pct": 80.21,
+      "exact_max_pct": 80.38,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1389,
+          "norm_hits": 1482,
+          "total_targets": 1728,
+          "norm_pct": 85.76,
+          "exact_pct": 80.38
+        },
+        "20261211": {
+          "exact_hits": 1386,
+          "norm_hits": 1481,
+          "total_targets": 1728,
+          "norm_pct": 85.71,
+          "exact_pct": 80.21
+        },
+        "20261212": {
+          "exact_hits": 1387,
+          "norm_hits": 1481,
+          "total_targets": 1728,
+          "norm_pct": 85.71,
+          "exact_pct": 80.27
+        }
+      }
+    }
+  },
+  "fig5_baseline_cov_pct": 68.46,
+  "fig5_columns_prefix": {
+    "source": "fig5_exact_tau_prefix_v9.json (exact integer exact_dgauss_tau across 11 widest BIRD tables <= 115 cols + Qwen2.5 BPE tokens)",
+    "4": {
+      "tau_median": 10.5,
+      "tau_q1": 8.5,
+      "tau_q3": 11.0,
+      "tau_hist_median": 16,
+      "tau_hist_q1": 15.5,
+      "tau_hist_q3": 17.0,
+      "tau_all_stats_pooled_median": 15,
+      "tau_values_stats_pooled_median": 11,
+      "tokens_median": 162,
+      "tokens_q1": 140.5,
+      "tokens_q3": 198.5,
+      "per_table_median_of_table_medians": 16,
+      "pooled_across_all_scheduled_histograms": 15
+    },
+    "8": {
+      "tau_median": 16,
+      "tau_q1": 13.5,
+      "tau_q3": 17.5,
+      "tau_hist_median": 21,
+      "tau_hist_q1": 19.5,
+      "tau_hist_q3": 21.75,
+      "tau_all_stats_pooled_median": 21,
+      "tau_values_stats_pooled_median": 16,
+      "tokens_median": 330,
+      "tokens_q1": 272.0,
+      "tokens_q3": 356.0,
+      "per_table_median_of_table_medians": 21,
+      "pooled_across_all_scheduled_histograms": 21
+    },
+    "16": {
+      "tau_median": 28.5,
+      "tau_q1": 21.5,
+      "tau_q3": 32.0,
+      "tau_hist_median": 29,
+      "tau_hist_q1": 28.5,
+      "tau_hist_q3": 30.0,
+      "tau_all_stats_pooled_median": 29,
+      "tau_values_stats_pooled_median": 23,
+      "tokens_median": 603,
+      "tokens_q1": 544.5,
+      "tokens_q3": 709.0,
+      "per_table_median_of_table_medians": 29,
+      "pooled_across_all_scheduled_histograms": 29
+    },
+    "32": {
+      "tau_median": 34,
+      "tau_q1": 28.25,
+      "tau_q3": 41.5,
+      "tau_hist_median": 38,
+      "tau_hist_q1": 34.0,
+      "tau_hist_q3": 41.5,
+      "tau_all_stats_pooled_median": 38,
+      "tau_values_stats_pooled_median": 34,
+      "tokens_median": 1068,
+      "tokens_q1": 819.5,
+      "tokens_q3": 1194.5,
+      "per_table_median_of_table_medians": 38,
+      "pooled_across_all_scheduled_histograms": 38
+    },
+    "all": {
+      "tau_median": 34,
+      "tau_q1": 28.25,
+      "tau_q3": 50.5,
+      "tau_hist_median": 40,
+      "tau_hist_q1": 34.0,
+      "tau_hist_q3": 48.0,
+      "tau_all_stats_pooled_median": 49,
+      "tau_values_stats_pooled_median": 44,
+      "tokens_median": 1247,
+      "tokens_q1": 816.5,
+      "tokens_q3": 1658.0,
+      "per_table_median_of_table_medians": 40,
+      "pooled_across_all_scheduled_histograms": 49
+    }
+  },
+  "fig3_mean_total_tokens": {
+    "bird_glm53": {
+      "S3/r0": 5485.7,
+      "SYN8/r0": 4472.4,
+      "IND8/r0": 4471.1,
+      "SUR3/r0": 5347.0
+    },
+    "ehrsql_600_glm53": {
+      "C0/r0": 4339.0,
+      "C0P/r0": 5188.5,
+      "S3/r0": 8500.3,
+      "C4/r0": 6560.4,
+      "DG8_NOLKP/r0": 12125.1,
+      "DG8P_R1/r0": 14337.5,
+      "DG8P_R2/r0": 14221.0,
+      "DG8P_R3/r0": 14169.4,
+      "IND8P/r0": 7094.4,
+      "SYN8P/r0": 6921.0,
+      "SUR3/r0": 8451.0,
+      "EHR_IND8P_PROMPT/r0": 15928.0
+    },
+    "bird_sol": {
+      "SOL_C0/r0": 51846.6,
+      "SOL_IND8_PROMPT/r0": 53080.3,
+      "SOL_DG8_R1/r0": 51999.8,
+      "SOL_C4/r0": 69183.5
+    }
+  }
+}

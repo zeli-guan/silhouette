@@ -1,0 +1,23 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table customers(CustomerID,Segment,Currency):
+[1,"SME","CZK"]
+[542,"SME","CZK"]
+[1083,"SME","EUR"]
+Table gasstations(GasStationID,ChainID,Country,Segment):
+[1,null,"SVK","Value for money"]
+[96,51,"CZE","Other"]
+[191,9,"CZE","Value for money"]
+Table products(ProductID,Description):
+[1,null]
+[10,null]
+[19,null]
+[28,null]
+Table transactions_1k(TransactionID,Date,Time,CustomerID,CardID,GasStationID,ProductID,Amount,Price):
+[1,"2012-08-24",null,null,null,null,15,5,178.53954066272334]
+[17,"2012-08-25",null,null,null,null,2,20,908.5823078815667]
+[33,"2012-08-24",null,null,null,null,5,55,72.09364042996745]
+Table yearmonth(CustomerID,Date,Consumption):
+[1697,"201206",929.7422351385919]
+[46253,"201205",1651.511809555177]
+[24365,"201205",1651.511809555177]

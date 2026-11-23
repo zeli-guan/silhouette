@@ -1,0 +1,6 @@
+{
+  "db_id": "thrombosis_prediction",
+  "source_release": "phase4_accept/profiles/bird_dg8_clean/release_01/thrombosis_prediction.json",
+  "mode": "No-Values (post-processed DG-v3)",
+  "sha256": "00f2933ebe0cd0384303f589008544dba7b1bb10d2eea960798a1a239f31cb9a"
+}

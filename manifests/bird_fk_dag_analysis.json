@@ -1,0 +1,303 @@
+{
+  "california_schools": {
+    "tables_count": 3,
+    "dag_edges": [
+      "frpm.CDSCode -> schools.CDSCode",
+      "satscores.cds -> schools.CDSCode"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "schools",
+      "frpm",
+      "satscores"
+    ]
+  },
+  "card_games": {
+    "tables_count": 6,
+    "dag_edges": [
+      "foreign_data.uuid -> cards.uuid",
+      "legalities.uuid -> cards.uuid",
+      "rulings.uuid -> cards.uuid",
+      "set_translations.setCode -> sets.code"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "cards",
+      "sets",
+      "foreign_data",
+      "legalities",
+      "rulings",
+      "set_translations"
+    ]
+  },
+  "codebase_community": {
+    "tables_count": 8,
+    "dag_edges": [
+      "badges.UserId -> users.Id",
+      "comments.UserId -> users.Id",
+      "comments.PostId -> posts.Id",
+      "postHistory.UserId -> users.Id",
+      "postHistory.PostId -> posts.Id",
+      "postLinks.RelatedPostId -> posts.Id",
+      "postLinks.PostId -> posts.Id",
+      "posts.OwnerUserId -> users.Id",
+      "posts.LastEditorUserId -> users.Id",
+      "tags.ExcerptPostId -> posts.Id",
+      "votes.UserId -> users.Id",
+      "votes.PostId -> posts.Id"
+    ],
+    "self_loops": [
+      "posts.ParentId -> posts.Id"
+    ],
+    "composite_fks_count": 0,
+    "is_strict_dag": false,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "users",
+      "badges",
+      "posts",
+      "comments",
+      "postHistory",
+      "postLinks",
+      "tags",
+      "votes"
+    ]
+  },
+  "debit_card_specializing": {
+    "tables_count": 5,
+    "dag_edges": [
+      "yearmonth.CustomerID -> customers.CustomerID"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "customers",
+      "gasstations",
+      "products",
+      "transactions_1k",
+      "yearmonth"
+    ]
+  },
+  "european_football_2": {
+    "tables_count": 7,
+    "dag_edges": [
+      "League.country_id -> Country.id",
+      "Match.away_player_11 -> Player.player_api_id",
+      "Match.away_player_10 -> Player.player_api_id",
+      "Match.away_player_9 -> Player.player_api_id",
+      "Match.away_player_8 -> Player.player_api_id",
+      "Match.away_player_7 -> Player.player_api_id",
+      "Match.away_player_6 -> Player.player_api_id",
+      "Match.away_player_5 -> Player.player_api_id",
+      "Match.away_player_4 -> Player.player_api_id",
+      "Match.away_player_3 -> Player.player_api_id",
+      "Match.away_player_2 -> Player.player_api_id",
+      "Match.away_player_1 -> Player.player_api_id",
+      "Match.home_player_11 -> Player.player_api_id",
+      "Match.home_player_10 -> Player.player_api_id",
+      "Match.home_player_9 -> Player.player_api_id",
+      "Match.home_player_8 -> Player.player_api_id",
+      "Match.home_player_7 -> Player.player_api_id",
+      "Match.home_player_6 -> Player.player_api_id",
+      "Match.home_player_5 -> Player.player_api_id",
+      "Match.home_player_4 -> Player.player_api_id",
+      "Match.home_player_3 -> Player.player_api_id",
+      "Match.home_player_2 -> Player.player_api_id",
+      "Match.home_player_1 -> Player.player_api_id",
+      "Match.away_team_api_id -> Team.team_api_id",
+      "Match.home_team_api_id -> Team.team_api_id",
+      "Match.league_id -> League.id",
+      "Match.country_id -> Country.id",
+      "Player_Attributes.player_api_id -> Player.player_api_id",
+      "Player_Attributes.player_fifa_api_id -> Player.player_fifa_api_id",
+      "Team_Attributes.team_api_id -> Team.team_api_id",
+      "Team_Attributes.team_fifa_api_id -> Team.team_fifa_api_id"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "Country",
+      "Player",
+      "Team",
+      "League",
+      "Player_Attributes",
+      "Team_Attributes",
+      "Match"
+    ]
+  },
+  "financial": {
+    "tables_count": 8,
+    "dag_edges": [
+      "account.district_id -> district.district_id",
+      "card.disp_id -> disp.disp_id",
+      "client.district_id -> district.district_id",
+      "disp.client_id -> client.client_id",
+      "disp.account_id -> account.account_id",
+      "loan.account_id -> account.account_id",
+      "order.account_id -> account.account_id",
+      "trans.account_id -> account.account_id"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "district",
+      "account",
+      "client",
+      "loan",
+      "order",
+      "trans",
+      "disp",
+      "card"
+    ]
+  },
+  "formula_1": {
+    "tables_count": 13,
+    "dag_edges": [
+      "constructorResults.constructorId -> constructors.constructorId",
+      "constructorResults.raceId -> races.raceId",
+      "constructorStandings.constructorId -> constructors.constructorId",
+      "constructorStandings.raceId -> races.raceId",
+      "driverStandings.driverId -> drivers.driverId",
+      "driverStandings.raceId -> races.raceId",
+      "lapTimes.driverId -> drivers.driverId",
+      "lapTimes.raceId -> races.raceId",
+      "pitStops.driverId -> drivers.driverId",
+      "pitStops.raceId -> races.raceId",
+      "qualifying.constructorId -> constructors.constructorId",
+      "qualifying.driverId -> drivers.driverId",
+      "qualifying.raceId -> races.raceId",
+      "races.circuitId -> circuits.circuitId",
+      "races.year -> seasons.year",
+      "results.statusId -> status.statusId",
+      "results.constructorId -> constructors.constructorId",
+      "results.driverId -> drivers.driverId",
+      "results.raceId -> races.raceId"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "circuits",
+      "constructors",
+      "drivers",
+      "seasons",
+      "status",
+      "races",
+      "constructorResults",
+      "constructorStandings",
+      "driverStandings",
+      "lapTimes",
+      "pitStops",
+      "qualifying",
+      "results"
+    ]
+  },
+  "student_club": {
+    "tables_count": 8,
+    "dag_edges": [
+      "attendance.link_to_member -> member.member_id",
+      "attendance.link_to_event -> event.event_id",
+      "budget.link_to_event -> event.event_id",
+      "expense.link_to_member -> member.member_id",
+      "expense.link_to_budget -> budget.budget_id",
+      "income.link_to_member -> member.member_id",
+      "member.zip -> zip_code.zip_code",
+      "member.link_to_major -> major.major_id"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "event",
+      "major",
+      "zip_code",
+      "budget",
+      "member",
+      "attendance",
+      "expense",
+      "income"
+    ]
+  },
+  "superhero": {
+    "tables_count": 10,
+    "dag_edges": [
+      "hero_attribute.hero_id -> superhero.id",
+      "hero_attribute.attribute_id -> attribute.id",
+      "hero_power.power_id -> superpower.id",
+      "hero_power.hero_id -> superhero.id",
+      "superhero.skin_colour_id -> colour.id",
+      "superhero.race_id -> race.id",
+      "superhero.publisher_id -> publisher.id",
+      "superhero.hair_colour_id -> colour.id",
+      "superhero.gender_id -> gender.id",
+      "superhero.eye_colour_id -> colour.id",
+      "superhero.alignment_id -> alignment.id"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "alignment",
+      "attribute",
+      "colour",
+      "gender",
+      "publisher",
+      "race",
+      "superpower",
+      "superhero",
+      "hero_attribute",
+      "hero_power"
+    ]
+  },
+  "thrombosis_prediction": {
+    "tables_count": 3,
+    "dag_edges": [
+      "Examination.ID -> Patient.ID",
+      "Laboratory.ID -> Patient.ID"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "Patient",
+      "Examination",
+      "Laboratory"
+    ]
+  },
+  "toxicology": {
+    "tables_count": 4,
+    "dag_edges": [
+      "atom.molecule_id -> molecule.molecule_id",
+      "bond.molecule_id -> molecule.molecule_id",
+      "connected.bond_id -> bond.bond_id",
+      "connected.atom_id2 -> atom.atom_id",
+      "connected.atom_id -> atom.atom_id"
+    ],
+    "self_loops": [],
+    "composite_fks_count": 0,
+    "is_strict_dag": true,
+    "is_maximal_dag": true,
+    "topo_order": [
+      "molecule",
+      "atom",
+      "bond",
+      "connected"
+    ]
+  }
+}

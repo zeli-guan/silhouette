@@ -1,0 +1,1096 @@
+{
+  "db_id": "student_club",
+  "mechanism": "DG-Omega1",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "sha256": "8241dfae90800948fc6147fbb430fb711edc16abe2c36258ea7c75e18219908d",
+  "parameters": [
+    {
+      "r_j": "122160818223/1",
+      "share": "122160818223/999999999997",
+      "rho": "106865911783679669110804257/999999999997000000000000000",
+      "sigma2": "499999999998500000000000000/106865911783679669110804257",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "194597954441/1",
+      "share": "194597954441/999999999997",
+      "rho": "170233697965368131790711719/999999999997000000000000000",
+      "sigma2": "499999999998500000000000000/170233697965368131790711719",
+      "delta": "1/4000000",
+      "sensitivity2": 1,
+      "tau": 9,
+      "tail_lower": "248735189303107/1000000000000000000000",
+      "tail_upper": "62183797325777/250000000000000000000",
+      "prev_tail_lower": "91343777858361/20000000000000000000",
+      "prev_tail_upper": "228359444645903/50000000000000000000"
+    },
+    {
+      "r_j": "31687472817/1",
+      "share": "10562490939/333333333335",
+      "rho": "9240034909086496525711701/333333333335000000000000000",
+      "sigma2": "166666666667500000000000000/9240034909086496525711701",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "52468790775/1",
+      "share": "3497919385/66666666667",
+      "rho": "611993845262987521489643/13333333333400000000000000",
+      "sigma2": "6666666666700000000000000/611993845262987521489643",
+      "delta": "1/20000000",
+      "sensitivity2": 1,
+      "tau": 19,
+      "tail_lower": "920589544891787/100000000000000000000000",
+      "tail_upper": "230147386222947/25000000000000000000000",
+      "prev_tail_lower": "256267064119053/5000000000000000000000",
+      "prev_tail_upper": "512534128238107/10000000000000000000000"
+    },
+    {
+      "r_j": "27282604428/1",
+      "share": "27282604428/1000000000001",
+      "rho": "5966684818509879044247213/250000000000250000000000000",
+      "sigma2": "125000000000125000000000000/5966684818509879044247213",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "45443148737/1",
+      "share": "45443148737/1000000000001",
+      "rho": "39753528134003158023078383/1000000000001000000000000000",
+      "sigma2": "500000000000500000000000000/39753528134003158023078383",
+      "delta": "1/26000000",
+      "sensitivity2": 1,
+      "tau": 20,
+      "tail_lower": "21626696582777/1250000000000000000000",
+      "tail_upper": "173013572662217/10000000000000000000000",
+      "prev_tail_lower": "415746733693493/5000000000000000000000",
+      "prev_tail_upper": "831493467386987/10000000000000000000000"
+    },
+    {
+      "r_j": "33831545151/1",
+      "share": "11277181717/333333333331",
+      "rho": "9865244225341531040090203/333333333331000000000000000",
+      "sigma2": "166666666665500000000000000/9865244225341531040090203",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "56018991303/1",
+      "share": "18672997101/333333333331",
+      "rho": "16335081001910523691750659/333333333331000000000000000",
+      "sigma2": "166666666665500000000000000/16335081001910523691750659",
+      "delta": "1/20000000",
+      "sensitivity2": 1,
+      "tau": 18,
+      "tail_lower": "47290954049463/2500000000000000000000",
+      "tail_upper": "189163816197853/10000000000000000000000",
+      "prev_tail_lower": "3349771310599/31250000000000000000",
+      "prev_tail_upper": "107192681939169/1000000000000000000000"
+    },
+    {
+      "r_j": "48790031323/1",
+      "share": "48790031323/1000000000002",
+      "rho": "42681370828482338431647157/1000000000002000000000000000",
+      "sigma2": "500000000001000000000000000/42681370828482338431647157",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "80127102585/1",
+      "share": "26709034195/333333333334",
+      "rho": "4672996356163500457379801/66666666666800000000000000",
+      "sigma2": "33333333333400000000000000/4672996356163500457379801",
+      "delta": "1/14000000",
+      "sensitivity2": 1,
+      "tau": 15,
+      "tail_lower": "59482615279619/2500000000000000000000",
+      "tail_upper": "237930461118477/10000000000000000000000",
+      "prev_tail_lower": "46276218460277/250000000000000000000",
+      "prev_tail_upper": "185104873841109/1000000000000000000000"
+    },
+    {
+      "r_j": "26843163544/1",
+      "share": "26843163544/999999999991",
+      "rho": "2935289715859868889134237/124999999998875000000000000",
+      "sigma2": "62499999999437500000000000/2935289715859868889134237",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "44543626605/1",
+      "share": "44543626605/999999999991",
+      "rho": "7793325782421559204689639/199999999998200000000000000",
+      "sigma2": "99999999999100000000000000/7793325782421559204689639",
+      "delta": "1/22000000",
+      "sensitivity2": 1,
+      "tau": 20,
+      "tail_lower": "236487028734011/10000000000000000000000",
+      "tail_upper": "59121757183503/2500000000000000000000",
+      "prev_tail_lower": "110259373259267/1000000000000000000000",
+      "prev_tail_upper": "27564843314817/250000000000000000000"
+    },
+    {
+      "r_j": "31996484789/1",
+      "share": "31996484789/1000000000009",
+      "rho": "27990427459377826593393851/1000000000009000000000000000",
+      "sigma2": "500000000004500000000000000/27990427459377826593393851",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "53095063432/1",
+      "share": "53095063432/1000000000009",
+      "rho": "5805924975996823032722111/125000000001125000000000000",
+      "sigma2": "62500000000562500000000000/5805924975996823032722111",
+      "delta": "1/22000000",
+      "sensitivity2": 1,
+      "tau": 18,
+      "tail_lower": "107464937056731/2500000000000000000000",
+      "tail_upper": "17194389929077/400000000000000000000",
+      "prev_tail_lower": "44594606727737/200000000000000000000",
+      "prev_tail_upper": "111486516819343/500000000000000000000"
+    }
+  ],
+  "tables": {
+    "attendance": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "link_to_event",
+          0
+        ],
+        [
+          "distinct_count",
+          "link_to_event",
+          0
+        ],
+        [
+          "patterns",
+          "link_to_event",
+          1
+        ],
+        [
+          "null_count",
+          "link_to_member",
+          0
+        ],
+        [
+          "distinct_count",
+          "link_to_member",
+          0
+        ],
+        [
+          "patterns",
+          "link_to_member",
+          1
+        ]
+      ]
+    },
+    "budget": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "budget_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "budget_id",
+          2
+        ],
+        [
+          "patterns",
+          "budget_id",
+          3
+        ],
+        [
+          "null_count",
+          "category",
+          2
+        ],
+        [
+          "distinct_count",
+          "category",
+          2
+        ],
+        [
+          "patterns",
+          "category",
+          3
+        ],
+        [
+          "values",
+          "category",
+          3
+        ],
+        [
+          "null_count",
+          "spent",
+          2
+        ],
+        [
+          "distinct_count",
+          "spent",
+          2
+        ],
+        [
+          "bins",
+          "spent",
+          3
+        ],
+        [
+          "null_count",
+          "remaining",
+          2
+        ],
+        [
+          "distinct_count",
+          "remaining",
+          2
+        ],
+        [
+          "bins",
+          "remaining",
+          3
+        ],
+        [
+          "null_count",
+          "amount",
+          2
+        ],
+        [
+          "distinct_count",
+          "amount",
+          2
+        ],
+        [
+          "bins",
+          "amount",
+          3
+        ],
+        [
+          "values",
+          "amount",
+          3
+        ],
+        [
+          "null_count",
+          "event_status",
+          2
+        ],
+        [
+          "distinct_count",
+          "event_status",
+          2
+        ],
+        [
+          "patterns",
+          "event_status",
+          3
+        ],
+        [
+          "values",
+          "event_status",
+          3
+        ],
+        [
+          "null_count",
+          "link_to_event",
+          2
+        ],
+        [
+          "distinct_count",
+          "link_to_event",
+          2
+        ],
+        [
+          "patterns",
+          "link_to_event",
+          3
+        ]
+      ]
+    },
+    "event": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "event_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "event_id",
+          4
+        ],
+        [
+          "patterns",
+          "event_id",
+          5
+        ],
+        [
+          "null_count",
+          "event_name",
+          4
+        ],
+        [
+          "distinct_count",
+          "event_name",
+          4
+        ],
+        [
+          "patterns",
+          "event_name",
+          5
+        ],
+        [
+          "values",
+          "event_name",
+          5
+        ],
+        [
+          "null_count",
+          "event_date",
+          4
+        ],
+        [
+          "distinct_count",
+          "event_date",
+          4
+        ],
+        [
+          "patterns",
+          "event_date",
+          5
+        ],
+        [
+          "values",
+          "event_date",
+          5
+        ],
+        [
+          "null_count",
+          "type",
+          4
+        ],
+        [
+          "distinct_count",
+          "type",
+          4
+        ],
+        [
+          "patterns",
+          "type",
+          5
+        ],
+        [
+          "values",
+          "type",
+          5
+        ],
+        [
+          "null_count",
+          "notes",
+          4
+        ],
+        [
+          "distinct_count",
+          "notes",
+          4
+        ],
+        [
+          "patterns",
+          "notes",
+          5
+        ],
+        [
+          "values",
+          "notes",
+          5
+        ],
+        [
+          "null_count",
+          "location",
+          4
+        ],
+        [
+          "distinct_count",
+          "location",
+          4
+        ],
+        [
+          "patterns",
+          "location",
+          5
+        ],
+        [
+          "values",
+          "location",
+          5
+        ],
+        [
+          "null_count",
+          "status",
+          4
+        ],
+        [
+          "distinct_count",
+          "status",
+          4
+        ],
+        [
+          "patterns",
+          "status",
+          5
+        ],
+        [
+          "values",
+          "status",
+          5
+        ]
+      ]
+    },
+    "expense": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "expense_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "expense_id",
+          2
+        ],
+        [
+          "patterns",
+          "expense_id",
+          3
+        ],
+        [
+          "null_count",
+          "expense_description",
+          2
+        ],
+        [
+          "distinct_count",
+          "expense_description",
+          2
+        ],
+        [
+          "patterns",
+          "expense_description",
+          3
+        ],
+        [
+          "values",
+          "expense_description",
+          3
+        ],
+        [
+          "null_count",
+          "expense_date",
+          2
+        ],
+        [
+          "distinct_count",
+          "expense_date",
+          2
+        ],
+        [
+          "patterns",
+          "expense_date",
+          3
+        ],
+        [
+          "values",
+          "expense_date",
+          3
+        ],
+        [
+          "null_count",
+          "cost",
+          2
+        ],
+        [
+          "distinct_count",
+          "cost",
+          2
+        ],
+        [
+          "bins",
+          "cost",
+          3
+        ],
+        [
+          "null_count",
+          "approved",
+          2
+        ],
+        [
+          "distinct_count",
+          "approved",
+          2
+        ],
+        [
+          "patterns",
+          "approved",
+          3
+        ],
+        [
+          "values",
+          "approved",
+          3
+        ],
+        [
+          "null_count",
+          "link_to_member",
+          2
+        ],
+        [
+          "distinct_count",
+          "link_to_member",
+          2
+        ],
+        [
+          "patterns",
+          "link_to_member",
+          3
+        ],
+        [
+          "null_count",
+          "link_to_budget",
+          2
+        ],
+        [
+          "distinct_count",
+          "link_to_budget",
+          2
+        ],
+        [
+          "patterns",
+          "link_to_budget",
+          3
+        ]
+      ]
+    },
+    "income": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          6
+        ],
+        [
+          "null_count",
+          "income_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "income_id",
+          6
+        ],
+        [
+          "patterns",
+          "income_id",
+          7
+        ],
+        [
+          "null_count",
+          "date_received",
+          6
+        ],
+        [
+          "distinct_count",
+          "date_received",
+          6
+        ],
+        [
+          "patterns",
+          "date_received",
+          7
+        ],
+        [
+          "values",
+          "date_received",
+          7
+        ],
+        [
+          "null_count",
+          "amount",
+          6
+        ],
+        [
+          "distinct_count",
+          "amount",
+          6
+        ],
+        [
+          "bins",
+          "amount",
+          7
+        ],
+        [
+          "values",
+          "amount",
+          7
+        ],
+        [
+          "null_count",
+          "source",
+          6
+        ],
+        [
+          "distinct_count",
+          "source",
+          6
+        ],
+        [
+          "patterns",
+          "source",
+          7
+        ],
+        [
+          "values",
+          "source",
+          7
+        ],
+        [
+          "null_count",
+          "notes",
+          6
+        ],
+        [
+          "distinct_count",
+          "notes",
+          6
+        ],
+        [
+          "patterns",
+          "notes",
+          7
+        ],
+        [
+          "values",
+          "notes",
+          7
+        ],
+        [
+          "null_count",
+          "link_to_member",
+          6
+        ],
+        [
+          "distinct_count",
+          "link_to_member",
+          6
+        ],
+        [
+          "patterns",
+          "link_to_member",
+          7
+        ]
+      ]
+    },
+    "major": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "major_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "major_id",
+          8
+        ],
+        [
+          "patterns",
+          "major_id",
+          9
+        ],
+        [
+          "null_count",
+          "major_name",
+          8
+        ],
+        [
+          "distinct_count",
+          "major_name",
+          8
+        ],
+        [
+          "patterns",
+          "major_name",
+          9
+        ],
+        [
+          "values",
+          "major_name",
+          9
+        ],
+        [
+          "null_count",
+          "department",
+          8
+        ],
+        [
+          "distinct_count",
+          "department",
+          8
+        ],
+        [
+          "patterns",
+          "department",
+          9
+        ],
+        [
+          "values",
+          "department",
+          9
+        ],
+        [
+          "null_count",
+          "college",
+          8
+        ],
+        [
+          "distinct_count",
+          "college",
+          8
+        ],
+        [
+          "patterns",
+          "college",
+          9
+        ],
+        [
+          "values",
+          "college",
+          9
+        ]
+      ]
+    },
+    "member": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          10
+        ],
+        [
+          "null_count",
+          "member_id",
+          10
+        ],
+        [
+          "distinct_count",
+          "member_id",
+          10
+        ],
+        [
+          "patterns",
+          "member_id",
+          11
+        ],
+        [
+          "null_count",
+          "first_name",
+          10
+        ],
+        [
+          "distinct_count",
+          "first_name",
+          10
+        ],
+        [
+          "patterns",
+          "first_name",
+          11
+        ],
+        [
+          "null_count",
+          "last_name",
+          10
+        ],
+        [
+          "distinct_count",
+          "last_name",
+          10
+        ],
+        [
+          "patterns",
+          "last_name",
+          11
+        ],
+        [
+          "null_count",
+          "email",
+          10
+        ],
+        [
+          "distinct_count",
+          "email",
+          10
+        ],
+        [
+          "patterns",
+          "email",
+          11
+        ],
+        [
+          "null_count",
+          "position",
+          10
+        ],
+        [
+          "distinct_count",
+          "position",
+          10
+        ],
+        [
+          "patterns",
+          "position",
+          11
+        ],
+        [
+          "values",
+          "position",
+          11
+        ],
+        [
+          "null_count",
+          "t_shirt_size",
+          10
+        ],
+        [
+          "distinct_count",
+          "t_shirt_size",
+          10
+        ],
+        [
+          "patterns",
+          "t_shirt_size",
+          11
+        ],
+        [
+          "values",
+          "t_shirt_size",
+          11
+        ],
+        [
+          "null_count",
+          "phone",
+          10
+        ],
+        [
+          "distinct_count",
+          "phone",
+          10
+        ],
+        [
+          "patterns",
+          "phone",
+          11
+        ],
+        [
+          "null_count",
+          "zip",
+          10
+        ],
+        [
+          "distinct_count",
+          "zip",
+          10
+        ],
+        [
+          "bins",
+          "zip",
+          11
+        ],
+        [
+          "null_count",
+          "link_to_major",
+          10
+        ],
+        [
+          "distinct_count",
+          "link_to_major",
+          10
+        ],
+        [
+          "patterns",
+          "link_to_major",
+          11
+        ]
+      ]
+    },
+    "zip_code": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "zip_code",
+          12
+        ],
+        [
+          "distinct_count",
+          "zip_code",
+          12
+        ],
+        [
+          "bins",
+          "zip_code",
+          13
+        ],
+        [
+          "null_count",
+          "type",
+          12
+        ],
+        [
+          "distinct_count",
+          "type",
+          12
+        ],
+        [
+          "patterns",
+          "type",
+          13
+        ],
+        [
+          "values",
+          "type",
+          13
+        ],
+        [
+          "null_count",
+          "city",
+          12
+        ],
+        [
+          "distinct_count",
+          "city",
+          12
+        ],
+        [
+          "patterns",
+          "city",
+          13
+        ],
+        [
+          "values",
+          "city",
+          13
+        ],
+        [
+          "null_count",
+          "county",
+          12
+        ],
+        [
+          "distinct_count",
+          "county",
+          12
+        ],
+        [
+          "patterns",
+          "county",
+          13
+        ],
+        [
+          "values",
+          "county",
+          13
+        ],
+        [
+          "null_count",
+          "state",
+          12
+        ],
+        [
+          "distinct_count",
+          "state",
+          12
+        ],
+        [
+          "patterns",
+          "state",
+          13
+        ],
+        [
+          "values",
+          "state",
+          13
+        ],
+        [
+          "null_count",
+          "short_state",
+          12
+        ],
+        [
+          "distinct_count",
+          "short_state",
+          12
+        ],
+        [
+          "patterns",
+          "short_state",
+          13
+        ],
+        [
+          "values",
+          "short_state",
+          13
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,37 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table attendance(link_to_event,link_to_member):
+["rec2N69DMcrqN9PJC","recttfySfQnYb68u3"]
+["recggMW2eyCYceNcy","recjHj4BS5A541n9v"]
+["recI43CzsZ0Q625ma","recTjHY5xXhvkCdVT"]
+["recggMW2eyCYceNcy","reco0mr8dXTgs5wWA"]
+Table budget(budget_id,category,spent,remaining,amount,event_status,link_to_event):
+["1","Food",10.16342921931739,63.538860948331994,55,"Open",null]
+["2",null,6.880107817056615,26.20091769696492,2,null,null]
+["3",null,-1.0498096898390292,18.891586798423486,20,null,null]
+Table event(event_id,event_name,event_date,type,notes,location,status):
+["1",null,null,"Meeting",null,"MU 215","Planning"]
+["2",null,null,null,null,"MU 215","Planning"]
+["3",null,null,"Meeting",null,null,"Planning"]
+["4",null,null,null,null,"MU 215","Closed"]
+Table expense(expense_id,expense_description,expense_date,cost,approved,link_to_member,link_to_budget):
+["1",null,null,20.627397421815452,"true",null,null]
+["2",null,null,123.19960030128348,"true","recD078PnS3x2doBe",null]
+["3",null,null,357.9284123447278,"true",null,null]
+Table income(income_id,date_received,amount,source,notes,link_to_member):
+["1",null,57,null,null,null]
+["2",null,57,"Dues",null,null]
+["3",null,57,"Dues",null,null]
+["4",null,57,"Dues",null,null]
+Table major(major_id,major_name,department,college):
+["1",null,"Languages, Philosophy and Communication Studies Department",null]
+["2",null,null,null]
+["3",null,"School of Applied Sciences, Technology and Education","College of Agriculture and Applied Sciences"]
+Table member(member_id,first_name,last_name,email,position,t_shirt_size,phone,zip,link_to_major):
+["1",null,null,null,"Member",null,null,null,null]
+["2",null,null,null,null,null,null,null,null]
+["3",null,null,null,"Member","Large",null,null,null]
+Table zip_code(zip_code,type,city,county,state,short_state):
+[1,"PO Box",null,"Dare County","Minnesota","MO"]
+[698,"Standard",null,"Greene County","Pennsylvania","NM"]
+[1395,"Standard",null,"Berks County","California","CA"]

@@ -1,0 +1,37 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table attendance(link_to_event,link_to_member):
+["recykdvf4LgsyA3wZ","recEymrwCUKxiiosI"]
+["recI43CzsZ0Q625ma","recP6DJPyi5donvXL"]
+["recvCUOytx5jPw7kh","recro8T1MPMwRadVH"]
+["recLKj8BbTNqxFbTb","recZ4PkGERzl9ziHO"]
+Table budget(budget_id,category,spent,remaining,amount,event_status,link_to_event):
+["1","Parking",-9.016433420798956,0.5505635640808348,157,"Closed",null]
+["2","Food",-9.016433420798956,8.033858523659763,3,"Open",null]
+["3","Advertisement",-9.016433420798956,0.5505635640808348,3,null,null]
+Table event(event_id,event_name,event_date,type,notes,location,status):
+["1",null,null,null,null,"MU 215","Closed"]
+["2",null,null,"Meeting",null,null,null]
+["3",null,null,"Meeting",null,null,null]
+["4",null,null,null,null,"MU 215","Open"]
+Table expense(expense_id,expense_description,expense_date,cost,approved,link_to_member,link_to_budget):
+["1",null,null,-297448.8814221955,"true","recD078PnS3x2doBe",null]
+["2",null,null,-297448.8814221955,"true","rec4BLdZHS2Blfp4v",null]
+["3",null,null,-0.9466080339480756,null,null,null]
+Table income(income_id,date_received,amount,source,notes,link_to_member):
+["1",null,54,"Dues",null,null]
+["2",null,54,"Dues",null,null]
+["3",null,-916245062,null,null,null]
+Table major(major_id,major_name,department,college):
+["1",null,"School of Applied Sciences, Technology and Education","College of Humanities and Social Sciences"]
+["2",null,null,"College of Education & Human Services"]
+["3",null,null,null]
+["5",null,null,null]
+Table member(member_id,first_name,last_name,email,position,t_shirt_size,phone,zip,link_to_major):
+["1",null,null,null,null,null,null,null,null]
+["2",null,null,null,"Member",null,null,null,null]
+["3",null,null,null,"Member",null,null,null,null]
+Table zip_code(zip_code,type,city,county,state,short_state):
+[1,"PO Box",null,"Los Angeles County","New Hampshire","IL"]
+[698,"Standard",null,"Ashe County","Oklahoma","OK"]
+[1395,"Standard",null,"Contra Costa County","Illinois","OK"]

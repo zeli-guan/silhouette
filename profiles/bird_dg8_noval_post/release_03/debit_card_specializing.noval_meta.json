@@ -1,0 +1,6 @@
+{
+  "db_id": "debit_card_specializing",
+  "source_release": "phase4_accept/profiles/bird_dg8_clean/release_03/debit_card_specializing.json",
+  "mode": "No-Values (post-processed DG-v3)",
+  "sha256": "4d610182dc302c9ca8c6d9a0e50947f8702af9a7b66441d311b9391932f5a9d8"
+}

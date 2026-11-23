@@ -1,0 +1,8917 @@
+{
+ "california_schools": {
+  "frpm": {
+   "CDSCode": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "Academic Year": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "County Code": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "District Code": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "School Code": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "County Name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "District Name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "School Name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "District Type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "School Type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Educational Option Type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "NSLP Provision Status": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Charter School (Y/N)": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "Charter School Number": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Charter Funding Type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "IRC": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "Low Grade": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "High Grade": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Enrollment (K-12)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "Free Meal Count (K-12)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "Percent (%) Eligible Free (K-12)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "FRPM Count (K-12)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "Percent (%) Eligible FRPM (K-12)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "Enrollment (Ages 5-17)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "Free Meal Count (Ages 5-17)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "Percent (%) Eligible Free (Ages 5-17)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "FRPM Count (Ages 5-17)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "Percent (%) Eligible FRPM (Ages 5-17)": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "2013-14 CALPADS Fall 1 Certification Status": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   }
+  },
+  "satscores": {
+   "cds": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "rtype": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "sname": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "dname": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "cname": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "enroll12": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "NumTstTakr": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "AvgScrRead": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "AvgScrMath": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "AvgScrWrite": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "NumGE1500": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "schools": {
+   "CDSCode": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "NCESDist": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "NCESSchool": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "StatusType": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "County": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "District": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "School": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Street": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "StreetAbr": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "City": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Zip": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "State": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "MailStreet": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "MailStrAbr": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "MailCity": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "MailZip": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "MailState": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Phone": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "Ext": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "Website": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "OpenDate": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "ClosedDate": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "Charter": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "CharterNum": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "FundingType": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "DOC": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "DOCType": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "SOC": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "SOCType": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "EdOpsCode": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "EdOpsName": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "EILCode": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "EILName": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "GSoffered": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "GSserved": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Virtual": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Magnet": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "Latitude": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "Longitude": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "AdmFName1": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "AdmLName1": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "AdmEmail1": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "AdmFName2": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "AdmLName2": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "AdmEmail2": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "AdmFName3": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "AdmLName3": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "AdmEmail3": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "LastUpdate": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  }
+ },
+ "card_games": {
+  "cards": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "artist": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "asciiName": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "availability": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "borderColor": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "cardKingdomFoilId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "cardKingdomId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "colorIdentity": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "colorIndicator": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "colors": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "convertedManaCost": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "duelDeck": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "edhrecRank": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "faceConvertedManaCost": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "faceName": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "flavorName": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "flavorText": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "frameEffects": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "frameVersion": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "hand": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "hasAlternativeDeckLimit": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "hasContentWarning": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "hasFoil": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "hasNonFoil": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isAlternative": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isFullArt": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isOnlineOnly": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isOversized": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isPromo": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isReprint": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isReserved": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isStarter": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isStorySpotlight": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isTextless": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isTimeshifted": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "keywords": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "layout": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "leadershipSkills": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "life": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "loyalty": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "manaCost": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "mcmId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "mcmMetaId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "mtgArenaId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "mtgjsonV4Id": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "mtgoFoilId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "mtgoId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "multiverseId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "number": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "originalReleaseDate": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "originalText": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "originalType": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "otherFaceIds": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "power": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "printings": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "promoTypes": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "purchaseUrls": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "rarity": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "scryfallId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "scryfallIllustrationId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "scryfallOracleId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "setCode": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "side": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "subtypes": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "supertypes": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "tcgplayerProductId": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "text": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "toughness": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "types": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "uuid": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "variations": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "watermark": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "foreign_data": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "flavorText": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "language": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "multiverseid": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "text": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "uuid": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "legalities": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "format": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "status": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "uuid": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "rulings": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "text": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "uuid": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "set_translations": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "language": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "setCode": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "translation": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "sets": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "baseSetSize": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "block": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "booster": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "code": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "isFoilOnly": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isForeignOnly": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isNonFoilOnly": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isOnlineOnly": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "isPartialPreview": {
+    "type": "INTEGER",
+    "role": "ENUM_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 1.0,
+     "values": 4.0
+    }
+   },
+   "keyruneCode": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "mcmId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "mcmIdExtras": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "mcmName": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "mtgoCode": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "parentCode": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "releaseDate": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "tcgplayerGroupId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "totalSetSize": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  }
+ },
+ "codebase_community": {
+  "badges": {
+   "Id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "UserId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Date": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "comments": {
+   "Id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "PostId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Score": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "Text": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "CreationDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "UserId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "UserDisplayName": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "postHistory": {
+   "Id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "PostHistoryTypeId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "PostId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "RevisionGUID": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "CreationDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "UserId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Text": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "Comment": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "UserDisplayName": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "postLinks": {
+   "Id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "CreationDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "PostId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "RelatedPostId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "LinkTypeId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   }
+  },
+  "posts": {
+   "Id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "PostTypeId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "AcceptedAnswerId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "CreaionDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "Score": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "ViewCount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "Body": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "OwnerUserId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "LasActivityDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "Title": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "Tags": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "AnswerCount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "CommentCount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "FavoriteCount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "LastEditorUserId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "LastEditDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "CommunityOwnedDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "ParentId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "ClosedDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "OwnerDisplayName": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "LastEditorDisplayName": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "tags": {
+   "Id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "TagName": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Count": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "ExcerptPostId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "WikiPostId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   }
+  },
+  "users": {
+   "Id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Reputation": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "CreationDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "DisplayName": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "LastAccessDate": {
+    "type": "DATETIME",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "WebsiteUrl": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "Location": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "AboutMe": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "Views": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "UpVotes": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "DownVotes": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "AccountId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Age": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "ProfileImageUrl": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "votes": {
+   "Id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "PostId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "VoteTypeId": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "CreationDate": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "UserId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "BountyAmount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  }
+ },
+ "debit_card_specializing": {
+  "customers": {
+   "CustomerID": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Segment": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Currency": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "gasstations": {
+   "GasStationID": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "ChainID": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Country": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Segment": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "products": {
+   "ProductID": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Description": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   }
+  },
+  "transactions_1k": {
+   "TransactionID": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "Time": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "CustomerID": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "CardID": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "GasStationID": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "ProductID": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Amount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "Price": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   }
+  },
+  "yearmonth": {
+   "CustomerID": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Date": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Consumption": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   }
+  }
+ },
+ "european_football_2": {
+  "Country": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "name": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "League": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "country_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "name": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "Match": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "country_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "league_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "season": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "stage": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "date": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "match_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_team_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_team_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_team_goal": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_team_goal": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X1": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X2": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X3": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X4": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X5": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X6": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X7": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X8": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X9": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X10": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_X11": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X1": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X2": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X3": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X4": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X5": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X6": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X7": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X8": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X9": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X10": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_X11": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y1": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y2": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y3": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y4": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y5": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y6": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y7": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y8": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y9": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y10": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_Y11": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y1": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y2": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y3": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y4": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y5": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y6": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y7": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y8": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y9": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y10": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "away_player_Y11": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "home_player_1": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_2": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_3": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_4": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_5": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_6": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_7": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_8": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_9": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_10": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "home_player_11": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_1": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_2": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_3": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_4": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_5": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_6": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_7": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_8": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_9": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_10": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "away_player_11": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "goal": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "shoton": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "shotoff": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "foulcommit": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "card": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "cross": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "corner": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "possession": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "B365H": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "B365D": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "B365A": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "BWH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "BWD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "BWA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "IWH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "IWD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "IWA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "LBH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "LBD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "LBA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "PSH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "PSD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "PSA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "WHH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "WHD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "WHA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "SJH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "SJD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "SJA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "VCH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "VCD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "VCA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "GBH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "GBD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "GBA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "BSH": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "BSD": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "BSA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   }
+  },
+  "Player": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "player_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "player_name": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "player_fifa_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "birthday": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "height": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "weight": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "Player_Attributes": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "player_fifa_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "player_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "date": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "overall_rating": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "potential": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "preferred_foot": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "attacking_work_rate": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "defensive_work_rate": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "crossing": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "finishing": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "heading_accuracy": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "short_passing": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "volleys": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "dribbling": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "curve": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "free_kick_accuracy": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "long_passing": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "ball_control": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "acceleration": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "sprint_speed": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "agility": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "reactions": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "balance": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "shot_power": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "jumping": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "stamina": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "strength": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "long_shots": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "aggression": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "interceptions": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "positioning": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "vision": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "penalties": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "marking": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "standing_tackle": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "sliding_tackle": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "gk_diving": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "gk_handling": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "gk_kicking": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "gk_positioning": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "gk_reflexes": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "Team": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "team_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "team_fifa_api_id": {
+    "type": "INTEGER",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "team_long_name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "team_short_name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "Team_Attributes": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "team_fifa_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "team_api_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "date": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "buildUpPlaySpeed": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "buildUpPlaySpeedClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "buildUpPlayDribbling": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "buildUpPlayDribblingClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "buildUpPlayPassing": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "buildUpPlayPassingClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "buildUpPlayPositioningClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "chanceCreationPassing": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "chanceCreationPassingClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "chanceCreationCrossing": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "chanceCreationCrossingClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "chanceCreationShooting": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "chanceCreationShootingClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "chanceCreationPositioningClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "defencePressure": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "defencePressureClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "defenceAggression": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "defenceAggressionClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "defenceTeamWidth": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "defenceTeamWidthClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "defenceDefenderLineClass": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  }
+ },
+ "financial": {
+  "account": {
+   "account_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "district_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "frequency": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "card": {
+   "card_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "disp_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "issued": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "client": {
+   "client_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "gender": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "birth_date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "district_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   }
+  },
+  "disp": {
+   "disp_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "client_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "account_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "district": {
+   "district_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "A2": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "A3": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "A4": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "A5": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "A6": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "A7": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "A8": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "A9": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "A10": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "A11": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "A12": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "A13": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "A14": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "A15": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "A16": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "loan": {
+   "loan_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "account_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "amount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "duration": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "payments": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "status": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "order": {
+   "order_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "account_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "bank_to": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "account_to": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "amount": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "k_symbol": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "trans": {
+   "trans_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "account_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "operation": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "amount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "balance": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "k_symbol": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "bank": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "account": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  }
+ },
+ "formula_1": {
+  "circuits": {
+   "circuitId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "circuitRef": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "location": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "country": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "lat": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "lng": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "alt": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "url": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "constructorResults": {
+   "constructorResultsId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "raceId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "constructorId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "points": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "status": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "constructorStandings": {
+   "constructorStandingsId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "raceId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "constructorId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "points": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "position": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "positionText": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "wins": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "constructors": {
+   "constructorId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "constructorRef": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "name": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "nationality": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "url": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "driverStandings": {
+   "driverStandingsId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "raceId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "driverId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "points": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "position": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "positionText": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "wins": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "drivers": {
+   "driverId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "driverRef": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "number": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "code": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "forename": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "surname": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "dob": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "nationality": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "url": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "lapTimes": {
+   "raceId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "driverId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "lap": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "position": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "time": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "milliseconds": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "pitStops": {
+   "raceId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "driverId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "stop": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "lap": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "time": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "duration": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "milliseconds": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "qualifying": {
+   "qualifyId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "raceId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "driverId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "constructorId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "number": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "position": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "q1": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "q2": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "q3": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "races": {
+   "raceId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "year": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "round": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "circuitId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "time": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "url": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "results": {
+   "resultId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "raceId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "driverId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "constructorId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "number": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "grid": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "position": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "positionText": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "positionOrder": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "points": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "laps": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "time": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "milliseconds": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "fastestLap": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "rank": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "fastestLapTime": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "fastestLapSpeed": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "statusId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   }
+  },
+  "seasons": {
+   "year": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "url": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "status": {
+   "statusId": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "status": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  }
+ },
+ "mimic_iv": {
+  "admissions": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "admittime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "dischtime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "admission_type": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "admission_location": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "discharge_location": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "insurance": {
+    "type": "VARCHAR(255)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "language": {
+    "type": "VARCHAR(10)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "marital_status": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "age": {
+    "type": "INT",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "chartevents": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "stay_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "itemid": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "charttime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "valuenum": {
+    "type": "DOUBLE PRECISION",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "valueuom": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "cost": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "event_type": {
+    "type": "VARCHAR(20)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "event_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "chargetime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "cost": {
+    "type": "DOUBLE PRECISION",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   }
+  },
+  "d_icd_diagnoses": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "icd_code": {
+    "type": "VARCHAR(10)",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "long_title": {
+    "type": "VARCHAR(255)",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   }
+  },
+  "d_icd_procedures": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "icd_code": {
+    "type": "VARCHAR(10)",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "long_title": {
+    "type": "VARCHAR(255)",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   }
+  },
+  "d_items": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "itemid": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "label": {
+    "type": "VARCHAR(200)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "abbreviation": {
+    "type": "VARCHAR(200)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "linksto": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "d_labitems": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "itemid": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "label": {
+    "type": "VARCHAR(200)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "diagnoses_icd": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "icd_code": {
+    "type": "VARCHAR(10)",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "charttime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "icustays": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "stay_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "first_careunit": {
+    "type": "VARCHAR(20)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "last_careunit": {
+    "type": "VARCHAR(20)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "intime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "outtime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "inputevents": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "stay_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "starttime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "itemid": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "totalamount": {
+    "type": "DOUBLE PRECISION",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "totalamountuom": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "labevents": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "itemid": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "charttime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "valuenum": {
+    "type": "DOUBLE PRECISION",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "valueuom": {
+    "type": "VARCHAR(20)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "microbiologyevents": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "charttime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "spec_type_desc": {
+    "type": "VARCHAR(100)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "test_name": {
+    "type": "VARCHAR(100)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "org_name": {
+    "type": "VARCHAR(100)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "outputevents": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "stay_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "charttime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "itemid": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "value": {
+    "type": "DOUBLE PRECISION",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "valueuom": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "patients": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "gender": {
+    "type": "VARCHAR(5)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "dob": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "dod": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "prescriptions": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "starttime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "stoptime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "drug": {
+    "type": "VARCHAR(255)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "dose_val_rx": {
+    "type": "VARCHAR(100)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "dose_unit_rx": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "route": {
+    "type": "VARCHAR(50)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "procedures_icd": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "icd_code": {
+    "type": "VARCHAR(10)",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "charttime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "transfers": {
+   "row_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "subject_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hadm_id": {
+    "type": "INT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "transfer_id": {
+    "type": "INT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "eventtype": {
+    "type": "VARCHAR(20)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "careunit": {
+    "type": "VARCHAR(20)",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "intime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "outtime": {
+    "type": "TIMESTAMP(0)",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   }
+  }
+ },
+ "student_club": {
+  "attendance": {
+   "link_to_event": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "link_to_member": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "budget": {
+   "budget_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "category": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "spent": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "remaining": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "amount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "event_status": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "link_to_event": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "event": {
+   "event_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "event_name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "event_date": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "notes": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "location": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "status": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "expense": {
+   "expense_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "expense_description": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "expense_date": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "cost": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "approved": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "link_to_member": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "link_to_budget": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "income": {
+   "income_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "date_received": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "amount": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "source": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "notes": {
+    "type": "TEXT",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "link_to_member": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "major": {
+   "major_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "major_name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "department": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "college": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "member": {
+   "member_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "first_name": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "last_name": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "email": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "position": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "t_shirt_size": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "phone": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "zip": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "link_to_major": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "zip_code": {
+   "zip_code": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "city": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "county": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "state": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "short_state": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  }
+ },
+ "superhero": {
+  "alignment": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "alignment": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "attribute": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "attribute_name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "colour": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "colour": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "gender": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "gender": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "hero_attribute": {
+   "hero_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "attribute_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "attribute_value": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "hero_power": {
+   "hero_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "power_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   }
+  },
+  "publisher": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "publisher_name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "race": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "race": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "superhero": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "superhero_name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "full_name": {
+    "type": "TEXT",
+    "role": "IDENT_OR_CONTACT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "gender_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "eye_colour_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "hair_colour_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "skin_colour_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "race_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "publisher_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "alignment_id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "height_cm": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "weight_kg": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "superpower": {
+   "id": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "power_name": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  }
+ },
+ "thrombosis_prediction": {
+  "Examination": {
+   "ID": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Examination Date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "aCL IgG": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "aCL IgM": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "ANA": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "ANA Pattern": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "aCL IgA": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "Diagnosis": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "KCT": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "RVVT": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "LAC": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Symptoms": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Thrombosis": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "Laboratory": {
+   "ID": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "Date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "GOT": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "GPT": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "LDH": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "ALP": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "TP": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "ALB": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "UA": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "UN": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "CRE": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "T-BIL": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "T-CHO": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "TG": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "CPK": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "GLU": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "WBC": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "RBC": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "HGB": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "HCT": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "PLT": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "PT": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "APTT": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "FG": {
+    "type": "REAL",
+    "role": "NUMERIC_REAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.0,
+     "bins": 2.0
+    }
+   },
+   "PIC": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "TAT": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "TAT2": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "U-PRO": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "IGG": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "IGA": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "IGM": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "CRP": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "RA": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "RF": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "C3": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "C4": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   },
+   "RNP": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "SM": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "SC170": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "SSA": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "SSB": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "CENTROMEA": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "DNA": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "DNA-II": {
+    "type": "INTEGER",
+    "role": "NUMERIC_INT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "bins": 2.0,
+     "values": 1.0
+    }
+   }
+  },
+  "Patient": {
+   "ID": {
+    "type": "INTEGER",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "bins": 0.5
+    }
+   },
+   "SEX": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Birthday": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "Description": {
+    "type": "DATE",
+    "role": "FREE_TEXT",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5,
+     "values": 0.25
+    }
+   },
+   "First Date": {
+    "type": "DATE",
+    "role": "TEMPORAL",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 1.0
+    }
+   },
+   "Admission": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   },
+   "Diagnosis": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  }
+ },
+ "toxicology": {
+  "atom": {
+   "atom_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "molecule_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "element": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "bond": {
+   "bond_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "molecule_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "bond_type": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  },
+  "connected": {
+   "atom_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "atom_id2": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "bond_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   }
+  },
+  "molecule": {
+   "molecule_id": {
+    "type": "TEXT",
+    "role": "KEY_OR_FK",
+    "weights": {
+     "null_count": 0.5,
+     "distinct_count": 0.5,
+     "patterns": 0.5
+    }
+   },
+   "label": {
+    "type": "TEXT",
+    "role": "CATEGORICAL_TEXT",
+    "weights": {
+     "null_count": 1.0,
+     "distinct_count": 1.5,
+     "patterns": 2.0,
+     "values": 6.0
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,1611 @@
+{
+  "schema_version": "pubcap-releases-v1",
+  "cap_formula": "200 + 20 * |T| + 30 * |C|",
+  "token_estimator": "re.compile(r'[A-Za-z_]+|\\d+|[^\\sA-Za-z0-9_]+|\\s+')",
+  "noiseless_ehrsql_sha256": "7128b33e38e27d524c26ce4ff9646a60b6b5d4f224365aff8af6b62937ff24b2",
+  "noiseless_bird_sha256": {
+    "california_schools": "230b73ab7b0f7a81050798421c035a151492108c4ab1f42bbac8eb1e9af1fda8",
+    "card_games": "7674f4ca13d0231a3b50e7d1bba5f1fcf518bbd6950060327d00d29f67e3aa89",
+    "codebase_community": "e2d6aace4c0508c5aa8a87238c9638463ec477556ec1054d19fadb084320f370",
+    "debit_card_specializing": "4aed2ae03af78725bc39a912865d66fb802a5391ae25c9a63af5bb78da625543",
+    "european_football_2": "ab68eb9f72fa4b80ac20ed5343936d38b7d203d48217e61a127d480ce6da85b2",
+    "financial": "3547c9d598f8abf74bd2babdddbff52e6b747fb9186ea90a348357aa3b4f754e",
+    "formula_1": "2226ade7f8bae8f4cc89a501054b7184188a76bc09e704bc973e18dab9f57a0a",
+    "student_club": "d4051294bc22f7901eb41fe50478e0a1e3f52f664d3e23112efa91c64d1669c0",
+    "superhero": "3cbe1b6eab7f77ce579beb350776f6ca8b87e29cbb9fca2dc323c80e8239dd72",
+    "thrombosis_prediction": "aa21dd7675fd20d8372f879a7026432a028522782960390fa6e48d5f0f8c5201",
+    "toxicology": "e9e7db920b83c95835be6ff30c46a122398273c3b66a1f0e55d49ced3d55cafc"
+  },
+  "dbs": {
+    "california_schools": {
+      "n_tables": 3,
+      "n_columns": 89,
+      "cap_pub_tokens": 2930
+    },
+    "card_games": {
+      "n_tables": 6,
+      "n_columns": 115,
+      "cap_pub_tokens": 3770
+    },
+    "codebase_community": {
+      "n_tables": 8,
+      "n_columns": 71,
+      "cap_pub_tokens": 2490
+    },
+    "debit_card_specializing": {
+      "n_tables": 5,
+      "n_columns": 21,
+      "cap_pub_tokens": 930
+    },
+    "european_football_2": {
+      "n_tables": 7,
+      "n_columns": 199,
+      "cap_pub_tokens": 6310
+    },
+    "financial": {
+      "n_tables": 8,
+      "n_columns": 55,
+      "cap_pub_tokens": 2010
+    },
+    "formula_1": {
+      "n_tables": 13,
+      "n_columns": 94,
+      "cap_pub_tokens": 3280
+    },
+    "student_club": {
+      "n_tables": 8,
+      "n_columns": 48,
+      "cap_pub_tokens": 1800
+    },
+    "superhero": {
+      "n_tables": 10,
+      "n_columns": 31,
+      "cap_pub_tokens": 1330
+    },
+    "thrombosis_prediction": {
+      "n_tables": 3,
+      "n_columns": 64,
+      "cap_pub_tokens": 2180
+    },
+    "toxicology": {
+      "n_tables": 4,
+      "n_columns": 11,
+      "cap_pub_tokens": 610
+    }
+  },
+  "arms": {
+    "pubcap_silhouette": {
+      "release_01": {
+        "california_schools": {
+          "profile_path": "pubcap_silhouette/release_01/california_schools.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/california_schools.dpmeta.json",
+          "sha256": "018210942a70534fa6fbde5b92e26090f7fd4be31a6487ff775e389162bd8af4",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2736,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_silhouette/release_01/card_games.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/card_games.dpmeta.json",
+          "sha256": "9736f2b3eadd0daf8a229516feed9e8a9b3d8a1568e18e8fd919ecb806fd6aca",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3381,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_silhouette/release_01/codebase_community.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/codebase_community.dpmeta.json",
+          "sha256": "645fd90e0b60c87cc07a081969625937702d87ab1e39657797d74a9b6446414d",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2112,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_silhouette/release_01/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/debit_card_specializing.dpmeta.json",
+          "sha256": "3ed7b834c4e694510566b4eea737a56a3f35cbb83c7f5fcd34082065258c852d",
+          "cap_tokens": 930,
+          "actual_block_tokens": 704,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_silhouette/release_01/european_football_2.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/european_football_2.dpmeta.json",
+          "sha256": "ae7fac17823a1a91959770041239877257dbaafe703ce682f62de66af89146de",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6027,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_silhouette/release_01/financial.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/financial.dpmeta.json",
+          "sha256": "30811c3f47ee0fc9c93ebf997c2eb97cca4f9f27bac313965b9494bc71d626d2",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1540,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_silhouette/release_01/formula_1.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/formula_1.dpmeta.json",
+          "sha256": "7b54d1a08485f4ad460834b2fb1d5dc020ef571c2d791a7dd6cd767fa69e8fc8",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2952,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_silhouette/release_01/student_club.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/student_club.dpmeta.json",
+          "sha256": "b6dd6c179664fbc93fe9dae70ca7e9c8626d2383787c0ad0d58e5e7e7f1d9776",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1044,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_silhouette/release_01/superhero.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/superhero.dpmeta.json",
+          "sha256": "0e99d554f725223ff3ae2f2958480d0c552d4b47b7fac1a51014fd9f39e4801d",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 868,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_silhouette/release_01/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/thrombosis_prediction.dpmeta.json",
+          "sha256": "59e4744c7d62410146f2a1c595570a3870b39f3dfd5214114821eab47b1e7313",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1588,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_silhouette/release_01/toxicology.json",
+          "dpmeta_path": "pubcap_silhouette/release_01/toxicology.dpmeta.json",
+          "sha256": "3d3ac2d79c95b5258baaaea7a4820cf635947ade5dd9894c945477e037f9879c",
+          "cap_tokens": 610,
+          "actual_block_tokens": 428,
+          "truncated": false
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "profile_path": "pubcap_silhouette/release_02/california_schools.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/california_schools.dpmeta.json",
+          "sha256": "5cd3782bdb363e97b6d493c032c7c54a869c69a288211b13eae37c7ade5581c4",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2734,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_silhouette/release_02/card_games.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/card_games.dpmeta.json",
+          "sha256": "5ff683fc31c6ea33fde5f1922263aba23284af423a25a39de3c924dfc54ee982",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3437,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_silhouette/release_02/codebase_community.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/codebase_community.dpmeta.json",
+          "sha256": "049745c6444ffb0e5be158b623ba1bec3e014730be4b431142bc0b2a931df33b",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2132,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_silhouette/release_02/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/debit_card_specializing.dpmeta.json",
+          "sha256": "a1c89b167879c890eb7e2311aae5f663b8bd51cbf7c778c114eddd98a8e26351",
+          "cap_tokens": 930,
+          "actual_block_tokens": 708,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_silhouette/release_02/european_football_2.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/european_football_2.dpmeta.json",
+          "sha256": "a8d5cbeb8cc80dc8bd3266f0bf68d9903407237fe86e5e9aabb0f16819dbc34f",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6007,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_silhouette/release_02/financial.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/financial.dpmeta.json",
+          "sha256": "e85b930209e8ff9434c9d28ee89f1c91e96562eebb5bf7e5ec75f1107151422a",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1544,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_silhouette/release_02/formula_1.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/formula_1.dpmeta.json",
+          "sha256": "bec27abfe90b7706bd6877880cc13bbe816a4c403364b54ee9398ed6bd3fde51",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2930,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_silhouette/release_02/student_club.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/student_club.dpmeta.json",
+          "sha256": "f2cb9e069517a58df1f6ee5270bb04cd5e4f60643f70e47e567ff6de9d6147fd",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1075,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_silhouette/release_02/superhero.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/superhero.dpmeta.json",
+          "sha256": "83bb872f68426a9f92a9e3ef969cc2a42cb30ac3a1030cd17a79254ab2762775",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 868,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_silhouette/release_02/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/thrombosis_prediction.dpmeta.json",
+          "sha256": "555d720c3ac09f6abee515027e17f99d2951a72b07aa25521b9904bc302a4573",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1584,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_silhouette/release_02/toxicology.json",
+          "dpmeta_path": "pubcap_silhouette/release_02/toxicology.dpmeta.json",
+          "sha256": "dbe287475b0d0c6c076ee8856796993417f2625496bc5967da69e34be0c7a25b",
+          "cap_tokens": 610,
+          "actual_block_tokens": 433,
+          "truncated": false
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "profile_path": "pubcap_silhouette/release_03/california_schools.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/california_schools.dpmeta.json",
+          "sha256": "1b718f9a127095bc48266f0155b86791035f8447663d7c0b11ad9d1b72227ed5",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2770,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_silhouette/release_03/card_games.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/card_games.dpmeta.json",
+          "sha256": "3ddc1d1824f29547224e963ee4f94ceb18294f8433513c1616c7ffea296ac0e9",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3406,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_silhouette/release_03/codebase_community.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/codebase_community.dpmeta.json",
+          "sha256": "20d3187e3eb217423cd06df0ad1087f4b4c68735a00cc91b0304652aef887191",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2120,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_silhouette/release_03/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/debit_card_specializing.dpmeta.json",
+          "sha256": "974129f5f4c85571768cc171c4ddfb2f56f4f3cb460369247f7062dd824a879e",
+          "cap_tokens": 930,
+          "actual_block_tokens": 706,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_silhouette/release_03/european_football_2.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/european_football_2.dpmeta.json",
+          "sha256": "6b82dda1e23af08935866d05e5672859b19920715a0989dd9bf3bc48ab1373e2",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6045,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_silhouette/release_03/financial.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/financial.dpmeta.json",
+          "sha256": "dc007cf86be6048642372d276e73062296eea181266ed48915602bc15d9d1b2d",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1542,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_silhouette/release_03/formula_1.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/formula_1.dpmeta.json",
+          "sha256": "a02931a6f625867f34dacaa6cd4e17eaa1698d08c983dce8bf1f5d216c926dd0",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2926,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_silhouette/release_03/student_club.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/student_club.dpmeta.json",
+          "sha256": "f75e3cb97bda2ab074d1deb8b875045f9309cc825830ab4a09de28ca9268a661",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1070,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_silhouette/release_03/superhero.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/superhero.dpmeta.json",
+          "sha256": "678b05029a95a42f285c2c866aa0b1cb2bdd41fb3252ae85a4977dce9f6ed64c",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 868,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_silhouette/release_03/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/thrombosis_prediction.dpmeta.json",
+          "sha256": "0f9127db78b55ee75edeae938a41aa1467e2c3618614de90216a46b8ec7375cb",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1604,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_silhouette/release_03/toxicology.json",
+          "dpmeta_path": "pubcap_silhouette/release_03/toxicology.dpmeta.json",
+          "sha256": "029485247a49c1269d2be33d75930e9c6f57e602b8d3027b4a651ec3827ef1de",
+          "cap_tokens": 610,
+          "actual_block_tokens": 426,
+          "truncated": false
+        }
+      }
+    },
+    "pubcap_flatw": {
+      "release_01": {
+        "california_schools": {
+          "profile_path": "pubcap_flatw/release_01/california_schools.json",
+          "dpmeta_path": "pubcap_flatw/release_01/california_schools.dpmeta.json",
+          "sha256": "8a989bee2f6bb88958baceb430751d8cbb378ce9955b7757fd4a45266dfc2586",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2760,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_flatw/release_01/card_games.json",
+          "dpmeta_path": "pubcap_flatw/release_01/card_games.dpmeta.json",
+          "sha256": "25b2c3aa2cf03c69ec035b3ed1f34bedc25fafd8bd3420b58de57749b5794779",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3352,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_flatw/release_01/codebase_community.json",
+          "dpmeta_path": "pubcap_flatw/release_01/codebase_community.dpmeta.json",
+          "sha256": "ed99dc8bbe54933738f5caba9a9f0fbfa59339b4f983a39910ab3ffe5704d266",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2128,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_flatw/release_01/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_flatw/release_01/debit_card_specializing.dpmeta.json",
+          "sha256": "668b19f30b40c6290e54a68ca65c0c1ed68779e93c921c0c591a5542abda33b1",
+          "cap_tokens": 930,
+          "actual_block_tokens": 708,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_flatw/release_01/european_football_2.json",
+          "dpmeta_path": "pubcap_flatw/release_01/european_football_2.dpmeta.json",
+          "sha256": "090e13b1e3ada6e36cb436267df4022786789be4e9899b73748834d0dcd22c52",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6033,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_flatw/release_01/financial.json",
+          "dpmeta_path": "pubcap_flatw/release_01/financial.dpmeta.json",
+          "sha256": "de7dd79cf0b9826627247bdfcb70ff57b33579c3a3f6a462a00ebf866caaf044",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1542,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_flatw/release_01/formula_1.json",
+          "dpmeta_path": "pubcap_flatw/release_01/formula_1.dpmeta.json",
+          "sha256": "4a36667fbfc6f033de360d83095852fa889541a30f090487e7c3ef8c29465813",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2942,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_flatw/release_01/student_club.json",
+          "dpmeta_path": "pubcap_flatw/release_01/student_club.dpmeta.json",
+          "sha256": "b133b3a076ed943664890fab839eb4c077d515746826227ef55801eb540e8b41",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1052,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_flatw/release_01/superhero.json",
+          "dpmeta_path": "pubcap_flatw/release_01/superhero.dpmeta.json",
+          "sha256": "0e4c34a2ba512005169ca72084757d8a15dab0bcd5e1bbac9bb04385b1fb5454",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 890,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_flatw/release_01/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_flatw/release_01/thrombosis_prediction.dpmeta.json",
+          "sha256": "205170e57cc84c3876c812d9cc075d6d9c014f4f46ba7b16bbbf99522d2f0295",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1570,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_flatw/release_01/toxicology.json",
+          "dpmeta_path": "pubcap_flatw/release_01/toxicology.dpmeta.json",
+          "sha256": "8849680b3b18c6e29e40d72fafa71db4a31220f7e985402d6d21711a0d8bd422",
+          "cap_tokens": 610,
+          "actual_block_tokens": 426,
+          "truncated": false
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "profile_path": "pubcap_flatw/release_02/california_schools.json",
+          "dpmeta_path": "pubcap_flatw/release_02/california_schools.dpmeta.json",
+          "sha256": "01cfeb5308da8a725991548d5d1905c7f007b3a5f4e3cd5db372c523a30d6bae",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2738,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_flatw/release_02/card_games.json",
+          "dpmeta_path": "pubcap_flatw/release_02/card_games.dpmeta.json",
+          "sha256": "b7ce3e3035320b54ae9170709ab81450916c3c7699d949d8f18dcf199a2a88fd",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3305,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_flatw/release_02/codebase_community.json",
+          "dpmeta_path": "pubcap_flatw/release_02/codebase_community.dpmeta.json",
+          "sha256": "26e56cf6496c6e5a81055371e50959e665cf67a789ca375610131b15256ebf0e",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2106,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_flatw/release_02/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_flatw/release_02/debit_card_specializing.dpmeta.json",
+          "sha256": "0b2b5584403614afb03e21a626cfeb23657e96ecf971e2ec0c6fa6e5324d32dd",
+          "cap_tokens": 930,
+          "actual_block_tokens": 706,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_flatw/release_02/european_football_2.json",
+          "dpmeta_path": "pubcap_flatw/release_02/european_football_2.dpmeta.json",
+          "sha256": "835f8555d65d594e6621b1988707e58d549cd2b670c00bc31847b1e70053b7f3",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6053,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_flatw/release_02/financial.json",
+          "dpmeta_path": "pubcap_flatw/release_02/financial.dpmeta.json",
+          "sha256": "2b624260934759ecdf38c51ca86b4515a28afca2a46f2ec24ac37555600ea288",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1546,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_flatw/release_02/formula_1.json",
+          "dpmeta_path": "pubcap_flatw/release_02/formula_1.dpmeta.json",
+          "sha256": "10aeeb380329aca94d848e5c3aeeb1e9365ad071f28ba1a3e368343a414e4ff7",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2930,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_flatw/release_02/student_club.json",
+          "dpmeta_path": "pubcap_flatw/release_02/student_club.dpmeta.json",
+          "sha256": "ba639e60d5f41cbce67752415301ea94196934f13b29c087f28f27a2cf3e928e",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1020,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_flatw/release_02/superhero.json",
+          "dpmeta_path": "pubcap_flatw/release_02/superhero.dpmeta.json",
+          "sha256": "286ddd29c02ca9b1c9a184d3fcab2d504359274e6142cb71a2ed150ee779e238",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 876,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_flatw/release_02/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_flatw/release_02/thrombosis_prediction.dpmeta.json",
+          "sha256": "9e392748205ef66bcfc3063aaafd9e1b9c194dd2970d8426091d18199a3f217e",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1578,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_flatw/release_02/toxicology.json",
+          "dpmeta_path": "pubcap_flatw/release_02/toxicology.dpmeta.json",
+          "sha256": "9565dd6f0948c4b8a77b0e850d994e59e601c9669777737ad8d0959418501cf0",
+          "cap_tokens": 610,
+          "actual_block_tokens": 429,
+          "truncated": false
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "profile_path": "pubcap_flatw/release_03/california_schools.json",
+          "dpmeta_path": "pubcap_flatw/release_03/california_schools.dpmeta.json",
+          "sha256": "24893a6f6cc7f385b9b397abf410674000db77a08cdc07d78336638f62b059e5",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2705,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_flatw/release_03/card_games.json",
+          "dpmeta_path": "pubcap_flatw/release_03/card_games.dpmeta.json",
+          "sha256": "0252dffd02d3c39a3d51282c9875799e5043a47b3665c9f9764e4273c2de13ef",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3352,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_flatw/release_03/codebase_community.json",
+          "dpmeta_path": "pubcap_flatw/release_03/codebase_community.dpmeta.json",
+          "sha256": "b452f8526494f15be28781d199c7b5a4a34cbef4a0701f6da9e42017a9768c76",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2128,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_flatw/release_03/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_flatw/release_03/debit_card_specializing.dpmeta.json",
+          "sha256": "61f3a1815c44cae9a2e5a46ef3944eaf66898a874046cd0988a3ecf70e90cf41",
+          "cap_tokens": 930,
+          "actual_block_tokens": 706,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_flatw/release_03/european_football_2.json",
+          "dpmeta_path": "pubcap_flatw/release_03/european_football_2.dpmeta.json",
+          "sha256": "de5c901d9c19f81816479aba3a7135c5a7fac7e17d253bfd6f67e88fdc94baaa",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6019,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_flatw/release_03/financial.json",
+          "dpmeta_path": "pubcap_flatw/release_03/financial.dpmeta.json",
+          "sha256": "8a42bfd73571855187b27586a4fb9303aaef82ea11b28b6b625c5f9afe407633",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1530,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_flatw/release_03/formula_1.json",
+          "dpmeta_path": "pubcap_flatw/release_03/formula_1.dpmeta.json",
+          "sha256": "068fac44ead8706032b212151cdf2b4f874e033e08e3873eea16a8bb10837bfa",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2944,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_flatw/release_03/student_club.json",
+          "dpmeta_path": "pubcap_flatw/release_03/student_club.dpmeta.json",
+          "sha256": "7157b8bdb029df5f1f28893ce6fc187c8e39fa5f8cc9d5a3d9610a70882ec803",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1057,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_flatw/release_03/superhero.json",
+          "dpmeta_path": "pubcap_flatw/release_03/superhero.dpmeta.json",
+          "sha256": "c939aa75151e71f467db5201e661b1e38ed4124f009b3468e197665a13d1b9de",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 872,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_flatw/release_03/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_flatw/release_03/thrombosis_prediction.dpmeta.json",
+          "sha256": "1129837220d5c85efec93370542e30e02cfaa41380a3f485414ae8a7d9f754c6",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1566,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_flatw/release_03/toxicology.json",
+          "dpmeta_path": "pubcap_flatw/release_03/toxicology.dpmeta.json",
+          "sha256": "9565dd6f0948c4b8a77b0e850d994e59e601c9669777737ad8d0959418501cf0",
+          "cap_tokens": 610,
+          "actual_block_tokens": 429,
+          "truncated": false
+        }
+      }
+    },
+    "pubcap_omega1_eqdelta": {
+      "release_01": {
+        "california_schools": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/california_schools.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/california_schools.dpmeta.json",
+          "sha256": "94a1269800f3ba6a461abd2a074649f9547a3445e2926d9aa53333fb24327395",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2814,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/card_games.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/card_games.dpmeta.json",
+          "sha256": "d03ee9556d4a3c0312e4e5bf4349ee1a970d8b23bb08e29eefca13d6350ecd83",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3441,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/codebase_community.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/codebase_community.dpmeta.json",
+          "sha256": "a86ffd19ffd0ae493470994014a0bda061da513c94a6980fbdfefa7f761b0993",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2120,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/debit_card_specializing.dpmeta.json",
+          "sha256": "c0fcc43416199eb45a9e52e5a321dfb7e2535cc42292fad1d3d505ce460e8cff",
+          "cap_tokens": 930,
+          "actual_block_tokens": 706,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/european_football_2.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/european_football_2.dpmeta.json",
+          "sha256": "80d87523e167d2f6933a9edeac5c78b4798ad15b23987fa156283973acdb00c3",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6089,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/financial.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/financial.dpmeta.json",
+          "sha256": "8db415fb0b0d57bb07d17127b6e52eb3befbb5d83682f55b9a1388ed0e0bf4f2",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1532,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/formula_1.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/formula_1.dpmeta.json",
+          "sha256": "8ef58b95c0f29cc8e4e9f44eb3c2ae40e83e788c31c639f45aaa5bbda81522e0",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2947,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/student_club.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/student_club.dpmeta.json",
+          "sha256": "8241dfae90800948fc6147fbb430fb711edc16abe2c36258ea7c75e18219908d",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1052,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/superhero.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/superhero.dpmeta.json",
+          "sha256": "5f6c0c98dad54b78a799c421e3c3597331a9a8eefec4cab901f56aa6cf188f19",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 884,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/thrombosis_prediction.dpmeta.json",
+          "sha256": "fea9c8c2d3d83d9cd5f7459e63cb56c59f08422f36d5fb08ca7e2b470483112a",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1604,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_omega1_eqdelta/release_01/toxicology.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_01/toxicology.dpmeta.json",
+          "sha256": "59ba7f21de2996e42be236b7ef81323ccb62911c79db8b59a755b414835a2864",
+          "cap_tokens": 610,
+          "actual_block_tokens": 431,
+          "truncated": false
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/california_schools.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/california_schools.dpmeta.json",
+          "sha256": "b5d9f7891db9b4aac61a0501733b01c3819e9736c6a826e294b30ead0e1fe493",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2724,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/card_games.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/card_games.dpmeta.json",
+          "sha256": "cc84e369bb7c9286f372c0787144c8659f4b0afd36486833d005cb4846c7d183",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3415,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/codebase_community.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/codebase_community.dpmeta.json",
+          "sha256": "96cc480f175625a092ca2cf46bb97ed4d0f75f3fcde41af0c5d2d67c99343cdf",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2140,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/debit_card_specializing.dpmeta.json",
+          "sha256": "16877952d9d4987dcbaa46aed3f46aabb77d7b5fcbace0ec9b0c2e1811b57d09",
+          "cap_tokens": 930,
+          "actual_block_tokens": 706,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/european_football_2.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/european_football_2.dpmeta.json",
+          "sha256": "ed6b6cfdf31c9ec2c3147b6714a1f3da7ddd617b78765bb62d5f550bd84bf3f6",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6053,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/financial.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/financial.dpmeta.json",
+          "sha256": "f9a220e52bd2ccf63917c028c43d8057599e2c5e2c323b19d8ce5fb474bfcddd",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1552,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/formula_1.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/formula_1.dpmeta.json",
+          "sha256": "3f0c9d2567515822335e7d6486b1c00e848d9e3fe4ff24b12e68cd3b389b4ca3",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2958,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/student_club.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/student_club.dpmeta.json",
+          "sha256": "c5812999b02df2a8365d7f50b0396f7946ae57ded97c3d75365b684eaca94f74",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1071,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/superhero.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/superhero.dpmeta.json",
+          "sha256": "90c6da7a2a4ccffb65c15bcde08a278134b3307f099e68673c6e3b1b0ec628e3",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 882,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/thrombosis_prediction.dpmeta.json",
+          "sha256": "dabbe756cc84dba1b5e6c4e5c11a64ea9b91e0fe399ccada11be2d4fa2ff18ed",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1580,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_omega1_eqdelta/release_02/toxicology.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_02/toxicology.dpmeta.json",
+          "sha256": "f6caca76a946431b2172bbbdb2a95b89e5cb63450aec5cba5bd016a57e8e4aa8",
+          "cap_tokens": 610,
+          "actual_block_tokens": 431,
+          "truncated": false
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/california_schools.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/california_schools.dpmeta.json",
+          "sha256": "baf4f225aba60ebf05a075e2213c7f6ce4e5c073aed1ae8a0d1b409ef2f7fda8",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2712,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/card_games.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/card_games.dpmeta.json",
+          "sha256": "926256123d3479d22fdbb42b510f3736e19eae50ec99dc2d43534a73c56db24e",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3353,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/codebase_community.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/codebase_community.dpmeta.json",
+          "sha256": "3e0013dabba5b3b8fe4be00176a8ef61264ea21a3fc08ee05870720b2eb635e4",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2148,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/debit_card_specializing.dpmeta.json",
+          "sha256": "347cdd9ee07846afe042709ac9f075d473e9da120bf9903264d3ed7d28772713",
+          "cap_tokens": 930,
+          "actual_block_tokens": 706,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/european_football_2.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/european_football_2.dpmeta.json",
+          "sha256": "f7df136eedba075a998342d4ee752483b42e3ed49e43ab305dc8644e14459538",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6053,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/financial.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/financial.dpmeta.json",
+          "sha256": "8294879ec0e17a1f687471cb8ca60264122091a575babeab8913c8a5ec910779",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1544,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/formula_1.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/formula_1.dpmeta.json",
+          "sha256": "fd1b1ebbc22c638f4d35e35f527741bf7421eaf2b6fbf6acc5753a28c23b1e44",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2962,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/student_club.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/student_club.dpmeta.json",
+          "sha256": "0c4bb1077ed9548f8f5973bd004f4b6c2f74ebdb5e550fea24098d80774d12f8",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1057,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/superhero.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/superhero.dpmeta.json",
+          "sha256": "8630137021381d60761b09e121a5ccf0897a86c83416aee1965313d091c8a448",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 902,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/thrombosis_prediction.dpmeta.json",
+          "sha256": "c3a7dcc7f45b6492120802356f52a86a875f04042c5d1d3a7dddc771254395a4",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1576,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_omega1_eqdelta/release_03/toxicology.json",
+          "dpmeta_path": "pubcap_omega1_eqdelta/release_03/toxicology.dpmeta.json",
+          "sha256": "2d8029765a494559a1cbe56485594b2cedb72eff42db2ab5f32d3d9ff39afabd",
+          "cap_tokens": 610,
+          "actual_block_tokens": 431,
+          "truncated": false
+        }
+      }
+    },
+    "pubcap_unpruned": {
+      "release_01": {
+        "california_schools": {
+          "profile_path": "pubcap_unpruned/release_01/california_schools.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/california_schools.dpmeta.json",
+          "sha256": "6a932b6cd018f40a7d9cd820a00296a77f8fd0e8966076bf76b74ba0e3fdbc84",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2710,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_unpruned/release_01/card_games.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/card_games.dpmeta.json",
+          "sha256": "91473ccf51396f4f65296b06a046ef64ce746ab61312ac82846fc9a4e6f63dc5",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3478,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_unpruned/release_01/codebase_community.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/codebase_community.dpmeta.json",
+          "sha256": "68ec90ddb62f53444e08849615ceced97fe45f4f31221041a822406a0883042e",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2152,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_unpruned/release_01/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/debit_card_specializing.dpmeta.json",
+          "sha256": "ea58127ed76ca04378821786d0514365145dbd4371a880035a109f427e65c6be",
+          "cap_tokens": 930,
+          "actual_block_tokens": 714,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_unpruned/release_01/european_football_2.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/european_football_2.dpmeta.json",
+          "sha256": "fd87f009be065a41c2ff538f86a6da046e23067f13c3cf428b85dd9ac9b9fb43",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6071,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_unpruned/release_01/financial.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/financial.dpmeta.json",
+          "sha256": "efcbbe5d5c388f31da21bfc3e1cfa89d5f4633319e174c1dc4adde0933859793",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1542,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_unpruned/release_01/formula_1.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/formula_1.dpmeta.json",
+          "sha256": "52963d2208d2cc3add83b71d18f3ee697e35c15b0e282a352675eca7336b797e",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2982,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_unpruned/release_01/student_club.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/student_club.dpmeta.json",
+          "sha256": "7619d0ab0d31d78ee575ca65339a3b0076c12f2682cc49aebbd95ff7037f5ba3",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1207,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_unpruned/release_01/superhero.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/superhero.dpmeta.json",
+          "sha256": "ace9f241ac54b0f0c9e18efad0acffaf1f2333c1a2ef7ba49e6539d78d096708",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 910,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_unpruned/release_01/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/thrombosis_prediction.dpmeta.json",
+          "sha256": "c330f70fb69e970804f1d63750a3041756ec9c6ac5dad023cedb37771350f4ec",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1582,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_unpruned/release_01/toxicology.json",
+          "dpmeta_path": "pubcap_unpruned/release_01/toxicology.dpmeta.json",
+          "sha256": "65cc34cb9174dcba2ab62cb2a697a908d0d7d9cad31ce975b253c75ae1862957",
+          "cap_tokens": 610,
+          "actual_block_tokens": 419,
+          "truncated": false
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "profile_path": "pubcap_unpruned/release_02/california_schools.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/california_schools.dpmeta.json",
+          "sha256": "74673820aff37a7a53f271cc6f5edbc80346521ec9a0f83a5def7f9b29af5a88",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2766,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_unpruned/release_02/card_games.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/card_games.dpmeta.json",
+          "sha256": "bae4902ef876cbbdd7e7c8b2b83a5d6d4a30964407f91ef982a445921c272b98",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3442,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_unpruned/release_02/codebase_community.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/codebase_community.dpmeta.json",
+          "sha256": "0a35479a4f3e48ec61a8f0e4c1ae7085d2f184e5cdd6dfcac11ebbeca3fbf540",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2170,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_unpruned/release_02/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/debit_card_specializing.dpmeta.json",
+          "sha256": "401e9919a097575983a77375b6fb199d479c0a46263ff696101c858f89772f65",
+          "cap_tokens": 930,
+          "actual_block_tokens": 716,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_unpruned/release_02/european_football_2.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/european_football_2.dpmeta.json",
+          "sha256": "ceba5ccf6d1597721843c6db200d1fcb7d45f5bacb92b98f9ca793c97666c64d",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6083,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_unpruned/release_02/financial.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/financial.dpmeta.json",
+          "sha256": "884492f527fb4360e79e74f36ccd1af62c706f2aa08b75ec11b0781e71a3554d",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1532,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_unpruned/release_02/formula_1.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/formula_1.dpmeta.json",
+          "sha256": "da3c74fbfd8d6d6540b0836a6118fc2597b14fac65765f0bdd5ca90c010ea06c",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2958,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_unpruned/release_02/student_club.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/student_club.dpmeta.json",
+          "sha256": "1d7bea7f8b81197f002f3c9c1fcecceb7e3bb0eb0dc270059ecbde97c228d2eb",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1209,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_unpruned/release_02/superhero.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/superhero.dpmeta.json",
+          "sha256": "de639174659c98983eba1ecd96993e30174e092e8b11460b0d860aad2ccda11c",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 906,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_unpruned/release_02/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/thrombosis_prediction.dpmeta.json",
+          "sha256": "9b45ff9cc5d75c1f9314037ab268e82a3c00d9d38a7c4eccb02bdcaf53bd4fe1",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1612,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_unpruned/release_02/toxicology.json",
+          "dpmeta_path": "pubcap_unpruned/release_02/toxicology.dpmeta.json",
+          "sha256": "9ca03d7bf731e6946e77a30ee2a22c06ab6f34b3e03f6e511bcb3e3faef63e6f",
+          "cap_tokens": 610,
+          "actual_block_tokens": 428,
+          "truncated": false
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "profile_path": "pubcap_unpruned/release_03/california_schools.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/california_schools.dpmeta.json",
+          "sha256": "78703cb4788d730a0db7c3ddceea7ca62ebe3b267dc2cd2eb45c3f9d292ecff8",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2730,
+          "truncated": false
+        },
+        "card_games": {
+          "profile_path": "pubcap_unpruned/release_03/card_games.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/card_games.dpmeta.json",
+          "sha256": "9f3473298f58d129aea9c20f29b0cba8bcc87c3ab0b4f842ad0a871f86f0d5e3",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3303,
+          "truncated": false
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_unpruned/release_03/codebase_community.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/codebase_community.dpmeta.json",
+          "sha256": "91e4f353ff92bb4b8ca75fd1a5c0309e5e0f9844980c66497d0d05e8dc3a845a",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2166,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_unpruned/release_03/debit_card_specializing.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/debit_card_specializing.dpmeta.json",
+          "sha256": "ee157ff83640093c9633cec52b3446d1f812b0072d84d43fd3da274a88ace029",
+          "cap_tokens": 930,
+          "actual_block_tokens": 714,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_unpruned/release_03/european_football_2.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/european_football_2.dpmeta.json",
+          "sha256": "0ce54eee1fb13ef343e97e2428a072be6456171bede8854940c72a005af762a9",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6033,
+          "truncated": false
+        },
+        "financial": {
+          "profile_path": "pubcap_unpruned/release_03/financial.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/financial.dpmeta.json",
+          "sha256": "924cc13ab998d33fc22b58d90e1b154316673f83bb9dceb31d062850ac5b02da",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1540,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_unpruned/release_03/formula_1.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/formula_1.dpmeta.json",
+          "sha256": "2d96fb5b624c916ee9143adc8c9c6968a216db7b6e47ae8c4ab7ff6cbf4eb26f",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2952,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_unpruned/release_03/student_club.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/student_club.dpmeta.json",
+          "sha256": "38f57947ce53e64703b58341202c1e2b535a79e11256e9fc39960e81bdb4456c",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1210,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_unpruned/release_03/superhero.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/superhero.dpmeta.json",
+          "sha256": "84388847dbd5d9a49891ea31d97f93df31c02be1781b7f26d0b1d77c65c6a82f",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 904,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_unpruned/release_03/thrombosis_prediction.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/thrombosis_prediction.dpmeta.json",
+          "sha256": "3898dc99c836c5317ad517dcdd6abaac42f0e75a9966d4c7f7f7c02e0f18549e",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 1584,
+          "truncated": false
+        },
+        "toxicology": {
+          "profile_path": "pubcap_unpruned/release_03/toxicology.json",
+          "dpmeta_path": "pubcap_unpruned/release_03/toxicology.dpmeta.json",
+          "sha256": "751da981132d33c59378b4295316173d054f2fe283030e46521abbb75752c60c",
+          "cap_tokens": 610,
+          "actual_block_tokens": 428,
+          "truncated": false
+        }
+      }
+    },
+    "pubcap_ind8_profile": {
+      "release_01": {
+        "california_schools": {
+          "profile_path": "pubcap_ind8_profile/release_01/california_schools.json",
+          "sha256": "ebd819580baafced3d216b8f77c74d4a492792e8781a7d8d488ff43bf159e223",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2930,
+          "truncated": true
+        },
+        "card_games": {
+          "profile_path": "pubcap_ind8_profile/release_01/card_games.json",
+          "sha256": "48deb8200b974cdf1dee0561aa5c102befff5ad3e8b357ec927dca9da412ea3d",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3742,
+          "truncated": true
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_ind8_profile/release_01/codebase_community.json",
+          "sha256": "05bc10cc1bddc84f360dad913dab6b713c939c8d2174b2be5f06e6d557ac749a",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2481,
+          "truncated": false
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_ind8_profile/release_01/debit_card_specializing.json",
+          "sha256": "60c3370dfca76a33a537062acfa2176d5407a2d718d74a3ec46ef8e23a88ba6c",
+          "cap_tokens": 930,
+          "actual_block_tokens": 720,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_ind8_profile/release_01/european_football_2.json",
+          "sha256": "ebe06d4cb97e9cfb948f5418478f5ad6220ff079b95b50f9a42df6850a677233",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6310,
+          "truncated": true
+        },
+        "financial": {
+          "profile_path": "pubcap_ind8_profile/release_01/financial.json",
+          "sha256": "8f8a157b428c40091dd0237225b3ee1ab2b11c88a4da1b5afd291ad5d4c825ca",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1818,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_ind8_profile/release_01/formula_1.json",
+          "sha256": "133ad5c2218be162ec96e4555920f30604537d57ffc707aae365d72cdaf58901",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2916,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_ind8_profile/release_01/student_club.json",
+          "sha256": "95fea8a58db435405506d6861ebbf51ba40287d3e420a3684793776221a51da0",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1129,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_ind8_profile/release_01/superhero.json",
+          "sha256": "ebd0e492f0d6ed0545d1c6da9e2a1a9777d71abb5066ff254e15c4c4f0562237",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 926,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_ind8_profile/release_01/thrombosis_prediction.json",
+          "sha256": "8dd444af05f10bfbe16e6fc39d90f9c846e9f5ef27a05ce0d359e01b41aa907d",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 2179,
+          "truncated": true
+        },
+        "toxicology": {
+          "profile_path": "pubcap_ind8_profile/release_01/toxicology.json",
+          "sha256": "1a7e22397a44d6ad341ea6e39c4fabd1b4da7a4b09b219c010f4d1926d649eb0",
+          "cap_tokens": 610,
+          "actual_block_tokens": 374,
+          "truncated": false
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "profile_path": "pubcap_ind8_profile/release_02/california_schools.json",
+          "sha256": "bf03f203dcb4289a04a59ce93af20c9be64852f69bd7e4973ebd2de5c544d56b",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2928,
+          "truncated": true
+        },
+        "card_games": {
+          "profile_path": "pubcap_ind8_profile/release_02/card_games.json",
+          "sha256": "8529cf5e11f62d698bcd267b26e81420e7aa4f4babc89aa477ac32777fecd16c",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3727,
+          "truncated": true
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_ind8_profile/release_02/codebase_community.json",
+          "sha256": "2c15a26b7df3823011188cef781c992779d466955f00ecbccab2d4d3d2aecbdf",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2486,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_ind8_profile/release_02/debit_card_specializing.json",
+          "sha256": "cb84df5951d6a58144989175ae73009dd42700b2df364b7312f41d7b8f153905",
+          "cap_tokens": 930,
+          "actual_block_tokens": 714,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_ind8_profile/release_02/european_football_2.json",
+          "sha256": "da1f9c85256e395863528d844c6f63fe34a9086d0f5da4a2fba9a86e6736cf1e",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6294,
+          "truncated": true
+        },
+        "financial": {
+          "profile_path": "pubcap_ind8_profile/release_02/financial.json",
+          "sha256": "050882de84684a05e3ca62e8387dd7bcd94ae432362c861ec67f67189ce4f336",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1842,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_ind8_profile/release_02/formula_1.json",
+          "sha256": "dffacbac6fbd0e4badca25a5e7ee6d200c6e843444aaba5b5b4daa0fd6cd30d9",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2908,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_ind8_profile/release_02/student_club.json",
+          "sha256": "0ff06c722941d5650bcb496d9639a196b70bbbff62dfa7622537f04976857df7",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1117,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_ind8_profile/release_02/superhero.json",
+          "sha256": "3d08f9b1571028e2df5d0c5d76b8f3c31f09849bf64114bf1733d5b638762853",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 926,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_ind8_profile/release_02/thrombosis_prediction.json",
+          "sha256": "78587536405f6af0ab4b7cf63d4e0539864cf5edf72b3de5a8cd262c5fee0c2d",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 2180,
+          "truncated": true
+        },
+        "toxicology": {
+          "profile_path": "pubcap_ind8_profile/release_02/toxicology.json",
+          "sha256": "a0feda0d3a16c8a035982e902f1cddddee21c118203c0dca4a0ae96e9a591e85",
+          "cap_tokens": 610,
+          "actual_block_tokens": 374,
+          "truncated": false
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "profile_path": "pubcap_ind8_profile/release_03/california_schools.json",
+          "sha256": "30f7392abbee01fd0255a0c70694040128e8d9aa26d741d038b867e8c9af5da2",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2930,
+          "truncated": true
+        },
+        "card_games": {
+          "profile_path": "pubcap_ind8_profile/release_03/card_games.json",
+          "sha256": "5267517d9a2b532678e5e2fe6314cb54263dabfe138eb3e371eabea780abafb7",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3757,
+          "truncated": true
+        },
+        "codebase_community": {
+          "profile_path": "pubcap_ind8_profile/release_03/codebase_community.json",
+          "sha256": "f1a87692b66355b26c3552ea03e79d2b7985b319fb9a274469c9148dad832ba9",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2490,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "profile_path": "pubcap_ind8_profile/release_03/debit_card_specializing.json",
+          "sha256": "62668a79325c35d060f867b14d80cf9735704c3023219b5eedb09f4931bdeb11",
+          "cap_tokens": 930,
+          "actual_block_tokens": 714,
+          "truncated": false
+        },
+        "european_football_2": {
+          "profile_path": "pubcap_ind8_profile/release_03/european_football_2.json",
+          "sha256": "043ad43b49d292fb6a291126035ffef318417d17a7843e4081a1a99421b43c9a",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6310,
+          "truncated": true
+        },
+        "financial": {
+          "profile_path": "pubcap_ind8_profile/release_03/financial.json",
+          "sha256": "3f0dc45bb9368cd9e311b99dd0990e1a401083d2053642c4062c2739b70ca745",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 1810,
+          "truncated": false
+        },
+        "formula_1": {
+          "profile_path": "pubcap_ind8_profile/release_03/formula_1.json",
+          "sha256": "73d85c998987c1dbf5871a3b79dd78e073849ca7a7ed88240d95585851984adc",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 2934,
+          "truncated": false
+        },
+        "student_club": {
+          "profile_path": "pubcap_ind8_profile/release_03/student_club.json",
+          "sha256": "294783834b716eea4dd5aab4ac7f08d80e35d2cf81957929233243b32042e862",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1137,
+          "truncated": false
+        },
+        "superhero": {
+          "profile_path": "pubcap_ind8_profile/release_03/superhero.json",
+          "sha256": "11b4535a1846875dcbde49287fea5de4f79a002565211de229d22ec0d9a82ef4",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 926,
+          "truncated": false
+        },
+        "thrombosis_prediction": {
+          "profile_path": "pubcap_ind8_profile/release_03/thrombosis_prediction.json",
+          "sha256": "7f7d26fe1c1d54e329a1c0fab4c3c8d2721118fb2ab0df09e46d414b318cb478",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 2180,
+          "truncated": true
+        },
+        "toxicology": {
+          "profile_path": "pubcap_ind8_profile/release_03/toxicology.json",
+          "sha256": "e706a2e9a7f78526753ba20b02c5343370a479d7085a4f29cea6c7a5ae5b9731",
+          "cap_tokens": 610,
+          "actual_block_tokens": 362,
+          "truncated": false
+        }
+      }
+    },
+    "pubcap_ind8_rows": {
+      "release_01": {
+        "california_schools": {
+          "rows_path": "pubcap_ind8_rows/release_01/california_schools.txt",
+          "sha256": "8f15160228c6b3774244dfa3da6d1207bf84c2cd3084ec69941299dd6d9d331a",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2911
+        },
+        "card_games": {
+          "rows_path": "pubcap_ind8_rows/release_01/card_games.txt",
+          "sha256": "9863380cce3926da88e4f51a1b75bfb6135398ba977a6755825e8ccc6bd97a47",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3754
+        },
+        "codebase_community": {
+          "rows_path": "pubcap_ind8_rows/release_01/codebase_community.txt",
+          "sha256": "b988e5148ad96d8e949d40f10f6574db05ed8b5049400ccaee824b309fd76929",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2490
+        },
+        "debit_card_specializing": {
+          "rows_path": "pubcap_ind8_rows/release_01/debit_card_specializing.txt",
+          "sha256": "d1172d1b05212310e901d491813688eb6f002023379a7e9026111d20d1d8127e",
+          "cap_tokens": 930,
+          "actual_block_tokens": 929
+        },
+        "european_football_2": {
+          "rows_path": "pubcap_ind8_rows/release_01/european_football_2.txt",
+          "sha256": "76a9c25d0070179a57dc2e6b84e179fd58af12b1074e80e7b0f5c943b44089d0",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6310
+        },
+        "financial": {
+          "rows_path": "pubcap_ind8_rows/release_01/financial.txt",
+          "sha256": "f2f86480e11f732ca574c617e4e72b041a528473105b1df7d5901ad4538a3eb6",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 2009
+        },
+        "formula_1": {
+          "rows_path": "pubcap_ind8_rows/release_01/formula_1.txt",
+          "sha256": "e7dc28c324346227e54fc7a04a9df36e600f1b82dff8f15e754347139c3e7f9a",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 3279
+        },
+        "student_club": {
+          "rows_path": "pubcap_ind8_rows/release_01/student_club.txt",
+          "sha256": "46f0c15f052a1b37c07842bf70c537d19eeab929a0ed2ce86e78f19eb0f17f51",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1795
+        },
+        "superhero": {
+          "rows_path": "pubcap_ind8_rows/release_01/superhero.txt",
+          "sha256": "4626ff19c33c0b8af2bf1926d5c1bee01f65dae237741744648f847f9de5e653",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 1328
+        },
+        "thrombosis_prediction": {
+          "rows_path": "pubcap_ind8_rows/release_01/thrombosis_prediction.txt",
+          "sha256": "bdc8267fbfeb10b67f189490d6f2bfd71dcd15262b59f49c7b2dee386c0be3a2",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 2169
+        },
+        "toxicology": {
+          "rows_path": "pubcap_ind8_rows/release_01/toxicology.txt",
+          "sha256": "132eff611563258f36c9742b79b93cc27aad7e4495373394d1fa269747c4c3f9",
+          "cap_tokens": 610,
+          "actual_block_tokens": 608
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "rows_path": "pubcap_ind8_rows/release_02/california_schools.txt",
+          "sha256": "788d0198924fd6bcdb1ce11df49b98cd1e6ad368582addc5f3287dc52c660d5f",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2914
+        },
+        "card_games": {
+          "rows_path": "pubcap_ind8_rows/release_02/card_games.txt",
+          "sha256": "3597507c24a3d5f6fc5238099cea880600f94f53a2dbbf1fad64e81e890a50e7",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3770
+        },
+        "codebase_community": {
+          "rows_path": "pubcap_ind8_rows/release_02/codebase_community.txt",
+          "sha256": "0a76a6c517a0ef43b988130a008b82b05a836828342a4d93c1ca9d2705c5444f",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2479
+        },
+        "debit_card_specializing": {
+          "rows_path": "pubcap_ind8_rows/release_02/debit_card_specializing.txt",
+          "sha256": "62fdfe8e3b9cee7f4a256b2ca4a291e7c446696eb4b2f07cc684361852567460",
+          "cap_tokens": 930,
+          "actual_block_tokens": 927
+        },
+        "european_football_2": {
+          "rows_path": "pubcap_ind8_rows/release_02/european_football_2.txt",
+          "sha256": "f6873dcc8f8f3e4dfbb9e8bcb208ea6a53486bea6b4326f974fa3282197356ef",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6310
+        },
+        "financial": {
+          "rows_path": "pubcap_ind8_rows/release_02/financial.txt",
+          "sha256": "17c0e5cf9f322c6b1c5fd74d7353b205f8e729c43c12670cd032ed7214049388",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 2009
+        },
+        "formula_1": {
+          "rows_path": "pubcap_ind8_rows/release_02/formula_1.txt",
+          "sha256": "4fde028387d80410c9bb81bafce0ce20845cb9383fbfb02dfb71b37bb6ea1a1f",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 3279
+        },
+        "student_club": {
+          "rows_path": "pubcap_ind8_rows/release_02/student_club.txt",
+          "sha256": "7cc25198c95d0dc1d5423c9bd3723f25e8c89b1fa4c096ecc27a260f9239a85a",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1797
+        },
+        "superhero": {
+          "rows_path": "pubcap_ind8_rows/release_02/superhero.txt",
+          "sha256": "b13bcd76c96c0337a27d84887716672981c4bf9ac76bb1543050c3ee540de6b0",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 1326
+        },
+        "thrombosis_prediction": {
+          "rows_path": "pubcap_ind8_rows/release_02/thrombosis_prediction.txt",
+          "sha256": "c2570a192e9103e41059a133cc737c7bcd232ae2d1a98a2c6e4e09ebcf80c1a3",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 2178
+        },
+        "toxicology": {
+          "rows_path": "pubcap_ind8_rows/release_02/toxicology.txt",
+          "sha256": "585d5a330b094e31b1f960d6277d8d1a63dd99236be5a0ee57ff6c23a2e4db36",
+          "cap_tokens": 610,
+          "actual_block_tokens": 608
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "rows_path": "pubcap_ind8_rows/release_03/california_schools.txt",
+          "sha256": "fa1bf1a67829682a6affa42a080e8e6943e18f222acac037f4c7e762e48e459f",
+          "cap_tokens": 2930,
+          "actual_block_tokens": 2927
+        },
+        "card_games": {
+          "rows_path": "pubcap_ind8_rows/release_03/card_games.txt",
+          "sha256": "90406d9b5e5e687e84ad5891f9006860f4df0442311d519f59870eb2b6459332",
+          "cap_tokens": 3770,
+          "actual_block_tokens": 3765
+        },
+        "codebase_community": {
+          "rows_path": "pubcap_ind8_rows/release_03/codebase_community.txt",
+          "sha256": "03609b150c0c9e4c488e0a74c0389564d40179b43f720a8ef3eb9cc02bbf4636",
+          "cap_tokens": 2490,
+          "actual_block_tokens": 2485
+        },
+        "debit_card_specializing": {
+          "rows_path": "pubcap_ind8_rows/release_03/debit_card_specializing.txt",
+          "sha256": "55ceac5037c374a34bc2fffaa87a05f9f520512da5c3e2d7618fe252eb5ab985",
+          "cap_tokens": 930,
+          "actual_block_tokens": 929
+        },
+        "european_football_2": {
+          "rows_path": "pubcap_ind8_rows/release_03/european_football_2.txt",
+          "sha256": "fc2d77c900ef0e8f3d2984742123f52b22fd30ecaec28e1081a065eee7b40e33",
+          "cap_tokens": 6310,
+          "actual_block_tokens": 6303
+        },
+        "financial": {
+          "rows_path": "pubcap_ind8_rows/release_03/financial.txt",
+          "sha256": "e7d7f77e99d9a3b4e80f6dfb956b6ab9eb4b44438faa81632ac9b1621f7eb424",
+          "cap_tokens": 2010,
+          "actual_block_tokens": 2009
+        },
+        "formula_1": {
+          "rows_path": "pubcap_ind8_rows/release_03/formula_1.txt",
+          "sha256": "be10d77038b1c208eba9c2fb9e6a91a1c47845de2f544fa2623bee23abc4621a",
+          "cap_tokens": 3280,
+          "actual_block_tokens": 3276
+        },
+        "student_club": {
+          "rows_path": "pubcap_ind8_rows/release_03/student_club.txt",
+          "sha256": "68fb404bfb5da83857938d53975bd7ead76e6ac32b3c5eb5fa684e3ec855bd3f",
+          "cap_tokens": 1800,
+          "actual_block_tokens": 1796
+        },
+        "superhero": {
+          "rows_path": "pubcap_ind8_rows/release_03/superhero.txt",
+          "sha256": "c142a9140516a09d93cd47999979ae14629ddf555084fed9405435fdaecd3d98",
+          "cap_tokens": 1330,
+          "actual_block_tokens": 1328
+        },
+        "thrombosis_prediction": {
+          "rows_path": "pubcap_ind8_rows/release_03/thrombosis_prediction.txt",
+          "sha256": "b17b8eec1aad0909ff2dc7539b8129a59c6815915c499271d89cf527825b0f0c",
+          "cap_tokens": 2180,
+          "actual_block_tokens": 2169
+        },
+        "toxicology": {
+          "rows_path": "pubcap_ind8_rows/release_03/toxicology.txt",
+          "sha256": "d63309f4e494bd0c0df3848daef3c4aa8ee73d338fa2453ac3034832adbeeaac",
+          "cap_tokens": 610,
+          "actual_block_tokens": 608
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,728 @@
+{
+  "db_id": "financial",
+  "version": "c1-entity-dp-v2-direct-star",
+  "mechanism": "Entity-IND8-Prompt",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "cap": 5,
+  "delta_mode": "equal",
+  "rho_db": "874796954851759/1000000000000000",
+  "rho_budget": "874796954851759/1000000000000000",
+  "delta_threshold_total": "1/2000000",
+  "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+  "table_sensitivity_caps": {
+    "account": 5,
+    "card": 0,
+    "client": 0,
+    "disp": 5,
+    "district": 0,
+    "loan": 5,
+    "order": 5,
+    "trans": 5
+  },
+  "parameters": [
+    {
+      "r_j": "1/1",
+      "share": "1/122",
+      "rho": "874796954851759/122000000000000000",
+      "sigma2": "61000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/122",
+      "rho": "874796954851759/122000000000000000",
+      "sigma2": "1525000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 25
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/122",
+      "rho": "874796954851759/122000000000000000",
+      "sigma2": "305000000000000000/874796954851759",
+      "delta": "1/110000000",
+      "sensitivity2": 5,
+      "tau": 111,
+      "tail_lower": "32472401815111/20000000000000000000000",
+      "tail_upper": "40590502268889/25000000000000000000000",
+      "prev_tail_lower": "56133896569583/25000000000000000000000",
+      "prev_tail_upper": "224535586278333/100000000000000000000000"
+    }
+  ],
+  "tables": {
+    "account": {
+      "mode": "entity_direct",
+      "rho": "874796954851759/7625000000000000",
+      "delta_threshold": "7/110000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "account_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          1
+        ],
+        [
+          "bins",
+          "account_id",
+          2
+        ],
+        [
+          "null_count",
+          "district_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "district_id",
+          1
+        ],
+        [
+          "bins",
+          "district_id",
+          2
+        ],
+        [
+          "values",
+          "district_id",
+          2
+        ],
+        [
+          "null_count",
+          "frequency",
+          0
+        ],
+        [
+          "distinct_count",
+          "frequency",
+          1
+        ],
+        [
+          "patterns",
+          "frequency",
+          2
+        ],
+        [
+          "values",
+          "frequency",
+          2
+        ],
+        [
+          "null_count",
+          "date",
+          0
+        ],
+        [
+          "distinct_count",
+          "date",
+          1
+        ],
+        [
+          "patterns",
+          "date",
+          2
+        ],
+        [
+          "values",
+          "date",
+          2
+        ]
+      ]
+    },
+    "card": {
+      "mode": "schema_only",
+      "rho": "0/1",
+      "delta_threshold": "0/1",
+      "sensitivity_cap": 0,
+      "queries": []
+    },
+    "client": {
+      "mode": "schema_only",
+      "rho": "0/1",
+      "delta_threshold": "0/1",
+      "sensitivity_cap": 0,
+      "queries": []
+    },
+    "disp": {
+      "mode": "entity_direct",
+      "rho": "874796954851759/7625000000000000",
+      "delta_threshold": "7/110000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "disp_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "disp_id",
+          1
+        ],
+        [
+          "bins",
+          "disp_id",
+          2
+        ],
+        [
+          "null_count",
+          "client_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "client_id",
+          1
+        ],
+        [
+          "bins",
+          "client_id",
+          2
+        ],
+        [
+          "values",
+          "client_id",
+          2
+        ],
+        [
+          "null_count",
+          "account_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          1
+        ],
+        [
+          "bins",
+          "account_id",
+          2
+        ],
+        [
+          "values",
+          "account_id",
+          2
+        ],
+        [
+          "null_count",
+          "type",
+          0
+        ],
+        [
+          "distinct_count",
+          "type",
+          1
+        ],
+        [
+          "patterns",
+          "type",
+          2
+        ],
+        [
+          "values",
+          "type",
+          2
+        ]
+      ]
+    },
+    "district": {
+      "mode": "schema_only",
+      "rho": "0/1",
+      "delta_threshold": "0/1",
+      "sensitivity_cap": 0,
+      "queries": []
+    },
+    "loan": {
+      "mode": "entity_direct",
+      "rho": "23619517780997493/122000000000000000",
+      "delta_threshold": "3/27500000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "loan_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "loan_id",
+          1
+        ],
+        [
+          "bins",
+          "loan_id",
+          2
+        ],
+        [
+          "null_count",
+          "account_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          1
+        ],
+        [
+          "bins",
+          "account_id",
+          2
+        ],
+        [
+          "values",
+          "account_id",
+          2
+        ],
+        [
+          "null_count",
+          "date",
+          0
+        ],
+        [
+          "distinct_count",
+          "date",
+          1
+        ],
+        [
+          "patterns",
+          "date",
+          2
+        ],
+        [
+          "values",
+          "date",
+          2
+        ],
+        [
+          "null_count",
+          "amount",
+          0
+        ],
+        [
+          "distinct_count",
+          "amount",
+          1
+        ],
+        [
+          "bins",
+          "amount",
+          2
+        ],
+        [
+          "values",
+          "amount",
+          2
+        ],
+        [
+          "null_count",
+          "duration",
+          0
+        ],
+        [
+          "distinct_count",
+          "duration",
+          1
+        ],
+        [
+          "bins",
+          "duration",
+          2
+        ],
+        [
+          "values",
+          "duration",
+          2
+        ],
+        [
+          "null_count",
+          "payments",
+          0
+        ],
+        [
+          "distinct_count",
+          "payments",
+          1
+        ],
+        [
+          "bins",
+          "payments",
+          2
+        ],
+        [
+          "null_count",
+          "status",
+          0
+        ],
+        [
+          "distinct_count",
+          "status",
+          1
+        ],
+        [
+          "patterns",
+          "status",
+          2
+        ],
+        [
+          "values",
+          "status",
+          2
+        ]
+      ]
+    },
+    "order": {
+      "mode": "entity_direct",
+      "rho": "20120329961590457/122000000000000000",
+      "delta_threshold": "1/11000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "order_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "order_id",
+          1
+        ],
+        [
+          "bins",
+          "order_id",
+          2
+        ],
+        [
+          "null_count",
+          "account_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          1
+        ],
+        [
+          "bins",
+          "account_id",
+          2
+        ],
+        [
+          "values",
+          "account_id",
+          2
+        ],
+        [
+          "null_count",
+          "bank_to",
+          0
+        ],
+        [
+          "distinct_count",
+          "bank_to",
+          1
+        ],
+        [
+          "patterns",
+          "bank_to",
+          2
+        ],
+        [
+          "values",
+          "bank_to",
+          2
+        ],
+        [
+          "null_count",
+          "account_to",
+          0
+        ],
+        [
+          "distinct_count",
+          "account_to",
+          1
+        ],
+        [
+          "bins",
+          "account_to",
+          2
+        ],
+        [
+          "values",
+          "account_to",
+          2
+        ],
+        [
+          "null_count",
+          "amount",
+          0
+        ],
+        [
+          "distinct_count",
+          "amount",
+          1
+        ],
+        [
+          "bins",
+          "amount",
+          2
+        ],
+        [
+          "null_count",
+          "k_symbol",
+          0
+        ],
+        [
+          "distinct_count",
+          "k_symbol",
+          1
+        ],
+        [
+          "patterns",
+          "k_symbol",
+          2
+        ],
+        [
+          "values",
+          "k_symbol",
+          2
+        ]
+      ]
+    },
+    "trans": {
+      "mode": "entity_direct",
+      "rho": "874796954851759/3050000000000000",
+      "delta_threshold": "19/110000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "trans_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "trans_id",
+          1
+        ],
+        [
+          "bins",
+          "trans_id",
+          2
+        ],
+        [
+          "null_count",
+          "account_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          1
+        ],
+        [
+          "bins",
+          "account_id",
+          2
+        ],
+        [
+          "values",
+          "account_id",
+          2
+        ],
+        [
+          "null_count",
+          "date",
+          0
+        ],
+        [
+          "distinct_count",
+          "date",
+          1
+        ],
+        [
+          "patterns",
+          "date",
+          2
+        ],
+        [
+          "values",
+          "date",
+          2
+        ],
+        [
+          "null_count",
+          "type",
+          0
+        ],
+        [
+          "distinct_count",
+          "type",
+          1
+        ],
+        [
+          "patterns",
+          "type",
+          2
+        ],
+        [
+          "values",
+          "type",
+          2
+        ],
+        [
+          "null_count",
+          "operation",
+          0
+        ],
+        [
+          "distinct_count",
+          "operation",
+          1
+        ],
+        [
+          "patterns",
+          "operation",
+          2
+        ],
+        [
+          "values",
+          "operation",
+          2
+        ],
+        [
+          "null_count",
+          "amount",
+          0
+        ],
+        [
+          "distinct_count",
+          "amount",
+          1
+        ],
+        [
+          "bins",
+          "amount",
+          2
+        ],
+        [
+          "values",
+          "amount",
+          2
+        ],
+        [
+          "null_count",
+          "balance",
+          0
+        ],
+        [
+          "distinct_count",
+          "balance",
+          1
+        ],
+        [
+          "bins",
+          "balance",
+          2
+        ],
+        [
+          "values",
+          "balance",
+          2
+        ],
+        [
+          "null_count",
+          "k_symbol",
+          0
+        ],
+        [
+          "distinct_count",
+          "k_symbol",
+          1
+        ],
+        [
+          "patterns",
+          "k_symbol",
+          2
+        ],
+        [
+          "values",
+          "k_symbol",
+          2
+        ],
+        [
+          "null_count",
+          "bank",
+          0
+        ],
+        [
+          "distinct_count",
+          "bank",
+          1
+        ],
+        [
+          "patterns",
+          "bank",
+          2
+        ],
+        [
+          "values",
+          "bank",
+          2
+        ],
+        [
+          "null_count",
+          "account",
+          0
+        ],
+        [
+          "distinct_count",
+          "account",
+          1
+        ],
+        [
+          "bins",
+          "account",
+          2
+        ],
+        [
+          "values",
+          "account",
+          2
+        ]
+      ]
+    }
+  },
+  "sha256": "a58bc7249ee5e6f9773ae4784e18a66b95daffcfc2e5409a4e0163c26294e24f"
+}

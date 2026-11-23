@@ -1,0 +1,40 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table Country(id,name):
+[1,null]
+[2,null]
+[3,null]
+[4,null]
+[5,null]
+[6,null]
+Table League(id,country_id,name):
+[1,null,null]
+[2,null,null]
+[3,null,null]
+[4,null,null]
+[5,null,null]
+[6,null,null]
+Table Match(id,country_id,league_id,season,stage,date,match_api_id,home_team_api_id,away_team_api_id,home_team_goal,away_team_goal,home_player_X1,home_player_X2,home_player_X3,home_player_X4,home_player_X5,home_player_X6,home_player_X7,home_player_X8,home_player_X9,home_player_X10,home_player_X11,away_player_X1,away_player_X2,away_player_X3,away_player_X4,away_player_X5,away_player_X6,away_player_X7,away_player_X8,away_player_X9,away_player_X10,away_player_X11,home_player_Y1,home_player_Y2,home_player_Y3,home_player_Y4,home_player_Y5,home_player_Y6,home_player_Y7,home_player_Y8,home_player_Y9,home_player_Y10,home_player_Y11,away_player_Y1,away_player_Y2,away_player_Y3,away_player_Y4,away_player_Y5,away_player_Y6,away_player_Y7,away_player_Y8,away_player_Y9,away_player_Y10,away_player_Y11,home_player_1,home_player_2,home_player_3,home_player_4,home_player_5,home_player_6,home_player_7,home_player_8,home_player_9,home_player_10,home_player_11,away_player_1,away_player_2,away_player_3,away_player_4,away_player_5,away_player_6,away_player_7,away_player_8,away_player_9,away_player_10,away_player_11,goal,shoton,shotoff,foulcommit,card,cross,corner,possession,B365H,B365D,B365A,BWH,BWD,BWA,IWH,IWD,IWA,LBH,LBD,LBA,PSH,PSD,PSA,WHH,WHD,WHA,SJH,SJD,SJA,VCH,VCD,VCA,GBH,GBD,GBA,BSH,BSD,BSA):
+[1,10257,19694,"2015/2016",32,null,null,8655,9807,1,2,1,2,4,6,8,4,5,6,3,4,6,1,2,4,6,8,4,6,null,5,5,6,1,3,3,3,3,7,127353,7,9,8,10,1,3,3,3,3,null,127375,7,8,9,11,null,26107,null,36806,38834,96398,null,null,null,null,null,30989,null,null,null,null,null,null,null,null,null,23949,null,null,"<shotoff />",null,"<card><value><comment>y</comment><stats><ycards>1</ycards></stats><event_incident_typefk>73</event_i","<cross><value><stats><crosses>1</crosses></stats><event_incident_typefk>767</event_incident_typefk><",null,null,6.627502165584867,3.833289299232151,6.657087184262605,2.3765642670749756,3.1002171458353542,3.6839357303008815,2.00028362763713,3.9505002450852884,3.2999961415619223,1.3648783590340257,3.2002005070078825,3608067.4930132204,2.0069433891469175,null,3.408968516817105,1.71569214799166,5.572180796987023,4.245810502717619,2.5494809708515573,3.0002665551276073,2.94165837198243,2.2251306289361357,null,3.102570741808827,null,3.499689485180569,null,5.825234619845739,3.499503922180349,3.5494364665638116]
+Table Player(id,player_api_id,player_name,player_fifa_api_id,birthday,height,weight):
+[1,null,null,null,null,175,184]
+[185,null,null,null,null,180,167]
+[369,null,null,null,null,172,173]
+[553,null,null,null,null,175,153]
+[737,null,null,null,null,190,170]
+Table Player_Attributes(id,player_fifa_api_id,player_api_id,date,overall_rating,potential,preferred_foot,attacking_work_rate,defensive_work_rate,crossing,finishing,heading_accuracy,short_passing,volleys,dribbling,curve,free_kick_accuracy,long_passing,ball_control,acceleration,sprint_speed,agility,reactions,balance,shot_power,jumping,stamina,strength,long_shots,aggression,interceptions,positioning,vision,penalties,marking,standing_tackle,sliding_tackle,gk_diving,gk_handling,gk_kicking,gk_positioning,gk_reflexes):
+[1,152507,21982,"2015-03-20 00:00:00",71,75,"right","medium","medium",34,74,48,56,58,59,61,28,64,77,87,67,52,58,66,80,54,70,65,17,427216,79,62,68,44,72,71,69,6,20,13,12,11]
+[3067,168799,113836,"2007-02-22 00:00:00",77,77,"right","medium","medium",43,25,29,36,58,55,36,28,null,422245,66,66,70,56,53,80,57,60,64,70,72,67,419604,65,414491,62,46,35,13,11,10,9,12]
+[6133,188484,59595,"2013-09-20 00:00:00",68,76,"left",null,null,34,50,56,50,73,59,42,66,53,70,57,74,62,74,53,53,47,74,70,55,83,38,-6188,-4633,48,48,25,38,5,14,65,11,10]
+Table Team(id,team_api_id,team_fifa_api_id,team_long_name,team_short_name):
+[1,null,null,null,null]
+[5,null,null,null,null]
+[9,null,null,null,null]
+[13,null,null,null,null]
+[17,null,null,null,null]
+[21,null,null,null,null]
+Table Team_Attributes(id,team_fifa_api_id,team_api_id,date,buildUpPlaySpeed,buildUpPlaySpeedClass,buildUpPlayDribbling,buildUpPlayDribblingClass,buildUpPlayPassing,buildUpPlayPassingClass,buildUpPlayPositioningClass,chanceCreationPassing,chanceCreationPassingClass,chanceCreationCrossing,chanceCreationCrossingClass,chanceCreationShooting,chanceCreationShootingClass,chanceCreationPositioningClass,defencePressure,defencePressureClass,defenceAggression,defenceAggressionClass,defenceTeamWidth,defenceTeamWidthClass,defenceDefenderLineClass):
+[1,null,null,"2014-09-19 00:00:00",31,"Balanced",null,"Little",46,"Mixed","Organised",53,"Normal",60,"Normal",390006,"Little","Free Form",40,"Medium",44,"Press",58,"Normal","Cover"]
+[25,null,null,"2012-02-22 00:00:00",40,"Balanced",null,"Little",40,"Mixed","Organised",53,"Normal",65,"Little",56,"Normal","Free Form",50,"Medium",52,"Press",-3549,"Normal","Cover"]
+[49,null,null,"2011-02-22 00:00:00",49,"Balanced",null,"Little",40,"Short","Organised",62,"Normal",67,"Normal",46,"Normal","Free Form",57,"Medium",1213,"Press",65,"Normal","Offside Trap"]
+[73,null,null,"2011-02-22 00:00:00",48,"Balanced",58,"Normal",34,"Mixed","Organised",53,"Normal",52,"Normal",-3977,"Normal","Organised",37,"Medium",51,"Press",50,"Normal","Cover"]

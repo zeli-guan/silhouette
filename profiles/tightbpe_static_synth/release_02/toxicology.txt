@@ -1,0 +1,31 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table atom(atom_id,molecule_id,element):
+["1","TR438","cl"]
+["152","TR220","h"]
+["303","TR193","h"]
+["454","TR165","h"]
+["605","TR276","c"]
+["756","TR051","c"]
+["907","TR173","h"]
+Table bond(bond_id,molecule_id,bond_type):
+["1","TR133","-"]
+["153","TR285","-"]
+["305","TR173","="]
+["457","TR287","="]
+["609","TR166","-"]
+["761","TR124","-"]
+Table connected(atom_id,atom_id2,bond_id):
+[null,null,null]
+[null,null,null]
+[null,null,null]
+[null,null,null]
+[null,null,null]
+[null,null,null]
+Table molecule(molecule_id,label):
+["1","+"]
+["6","-"]
+["11","-"]
+["16","-"]
+["21","-"]
+["26","+"]

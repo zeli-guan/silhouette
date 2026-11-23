@@ -1,0 +1,54 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table badges(Id,UserId,Name,Date):
+[1,null,"Civic Duty",null]
+[1331,null,"Custodian",null]
+[2661,27581,"Student",null]
+[3991,null,"Supporter",null]
+[5321,null,"Student",null]
+[6651,null,"Student",null]
+Table comments(Id,PostId,Score,Text,CreationDate,UserId,UserDisplayName):
+[1,null,81335,null,null,29617,null]
+[2905,null,0,null,null,null,null]
+[5809,null,0,null,null,1390,null]
+[8713,null,0,null,null,930,null]
+[11617,null,0,null,null,919,null]
+[14521,null,0,null,null,2970,null]
+Table postHistory(Id,PostHistoryTypeId,PostId,RevisionGUID,CreationDate,UserId,Text,Comment,UserDisplayName):
+[1,5,null,null,null,13317,"","",""]
+[5053,1,null,null,null,1352,null,"",""]
+[10105,5,null,null,null,16612,null,"",""]
+[15157,2,null,null,null,null,null,"",""]
+[20209,4,null,null,null,31843,null,"",""]
+[25261,2,null,null,null,52672,null,null,""]
+Table postLinks(Id,CreationDate,PostId,RelatedPostId,LinkTypeId):
+[1,null,null,6493,1]
+[186,null,null,null,1]
+[371,null,null,null,1]
+[556,null,null,null,1]
+[741,null,null,null,1]
+[926,null,null,null,1]
+Table posts(Id,PostTypeId,AcceptedAnswerId,CreaionDate,Score,ViewCount,Body,OwnerUserId,LasActivityDate,Title,Tags,AnswerCount,CommentCount,FavoriteCount,LastEditorUserId,LastEditDate,CommunityOwnedDate,ParentId,ClosedDate,OwnerDisplayName,LastEditorDisplayName):
+[1,2,null,null,10,57,null,null,null,null,null,1,0,null,919,null,null,null,null,null,null]
+[1533,1,null,null,1,293,null,null,null,null,null,1,0,null,7290,null,null,null,null,null,null]
+[3065,1,null,null,1,29,null,null,null,null,null,0,2,1,null,null,null,null,null,null,null]
+[4597,2,null,null,1,null,null,8,null,null,null,null,0,null,null,null,null,null,null,null,null]
+[6129,2,null,null,0,170,null,null,null,null,null,null,0,null,88,null,null,null,null,null,null]
+Table tags(Id,TagName,Count,ExcerptPostId,WikiPostId):
+[1,null,9,null,null]
+[18,null,97,null,null]
+[35,null,34,null,null]
+[52,null,24,null,null]
+[69,null,15,null,null]
+Table users(Id,Reputation,CreationDate,DisplayName,LastAccessDate,WebsiteUrl,Location,AboutMe,Views,UpVotes,DownVotes,AccountId,Age,ProfileImageUrl):
+[1,101,null,null,null,null,null,null,3,0,0,null,null,null]
+[673,1,null,null,null,null,null,null,20,0,0,null,null,null]
+[1345,1,null,null,null,null,null,null,0,0,0,null,330738,null]
+[2017,11,null,null,null,null,null,null,3,0,0,null,null,null]
+[2689,77,null,"Jason",null,null,null,null,0,0,0,null,null,null]
+Table votes(Id,PostId,VoteTypeId,CreationDate,UserId,BountyAmount):
+[1,null,2,"2010-08-28",300,null]
+[649,null,1,"2010-11-05",null,null]
+[1297,null,2,"2010-07-28",null,null]
+[1945,null,2,"2010-08-30",null,null]
+[2593,null,5,"2010-10-03",null,null]

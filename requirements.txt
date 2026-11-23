@@ -1,0 +1,8 @@
+# Core runtime (Python >=3.10 standard library + NumPy)
+numpy>=1.24
+
+# Verification and test suite
+pytest>=7.4,<8.4
+
+# Optional: Tier-2 figure plotting (scripts/plot_stage6_figures.py)
+# matplotlib>=3.7

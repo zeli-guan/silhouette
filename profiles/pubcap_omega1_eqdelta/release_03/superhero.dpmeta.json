@@ -1,0 +1,728 @@
+{
+  "db_id": "superhero",
+  "mechanism": "DG-Omega1",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "sha256": "8630137021381d60761b09e121a5ccf0897a86c83416aee1965313d091c8a448",
+  "parameters": [
+    {
+      "r_j": "101752887341/1",
+      "share": "101752887341/1000000000000",
+      "rho": "89013115993280896882682819/1000000000000000000000000000",
+      "sigma2": "500000000000000000000000000/89013115993280896882682819",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "163745187765/1",
+      "share": "32749037553/200000000000",
+      "rho": "28648758325690301039105727/200000000000000000000000000",
+      "sigma2": "100000000000000000000000000/28648758325690301039105727",
+      "delta": "1/6000000",
+      "sensitivity2": 1,
+      "tau": 10,
+      "tail_lower": "134951438023663/1000000000000000000000",
+      "tail_upper": "8434464876479/62500000000000000000",
+      "prev_tail_lower": "52170876253021/25000000000000000000",
+      "prev_tail_upper": "41736701002417/20000000000000000000"
+    },
+    {
+      "r_j": "74170637892/1",
+      "share": "18542659473/250000000001",
+      "rho": "16221062041833522332063007/250000000001000000000000000",
+      "sigma2": "125000000000500000000000000/16221062041833522332063007",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "120201383690/1",
+      "share": "60100691845/500000000002",
+      "rho": "10515180442097989063041071/100000000000400000000000000",
+      "sigma2": "50000000000200000000000000/10515180442097989063041071",
+      "delta": "1/8000000",
+      "sensitivity2": 1,
+      "tau": 12,
+      "tail_lower": "130707036392447/2500000000000000000000",
+      "tail_upper": "522828145569789/10000000000000000000000",
+      "prev_tail_lower": "597594456254457/1000000000000000000000",
+      "prev_tail_upper": "298797228127229/500000000000000000000"
+    },
+    {
+      "r_j": "122160818223/1",
+      "share": "122160818223/999999999997",
+      "rho": "106865911783679669110804257/999999999997000000000000000",
+      "sigma2": "499999999998500000000000000/106865911783679669110804257",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "194597954441/1",
+      "share": "194597954441/999999999997",
+      "rho": "170233697965368131790711719/999999999997000000000000000",
+      "sigma2": "499999999998500000000000000/170233697965368131790711719",
+      "delta": "1/4000000",
+      "sensitivity2": 1,
+      "tau": 9,
+      "tail_lower": "248735189303107/1000000000000000000000",
+      "tail_upper": "62183797325777/250000000000000000000",
+      "prev_tail_lower": "91343777858361/20000000000000000000",
+      "prev_tail_upper": "228359444645903/50000000000000000000"
+    },
+    {
+      "r_j": "19974287069/1",
+      "share": "19974287069/999999999995",
+      "rho": "17473445503296066605604371/999999999995000000000000000",
+      "sigma2": "499999999997500000000000000/17473445503296066605604371",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "33376188218/1",
+      "share": "33376188218/999999999995",
+      "rho": "14598693908832778336187731/499999999997500000000000000",
+      "sigma2": "249999999998750000000000000/14598693908832778336187731",
+      "delta": "1/30000000",
+      "sensitivity2": 1,
+      "tau": 23,
+      "tail_lower": "7859905412339/312500000000000000000",
+      "tail_upper": "251516973194849/10000000000000000000000",
+      "prev_tail_lower": "954345023121197/10000000000000000000000",
+      "prev_tail_upper": "477172511560599/5000000000000000000000"
+    }
+  ],
+  "tables": {
+    "alignment": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "alignment",
+          0
+        ],
+        [
+          "distinct_count",
+          "alignment",
+          0
+        ],
+        [
+          "patterns",
+          "alignment",
+          1
+        ],
+        [
+          "values",
+          "alignment",
+          1
+        ]
+      ]
+    },
+    "attribute": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "attribute_name",
+          0
+        ],
+        [
+          "distinct_count",
+          "attribute_name",
+          0
+        ],
+        [
+          "patterns",
+          "attribute_name",
+          1
+        ],
+        [
+          "values",
+          "attribute_name",
+          1
+        ]
+      ]
+    },
+    "colour": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "colour",
+          0
+        ],
+        [
+          "distinct_count",
+          "colour",
+          0
+        ],
+        [
+          "patterns",
+          "colour",
+          1
+        ],
+        [
+          "values",
+          "colour",
+          1
+        ]
+      ]
+    },
+    "gender": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "gender",
+          0
+        ],
+        [
+          "distinct_count",
+          "gender",
+          0
+        ],
+        [
+          "patterns",
+          "gender",
+          1
+        ],
+        [
+          "values",
+          "gender",
+          1
+        ]
+      ]
+    },
+    "hero_attribute": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "hero_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "hero_id",
+          2
+        ],
+        [
+          "bins",
+          "hero_id",
+          3
+        ],
+        [
+          "null_count",
+          "attribute_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "attribute_id",
+          2
+        ],
+        [
+          "bins",
+          "attribute_id",
+          3
+        ],
+        [
+          "null_count",
+          "attribute_value",
+          2
+        ],
+        [
+          "distinct_count",
+          "attribute_value",
+          2
+        ],
+        [
+          "bins",
+          "attribute_value",
+          3
+        ],
+        [
+          "values",
+          "attribute_value",
+          3
+        ]
+      ]
+    },
+    "hero_power": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "hero_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "hero_id",
+          4
+        ],
+        [
+          "bins",
+          "hero_id",
+          5
+        ],
+        [
+          "null_count",
+          "power_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "power_id",
+          4
+        ],
+        [
+          "bins",
+          "power_id",
+          5
+        ]
+      ]
+    },
+    "publisher": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "publisher_name",
+          0
+        ],
+        [
+          "distinct_count",
+          "publisher_name",
+          0
+        ],
+        [
+          "patterns",
+          "publisher_name",
+          1
+        ],
+        [
+          "values",
+          "publisher_name",
+          1
+        ]
+      ]
+    },
+    "race": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "race",
+          0
+        ],
+        [
+          "distinct_count",
+          "race",
+          0
+        ],
+        [
+          "patterns",
+          "race",
+          1
+        ],
+        [
+          "values",
+          "race",
+          1
+        ]
+      ]
+    },
+    "superhero": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          6
+        ],
+        [
+          "null_count",
+          "id",
+          6
+        ],
+        [
+          "distinct_count",
+          "id",
+          6
+        ],
+        [
+          "bins",
+          "id",
+          7
+        ],
+        [
+          "null_count",
+          "superhero_name",
+          6
+        ],
+        [
+          "distinct_count",
+          "superhero_name",
+          6
+        ],
+        [
+          "patterns",
+          "superhero_name",
+          7
+        ],
+        [
+          "values",
+          "superhero_name",
+          7
+        ],
+        [
+          "null_count",
+          "full_name",
+          6
+        ],
+        [
+          "distinct_count",
+          "full_name",
+          6
+        ],
+        [
+          "patterns",
+          "full_name",
+          7
+        ],
+        [
+          "null_count",
+          "gender_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "gender_id",
+          6
+        ],
+        [
+          "bins",
+          "gender_id",
+          7
+        ],
+        [
+          "null_count",
+          "eye_colour_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "eye_colour_id",
+          6
+        ],
+        [
+          "bins",
+          "eye_colour_id",
+          7
+        ],
+        [
+          "null_count",
+          "hair_colour_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "hair_colour_id",
+          6
+        ],
+        [
+          "bins",
+          "hair_colour_id",
+          7
+        ],
+        [
+          "null_count",
+          "skin_colour_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "skin_colour_id",
+          6
+        ],
+        [
+          "bins",
+          "skin_colour_id",
+          7
+        ],
+        [
+          "null_count",
+          "race_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "race_id",
+          6
+        ],
+        [
+          "bins",
+          "race_id",
+          7
+        ],
+        [
+          "null_count",
+          "publisher_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "publisher_id",
+          6
+        ],
+        [
+          "bins",
+          "publisher_id",
+          7
+        ],
+        [
+          "null_count",
+          "alignment_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "alignment_id",
+          6
+        ],
+        [
+          "bins",
+          "alignment_id",
+          7
+        ],
+        [
+          "null_count",
+          "height_cm",
+          6
+        ],
+        [
+          "distinct_count",
+          "height_cm",
+          6
+        ],
+        [
+          "bins",
+          "height_cm",
+          7
+        ],
+        [
+          "values",
+          "height_cm",
+          7
+        ],
+        [
+          "null_count",
+          "weight_kg",
+          6
+        ],
+        [
+          "distinct_count",
+          "weight_kg",
+          6
+        ],
+        [
+          "bins",
+          "weight_kg",
+          7
+        ],
+        [
+          "values",
+          "weight_kg",
+          7
+        ]
+      ]
+    },
+    "superpower": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "power_name",
+          0
+        ],
+        [
+          "distinct_count",
+          "power_name",
+          0
+        ],
+        [
+          "patterns",
+          "power_name",
+          1
+        ],
+        [
+          "values",
+          "power_name",
+          1
+        ]
+      ]
+    }
+  },
+  "pubcap_tokens": 1330,
+  "actual_block_tokens": 902,
+  "truncated_by_pubcap": false
+}

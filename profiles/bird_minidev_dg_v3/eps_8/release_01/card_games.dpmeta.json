@@ -1,0 +1,2641 @@
+{
+  "db_id": "card_games",
+  "mechanism": "DG-v3",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "sha256": "9736f2b3eadd0daf8a229516feed9e8a9b3d8a1568e18e8fd919ecb806fd6aca",
+  "parameters": [
+    {
+      "r_j": "1714648492/1",
+      "share": "1714648492/999999999979",
+      "rho": "374992319860690163224357/249999999994750000000000000",
+      "sigma2": "124999999997375000000000000/374992319860690163224357",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1080160864/1",
+      "share": "1080160864/999999999979",
+      "rho": "29528794830538906042493/31249999999343750000000000",
+      "sigma2": "15624999999671875000000000/29528794830538906042493",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1950380042/1",
+      "share": "1950380042/999999999979",
+      "rho": "853093260772622911096939/499999999989500000000000000",
+      "sigma2": "249999999994750000000000000/853093260772622911096939",
+      "delta": "1/1523000000",
+      "sensitivity2": 1,
+      "tau": 105,
+      "tail_lower": "256536799612199/500000000000000000000000",
+      "tail_upper": "513073599224399/1000000000000000000000000",
+      "prev_tail_lower": "738455320562317/1000000000000000000000000",
+      "prev_tail_upper": "369227660281159/500000000000000000000000"
+    },
+    {
+      "r_j": "2246825139/1",
+      "share": "2246825139/999999999979",
+      "rho": "1965515789681580139569501/999999999979000000000000000",
+      "sigma2": "499999999989500000000000000/1965515789681580139569501",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "4791359130/1",
+      "share": "4791359130/999999999979",
+      "rho": "419146637652517328120967/99999999997900000000000000",
+      "sigma2": "49999999998950000000000000/419146637652517328120967",
+      "delta": "1/380750000",
+      "sensitivity2": 1,
+      "tau": 65,
+      "tail_lower": "173591979183159/100000000000000000000000",
+      "tail_upper": "4339799479579/2500000000000000000000",
+      "prev_tail_lower": "7534818463041/2500000000000000000000",
+      "prev_tail_upper": "301392738521641/100000000000000000000000"
+    },
+    {
+      "r_j": "9753791694/1",
+      "share": "9753791694/999999999979",
+      "rho": "4266293636084789967744873/499999999989500000000000000",
+      "sigma2": "249999999994750000000000000/4266293636084789967744873",
+      "delta": "3/380750000",
+      "sensitivity2": 1,
+      "tau": 44,
+      "tail_lower": "647983225597979/100000000000000000000000",
+      "tail_upper": "32399161279899/5000000000000000000000",
+      "prev_tail_lower": "138115930384773/10000000000000000000000",
+      "prev_tail_upper": "69057965192387/5000000000000000000000"
+    },
+    {
+      "r_j": "3057676013/1",
+      "share": "3057676013/999999999979",
+      "rho": "2674845665095667465156867/999999999979000000000000000",
+      "sigma2": "499999999989500000000000000/2674845665095667465156867",
+      "delta": "1/761500000",
+      "sensitivity2": 1,
+      "tau": 82,
+      "tail_lower": "62152738893409/50000000000000000000000",
+      "tail_upper": "124305477786819/100000000000000000000000",
+      "prev_tail_lower": "194024756363707/100000000000000000000000",
+      "prev_tail_upper": "48506189090927/25000000000000000000000"
+    },
+    {
+      "r_j": "1243530185/1",
+      "share": "1243530185/999999999979",
+      "rho": "217567283820848903369083/199999999995800000000000000",
+      "sigma2": "99999999997900000000000000/217567283820848903369083",
+      "delta": "1/3046000000",
+      "sensitivity2": 1,
+      "tau": 133,
+      "tail_lower": "31867716254623/100000000000000000000000",
+      "tail_upper": "318677162546231/1000000000000000000000000",
+      "prev_tail_lower": "835533653507/1953125000000000000000",
+      "prev_tail_upper": "85558646119117/200000000000000000000000"
+    },
+    {
+      "r_j": "7504211966/1",
+      "share": "7504211966/999999999979",
+      "rho": "3282330888209465821974097/499999999989500000000000000",
+      "sigma2": "249999999994750000000000000/3282330888209465821974097",
+      "delta": "1/190375000",
+      "sensitivity2": 1,
+      "tau": 51,
+      "tail_lower": "176372776842729/50000000000000000000000",
+      "tail_upper": "352745553685459/100000000000000000000000",
+      "prev_tail_lower": "693577487389477/100000000000000000000000",
+      "prev_tail_upper": "346788743694739/50000000000000000000000"
+    },
+    {
+      "r_j": "20228566615/1",
+      "share": "20228566615/999999999999",
+      "rho": "3539177695163590876285157/199999999999800000000000000",
+      "sigma2": "99999999999900000000000000/3539177695163590876285157",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "12743198444/1",
+      "share": "12743198444/999999999999",
+      "rho": "2786927798470718384865749/249999999999750000000000000",
+      "sigma2": "124999999999875000000000000/2786927798470718384865749",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "21921331338/1",
+      "share": "2435703482/111111111111",
+      "rho": "1065372994487713095062419/55555555555500000000000000",
+      "sigma2": "27777777777750000000000000/1065372994487713095062419",
+      "delta": "1/118000000",
+      "sensitivity2": 1,
+      "tau": 30,
+      "tail_lower": "359437490855173/100000000000000000000000",
+      "tail_upper": "179718745427587/50000000000000000000000",
+      "prev_tail_lower": "113332413835159/10000000000000000000000",
+      "prev_tail_upper": "2833310345879/250000000000000000000"
+    },
+    {
+      "r_j": "14001780301/1",
+      "share": "14001780301/999999999999",
+      "rho": "12248714769818145541399459/999999999999000000000000000",
+      "sigma2": "499999999999500000000000000/12248714769818145541399459",
+      "delta": "1/236000000",
+      "sensitivity2": 1,
+      "tau": 38,
+      "tail_lower": "52749468319373/25000000000000000000000",
+      "tail_upper": "210997873277493/100000000000000000000000",
+      "prev_tail_lower": "536840142646883/100000000000000000000000",
+      "prev_tail_upper": "134210035661721/25000000000000000000000"
+    },
+    {
+      "r_j": "26506920937/1",
+      "share": "3786702991/142857142857",
+      "rho": "3312596245454847766911169/142857142857000000000000000",
+      "sigma2": "71428571428500000000000000/3312596245454847766911169",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "53635887245/1",
+      "share": "53635887245/999999999999",
+      "rho": "9384102166539660282782791/199999999999800000000000000",
+      "sigma2": "99999999999900000000000000/9384102166539660282782791",
+      "delta": "1/29500000",
+      "sensitivity2": 1,
+      "tau": 19,
+      "tail_lower": "319493329571899/50000000000000000000000",
+      "tail_upper": "638986659143799/100000000000000000000000",
+      "prev_tail_lower": "369288862869273/10000000000000000000000",
+      "prev_tail_upper": "184644431434637/5000000000000000000000"
+    },
+    {
+      "r_j": "108783710862/1",
+      "share": "36261236954/333333333333",
+      "rho": "15860609833258636521351043/166666666666500000000000000",
+      "sigma2": "83333333333250000000000000/15860609833258636521351043",
+      "delta": "3/29500000",
+      "sensitivity2": 1,
+      "tau": 13,
+      "tail_lower": "97527025163209/5000000000000000000000",
+      "tail_upper": "195054050326419/10000000000000000000000",
+      "prev_tail_lower": "214165595691297/1000000000000000000000",
+      "prev_tail_upper": "107082797845649/500000000000000000000"
+    },
+    {
+      "r_j": "34300328104/1",
+      "share": "4900046872/142857142857",
+      "rho": "535818260282060863955981/17857142857125000000000000",
+      "sigma2": "8928571428562500000000000/535818260282060863955981",
+      "delta": "1/59000000",
+      "sensitivity2": 1,
+      "tau": 23,
+      "tail_lower": "32848661625827/2000000000000000000000",
+      "tail_upper": "10265206758071/625000000000000000000",
+      "prev_tail_lower": "12920450426233/200000000000000000000",
+      "prev_tail_upper": "646022521311651/10000000000000000000000"
+    },
+    {
+      "r_j": "38265853681/1",
+      "share": "38265853681/1000000000001",
+      "rho": "33474852274941772939474879/1000000000001000000000000000",
+      "sigma2": "500000000000500000000000000/33474852274941772939474879",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "24105977273/1",
+      "share": "24105977273/1000000000001",
+      "rho": "21087835512146109538073207/1000000000001000000000000000",
+      "sigma2": "500000000000500000000000000/21087835512146109538073207",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "40997813085/1",
+      "share": "40997813085/1000000000001",
+      "rho": "7172952408467919873093303/200000000000200000000000000",
+      "sigma2": "100000000000100000000000000/7172952408467919873093303",
+      "delta": "1/68000000",
+      "sensitivity2": 1,
+      "tau": 22,
+      "tail_lower": "384334305840141/100000000000000000000000",
+      "tail_upper": "192167152920071/50000000000000000000000",
+      "prev_tail_lower": "4572780951363/250000000000000000000",
+      "prev_tail_upper": "182911238054521/10000000000000000000000"
+    },
+    {
+      "r_j": "50142453364/1",
+      "share": "50142453364/1000000000001",
+      "rho": "10966116377905884797716819/250000000000250000000000000",
+      "sigma2": "125000000000125000000000000/10966116377905884797716819",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "100206900071/1",
+      "share": "100206900071/1000000000001",
+      "rho": "87660691037245312731574889/1000000000001000000000000000",
+      "sigma2": "500000000000500000000000000/87660691037245312731574889",
+      "delta": "1/17000000",
+      "sensitivity2": 1,
+      "tau": 14,
+      "tail_lower": "625325864926051/100000000000000000000000",
+      "tail_upper": "156331466231513/25000000000000000000000",
+      "prev_tail_lower": "677573229184691/10000000000000000000000",
+      "prev_tail_upper": "169393307296173/2500000000000000000000"
+    },
+    {
+      "r_j": "203042098413/1",
+      "share": "203042098413/1000000000001",
+      "rho": "177620609398403568704158467/1000000000001000000000000000",
+      "sigma2": "500000000000500000000000000/177620609398403568704158467",
+      "delta": "3/17000000",
+      "sensitivity2": 1,
+      "tau": 9,
+      "tail_lower": "69469748862207/500000000000000000000",
+      "tail_upper": "27787899544883/200000000000000000000",
+      "prev_tail_lower": "14441576541317/5000000000000000000",
+      "prev_tail_upper": "288831530826341/100000000000000000000"
+    },
+    {
+      "r_j": "66447965811/1",
+      "share": "22149321937/333333333334",
+      "rho": "19376159382518864201737183/333333333334000000000000000",
+      "sigma2": "166666666667000000000000000/19376159382518864201737183",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "41859595424/1",
+      "share": "20929797712/500000000001",
+      "rho": "1144332706507557051085963/31250000000062500000000000",
+      "sigma2": "15625000000031250000000000/1144332706507557051085963",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "69231061618/1",
+      "share": "34615530809/500000000001",
+      "rho": "30281560942290445692343031/500000000001000000000000000",
+      "sigma2": "250000000000500000000000000/30281560942290445692343031",
+      "delta": "1/19000000",
+      "sensitivity2": 1,
+      "tau": 16,
+      "tail_lower": "18498409040293/625000000000000000000",
+      "tail_upper": "295974544644689/10000000000000000000000",
+      "prev_tail_lower": "197295314749243/1000000000000000000000",
+      "prev_tail_upper": "49323828687311/250000000000000000000"
+    },
+    {
+      "r_j": "87071467281/1",
+      "share": "29023822427/333333333334",
+      "rho": "25389951477297789324599093/333333333334000000000000000",
+      "sigma2": "166666666667000000000000000/25389951477297789324599093",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "168757096458/1",
+      "share": "28126182743/166666666667",
+      "rho": "24604699015180494108994937/166666666667000000000000000",
+      "sigma2": "83333333333500000000000000/24604699015180494108994937",
+      "delta": "1/4750000",
+      "sensitivity2": 1,
+      "tau": 10,
+      "tail_lower": "175956312085059/2000000000000000000000",
+      "tail_upper": "54986347526581/625000000000000000000",
+      "prev_tail_lower": "147718464043627/100000000000000000000",
+      "prev_tail_upper": "36929616010907/25000000000000000000"
+    },
+    {
+      "r_j": "108132221245/1",
+      "share": "108132221245/1000000000002",
+      "rho": "18918747573296536073083991/200000000000400000000000000",
+      "sigma2": "100000000000200000000000000/18918747573296536073083991",
+      "delta": "1/9500000",
+      "sensitivity2": 1,
+      "tau": 13,
+      "tail_lower": "53600085073189/2500000000000000000000",
+      "tail_upper": "214400340292757/10000000000000000000000",
+      "prev_tail_lower": "116057936164031/500000000000000000000",
+      "prev_tail_upper": "232115872328063/1000000000000000000000"
+    },
+    {
+      "r_j": "44292525998/1",
+      "share": "22146262999/500000000001",
+      "rho": "19373483432871383871765241/500000000001000000000000000",
+      "sigma2": "250000000000500000000000000/19373483432871383871765241",
+      "delta": "1/38000000",
+      "sensitivity2": 1,
+      "tau": 20,
+      "tail_lower": "64512493709259/2500000000000000000000",
+      "tail_upper": "258049974837037/10000000000000000000000",
+      "prev_tail_lower": "5964936747943/50000000000000000000",
+      "prev_tail_upper": "119298734958861/1000000000000000000000"
+    },
+    {
+      "r_j": "6110069090/1",
+      "share": "3055034545/500000000004",
+      "rho": "534506983386585819802931/100000000000800000000000000",
+      "sigma2": "50000000000400000000000000/534506983386585819802931",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3849102331/1",
+      "share": "3849102331/1000000000008",
+      "rho": "3367182998071607326350229/1000000000008000000000000000",
+      "sigma2": "500000000004000000000000000/3367182998071607326350229",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "6785888669/1",
+      "share": "6785888669/1000000000008",
+      "rho": "5936274743604255972818771/1000000000008000000000000000",
+      "sigma2": "500000000004000000000000000/5936274743604255972818771",
+      "delta": "1/412000000",
+      "sensitivity2": 1,
+      "tau": 55,
+      "tail_lower": "70685108649967/50000000000000000000000",
+      "tail_upper": "28274043459987/20000000000000000000000",
+      "prev_tail_lower": "68334478901917/25000000000000000000000",
+      "prev_tail_upper": "273337915607669/100000000000000000000000"
+    },
+    {
+      "r_j": "8006455493/1",
+      "share": "8006455493/1000000000008",
+      "rho": "7004022884432538846262187/1000000000008000000000000000",
+      "sigma2": "500000000004000000000000000/7004022884432538846262187",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "16638526846/1",
+      "share": "8319263423/500000000004",
+      "rho": "7277666309050021035911057/500000000004000000000000000",
+      "sigma2": "250000000002000000000000000/7277666309050021035911057",
+      "delta": "1/103000000",
+      "sensitivity2": 1,
+      "tau": 34,
+      "tail_lower": "131121164288779/25000000000000000000000",
+      "tail_upper": "524484657155117/100000000000000000000000",
+      "prev_tail_lower": "8836044601241/625000000000000000000",
+      "prev_tail_upper": "141376713619857/10000000000000000000000"
+    },
+    {
+      "r_j": "10628674260/1",
+      "share": "885722855/83333333334",
+      "rho": "154965531279321216650389/16666666666800000000000000",
+      "sigma2": "8333333333400000000000000/154965531279321216650389",
+      "delta": "1/206000000",
+      "sensitivity2": 1,
+      "tau": 43,
+      "tail_lower": "1294770989471/390625000000000000000",
+      "tail_upper": "331461373304577/100000000000000000000000",
+      "prev_tail_lower": "14824148718353/2000000000000000000000",
+      "prev_tail_upper": "741207435917651/100000000000000000000000"
+    },
+    {
+      "r_j": "33812028737/1",
+      "share": "33812028737/1000000000008",
+      "rho": "29578659776487766882998383/1000000000008000000000000000",
+      "sigma2": "500000000004000000000000000/29578659776487766882998383",
+      "delta": "3/103000000",
+      "sensitivity2": 1,
+      "tau": 23,
+      "tail_lower": "205715998671989/10000000000000000000000",
+      "tail_upper": "20571599867199/1000000000000000000000",
+      "prev_tail_lower": "49619623586773/625000000000000000000",
+      "prev_tail_upper": "793913977388369/10000000000000000000000"
+    },
+    {
+      "r_j": "26031203859/1",
+      "share": "8677067953/333333333336",
+      "rho": "7590672622326185884579327/333333333336000000000000000",
+      "sigma2": "166666666668000000000000000/7590672622326185884579327",
+      "delta": "1/51500000",
+      "sensitivity2": 1,
+      "tau": 27,
+      "tail_lower": "730749459343373/100000000000000000000000",
+      "tail_upper": "365374729671687/50000000000000000000000",
+      "prev_tail_lower": "248724443347753/10000000000000000000000",
+      "prev_tail_upper": "124362221673877/5000000000000000000000"
+    }
+  ],
+  "tables": {
+    "cards": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          1
+        ],
+        [
+          "distinct_count",
+          "id",
+          1
+        ],
+        [
+          "bins",
+          "id",
+          2
+        ],
+        [
+          "null_count",
+          "artist",
+          0
+        ],
+        [
+          "distinct_count",
+          "artist",
+          3
+        ],
+        [
+          "patterns",
+          "artist",
+          4
+        ],
+        [
+          "values",
+          "artist",
+          5
+        ],
+        [
+          "null_count",
+          "asciiName",
+          0
+        ],
+        [
+          "distinct_count",
+          "asciiName",
+          3
+        ],
+        [
+          "patterns",
+          "asciiName",
+          4
+        ],
+        [
+          "values",
+          "asciiName",
+          5
+        ],
+        [
+          "null_count",
+          "availability",
+          0
+        ],
+        [
+          "distinct_count",
+          "availability",
+          3
+        ],
+        [
+          "patterns",
+          "availability",
+          4
+        ],
+        [
+          "values",
+          "availability",
+          5
+        ],
+        [
+          "null_count",
+          "borderColor",
+          0
+        ],
+        [
+          "distinct_count",
+          "borderColor",
+          3
+        ],
+        [
+          "patterns",
+          "borderColor",
+          4
+        ],
+        [
+          "values",
+          "borderColor",
+          5
+        ],
+        [
+          "null_count",
+          "cardKingdomFoilId",
+          1
+        ],
+        [
+          "distinct_count",
+          "cardKingdomFoilId",
+          1
+        ],
+        [
+          "patterns",
+          "cardKingdomFoilId",
+          2
+        ],
+        [
+          "null_count",
+          "cardKingdomId",
+          1
+        ],
+        [
+          "distinct_count",
+          "cardKingdomId",
+          1
+        ],
+        [
+          "patterns",
+          "cardKingdomId",
+          2
+        ],
+        [
+          "null_count",
+          "colorIdentity",
+          0
+        ],
+        [
+          "distinct_count",
+          "colorIdentity",
+          3
+        ],
+        [
+          "patterns",
+          "colorIdentity",
+          4
+        ],
+        [
+          "values",
+          "colorIdentity",
+          5
+        ],
+        [
+          "null_count",
+          "colorIndicator",
+          0
+        ],
+        [
+          "distinct_count",
+          "colorIndicator",
+          3
+        ],
+        [
+          "patterns",
+          "colorIndicator",
+          4
+        ],
+        [
+          "values",
+          "colorIndicator",
+          5
+        ],
+        [
+          "null_count",
+          "colors",
+          0
+        ],
+        [
+          "distinct_count",
+          "colors",
+          3
+        ],
+        [
+          "patterns",
+          "colors",
+          4
+        ],
+        [
+          "values",
+          "colors",
+          5
+        ],
+        [
+          "null_count",
+          "convertedManaCost",
+          0
+        ],
+        [
+          "distinct_count",
+          "convertedManaCost",
+          0
+        ],
+        [
+          "bins",
+          "convertedManaCost",
+          4
+        ],
+        [
+          "null_count",
+          "duelDeck",
+          0
+        ],
+        [
+          "distinct_count",
+          "duelDeck",
+          3
+        ],
+        [
+          "patterns",
+          "duelDeck",
+          4
+        ],
+        [
+          "values",
+          "duelDeck",
+          5
+        ],
+        [
+          "null_count",
+          "edhrecRank",
+          0
+        ],
+        [
+          "distinct_count",
+          "edhrecRank",
+          3
+        ],
+        [
+          "bins",
+          "edhrecRank",
+          4
+        ],
+        [
+          "values",
+          "edhrecRank",
+          6
+        ],
+        [
+          "null_count",
+          "faceConvertedManaCost",
+          0
+        ],
+        [
+          "distinct_count",
+          "faceConvertedManaCost",
+          0
+        ],
+        [
+          "bins",
+          "faceConvertedManaCost",
+          4
+        ],
+        [
+          "null_count",
+          "faceName",
+          0
+        ],
+        [
+          "distinct_count",
+          "faceName",
+          3
+        ],
+        [
+          "patterns",
+          "faceName",
+          4
+        ],
+        [
+          "values",
+          "faceName",
+          5
+        ],
+        [
+          "null_count",
+          "flavorName",
+          0
+        ],
+        [
+          "distinct_count",
+          "flavorName",
+          3
+        ],
+        [
+          "patterns",
+          "flavorName",
+          4
+        ],
+        [
+          "values",
+          "flavorName",
+          5
+        ],
+        [
+          "null_count",
+          "flavorText",
+          1
+        ],
+        [
+          "distinct_count",
+          "flavorText",
+          1
+        ],
+        [
+          "patterns",
+          "flavorText",
+          2
+        ],
+        [
+          "values",
+          "flavorText",
+          7
+        ],
+        [
+          "null_count",
+          "frameEffects",
+          0
+        ],
+        [
+          "distinct_count",
+          "frameEffects",
+          3
+        ],
+        [
+          "patterns",
+          "frameEffects",
+          4
+        ],
+        [
+          "values",
+          "frameEffects",
+          5
+        ],
+        [
+          "null_count",
+          "frameVersion",
+          0
+        ],
+        [
+          "distinct_count",
+          "frameVersion",
+          3
+        ],
+        [
+          "patterns",
+          "frameVersion",
+          4
+        ],
+        [
+          "values",
+          "frameVersion",
+          5
+        ],
+        [
+          "null_count",
+          "hand",
+          0
+        ],
+        [
+          "distinct_count",
+          "hand",
+          3
+        ],
+        [
+          "patterns",
+          "hand",
+          4
+        ],
+        [
+          "values",
+          "hand",
+          5
+        ],
+        [
+          "null_count",
+          "hasAlternativeDeckLimit",
+          0
+        ],
+        [
+          "distinct_count",
+          "hasAlternativeDeckLimit",
+          3
+        ],
+        [
+          "bins",
+          "hasAlternativeDeckLimit",
+          6
+        ],
+        [
+          "values",
+          "hasAlternativeDeckLimit",
+          8
+        ],
+        [
+          "null_count",
+          "hasContentWarning",
+          0
+        ],
+        [
+          "distinct_count",
+          "hasContentWarning",
+          3
+        ],
+        [
+          "bins",
+          "hasContentWarning",
+          6
+        ],
+        [
+          "values",
+          "hasContentWarning",
+          8
+        ],
+        [
+          "null_count",
+          "hasFoil",
+          0
+        ],
+        [
+          "distinct_count",
+          "hasFoil",
+          3
+        ],
+        [
+          "bins",
+          "hasFoil",
+          6
+        ],
+        [
+          "values",
+          "hasFoil",
+          8
+        ],
+        [
+          "null_count",
+          "hasNonFoil",
+          0
+        ],
+        [
+          "distinct_count",
+          "hasNonFoil",
+          3
+        ],
+        [
+          "bins",
+          "hasNonFoil",
+          6
+        ],
+        [
+          "values",
+          "hasNonFoil",
+          8
+        ],
+        [
+          "null_count",
+          "isAlternative",
+          0
+        ],
+        [
+          "distinct_count",
+          "isAlternative",
+          3
+        ],
+        [
+          "bins",
+          "isAlternative",
+          6
+        ],
+        [
+          "values",
+          "isAlternative",
+          8
+        ],
+        [
+          "null_count",
+          "isFullArt",
+          0
+        ],
+        [
+          "distinct_count",
+          "isFullArt",
+          3
+        ],
+        [
+          "bins",
+          "isFullArt",
+          6
+        ],
+        [
+          "values",
+          "isFullArt",
+          8
+        ],
+        [
+          "null_count",
+          "isOnlineOnly",
+          0
+        ],
+        [
+          "distinct_count",
+          "isOnlineOnly",
+          3
+        ],
+        [
+          "bins",
+          "isOnlineOnly",
+          6
+        ],
+        [
+          "values",
+          "isOnlineOnly",
+          8
+        ],
+        [
+          "null_count",
+          "isOversized",
+          0
+        ],
+        [
+          "distinct_count",
+          "isOversized",
+          3
+        ],
+        [
+          "bins",
+          "isOversized",
+          6
+        ],
+        [
+          "values",
+          "isOversized",
+          8
+        ],
+        [
+          "null_count",
+          "isPromo",
+          0
+        ],
+        [
+          "distinct_count",
+          "isPromo",
+          3
+        ],
+        [
+          "bins",
+          "isPromo",
+          6
+        ],
+        [
+          "values",
+          "isPromo",
+          8
+        ],
+        [
+          "null_count",
+          "isReprint",
+          0
+        ],
+        [
+          "distinct_count",
+          "isReprint",
+          3
+        ],
+        [
+          "bins",
+          "isReprint",
+          6
+        ],
+        [
+          "values",
+          "isReprint",
+          8
+        ],
+        [
+          "null_count",
+          "isReserved",
+          0
+        ],
+        [
+          "distinct_count",
+          "isReserved",
+          3
+        ],
+        [
+          "bins",
+          "isReserved",
+          6
+        ],
+        [
+          "values",
+          "isReserved",
+          8
+        ],
+        [
+          "null_count",
+          "isStarter",
+          0
+        ],
+        [
+          "distinct_count",
+          "isStarter",
+          3
+        ],
+        [
+          "bins",
+          "isStarter",
+          6
+        ],
+        [
+          "values",
+          "isStarter",
+          8
+        ],
+        [
+          "null_count",
+          "isStorySpotlight",
+          0
+        ],
+        [
+          "distinct_count",
+          "isStorySpotlight",
+          3
+        ],
+        [
+          "bins",
+          "isStorySpotlight",
+          6
+        ],
+        [
+          "values",
+          "isStorySpotlight",
+          8
+        ],
+        [
+          "null_count",
+          "isTextless",
+          0
+        ],
+        [
+          "distinct_count",
+          "isTextless",
+          3
+        ],
+        [
+          "bins",
+          "isTextless",
+          6
+        ],
+        [
+          "values",
+          "isTextless",
+          8
+        ],
+        [
+          "null_count",
+          "isTimeshifted",
+          0
+        ],
+        [
+          "distinct_count",
+          "isTimeshifted",
+          3
+        ],
+        [
+          "bins",
+          "isTimeshifted",
+          6
+        ],
+        [
+          "values",
+          "isTimeshifted",
+          8
+        ],
+        [
+          "null_count",
+          "keywords",
+          0
+        ],
+        [
+          "distinct_count",
+          "keywords",
+          3
+        ],
+        [
+          "patterns",
+          "keywords",
+          4
+        ],
+        [
+          "values",
+          "keywords",
+          5
+        ],
+        [
+          "null_count",
+          "layout",
+          0
+        ],
+        [
+          "distinct_count",
+          "layout",
+          3
+        ],
+        [
+          "patterns",
+          "layout",
+          4
+        ],
+        [
+          "values",
+          "layout",
+          5
+        ],
+        [
+          "null_count",
+          "leadershipSkills",
+          0
+        ],
+        [
+          "distinct_count",
+          "leadershipSkills",
+          3
+        ],
+        [
+          "patterns",
+          "leadershipSkills",
+          4
+        ],
+        [
+          "values",
+          "leadershipSkills",
+          5
+        ],
+        [
+          "null_count",
+          "life",
+          0
+        ],
+        [
+          "distinct_count",
+          "life",
+          3
+        ],
+        [
+          "patterns",
+          "life",
+          4
+        ],
+        [
+          "values",
+          "life",
+          5
+        ],
+        [
+          "null_count",
+          "loyalty",
+          0
+        ],
+        [
+          "distinct_count",
+          "loyalty",
+          3
+        ],
+        [
+          "patterns",
+          "loyalty",
+          4
+        ],
+        [
+          "values",
+          "loyalty",
+          5
+        ],
+        [
+          "null_count",
+          "manaCost",
+          0
+        ],
+        [
+          "distinct_count",
+          "manaCost",
+          3
+        ],
+        [
+          "patterns",
+          "manaCost",
+          4
+        ],
+        [
+          "values",
+          "manaCost",
+          5
+        ],
+        [
+          "null_count",
+          "mcmId",
+          1
+        ],
+        [
+          "distinct_count",
+          "mcmId",
+          1
+        ],
+        [
+          "patterns",
+          "mcmId",
+          2
+        ],
+        [
+          "null_count",
+          "mcmMetaId",
+          1
+        ],
+        [
+          "distinct_count",
+          "mcmMetaId",
+          1
+        ],
+        [
+          "patterns",
+          "mcmMetaId",
+          2
+        ],
+        [
+          "null_count",
+          "mtgArenaId",
+          1
+        ],
+        [
+          "distinct_count",
+          "mtgArenaId",
+          1
+        ],
+        [
+          "patterns",
+          "mtgArenaId",
+          2
+        ],
+        [
+          "null_count",
+          "mtgjsonV4Id",
+          1
+        ],
+        [
+          "distinct_count",
+          "mtgjsonV4Id",
+          1
+        ],
+        [
+          "patterns",
+          "mtgjsonV4Id",
+          2
+        ],
+        [
+          "null_count",
+          "mtgoFoilId",
+          1
+        ],
+        [
+          "distinct_count",
+          "mtgoFoilId",
+          1
+        ],
+        [
+          "patterns",
+          "mtgoFoilId",
+          2
+        ],
+        [
+          "null_count",
+          "mtgoId",
+          1
+        ],
+        [
+          "distinct_count",
+          "mtgoId",
+          1
+        ],
+        [
+          "patterns",
+          "mtgoId",
+          2
+        ],
+        [
+          "null_count",
+          "multiverseId",
+          1
+        ],
+        [
+          "distinct_count",
+          "multiverseId",
+          1
+        ],
+        [
+          "patterns",
+          "multiverseId",
+          2
+        ],
+        [
+          "null_count",
+          "name",
+          0
+        ],
+        [
+          "distinct_count",
+          "name",
+          3
+        ],
+        [
+          "patterns",
+          "name",
+          4
+        ],
+        [
+          "values",
+          "name",
+          5
+        ],
+        [
+          "null_count",
+          "number",
+          0
+        ],
+        [
+          "distinct_count",
+          "number",
+          3
+        ],
+        [
+          "patterns",
+          "number",
+          4
+        ],
+        [
+          "values",
+          "number",
+          5
+        ],
+        [
+          "null_count",
+          "originalReleaseDate",
+          0
+        ],
+        [
+          "distinct_count",
+          "originalReleaseDate",
+          3
+        ],
+        [
+          "patterns",
+          "originalReleaseDate",
+          4
+        ],
+        [
+          "values",
+          "originalReleaseDate",
+          5
+        ],
+        [
+          "null_count",
+          "originalText",
+          1
+        ],
+        [
+          "distinct_count",
+          "originalText",
+          1
+        ],
+        [
+          "patterns",
+          "originalText",
+          2
+        ],
+        [
+          "values",
+          "originalText",
+          7
+        ],
+        [
+          "null_count",
+          "originalType",
+          0
+        ],
+        [
+          "distinct_count",
+          "originalType",
+          3
+        ],
+        [
+          "patterns",
+          "originalType",
+          4
+        ],
+        [
+          "values",
+          "originalType",
+          5
+        ],
+        [
+          "null_count",
+          "otherFaceIds",
+          1
+        ],
+        [
+          "distinct_count",
+          "otherFaceIds",
+          1
+        ],
+        [
+          "patterns",
+          "otherFaceIds",
+          2
+        ],
+        [
+          "null_count",
+          "power",
+          0
+        ],
+        [
+          "distinct_count",
+          "power",
+          3
+        ],
+        [
+          "patterns",
+          "power",
+          4
+        ],
+        [
+          "values",
+          "power",
+          5
+        ],
+        [
+          "null_count",
+          "printings",
+          0
+        ],
+        [
+          "distinct_count",
+          "printings",
+          3
+        ],
+        [
+          "patterns",
+          "printings",
+          4
+        ],
+        [
+          "values",
+          "printings",
+          5
+        ],
+        [
+          "null_count",
+          "promoTypes",
+          0
+        ],
+        [
+          "distinct_count",
+          "promoTypes",
+          3
+        ],
+        [
+          "patterns",
+          "promoTypes",
+          4
+        ],
+        [
+          "values",
+          "promoTypes",
+          5
+        ],
+        [
+          "null_count",
+          "purchaseUrls",
+          1
+        ],
+        [
+          "distinct_count",
+          "purchaseUrls",
+          1
+        ],
+        [
+          "patterns",
+          "purchaseUrls",
+          2
+        ],
+        [
+          "null_count",
+          "rarity",
+          0
+        ],
+        [
+          "distinct_count",
+          "rarity",
+          3
+        ],
+        [
+          "patterns",
+          "rarity",
+          4
+        ],
+        [
+          "values",
+          "rarity",
+          5
+        ],
+        [
+          "null_count",
+          "scryfallId",
+          1
+        ],
+        [
+          "distinct_count",
+          "scryfallId",
+          1
+        ],
+        [
+          "patterns",
+          "scryfallId",
+          2
+        ],
+        [
+          "null_count",
+          "scryfallIllustrationId",
+          1
+        ],
+        [
+          "distinct_count",
+          "scryfallIllustrationId",
+          1
+        ],
+        [
+          "patterns",
+          "scryfallIllustrationId",
+          2
+        ],
+        [
+          "null_count",
+          "scryfallOracleId",
+          1
+        ],
+        [
+          "distinct_count",
+          "scryfallOracleId",
+          1
+        ],
+        [
+          "patterns",
+          "scryfallOracleId",
+          2
+        ],
+        [
+          "null_count",
+          "setCode",
+          0
+        ],
+        [
+          "distinct_count",
+          "setCode",
+          3
+        ],
+        [
+          "patterns",
+          "setCode",
+          4
+        ],
+        [
+          "values",
+          "setCode",
+          5
+        ],
+        [
+          "null_count",
+          "side",
+          0
+        ],
+        [
+          "distinct_count",
+          "side",
+          3
+        ],
+        [
+          "patterns",
+          "side",
+          4
+        ],
+        [
+          "values",
+          "side",
+          5
+        ],
+        [
+          "null_count",
+          "subtypes",
+          0
+        ],
+        [
+          "distinct_count",
+          "subtypes",
+          3
+        ],
+        [
+          "patterns",
+          "subtypes",
+          4
+        ],
+        [
+          "values",
+          "subtypes",
+          5
+        ],
+        [
+          "null_count",
+          "supertypes",
+          0
+        ],
+        [
+          "distinct_count",
+          "supertypes",
+          3
+        ],
+        [
+          "patterns",
+          "supertypes",
+          4
+        ],
+        [
+          "values",
+          "supertypes",
+          5
+        ],
+        [
+          "null_count",
+          "tcgplayerProductId",
+          1
+        ],
+        [
+          "distinct_count",
+          "tcgplayerProductId",
+          1
+        ],
+        [
+          "patterns",
+          "tcgplayerProductId",
+          2
+        ],
+        [
+          "null_count",
+          "text",
+          1
+        ],
+        [
+          "distinct_count",
+          "text",
+          1
+        ],
+        [
+          "patterns",
+          "text",
+          2
+        ],
+        [
+          "values",
+          "text",
+          7
+        ],
+        [
+          "null_count",
+          "toughness",
+          0
+        ],
+        [
+          "distinct_count",
+          "toughness",
+          3
+        ],
+        [
+          "patterns",
+          "toughness",
+          4
+        ],
+        [
+          "values",
+          "toughness",
+          5
+        ],
+        [
+          "null_count",
+          "type",
+          0
+        ],
+        [
+          "distinct_count",
+          "type",
+          3
+        ],
+        [
+          "patterns",
+          "type",
+          4
+        ],
+        [
+          "values",
+          "type",
+          5
+        ],
+        [
+          "null_count",
+          "types",
+          0
+        ],
+        [
+          "distinct_count",
+          "types",
+          3
+        ],
+        [
+          "patterns",
+          "types",
+          4
+        ],
+        [
+          "values",
+          "types",
+          5
+        ],
+        [
+          "null_count",
+          "uuid",
+          1
+        ],
+        [
+          "distinct_count",
+          "uuid",
+          1
+        ],
+        [
+          "patterns",
+          "uuid",
+          2
+        ],
+        [
+          "null_count",
+          "variations",
+          0
+        ],
+        [
+          "distinct_count",
+          "variations",
+          3
+        ],
+        [
+          "patterns",
+          "variations",
+          4
+        ],
+        [
+          "values",
+          "variations",
+          5
+        ],
+        [
+          "null_count",
+          "watermark",
+          0
+        ],
+        [
+          "distinct_count",
+          "watermark",
+          3
+        ],
+        [
+          "patterns",
+          "watermark",
+          4
+        ],
+        [
+          "values",
+          "watermark",
+          5
+        ]
+      ]
+    },
+    "foreign_data": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          9
+        ],
+        [
+          "null_count",
+          "id",
+          10
+        ],
+        [
+          "distinct_count",
+          "id",
+          10
+        ],
+        [
+          "bins",
+          "id",
+          11
+        ],
+        [
+          "null_count",
+          "flavorText",
+          10
+        ],
+        [
+          "distinct_count",
+          "flavorText",
+          10
+        ],
+        [
+          "patterns",
+          "flavorText",
+          11
+        ],
+        [
+          "values",
+          "flavorText",
+          12
+        ],
+        [
+          "null_count",
+          "language",
+          9
+        ],
+        [
+          "distinct_count",
+          "language",
+          13
+        ],
+        [
+          "patterns",
+          "language",
+          14
+        ],
+        [
+          "values",
+          "language",
+          15
+        ],
+        [
+          "null_count",
+          "multiverseid",
+          9
+        ],
+        [
+          "distinct_count",
+          "multiverseid",
+          13
+        ],
+        [
+          "bins",
+          "multiverseid",
+          14
+        ],
+        [
+          "values",
+          "multiverseid",
+          16
+        ],
+        [
+          "null_count",
+          "name",
+          9
+        ],
+        [
+          "distinct_count",
+          "name",
+          13
+        ],
+        [
+          "patterns",
+          "name",
+          14
+        ],
+        [
+          "values",
+          "name",
+          15
+        ],
+        [
+          "null_count",
+          "text",
+          10
+        ],
+        [
+          "distinct_count",
+          "text",
+          10
+        ],
+        [
+          "patterns",
+          "text",
+          11
+        ],
+        [
+          "values",
+          "text",
+          12
+        ],
+        [
+          "null_count",
+          "type",
+          9
+        ],
+        [
+          "distinct_count",
+          "type",
+          13
+        ],
+        [
+          "patterns",
+          "type",
+          14
+        ],
+        [
+          "values",
+          "type",
+          15
+        ],
+        [
+          "null_count",
+          "uuid",
+          10
+        ],
+        [
+          "distinct_count",
+          "uuid",
+          10
+        ],
+        [
+          "patterns",
+          "uuid",
+          11
+        ]
+      ]
+    },
+    "legalities": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          17
+        ],
+        [
+          "null_count",
+          "id",
+          18
+        ],
+        [
+          "distinct_count",
+          "id",
+          18
+        ],
+        [
+          "bins",
+          "id",
+          19
+        ],
+        [
+          "null_count",
+          "format",
+          17
+        ],
+        [
+          "distinct_count",
+          "format",
+          20
+        ],
+        [
+          "patterns",
+          "format",
+          21
+        ],
+        [
+          "values",
+          "format",
+          22
+        ],
+        [
+          "null_count",
+          "status",
+          17
+        ],
+        [
+          "distinct_count",
+          "status",
+          20
+        ],
+        [
+          "patterns",
+          "status",
+          21
+        ],
+        [
+          "values",
+          "status",
+          22
+        ],
+        [
+          "null_count",
+          "uuid",
+          18
+        ],
+        [
+          "distinct_count",
+          "uuid",
+          18
+        ],
+        [
+          "patterns",
+          "uuid",
+          19
+        ]
+      ]
+    },
+    "rulings": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          23
+        ],
+        [
+          "null_count",
+          "id",
+          24
+        ],
+        [
+          "distinct_count",
+          "id",
+          24
+        ],
+        [
+          "bins",
+          "id",
+          25
+        ],
+        [
+          "null_count",
+          "date",
+          23
+        ],
+        [
+          "distinct_count",
+          "date",
+          26
+        ],
+        [
+          "patterns",
+          "date",
+          27
+        ],
+        [
+          "values",
+          "date",
+          28
+        ],
+        [
+          "null_count",
+          "text",
+          24
+        ],
+        [
+          "distinct_count",
+          "text",
+          24
+        ],
+        [
+          "patterns",
+          "text",
+          25
+        ],
+        [
+          "values",
+          "text",
+          29
+        ],
+        [
+          "null_count",
+          "uuid",
+          24
+        ],
+        [
+          "distinct_count",
+          "uuid",
+          24
+        ],
+        [
+          "patterns",
+          "uuid",
+          25
+        ]
+      ]
+    },
+    "set_translations": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          17
+        ],
+        [
+          "null_count",
+          "id",
+          18
+        ],
+        [
+          "distinct_count",
+          "id",
+          18
+        ],
+        [
+          "bins",
+          "id",
+          19
+        ],
+        [
+          "null_count",
+          "language",
+          17
+        ],
+        [
+          "distinct_count",
+          "language",
+          20
+        ],
+        [
+          "patterns",
+          "language",
+          21
+        ],
+        [
+          "values",
+          "language",
+          22
+        ],
+        [
+          "null_count",
+          "setCode",
+          18
+        ],
+        [
+          "distinct_count",
+          "setCode",
+          18
+        ],
+        [
+          "patterns",
+          "setCode",
+          19
+        ],
+        [
+          "null_count",
+          "translation",
+          17
+        ],
+        [
+          "distinct_count",
+          "translation",
+          20
+        ],
+        [
+          "patterns",
+          "translation",
+          21
+        ],
+        [
+          "values",
+          "translation",
+          22
+        ]
+      ]
+    },
+    "sets": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          30
+        ],
+        [
+          "null_count",
+          "id",
+          31
+        ],
+        [
+          "distinct_count",
+          "id",
+          31
+        ],
+        [
+          "bins",
+          "id",
+          32
+        ],
+        [
+          "null_count",
+          "baseSetSize",
+          30
+        ],
+        [
+          "distinct_count",
+          "baseSetSize",
+          33
+        ],
+        [
+          "bins",
+          "baseSetSize",
+          34
+        ],
+        [
+          "values",
+          "baseSetSize",
+          35
+        ],
+        [
+          "null_count",
+          "block",
+          30
+        ],
+        [
+          "distinct_count",
+          "block",
+          33
+        ],
+        [
+          "patterns",
+          "block",
+          34
+        ],
+        [
+          "values",
+          "block",
+          36
+        ],
+        [
+          "null_count",
+          "booster",
+          30
+        ],
+        [
+          "distinct_count",
+          "booster",
+          33
+        ],
+        [
+          "patterns",
+          "booster",
+          34
+        ],
+        [
+          "values",
+          "booster",
+          36
+        ],
+        [
+          "null_count",
+          "code",
+          31
+        ],
+        [
+          "distinct_count",
+          "code",
+          31
+        ],
+        [
+          "patterns",
+          "code",
+          32
+        ],
+        [
+          "null_count",
+          "isFoilOnly",
+          30
+        ],
+        [
+          "distinct_count",
+          "isFoilOnly",
+          33
+        ],
+        [
+          "bins",
+          "isFoilOnly",
+          35
+        ],
+        [
+          "values",
+          "isFoilOnly",
+          37
+        ],
+        [
+          "null_count",
+          "isForeignOnly",
+          30
+        ],
+        [
+          "distinct_count",
+          "isForeignOnly",
+          33
+        ],
+        [
+          "bins",
+          "isForeignOnly",
+          35
+        ],
+        [
+          "values",
+          "isForeignOnly",
+          37
+        ],
+        [
+          "null_count",
+          "isNonFoilOnly",
+          30
+        ],
+        [
+          "distinct_count",
+          "isNonFoilOnly",
+          33
+        ],
+        [
+          "bins",
+          "isNonFoilOnly",
+          35
+        ],
+        [
+          "values",
+          "isNonFoilOnly",
+          37
+        ],
+        [
+          "null_count",
+          "isOnlineOnly",
+          30
+        ],
+        [
+          "distinct_count",
+          "isOnlineOnly",
+          33
+        ],
+        [
+          "bins",
+          "isOnlineOnly",
+          35
+        ],
+        [
+          "values",
+          "isOnlineOnly",
+          37
+        ],
+        [
+          "null_count",
+          "isPartialPreview",
+          30
+        ],
+        [
+          "distinct_count",
+          "isPartialPreview",
+          33
+        ],
+        [
+          "bins",
+          "isPartialPreview",
+          35
+        ],
+        [
+          "values",
+          "isPartialPreview",
+          37
+        ],
+        [
+          "null_count",
+          "keyruneCode",
+          30
+        ],
+        [
+          "distinct_count",
+          "keyruneCode",
+          33
+        ],
+        [
+          "patterns",
+          "keyruneCode",
+          34
+        ],
+        [
+          "values",
+          "keyruneCode",
+          36
+        ],
+        [
+          "null_count",
+          "mcmId",
+          31
+        ],
+        [
+          "distinct_count",
+          "mcmId",
+          31
+        ],
+        [
+          "bins",
+          "mcmId",
+          32
+        ],
+        [
+          "null_count",
+          "mcmIdExtras",
+          30
+        ],
+        [
+          "distinct_count",
+          "mcmIdExtras",
+          33
+        ],
+        [
+          "bins",
+          "mcmIdExtras",
+          34
+        ],
+        [
+          "values",
+          "mcmIdExtras",
+          35
+        ],
+        [
+          "null_count",
+          "mcmName",
+          30
+        ],
+        [
+          "distinct_count",
+          "mcmName",
+          33
+        ],
+        [
+          "patterns",
+          "mcmName",
+          34
+        ],
+        [
+          "values",
+          "mcmName",
+          36
+        ],
+        [
+          "null_count",
+          "mtgoCode",
+          30
+        ],
+        [
+          "distinct_count",
+          "mtgoCode",
+          33
+        ],
+        [
+          "patterns",
+          "mtgoCode",
+          34
+        ],
+        [
+          "values",
+          "mtgoCode",
+          36
+        ],
+        [
+          "null_count",
+          "name",
+          30
+        ],
+        [
+          "distinct_count",
+          "name",
+          33
+        ],
+        [
+          "patterns",
+          "name",
+          34
+        ],
+        [
+          "values",
+          "name",
+          36
+        ],
+        [
+          "null_count",
+          "parentCode",
+          30
+        ],
+        [
+          "distinct_count",
+          "parentCode",
+          33
+        ],
+        [
+          "patterns",
+          "parentCode",
+          34
+        ],
+        [
+          "values",
+          "parentCode",
+          36
+        ],
+        [
+          "null_count",
+          "releaseDate",
+          30
+        ],
+        [
+          "distinct_count",
+          "releaseDate",
+          33
+        ],
+        [
+          "patterns",
+          "releaseDate",
+          34
+        ],
+        [
+          "values",
+          "releaseDate",
+          35
+        ],
+        [
+          "null_count",
+          "tcgplayerGroupId",
+          31
+        ],
+        [
+          "distinct_count",
+          "tcgplayerGroupId",
+          31
+        ],
+        [
+          "bins",
+          "tcgplayerGroupId",
+          32
+        ],
+        [
+          "null_count",
+          "totalSetSize",
+          30
+        ],
+        [
+          "distinct_count",
+          "totalSetSize",
+          33
+        ],
+        [
+          "bins",
+          "totalSetSize",
+          34
+        ],
+        [
+          "values",
+          "totalSetSize",
+          35
+        ],
+        [
+          "null_count",
+          "type",
+          30
+        ],
+        [
+          "distinct_count",
+          "type",
+          33
+        ],
+        [
+          "patterns",
+          "type",
+          34
+        ],
+        [
+          "values",
+          "type",
+          36
+        ]
+      ]
+    }
+  }
+}

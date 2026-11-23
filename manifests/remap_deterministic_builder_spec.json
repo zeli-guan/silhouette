@@ -1,0 +1,14 @@
+{
+  "seed1": {
+    "seed_key": "bird_remap_130",
+    "gold_matches": 130,
+    "pred_matches": 1430,
+    "bit_exact": true
+  },
+  "seed2": {
+    "seed_key": "bird_remap_seed2",
+    "gold_matches": 75,
+    "pred_matches": 600,
+    "bit_exact": true
+  }
+}

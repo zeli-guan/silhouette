@@ -1,0 +1,51 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table badges(Id,UserId,Name,Date):
+[1,null,"Student",null]
+[1331,139,"Supporter",null]
+[2661,5837,"Notable Question",null]
+[3991,null,"Promoter",null]
+[5321,12218,"Editor",null]
+Table comments(Id,PostId,Score,Text,CreationDate,UserId,UserDisplayName):
+[1,null,81335,null,null,28746,null]
+[2905,null,81335,null,null,null,null]
+[5809,null,2,null,null,7290,null]
+[8713,null,0,null,null,919,null]
+[11617,null,0,null,null,null,null]
+Table postHistory(Id,PostHistoryTypeId,PostId,RevisionGUID,CreationDate,UserId,Text,Comment,UserDisplayName):
+[1,5,null,null,null,979,null,"",""]
+[5053,5,null,null,null,17359,null,"",""]
+[10105,1,null,null,null,39953,null,"",null]
+[15157,5,null,null,null,26950,null,"added 135 characters in body",""]
+[20209,5,null,null,null,31266,"<sas>","",""]
+Table postLinks(Id,CreationDate,PostId,RelatedPostId,LinkTypeId):
+[1,null,null,null,1]
+[186,null,null,null,3]
+[371,null,null,null,1]
+[556,null,null,13314,1]
+[741,null,null,null,1]
+Table posts(Id,PostTypeId,AcceptedAnswerId,CreaionDate,Score,ViewCount,Body,OwnerUserId,LasActivityDate,Title,Tags,AnswerCount,CommentCount,FavoriteCount,LastEditorUserId,LastEditDate,CommunityOwnedDate,ParentId,ClosedDate,OwnerDisplayName,LastEditorDisplayName):
+[1,1,null,null,0,null,null,44269,null,null,null,null,0,null,null,null,null,null,null,null,null]
+[1533,2,null,null,10,null,null,805,null,null,null,1,1,null,22047,null,null,null,null,null,null]
+[3065,2,null,null,1,null,null,6666,null,null,null,null,1,null,5509,null,null,null,null,null,null]
+[4597,2,null,null,1,null,null,4769,null,null,null,null,131340,null,null,null,null,null,null,null,null]
+[6129,2,null,null,2,170,null,28462,null,null,null,0,0,null,null,null,null,null,null,null,null]
+Table tags(Id,TagName,Count,ExcerptPostId,WikiPostId):
+[1,null,5,null,null]
+[17,null,-560579,null,null]
+[33,null,16,null,null]
+[49,null,54,null,null]
+[65,null,5,null,null]
+[81,null,35,null,null]
+Table users(Id,Reputation,CreationDate,DisplayName,LastAccessDate,WebsiteUrl,Location,AboutMe,Views,UpVotes,DownVotes,AccountId,Age,ProfileImageUrl):
+[1,6,null,null,null,null,null,null,0,0,0,null,32,null]
+[673,1,null,null,null,null,null,null,2,1,0,null,32,null]
+[1345,1,null,null,null,null,null,null,6,3,0,null,null,null]
+[2017,11,null,null,null,null,"India",null,0,0,0,null,null,null]
+[2689,44,null,null,null,null,"Ottawa, Canada",null,0,0,0,null,null,null]
+Table votes(Id,PostId,VoteTypeId,CreationDate,UserId,BountyAmount):
+[1,927,2,"2010-11-23",null,null]
+[649,null,2,"2010-11-23",null,null]
+[1297,null,2,"2011-03-31",null,null]
+[1945,null,2,"2010-11-02",null,null]
+[2593,4663,2,"2010-11-14",null,null]

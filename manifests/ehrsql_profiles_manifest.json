@@ -1,0 +1,19 @@
+{
+  "tables_private": 13,
+  "tables_public": [
+    "d_icd_diagnoses",
+    "d_icd_procedures",
+    "d_items",
+    "d_labitems"
+  ],
+  "sha256": {
+    "ehrsql_dg8p/release_01.json": "8d48c45a5e2e78057c3a682053018e90f97864c04c0ceb048ef59786f3f8d3e7",
+    "ehrsql_dg8p/release_02.json": "e8fe79804574e61ec26c6766ad2b7e237cd17aec7397fe57a9aec6dbce1f617c",
+    "ehrsql_dg8p/release_03.json": "83112528e35f98a46acd6482d602af69760e5a44d06f0c0dbd6f357ff266a230",
+    "ehrsql_ind8_prompt/release_01.json": "7c7c82a49b6775cd115b4b7a7128208bc142f27cf23cfeb921f6427ff1b01110",
+    "ehrsql_noiseless_nolkp/release_01.json": "7128b33e38e27d524c26ce4ff9646a60b6b5d4f224365aff8af6b62937ff24b2",
+    "ehrsql_entity_demo94/release_01.json": "e68f0ca51755bb5c17b568234b7dea062246aced18e3433335717a09b5609dd2",
+    "public_4_dictionaries.sqlite": "704812546fee4638d2177d77332e69854ac3c44d9af26400353e806f593707e9",
+    "public_4_dictionaries.json": "9959b363db6d6dddd95387350ec84743bf13d72f0f226a62937958f8f6ad8c2c"
+  }
+}

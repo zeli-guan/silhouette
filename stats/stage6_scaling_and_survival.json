@@ -1,0 +1,3082 @@
+{
+  "elapsed_s": 498.17,
+  "fig4c_table_size_buckets": {
+    "total_tables": 75,
+    "M_releases": 20,
+    "by_table_size_bin": {
+      "<1k": {
+        "n_tables": 31,
+        "n_target_c1_values": 184,
+        "retention_mean_pct": 36.25,
+        "retention_sd_pp": 2.12,
+        "retention_min_pct": 30.43,
+        "retention_max_pct": 39.13,
+        "retention_mean_pct_exact": 36.25,
+        "retention_sd_pp_exact": 2.123998
+      },
+      "1k-100k": {
+        "n_tables": 36,
+        "n_target_c1_values": 817,
+        "retention_mean_pct": 68.41,
+        "retention_sd_pp": 1.27,
+        "retention_min_pct": 66.34,
+        "retention_max_pct": 70.5,
+        "retention_mean_pct_exact": 68.408813,
+        "retention_sd_pp_exact": 1.265732
+      },
+      ">100k": {
+        "n_tables": 8,
+        "n_target_c1_values": 111,
+        "retention_mean_pct": 94.5,
+        "retention_sd_pp": 0.28,
+        "retention_min_pct": 93.69,
+        "retention_max_pct": 94.59,
+        "retention_mean_pct_exact": 94.504505,
+        "retention_sd_pp_exact": 0.277291
+      }
+    },
+    "by_mode_and_table_size_bin": {
+      "DG-v3": {
+        "<1k": {
+          "n_tables": 31,
+          "n_target_c1_values": 184,
+          "retention_mean_pct": 36.25,
+          "retention_sd_pp": 2.12,
+          "retention_min_pct": 30.43,
+          "retention_max_pct": 39.13,
+          "retention_mean_pct_exact": 36.25,
+          "retention_sd_pp_exact": 2.123998
+        },
+        "1k-100k": {
+          "n_tables": 36,
+          "n_target_c1_values": 817,
+          "retention_mean_pct": 68.41,
+          "retention_sd_pp": 1.27,
+          "retention_min_pct": 66.34,
+          "retention_max_pct": 70.5,
+          "retention_mean_pct_exact": 68.408813,
+          "retention_sd_pp_exact": 1.265732
+        },
+        ">100k": {
+          "n_tables": 8,
+          "n_target_c1_values": 111,
+          "retention_mean_pct": 94.5,
+          "retention_sd_pp": 0.28,
+          "retention_min_pct": 93.69,
+          "retention_max_pct": 94.59,
+          "retention_mean_pct_exact": 94.504505,
+          "retention_sd_pp_exact": 0.277291
+        }
+      },
+      "DG-FlatW": {
+        "<1k": {
+          "n_tables": 31,
+          "n_target_c1_values": 184,
+          "retention_mean_pct": 26.36,
+          "retention_sd_pp": 1.11,
+          "retention_min_pct": 23.37,
+          "retention_max_pct": 28.26,
+          "retention_mean_pct_exact": 26.358696,
+          "retention_sd_pp_exact": 1.108202
+        },
+        "1k-100k": {
+          "n_tables": 36,
+          "n_target_c1_values": 817,
+          "retention_mean_pct": 66.68,
+          "retention_sd_pp": 0.76,
+          "retention_min_pct": 65.24,
+          "retention_max_pct": 68.42,
+          "retention_mean_pct_exact": 66.676867,
+          "retention_sd_pp_exact": 0.758557
+        },
+        ">100k": {
+          "n_tables": 8,
+          "n_target_c1_values": 111,
+          "retention_mean_pct": 94.23,
+          "retention_sd_pp": 0.45,
+          "retention_min_pct": 93.69,
+          "retention_max_pct": 94.59,
+          "retention_mean_pct_exact": 94.234234,
+          "retention_sd_pp_exact": 0.452815
+        }
+      }
+    }
+  },
+  "bird_raw_scaling_165": {
+    "0.01": {
+      "wall_s": {
+        "n": 33,
+        "p50": 0.1488,
+        "iqr": [
+          0.056,
+          0.7424
+        ],
+        "p95": 1.2309,
+        "max": 1.2771
+      },
+      "peak_rss_mib": {
+        "n": 33,
+        "p50": 22.2969,
+        "iqr": [
+          21.3203,
+          27.2656
+        ],
+        "p95": 31.9023,
+        "max": 31.9141
+      },
+      "tokens": {
+        "n": 33,
+        "p50": 1479.0,
+        "iqr": [
+          667.0,
+          2463.0
+        ],
+        "p95": 6431.2,
+        "max": 6463.0
+      }
+    },
+    "0.03": {
+      "wall_s": {
+        "n": 33,
+        "p50": 0.2704,
+        "iqr": [
+          0.0728,
+          2.1271
+        ],
+        "p95": 2.8721,
+        "max": 3.1683
+      },
+      "peak_rss_mib": {
+        "n": 33,
+        "p50": 22.9883,
+        "iqr": [
+          21.4922,
+          33.5547
+        ],
+        "p95": 49.6875,
+        "max": 50.1094
+      },
+      "tokens": {
+        "n": 33,
+        "p50": 1577.0,
+        "iqr": [
+          698.0,
+          2653.0
+        ],
+        "p95": 7078.4,
+        "max": 7093.0
+      }
+    },
+    "0.1": {
+      "wall_s": {
+        "n": 33,
+        "p50": 0.5485,
+        "iqr": [
+          0.1324,
+          7.6046
+        ],
+        "p95": 10.8035,
+        "max": 10.9073
+      },
+      "peak_rss_mib": {
+        "n": 33,
+        "p50": 25.7109,
+        "iqr": [
+          22.4492,
+          56.6602
+        ],
+        "p95": 112.6914,
+        "max": 113.1172
+      },
+      "tokens": {
+        "n": 33,
+        "p50": 1733.0,
+        "iqr": [
+          822.0,
+          3034.0
+        ],
+        "p95": 7435.6,
+        "max": 7499.0
+      }
+    },
+    "0.3": {
+      "wall_s": {
+        "n": 33,
+        "p50": 1.7861,
+        "iqr": [
+          0.3609,
+          22.4786
+        ],
+        "p95": 32.3194,
+        "max": 32.7127
+      },
+      "peak_rss_mib": {
+        "n": 33,
+        "p50": 30.2148,
+        "iqr": [
+          23.8164,
+          120.8242
+        ],
+        "p95": 283.7594,
+        "max": 284.8828
+      },
+      "tokens": {
+        "n": 33,
+        "p50": 1795.0,
+        "iqr": [
+          866.0,
+          3337.0
+        ],
+        "p95": 7851.6,
+        "max": 7865.0
+      }
+    },
+    "1.0": {
+      "wall_s": {
+        "n": 33,
+        "p50": 5.0729,
+        "iqr": [
+          1.066,
+          70.952
+        ],
+        "p95": 102.3235,
+        "max": 103.6162
+      },
+      "peak_rss_mib": {
+        "n": 33,
+        "p50": 39.6016,
+        "iqr": [
+          25.2461,
+          346.5859
+        ],
+        "p95": 848.0508,
+        "max": 848.1602
+      },
+      "tokens": {
+        "n": 33,
+        "p50": 1916.0,
+        "iqr": [
+          895.0,
+          3505.0
+        ],
+        "p95": 7982.6,
+        "max": 7997.0
+      }
+    }
+  },
+  "bird_raw_runs": [
+    {
+      "db_id": "california_schools",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.16136771393939853,
+      "peak_rss_mib": 22.0546875,
+      "dp_block_tokens": 2282,
+      "exact_hits": 135,
+      "norm_hits": 156,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 1.2058385570999235,
+      "peak_rss_mib": 29.84375,
+      "dp_block_tokens": 2768,
+      "exact_hits": 114,
+      "norm_hits": 127,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 1.0281751910224557,
+      "peak_rss_mib": 31.9140625,
+      "dp_block_tokens": 2332,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.061517413007095456,
+      "peak_rss_mib": 21.0234375,
+      "dp_block_tokens": 656,
+      "exact_hits": 52,
+      "norm_hits": 55,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.838846871163696,
+      "peak_rss_mib": 27.73046875,
+      "dp_block_tokens": 6463,
+      "exact_hits": 80,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.47239224798977375,
+      "peak_rss_mib": 25.26171875,
+      "dp_block_tokens": 1474,
+      "exact_hits": 143,
+      "norm_hits": 155,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.18198232911527157,
+      "peak_rss_mib": 23.234375,
+      "dp_block_tokens": 2474,
+      "exact_hits": 166,
+      "norm_hits": 169,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.056024907855317,
+      "peak_rss_mib": 21.328125,
+      "dp_block_tokens": 899,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.041508822003379464,
+      "peak_rss_mib": 20.76953125,
+      "dp_block_tokens": 637,
+      "exact_hits": 112,
+      "norm_hits": 136,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.05192467896267772,
+      "peak_rss_mib": 21.65625,
+      "dp_block_tokens": 1395,
+      "exact_hits": 235,
+      "norm_hits": 260,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.01,
+      "seed": 20261210,
+      "wall_s": 0.023745601065456867,
+      "peak_rss_mib": 20.765625,
+      "dp_block_tokens": 345,
+      "exact_hits": 51,
+      "norm_hits": 58,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.1116122321691364,
+      "peak_rss_mib": 22.296875,
+      "dp_block_tokens": 2237,
+      "exact_hits": 140,
+      "norm_hits": 156,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 1.1376543319784105,
+      "peak_rss_mib": 29.51953125,
+      "dp_block_tokens": 2774,
+      "exact_hits": 114,
+      "norm_hits": 127,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 1.2684825919568539,
+      "peak_rss_mib": 31.90234375,
+      "dp_block_tokens": 2286,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.06743253394961357,
+      "peak_rss_mib": 21.328125,
+      "dp_block_tokens": 649,
+      "exact_hits": 52,
+      "norm_hits": 55,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.7474665071349591,
+      "peak_rss_mib": 27.4609375,
+      "dp_block_tokens": 6463,
+      "exact_hits": 79,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.3259941339492798,
+      "peak_rss_mib": 25.203125,
+      "dp_block_tokens": 1479,
+      "exact_hits": 143,
+      "norm_hits": 155,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.17715472006238997,
+      "peak_rss_mib": 23.0859375,
+      "dp_block_tokens": 2463,
+      "exact_hits": 166,
+      "norm_hits": 169,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.06693207612261176,
+      "peak_rss_mib": 21.4453125,
+      "dp_block_tokens": 835,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.03756050695665181,
+      "peak_rss_mib": 21.00390625,
+      "dp_block_tokens": 667,
+      "exact_hits": 112,
+      "norm_hits": 136,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.06926458282396197,
+      "peak_rss_mib": 21.59765625,
+      "dp_block_tokens": 1428,
+      "exact_hits": 250,
+      "norm_hits": 268,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.01,
+      "seed": 20261211,
+      "wall_s": 0.017681695986539125,
+      "peak_rss_mib": 20.42578125,
+      "dp_block_tokens": 339,
+      "exact_hits": 51,
+      "norm_hits": 58,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.14880680199712515,
+      "peak_rss_mib": 22.36328125,
+      "dp_block_tokens": 2236,
+      "exact_hits": 136,
+      "norm_hits": 157,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.9713060881476849,
+      "peak_rss_mib": 29.625,
+      "dp_block_tokens": 2817,
+      "exact_hits": 114,
+      "norm_hits": 127,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 1.2771018440835178,
+      "peak_rss_mib": 31.90234375,
+      "dp_block_tokens": 2374,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.06284487107768655,
+      "peak_rss_mib": 20.8515625,
+      "dp_block_tokens": 644,
+      "exact_hits": 51,
+      "norm_hits": 55,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.7424252009950578,
+      "peak_rss_mib": 27.265625,
+      "dp_block_tokens": 6410,
+      "exact_hits": 79,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.34988037403672934,
+      "peak_rss_mib": 25.2109375,
+      "dp_block_tokens": 1505,
+      "exact_hits": 143,
+      "norm_hits": 155,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.1783469459041953,
+      "peak_rss_mib": 23.2890625,
+      "dp_block_tokens": 2473,
+      "exact_hits": 166,
+      "norm_hits": 169,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.0576361829880625,
+      "peak_rss_mib": 21.3203125,
+      "dp_block_tokens": 848,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.04074702598154545,
+      "peak_rss_mib": 20.91796875,
+      "dp_block_tokens": 640,
+      "exact_hits": 112,
+      "norm_hits": 136,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.04885936598293483,
+      "peak_rss_mib": 21.70703125,
+      "dp_block_tokens": 1443,
+      "exact_hits": 235,
+      "norm_hits": 260,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.01,
+      "seed": 20261212,
+      "wall_s": 0.018915686989203095,
+      "peak_rss_mib": 20.43359375,
+      "dp_block_tokens": 343,
+      "exact_hits": 51,
+      "norm_hits": 58,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 0.27035895199514925,
+      "peak_rss_mib": 22.83203125,
+      "dp_block_tokens": 2627,
+      "exact_hits": 150,
+      "norm_hits": 162,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 2.293329339940101,
+      "peak_rss_mib": 42.77734375,
+      "dp_block_tokens": 3068,
+      "exact_hits": 120,
+      "norm_hits": 133,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 3.013336891774088,
+      "peak_rss_mib": 50.109375,
+      "dp_block_tokens": 2403,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 0.14105627592653036,
+      "peak_rss_mib": 21.47265625,
+      "dp_block_tokens": 668,
+      "exact_hits": 54,
+      "norm_hits": 59,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 2.12714408012107,
+      "peak_rss_mib": 34.62109375,
+      "dp_block_tokens": 7079,
+      "exact_hits": 80,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 0.9908300319220871,
+      "peak_rss_mib": 31.0625,
+      "dp_block_tokens": 1559,
+      "exact_hits": 160,
+      "norm_hits": 172,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 0.4000920779071748,
+      "peak_rss_mib": 26.5,
+      "dp_block_tokens": 2645,
+      "exact_hits": 166,
+      "norm_hits": 169,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 0.07746332907117903,
+      "peak_rss_mib": 21.7421875,
+      "dp_block_tokens": 874,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 0.032176828011870384,
+      "peak_rss_mib": 21.15625,
+      "dp_block_tokens": 655,
+      "exact_hits": 116,
+      "norm_hits": 142,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 0.06984746013768017,
+      "peak_rss_mib": 21.91015625,
+      "dp_block_tokens": 1539,
+      "exact_hits": 257,
+      "norm_hits": 279,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.03,
+      "seed": 20261210,
+      "wall_s": 0.03240156499668956,
+      "peak_rss_mib": 20.95703125,
+      "dp_block_tokens": 345,
+      "exact_hits": 54,
+      "norm_hits": 61,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 0.24119013384915888,
+      "peak_rss_mib": 22.98828125,
+      "dp_block_tokens": 2607,
+      "exact_hits": 151,
+      "norm_hits": 169,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 3.168284238083288,
+      "peak_rss_mib": 42.95703125,
+      "dp_block_tokens": 3093,
+      "exact_hits": 120,
+      "norm_hits": 133,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 2.777973435819149,
+      "peak_rss_mib": 49.65625,
+      "dp_block_tokens": 2405,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 0.13633303996175528,
+      "peak_rss_mib": 21.28515625,
+      "dp_block_tokens": 667,
+      "exact_hits": 55,
+      "norm_hits": 60,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 2.2296296330168843,
+      "peak_rss_mib": 33.5546875,
+      "dp_block_tokens": 7078,
+      "exact_hits": 80,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 0.8525565590243787,
+      "peak_rss_mib": 31.2265625,
+      "dp_block_tokens": 1573,
+      "exact_hits": 160,
+      "norm_hits": 172,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 0.4904742429498583,
+      "peak_rss_mib": 26.390625,
+      "dp_block_tokens": 2653,
+      "exact_hits": 167,
+      "norm_hits": 170,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 0.10407743789255619,
+      "peak_rss_mib": 21.60546875,
+      "dp_block_tokens": 906,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 0.03234589798375964,
+      "peak_rss_mib": 21.07421875,
+      "dp_block_tokens": 692,
+      "exact_hits": 112,
+      "norm_hits": 136,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 0.06748828198760748,
+      "peak_rss_mib": 21.92578125,
+      "dp_block_tokens": 1577,
+      "exact_hits": 253,
+      "norm_hits": 279,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.03,
+      "seed": 20261211,
+      "wall_s": 0.03292858996428549,
+      "peak_rss_mib": 20.7890625,
+      "dp_block_tokens": 353,
+      "exact_hits": 51,
+      "norm_hits": 58,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 0.325484992004931,
+      "peak_rss_mib": 23.00390625,
+      "dp_block_tokens": 2658,
+      "exact_hits": 152,
+      "norm_hits": 163,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 2.656856057001278,
+      "peak_rss_mib": 43.06640625,
+      "dp_block_tokens": 3018,
+      "exact_hits": 120,
+      "norm_hits": 133,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 2.4369055710267276,
+      "peak_rss_mib": 49.734375,
+      "dp_block_tokens": 2391,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 0.12614422291517258,
+      "peak_rss_mib": 21.4921875,
+      "dp_block_tokens": 698,
+      "exact_hits": 54,
+      "norm_hits": 59,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 2.3267338869627565,
+      "peak_rss_mib": 33.66015625,
+      "dp_block_tokens": 7093,
+      "exact_hits": 80,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 0.8408339379820973,
+      "peak_rss_mib": 31.1171875,
+      "dp_block_tokens": 1592,
+      "exact_hits": 160,
+      "norm_hits": 172,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 0.494450437836349,
+      "peak_rss_mib": 26.41796875,
+      "dp_block_tokens": 2656,
+      "exact_hits": 166,
+      "norm_hits": 169,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 0.07284237607382238,
+      "peak_rss_mib": 21.59765625,
+      "dp_block_tokens": 880,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 0.03315462707541883,
+      "peak_rss_mib": 21.18359375,
+      "dp_block_tokens": 676,
+      "exact_hits": 112,
+      "norm_hits": 136,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 0.10169840697199106,
+      "peak_rss_mib": 21.84375,
+      "dp_block_tokens": 1559,
+      "exact_hits": 253,
+      "norm_hits": 279,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.03,
+      "seed": 20261212,
+      "wall_s": 0.03426303714513779,
+      "peak_rss_mib": 20.859375,
+      "dp_block_tokens": 351,
+      "exact_hits": 54,
+      "norm_hits": 61,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 0.4758193229790777,
+      "peak_rss_mib": 25.625,
+      "dp_block_tokens": 3050,
+      "exact_hits": 159,
+      "norm_hits": 170,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 8.833753170911223,
+      "peak_rss_mib": 78.4375,
+      "dp_block_tokens": 3466,
+      "exact_hits": 120,
+      "norm_hits": 133,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 10.776399709982798,
+      "peak_rss_mib": 112.90234375,
+      "dp_block_tokens": 2585,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 0.534353086957708,
+      "peak_rss_mib": 23.3359375,
+      "dp_block_tokens": 816,
+      "exact_hits": 55,
+      "norm_hits": 62,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 7.604606901993975,
+      "peak_rss_mib": 57.8203125,
+      "dp_block_tokens": 7462,
+      "exact_hits": 80,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 2.947174513945356,
+      "peak_rss_mib": 39.81640625,
+      "dp_block_tokens": 1733,
+      "exact_hits": 163,
+      "norm_hits": 175,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 1.381490383995697,
+      "peak_rss_mib": 36.66015625,
+      "dp_block_tokens": 2984,
+      "exact_hits": 167,
+      "norm_hits": 172,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 0.13237618282437325,
+      "peak_rss_mib": 22.6328125,
+      "dp_block_tokens": 905,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 0.03601829381659627,
+      "peak_rss_mib": 21.046875,
+      "dp_block_tokens": 819,
+      "exact_hits": 118,
+      "norm_hits": 142,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 0.11574598401784897,
+      "peak_rss_mib": 22.4453125,
+      "dp_block_tokens": 1661,
+      "exact_hits": 271,
+      "norm_hits": 292,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.1,
+      "seed": 20261210,
+      "wall_s": 0.06837753998115659,
+      "peak_rss_mib": 21.09375,
+      "dp_block_tokens": 374,
+      "exact_hits": 64,
+      "norm_hits": 64,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 0.5807973020710051,
+      "peak_rss_mib": 25.7109375,
+      "dp_block_tokens": 3105,
+      "exact_hits": 159,
+      "norm_hits": 170,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 9.063152818009257,
+      "peak_rss_mib": 78.30078125,
+      "dp_block_tokens": 3498,
+      "exact_hits": 121,
+      "norm_hits": 134,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 10.844174691010267,
+      "peak_rss_mib": 112.55078125,
+      "dp_block_tokens": 2555,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 0.46847343700937927,
+      "peak_rss_mib": 23.00390625,
+      "dp_block_tokens": 819,
+      "exact_hits": 56,
+      "norm_hits": 63,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 8.773084892192855,
+      "peak_rss_mib": 57.3984375,
+      "dp_block_tokens": 7418,
+      "exact_hits": 80,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 3.0233657241333276,
+      "peak_rss_mib": 39.578125,
+      "dp_block_tokens": 1761,
+      "exact_hits": 163,
+      "norm_hits": 175,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 1.1209949189797044,
+      "peak_rss_mib": 36.546875,
+      "dp_block_tokens": 3033,
+      "exact_hits": 167,
+      "norm_hits": 172,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 0.14792046998627484,
+      "peak_rss_mib": 22.625,
+      "dp_block_tokens": 858,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 0.045227773021906614,
+      "peak_rss_mib": 21.1328125,
+      "dp_block_tokens": 818,
+      "exact_hits": 118,
+      "norm_hits": 142,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 0.19062251900322735,
+      "peak_rss_mib": 22.3828125,
+      "dp_block_tokens": 1715,
+      "exact_hits": 271,
+      "norm_hits": 293,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.1,
+      "seed": 20261211,
+      "wall_s": 0.05381460697390139,
+      "peak_rss_mib": 20.91796875,
+      "dp_block_tokens": 368,
+      "exact_hits": 62,
+      "norm_hits": 62,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 0.5484500899910927,
+      "peak_rss_mib": 25.92578125,
+      "dp_block_tokens": 3034,
+      "exact_hits": 156,
+      "norm_hits": 170,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 8.84937762399204,
+      "peak_rss_mib": 78.41015625,
+      "dp_block_tokens": 3511,
+      "exact_hits": 122,
+      "norm_hits": 135,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 10.907267828006297,
+      "peak_rss_mib": 113.1171875,
+      "dp_block_tokens": 2508,
+      "exact_hits": 56,
+      "norm_hits": 59,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 0.4447473781183362,
+      "peak_rss_mib": 23.09375,
+      "dp_block_tokens": 822,
+      "exact_hits": 56,
+      "norm_hits": 63,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 8.635668663075194,
+      "peak_rss_mib": 56.66015625,
+      "dp_block_tokens": 7499,
+      "exact_hits": 80,
+      "norm_hits": 81,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 2.936922893160954,
+      "peak_rss_mib": 39.44921875,
+      "dp_block_tokens": 1718,
+      "exact_hits": 165,
+      "norm_hits": 177,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 1.2616313460748643,
+      "peak_rss_mib": 36.56640625,
+      "dp_block_tokens": 2993,
+      "exact_hits": 167,
+      "norm_hits": 172,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 0.1957429121248424,
+      "peak_rss_mib": 22.58203125,
+      "dp_block_tokens": 889,
+      "exact_hits": 65,
+      "norm_hits": 72,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 0.05311879422515631,
+      "peak_rss_mib": 21.01953125,
+      "dp_block_tokens": 801,
+      "exact_hits": 118,
+      "norm_hits": 142,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 0.1305145570077002,
+      "peak_rss_mib": 22.44921875,
+      "dp_block_tokens": 1704,
+      "exact_hits": 271,
+      "norm_hits": 294,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.1,
+      "seed": 20261212,
+      "wall_s": 0.07855331501923501,
+      "peak_rss_mib": 21.09765625,
+      "dp_block_tokens": 368,
+      "exact_hits": 63,
+      "norm_hits": 63,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 1.5454690409824252,
+      "peak_rss_mib": 30.24609375,
+      "dp_block_tokens": 3419,
+      "exact_hits": 159,
+      "norm_hits": 170,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 25.794933929108083,
+      "peak_rss_mib": 170.34375,
+      "dp_block_tokens": 3869,
+      "exact_hits": 125,
+      "norm_hits": 141,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 32.66967862821184,
+      "peak_rss_mib": 283.9609375,
+      "dp_block_tokens": 2712,
+      "exact_hits": 57,
+      "norm_hits": 60,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 1.2569869989529252,
+      "peak_rss_mib": 24.49609375,
+      "dp_block_tokens": 822,
+      "exact_hits": 57,
+      "norm_hits": 62,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 23.275008626049384,
+      "peak_rss_mib": 121.91796875,
+      "dp_block_tokens": 7865,
+      "exact_hits": 83,
+      "norm_hits": 83,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 9.242187821073458,
+      "peak_rss_mib": 46.5078125,
+      "dp_block_tokens": 1781,
+      "exact_hits": 166,
+      "norm_hits": 178,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 3.914018708979711,
+      "peak_rss_mib": 48.0,
+      "dp_block_tokens": 3302,
+      "exact_hits": 166,
+      "norm_hits": 171,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 0.3903993528801948,
+      "peak_rss_mib": 24.48828125,
+      "dp_block_tokens": 1019,
+      "exact_hits": 67,
+      "norm_hits": 73,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 0.08825149317272007,
+      "peak_rss_mib": 21.1796875,
+      "dp_block_tokens": 866,
+      "exact_hits": 120,
+      "norm_hits": 144,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 0.32016129116527736,
+      "peak_rss_mib": 23.81640625,
+      "dp_block_tokens": 1745,
+      "exact_hits": 278,
+      "norm_hits": 292,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.3,
+      "seed": 20261210,
+      "wall_s": 0.16660638991743326,
+      "peak_rss_mib": 21.546875,
+      "dp_block_tokens": 370,
+      "exact_hits": 65,
+      "norm_hits": 65,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 2.108951261965558,
+      "peak_rss_mib": 30.03515625,
+      "dp_block_tokens": 3337,
+      "exact_hits": 159,
+      "norm_hits": 170,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 24.29549347795546,
+      "peak_rss_mib": 170.03125,
+      "dp_block_tokens": 3866,
+      "exact_hits": 122,
+      "norm_hits": 135,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 32.08584649208933,
+      "peak_rss_mib": 283.625,
+      "dp_block_tokens": 2719,
+      "exact_hits": 57,
+      "norm_hits": 60,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 1.5476058549247682,
+      "peak_rss_mib": 24.41796875,
+      "dp_block_tokens": 834,
+      "exact_hits": 57,
+      "norm_hits": 62,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 25.17671350808814,
+      "peak_rss_mib": 122.484375,
+      "dp_block_tokens": 7844,
+      "exact_hits": 83,
+      "norm_hits": 83,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 10.235803465126082,
+      "peak_rss_mib": 46.44921875,
+      "dp_block_tokens": 1795,
+      "exact_hits": 166,
+      "norm_hits": 180,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 3.321214467054233,
+      "peak_rss_mib": 47.83984375,
+      "dp_block_tokens": 3296,
+      "exact_hits": 167,
+      "norm_hits": 172,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 0.38247383409179747,
+      "peak_rss_mib": 24.25,
+      "dp_block_tokens": 965,
+      "exact_hits": 66,
+      "norm_hits": 73,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 0.05995614291168749,
+      "peak_rss_mib": 21.22265625,
+      "dp_block_tokens": 863,
+      "exact_hits": 120,
+      "norm_hits": 144,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 0.30500899883918464,
+      "peak_rss_mib": 23.74609375,
+      "dp_block_tokens": 1774,
+      "exact_hits": 278,
+      "norm_hits": 292,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.3,
+      "seed": 20261211,
+      "wall_s": 0.1325892941094935,
+      "peak_rss_mib": 21.3984375,
+      "dp_block_tokens": 374,
+      "exact_hits": 67,
+      "norm_hits": 67,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 1.7861094218678772,
+      "peak_rss_mib": 30.21484375,
+      "dp_block_tokens": 3392,
+      "exact_hits": 159,
+      "norm_hits": 170,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 22.47860371414572,
+      "peak_rss_mib": 170.0703125,
+      "dp_block_tokens": 3839,
+      "exact_hits": 122,
+      "norm_hits": 135,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 32.71273288805969,
+      "peak_rss_mib": 284.8828125,
+      "dp_block_tokens": 2694,
+      "exact_hits": 57,
+      "norm_hits": 60,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 1.2010707648005337,
+      "peak_rss_mib": 24.375,
+      "dp_block_tokens": 828,
+      "exact_hits": 57,
+      "norm_hits": 62,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 23.4055999990087,
+      "peak_rss_mib": 120.82421875,
+      "dp_block_tokens": 7863,
+      "exact_hits": 83,
+      "norm_hits": 83,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 10.178306946065277,
+      "peak_rss_mib": 46.57421875,
+      "dp_block_tokens": 1797,
+      "exact_hits": 166,
+      "norm_hits": 180,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 3.3996118309441954,
+      "peak_rss_mib": 47.86328125,
+      "dp_block_tokens": 3276,
+      "exact_hits": 167,
+      "norm_hits": 172,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 0.36089190701022744,
+      "peak_rss_mib": 24.08984375,
+      "dp_block_tokens": 976,
+      "exact_hits": 66,
+      "norm_hits": 73,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 0.06073162006214261,
+      "peak_rss_mib": 21.171875,
+      "dp_block_tokens": 866,
+      "exact_hits": 120,
+      "norm_hits": 144,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 0.4222093999851495,
+      "peak_rss_mib": 23.7734375,
+      "dp_block_tokens": 1767,
+      "exact_hits": 278,
+      "norm_hits": 292,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 0.3,
+      "seed": 20261212,
+      "wall_s": 0.1326842810958624,
+      "peak_rss_mib": 21.4921875,
+      "dp_block_tokens": 367,
+      "exact_hits": 66,
+      "norm_hits": 66,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 4.943226188886911,
+      "peak_rss_mib": 39.703125,
+      "dp_block_tokens": 3473,
+      "exact_hits": 161,
+      "norm_hits": 172,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 73.17776892683469,
+      "peak_rss_mib": 439.0390625,
+      "dp_block_tokens": 4501,
+      "exact_hits": 125,
+      "norm_hits": 141,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 103.61617421917617,
+      "peak_rss_mib": 848.01953125,
+      "dp_block_tokens": 2747,
+      "exact_hits": 58,
+      "norm_hits": 60,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 5.066877802135423,
+      "peak_rss_mib": 25.14453125,
+      "dp_block_tokens": 823,
+      "exact_hits": 57,
+      "norm_hits": 62,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 87.4282614889089,
+      "peak_rss_mib": 346.671875,
+      "dp_block_tokens": 7981,
+      "exact_hits": 83,
+      "norm_hits": 83,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 32.76683734590188,
+      "peak_rss_mib": 58.5078125,
+      "dp_block_tokens": 1905,
+      "exact_hits": 170,
+      "norm_hits": 182,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 12.1626456330996,
+      "peak_rss_mib": 56.37890625,
+      "dp_block_tokens": 3505,
+      "exact_hits": 184,
+      "norm_hits": 189,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 1.419437695061788,
+      "peak_rss_mib": 28.20703125,
+      "dp_block_tokens": 1231,
+      "exact_hits": 72,
+      "norm_hits": 76,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 0.11449134186841547,
+      "peak_rss_mib": 21.4296875,
+      "dp_block_tokens": 886,
+      "exact_hits": 120,
+      "norm_hits": 144,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 1.0391986740287393,
+      "peak_rss_mib": 26.34765625,
+      "dp_block_tokens": 1856,
+      "exact_hits": 291,
+      "norm_hits": 305,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 1.0,
+      "seed": 20261210,
+      "wall_s": 0.3775872380938381,
+      "peak_rss_mib": 22.875,
+      "dp_block_tokens": 397,
+      "exact_hits": 68,
+      "norm_hits": 68,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 4.929634719854221,
+      "peak_rss_mib": 39.6015625,
+      "dp_block_tokens": 3439,
+      "exact_hits": 161,
+      "norm_hits": 172,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 70.95200486504473,
+      "peak_rss_mib": 439.015625,
+      "dp_block_tokens": 4425,
+      "exact_hits": 125,
+      "norm_hits": 141,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 101.62312283902429,
+      "peak_rss_mib": 848.16015625,
+      "dp_block_tokens": 2767,
+      "exact_hits": 58,
+      "norm_hits": 60,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 5.072930271970108,
+      "peak_rss_mib": 25.24609375,
+      "dp_block_tokens": 823,
+      "exact_hits": 57,
+      "norm_hits": 62,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 89.92776905489154,
+      "peak_rss_mib": 346.76953125,
+      "dp_block_tokens": 7985,
+      "exact_hits": 83,
+      "norm_hits": 83,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 32.22692363616079,
+      "peak_rss_mib": 58.40625,
+      "dp_block_tokens": 1917,
+      "exact_hits": 168,
+      "norm_hits": 182,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 10.462752612074837,
+      "peak_rss_mib": 56.32421875,
+      "dp_block_tokens": 3553,
+      "exact_hits": 183,
+      "norm_hits": 188,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 1.1703298268839717,
+      "peak_rss_mib": 27.984375,
+      "dp_block_tokens": 1206,
+      "exact_hits": 72,
+      "norm_hits": 76,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 0.11904953001067042,
+      "peak_rss_mib": 21.42578125,
+      "dp_block_tokens": 895,
+      "exact_hits": 120,
+      "norm_hits": 144,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 0.9254748991224915,
+      "peak_rss_mib": 26.390625,
+      "dp_block_tokens": 1886,
+      "exact_hits": 291,
+      "norm_hits": 305,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 1.0,
+      "seed": 20261211,
+      "wall_s": 0.5549786218907684,
+      "peak_rss_mib": 22.73046875,
+      "dp_block_tokens": 394,
+      "exact_hits": 68,
+      "norm_hits": 68,
+      "total_targets": 86
+    },
+    {
+      "db_id": "california_schools",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 5.279812421882525,
+      "peak_rss_mib": 39.58203125,
+      "dp_block_tokens": 3503,
+      "exact_hits": 161,
+      "norm_hits": 172,
+      "total_targets": 189
+    },
+    {
+      "db_id": "card_games",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 71.2998379690107,
+      "peak_rss_mib": 439.015625,
+      "dp_block_tokens": 4527,
+      "exact_hits": 125,
+      "norm_hits": 141,
+      "total_targets": 160
+    },
+    {
+      "db_id": "codebase_community",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 103.37405742518604,
+      "peak_rss_mib": 848.09765625,
+      "dp_block_tokens": 2779,
+      "exact_hits": 58,
+      "norm_hits": 60,
+      "total_targets": 97
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 3.782089486019686,
+      "peak_rss_mib": 25.13671875,
+      "dp_block_tokens": 820,
+      "exact_hits": 57,
+      "norm_hits": 62,
+      "total_targets": 77
+    },
+    {
+      "db_id": "european_football_2",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 84.67017457890324,
+      "peak_rss_mib": 346.5859375,
+      "dp_block_tokens": 7997,
+      "exact_hits": 83,
+      "norm_hits": 83,
+      "total_targets": 96
+    },
+    {
+      "db_id": "financial",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 34.6802112639416,
+      "peak_rss_mib": 58.26953125,
+      "dp_block_tokens": 1916,
+      "exact_hits": 168,
+      "norm_hits": 182,
+      "total_targets": 214
+    },
+    {
+      "db_id": "formula_1",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 10.292561308015138,
+      "peak_rss_mib": 56.171875,
+      "dp_block_tokens": 3523,
+      "exact_hits": 183,
+      "norm_hits": 188,
+      "total_targets": 201
+    },
+    {
+      "db_id": "student_club",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 1.2693417579866946,
+      "peak_rss_mib": 28.1640625,
+      "dp_block_tokens": 1203,
+      "exact_hits": 73,
+      "norm_hits": 76,
+      "total_targets": 92
+    },
+    {
+      "db_id": "superhero",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 0.1274075189139694,
+      "peak_rss_mib": 21.48046875,
+      "dp_block_tokens": 895,
+      "exact_hits": 120,
+      "norm_hits": 144,
+      "total_targets": 150
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 1.0659674960188568,
+      "peak_rss_mib": 26.30078125,
+      "dp_block_tokens": 1858,
+      "exact_hits": 291,
+      "norm_hits": 305,
+      "total_targets": 366
+    },
+    {
+      "db_id": "toxicology",
+      "fraction": 1.0,
+      "seed": 20261212,
+      "wall_s": 0.40554484399035573,
+      "peak_rss_mib": 22.71484375,
+      "dp_block_tokens": 392,
+      "exact_hits": 68,
+      "norm_hits": 68,
+      "total_targets": 86
+    }
+  ],
+  "synthetic_stress_sweep": {
+    "width_sweep": [
+      {
+        "n_cols": 10,
+        "n_rows": 2000,
+        "wall_s": 0.0936,
+        "peak_rss_mib": 21.82,
+        "json_bytes": 992,
+        "extra": null
+      },
+      {
+        "n_cols": 50,
+        "n_rows": 2000,
+        "wall_s": 0.4642,
+        "peak_rss_mib": 26.43,
+        "json_bytes": 4918,
+        "extra": null
+      },
+      {
+        "n_cols": 100,
+        "n_rows": 2000,
+        "wall_s": 0.8621,
+        "peak_rss_mib": 31.96,
+        "json_bytes": 9641,
+        "extra": null
+      },
+      {
+        "n_cols": 250,
+        "n_rows": 2000,
+        "wall_s": 2.6433,
+        "peak_rss_mib": 47.34,
+        "json_bytes": 23542,
+        "extra": null
+      },
+      {
+        "n_cols": 500,
+        "n_rows": 2000,
+        "wall_s": 5.7531,
+        "peak_rss_mib": 71.54,
+        "json_bytes": 44221,
+        "extra": null
+      }
+    ],
+    "cardinality_sweep": [
+      {
+        "n_distinct": 50,
+        "n_rows": 100000,
+        "wall_s": 0.4804,
+        "peak_rss_mib": 38.82,
+        "json_bytes": 247,
+        "extra": null
+      },
+      {
+        "n_distinct": 1000,
+        "n_rows": 100000,
+        "wall_s": 0.5046,
+        "peak_rss_mib": 39.29,
+        "json_bytes": 126,
+        "extra": null
+      },
+      {
+        "n_distinct": 10000,
+        "n_rows": 100000,
+        "wall_s": 0.6717,
+        "peak_rss_mib": 40.89,
+        "json_bytes": 129,
+        "extra": null
+      },
+      {
+        "n_distinct": 50000,
+        "n_rows": 100000,
+        "wall_s": 0.7545,
+        "peak_rss_mib": 51.69,
+        "json_bytes": 132,
+        "extra": null
+      },
+      {
+        "n_distinct": 100000,
+        "n_rows": 100000,
+        "wall_s": 0.8392,
+        "peak_rss_mib": 64.89,
+        "json_bytes": 132,
+        "extra": null
+      }
+    ],
+    "string_length_sweep": [
+      {
+        "str_bytes": 32,
+        "n_cols": 10,
+        "n_rows": 5000,
+        "wall_s": 0.2769,
+        "peak_rss_mib": 26.64,
+        "json_bytes": 5080,
+        "extra": null
+      },
+      {
+        "str_bytes": 256,
+        "n_cols": 10,
+        "n_rows": 5000,
+        "wall_s": 1.3275,
+        "peak_rss_mib": 37.18,
+        "json_bytes": 35777,
+        "extra": null
+      },
+      {
+        "str_bytes": 1024,
+        "n_cols": 10,
+        "n_rows": 5000,
+        "wall_s": 4.3715,
+        "peak_rss_mib": 70.46,
+        "json_bytes": 139461,
+        "extra": null
+      },
+      {
+        "str_bytes": 4096,
+        "n_cols": 10,
+        "n_rows": 5000,
+        "wall_s": 15.917,
+        "peak_rss_mib": 203.19,
+        "json_bytes": 554181,
+        "extra": null
+      }
+    ],
+    "entity_cap_sweep": [
+      {
+        "cap_C": 1,
+        "n_entities": 2000,
+        "n_rows": 100000,
+        "wall_s": 1.8948,
+        "peak_rss_mib": 40.36,
+        "json_bytes": 52,
+        "extra": {
+          "nrows": 2000,
+          "n_distinct_kept": 1,
+          "sum_counts": 2000
+        }
+      },
+      {
+        "cap_C": 5,
+        "n_entities": 2000,
+        "n_rows": 100000,
+        "wall_s": 1.5884,
+        "peak_rss_mib": 43.16,
+        "json_bytes": 53,
+        "extra": {
+          "nrows": 2000,
+          "n_distinct_kept": 5,
+          "sum_counts": 10000
+        }
+      },
+      {
+        "cap_C": 20,
+        "n_entities": 2000,
+        "n_rows": 100000,
+        "wall_s": 1.6515,
+        "peak_rss_mib": 51.81,
+        "json_bytes": 54,
+        "extra": {
+          "nrows": 2000,
+          "n_distinct_kept": 20,
+          "sum_counts": 40000
+        }
+      },
+      {
+        "cap_C": 100,
+        "n_entities": 2000,
+        "n_rows": 100000,
+        "wall_s": 1.8709,
+        "peak_rss_mib": 70.61,
+        "json_bytes": 55,
+        "extra": {
+          "nrows": 2000,
+          "n_distinct_kept": 50,
+          "sum_counts": 100000
+        }
+      }
+    ]
+  },
+  "clinical_cohort_two_stage_survival": {
+    "c1_total": 125,
+    "c1_reachable_cap5": 120,
+    "c1_columns_dc94": [
+      [
+        "admissions",
+        "admission_type",
+        9,
+        5
+      ],
+      [
+        "admissions",
+        "admission_location",
+        7,
+        2
+      ],
+      [
+        "admissions",
+        "discharge_location",
+        9,
+        5
+      ],
+      [
+        "admissions",
+        "insurance",
+        3,
+        2
+      ],
+      [
+        "admissions",
+        "language",
+        2,
+        2
+      ],
+      [
+        "admissions",
+        "marital_status",
+        4,
+        4
+      ],
+      [
+        "chartevents",
+        "valueuom",
+        6,
+        6
+      ],
+      [
+        "cost",
+        "event_type",
+        4,
+        4
+      ],
+      [
+        "icustays",
+        "first_careunit",
+        8,
+        5
+      ],
+      [
+        "icustays",
+        "last_careunit",
+        7,
+        5
+      ],
+      [
+        "inputevents",
+        "totalamountuom",
+        1,
+        1
+      ],
+      [
+        "labevents",
+        "valueuom",
+        14,
+        7
+      ],
+      [
+        "microbiologyevents",
+        "spec_type_desc",
+        26,
+        11
+      ],
+      [
+        "microbiologyevents",
+        "org_name",
+        33,
+        13
+      ],
+      [
+        "outputevents",
+        "valueuom",
+        1,
+        1
+      ],
+      [
+        "patients",
+        "gender",
+        2,
+        2
+      ],
+      [
+        "prescriptions",
+        "dose_unit_rx",
+        28,
+        15
+      ],
+      [
+        "prescriptions",
+        "route",
+        23,
+        14
+      ],
+      [
+        "transfers",
+        "eventtype",
+        4,
+        3
+      ],
+      [
+        "transfers",
+        "careunit",
+        25,
+        13
+      ]
+    ],
+    "schedules": {
+      "db_global_eps8": {
+        "epsilon": 8,
+        "schedule": "db_global",
+        "cohorts": {
+          "94": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 3.21,
+              "reachable_95ci_pct": [
+                2.17,
+                4.67
+              ],
+              "all_125_pct": 3.08,
+              "all_125_95ci_pct": [
+                2.08,
+                4.48
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 2.39,
+              "reachable_95ci_pct": [
+                1.33,
+                3.83
+              ],
+              "all_125_pct": 2.29,
+              "all_125_95ci_pct": [
+                1.28,
+                3.68
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 71.88
+          },
+          "1000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 61.21,
+              "reachable_95ci_pct": [
+                58.67,
+                65.33
+              ],
+              "all_125_pct": 58.76,
+              "all_125_95ci_pct": [
+                56.32,
+                62.72
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 43.81,
+              "reachable_95ci_pct": [
+                36.5,
+                52.17
+              ],
+              "all_125_pct": 42.06,
+              "all_125_95ci_pct": [
+                35.04,
+                50.08
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 70.44
+          },
+          "10000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 96.4,
+              "reachable_95ci_pct": [
+                90.83,
+                96.67
+              ],
+              "all_125_pct": 92.55,
+              "all_125_95ci_pct": [
+                87.2,
+                92.8
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 63.27,
+              "reachable_95ci_pct": [
+                52.67,
+                72.17
+              ],
+              "all_125_pct": 60.74,
+              "all_125_95ci_pct": [
+                50.56,
+                69.28
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 70.27
+          },
+          "100000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 100.0,
+              "reachable_95ci_pct": [
+                92.5,
+                99.17
+              ],
+              "all_125_pct": 96.0,
+              "all_125_95ci_pct": [
+                88.8,
+                95.2
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 63.34,
+              "reachable_95ci_pct": [
+                52.67,
+                72.67
+              ],
+              "all_125_pct": 60.81,
+              "all_125_95ci_pct": [
+                50.56,
+                69.76
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 70.01
+          }
+        }
+      },
+      "db_global_eps1": {
+        "epsilon": 1,
+        "schedule": "db_global",
+        "cohorts": {
+          "94": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 0.0,
+              "reachable_95ci_pct": [
+                0.0,
+                0.0
+              ],
+              "all_125_pct": 0.0,
+              "all_125_95ci_pct": [
+                0.0,
+                0.0
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 0.0,
+              "reachable_95ci_pct": [
+                0.0,
+                0.0
+              ],
+              "all_125_pct": 0.0,
+              "all_125_95ci_pct": [
+                0.0,
+                0.0
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 51.86
+          },
+          "1000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 14.66,
+              "reachable_95ci_pct": [
+                13.33,
+                16.17
+              ],
+              "all_125_pct": 14.07,
+              "all_125_95ci_pct": [
+                12.8,
+                15.52
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 7.85,
+              "reachable_95ci_pct": [
+                5.33,
+                10.33
+              ],
+              "all_125_pct": 7.53,
+              "all_125_95ci_pct": [
+                5.12,
+                9.92
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 53.36
+          },
+          "10000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 71.55,
+              "reachable_95ci_pct": [
+                66.5,
+                73.67
+              ],
+              "all_125_pct": 68.68,
+              "all_125_95ci_pct": [
+                63.84,
+                70.72
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 37.05,
+              "reachable_95ci_pct": [
+                27.17,
+                46.5
+              ],
+              "all_125_pct": 35.57,
+              "all_125_95ci_pct": [
+                26.08,
+                44.64
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 51.73
+          },
+          "100000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 99.97,
+              "reachable_95ci_pct": [
+                92.5,
+                98.33
+              ],
+              "all_125_pct": 95.97,
+              "all_125_95ci_pct": [
+                88.8,
+                94.4
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 48.13,
+              "reachable_95ci_pct": [
+                36.5,
+                56.83
+              ],
+              "all_125_pct": 46.2,
+              "all_125_95ci_pct": [
+                35.04,
+                54.56
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 53.7
+          }
+        }
+      },
+      "db_uniform_eps8": {
+        "epsilon": 8,
+        "schedule": "db_uniform",
+        "cohorts": {
+          "94": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 4.26,
+              "reachable_95ci_pct": [
+                3.0,
+                5.5
+              ],
+              "all_125_pct": 4.09,
+              "all_125_95ci_pct": [
+                2.88,
+                5.28
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 3.37,
+              "reachable_95ci_pct": [
+                2.17,
+                4.83
+              ],
+              "all_125_pct": 3.24,
+              "all_125_95ci_pct": [
+                2.08,
+                4.64
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 69.79
+          },
+          "1000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 56.75,
+              "reachable_95ci_pct": [
+                55.0,
+                60.33
+              ],
+              "all_125_pct": 54.48,
+              "all_125_95ci_pct": [
+                52.8,
+                57.92
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 39.84,
+              "reachable_95ci_pct": [
+                34.17,
+                48.5
+              ],
+              "all_125_pct": 38.24,
+              "all_125_95ci_pct": [
+                32.8,
+                46.56
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 68.18
+          },
+          "10000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 94.83,
+              "reachable_95ci_pct": [
+                89.5,
+                95.5
+              ],
+              "all_125_pct": 91.04,
+              "all_125_95ci_pct": [
+                85.92,
+                91.68
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 61.77,
+              "reachable_95ci_pct": [
+                51.33,
+                71.0
+              ],
+              "all_125_pct": 59.3,
+              "all_125_95ci_pct": [
+                49.28,
+                68.16
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 68.51
+          },
+          "100000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 100.0,
+              "reachable_95ci_pct": [
+                92.5,
+                98.33
+              ],
+              "all_125_pct": 96.0,
+              "all_125_95ci_pct": [
+                88.8,
+                94.4
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 61.37,
+              "reachable_95ci_pct": [
+                51.0,
+                70.83
+              ],
+              "all_125_pct": 58.92,
+              "all_125_95ci_pct": [
+                48.96,
+                68.0
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 68.07
+          }
+        }
+      },
+      "per_table_eps8": {
+        "epsilon": 8,
+        "schedule": "per_table",
+        "cohorts": {
+          "94": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 30.99,
+              "reachable_95ci_pct": [
+                29.33,
+                33.33
+              ],
+              "all_125_pct": 29.75,
+              "all_125_95ci_pct": [
+                28.16,
+                32.0
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 29.85,
+              "reachable_95ci_pct": [
+                28.0,
+                32.67
+              ],
+              "all_125_pct": 28.66,
+              "all_125_95ci_pct": [
+                26.88,
+                31.36
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 94.93
+          },
+          "1000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 85.81,
+              "reachable_95ci_pct": [
+                80.67,
+                87.33
+              ],
+              "all_125_pct": 82.37,
+              "all_125_95ci_pct": [
+                77.44,
+                83.84
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 79.48,
+              "reachable_95ci_pct": [
+                71.67,
+                83.17
+              ],
+              "all_125_pct": 76.3,
+              "all_125_95ci_pct": [
+                68.8,
+                79.84
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 92.94
+          },
+          "10000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 100.0,
+              "reachable_95ci_pct": [
+                92.5,
+                99.17
+              ],
+              "all_125_pct": 96.0,
+              "all_125_95ci_pct": [
+                88.8,
+                95.2
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 84.36,
+              "reachable_95ci_pct": [
+                77.0,
+                88.33
+              ],
+              "all_125_pct": 80.98,
+              "all_125_95ci_pct": [
+                73.92,
+                84.8
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 93.79
+          },
+          "100000": {
+            "stage1_threshold_survival": {
+              "reachable_pct": 100.0,
+              "reachable_95ci_pct": [
+                92.5,
+                98.33
+              ],
+              "all_125_pct": 96.0,
+              "all_125_95ci_pct": [
+                88.8,
+                94.4
+              ]
+            },
+            "stage2_published_survival": {
+              "reachable_pct": 83.74,
+              "reachable_95ci_pct": [
+                76.83,
+                88.0
+              ],
+              "all_125_pct": 80.39,
+              "all_125_95ci_pct": [
+                73.76,
+                84.48
+              ]
+            },
+            "cardinality_gate_pass_pct_of_c1": 92.95
+          }
+        }
+      }
+    }
+  },
+  "fig5b_scaling_rows_cov_165": {
+    "0.01": {
+      "cov_median_pct": 76.91,
+      "cov_min_pct": 76.85,
+      "cov_max_pct": 77.31,
+      "exact_median_pct": 69.97,
+      "exact_min_pct": 69.91,
+      "exact_max_pct": 71.06,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1209,
+          "norm_hits": 1328,
+          "total_targets": 1728,
+          "norm_pct": 76.85,
+          "exact_pct": 69.97
+        },
+        "20261211": {
+          "exact_hits": 1228,
+          "norm_hits": 1336,
+          "total_targets": 1728,
+          "norm_pct": 77.31,
+          "exact_pct": 71.06
+        },
+        "20261212": {
+          "exact_hits": 1208,
+          "norm_hits": 1329,
+          "total_targets": 1728,
+          "norm_pct": 76.91,
+          "exact_pct": 69.91
+        }
+      }
+    },
+    "0.03": {
+      "cov_median_pct": 80.38,
+      "cov_min_pct": 80.09,
+      "cov_max_pct": 80.38,
+      "exact_median_pct": 73.61,
+      "exact_min_pct": 73.5,
+      "exact_max_pct": 73.96,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1278,
+          "norm_hits": 1389,
+          "total_targets": 1728,
+          "norm_pct": 80.38,
+          "exact_pct": 73.96
+        },
+        "20261211": {
+          "exact_hits": 1270,
+          "norm_hits": 1389,
+          "total_targets": 1728,
+          "norm_pct": 80.38,
+          "exact_pct": 73.5
+        },
+        "20261212": {
+          "exact_hits": 1272,
+          "norm_hits": 1384,
+          "total_targets": 1728,
+          "norm_pct": 80.09,
+          "exact_pct": 73.61
+        }
+      }
+    },
+    "0.1": {
+      "cov_median_pct": 82.35,
+      "cov_min_pct": 82.29,
+      "cov_max_pct": 82.64,
+      "exact_median_pct": 76.27,
+      "exact_min_pct": 76.27,
+      "exact_max_pct": 76.33,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1318,
+          "norm_hits": 1422,
+          "total_targets": 1728,
+          "norm_pct": 82.29,
+          "exact_pct": 76.27
+        },
+        "20261211": {
+          "exact_hits": 1318,
+          "norm_hits": 1423,
+          "total_targets": 1728,
+          "norm_pct": 82.35,
+          "exact_pct": 76.27
+        },
+        "20261212": {
+          "exact_hits": 1319,
+          "norm_hits": 1428,
+          "total_targets": 1728,
+          "norm_pct": 82.64,
+          "exact_pct": 76.33
+        }
+      }
+    },
+    "0.3": {
+      "cov_median_pct": 83.22,
+      "cov_min_pct": 83.16,
+      "cov_max_pct": 83.28,
+      "exact_median_pct": 77.66,
+      "exact_min_pct": 77.6,
+      "exact_max_pct": 77.72,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1343,
+          "norm_hits": 1439,
+          "total_targets": 1728,
+          "norm_pct": 83.28,
+          "exact_pct": 77.72
+        },
+        "20261211": {
+          "exact_hits": 1342,
+          "norm_hits": 1438,
+          "total_targets": 1728,
+          "norm_pct": 83.22,
+          "exact_pct": 77.66
+        },
+        "20261212": {
+          "exact_hits": 1341,
+          "norm_hits": 1437,
+          "total_targets": 1728,
+          "norm_pct": 83.16,
+          "exact_pct": 77.6
+        }
+      }
+    },
+    "1.0": {
+      "cov_median_pct": 85.71,
+      "cov_min_pct": 85.71,
+      "cov_max_pct": 85.76,
+      "exact_median_pct": 80.27,
+      "exact_min_pct": 80.21,
+      "exact_max_pct": 80.38,
+      "by_seed": {
+        "20261210": {
+          "exact_hits": 1389,
+          "norm_hits": 1482,
+          "total_targets": 1728,
+          "norm_pct": 85.76,
+          "exact_pct": 80.38
+        },
+        "20261211": {
+          "exact_hits": 1386,
+          "norm_hits": 1481,
+          "total_targets": 1728,
+          "norm_pct": 85.71,
+          "exact_pct": 80.21
+        },
+        "20261212": {
+          "exact_hits": 1387,
+          "norm_hits": 1481,
+          "total_targets": 1728,
+          "norm_pct": 85.71,
+          "exact_pct": 80.27
+        }
+      }
+    }
+  },
+  "fig5_baseline_cov_pct": 68.46,
+  "fig4b_retention_m20": {
+    "n_target_c1_values": 1112,
+    "M_releases": 20,
+    "by_epsilon": {
+      "1": {
+        "DG-v3": {
+          "mean_pct": 36.69,
+          "sd_pp": 2.1,
+          "min_pct": 32.37,
+          "max_pct": 39.84,
+          "mean_pct_exact": 36.686151,
+          "sd_pp_exact": 2.097358
+        },
+        "DG-FlatW": {
+          "mean_pct": 33.93,
+          "sd_pp": 2.06,
+          "min_pct": 29.77,
+          "max_pct": 37.95,
+          "mean_pct_exact": 33.92536,
+          "sd_pp_exact": 2.060795
+        }
+      },
+      "2": {
+        "DG-v3": {
+          "mean_pct": 46.54,
+          "sd_pp": 1.48,
+          "min_pct": 44.06,
+          "max_pct": 49.82,
+          "mean_pct_exact": 46.53777,
+          "sd_pp_exact": 1.483275
+        },
+        "DG-FlatW": {
+          "mean_pct": 45.09,
+          "sd_pp": 1.61,
+          "min_pct": 41.46,
+          "max_pct": 47.39,
+          "mean_pct_exact": 45.089928,
+          "sd_pp_exact": 1.607729
+        }
+      },
+      "4": {
+        "DG-v3": {
+          "mean_pct": 57.4,
+          "sd_pp": 1.55,
+          "min_pct": 55.13,
+          "max_pct": 60.43,
+          "mean_pct_exact": 57.401079,
+          "sd_pp_exact": 1.550231
+        },
+        "DG-FlatW": {
+          "mean_pct": 55.78,
+          "sd_pp": 1.06,
+          "min_pct": 52.79,
+          "max_pct": 57.28,
+          "mean_pct_exact": 55.777878,
+          "sd_pp_exact": 1.064793
+        }
+      },
+      "8": {
+        "DG-v3": {
+          "mean_pct": 65.69,
+          "sd_pp": 0.94,
+          "min_pct": 64.3,
+          "max_pct": 67.72,
+          "mean_pct_exact": 65.692446,
+          "sd_pp_exact": 0.940688
+        },
+        "DG-FlatW": {
+          "mean_pct": 62.76,
+          "sd_pp": 0.63,
+          "min_pct": 61.42,
+          "max_pct": 64.3,
+          "mean_pct_exact": 62.756295,
+          "sd_pp_exact": 0.626633
+        }
+      }
+    }
+  }
+}

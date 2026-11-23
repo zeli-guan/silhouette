@@ -1,0 +1,6 @@
+{
+  "db_id": "california_schools",
+  "source_release": "phase4_accept/profiles/bird_dg8_clean/release_03/california_schools.json",
+  "mode": "No-Values (post-processed DG-v3)",
+  "sha256": "25d3416ed86b7d984a06be2710bfa6027ec54ab79843437e9ac62e7374e29689"
+}

@@ -1,0 +1,246 @@
+{
+  "ehrsql_600_vs_C4": {
+    "EHR_DG8P_V3_R1/r0": {
+      "n_total": 600,
+      "both_win": 241,
+      "both_lose": 250,
+      "dg8p_only_wins": 61,
+      "c4_only_wins": 48,
+      "n_disagreements": 109,
+      "annotator1_overall": {
+        "convention_strictness": 30,
+        "genuine_semantic_bug": 79
+      },
+      "annotator1_by_sub": {
+        "extra_projected_column": 24,
+        "value_or_filter_or_logic_diff": 65,
+        "partial_missing_rows": 3,
+        "missing_distinct_same_set": 3,
+        "loser_returned_empty": 6,
+        "numeric_rounding_precision": 3,
+        "execution_error_or_timeout": 3,
+        "arity_and_value_diff": 2
+      },
+      "annotator2_overall": {
+        "convention_strictness": 48,
+        "genuine_semantic_bug": 61
+      },
+      "annotator2_by_sub": {
+        "extra_projected_column": 24,
+        "boolean_string_vs_int": 15,
+        "wrong_predicate_join_agg_or_count_vs_bool": 51,
+        "limit_1_tie_subset": 2,
+        "missing_distinct_same_set": 3,
+        "empty_return_wrong_item_or_case": 6,
+        "numeric_rounding_precision": 3,
+        "execution_error_or_timeout": 3,
+        "partial_missing_rows": 1,
+        "boolean_plus_extra_col": 1
+      },
+      "agree_count": 91,
+      "agreement_pct": 83.49,
+      "cohens_kappa": 0.651
+    },
+    "EHR_DG8P_V3_R2/r0": {
+      "n_total": 600,
+      "both_win": 239,
+      "both_lose": 243,
+      "dg8p_only_wins": 68,
+      "c4_only_wins": 50,
+      "n_disagreements": 118,
+      "annotator1_overall": {
+        "convention_strictness": 25,
+        "genuine_semantic_bug": 93
+      },
+      "annotator1_by_sub": {
+        "missing_distinct_same_set": 3,
+        "value_or_filter_or_logic_diff": 83,
+        "execution_error_or_timeout": 3,
+        "extra_projected_column": 20,
+        "partial_missing_rows": 3,
+        "loser_returned_empty": 4,
+        "numeric_rounding_precision": 2
+      },
+      "annotator2_overall": {
+        "convention_strictness": 47,
+        "genuine_semantic_bug": 71
+      },
+      "annotator2_by_sub": {
+        "missing_distinct_same_set": 3,
+        "wrong_predicate_join_agg_or_count_vs_bool": 63,
+        "boolean_string_vs_int": 20,
+        "execution_error_or_timeout": 3,
+        "extra_projected_column": 20,
+        "limit_1_tie_subset": 2,
+        "empty_return_wrong_item_or_case": 4,
+        "numeric_rounding_precision": 2,
+        "partial_missing_rows": 1
+      },
+      "agree_count": 96,
+      "agreement_pct": 81.36,
+      "cohens_kappa": 0.5776
+    },
+    "EHR_DG8P_V3_R3/r0": {
+      "n_total": 600,
+      "both_win": 229,
+      "both_lose": 256,
+      "dg8p_only_wins": 55,
+      "c4_only_wins": 60,
+      "n_disagreements": 115,
+      "annotator1_overall": {
+        "convention_strictness": 25,
+        "genuine_semantic_bug": 90
+      },
+      "annotator1_by_sub": {
+        "missing_distinct_same_set": 2,
+        "value_or_filter_or_logic_diff": 76,
+        "extra_projected_column": 21,
+        "partial_missing_rows": 4,
+        "loser_returned_empty": 7,
+        "numeric_rounding_precision": 2,
+        "execution_error_or_timeout": 3
+      },
+      "annotator2_overall": {
+        "convention_strictness": 42,
+        "genuine_semantic_bug": 73
+      },
+      "annotator2_by_sub": {
+        "missing_distinct_same_set": 2,
+        "wrong_predicate_join_agg_or_count_vs_bool": 61,
+        "boolean_string_vs_int": 15,
+        "extra_projected_column": 21,
+        "limit_1_tie_subset": 2,
+        "partial_missing_rows": 2,
+        "empty_return_wrong_item_or_case": 7,
+        "numeric_rounding_precision": 2,
+        "execution_error_or_timeout": 3
+      },
+      "agree_count": 98,
+      "agreement_pct": 85.22,
+      "cohens_kappa": 0.6512
+    }
+  },
+  "ehrsql_874_vs_EHR874_C4": {
+    "EHR874_DG8P_V3_R1/r0": {
+      "n_total": 874,
+      "both_win": 370,
+      "both_lose": 349,
+      "dg8p_only_wins": 77,
+      "c4_only_wins": 78,
+      "n_disagreements": 155,
+      "annotator1_overall": {
+        "genuine_semantic_bug": 124,
+        "convention_strictness": 31
+      },
+      "annotator1_by_sub": {
+        "value_or_filter_or_logic_diff": 100,
+        "extra_projected_column": 28,
+        "partial_missing_rows": 3,
+        "loser_returned_empty": 14,
+        "missing_distinct_same_set": 2,
+        "arity_and_value_diff": 3,
+        "numeric_rounding_precision": 1,
+        "execution_error_or_timeout": 4
+      },
+      "annotator2_overall": {
+        "genuine_semantic_bug": 104,
+        "convention_strictness": 51
+      },
+      "annotator2_by_sub": {
+        "wrong_predicate_join_agg_or_count_vs_bool": 85,
+        "boolean_string_vs_int": 17,
+        "extra_projected_column": 28,
+        "limit_1_tie_subset": 2,
+        "empty_return_wrong_item_or_case": 14,
+        "missing_distinct_same_set": 2,
+        "boolean_plus_extra_col": 1,
+        "numeric_rounding_precision": 1,
+        "partial_missing_rows": 1,
+        "execution_error_or_timeout": 4
+      },
+      "agree_count": 135,
+      "agreement_pct": 87.1,
+      "cohens_kappa": 0.6753
+    },
+    "EHR874_DG8P_V3_R2/r0": {
+      "n_total": 874,
+      "both_win": 383,
+      "both_lose": 354,
+      "dg8p_only_wins": 72,
+      "c4_only_wins": 65,
+      "n_disagreements": 137,
+      "annotator1_overall": {
+        "genuine_semantic_bug": 115,
+        "convention_strictness": 22
+      },
+      "annotator1_by_sub": {
+        "value_or_filter_or_logic_diff": 95,
+        "arity_and_value_diff": 8,
+        "partial_missing_rows": 2,
+        "loser_returned_empty": 8,
+        "missing_distinct_same_set": 2,
+        "extra_projected_column": 19,
+        "limit_1_tie_subset": 1,
+        "execution_error_or_timeout": 2
+      },
+      "annotator2_overall": {
+        "genuine_semantic_bug": 100,
+        "convention_strictness": 37
+      },
+      "annotator2_by_sub": {
+        "wrong_predicate_join_agg_or_count_vs_bool": 90,
+        "boolean_string_vs_int": 11,
+        "limit_1_tie_subset": 3,
+        "empty_return_wrong_item_or_case": 8,
+        "missing_distinct_same_set": 2,
+        "boolean_plus_extra_col": 1,
+        "extra_projected_column": 19,
+        "execution_error_or_timeout": 2,
+        "missing_distinct_and_extra_col": 1
+      },
+      "agree_count": 122,
+      "agreement_pct": 89.05,
+      "cohens_kappa": 0.6816
+    },
+    "EHR874_DG8P_V3_R3/r0": {
+      "n_total": 874,
+      "both_win": 384,
+      "both_lose": 344,
+      "dg8p_only_wins": 82,
+      "c4_only_wins": 64,
+      "n_disagreements": 146,
+      "annotator1_overall": {
+        "genuine_semantic_bug": 118,
+        "convention_strictness": 28
+      },
+      "annotator1_by_sub": {
+        "value_or_filter_or_logic_diff": 100,
+        "extra_projected_column": 24,
+        "partial_missing_rows": 3,
+        "missing_distinct_same_set": 3,
+        "arity_and_value_diff": 6,
+        "execution_error_or_timeout": 4,
+        "loser_returned_empty": 5,
+        "limit_1_tie_subset": 1
+      },
+      "annotator2_overall": {
+        "genuine_semantic_bug": 94,
+        "convention_strictness": 52
+      },
+      "annotator2_by_sub": {
+        "wrong_predicate_join_agg_or_count_vs_bool": 84,
+        "extra_projected_column": 24,
+        "limit_1_tie_subset": 3,
+        "missing_distinct_same_set": 3,
+        "boolean_plus_extra_col": 1,
+        "boolean_string_vs_int": 21,
+        "execution_error_or_timeout": 4,
+        "empty_return_wrong_item_or_case": 5,
+        "partial_missing_rows": 1
+      },
+      "agree_count": 122,
+      "agreement_pct": 83.56,
+      "cohens_kappa": 0.6004
+    }
+  }
+}

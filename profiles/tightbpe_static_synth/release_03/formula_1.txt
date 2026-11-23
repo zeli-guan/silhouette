@@ -1,0 +1,55 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table circuits(circuitId,circuitRef,name,location,country,lat,lng,alt,url):
+[1,null,null,null,null,52.31714543952644,0.9902793121972515,null,null]
+[2,null,null,null,null,33.78572713152507,0.4219781951352076,null,null]
+[3,null,null,null,null,37.167210899379896,2.0159590490278023,null,null]
+Table constructorResults(constructorResultsId,raceId,constructorId,points,status):
+[1,375,32,-5.6648342230706134e-06,null]
+[185,406,34,-5.6648342230706134e-06,null]
+[369,843,57,-5.6648342230706134e-06,null]
+[553,321,6,4.000391706247626,null]
+Table constructorStandings(constructorStandingsId,raceId,constructorId,points,position,positionText,wins):
+[1,314,3,63.867470900764346,7,"6",4]
+[198,null,5,32.942351048869824,7,"9",1]
+[395,null,18,1.6994502682373483e-05,5,"5",0]
+Table constructors(constructorId,constructorRef,name,nationality,url):
+[1,null,null,"British",null]
+[4,null,null,"British",null]
+[7,null,null,"British",null]
+Table driverStandings(driverStandingsId,raceId,driverId,points,position,positionText,wins):
+[1,802,71,10.955219673226434,21,"18",0]
+[527,751,206,5.664834228399684e-06,20,"44",0]
+[1053,548,140,8395130.25245154,3,"9",0]
+Table drivers(driverId,driverRef,number,code,forename,surname,dob,nationality,url):
+[1,null,null,null,null,null,null,"American",null]
+[15,null,null,null,null,null,null,"British",null]
+[29,null,null,null,null,null,null,"Brazilian",null]
+Table lapTimes(raceId,driverId,lap,position,time,milliseconds):
+[956,41,18,-21089,"1:23.120",94229]
+[163,24,52,15,"1:25.234",92526]
+[218,18,68,19,null,82472]
+Table pitStops(raceId,driverId,stop,lap,time,duration,milliseconds):
+[975,822,2,13,null,null,23782]
+[845,835,1,26,null,null,23507]
+[861,20,2,41,null,null,23039]
+Table qualifying(qualifyId,raceId,driverId,constructorId,number,position,q1,q2,q3):
+[1,122,22,5,6,20,null,null,null]
+[117,229,4,15,6,17,null,null,null]
+[233,340,87,15,-21088,5,null,null,null]
+Table races(raceId,year,round,circuitId,name,date,time,url):
+[1,2006,16,10,"Brazilian Grand Prix",null,null,null]
+[17,1991,14,30,"Hungarian Grand Prix",null,null,null]
+[33,2005,5,13,"Italian Grand Prix",null,"12:00:00",null]
+Table results(resultId,raceId,driverId,constructorId,number,grid,position,positionText,positionOrder,points,laps,time,milliseconds,fastestLap,rank,fastestLapTime,fastestLapSpeed,statusId):
+[1,622,10,7,306067,14,null,"R",7,-1.4162085561626907e-05,52,null,null,null,null,null,null,14]
+[387,260,831,15,12,20,5,"2",13,-1.4162085561626907e-05,36,null,null,null,null,null,null,11]
+[773,564,327,48,13,17,3,"4",15,-1.4162085561626907e-05,22,null,null,53,null,null,null,81]
+Table seasons(year,url):
+[1,null]
+[2,null]
+[3,null]
+Table status(statusId,status):
+[1,null]
+[3,null]
+[5,null]

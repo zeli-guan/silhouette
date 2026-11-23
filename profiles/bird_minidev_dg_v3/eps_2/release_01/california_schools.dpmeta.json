@@ -1,0 +1,1905 @@
+{
+  "db_id": "california_schools",
+  "mechanism": "DG-v3",
+  "epsilon": 2,
+  "delta": "1/1000000",
+  "sha256": "fc97cd851a4ddb7091f05509f3bf73718acba5fcb7b4b5ed1b4e4f2f0aadc508",
+  "parameters": [
+    {
+      "r_j": "4348204974/1",
+      "share": "4348204974/999999999983",
+      "rho": "140332389947348001239061/499999999991500000000000000",
+      "sigma2": "249999999995750000000000000/140332389947348001239061",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "2739197488/1",
+      "share": "2739197488/999999999983",
+      "rho": "11050483254794582311929/62499999998937500000000000",
+      "sigma2": "31249999999468750000000000/11050483254794582311929",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "4862394335/1",
+      "share": "4862394335/999999999983",
+      "rho": "62770860341414610552201/199999999996600000000000000",
+      "sigma2": "99999999998300000000000000/62770860341414610552201",
+      "delta": "1/594000000",
+      "sensitivity2": 1,
+      "tau": 237,
+      "tail_lower": "77859509331587/50000000000000000000000",
+      "tail_upper": "6228760746527/4000000000000000000000",
+      "prev_tail_lower": "181312842047449/100000000000000000000000",
+      "prev_tail_upper": "3626256840949/2000000000000000000000"
+    },
+    {
+      "r_j": "5697760383/1",
+      "share": "5697760383/999999999983",
+      "rho": "367774903287577582065549/999999999983000000000000000",
+      "sigma2": "499999999991500000000000000/367774903287577582065549",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "11928976120/1",
+      "share": "11928976120/999999999983",
+      "rho": "19249572393139467993609/24999999999575000000000000",
+      "sigma2": "12499999999787500000000000/19249572393139467993609",
+      "delta": "1/148500000",
+      "sensitivity2": 1,
+      "tau": 146,
+      "tail_lower": "564432443171993/100000000000000000000000",
+      "tail_upper": "282216221585997/50000000000000000000000",
+      "prev_tail_lower": "710286945987709/100000000000000000000000",
+      "prev_tail_upper": "71028694598771/10000000000000000000000"
+    },
+    {
+      "r_j": "24254018076/1",
+      "share": "24254018076/999999999983",
+      "rho": "391382690418593305982757/249999999995750000000000000",
+      "sigma2": "124999999997875000000000000/391382690418593305982757",
+      "delta": "1/49500000",
+      "sensitivity2": 1,
+      "tau": 99,
+      "tail_lower": "177013056613887/10000000000000000000000",
+      "tail_upper": "345728626199/19531250000000000000",
+      "prev_tail_lower": "121463940462623/5000000000000000000000",
+      "prev_tail_upper": "242927880925247/10000000000000000000000"
+    },
+    {
+      "r_j": "7617986462/1",
+      "share": "7617986462/999999999983",
+      "rho": "245860131523551761210493/499999999991500000000000000",
+      "sigma2": "249999999995750000000000000/245860131523551761210493",
+      "delta": "1/297000000",
+      "sensitivity2": 1,
+      "tau": 186,
+      "tail_lower": "298686512910471/100000000000000000000000",
+      "tail_upper": "37335814113809/12500000000000000000000",
+      "prev_tail_lower": "360131655715109/100000000000000000000000",
+      "prev_tail_upper": "36013165571511/10000000000000000000000"
+    },
+    {
+      "r_j": "18668975880/1",
+      "share": "18668975880/999999999983",
+      "rho": "30125787753512126692791/24999999999575000000000000",
+      "sigma2": "12499999999787500000000000/30125787753512126692791",
+      "delta": "1/74250000",
+      "sensitivity2": 1,
+      "tau": 114,
+      "tail_lower": "125521677877147/10000000000000000000000",
+      "tail_upper": "31380419469287/2500000000000000000000",
+      "prev_tail_lower": "166204821796007/10000000000000000000000",
+      "prev_tail_upper": "20775602724501/1250000000000000000000"
+    },
+    {
+      "r_j": "11715270596/1",
+      "share": "2928817649/249999999999",
+      "rho": "63015732217739897002049/83333333333000000000000000",
+      "sigma2": "41666666666500000000000000/63015732217739897002049",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "7380158014/1",
+      "share": "3690079007/499999999998",
+      "rho": "79394847489672289568207/166666666666000000000000000",
+      "sigma2": "83333333333000000000000000/79394847489672289568207",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "12833077072/1",
+      "share": "3208269268/249999999999",
+      "rho": "17257086417083762592517/20833333333250000000000000",
+      "sigma2": "10416666666625000000000000/17257086417083762592517",
+      "delta": "1/202000000",
+      "sensitivity2": 1,
+      "tau": 142,
+      "tail_lower": "26320163784489/6250000000000000000000",
+      "tail_upper": "16844904822073/4000000000000000000000",
+      "prev_tail_lower": "535533623802899/100000000000000000000000",
+      "prev_tail_upper": "5355336238029/1000000000000000000000"
+    },
+    {
+      "r_j": "15351347297/1",
+      "share": "15351347297/999999999996",
+      "rho": "330295875804891116760497/333333333332000000000000000",
+      "sigma2": "166666666666000000000000000/330295875804891116760497",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "31429062263/1",
+      "share": "31429062263/999999999996",
+      "rho": "676220102708033871185063/333333333332000000000000000",
+      "sigma2": "166666666666000000000000000/676220102708033871185063",
+      "delta": "1/50500000",
+      "sensitivity2": 1,
+      "tau": 87,
+      "tail_lower": "178674230896671/10000000000000000000000",
+      "tail_upper": "5583569715521/312500000000000000000",
+      "prev_tail_lower": "256100376558969/10000000000000000000000",
+      "prev_tail_upper": "25610037655897/1000000000000000000000"
+    },
+    {
+      "r_j": "63800044288/1",
+      "share": "15950011072/249999999999",
+      "rho": "5362134075067347637723/1302083333328125000000000",
+      "sigma2": "651041666664062500000000/5362134075067347637723",
+      "delta": "3/50500000",
+      "sensitivity2": 1,
+      "tau": 59,
+      "tail_lower": "27269431973107/500000000000000000000",
+      "tail_upper": "545388639462141/10000000000000000000000",
+      "prev_tail_lower": "893998836038487/10000000000000000000000",
+      "prev_tail_upper": "111749854504811/1250000000000000000000"
+    },
+    {
+      "r_j": "20089059598/1",
+      "share": "10044529799/499999999998",
+      "rho": "216115673942011523254199/166666666666000000000000000",
+      "sigma2": "83333333333000000000000000/216115673942011523254199",
+      "delta": "1/101000000",
+      "sensitivity2": 1,
+      "tau": 111,
+      "tail_lower": "912319144819701/100000000000000000000000",
+      "tail_upper": "456159572409851/50000000000000000000000",
+      "prev_tail_lower": "122403888121081/10000000000000000000000",
+      "prev_tail_upper": "61201944060541/5000000000000000000000"
+    },
+    {
+      "r_j": "2902907139/1",
+      "share": "2902907139/1000000000024",
+      "rho": "187374743852674847206617/1000000000024000000000000000",
+      "sigma2": "500000000012000000000000000/187374743852674847206617",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1828716905/1",
+      "share": "1828716905/1000000000024",
+      "rho": "23607738397823501480943/200000000004800000000000000",
+      "sigma2": "100000000002400000000000000/23607738397823501480943",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3269708549/1",
+      "share": "3269708549/1000000000024",
+      "rho": "211050775138755185798847/1000000000024000000000000000",
+      "sigma2": "500000000012000000000000000/211050775138755185798847",
+      "delta": "1/880000000",
+      "sensitivity2": 1,
+      "tau": 292,
+      "tail_lower": "26391096600567/25000000000000000000000",
+      "tail_upper": "105564386402269/100000000000000000000000",
+      "prev_tail_lower": "119752073524929/100000000000000000000000",
+      "prev_tail_upper": "11975207352493/10000000000000000000000"
+    },
+    {
+      "r_j": "3803884451/1",
+      "share": "3803884451/1000000000024",
+      "rho": "245530373698701247380153/1000000000024000000000000000",
+      "sigma2": "500000000012000000000000000/245530373698701247380153",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "8026277829/1",
+      "share": "8026277829/1000000000024",
+      "rho": "518074357975278715410687/1000000000024000000000000000",
+      "sigma2": "500000000012000000000000000/518074357975278715410687",
+      "delta": "1/220000000",
+      "sensitivity2": 1,
+      "tau": 180,
+      "tail_lower": "94367532568751/25000000000000000000000",
+      "tail_upper": "75494026055001/20000000000000000000000",
+      "prev_tail_lower": "228405551991679/50000000000000000000000",
+      "prev_tail_upper": "456811103983359/100000000000000000000000"
+    },
+    {
+      "r_j": "16327694672/1",
+      "share": "2040961834/125000000003",
+      "rho": "65869261837733811498351/62500000001500000000000000",
+      "sigma2": "31250000000750000000000000/65869261837733811498351",
+      "delta": "3/220000000",
+      "sensitivity2": 1,
+      "tau": 122,
+      "tail_lower": "121181194194043/10000000000000000000000",
+      "tail_upper": "30295298548511/2500000000000000000000",
+      "prev_tail_lower": "78809215056397/5000000000000000000000",
+      "prev_tail_upper": "31523686022559/2000000000000000000000"
+    },
+    {
+      "r_j": "5124132186/1",
+      "share": "2562066093/500000000012",
+      "rho": "165374383306960620410679/500000000012000000000000000",
+      "sigma2": "250000000006000000000000000/165374383306960620410679",
+      "delta": "1/440000000",
+      "sensitivity2": 1,
+      "tau": 229,
+      "tail_lower": "41754307122663/20000000000000000000000",
+      "tail_upper": "52192883903329/25000000000000000000000",
+      "prev_tail_lower": "121885827188557/50000000000000000000000",
+      "prev_tail_upper": "48754330875423/20000000000000000000000"
+    }
+  ],
+  "tables": {
+    "frpm": {
+      "rho": "64547274466803/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "CDSCode",
+          1
+        ],
+        [
+          "distinct_count",
+          "CDSCode",
+          1
+        ],
+        [
+          "patterns",
+          "CDSCode",
+          2
+        ],
+        [
+          "null_count",
+          "Academic Year",
+          0
+        ],
+        [
+          "distinct_count",
+          "Academic Year",
+          3
+        ],
+        [
+          "patterns",
+          "Academic Year",
+          4
+        ],
+        [
+          "values",
+          "Academic Year",
+          5
+        ],
+        [
+          "null_count",
+          "County Code",
+          0
+        ],
+        [
+          "distinct_count",
+          "County Code",
+          3
+        ],
+        [
+          "patterns",
+          "County Code",
+          4
+        ],
+        [
+          "values",
+          "County Code",
+          5
+        ],
+        [
+          "null_count",
+          "District Code",
+          0
+        ],
+        [
+          "distinct_count",
+          "District Code",
+          3
+        ],
+        [
+          "bins",
+          "District Code",
+          4
+        ],
+        [
+          "values",
+          "District Code",
+          6
+        ],
+        [
+          "null_count",
+          "School Code",
+          0
+        ],
+        [
+          "distinct_count",
+          "School Code",
+          3
+        ],
+        [
+          "patterns",
+          "School Code",
+          4
+        ],
+        [
+          "values",
+          "School Code",
+          5
+        ],
+        [
+          "null_count",
+          "County Name",
+          0
+        ],
+        [
+          "distinct_count",
+          "County Name",
+          3
+        ],
+        [
+          "patterns",
+          "County Name",
+          4
+        ],
+        [
+          "values",
+          "County Name",
+          5
+        ],
+        [
+          "null_count",
+          "District Name",
+          0
+        ],
+        [
+          "distinct_count",
+          "District Name",
+          3
+        ],
+        [
+          "patterns",
+          "District Name",
+          4
+        ],
+        [
+          "values",
+          "District Name",
+          5
+        ],
+        [
+          "null_count",
+          "School Name",
+          0
+        ],
+        [
+          "distinct_count",
+          "School Name",
+          3
+        ],
+        [
+          "patterns",
+          "School Name",
+          4
+        ],
+        [
+          "values",
+          "School Name",
+          5
+        ],
+        [
+          "null_count",
+          "District Type",
+          0
+        ],
+        [
+          "distinct_count",
+          "District Type",
+          3
+        ],
+        [
+          "patterns",
+          "District Type",
+          4
+        ],
+        [
+          "values",
+          "District Type",
+          5
+        ],
+        [
+          "null_count",
+          "School Type",
+          0
+        ],
+        [
+          "distinct_count",
+          "School Type",
+          3
+        ],
+        [
+          "patterns",
+          "School Type",
+          4
+        ],
+        [
+          "values",
+          "School Type",
+          5
+        ],
+        [
+          "null_count",
+          "Educational Option Type",
+          0
+        ],
+        [
+          "distinct_count",
+          "Educational Option Type",
+          3
+        ],
+        [
+          "patterns",
+          "Educational Option Type",
+          4
+        ],
+        [
+          "values",
+          "Educational Option Type",
+          5
+        ],
+        [
+          "null_count",
+          "NSLP Provision Status",
+          0
+        ],
+        [
+          "distinct_count",
+          "NSLP Provision Status",
+          3
+        ],
+        [
+          "patterns",
+          "NSLP Provision Status",
+          4
+        ],
+        [
+          "values",
+          "NSLP Provision Status",
+          5
+        ],
+        [
+          "null_count",
+          "Charter School (Y/N)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Charter School (Y/N)",
+          3
+        ],
+        [
+          "bins",
+          "Charter School (Y/N)",
+          6
+        ],
+        [
+          "values",
+          "Charter School (Y/N)",
+          7
+        ],
+        [
+          "null_count",
+          "Charter School Number",
+          0
+        ],
+        [
+          "distinct_count",
+          "Charter School Number",
+          3
+        ],
+        [
+          "patterns",
+          "Charter School Number",
+          4
+        ],
+        [
+          "values",
+          "Charter School Number",
+          5
+        ],
+        [
+          "null_count",
+          "Charter Funding Type",
+          0
+        ],
+        [
+          "distinct_count",
+          "Charter Funding Type",
+          3
+        ],
+        [
+          "patterns",
+          "Charter Funding Type",
+          4
+        ],
+        [
+          "values",
+          "Charter Funding Type",
+          5
+        ],
+        [
+          "null_count",
+          "IRC",
+          0
+        ],
+        [
+          "distinct_count",
+          "IRC",
+          3
+        ],
+        [
+          "bins",
+          "IRC",
+          4
+        ],
+        [
+          "values",
+          "IRC",
+          6
+        ],
+        [
+          "null_count",
+          "Low Grade",
+          0
+        ],
+        [
+          "distinct_count",
+          "Low Grade",
+          3
+        ],
+        [
+          "patterns",
+          "Low Grade",
+          4
+        ],
+        [
+          "values",
+          "Low Grade",
+          5
+        ],
+        [
+          "null_count",
+          "High Grade",
+          0
+        ],
+        [
+          "distinct_count",
+          "High Grade",
+          3
+        ],
+        [
+          "patterns",
+          "High Grade",
+          4
+        ],
+        [
+          "values",
+          "High Grade",
+          5
+        ],
+        [
+          "null_count",
+          "Enrollment (K-12)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Enrollment (K-12)",
+          0
+        ],
+        [
+          "bins",
+          "Enrollment (K-12)",
+          4
+        ],
+        [
+          "null_count",
+          "Free Meal Count (K-12)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Free Meal Count (K-12)",
+          0
+        ],
+        [
+          "bins",
+          "Free Meal Count (K-12)",
+          4
+        ],
+        [
+          "null_count",
+          "Percent (%) Eligible Free (K-12)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Percent (%) Eligible Free (K-12)",
+          0
+        ],
+        [
+          "bins",
+          "Percent (%) Eligible Free (K-12)",
+          4
+        ],
+        [
+          "null_count",
+          "FRPM Count (K-12)",
+          0
+        ],
+        [
+          "distinct_count",
+          "FRPM Count (K-12)",
+          0
+        ],
+        [
+          "bins",
+          "FRPM Count (K-12)",
+          4
+        ],
+        [
+          "null_count",
+          "Percent (%) Eligible FRPM (K-12)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Percent (%) Eligible FRPM (K-12)",
+          0
+        ],
+        [
+          "bins",
+          "Percent (%) Eligible FRPM (K-12)",
+          4
+        ],
+        [
+          "null_count",
+          "Enrollment (Ages 5-17)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Enrollment (Ages 5-17)",
+          0
+        ],
+        [
+          "bins",
+          "Enrollment (Ages 5-17)",
+          4
+        ],
+        [
+          "null_count",
+          "Free Meal Count (Ages 5-17)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Free Meal Count (Ages 5-17)",
+          0
+        ],
+        [
+          "bins",
+          "Free Meal Count (Ages 5-17)",
+          4
+        ],
+        [
+          "null_count",
+          "Percent (%) Eligible Free (Ages 5-17)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Percent (%) Eligible Free (Ages 5-17)",
+          0
+        ],
+        [
+          "bins",
+          "Percent (%) Eligible Free (Ages 5-17)",
+          4
+        ],
+        [
+          "null_count",
+          "FRPM Count (Ages 5-17)",
+          0
+        ],
+        [
+          "distinct_count",
+          "FRPM Count (Ages 5-17)",
+          0
+        ],
+        [
+          "bins",
+          "FRPM Count (Ages 5-17)",
+          4
+        ],
+        [
+          "null_count",
+          "Percent (%) Eligible FRPM (Ages 5-17)",
+          0
+        ],
+        [
+          "distinct_count",
+          "Percent (%) Eligible FRPM (Ages 5-17)",
+          0
+        ],
+        [
+          "bins",
+          "Percent (%) Eligible FRPM (Ages 5-17)",
+          4
+        ],
+        [
+          "null_count",
+          "2013-14 CALPADS Fall 1 Certification Status",
+          0
+        ],
+        [
+          "distinct_count",
+          "2013-14 CALPADS Fall 1 Certification Status",
+          3
+        ],
+        [
+          "bins",
+          "2013-14 CALPADS Fall 1 Certification Status",
+          6
+        ],
+        [
+          "values",
+          "2013-14 CALPADS Fall 1 Certification Status",
+          7
+        ]
+      ]
+    },
+    "satscores": {
+      "rho": "64547274466803/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "cds",
+          9
+        ],
+        [
+          "distinct_count",
+          "cds",
+          9
+        ],
+        [
+          "patterns",
+          "cds",
+          10
+        ],
+        [
+          "null_count",
+          "rtype",
+          8
+        ],
+        [
+          "distinct_count",
+          "rtype",
+          11
+        ],
+        [
+          "patterns",
+          "rtype",
+          12
+        ],
+        [
+          "values",
+          "rtype",
+          13
+        ],
+        [
+          "null_count",
+          "sname",
+          8
+        ],
+        [
+          "distinct_count",
+          "sname",
+          11
+        ],
+        [
+          "patterns",
+          "sname",
+          12
+        ],
+        [
+          "values",
+          "sname",
+          13
+        ],
+        [
+          "null_count",
+          "dname",
+          8
+        ],
+        [
+          "distinct_count",
+          "dname",
+          11
+        ],
+        [
+          "patterns",
+          "dname",
+          12
+        ],
+        [
+          "values",
+          "dname",
+          13
+        ],
+        [
+          "null_count",
+          "cname",
+          8
+        ],
+        [
+          "distinct_count",
+          "cname",
+          11
+        ],
+        [
+          "patterns",
+          "cname",
+          12
+        ],
+        [
+          "values",
+          "cname",
+          13
+        ],
+        [
+          "null_count",
+          "enroll12",
+          8
+        ],
+        [
+          "distinct_count",
+          "enroll12",
+          11
+        ],
+        [
+          "bins",
+          "enroll12",
+          12
+        ],
+        [
+          "values",
+          "enroll12",
+          14
+        ],
+        [
+          "null_count",
+          "NumTstTakr",
+          8
+        ],
+        [
+          "distinct_count",
+          "NumTstTakr",
+          11
+        ],
+        [
+          "bins",
+          "NumTstTakr",
+          12
+        ],
+        [
+          "values",
+          "NumTstTakr",
+          14
+        ],
+        [
+          "null_count",
+          "AvgScrRead",
+          8
+        ],
+        [
+          "distinct_count",
+          "AvgScrRead",
+          11
+        ],
+        [
+          "bins",
+          "AvgScrRead",
+          12
+        ],
+        [
+          "values",
+          "AvgScrRead",
+          14
+        ],
+        [
+          "null_count",
+          "AvgScrMath",
+          8
+        ],
+        [
+          "distinct_count",
+          "AvgScrMath",
+          11
+        ],
+        [
+          "bins",
+          "AvgScrMath",
+          12
+        ],
+        [
+          "values",
+          "AvgScrMath",
+          14
+        ],
+        [
+          "null_count",
+          "AvgScrWrite",
+          8
+        ],
+        [
+          "distinct_count",
+          "AvgScrWrite",
+          11
+        ],
+        [
+          "bins",
+          "AvgScrWrite",
+          12
+        ],
+        [
+          "values",
+          "AvgScrWrite",
+          14
+        ],
+        [
+          "null_count",
+          "NumGE1500",
+          8
+        ],
+        [
+          "distinct_count",
+          "NumGE1500",
+          11
+        ],
+        [
+          "bins",
+          "NumGE1500",
+          12
+        ],
+        [
+          "values",
+          "NumGE1500",
+          14
+        ]
+      ]
+    },
+    "schools": {
+      "rho": "64547274466803/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          15
+        ],
+        [
+          "null_count",
+          "CDSCode",
+          16
+        ],
+        [
+          "distinct_count",
+          "CDSCode",
+          16
+        ],
+        [
+          "patterns",
+          "CDSCode",
+          17
+        ],
+        [
+          "null_count",
+          "NCESDist",
+          15
+        ],
+        [
+          "distinct_count",
+          "NCESDist",
+          18
+        ],
+        [
+          "patterns",
+          "NCESDist",
+          19
+        ],
+        [
+          "values",
+          "NCESDist",
+          20
+        ],
+        [
+          "null_count",
+          "NCESSchool",
+          15
+        ],
+        [
+          "distinct_count",
+          "NCESSchool",
+          18
+        ],
+        [
+          "patterns",
+          "NCESSchool",
+          19
+        ],
+        [
+          "values",
+          "NCESSchool",
+          20
+        ],
+        [
+          "null_count",
+          "StatusType",
+          15
+        ],
+        [
+          "distinct_count",
+          "StatusType",
+          18
+        ],
+        [
+          "patterns",
+          "StatusType",
+          19
+        ],
+        [
+          "values",
+          "StatusType",
+          20
+        ],
+        [
+          "null_count",
+          "County",
+          15
+        ],
+        [
+          "distinct_count",
+          "County",
+          18
+        ],
+        [
+          "patterns",
+          "County",
+          19
+        ],
+        [
+          "values",
+          "County",
+          20
+        ],
+        [
+          "null_count",
+          "District",
+          15
+        ],
+        [
+          "distinct_count",
+          "District",
+          18
+        ],
+        [
+          "patterns",
+          "District",
+          19
+        ],
+        [
+          "values",
+          "District",
+          20
+        ],
+        [
+          "null_count",
+          "School",
+          15
+        ],
+        [
+          "distinct_count",
+          "School",
+          18
+        ],
+        [
+          "patterns",
+          "School",
+          19
+        ],
+        [
+          "values",
+          "School",
+          20
+        ],
+        [
+          "null_count",
+          "Street",
+          16
+        ],
+        [
+          "distinct_count",
+          "Street",
+          16
+        ],
+        [
+          "patterns",
+          "Street",
+          17
+        ],
+        [
+          "null_count",
+          "StreetAbr",
+          16
+        ],
+        [
+          "distinct_count",
+          "StreetAbr",
+          16
+        ],
+        [
+          "patterns",
+          "StreetAbr",
+          17
+        ],
+        [
+          "null_count",
+          "City",
+          15
+        ],
+        [
+          "distinct_count",
+          "City",
+          18
+        ],
+        [
+          "patterns",
+          "City",
+          19
+        ],
+        [
+          "values",
+          "City",
+          20
+        ],
+        [
+          "null_count",
+          "Zip",
+          16
+        ],
+        [
+          "distinct_count",
+          "Zip",
+          16
+        ],
+        [
+          "patterns",
+          "Zip",
+          17
+        ],
+        [
+          "null_count",
+          "State",
+          15
+        ],
+        [
+          "distinct_count",
+          "State",
+          18
+        ],
+        [
+          "patterns",
+          "State",
+          19
+        ],
+        [
+          "values",
+          "State",
+          20
+        ],
+        [
+          "null_count",
+          "MailStreet",
+          16
+        ],
+        [
+          "distinct_count",
+          "MailStreet",
+          16
+        ],
+        [
+          "patterns",
+          "MailStreet",
+          17
+        ],
+        [
+          "null_count",
+          "MailStrAbr",
+          15
+        ],
+        [
+          "distinct_count",
+          "MailStrAbr",
+          18
+        ],
+        [
+          "patterns",
+          "MailStrAbr",
+          19
+        ],
+        [
+          "values",
+          "MailStrAbr",
+          20
+        ],
+        [
+          "null_count",
+          "MailCity",
+          15
+        ],
+        [
+          "distinct_count",
+          "MailCity",
+          18
+        ],
+        [
+          "patterns",
+          "MailCity",
+          19
+        ],
+        [
+          "values",
+          "MailCity",
+          20
+        ],
+        [
+          "null_count",
+          "MailZip",
+          16
+        ],
+        [
+          "distinct_count",
+          "MailZip",
+          16
+        ],
+        [
+          "patterns",
+          "MailZip",
+          17
+        ],
+        [
+          "null_count",
+          "MailState",
+          15
+        ],
+        [
+          "distinct_count",
+          "MailState",
+          18
+        ],
+        [
+          "patterns",
+          "MailState",
+          19
+        ],
+        [
+          "values",
+          "MailState",
+          20
+        ],
+        [
+          "null_count",
+          "Phone",
+          16
+        ],
+        [
+          "distinct_count",
+          "Phone",
+          16
+        ],
+        [
+          "patterns",
+          "Phone",
+          17
+        ],
+        [
+          "null_count",
+          "Ext",
+          16
+        ],
+        [
+          "distinct_count",
+          "Ext",
+          16
+        ],
+        [
+          "patterns",
+          "Ext",
+          17
+        ],
+        [
+          "null_count",
+          "Website",
+          16
+        ],
+        [
+          "distinct_count",
+          "Website",
+          16
+        ],
+        [
+          "patterns",
+          "Website",
+          17
+        ],
+        [
+          "null_count",
+          "OpenDate",
+          15
+        ],
+        [
+          "distinct_count",
+          "OpenDate",
+          18
+        ],
+        [
+          "patterns",
+          "OpenDate",
+          19
+        ],
+        [
+          "values",
+          "OpenDate",
+          21
+        ],
+        [
+          "null_count",
+          "ClosedDate",
+          15
+        ],
+        [
+          "distinct_count",
+          "ClosedDate",
+          18
+        ],
+        [
+          "patterns",
+          "ClosedDate",
+          19
+        ],
+        [
+          "values",
+          "ClosedDate",
+          21
+        ],
+        [
+          "null_count",
+          "Charter",
+          15
+        ],
+        [
+          "distinct_count",
+          "Charter",
+          18
+        ],
+        [
+          "bins",
+          "Charter",
+          19
+        ],
+        [
+          "values",
+          "Charter",
+          21
+        ],
+        [
+          "null_count",
+          "CharterNum",
+          15
+        ],
+        [
+          "distinct_count",
+          "CharterNum",
+          18
+        ],
+        [
+          "patterns",
+          "CharterNum",
+          19
+        ],
+        [
+          "values",
+          "CharterNum",
+          20
+        ],
+        [
+          "null_count",
+          "FundingType",
+          15
+        ],
+        [
+          "distinct_count",
+          "FundingType",
+          18
+        ],
+        [
+          "patterns",
+          "FundingType",
+          19
+        ],
+        [
+          "values",
+          "FundingType",
+          20
+        ],
+        [
+          "null_count",
+          "DOC",
+          15
+        ],
+        [
+          "distinct_count",
+          "DOC",
+          18
+        ],
+        [
+          "patterns",
+          "DOC",
+          19
+        ],
+        [
+          "values",
+          "DOC",
+          20
+        ],
+        [
+          "null_count",
+          "DOCType",
+          15
+        ],
+        [
+          "distinct_count",
+          "DOCType",
+          18
+        ],
+        [
+          "patterns",
+          "DOCType",
+          19
+        ],
+        [
+          "values",
+          "DOCType",
+          20
+        ],
+        [
+          "null_count",
+          "SOC",
+          15
+        ],
+        [
+          "distinct_count",
+          "SOC",
+          18
+        ],
+        [
+          "patterns",
+          "SOC",
+          19
+        ],
+        [
+          "values",
+          "SOC",
+          20
+        ],
+        [
+          "null_count",
+          "SOCType",
+          15
+        ],
+        [
+          "distinct_count",
+          "SOCType",
+          18
+        ],
+        [
+          "patterns",
+          "SOCType",
+          19
+        ],
+        [
+          "values",
+          "SOCType",
+          20
+        ],
+        [
+          "null_count",
+          "EdOpsCode",
+          15
+        ],
+        [
+          "distinct_count",
+          "EdOpsCode",
+          18
+        ],
+        [
+          "patterns",
+          "EdOpsCode",
+          19
+        ],
+        [
+          "values",
+          "EdOpsCode",
+          20
+        ],
+        [
+          "null_count",
+          "EdOpsName",
+          15
+        ],
+        [
+          "distinct_count",
+          "EdOpsName",
+          18
+        ],
+        [
+          "patterns",
+          "EdOpsName",
+          19
+        ],
+        [
+          "values",
+          "EdOpsName",
+          20
+        ],
+        [
+          "null_count",
+          "EILCode",
+          15
+        ],
+        [
+          "distinct_count",
+          "EILCode",
+          18
+        ],
+        [
+          "patterns",
+          "EILCode",
+          19
+        ],
+        [
+          "values",
+          "EILCode",
+          20
+        ],
+        [
+          "null_count",
+          "EILName",
+          15
+        ],
+        [
+          "distinct_count",
+          "EILName",
+          18
+        ],
+        [
+          "patterns",
+          "EILName",
+          19
+        ],
+        [
+          "values",
+          "EILName",
+          20
+        ],
+        [
+          "null_count",
+          "GSoffered",
+          15
+        ],
+        [
+          "distinct_count",
+          "GSoffered",
+          18
+        ],
+        [
+          "patterns",
+          "GSoffered",
+          19
+        ],
+        [
+          "values",
+          "GSoffered",
+          20
+        ],
+        [
+          "null_count",
+          "GSserved",
+          15
+        ],
+        [
+          "distinct_count",
+          "GSserved",
+          18
+        ],
+        [
+          "patterns",
+          "GSserved",
+          19
+        ],
+        [
+          "values",
+          "GSserved",
+          20
+        ],
+        [
+          "null_count",
+          "Virtual",
+          15
+        ],
+        [
+          "distinct_count",
+          "Virtual",
+          18
+        ],
+        [
+          "patterns",
+          "Virtual",
+          19
+        ],
+        [
+          "values",
+          "Virtual",
+          20
+        ],
+        [
+          "null_count",
+          "Magnet",
+          15
+        ],
+        [
+          "distinct_count",
+          "Magnet",
+          18
+        ],
+        [
+          "bins",
+          "Magnet",
+          19
+        ],
+        [
+          "values",
+          "Magnet",
+          21
+        ],
+        [
+          "null_count",
+          "Latitude",
+          15
+        ],
+        [
+          "distinct_count",
+          "Latitude",
+          15
+        ],
+        [
+          "bins",
+          "Latitude",
+          19
+        ],
+        [
+          "null_count",
+          "Longitude",
+          15
+        ],
+        [
+          "distinct_count",
+          "Longitude",
+          15
+        ],
+        [
+          "bins",
+          "Longitude",
+          19
+        ],
+        [
+          "null_count",
+          "AdmFName1",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmFName1",
+          16
+        ],
+        [
+          "patterns",
+          "AdmFName1",
+          17
+        ],
+        [
+          "null_count",
+          "AdmLName1",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmLName1",
+          16
+        ],
+        [
+          "patterns",
+          "AdmLName1",
+          17
+        ],
+        [
+          "null_count",
+          "AdmEmail1",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmEmail1",
+          16
+        ],
+        [
+          "patterns",
+          "AdmEmail1",
+          17
+        ],
+        [
+          "null_count",
+          "AdmFName2",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmFName2",
+          16
+        ],
+        [
+          "patterns",
+          "AdmFName2",
+          17
+        ],
+        [
+          "null_count",
+          "AdmLName2",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmLName2",
+          16
+        ],
+        [
+          "patterns",
+          "AdmLName2",
+          17
+        ],
+        [
+          "null_count",
+          "AdmEmail2",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmEmail2",
+          16
+        ],
+        [
+          "patterns",
+          "AdmEmail2",
+          17
+        ],
+        [
+          "null_count",
+          "AdmFName3",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmFName3",
+          16
+        ],
+        [
+          "patterns",
+          "AdmFName3",
+          17
+        ],
+        [
+          "null_count",
+          "AdmLName3",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmLName3",
+          16
+        ],
+        [
+          "patterns",
+          "AdmLName3",
+          17
+        ],
+        [
+          "null_count",
+          "AdmEmail3",
+          16
+        ],
+        [
+          "distinct_count",
+          "AdmEmail3",
+          16
+        ],
+        [
+          "patterns",
+          "AdmEmail3",
+          17
+        ],
+        [
+          "null_count",
+          "LastUpdate",
+          15
+        ],
+        [
+          "distinct_count",
+          "LastUpdate",
+          18
+        ],
+        [
+          "patterns",
+          "LastUpdate",
+          19
+        ],
+        [
+          "values",
+          "LastUpdate",
+          21
+        ]
+      ]
+    }
+  }
+}

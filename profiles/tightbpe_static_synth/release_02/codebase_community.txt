@@ -1,0 +1,50 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table badges(Id,UserId,Name,Date):
+[1,null,"Autobiographer",null]
+[1331,null,"Supporter",null]
+[2661,null,"Editor",null]
+[3991,1124,"Autobiographer",null]
+[5321,null,"Nice Question",null]
+Table comments(Id,PostId,Score,Text,CreationDate,UserId,UserDisplayName):
+[1,null,0,null,null,null,null]
+[2905,90705,0,null,null,null,null]
+[5809,null,0,null,null,2392,null]
+[8713,null,0,null,null,2669,null]
+[11617,null,0,null,null,null,null]
+Table postHistory(Id,PostHistoryTypeId,PostId,RevisionGUID,CreationDate,UserId,Text,Comment,UserDisplayName):
+[1,1,null,null,null,686,null,"added 183 characters in body",""]
+[5053,2,null,null,null,45065,null,"added 276 characters in body",""]
+[10105,2,null,null,null,1036,null,null,""]
+[15157,3,null,null,null,800,null,"",""]
+[20209,2,null,null,null,11476,null,"added 145 characters in body",""]
+Table postLinks(Id,CreationDate,PostId,RelatedPostId,LinkTypeId):
+[1,null,null,null,1]
+[186,null,null,20523,1]
+[371,null,null,null,1]
+[556,null,null,null,1]
+[741,null,null,null,1]
+[926,null,null,null,1]
+Table posts(Id,PostTypeId,AcceptedAnswerId,CreaionDate,Score,ViewCount,Body,OwnerUserId,LasActivityDate,Title,Tags,AnswerCount,CommentCount,FavoriteCount,LastEditorUserId,LastEditDate,CommunityOwnedDate,ParentId,ClosedDate,OwnerDisplayName,LastEditorDisplayName):
+[1,2,null,null,2,487,null,196,null,null,null,1,1,null,null,null,null,null,null,null,null]
+[1533,1,null,null,1,null,null,null,null,null,null,null,7,null,null,null,null,null,null,null,null]
+[3065,2,null,null,2,109,null,null,null,null,null,null,1,null,null,null,null,null,null,null,null]
+[4597,1,null,null,1,null,null,null,null,null,null,0,0,null,null,null,null,null,null,null,null]
+[6129,2,null,null,7,343,null,29137,null,null,null,null,0,null,13138,null,null,null,null,null,null]
+Table tags(Id,TagName,Count,ExcerptPostId,WikiPostId):
+[1,null,1128987,null,null]
+[18,null,311,null,null]
+[35,null,7,null,null]
+[52,null,15,null,null]
+[69,null,6,null,null]
+Table users(Id,Reputation,CreationDate,DisplayName,LastAccessDate,WebsiteUrl,Location,AboutMe,Views,UpVotes,DownVotes,AccountId,Age,ProfileImageUrl):
+[1,101,null,null,null,null,null,null,252536,0,0,null,null,null]
+[673,1,null,null,null,null,null,null,0,11,0,null,null,null]
+[1345,101,null,null,null,null,"San Jose, CA",null,0,0,0,null,41,null]
+[2017,101,null,null,null,null,null,null,2,0,0,null,21,null]
+[2689,1,null,null,null,null,null,null,1,0,0,null,null,"https://www.gravatar.com/avatar/?s=128&d=identicon&r=PG&f=1"]
+Table votes(Id,PostId,VoteTypeId,CreationDate,UserId,BountyAmount):
+[1,1196,2,"2010-10-19",253,null]
+[649,737,2,"2010-12-24",null,null]
+[1297,370,2,"2011-01-04",null,null]
+[1945,4220,2,"2011-03-09",null,null]

@@ -1,0 +1,28 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table cards(id,artist,asciiName,availability,borderColor,cardKingdomFoilId,cardKingdomId,colorIdentity,colorIndicator,colors,convertedManaCost,duelDeck,edhrecRank,faceConvertedManaCost,faceName,flavorName,flavorText,frameEffects,frameVersion,hand,hasAlternativeDeckLimit,hasContentWarning,hasFoil,hasNonFoil,isAlternative,isFullArt,isOnlineOnly,isOversized,isPromo,isReprint,isReserved,isStarter,isStorySpotlight,isTextless,isTimeshifted,keywords,layout,leadershipSkills,life,loyalty,manaCost,mcmId,mcmMetaId,mtgArenaId,mtgjsonV4Id,mtgoFoilId,mtgoId,multiverseId,name,number,originalReleaseDate,originalText,originalType,otherFaceIds,power,printings,promoTypes,purchaseUrls,rarity,scryfallId,scryfallIllustrationId,scryfallOracleId,setCode,side,subtypes,supertypes,tcgplayerProductId,text,toughness,type,types,uuid,variations,watermark):
+[1,"Vincent Proce",null,"paper","black",null,null,"U,W",null,"B,U",5.000437402752106,null,13357,null,null,null,null,null,"2003",null,0,0,1,0,0,0,0,0,0,1,0,0,0,0,0,"Equip","normal",null,null,null,"{4}{R}",null,null,null,null,null,null,null,null,"178",null,null,"Enchantment",null,null,null,null,null,"common",null,null,null,"HOU",null,"Human,Nomad","Basic",null,null,null,"Creature — Ogre","Land",null,null,null]
+[947,"John Avon",null,"mtgo,paper","black",null,null,null,null,null,3.9997026756573453,null,8777,null,null,null,null,null,"2015",null,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,"Flying","normal",null,null,null,"{1}{U}",null,"2177",null,null,null,null,null,null,"219",null,null,"Artifact",null,"2","UND,UNH","boosterfun",null,"uncommon",null,null,null,"PTC",null,null,"Legendary",null,null,"2","Instant","Instant",null,null,null]
+[1893,"Ryan Yee",null,"arena,mtgo,paper","gold",null,null,"U",null,null,3.000141151007813,null,1202,null,null,null,null,null,"1997",null,0,0,0,1,0,0,0,0,0,1,0,1,0,0,0,null,"normal",null,null,null,null,null,null,null,null,null,null,null,null,"172",null,null,"Artifact",null,"5",null,null,null,"common",null,null,null,"PRIX",null,null,null,null,null,"2","Creature — Faerie","Creature",null,null,null]
+[2839,"Michael Komarck",null,"mtgo,paper","black",null,null,"U",null,"U,W",5.000437402752106,null,null,null,null,null,null,null,"2015",null,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0,null,"normal",null,null,null,"{3}",null,null,null,null,null,null,null,null,"158",null,null,"Land",null,"1",null,"boosterfun",null,"rare",null,null,null,"C19",null,null,null,null,null,null,"Enchantment","Instant",null,null,null]
+Table foreign_data(id,flavorText,language,multiverseid,name,text,type,uuid):
+[1,null,"Japanese",null,null,null,"기본 대지 — 섬",null]
+[3820,"","Portuguese (Brazil)",null,null,null,"Feitiço",null]
+[7639,null,"Japanese",null,null,"","地","41e9c5a9-b640-5074-9abe-8708ba414ea2"]
+[11458,null,"Japanese",null,null,"飞行，警戒","Criatura — Humano Mago",null]
+Table legalities(id,format,status,uuid):
+[1,"commander","Legal","b7b109ee-6f08-544b-8daa-c0c0e1ff30f2"]
+[7132,"legacy","Legal","d1226750-ce73-5951-ab86-aa3c50565710"]
+[14263,"standard","Legal","a0eebb04-0c87-5cd8-82f7-22cdbe842cd0"]
+Table rulings(id,date,text,uuid):
+[1,"2020-09-25","If an effect puts this land onto the battlefield tapped, you may pay 2 life, but it still enters tap",null]
+[1463,"2016-06-08","You don’t choose whether the spell is going to be an Aura spell or not until the spell is already on",null]
+[2925,"2019-01-25","If a double-faced card is manifested, it will be put onto the battlefield face down (this is also tr",null]
+Table set_translations(id,language,setCode,translation):
+[1,"German","MM2",null]
+[21,"Chinese Simplified","V10",null]
+[41,"Chinese Simplified","EXO",null]
+Table sets(id,baseSetSize,block,booster,code,isFoilOnly,isForeignOnly,isNonFoilOnly,isOnlineOnly,isPartialPreview,keyruneCode,mcmId,mcmIdExtras,mcmName,mtgoCode,name,parentCode,releaseDate,tcgplayerGroupId,totalSetSize,type):
+[1,185,null,null,null,0,0,-234531438,0,0,null,null,null,null,null,null,null,null,null,13,"masters"]
+[10,75,null,null,null,0,0,0,0,0,null,null,null,null,null,null,null,null,null,134,"duel_deck"]
+[19,75,null,null,null,0,0,0,0,0,null,null,null,null,null,null,null,null,null,16,"promo"]

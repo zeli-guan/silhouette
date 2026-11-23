@@ -1,0 +1,3474 @@
+{
+  "schema_version": "stage10-sandbox-turn-order-telemetry-v10",
+  "total_slots": 78455,
+  "slots_with_telemetry": 68303,
+  "slots_without_telemetry": 10152,
+  "elapsed_s": 89.88,
+  "ehr_dg8p_v3_stage8_reconciliation": {
+    "n_slots": 1800,
+    "legacy_adjacent_rewrites_sum": 293,
+    "slots_with_legacy_rewrite": 228,
+    "slots_with_legacy_rewrite_and_0_sandbox_errors": 178,
+    "slots_with_legacy_rewrite_and_ge1_sandbox_errors": 50,
+    "slots_with_sandbox_error": 54,
+    "slots_error_then_rewrite": 50,
+    "slots_error_then_exec_ok": 50,
+    "slots_error_then_ex1": 10,
+    "slots_any_sql_revision": 228
+  },
+  "by_condition": {
+    "bird::BIRD_NOISELESS_V3/r0": {
+      "benchmark": "bird",
+      "condition": "BIRD_NOISELESS_V3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 441,
+      "sandbox_error_calls_sum": 19,
+      "slots_with_sandbox_error": 18,
+      "slots_error_then_rewrite": 18,
+      "slots_error_then_exec_ok": 18,
+      "slots_error_then_ex1": 11,
+      "slots_any_sql_revision": 104,
+      "slots_zero_error_revision": 86,
+      "legacy_adjacent_rewrites_sum": 108,
+      "slots_with_legacy_rewrite": 104
+    },
+    "bird::C0/r0": {
+      "benchmark": "bird",
+      "condition": "C0/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 445,
+      "sandbox_error_calls_sum": 22,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 117,
+      "slots_zero_error_revision": 102,
+      "legacy_adjacent_rewrites_sum": 142,
+      "slots_with_legacy_rewrite": 117
+    },
+    "bird::C0/r2": {
+      "benchmark": "bird",
+      "condition": "C0/r2",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 435,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 7,
+      "slots_error_then_rewrite": 7,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 138,
+      "slots_zero_error_revision": 131,
+      "legacy_adjacent_rewrites_sum": 153,
+      "slots_with_legacy_rewrite": 138
+    },
+    "bird::C4/r0": {
+      "benchmark": "bird",
+      "condition": "C4/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 180,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 6,
+      "slots_error_then_rewrite": 6,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 74,
+      "slots_zero_error_revision": 68,
+      "legacy_adjacent_rewrites_sum": 80,
+      "slots_with_legacy_rewrite": 74
+    },
+    "bird::C4/r2": {
+      "benchmark": "bird",
+      "condition": "C4/r2",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 200,
+      "sandbox_error_calls_sum": 4,
+      "slots_with_sandbox_error": 4,
+      "slots_error_then_rewrite": 4,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 76,
+      "slots_zero_error_revision": 72,
+      "legacy_adjacent_rewrites_sum": 82,
+      "slots_with_legacy_rewrite": 76
+    },
+    "bird::DG1_CLEAN_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DG1_CLEAN_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 462,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 128,
+      "slots_zero_error_revision": 117,
+      "legacy_adjacent_rewrites_sum": 141,
+      "slots_with_legacy_rewrite": 128
+    },
+    "bird::DG2_CLEAN_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DG2_CLEAN_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 454,
+      "sandbox_error_calls_sum": 24,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 117,
+      "slots_zero_error_revision": 103,
+      "legacy_adjacent_rewrites_sum": 139,
+      "slots_with_legacy_rewrite": 117
+    },
+    "bird::DG4_CLEAN_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DG4_CLEAN_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 422,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 7,
+      "slots_error_then_rewrite": 7,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 99,
+      "slots_zero_error_revision": 92,
+      "legacy_adjacent_rewrites_sum": 110,
+      "slots_with_legacy_rewrite": 99
+    },
+    "bird::DG8_CLEAN_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_CLEAN_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 278,
+        "tool_events.json": 162
+      },
+      "sandbox_calls_sum": 429,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 8,
+      "slots_any_sql_revision": 111,
+      "slots_zero_error_revision": 99,
+      "legacy_adjacent_rewrites_sum": 116,
+      "slots_with_legacy_rewrite": 111
+    },
+    "bird::DG8_CLEAN_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_CLEAN_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 278,
+        "tool_events.json": 162
+      },
+      "sandbox_calls_sum": 442,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 117,
+      "slots_zero_error_revision": 107,
+      "legacy_adjacent_rewrites_sum": 124,
+      "slots_with_legacy_rewrite": 117
+    },
+    "bird::DG8_CLEAN_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_CLEAN_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 278,
+        "tool_events.json": 162
+      },
+      "sandbox_calls_sum": 457,
+      "sandbox_error_calls_sum": 23,
+      "slots_with_sandbox_error": 22,
+      "slots_error_then_rewrite": 22,
+      "slots_error_then_exec_ok": 22,
+      "slots_error_then_ex1": 13,
+      "slots_any_sql_revision": 127,
+      "slots_zero_error_revision": 105,
+      "legacy_adjacent_rewrites_sum": 138,
+      "slots_with_legacy_rewrite": 127
+    },
+    "bird::DG8_FLATW/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_FLATW/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 452,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 126,
+      "slots_zero_error_revision": 117,
+      "legacy_adjacent_rewrites_sum": 136,
+      "slots_with_legacy_rewrite": 126
+    },
+    "bird::DG8_FLATW_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_FLATW_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 437,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 113,
+      "slots_zero_error_revision": 101,
+      "legacy_adjacent_rewrites_sum": 123,
+      "slots_with_legacy_rewrite": 113
+    },
+    "bird::DG8_FLATW_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_FLATW_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 445,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 119,
+      "slots_zero_error_revision": 107,
+      "legacy_adjacent_rewrites_sum": 130,
+      "slots_with_legacy_rewrite": 119
+    },
+    "bird::DG8_NOISELESS/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_NOISELESS/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 439,
+      "sandbox_error_calls_sum": 10,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 111,
+      "slots_zero_error_revision": 102,
+      "legacy_adjacent_rewrites_sum": 122,
+      "slots_with_legacy_rewrite": 111
+    },
+    "bird::DG8_NOSANDBOX/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_NOSANDBOX/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 0,
+      "sandbox_error_calls_sum": 0,
+      "slots_with_sandbox_error": 0,
+      "slots_error_then_rewrite": 0,
+      "slots_error_then_exec_ok": 0,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 0,
+      "slots_zero_error_revision": 0,
+      "legacy_adjacent_rewrites_sum": 0,
+      "slots_with_legacy_rewrite": 0
+    },
+    "bird::DG8_NOVAL/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_NOVAL/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 469,
+      "sandbox_error_calls_sum": 26,
+      "slots_with_sandbox_error": 24,
+      "slots_error_then_rewrite": 24,
+      "slots_error_then_exec_ok": 22,
+      "slots_error_then_ex1": 10,
+      "slots_any_sql_revision": 138,
+      "slots_zero_error_revision": 114,
+      "legacy_adjacent_rewrites_sum": 156,
+      "slots_with_legacy_rewrite": 138
+    },
+    "bird::DG8_NOVAL_POST_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_NOVAL_POST_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 453,
+      "sandbox_error_calls_sum": 12,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 131,
+      "slots_zero_error_revision": 121,
+      "legacy_adjacent_rewrites_sum": 141,
+      "slots_with_legacy_rewrite": 131
+    },
+    "bird::DG8_NOVAL_POST_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_NOVAL_POST_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 467,
+      "sandbox_error_calls_sum": 19,
+      "slots_with_sandbox_error": 16,
+      "slots_error_then_rewrite": 16,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 137,
+      "slots_zero_error_revision": 121,
+      "legacy_adjacent_rewrites_sum": 161,
+      "slots_with_legacy_rewrite": 137
+    },
+    "bird::DG8_NOVAL_POST_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_NOVAL_POST_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 454,
+      "sandbox_error_calls_sum": 22,
+      "slots_with_sandbox_error": 19,
+      "slots_error_then_rewrite": 19,
+      "slots_error_then_exec_ok": 18,
+      "slots_error_then_ex1": 8,
+      "slots_any_sql_revision": 122,
+      "slots_zero_error_revision": 103,
+      "legacy_adjacent_rewrites_sum": 139,
+      "slots_with_legacy_rewrite": 122
+    },
+    "bird::DG8_OMEGA1_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_OMEGA1_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 461,
+      "sandbox_error_calls_sum": 12,
+      "slots_with_sandbox_error": 7,
+      "slots_error_then_rewrite": 7,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 126,
+      "slots_zero_error_revision": 119,
+      "legacy_adjacent_rewrites_sum": 144,
+      "slots_with_legacy_rewrite": 126
+    },
+    "bird::DG8_OMEGA1_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_OMEGA1_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 444,
+      "sandbox_error_calls_sum": 8,
+      "slots_with_sandbox_error": 8,
+      "slots_error_then_rewrite": 8,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 109,
+      "slots_zero_error_revision": 101,
+      "legacy_adjacent_rewrites_sum": 111,
+      "slots_with_legacy_rewrite": 109
+    },
+    "bird::DG8_OMEGA1_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_OMEGA1_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 461,
+      "sandbox_error_calls_sum": 17,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 120,
+      "slots_zero_error_revision": 106,
+      "legacy_adjacent_rewrites_sum": 134,
+      "slots_with_legacy_rewrite": 120
+    },
+    "bird::DG8_UNPRUNED/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_UNPRUNED/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 448,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 14,
+      "slots_error_then_ex1": 9,
+      "slots_any_sql_revision": 127,
+      "slots_zero_error_revision": 113,
+      "legacy_adjacent_rewrites_sum": 136,
+      "slots_with_legacy_rewrite": 127
+    },
+    "bird::DG8_UNPRUNED_V2_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_UNPRUNED_V2_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 462,
+      "sandbox_error_calls_sum": 15,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 127,
+      "slots_zero_error_revision": 115,
+      "legacy_adjacent_rewrites_sum": 141,
+      "slots_with_legacy_rewrite": 127
+    },
+    "bird::DG8_UNPRUNED_V2_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_UNPRUNED_V2_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 446,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 121,
+      "slots_zero_error_revision": 110,
+      "legacy_adjacent_rewrites_sum": 129,
+      "slots_with_legacy_rewrite": 121
+    },
+    "bird::DG8_UNPRUNED_V2_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DG8_UNPRUNED_V2_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 466,
+      "sandbox_error_calls_sum": 21,
+      "slots_with_sandbox_error": 16,
+      "slots_error_then_rewrite": 16,
+      "slots_error_then_exec_ok": 16,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 120,
+      "slots_zero_error_revision": 104,
+      "legacy_adjacent_rewrites_sum": 145,
+      "slots_with_legacy_rewrite": 120
+    },
+    "bird::DPQ_FIXED55_QP15_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP15_R1/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 47,
+      "sandbox_error_calls_sum": 0,
+      "slots_with_sandbox_error": 0,
+      "slots_error_then_rewrite": 0,
+      "slots_error_then_exec_ok": 0,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 16,
+      "slots_zero_error_revision": 16,
+      "legacy_adjacent_rewrites_sum": 17,
+      "slots_with_legacy_rewrite": 16
+    },
+    "bird::DPQ_FIXED55_QP15_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP15_R2/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 46,
+      "sandbox_error_calls_sum": 1,
+      "slots_with_sandbox_error": 1,
+      "slots_error_then_rewrite": 1,
+      "slots_error_then_exec_ok": 1,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 18,
+      "slots_zero_error_revision": 17,
+      "legacy_adjacent_rewrites_sum": 20,
+      "slots_with_legacy_rewrite": 18
+    },
+    "bird::DPQ_FIXED55_QP15_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP15_R3/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 42,
+      "sandbox_error_calls_sum": 2,
+      "slots_with_sandbox_error": 2,
+      "slots_error_then_rewrite": 2,
+      "slots_error_then_exec_ok": 2,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 19,
+      "slots_zero_error_revision": 17,
+      "legacy_adjacent_rewrites_sum": 20,
+      "slots_with_legacy_rewrite": 19
+    },
+    "bird::DPQ_FIXED55_QP200_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP200_R1/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 48,
+      "sandbox_error_calls_sum": 2,
+      "slots_with_sandbox_error": 2,
+      "slots_error_then_rewrite": 2,
+      "slots_error_then_exec_ok": 2,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 16,
+      "slots_zero_error_revision": 14,
+      "legacy_adjacent_rewrites_sum": 16,
+      "slots_with_legacy_rewrite": 16
+    },
+    "bird::DPQ_FIXED55_QP200_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP200_R2/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 44,
+      "sandbox_error_calls_sum": 2,
+      "slots_with_sandbox_error": 1,
+      "slots_error_then_rewrite": 1,
+      "slots_error_then_exec_ok": 1,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 16,
+      "slots_zero_error_revision": 15,
+      "legacy_adjacent_rewrites_sum": 17,
+      "slots_with_legacy_rewrite": 16
+    },
+    "bird::DPQ_FIXED55_QP200_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP200_R3/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 51,
+      "sandbox_error_calls_sum": 1,
+      "slots_with_sandbox_error": 1,
+      "slots_error_then_rewrite": 1,
+      "slots_error_then_exec_ok": 1,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 22,
+      "slots_zero_error_revision": 21,
+      "legacy_adjacent_rewrites_sum": 22,
+      "slots_with_legacy_rewrite": 22
+    },
+    "bird::DPQ_FIXED55_QP50_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP50_R1/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 44,
+      "sandbox_error_calls_sum": 1,
+      "slots_with_sandbox_error": 1,
+      "slots_error_then_rewrite": 1,
+      "slots_error_then_exec_ok": 1,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 11,
+      "slots_zero_error_revision": 10,
+      "legacy_adjacent_rewrites_sum": 11,
+      "slots_with_legacy_rewrite": 11
+    },
+    "bird::DPQ_FIXED55_QP50_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP50_R2/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 49,
+      "sandbox_error_calls_sum": 0,
+      "slots_with_sandbox_error": 0,
+      "slots_error_then_rewrite": 0,
+      "slots_error_then_exec_ok": 0,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 21,
+      "slots_zero_error_revision": 21,
+      "legacy_adjacent_rewrites_sum": 21,
+      "slots_with_legacy_rewrite": 21
+    },
+    "bird::DPQ_FIXED55_QP50_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP50_R3/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 46,
+      "sandbox_error_calls_sum": 2,
+      "slots_with_sandbox_error": 2,
+      "slots_error_then_rewrite": 2,
+      "slots_error_then_exec_ok": 2,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 14,
+      "slots_zero_error_revision": 12,
+      "legacy_adjacent_rewrites_sum": 14,
+      "slots_with_legacy_rewrite": 14
+    },
+    "bird::DPQ_FIXED55_QP5_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP5_R1/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 46,
+      "sandbox_error_calls_sum": 0,
+      "slots_with_sandbox_error": 0,
+      "slots_error_then_rewrite": 0,
+      "slots_error_then_exec_ok": 0,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 17,
+      "slots_zero_error_revision": 17,
+      "legacy_adjacent_rewrites_sum": 17,
+      "slots_with_legacy_rewrite": 17
+    },
+    "bird::DPQ_FIXED55_QP5_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP5_R2/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 42,
+      "sandbox_error_calls_sum": 1,
+      "slots_with_sandbox_error": 1,
+      "slots_error_then_rewrite": 1,
+      "slots_error_then_exec_ok": 1,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 16,
+      "slots_zero_error_revision": 15,
+      "legacy_adjacent_rewrites_sum": 16,
+      "slots_with_legacy_rewrite": 16
+    },
+    "bird::DPQ_FIXED55_QP5_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DPQ_FIXED55_QP5_R3/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 46,
+      "sandbox_error_calls_sum": 1,
+      "slots_with_sandbox_error": 1,
+      "slots_error_then_rewrite": 1,
+      "slots_error_then_exec_ok": 1,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 14,
+      "slots_zero_error_revision": 13,
+      "legacy_adjacent_rewrites_sum": 14,
+      "slots_with_legacy_rewrite": 14
+    },
+    "bird::DP_QUERY_DB8/r0": {
+      "benchmark": "bird",
+      "condition": "DP_QUERY_DB8/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::DP_QUERY_ROW_DB8_V2_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DP_QUERY_ROW_DB8_V2_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 414,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 146,
+      "slots_zero_error_revision": 134,
+      "legacy_adjacent_rewrites_sum": 158,
+      "slots_with_legacy_rewrite": 146
+    },
+    "bird::DP_QUERY_ROW_TP8_FULL/r0": {
+      "benchmark": "bird",
+      "condition": "DP_QUERY_ROW_TP8_FULL/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 408,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 136,
+      "slots_zero_error_revision": 124,
+      "legacy_adjacent_rewrites_sum": 148,
+      "slots_with_legacy_rewrite": 136
+    },
+    "bird::DP_QUERY_ROW_TP8_Q15/r0": {
+      "benchmark": "bird",
+      "condition": "DP_QUERY_ROW_TP8_Q15/r0",
+      "n_slots": 163,
+      "telemetry_available": true,
+      "n_telemetry_slots": 163,
+      "source_formats": {
+        "tool_events.json": 163
+      },
+      "sandbox_calls_sum": 151,
+      "sandbox_error_calls_sum": 1,
+      "slots_with_sandbox_error": 1,
+      "slots_error_then_rewrite": 1,
+      "slots_error_then_exec_ok": 1,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 60,
+      "slots_zero_error_revision": 59,
+      "legacy_adjacent_rewrites_sum": 61,
+      "slots_with_legacy_rewrite": 60
+    },
+    "bird::DP_QUERY_ROW_TP8_Q5/r0": {
+      "benchmark": "bird",
+      "condition": "DP_QUERY_ROW_TP8_Q5/r0",
+      "n_slots": 55,
+      "telemetry_available": true,
+      "n_telemetry_slots": 55,
+      "source_formats": {
+        "tool_events.json": 55
+      },
+      "sandbox_calls_sum": 46,
+      "sandbox_error_calls_sum": 0,
+      "slots_with_sandbox_error": 0,
+      "slots_error_then_rewrite": 0,
+      "slots_error_then_exec_ok": 0,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 11,
+      "slots_zero_error_revision": 11,
+      "legacy_adjacent_rewrites_sum": 12,
+      "slots_with_legacy_rewrite": 11
+    },
+    "bird::DP_QUERY_ROW_TP8_V2_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DP_QUERY_ROW_TP8_V2_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 435,
+      "sandbox_error_calls_sum": 18,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 8,
+      "slots_any_sql_revision": 154,
+      "slots_zero_error_revision": 139,
+      "legacy_adjacent_rewrites_sum": 170,
+      "slots_with_legacy_rewrite": 154
+    },
+    "bird::DP_QUERY_ROW_TP8_V2_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DP_QUERY_ROW_TP8_V2_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 445,
+      "sandbox_error_calls_sum": 19,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 157,
+      "slots_zero_error_revision": 143,
+      "legacy_adjacent_rewrites_sum": 185,
+      "slots_with_legacy_rewrite": 157
+    },
+    "bird::DP_QUERY_ROW_TP8_V2_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DP_QUERY_ROW_TP8_V2_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 415,
+      "sandbox_error_calls_sum": 9,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 150,
+      "slots_zero_error_revision": 141,
+      "legacy_adjacent_rewrites_sum": 157,
+      "slots_with_legacy_rewrite": 150
+    },
+    "bird::ENT_V2_DG8_R1/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DG8_R1/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 161,
+      "sandbox_error_calls_sum": 8,
+      "slots_with_sandbox_error": 6,
+      "slots_error_then_rewrite": 6,
+      "slots_error_then_exec_ok": 6,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 45,
+      "slots_zero_error_revision": 39,
+      "legacy_adjacent_rewrites_sum": 51,
+      "slots_with_legacy_rewrite": 45
+    },
+    "bird::ENT_V2_DG8_R2/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DG8_R2/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 164,
+      "sandbox_error_calls_sum": 8,
+      "slots_with_sandbox_error": 7,
+      "slots_error_then_rewrite": 7,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 42,
+      "slots_zero_error_revision": 35,
+      "legacy_adjacent_rewrites_sum": 44,
+      "slots_with_legacy_rewrite": 42
+    },
+    "bird::ENT_V2_DG8_R3/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DG8_R3/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 162,
+      "sandbox_error_calls_sum": 4,
+      "slots_with_sandbox_error": 4,
+      "slots_error_then_rewrite": 4,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 46,
+      "slots_zero_error_revision": 42,
+      "legacy_adjacent_rewrites_sum": 50,
+      "slots_with_legacy_rewrite": 46
+    },
+    "bird::ENT_V2_DP_QUERY_CLEAN_R1/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DP_QUERY_CLEAN_R1/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 171,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 72,
+      "slots_zero_error_revision": 67,
+      "legacy_adjacent_rewrites_sum": 80,
+      "slots_with_legacy_rewrite": 72
+    },
+    "bird::ENT_V2_DP_QUERY_CLEAN_R2/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DP_QUERY_CLEAN_R2/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 178,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 69,
+      "slots_zero_error_revision": 60,
+      "legacy_adjacent_rewrites_sum": 82,
+      "slots_with_legacy_rewrite": 69
+    },
+    "bird::ENT_V2_DP_QUERY_CLEAN_R3/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DP_QUERY_CLEAN_R3/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 178,
+      "sandbox_error_calls_sum": 10,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 67,
+      "slots_zero_error_revision": 58,
+      "legacy_adjacent_rewrites_sum": 79,
+      "slots_with_legacy_rewrite": 67
+    },
+    "bird::ENT_V2_DP_QUERY_R1/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DP_QUERY_R1/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 172,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 67,
+      "slots_zero_error_revision": 57,
+      "legacy_adjacent_rewrites_sum": 79,
+      "slots_with_legacy_rewrite": 67
+    },
+    "bird::ENT_V2_DP_QUERY_R2/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DP_QUERY_R2/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 167,
+      "sandbox_error_calls_sum": 8,
+      "slots_with_sandbox_error": 8,
+      "slots_error_then_rewrite": 8,
+      "slots_error_then_exec_ok": 6,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 62,
+      "slots_zero_error_revision": 54,
+      "legacy_adjacent_rewrites_sum": 66,
+      "slots_with_legacy_rewrite": 62
+    },
+    "bird::ENT_V2_DP_QUERY_R3/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_DP_QUERY_R3/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 165,
+      "sandbox_error_calls_sum": 10,
+      "slots_with_sandbox_error": 7,
+      "slots_error_then_rewrite": 7,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 62,
+      "slots_zero_error_revision": 55,
+      "legacy_adjacent_rewrites_sum": 73,
+      "slots_with_legacy_rewrite": 62
+    },
+    "bird::ENT_V2_IND8_PROMPT_R1/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_IND8_PROMPT_R1/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 170,
+      "sandbox_error_calls_sum": 4,
+      "slots_with_sandbox_error": 3,
+      "slots_error_then_rewrite": 3,
+      "slots_error_then_exec_ok": 3,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 50,
+      "slots_zero_error_revision": 47,
+      "legacy_adjacent_rewrites_sum": 54,
+      "slots_with_legacy_rewrite": 50
+    },
+    "bird::ENT_V2_IND8_PROMPT_R2/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_IND8_PROMPT_R2/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 174,
+      "sandbox_error_calls_sum": 6,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 44,
+      "slots_zero_error_revision": 39,
+      "legacy_adjacent_rewrites_sum": 55,
+      "slots_with_legacy_rewrite": 44
+    },
+    "bird::ENT_V2_IND8_PROMPT_R3/r0": {
+      "benchmark": "bird",
+      "condition": "ENT_V2_IND8_PROMPT_R3/r0",
+      "n_slots": 159,
+      "telemetry_available": true,
+      "n_telemetry_slots": 159,
+      "source_formats": {
+        "tool_events.json": 159
+      },
+      "sandbox_calls_sum": 173,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 13,
+      "slots_error_then_rewrite": 13,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 48,
+      "slots_zero_error_revision": 35,
+      "legacy_adjacent_rewrites_sum": 58,
+      "slots_with_legacy_rewrite": 48
+    },
+    "bird::IND8/r0": {
+      "benchmark": "bird",
+      "condition": "IND8/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 307,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 91,
+      "slots_zero_error_revision": 86,
+      "legacy_adjacent_rewrites_sum": 92,
+      "slots_with_legacy_rewrite": 91
+    },
+    "bird::IND8_PROBE_R2/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROBE_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 305,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 78,
+      "slots_zero_error_revision": 73,
+      "legacy_adjacent_rewrites_sum": 82,
+      "slots_with_legacy_rewrite": 78
+    },
+    "bird::IND8_PROBE_R3/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROBE_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 293,
+      "sandbox_error_calls_sum": 12,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 82,
+      "slots_zero_error_revision": 73,
+      "legacy_adjacent_rewrites_sum": 88,
+      "slots_with_legacy_rewrite": 82
+    },
+    "bird::IND8_PROFILE_PRUNED_TM_R1/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROFILE_PRUNED_TM_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 460,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 14,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 124,
+      "slots_zero_error_revision": 110,
+      "legacy_adjacent_rewrites_sum": 137,
+      "slots_with_legacy_rewrite": 124
+    },
+    "bird::IND8_PROFILE_PRUNED_TM_R2/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROFILE_PRUNED_TM_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 469,
+      "sandbox_error_calls_sum": 19,
+      "slots_with_sandbox_error": 18,
+      "slots_error_then_rewrite": 18,
+      "slots_error_then_exec_ok": 16,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 119,
+      "slots_zero_error_revision": 101,
+      "legacy_adjacent_rewrites_sum": 130,
+      "slots_with_legacy_rewrite": 119
+    },
+    "bird::IND8_PROFILE_PRUNED_TM_R3/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROFILE_PRUNED_TM_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 468,
+      "sandbox_error_calls_sum": 17,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 125,
+      "slots_zero_error_revision": 110,
+      "legacy_adjacent_rewrites_sum": 145,
+      "slots_with_legacy_rewrite": 125
+    },
+    "bird::IND8_PROFILE_TOOL_R1/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROFILE_TOOL_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 389,
+      "sandbox_error_calls_sum": 20,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 114,
+      "slots_zero_error_revision": 99,
+      "legacy_adjacent_rewrites_sum": 134,
+      "slots_with_legacy_rewrite": 114
+    },
+    "bird::IND8_PROFILE_TOOL_R2/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROFILE_TOOL_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 376,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 98,
+      "slots_zero_error_revision": 87,
+      "legacy_adjacent_rewrites_sum": 109,
+      "slots_with_legacy_rewrite": 98
+    },
+    "bird::IND8_PROFILE_TOOL_R3/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROFILE_TOOL_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 378,
+      "sandbox_error_calls_sum": 9,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 108,
+      "slots_zero_error_revision": 99,
+      "legacy_adjacent_rewrites_sum": 113,
+      "slots_with_legacy_rewrite": 108
+    },
+    "bird::IND8_PROMPT/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROMPT/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 468,
+      "sandbox_error_calls_sum": 24,
+      "slots_with_sandbox_error": 17,
+      "slots_error_then_rewrite": 17,
+      "slots_error_then_exec_ok": 16,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 122,
+      "slots_zero_error_revision": 105,
+      "legacy_adjacent_rewrites_sum": 152,
+      "slots_with_legacy_rewrite": 122
+    },
+    "bird::IND8_PROMPT_R2/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROMPT_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 454,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 124,
+      "slots_zero_error_revision": 113,
+      "legacy_adjacent_rewrites_sum": 132,
+      "slots_with_legacy_rewrite": 124
+    },
+    "bird::IND8_PROMPT_R3/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_PROMPT_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 443,
+      "sandbox_error_calls_sum": 8,
+      "slots_with_sandbox_error": 6,
+      "slots_error_then_rewrite": 6,
+      "slots_error_then_exec_ok": 6,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 100,
+      "slots_zero_error_revision": 94,
+      "legacy_adjacent_rewrites_sum": 108,
+      "slots_with_legacy_rewrite": 100
+    },
+    "bird::IND8_STATIC_ROWS_TM_R1/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_STATIC_ROWS_TM_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 469,
+      "sandbox_error_calls_sum": 25,
+      "slots_with_sandbox_error": 19,
+      "slots_error_then_rewrite": 19,
+      "slots_error_then_exec_ok": 18,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 115,
+      "slots_zero_error_revision": 96,
+      "legacy_adjacent_rewrites_sum": 137,
+      "slots_with_legacy_rewrite": 115
+    },
+    "bird::IND8_STATIC_ROWS_TM_R2/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_STATIC_ROWS_TM_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 466,
+      "sandbox_error_calls_sum": 21,
+      "slots_with_sandbox_error": 19,
+      "slots_error_then_rewrite": 19,
+      "slots_error_then_exec_ok": 17,
+      "slots_error_then_ex1": 9,
+      "slots_any_sql_revision": 105,
+      "slots_zero_error_revision": 86,
+      "legacy_adjacent_rewrites_sum": 120,
+      "slots_with_legacy_rewrite": 105
+    },
+    "bird::IND8_STATIC_ROWS_TM_R3/r0": {
+      "benchmark": "bird",
+      "condition": "IND8_STATIC_ROWS_TM_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 469,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 13,
+      "slots_error_then_rewrite": 13,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 117,
+      "slots_zero_error_revision": 104,
+      "legacy_adjacent_rewrites_sum": 127,
+      "slots_with_legacy_rewrite": 117
+    },
+    "bird::Local-32B": {
+      "benchmark": "bird",
+      "condition": "Local-32B",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::MASKSQL_FULL/r0": {
+      "benchmark": "bird",
+      "condition": "MASKSQL_FULL/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::MaskSQL": {
+      "benchmark": "bird",
+      "condition": "MaskSQL",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::OmniSQL-14B": {
+      "benchmark": "bird",
+      "condition": "OmniSQL-14B",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::OmniSQL-7B": {
+      "benchmark": "bird",
+      "condition": "OmniSQL-7B",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::PUBCAP_FLATW_R1/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_FLATW_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 461,
+      "sandbox_error_calls_sum": 20,
+      "slots_with_sandbox_error": 17,
+      "slots_error_then_rewrite": 17,
+      "slots_error_then_exec_ok": 16,
+      "slots_error_then_ex1": 8,
+      "slots_any_sql_revision": 128,
+      "slots_zero_error_revision": 111,
+      "legacy_adjacent_rewrites_sum": 145,
+      "slots_with_legacy_rewrite": 128
+    },
+    "bird::PUBCAP_FLATW_R2/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_FLATW_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 450,
+      "sandbox_error_calls_sum": 19,
+      "slots_with_sandbox_error": 18,
+      "slots_error_then_rewrite": 18,
+      "slots_error_then_exec_ok": 18,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 127,
+      "slots_zero_error_revision": 109,
+      "legacy_adjacent_rewrites_sum": 136,
+      "slots_with_legacy_rewrite": 127
+    },
+    "bird::PUBCAP_FLATW_R3/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_FLATW_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 464,
+      "sandbox_error_calls_sum": 24,
+      "slots_with_sandbox_error": 21,
+      "slots_error_then_rewrite": 21,
+      "slots_error_then_exec_ok": 21,
+      "slots_error_then_ex1": 11,
+      "slots_any_sql_revision": 129,
+      "slots_zero_error_revision": 108,
+      "legacy_adjacent_rewrites_sum": 140,
+      "slots_with_legacy_rewrite": 129
+    },
+    "bird::PUBCAP_IND8_PROFILE_R1/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_IND8_PROFILE_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 479,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 13,
+      "slots_error_then_rewrite": 13,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 118,
+      "slots_zero_error_revision": 105,
+      "legacy_adjacent_rewrites_sum": 142,
+      "slots_with_legacy_rewrite": 118
+    },
+    "bird::PUBCAP_IND8_PROFILE_R2/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_IND8_PROFILE_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 452,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 112,
+      "slots_zero_error_revision": 102,
+      "legacy_adjacent_rewrites_sum": 121,
+      "slots_with_legacy_rewrite": 112
+    },
+    "bird::PUBCAP_IND8_PROFILE_R3/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_IND8_PROFILE_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 455,
+      "sandbox_error_calls_sum": 12,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 112,
+      "slots_zero_error_revision": 101,
+      "legacy_adjacent_rewrites_sum": 124,
+      "slots_with_legacy_rewrite": 112
+    },
+    "bird::PUBCAP_IND8_ROWS_R1/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_IND8_ROWS_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 462,
+      "sandbox_error_calls_sum": 17,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 14,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 109,
+      "slots_zero_error_revision": 94,
+      "legacy_adjacent_rewrites_sum": 124,
+      "slots_with_legacy_rewrite": 109
+    },
+    "bird::PUBCAP_IND8_ROWS_R2/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_IND8_ROWS_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 465,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 118,
+      "slots_zero_error_revision": 103,
+      "legacy_adjacent_rewrites_sum": 128,
+      "slots_with_legacy_rewrite": 118
+    },
+    "bird::PUBCAP_IND8_ROWS_R3/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_IND8_ROWS_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 472,
+      "sandbox_error_calls_sum": 26,
+      "slots_with_sandbox_error": 18,
+      "slots_error_then_rewrite": 18,
+      "slots_error_then_exec_ok": 18,
+      "slots_error_then_ex1": 8,
+      "slots_any_sql_revision": 117,
+      "slots_zero_error_revision": 99,
+      "legacy_adjacent_rewrites_sum": 142,
+      "slots_with_legacy_rewrite": 117
+    },
+    "bird::PUBCAP_OMEGA1_EQDELTA_R1/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_OMEGA1_EQDELTA_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 453,
+      "sandbox_error_calls_sum": 19,
+      "slots_with_sandbox_error": 16,
+      "slots_error_then_rewrite": 16,
+      "slots_error_then_exec_ok": 16,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 125,
+      "slots_zero_error_revision": 109,
+      "legacy_adjacent_rewrites_sum": 137,
+      "slots_with_legacy_rewrite": 125
+    },
+    "bird::PUBCAP_OMEGA1_EQDELTA_R2/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_OMEGA1_EQDELTA_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 449,
+      "sandbox_error_calls_sum": 15,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 123,
+      "slots_zero_error_revision": 108,
+      "legacy_adjacent_rewrites_sum": 128,
+      "slots_with_legacy_rewrite": 123
+    },
+    "bird::PUBCAP_OMEGA1_EQDELTA_R3/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_OMEGA1_EQDELTA_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 440,
+      "sandbox_error_calls_sum": 8,
+      "slots_with_sandbox_error": 8,
+      "slots_error_then_rewrite": 8,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 120,
+      "slots_zero_error_revision": 112,
+      "legacy_adjacent_rewrites_sum": 125,
+      "slots_with_legacy_rewrite": 120
+    },
+    "bird::PUBCAP_SILHOUETTE_R1/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_SILHOUETTE_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 451,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 13,
+      "slots_error_then_rewrite": 13,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 120,
+      "slots_zero_error_revision": 107,
+      "legacy_adjacent_rewrites_sum": 131,
+      "slots_with_legacy_rewrite": 120
+    },
+    "bird::PUBCAP_SILHOUETTE_R2/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_SILHOUETTE_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 467,
+      "sandbox_error_calls_sum": 22,
+      "slots_with_sandbox_error": 19,
+      "slots_error_then_rewrite": 19,
+      "slots_error_then_exec_ok": 19,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 120,
+      "slots_zero_error_revision": 101,
+      "legacy_adjacent_rewrites_sum": 144,
+      "slots_with_legacy_rewrite": 120
+    },
+    "bird::PUBCAP_SILHOUETTE_R3/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_SILHOUETTE_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 450,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 13,
+      "slots_error_then_rewrite": 13,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 129,
+      "slots_zero_error_revision": 116,
+      "legacy_adjacent_rewrites_sum": 136,
+      "slots_with_legacy_rewrite": 129
+    },
+    "bird::PUBCAP_UNPRUNED_R1/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_UNPRUNED_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 464,
+      "sandbox_error_calls_sum": 21,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 14,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 115,
+      "slots_zero_error_revision": 101,
+      "legacy_adjacent_rewrites_sum": 134,
+      "slots_with_legacy_rewrite": 115
+    },
+    "bird::PUBCAP_UNPRUNED_R2/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_UNPRUNED_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 457,
+      "sandbox_error_calls_sum": 19,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 126,
+      "slots_zero_error_revision": 111,
+      "legacy_adjacent_rewrites_sum": 147,
+      "slots_with_legacy_rewrite": 126
+    },
+    "bird::PUBCAP_UNPRUNED_R3/r0": {
+      "benchmark": "bird",
+      "condition": "PUBCAP_UNPRUNED_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 452,
+      "sandbox_error_calls_sum": 15,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 125,
+      "slots_zero_error_revision": 114,
+      "legacy_adjacent_rewrites_sum": 141,
+      "slots_with_legacy_rewrite": 125
+    },
+    "bird::REMAP_C0/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_C0/r0",
+      "n_slots": 130,
+      "telemetry_available": true,
+      "n_telemetry_slots": 130,
+      "source_formats": {
+        "messages.json": 130
+      },
+      "sandbox_calls_sum": 142,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 4,
+      "slots_error_then_rewrite": 4,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 46,
+      "slots_zero_error_revision": 42,
+      "legacy_adjacent_rewrites_sum": 55,
+      "slots_with_legacy_rewrite": 46
+    },
+    "bird::REMAP_C4/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_C4/r0",
+      "n_slots": 130,
+      "telemetry_available": true,
+      "n_telemetry_slots": 130,
+      "source_formats": {
+        "messages.json": 130
+      },
+      "sandbox_calls_sum": 47,
+      "sandbox_error_calls_sum": 2,
+      "slots_with_sandbox_error": 2,
+      "slots_error_then_rewrite": 2,
+      "slots_error_then_exec_ok": 2,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 23,
+      "slots_zero_error_revision": 21,
+      "legacy_adjacent_rewrites_sum": 26,
+      "slots_with_legacy_rewrite": 23
+    },
+    "bird::REMAP_DG8_R1/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_DG8_R1/r0",
+      "n_slots": 130,
+      "telemetry_available": true,
+      "n_telemetry_slots": 130,
+      "source_formats": {
+        "messages.json": 130
+      },
+      "sandbox_calls_sum": 145,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 38,
+      "slots_zero_error_revision": 33,
+      "legacy_adjacent_rewrites_sum": 49,
+      "slots_with_legacy_rewrite": 38
+    },
+    "bird::REMAP_DG8_R2/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_DG8_R2/r0",
+      "n_slots": 130,
+      "telemetry_available": true,
+      "n_telemetry_slots": 130,
+      "source_formats": {
+        "messages.json": 130
+      },
+      "sandbox_calls_sum": 134,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 7,
+      "slots_error_then_rewrite": 7,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 46,
+      "slots_zero_error_revision": 39,
+      "legacy_adjacent_rewrites_sum": 52,
+      "slots_with_legacy_rewrite": 46
+    },
+    "bird::REMAP_DG8_R3/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_DG8_R3/r0",
+      "n_slots": 130,
+      "telemetry_available": true,
+      "n_telemetry_slots": 130,
+      "source_formats": {
+        "messages.json": 130
+      },
+      "sandbox_calls_sum": 128,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 25,
+      "slots_zero_error_revision": 20,
+      "legacy_adjacent_rewrites_sum": 26,
+      "slots_with_legacy_rewrite": 25
+    },
+    "bird::REMAP_IND8/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_IND8/r0",
+      "n_slots": 130,
+      "telemetry_available": true,
+      "n_telemetry_slots": 130,
+      "source_formats": {
+        "messages.json": 130
+      },
+      "sandbox_calls_sum": 99,
+      "sandbox_error_calls_sum": 4,
+      "slots_with_sandbox_error": 4,
+      "slots_error_then_rewrite": 4,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 26,
+      "slots_zero_error_revision": 22,
+      "legacy_adjacent_rewrites_sum": 29,
+      "slots_with_legacy_rewrite": 26
+    },
+    "bird::REMAP_IND8_PROMPT/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_IND8_PROMPT/r0",
+      "n_slots": 130,
+      "telemetry_available": true,
+      "n_telemetry_slots": 130,
+      "source_formats": {
+        "messages.json": 130
+      },
+      "sandbox_calls_sum": 111,
+      "sandbox_error_calls_sum": 1,
+      "slots_with_sandbox_error": 1,
+      "slots_error_then_rewrite": 1,
+      "slots_error_then_exec_ok": 0,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 26,
+      "slots_zero_error_revision": 25,
+      "legacy_adjacent_rewrites_sum": 28,
+      "slots_with_legacy_rewrite": 26
+    },
+    "bird::REMAP_S2_C0/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_S2_C0/r0",
+      "n_slots": 75,
+      "telemetry_available": true,
+      "n_telemetry_slots": 75,
+      "source_formats": {
+        "tool_events.json": 75
+      },
+      "sandbox_calls_sum": 92,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 34,
+      "slots_zero_error_revision": 29,
+      "legacy_adjacent_rewrites_sum": 46,
+      "slots_with_legacy_rewrite": 34
+    },
+    "bird::REMAP_S2_C4/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_S2_C4/r0",
+      "n_slots": 75,
+      "telemetry_available": true,
+      "n_telemetry_slots": 75,
+      "source_formats": {
+        "tool_events.json": 75
+      },
+      "sandbox_calls_sum": 42,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 4,
+      "slots_error_then_rewrite": 4,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 21,
+      "slots_zero_error_revision": 17,
+      "legacy_adjacent_rewrites_sum": 29,
+      "slots_with_legacy_rewrite": 21
+    },
+    "bird::REMAP_S2_DG8_R1/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_S2_DG8_R1/r0",
+      "n_slots": 75,
+      "telemetry_available": true,
+      "n_telemetry_slots": 75,
+      "source_formats": {
+        "tool_events.json": 75
+      },
+      "sandbox_calls_sum": 80,
+      "sandbox_error_calls_sum": 2,
+      "slots_with_sandbox_error": 2,
+      "slots_error_then_rewrite": 2,
+      "slots_error_then_exec_ok": 2,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 23,
+      "slots_zero_error_revision": 21,
+      "legacy_adjacent_rewrites_sum": 25,
+      "slots_with_legacy_rewrite": 23
+    },
+    "bird::REMAP_S2_IND8_PROMPT_R1/r0": {
+      "benchmark": "bird",
+      "condition": "REMAP_S2_IND8_PROMPT_R1/r0",
+      "n_slots": 75,
+      "telemetry_available": true,
+      "n_telemetry_slots": 75,
+      "source_formats": {
+        "tool_events.json": 75
+      },
+      "sandbox_calls_sum": 82,
+      "sandbox_error_calls_sum": 3,
+      "slots_with_sandbox_error": 3,
+      "slots_error_then_rewrite": 3,
+      "slots_error_then_exec_ok": 3,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 21,
+      "slots_zero_error_revision": 18,
+      "legacy_adjacent_rewrites_sum": 26,
+      "slots_with_legacy_rewrite": 21
+    },
+    "bird::S3/r0": {
+      "benchmark": "bird",
+      "condition": "S3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 443,
+      "sandbox_error_calls_sum": 24,
+      "slots_with_sandbox_error": 17,
+      "slots_error_then_rewrite": 17,
+      "slots_error_then_exec_ok": 17,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 133,
+      "slots_zero_error_revision": 116,
+      "legacy_adjacent_rewrites_sum": 151,
+      "slots_with_legacy_rewrite": 133
+    },
+    "bird::SOL_C0/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_C0/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 433,
+      "source_formats": {
+        "q_calls.jsonl": 433
+      },
+      "sandbox_calls_sum": 459,
+      "sandbox_error_calls_sum": 26,
+      "slots_with_sandbox_error": 26,
+      "slots_error_then_rewrite": 26,
+      "slots_error_then_exec_ok": 26,
+      "slots_error_then_ex1": 20,
+      "slots_any_sql_revision": 26,
+      "slots_zero_error_revision": 0,
+      "legacy_adjacent_rewrites_sum": 26,
+      "slots_with_legacy_rewrite": 26
+    },
+    "bird::SOL_C4/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_C4/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 432,
+      "source_formats": {
+        "q_calls.jsonl": 432
+      },
+      "sandbox_calls_sum": 882,
+      "sandbox_error_calls_sum": 24,
+      "slots_with_sandbox_error": 24,
+      "slots_error_then_rewrite": 24,
+      "slots_error_then_exec_ok": 24,
+      "slots_error_then_ex1": 21,
+      "slots_any_sql_revision": 340,
+      "slots_zero_error_revision": 316,
+      "legacy_adjacent_rewrites_sum": 458,
+      "slots_with_legacy_rewrite": 340
+    },
+    "bird::SOL_DG8_CLEAN_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_DG8_CLEAN_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_DG8_CLEAN_R2/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_DG8_CLEAN_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_DG8_CLEAN_R3/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_DG8_CLEAN_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_DG8_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_DG8_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_DG8_R2/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_DG8_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_DG8_R3/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_DG8_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_ENT_V2_DG8_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_ENT_V2_DG8_R1/r0",
+      "n_slots": 159,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_ENT_V2_DP_QUERY_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_ENT_V2_DP_QUERY_R1/r0",
+      "n_slots": 159,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_ENT_V2_IND8_PROMPT_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_ENT_V2_IND8_PROMPT_R1/r0",
+      "n_slots": 159,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_IND8_PROBE_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_IND8_PROBE_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_IND8_PROMPT/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_IND8_PROMPT/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_IND8_STATIC_ROWS_TM_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_IND8_STATIC_ROWS_TM_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_PUBCAP_IND8_ROWS_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_PUBCAP_IND8_ROWS_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_REMAP_C0/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_REMAP_C0/r0",
+      "n_slots": 130,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_REMAP_C4/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_REMAP_C4/r0",
+      "n_slots": 130,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_REMAP_DG8_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_REMAP_DG8_R1/r0",
+      "n_slots": 130,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_REMAP_IND8_PROMPT/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_REMAP_IND8_PROMPT/r0",
+      "n_slots": 130,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_REMAP_S2_C0/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_REMAP_S2_C0/r0",
+      "n_slots": 75,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_REMAP_S2_C4/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_REMAP_S2_C4/r0",
+      "n_slots": 75,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_REMAP_S2_DG8_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_REMAP_S2_DG8_R1/r0",
+      "n_slots": 75,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SOL_REMAP_S2_IND8_PROMPT_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SOL_REMAP_S2_IND8_PROMPT_R1/r0",
+      "n_slots": 75,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "bird::SUR3/r0": {
+      "benchmark": "bird",
+      "condition": "SUR3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 430,
+      "sandbox_error_calls_sum": 9,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 117,
+      "slots_zero_error_revision": 108,
+      "legacy_adjacent_rewrites_sum": 125,
+      "slots_with_legacy_rewrite": 117
+    },
+    "bird::SYN8/r0": {
+      "benchmark": "bird",
+      "condition": "SYN8/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "messages.json": 440
+      },
+      "sandbox_calls_sum": 324,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 105,
+      "slots_zero_error_revision": 94,
+      "legacy_adjacent_rewrites_sum": 116,
+      "slots_with_legacy_rewrite": 105
+    },
+    "bird::SYN8_FK_DAG_R1/r0": {
+      "benchmark": "bird",
+      "condition": "SYN8_FK_DAG_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 301,
+      "sandbox_error_calls_sum": 10,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 78,
+      "slots_zero_error_revision": 68,
+      "legacy_adjacent_rewrites_sum": 87,
+      "slots_with_legacy_rewrite": 78
+    },
+    "bird::TIGHTBPE_IND8_PROF_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_IND8_PROF_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 470,
+      "sandbox_error_calls_sum": 18,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 14,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 158,
+      "slots_zero_error_revision": 143,
+      "legacy_adjacent_rewrites_sum": 174,
+      "slots_with_legacy_rewrite": 158
+    },
+    "bird::TIGHTBPE_IND8_PROF_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_IND8_PROF_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 463,
+      "sandbox_error_calls_sum": 10,
+      "slots_with_sandbox_error": 8,
+      "slots_error_then_rewrite": 8,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 134,
+      "slots_zero_error_revision": 126,
+      "legacy_adjacent_rewrites_sum": 155,
+      "slots_with_legacy_rewrite": 134
+    },
+    "bird::TIGHTBPE_IND8_PROF_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_IND8_PROF_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 466,
+      "sandbox_error_calls_sum": 15,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 136,
+      "slots_zero_error_revision": 125,
+      "legacy_adjacent_rewrites_sum": 157,
+      "slots_with_legacy_rewrite": 136
+    },
+    "bird::TIGHTBPE_SILHOUETTE_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_SILHOUETTE_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 470,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 6,
+      "slots_any_sql_revision": 146,
+      "slots_zero_error_revision": 134,
+      "legacy_adjacent_rewrites_sum": 166,
+      "slots_with_legacy_rewrite": 146
+    },
+    "bird::TIGHTBPE_SILHOUETTE_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_SILHOUETTE_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 457,
+      "sandbox_error_calls_sum": 18,
+      "slots_with_sandbox_error": 16,
+      "slots_error_then_rewrite": 16,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 129,
+      "slots_zero_error_revision": 113,
+      "legacy_adjacent_rewrites_sum": 149,
+      "slots_with_legacy_rewrite": 129
+    },
+    "bird::TIGHTBPE_SILHOUETTE_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_SILHOUETTE_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 477,
+      "sandbox_error_calls_sum": 21,
+      "slots_with_sandbox_error": 18,
+      "slots_error_then_rewrite": 18,
+      "slots_error_then_exec_ok": 17,
+      "slots_error_then_ex1": 8,
+      "slots_any_sql_revision": 151,
+      "slots_zero_error_revision": 133,
+      "legacy_adjacent_rewrites_sum": 178,
+      "slots_with_legacy_rewrite": 151
+    },
+    "bird::TIGHTBPE_STATIC_SYNTH_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_STATIC_SYNTH_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 448,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 114,
+      "slots_zero_error_revision": 109,
+      "legacy_adjacent_rewrites_sum": 118,
+      "slots_with_legacy_rewrite": 114
+    },
+    "bird::TIGHTBPE_STATIC_SYNTH_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_STATIC_SYNTH_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 474,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 119,
+      "slots_zero_error_revision": 108,
+      "legacy_adjacent_rewrites_sum": 147,
+      "slots_with_legacy_rewrite": 119
+    },
+    "bird::TIGHTBPE_STATIC_SYNTH_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_STATIC_SYNTH_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 455,
+      "sandbox_error_calls_sum": 12,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 117,
+      "slots_zero_error_revision": 107,
+      "legacy_adjacent_rewrites_sum": 130,
+      "slots_with_legacy_rewrite": 117
+    },
+    "ehrsql_600::C0/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "C0/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 516,
+      "sandbox_error_calls_sum": 9,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 138,
+      "slots_zero_error_revision": 129,
+      "legacy_adjacent_rewrites_sum": 145,
+      "slots_with_legacy_rewrite": 138
+    },
+    "ehrsql_600::C0P/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "C0P/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 335,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 7,
+      "slots_error_then_rewrite": 7,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 77,
+      "slots_zero_error_revision": 70,
+      "legacy_adjacent_rewrites_sum": 77,
+      "slots_with_legacy_rewrite": 77
+    },
+    "ehrsql_600::C4/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "C4/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 89,
+      "sandbox_error_calls_sum": 0,
+      "slots_with_sandbox_error": 0,
+      "slots_error_then_rewrite": 0,
+      "slots_error_then_exec_ok": 0,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 26,
+      "slots_zero_error_revision": 26,
+      "legacy_adjacent_rewrites_sum": 26,
+      "slots_with_legacy_rewrite": 26
+    },
+    "ehrsql_600::DG8P_R1/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "DG8P_R1/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 408,
+      "sandbox_error_calls_sum": 7,
+      "slots_with_sandbox_error": 7,
+      "slots_error_then_rewrite": 7,
+      "slots_error_then_exec_ok": 7,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 78,
+      "slots_zero_error_revision": 71,
+      "legacy_adjacent_rewrites_sum": 78,
+      "slots_with_legacy_rewrite": 78
+    },
+    "ehrsql_600::DG8P_R2/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "DG8P_R2/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 387,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 0,
+      "slots_any_sql_revision": 99,
+      "slots_zero_error_revision": 94,
+      "legacy_adjacent_rewrites_sum": 100,
+      "slots_with_legacy_rewrite": 99
+    },
+    "ehrsql_600::DG8P_R3/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "DG8P_R3/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 383,
+      "sandbox_error_calls_sum": 6,
+      "slots_with_sandbox_error": 6,
+      "slots_error_then_rewrite": 6,
+      "slots_error_then_exec_ok": 6,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 93,
+      "slots_zero_error_revision": 87,
+      "legacy_adjacent_rewrites_sum": 93,
+      "slots_with_legacy_rewrite": 93
+    },
+    "ehrsql_600::DG8_NOLKP/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "DG8_NOLKP/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 484,
+      "sandbox_error_calls_sum": 10,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 111,
+      "slots_zero_error_revision": 101,
+      "legacy_adjacent_rewrites_sum": 114,
+      "slots_with_legacy_rewrite": 111
+    },
+    "ehrsql_600::EHR_DG8P_NOLKP_V3_R1/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_DG8P_NOLKP_V3_R1/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 465,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 95,
+      "slots_zero_error_revision": 84,
+      "legacy_adjacent_rewrites_sum": 103,
+      "slots_with_legacy_rewrite": 95
+    },
+    "ehrsql_600::EHR_DG8P_NOLKP_V3_R2/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_DG8P_NOLKP_V3_R2/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 481,
+      "sandbox_error_calls_sum": 15,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 14,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 102,
+      "slots_zero_error_revision": 88,
+      "legacy_adjacent_rewrites_sum": 108,
+      "slots_with_legacy_rewrite": 102
+    },
+    "ehrsql_600::EHR_DG8P_NOLKP_V3_R3/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_DG8P_NOLKP_V3_R3/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 464,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 98,
+      "slots_zero_error_revision": 93,
+      "legacy_adjacent_rewrites_sum": 99,
+      "slots_with_legacy_rewrite": 98
+    },
+    "ehrsql_600::EHR_DG8P_V3_R1/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_DG8P_V3_R1/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 434,
+      "sandbox_error_calls_sum": 38,
+      "slots_with_sandbox_error": 21,
+      "slots_error_then_rewrite": 19,
+      "slots_error_then_exec_ok": 19,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 89,
+      "slots_zero_error_revision": 70,
+      "legacy_adjacent_rewrites_sum": 118,
+      "slots_with_legacy_rewrite": 89
+    },
+    "ehrsql_600::EHR_DG8P_V3_R2/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_DG8P_V3_R2/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 379,
+      "sandbox_error_calls_sum": 25,
+      "slots_with_sandbox_error": 13,
+      "slots_error_then_rewrite": 13,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 63,
+      "slots_zero_error_revision": 50,
+      "legacy_adjacent_rewrites_sum": 82,
+      "slots_with_legacy_rewrite": 63
+    },
+    "ehrsql_600::EHR_DG8P_V3_R3/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_DG8P_V3_R3/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 416,
+      "sandbox_error_calls_sum": 32,
+      "slots_with_sandbox_error": 20,
+      "slots_error_then_rewrite": 18,
+      "slots_error_then_exec_ok": 18,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 76,
+      "slots_zero_error_revision": 58,
+      "legacy_adjacent_rewrites_sum": 93,
+      "slots_with_legacy_rewrite": 76
+    },
+    "ehrsql_600::EHR_ENT8_DEMO94/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_ENT8_DEMO94/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 373,
+      "sandbox_error_calls_sum": 8,
+      "slots_with_sandbox_error": 8,
+      "slots_error_then_rewrite": 8,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 82,
+      "slots_zero_error_revision": 74,
+      "legacy_adjacent_rewrites_sum": 83,
+      "slots_with_legacy_rewrite": 82
+    },
+    "ehrsql_600::EHR_ENT8_V3_R1/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_ENT8_V3_R1/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 461,
+      "sandbox_error_calls_sum": 50,
+      "slots_with_sandbox_error": 28,
+      "slots_error_then_rewrite": 26,
+      "slots_error_then_exec_ok": 25,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 102,
+      "slots_zero_error_revision": 76,
+      "legacy_adjacent_rewrites_sum": 133,
+      "slots_with_legacy_rewrite": 102
+    },
+    "ehrsql_600::EHR_IND8P_PROMPT/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_IND8P_PROMPT/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 460,
+      "sandbox_error_calls_sum": 4,
+      "slots_with_sandbox_error": 4,
+      "slots_error_then_rewrite": 4,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 114,
+      "slots_zero_error_revision": 110,
+      "legacy_adjacent_rewrites_sum": 117,
+      "slots_with_legacy_rewrite": 114
+    },
+    "ehrsql_600::EHR_IND8_V3_R1/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_IND8_V3_R1/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 452,
+      "sandbox_error_calls_sum": 45,
+      "slots_with_sandbox_error": 25,
+      "slots_error_then_rewrite": 24,
+      "slots_error_then_exec_ok": 24,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 105,
+      "slots_zero_error_revision": 81,
+      "legacy_adjacent_rewrites_sum": 135,
+      "slots_with_legacy_rewrite": 105
+    },
+    "ehrsql_600::EHR_NOISELESS_LKP_V3/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_NOISELESS_LKP_V3/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 344,
+      "sandbox_error_calls_sum": 10,
+      "slots_with_sandbox_error": 8,
+      "slots_error_then_rewrite": 8,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 79,
+      "slots_zero_error_revision": 71,
+      "legacy_adjacent_rewrites_sum": 81,
+      "slots_with_legacy_rewrite": 79
+    },
+    "ehrsql_600::EHR_NOISELESS_NOLKP_V3/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "EHR_NOISELESS_NOLKP_V3/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 470,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 86,
+      "slots_zero_error_revision": 75,
+      "legacy_adjacent_rewrites_sum": 92,
+      "slots_with_legacy_rewrite": 86
+    },
+    "ehrsql_600::IND8P/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "IND8P/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 262,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 51,
+      "slots_zero_error_revision": 46,
+      "legacy_adjacent_rewrites_sum": 53,
+      "slots_with_legacy_rewrite": 51
+    },
+    "ehrsql_600::Local-32B": {
+      "benchmark": "ehrsql_600",
+      "condition": "Local-32B",
+      "n_slots": 600,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "ehrsql_600::OmniSQL-14B": {
+      "benchmark": "ehrsql_600",
+      "condition": "OmniSQL-14B",
+      "n_slots": 600,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "ehrsql_600::OmniSQL-7B": {
+      "benchmark": "ehrsql_600",
+      "condition": "OmniSQL-7B",
+      "n_slots": 600,
+      "telemetry_available": false,
+      "n_telemetry_slots": 0
+    },
+    "ehrsql_600::S3/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "S3/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 488,
+      "sandbox_error_calls_sum": 17,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 156,
+      "slots_zero_error_revision": 142,
+      "legacy_adjacent_rewrites_sum": 163,
+      "slots_with_legacy_rewrite": 156
+    },
+    "ehrsql_600::SUR3/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "SUR3/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 497,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 132,
+      "slots_zero_error_revision": 122,
+      "legacy_adjacent_rewrites_sum": 139,
+      "slots_with_legacy_rewrite": 132
+    },
+    "ehrsql_600::SYN8P/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "SYN8P/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "messages.json": 600
+      },
+      "sandbox_calls_sum": 273,
+      "sandbox_error_calls_sum": 5,
+      "slots_with_sandbox_error": 5,
+      "slots_error_then_rewrite": 5,
+      "slots_error_then_exec_ok": 5,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 49,
+      "slots_zero_error_revision": 44,
+      "legacy_adjacent_rewrites_sum": 49,
+      "slots_with_legacy_rewrite": 49
+    },
+    "ehrsql_874::EHR874_C0/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_C0/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "messages.json": 874
+      },
+      "sandbox_calls_sum": 741,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 13,
+      "slots_error_then_rewrite": 13,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 196,
+      "slots_zero_error_revision": 183,
+      "legacy_adjacent_rewrites_sum": 200,
+      "slots_with_legacy_rewrite": 196
+    },
+    "ehrsql_874::EHR874_C4/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_C4/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "messages.json": 874
+      },
+      "sandbox_calls_sum": 183,
+      "sandbox_error_calls_sum": 4,
+      "slots_with_sandbox_error": 4,
+      "slots_error_then_rewrite": 4,
+      "slots_error_then_exec_ok": 4,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 44,
+      "slots_zero_error_revision": 40,
+      "legacy_adjacent_rewrites_sum": 46,
+      "slots_with_legacy_rewrite": 44
+    },
+    "ehrsql_874::EHR874_DG8P_NOLKP_V3_R1/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_DG8P_NOLKP_V3_R1/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "tool_events.json": 874
+      },
+      "sandbox_calls_sum": 722,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 13,
+      "slots_error_then_rewrite": 13,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 156,
+      "slots_zero_error_revision": 143,
+      "legacy_adjacent_rewrites_sum": 160,
+      "slots_with_legacy_rewrite": 156
+    },
+    "ehrsql_874::EHR874_DG8P_NOLKP_V3_R2/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_DG8P_NOLKP_V3_R2/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "tool_events.json": 874
+      },
+      "sandbox_calls_sum": 731,
+      "sandbox_error_calls_sum": 23,
+      "slots_with_sandbox_error": 23,
+      "slots_error_then_rewrite": 23,
+      "slots_error_then_exec_ok": 23,
+      "slots_error_then_ex1": 9,
+      "slots_any_sql_revision": 144,
+      "slots_zero_error_revision": 121,
+      "legacy_adjacent_rewrites_sum": 151,
+      "slots_with_legacy_rewrite": 144
+    },
+    "ehrsql_874::EHR874_DG8P_NOLKP_V3_R3/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_DG8P_NOLKP_V3_R3/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "tool_events.json": 874
+      },
+      "sandbox_calls_sum": 729,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 16,
+      "slots_error_then_rewrite": 16,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 150,
+      "slots_zero_error_revision": 134,
+      "legacy_adjacent_rewrites_sum": 154,
+      "slots_with_legacy_rewrite": 150
+    },
+    "ehrsql_874::EHR874_DG8P_R1/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_DG8P_R1/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "messages.json": 874
+      },
+      "sandbox_calls_sum": 578,
+      "sandbox_error_calls_sum": 9,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 112,
+      "slots_zero_error_revision": 103,
+      "legacy_adjacent_rewrites_sum": 115,
+      "slots_with_legacy_rewrite": 112
+    },
+    "ehrsql_874::EHR874_DG8P_V3_R1/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_DG8P_V3_R1/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "tool_events.json": 874
+      },
+      "sandbox_calls_sum": 646,
+      "sandbox_error_calls_sum": 67,
+      "slots_with_sandbox_error": 36,
+      "slots_error_then_rewrite": 34,
+      "slots_error_then_exec_ok": 34,
+      "slots_error_then_ex1": 13,
+      "slots_any_sql_revision": 136,
+      "slots_zero_error_revision": 102,
+      "legacy_adjacent_rewrites_sum": 177,
+      "slots_with_legacy_rewrite": 136
+    },
+    "ehrsql_874::EHR874_DG8P_V3_R2/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_DG8P_V3_R2/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "tool_events.json": 874
+      },
+      "sandbox_calls_sum": 613,
+      "sandbox_error_calls_sum": 52,
+      "slots_with_sandbox_error": 33,
+      "slots_error_then_rewrite": 33,
+      "slots_error_then_exec_ok": 33,
+      "slots_error_then_ex1": 11,
+      "slots_any_sql_revision": 126,
+      "slots_zero_error_revision": 93,
+      "legacy_adjacent_rewrites_sum": 154,
+      "slots_with_legacy_rewrite": 126
+    },
+    "ehrsql_874::EHR874_DG8P_V3_R3/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_DG8P_V3_R3/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "tool_events.json": 874
+      },
+      "sandbox_calls_sum": 644,
+      "sandbox_error_calls_sum": 79,
+      "slots_with_sandbox_error": 48,
+      "slots_error_then_rewrite": 45,
+      "slots_error_then_exec_ok": 44,
+      "slots_error_then_ex1": 13,
+      "slots_any_sql_revision": 124,
+      "slots_zero_error_revision": 78,
+      "legacy_adjacent_rewrites_sum": 167,
+      "slots_with_legacy_rewrite": 124
+    },
+    "ehrsql_874::EHR874_DG8_NOLKP_R1/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_DG8_NOLKP_R1/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "messages.json": 874
+      },
+      "sandbox_calls_sum": 711,
+      "sandbox_error_calls_sum": 17,
+      "slots_with_sandbox_error": 16,
+      "slots_error_then_rewrite": 16,
+      "slots_error_then_exec_ok": 16,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 134,
+      "slots_zero_error_revision": 118,
+      "legacy_adjacent_rewrites_sum": 141,
+      "slots_with_legacy_rewrite": 134
+    },
+    "ehrsql_874::EHR874_NOISELESS_LKP_V3/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_NOISELESS_LKP_V3/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "tool_events.json": 874
+      },
+      "sandbox_calls_sum": 528,
+      "sandbox_error_calls_sum": 9,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 91,
+      "slots_zero_error_revision": 82,
+      "legacy_adjacent_rewrites_sum": 92,
+      "slots_with_legacy_rewrite": 91
+    },
+    "ehrsql_874::EHR874_NOISELESS_NOLKP/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_NOISELESS_NOLKP/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "messages.json": 874
+      },
+      "sandbox_calls_sum": 774,
+      "sandbox_error_calls_sum": 21,
+      "slots_with_sandbox_error": 19,
+      "slots_error_then_rewrite": 19,
+      "slots_error_then_exec_ok": 18,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 156,
+      "slots_zero_error_revision": 137,
+      "legacy_adjacent_rewrites_sum": 163,
+      "slots_with_legacy_rewrite": 156
+    },
+    "ehrsql_874::EHR874_NOISELESS_NOLKP_V3/r0": {
+      "benchmark": "ehrsql_874",
+      "condition": "EHR874_NOISELESS_NOLKP_V3/r0",
+      "n_slots": 874,
+      "telemetry_available": true,
+      "n_telemetry_slots": 874,
+      "source_formats": {
+        "tool_events.json": 874
+      },
+      "sandbox_calls_sum": 938,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 111,
+      "slots_zero_error_revision": 99,
+      "legacy_adjacent_rewrites_sum": 167,
+      "slots_with_legacy_rewrite": 111
+    },
+    "bird::FETCH1_PUBCAP_IND8_PROF_R1/r0": {
+      "benchmark": "bird",
+      "condition": "FETCH1_PUBCAP_IND8_PROF_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 461,
+      "sandbox_error_calls_sum": 12,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 96,
+      "slots_zero_error_revision": 86,
+      "fetch_calls_sum": 440,
+      "slots_with_fetch_call": 440
+    },
+    "bird::FETCH1_PUBCAP_IND8_PROF_R2/r0": {
+      "benchmark": "bird",
+      "condition": "FETCH1_PUBCAP_IND8_PROF_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 460,
+      "sandbox_error_calls_sum": 15,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 97,
+      "slots_zero_error_revision": 86,
+      "fetch_calls_sum": 440,
+      "slots_with_fetch_call": 440
+    },
+    "bird::FETCH1_PUBCAP_IND8_PROF_R3/r0": {
+      "benchmark": "bird",
+      "condition": "FETCH1_PUBCAP_IND8_PROF_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 456,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 92,
+      "slots_zero_error_revision": 78,
+      "fetch_calls_sum": 440,
+      "slots_with_fetch_call": 440
+    },
+    "bird::TIGHTBPE_VALFIRST_IND8_PROF_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_IND8_PROF_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 418,
+      "sandbox_error_calls_sum": 9,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 117,
+      "slots_zero_error_revision": 108,
+      "fetch_calls_sum": 0,
+      "slots_with_fetch_call": 0
+    },
+    "bird::TIGHTBPE_VALFIRST_IND8_PROF_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_IND8_PROF_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 419,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 7,
+      "slots_any_sql_revision": 121,
+      "slots_zero_error_revision": 106,
+      "fetch_calls_sum": 0,
+      "slots_with_fetch_call": 0
+    },
+    "bird::TIGHTBPE_VALFIRST_IND8_PROF_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_IND8_PROF_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 406,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 11,
+      "slots_error_then_rewrite": 11,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 112,
+      "slots_zero_error_revision": 101,
+      "fetch_calls_sum": 0,
+      "slots_with_fetch_call": 0
+    },
+    "bird::TIGHTBPE_VALFIRST_SILH_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_SILH_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 399,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 108,
+      "slots_zero_error_revision": 98,
+      "fetch_calls_sum": 0,
+      "slots_with_fetch_call": 0
+    },
+    "bird::TIGHTBPE_VALFIRST_SILH_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_SILH_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 414,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 115,
+      "slots_zero_error_revision": 103,
+      "fetch_calls_sum": 0,
+      "slots_with_fetch_call": 0
+    },
+    "bird::TIGHTBPE_VALFIRST_SILH_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_SILH_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 413,
+      "sandbox_error_calls_sum": 17,
+      "slots_with_sandbox_error": 15,
+      "slots_error_then_rewrite": 15,
+      "slots_error_then_exec_ok": 15,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 128,
+      "slots_zero_error_revision": 113,
+      "fetch_calls_sum": 0,
+      "slots_with_fetch_call": 0
+    }
+  }
+}

@@ -1,0 +1,15 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table Examination(ID,Examination Date,aCL IgG,aCL IgM,ANA,ANA Pattern,aCL IgA,Diagnosis,KCT,RVVT,LAC,Symptoms,Thrombosis):
+[null,null,-0.8538492908786768,1.7142245556106472,0,null,7,null,null,null,"-",null,-3]
+[null,null,-0.8538492908786768,-2.4283644125276513,258,"S",7,null,null,null,null,null,-3]
+[null,null,2.890387637901258,427.124871586333,0,null,2,null,null,null,"-",null,-3]
+[null,null,-0.8538492908786768,427.124871586333,16,null,7,null,null,null,null,null,-3]
+Table Laboratory(ID,Date,GOT,GPT,LDH,ALP,TP,ALB,UA,UN,CRE,T-BIL,T-CHO,TG,CPK,GLU,WBC,RBC,HGB,HCT,PLT,PT,APTT,FG,PIC,TAT,TAT2,U-PRO,IGG,IGA,IGM,CRP,RA,RF,C3,C4,RNP,SM,SC170,SSA,SSB,CENTROMEA,DNA,DNA-II):
+[4632421,null,14,null,null,103,7.450944440869899,4.20006043397558,3.587244240601394,null,1.3311490792781244,0.2999587491157932,171,124,null,null,4.590850377918327,4.6006417966361015,10.50442874704959,46.605603553245814,170,null,null,null,null,null,null,"-",1693,null,null,"<0.2",null,null,null,25,null,null,null,null,null,null,null,null]
+[4790235,null,46,8,245,181,null,4.300053270959959,2.968094748597861,null,0.6999466894306602,0.2999587491157932,171,null,30,null,6.399474235805507,null,null,42.06912429015895,206,14.47080657945872,null,null,null,null,null,"-",null,436,null,null,null,null,null,null,null,null,null,null,null,null,null,null]
+Table Patient(ID,SEX,Birthday,Description,First Date,Admission,Diagnosis):
+[1,"F",null,null,null,"-","SJS"]
+[21,"F",null,"1994-02-08",null,"-",null]
+[41,"F",null,null,null,"-","SJS"]
+[81,"F",null,null,null,"+",null]

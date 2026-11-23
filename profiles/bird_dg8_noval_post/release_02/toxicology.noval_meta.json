@@ -1,0 +1,6 @@
+{
+  "db_id": "toxicology",
+  "source_release": "phase4_accept/profiles/bird_dg8_clean/release_02/toxicology.json",
+  "mode": "No-Values (post-processed DG-v3)",
+  "sha256": "57c8876d934008a30e07646a052641eaa55acd23b4a72057cde06ba6edac3b43"
+}

@@ -1,0 +1,930 @@
+{
+  "admissions": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.081,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "admittime": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "dischtime": [
+      "TIMESTAMP(0)",
+      0.047,
+      "10^1",
+      [],
+      []
+    ],
+    "admission_type": [
+      "VARCHAR(50)",
+      0.0,
+      0,
+      [],
+      []
+    ],
+    "admission_location": [
+      "VARCHAR(50)",
+      0.0,
+      "10^1",
+      [],
+      null
+    ],
+    "discharge_location": [
+      "VARCHAR(50)",
+      0.047,
+      "10^1",
+      [],
+      []
+    ],
+    "insurance": [
+      "VARCHAR(255)",
+      0.244,
+      "10^1",
+      [],
+      null
+    ],
+    "language": [
+      "VARCHAR(10)",
+      0.0,
+      "10^1",
+      [],
+      []
+    ],
+    "marital_status": [
+      "VARCHAR(50)",
+      0.023,
+      0,
+      [],
+      []
+    ],
+    "age": [
+      "INT",
+      0.058,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      []
+    ]
+  },
+  "chartevents": {
+    "row_id": [
+      "INT",
+      0.133,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.133,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "stay_id": [
+      "INT",
+      1.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "itemid": [
+      "INT",
+      0.3,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      1.0,
+      "10^2",
+      [],
+      null
+    ],
+    "valuenum": [
+      "DOUBLE PRECISION",
+      0.0,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "valueuom": [
+      "VARCHAR(50)",
+      1.0,
+      0,
+      [],
+      []
+    ]
+  },
+  "cost": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "event_type": [
+      "VARCHAR(20)",
+      0.385,
+      0,
+      [],
+      []
+    ],
+    "event_id": [
+      "INT",
+      0.407,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "chargetime": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "cost": [
+      "DOUBLE PRECISION",
+      0.0,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ]
+  },
+  "diagnoses_icd": {
+    "row_id": [
+      "INT",
+      0.273,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "icd_code": [
+      "VARCHAR(10)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^1",
+      [],
+      null
+    ]
+  },
+  "icustays": {
+    "row_id": [
+      "INT",
+      0.617,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.0,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.0,
+      "10^0",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "stay_id": [
+      "INT",
+      0.123,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "first_careunit": [
+      "VARCHAR(20)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "last_careunit": [
+      "VARCHAR(20)",
+      0.309,
+      0,
+      [],
+      []
+    ],
+    "intime": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^1",
+      [],
+      null
+    ],
+    "outtime": [
+      "TIMESTAMP(0)",
+      0.173,
+      "10^2",
+      [],
+      null
+    ]
+  },
+  "inputevents": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.101,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.0,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "stay_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "starttime": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "itemid": [
+      "INT",
+      0.0,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "totalamount": [
+      "DOUBLE PRECISION",
+      0.478,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "totalamountuom": [
+      "VARCHAR(50)",
+      0.609,
+      0,
+      [],
+      []
+    ]
+  },
+  "labevents": {
+    "row_id": [
+      "INT",
+      0.052,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.167,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "itemid": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^2",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      null
+    ],
+    "valuenum": [
+      "DOUBLE PRECISION",
+      0.0,
+      "10^0",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "valueuom": [
+      "VARCHAR(20)",
+      0.917,
+      0,
+      [],
+      [
+        "%",
+        "g/dl"
+      ]
+    ]
+  },
+  "microbiologyevents": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.895,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.474,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.158,
+      "10^2",
+      [],
+      null
+    ],
+    "spec_type_desc": [
+      "VARCHAR(100)",
+      0.0,
+      "10^1",
+      [],
+      null
+    ],
+    "test_name": [
+      "VARCHAR(100)",
+      0.421,
+      "10^1",
+      [],
+      null
+    ],
+    "org_name": [
+      "VARCHAR(100)",
+      1.0,
+      0,
+      [],
+      []
+    ]
+  },
+  "outputevents": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.066,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.016,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "stay_id": [
+      "INT",
+      0.0,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "itemid": [
+      "INT",
+      0.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "value": [
+      "DOUBLE PRECISION",
+      0.066,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "valueuom": [
+      "VARCHAR(50)",
+      0.0,
+      0,
+      [],
+      []
+    ]
+  },
+  "patients": {
+    "row_id": [
+      "INT",
+      0.23,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.068,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "gender": [
+      "VARCHAR(5)",
+      0.0,
+      "10^1",
+      [],
+      null
+    ],
+    "dob": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^1",
+      [],
+      null
+    ],
+    "dod": [
+      "TIMESTAMP(0)",
+      1.0,
+      "10^1",
+      [],
+      null
+    ]
+  },
+  "prescriptions": {
+    "row_id": [
+      "INT",
+      0.267,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.277,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "starttime": [
+      "TIMESTAMP(0)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "stoptime": [
+      "TIMESTAMP(0)",
+      0.228,
+      "10^2",
+      [],
+      null
+    ],
+    "drug": [
+      "VARCHAR(255)",
+      0.03,
+      "10^1",
+      [],
+      null
+    ],
+    "dose_val_rx": [
+      "VARCHAR(100)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "dose_unit_rx": [
+      "VARCHAR(50)",
+      0.02,
+      "10^1",
+      [],
+      []
+    ],
+    "route": [
+      "VARCHAR(50)",
+      0.0,
+      "10^1",
+      [],
+      null
+    ]
+  },
+  "procedures_icd": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.068,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.137,
+      "10^1",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "icd_code": [
+      "VARCHAR(10)",
+      0.0,
+      "10^2",
+      [],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.178,
+      "10^1",
+      [],
+      null
+    ]
+  },
+  "transfers": {
+    "row_id": [
+      "INT",
+      0.018,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.15,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "transfer_id": [
+      "INT",
+      0.186,
+      "10^2",
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "eventtype": [
+      "VARCHAR(20)",
+      0.204,
+      0,
+      [],
+      [
+        "admit"
+      ]
+    ],
+    "careunit": [
+      "VARCHAR(20)",
+      0.566,
+      0,
+      [],
+      []
+    ],
+    "intime": [
+      "TIMESTAMP(0)",
+      0.009,
+      "10^2",
+      [],
+      null
+    ],
+    "outtime": [
+      "TIMESTAMP(0)",
+      0.92,
+      "10^2",
+      [],
+      null
+    ]
+  }
+}

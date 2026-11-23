@@ -1,0 +1,1510 @@
+{
+  "db_id": "codebase_community",
+  "mechanism": "DG-FlatW",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "sha256": "ed99dc8bbe54933738f5caba9a9f0fbfa59339b4f983a39910ab3ffe5704d266",
+  "parameters": [
+    {
+      "r_j": "1/1",
+      "share": "1/15",
+      "rho": "874796954851759/15000000000000000",
+      "sigma2": "7500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/15",
+      "rho": "874796954851759/15000000000000000",
+      "sigma2": "7500000000000000/874796954851759",
+      "delta": "1/12000000",
+      "sensitivity2": 1,
+      "tau": 16,
+      "tail_lower": "521877517696789/10000000000000000000000",
+      "tail_upper": "52187751769679/1000000000000000000000",
+      "prev_tail_lower": "162398539585861/500000000000000000000",
+      "prev_tail_upper": "324797079171723/1000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/25",
+      "rho": "874796954851759/25000000000000000",
+      "sigma2": "12500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/25",
+      "rho": "874796954851759/25000000000000000",
+      "sigma2": "12500000000000000/874796954851759",
+      "delta": "1/20000000",
+      "sensitivity2": 1,
+      "tau": 21,
+      "tail_lower": "268200711886757/10000000000000000000000",
+      "tail_upper": "134100355943379/5000000000000000000000",
+      "prev_tail_lower": "114863479434991/1000000000000000000000",
+      "prev_tail_upper": "7178967464687/62500000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/31",
+      "rho": "874796954851759/31000000000000000",
+      "sigma2": "15500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/31",
+      "rho": "874796954851759/31000000000000000",
+      "sigma2": "15500000000000000/874796954851759",
+      "delta": "1/24000000",
+      "sensitivity2": 1,
+      "tau": 24,
+      "tail_lower": "54886504382159/5000000000000000000000",
+      "tail_upper": "109773008764319/10000000000000000000000",
+      "prev_tail_lower": "16853718748089/400000000000000000000",
+      "prev_tail_upper": "210671484351113/5000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "sigma2": "8500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "sigma2": "8500000000000000/874796954851759",
+      "delta": "1/12000000",
+      "sensitivity2": 1,
+      "tau": 17,
+      "tail_lower": "132824520588473/2500000000000000000000",
+      "tail_upper": "531298082353893/10000000000000000000000",
+      "prev_tail_lower": "148178933815231/500000000000000000000",
+      "prev_tail_upper": "296357867630463/1000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/77",
+      "rho": "874796954851759/77000000000000000",
+      "sigma2": "38500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/77",
+      "rho": "874796954851759/77000000000000000",
+      "sigma2": "38500000000000000/874796954851759",
+      "delta": "1/68000000",
+      "sensitivity2": 1,
+      "tau": 38,
+      "tail_lower": "38284163124811/5000000000000000000000",
+      "tail_upper": "765683262496221/100000000000000000000000",
+      "prev_tail_lower": "18236227717953/1000000000000000000000",
+      "prev_tail_upper": "182362277179531/10000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/18",
+      "rho": "874796954851759/18000000000000000",
+      "sigma2": "9000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/18",
+      "rho": "874796954851759/18000000000000000",
+      "sigma2": "9000000000000000/874796954851759",
+      "delta": "1/14000000",
+      "sensitivity2": 1,
+      "tau": 18,
+      "tail_lower": "26929693035023/1250000000000000000000",
+      "tail_upper": "43087508856037/2000000000000000000000",
+      "prev_tail_lower": "30095439221089/250000000000000000000",
+      "prev_tail_upper": "120381756884357/1000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/52",
+      "rho": "874796954851759/52000000000000000",
+      "sigma2": "26000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/52",
+      "rho": "874796954851759/52000000000000000",
+      "sigma2": "26000000000000000/874796954851759",
+      "delta": "1/46000000",
+      "sensitivity2": 1,
+      "tau": 31,
+      "tail_lower": "105721100096749/10000000000000000000000",
+      "tail_upper": "422884400387/40000000000000000000",
+      "prev_tail_lower": "117261233587/3906250000000000000",
+      "prev_tail_upper": "300188757982721/10000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/21",
+      "rho": "874796954851759/21000000000000000",
+      "sigma2": "10500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/21",
+      "rho": "874796954851759/21000000000000000",
+      "sigma2": "10500000000000000/874796954851759",
+      "delta": "1/16000000",
+      "sensitivity2": 1,
+      "tau": 19,
+      "tail_lower": "16813163222023/400000000000000000000",
+      "tail_upper": "26270567534411/625000000000000000000",
+      "prev_tail_lower": "100198014991069/500000000000000000000",
+      "prev_tail_upper": "200396029982139/1000000000000000000000"
+    }
+  ],
+  "tables": {
+    "badges": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "Id",
+          0
+        ],
+        [
+          "distinct_count",
+          "Id",
+          0
+        ],
+        [
+          "bins",
+          "Id",
+          1
+        ],
+        [
+          "null_count",
+          "UserId",
+          0
+        ],
+        [
+          "distinct_count",
+          "UserId",
+          0
+        ],
+        [
+          "bins",
+          "UserId",
+          1
+        ],
+        [
+          "null_count",
+          "Name",
+          0
+        ],
+        [
+          "distinct_count",
+          "Name",
+          0
+        ],
+        [
+          "patterns",
+          "Name",
+          1
+        ],
+        [
+          "values",
+          "Name",
+          1
+        ],
+        [
+          "null_count",
+          "Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "Date",
+          0
+        ],
+        [
+          "patterns",
+          "Date",
+          1
+        ],
+        [
+          "values",
+          "Date",
+          1
+        ]
+      ]
+    },
+    "comments": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "Id",
+          2
+        ],
+        [
+          "distinct_count",
+          "Id",
+          2
+        ],
+        [
+          "bins",
+          "Id",
+          3
+        ],
+        [
+          "null_count",
+          "PostId",
+          2
+        ],
+        [
+          "distinct_count",
+          "PostId",
+          2
+        ],
+        [
+          "bins",
+          "PostId",
+          3
+        ],
+        [
+          "null_count",
+          "Score",
+          2
+        ],
+        [
+          "distinct_count",
+          "Score",
+          2
+        ],
+        [
+          "bins",
+          "Score",
+          3
+        ],
+        [
+          "values",
+          "Score",
+          3
+        ],
+        [
+          "null_count",
+          "Text",
+          2
+        ],
+        [
+          "distinct_count",
+          "Text",
+          2
+        ],
+        [
+          "patterns",
+          "Text",
+          3
+        ],
+        [
+          "values",
+          "Text",
+          3
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          2
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          2
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          3
+        ],
+        [
+          "values",
+          "CreationDate",
+          3
+        ],
+        [
+          "null_count",
+          "UserId",
+          2
+        ],
+        [
+          "distinct_count",
+          "UserId",
+          2
+        ],
+        [
+          "bins",
+          "UserId",
+          3
+        ],
+        [
+          "null_count",
+          "UserDisplayName",
+          2
+        ],
+        [
+          "distinct_count",
+          "UserDisplayName",
+          2
+        ],
+        [
+          "patterns",
+          "UserDisplayName",
+          3
+        ]
+      ]
+    },
+    "postHistory": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "Id",
+          4
+        ],
+        [
+          "distinct_count",
+          "Id",
+          4
+        ],
+        [
+          "bins",
+          "Id",
+          5
+        ],
+        [
+          "null_count",
+          "PostHistoryTypeId",
+          4
+        ],
+        [
+          "distinct_count",
+          "PostHistoryTypeId",
+          4
+        ],
+        [
+          "bins",
+          "PostHistoryTypeId",
+          5
+        ],
+        [
+          "null_count",
+          "PostId",
+          4
+        ],
+        [
+          "distinct_count",
+          "PostId",
+          4
+        ],
+        [
+          "bins",
+          "PostId",
+          5
+        ],
+        [
+          "null_count",
+          "RevisionGUID",
+          4
+        ],
+        [
+          "distinct_count",
+          "RevisionGUID",
+          4
+        ],
+        [
+          "patterns",
+          "RevisionGUID",
+          5
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          4
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          4
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          5
+        ],
+        [
+          "values",
+          "CreationDate",
+          5
+        ],
+        [
+          "null_count",
+          "UserId",
+          4
+        ],
+        [
+          "distinct_count",
+          "UserId",
+          4
+        ],
+        [
+          "bins",
+          "UserId",
+          5
+        ],
+        [
+          "null_count",
+          "Text",
+          4
+        ],
+        [
+          "distinct_count",
+          "Text",
+          4
+        ],
+        [
+          "patterns",
+          "Text",
+          5
+        ],
+        [
+          "values",
+          "Text",
+          5
+        ],
+        [
+          "null_count",
+          "Comment",
+          4
+        ],
+        [
+          "distinct_count",
+          "Comment",
+          4
+        ],
+        [
+          "patterns",
+          "Comment",
+          5
+        ],
+        [
+          "values",
+          "Comment",
+          5
+        ],
+        [
+          "null_count",
+          "UserDisplayName",
+          4
+        ],
+        [
+          "distinct_count",
+          "UserDisplayName",
+          4
+        ],
+        [
+          "patterns",
+          "UserDisplayName",
+          5
+        ]
+      ]
+    },
+    "postLinks": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          6
+        ],
+        [
+          "null_count",
+          "Id",
+          6
+        ],
+        [
+          "distinct_count",
+          "Id",
+          6
+        ],
+        [
+          "bins",
+          "Id",
+          7
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          6
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          6
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          7
+        ],
+        [
+          "values",
+          "CreationDate",
+          7
+        ],
+        [
+          "null_count",
+          "PostId",
+          6
+        ],
+        [
+          "distinct_count",
+          "PostId",
+          6
+        ],
+        [
+          "bins",
+          "PostId",
+          7
+        ],
+        [
+          "null_count",
+          "RelatedPostId",
+          6
+        ],
+        [
+          "distinct_count",
+          "RelatedPostId",
+          6
+        ],
+        [
+          "bins",
+          "RelatedPostId",
+          7
+        ],
+        [
+          "null_count",
+          "LinkTypeId",
+          6
+        ],
+        [
+          "distinct_count",
+          "LinkTypeId",
+          6
+        ],
+        [
+          "bins",
+          "LinkTypeId",
+          7
+        ]
+      ]
+    },
+    "posts": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "Id",
+          8
+        ],
+        [
+          "distinct_count",
+          "Id",
+          8
+        ],
+        [
+          "bins",
+          "Id",
+          9
+        ],
+        [
+          "null_count",
+          "PostTypeId",
+          8
+        ],
+        [
+          "distinct_count",
+          "PostTypeId",
+          8
+        ],
+        [
+          "bins",
+          "PostTypeId",
+          9
+        ],
+        [
+          "null_count",
+          "AcceptedAnswerId",
+          8
+        ],
+        [
+          "distinct_count",
+          "AcceptedAnswerId",
+          8
+        ],
+        [
+          "bins",
+          "AcceptedAnswerId",
+          9
+        ],
+        [
+          "null_count",
+          "CreaionDate",
+          8
+        ],
+        [
+          "distinct_count",
+          "CreaionDate",
+          8
+        ],
+        [
+          "patterns",
+          "CreaionDate",
+          9
+        ],
+        [
+          "values",
+          "CreaionDate",
+          9
+        ],
+        [
+          "null_count",
+          "Score",
+          8
+        ],
+        [
+          "distinct_count",
+          "Score",
+          8
+        ],
+        [
+          "bins",
+          "Score",
+          9
+        ],
+        [
+          "values",
+          "Score",
+          9
+        ],
+        [
+          "null_count",
+          "ViewCount",
+          8
+        ],
+        [
+          "distinct_count",
+          "ViewCount",
+          8
+        ],
+        [
+          "bins",
+          "ViewCount",
+          9
+        ],
+        [
+          "values",
+          "ViewCount",
+          9
+        ],
+        [
+          "null_count",
+          "Body",
+          8
+        ],
+        [
+          "distinct_count",
+          "Body",
+          8
+        ],
+        [
+          "patterns",
+          "Body",
+          9
+        ],
+        [
+          "values",
+          "Body",
+          9
+        ],
+        [
+          "null_count",
+          "OwnerUserId",
+          8
+        ],
+        [
+          "distinct_count",
+          "OwnerUserId",
+          8
+        ],
+        [
+          "bins",
+          "OwnerUserId",
+          9
+        ],
+        [
+          "null_count",
+          "LasActivityDate",
+          8
+        ],
+        [
+          "distinct_count",
+          "LasActivityDate",
+          8
+        ],
+        [
+          "patterns",
+          "LasActivityDate",
+          9
+        ],
+        [
+          "values",
+          "LasActivityDate",
+          9
+        ],
+        [
+          "null_count",
+          "Title",
+          8
+        ],
+        [
+          "distinct_count",
+          "Title",
+          8
+        ],
+        [
+          "patterns",
+          "Title",
+          9
+        ],
+        [
+          "values",
+          "Title",
+          9
+        ],
+        [
+          "null_count",
+          "Tags",
+          8
+        ],
+        [
+          "distinct_count",
+          "Tags",
+          8
+        ],
+        [
+          "patterns",
+          "Tags",
+          9
+        ],
+        [
+          "values",
+          "Tags",
+          9
+        ],
+        [
+          "null_count",
+          "AnswerCount",
+          8
+        ],
+        [
+          "distinct_count",
+          "AnswerCount",
+          8
+        ],
+        [
+          "bins",
+          "AnswerCount",
+          9
+        ],
+        [
+          "values",
+          "AnswerCount",
+          9
+        ],
+        [
+          "null_count",
+          "CommentCount",
+          8
+        ],
+        [
+          "distinct_count",
+          "CommentCount",
+          8
+        ],
+        [
+          "bins",
+          "CommentCount",
+          9
+        ],
+        [
+          "values",
+          "CommentCount",
+          9
+        ],
+        [
+          "null_count",
+          "FavoriteCount",
+          8
+        ],
+        [
+          "distinct_count",
+          "FavoriteCount",
+          8
+        ],
+        [
+          "bins",
+          "FavoriteCount",
+          9
+        ],
+        [
+          "values",
+          "FavoriteCount",
+          9
+        ],
+        [
+          "null_count",
+          "LastEditorUserId",
+          8
+        ],
+        [
+          "distinct_count",
+          "LastEditorUserId",
+          8
+        ],
+        [
+          "bins",
+          "LastEditorUserId",
+          9
+        ],
+        [
+          "null_count",
+          "LastEditDate",
+          8
+        ],
+        [
+          "distinct_count",
+          "LastEditDate",
+          8
+        ],
+        [
+          "patterns",
+          "LastEditDate",
+          9
+        ],
+        [
+          "values",
+          "LastEditDate",
+          9
+        ],
+        [
+          "null_count",
+          "CommunityOwnedDate",
+          8
+        ],
+        [
+          "distinct_count",
+          "CommunityOwnedDate",
+          8
+        ],
+        [
+          "patterns",
+          "CommunityOwnedDate",
+          9
+        ],
+        [
+          "values",
+          "CommunityOwnedDate",
+          9
+        ],
+        [
+          "null_count",
+          "ParentId",
+          8
+        ],
+        [
+          "distinct_count",
+          "ParentId",
+          8
+        ],
+        [
+          "bins",
+          "ParentId",
+          9
+        ],
+        [
+          "null_count",
+          "ClosedDate",
+          8
+        ],
+        [
+          "distinct_count",
+          "ClosedDate",
+          8
+        ],
+        [
+          "patterns",
+          "ClosedDate",
+          9
+        ],
+        [
+          "values",
+          "ClosedDate",
+          9
+        ],
+        [
+          "null_count",
+          "OwnerDisplayName",
+          8
+        ],
+        [
+          "distinct_count",
+          "OwnerDisplayName",
+          8
+        ],
+        [
+          "patterns",
+          "OwnerDisplayName",
+          9
+        ],
+        [
+          "null_count",
+          "LastEditorDisplayName",
+          8
+        ],
+        [
+          "distinct_count",
+          "LastEditorDisplayName",
+          8
+        ],
+        [
+          "patterns",
+          "LastEditorDisplayName",
+          9
+        ]
+      ]
+    },
+    "tags": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          10
+        ],
+        [
+          "null_count",
+          "Id",
+          10
+        ],
+        [
+          "distinct_count",
+          "Id",
+          10
+        ],
+        [
+          "bins",
+          "Id",
+          11
+        ],
+        [
+          "null_count",
+          "TagName",
+          10
+        ],
+        [
+          "distinct_count",
+          "TagName",
+          10
+        ],
+        [
+          "patterns",
+          "TagName",
+          11
+        ],
+        [
+          "values",
+          "TagName",
+          11
+        ],
+        [
+          "null_count",
+          "Count",
+          10
+        ],
+        [
+          "distinct_count",
+          "Count",
+          10
+        ],
+        [
+          "bins",
+          "Count",
+          11
+        ],
+        [
+          "values",
+          "Count",
+          11
+        ],
+        [
+          "null_count",
+          "ExcerptPostId",
+          10
+        ],
+        [
+          "distinct_count",
+          "ExcerptPostId",
+          10
+        ],
+        [
+          "bins",
+          "ExcerptPostId",
+          11
+        ],
+        [
+          "null_count",
+          "WikiPostId",
+          10
+        ],
+        [
+          "distinct_count",
+          "WikiPostId",
+          10
+        ],
+        [
+          "bins",
+          "WikiPostId",
+          11
+        ]
+      ]
+    },
+    "users": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "Id",
+          12
+        ],
+        [
+          "distinct_count",
+          "Id",
+          12
+        ],
+        [
+          "bins",
+          "Id",
+          13
+        ],
+        [
+          "null_count",
+          "Reputation",
+          12
+        ],
+        [
+          "distinct_count",
+          "Reputation",
+          12
+        ],
+        [
+          "bins",
+          "Reputation",
+          13
+        ],
+        [
+          "values",
+          "Reputation",
+          13
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          12
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          12
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          13
+        ],
+        [
+          "values",
+          "CreationDate",
+          13
+        ],
+        [
+          "null_count",
+          "DisplayName",
+          12
+        ],
+        [
+          "distinct_count",
+          "DisplayName",
+          12
+        ],
+        [
+          "patterns",
+          "DisplayName",
+          13
+        ],
+        [
+          "null_count",
+          "LastAccessDate",
+          12
+        ],
+        [
+          "distinct_count",
+          "LastAccessDate",
+          12
+        ],
+        [
+          "patterns",
+          "LastAccessDate",
+          13
+        ],
+        [
+          "values",
+          "LastAccessDate",
+          13
+        ],
+        [
+          "null_count",
+          "WebsiteUrl",
+          12
+        ],
+        [
+          "distinct_count",
+          "WebsiteUrl",
+          12
+        ],
+        [
+          "patterns",
+          "WebsiteUrl",
+          13
+        ],
+        [
+          "null_count",
+          "Location",
+          12
+        ],
+        [
+          "distinct_count",
+          "Location",
+          12
+        ],
+        [
+          "patterns",
+          "Location",
+          13
+        ],
+        [
+          "values",
+          "Location",
+          13
+        ],
+        [
+          "null_count",
+          "AboutMe",
+          12
+        ],
+        [
+          "distinct_count",
+          "AboutMe",
+          12
+        ],
+        [
+          "patterns",
+          "AboutMe",
+          13
+        ],
+        [
+          "values",
+          "AboutMe",
+          13
+        ],
+        [
+          "null_count",
+          "Views",
+          12
+        ],
+        [
+          "distinct_count",
+          "Views",
+          12
+        ],
+        [
+          "bins",
+          "Views",
+          13
+        ],
+        [
+          "values",
+          "Views",
+          13
+        ],
+        [
+          "null_count",
+          "UpVotes",
+          12
+        ],
+        [
+          "distinct_count",
+          "UpVotes",
+          12
+        ],
+        [
+          "bins",
+          "UpVotes",
+          13
+        ],
+        [
+          "values",
+          "UpVotes",
+          13
+        ],
+        [
+          "null_count",
+          "DownVotes",
+          12
+        ],
+        [
+          "distinct_count",
+          "DownVotes",
+          12
+        ],
+        [
+          "bins",
+          "DownVotes",
+          13
+        ],
+        [
+          "values",
+          "DownVotes",
+          13
+        ],
+        [
+          "null_count",
+          "AccountId",
+          12
+        ],
+        [
+          "distinct_count",
+          "AccountId",
+          12
+        ],
+        [
+          "bins",
+          "AccountId",
+          13
+        ],
+        [
+          "null_count",
+          "Age",
+          12
+        ],
+        [
+          "distinct_count",
+          "Age",
+          12
+        ],
+        [
+          "bins",
+          "Age",
+          13
+        ],
+        [
+          "values",
+          "Age",
+          13
+        ],
+        [
+          "null_count",
+          "ProfileImageUrl",
+          12
+        ],
+        [
+          "distinct_count",
+          "ProfileImageUrl",
+          12
+        ],
+        [
+          "patterns",
+          "ProfileImageUrl",
+          13
+        ]
+      ]
+    },
+    "votes": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          14
+        ],
+        [
+          "null_count",
+          "Id",
+          14
+        ],
+        [
+          "distinct_count",
+          "Id",
+          14
+        ],
+        [
+          "bins",
+          "Id",
+          15
+        ],
+        [
+          "null_count",
+          "PostId",
+          14
+        ],
+        [
+          "distinct_count",
+          "PostId",
+          14
+        ],
+        [
+          "bins",
+          "PostId",
+          15
+        ],
+        [
+          "null_count",
+          "VoteTypeId",
+          14
+        ],
+        [
+          "distinct_count",
+          "VoteTypeId",
+          14
+        ],
+        [
+          "bins",
+          "VoteTypeId",
+          15
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          14
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          14
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          15
+        ],
+        [
+          "values",
+          "CreationDate",
+          15
+        ],
+        [
+          "null_count",
+          "UserId",
+          14
+        ],
+        [
+          "distinct_count",
+          "UserId",
+          14
+        ],
+        [
+          "bins",
+          "UserId",
+          15
+        ],
+        [
+          "null_count",
+          "BountyAmount",
+          14
+        ],
+        [
+          "distinct_count",
+          "BountyAmount",
+          14
+        ],
+        [
+          "bins",
+          "BountyAmount",
+          15
+        ],
+        [
+          "values",
+          "BountyAmount",
+          15
+        ]
+      ]
+    }
+  },
+  "pubcap_tokens": 2490,
+  "actual_block_tokens": 2128,
+  "truncated_by_pubcap": false
+}

@@ -1,0 +1,3012 @@
+{
+  "schema_version": "tightbpe-releases-v2",
+  "tokenizer": "/data/hf/Qwen/Qwen2.5-32B-Instruct-AWQ (Qwen2TokenizerFast)",
+  "cap_formula": "100 + 10 * |T_d| + 12 * |C_d|",
+  "dbs": {
+    "california_schools": {
+      "n_tables": 3,
+      "n_columns": 89,
+      "cap_tightbpe_tokens": 1198
+    },
+    "card_games": {
+      "n_tables": 6,
+      "n_columns": 115,
+      "cap_tightbpe_tokens": 1540
+    },
+    "codebase_community": {
+      "n_tables": 8,
+      "n_columns": 71,
+      "cap_tightbpe_tokens": 1032
+    },
+    "debit_card_specializing": {
+      "n_tables": 5,
+      "n_columns": 21,
+      "cap_tightbpe_tokens": 402
+    },
+    "european_football_2": {
+      "n_tables": 7,
+      "n_columns": 199,
+      "cap_tightbpe_tokens": 2558
+    },
+    "financial": {
+      "n_tables": 8,
+      "n_columns": 55,
+      "cap_tightbpe_tokens": 840
+    },
+    "formula_1": {
+      "n_tables": 13,
+      "n_columns": 94,
+      "cap_tightbpe_tokens": 1358
+    },
+    "student_club": {
+      "n_tables": 8,
+      "n_columns": 48,
+      "cap_tightbpe_tokens": 756
+    },
+    "superhero": {
+      "n_tables": 10,
+      "n_columns": 31,
+      "cap_tightbpe_tokens": 572
+    },
+    "thrombosis_prediction": {
+      "n_tables": 3,
+      "n_columns": 64,
+      "cap_tightbpe_tokens": 898
+    },
+    "toxicology": {
+      "n_tables": 4,
+      "n_columns": 11,
+      "cap_tightbpe_tokens": 272
+    }
+  },
+  "arms": {
+    "tightbpe_silhouette": {
+      "release_01": {
+        "california_schools": {
+          "path": "profiles/tightbpe_silhouette/release_01/california_schools.json",
+          "sha256": "08006274cf487c429dacab179ebc4581fd5a8f0815354f50cc6d3816e670b6a9",
+          "canonical_sha256": "ce9f008e66f572501cc70b1f200c700ca70f6681daa40f7869890341d25dc780",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 3558,
+          "final_bpe_tokens": 1174,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_silhouette/release_01/card_games.json",
+          "sha256": "d0186b166bdaa9896dd30ea1e31cb88ba4a1de844a5f3b6add62ba8f5b5fca4b",
+          "canonical_sha256": "44f658816c4c37675bbff478bd643cfaf87c55d8231d10c75ab0ee925256be7f",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 4509,
+          "final_bpe_tokens": 1539,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_silhouette/release_01/codebase_community.json",
+          "sha256": "67a0dbd44574e89fa04e52ce750381aa8d36024942dc02a9a812a3bf5303b08d",
+          "canonical_sha256": "45391ffe8e0c26d3aaf54dbc748308ad53b581a02084382478992ddb3560cdd2",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 2874,
+          "final_bpe_tokens": 1024,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_silhouette/release_01/debit_card_specializing.json",
+          "sha256": "8a081671d2af46632d2bb49400fe4c3d3cf0b8e6bb544b4c130ce87fa483aa76",
+          "canonical_sha256": "fa2eff1537ff26591decb2b974790bb9c5354ef891f884de2c75ac02bec3e60a",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 936,
+          "final_bpe_tokens": 371,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_silhouette/release_01/european_football_2.json",
+          "sha256": "b785320df56ba1495f3563a4da02ec6ce90b924150d7739b45a9717eeb01d840",
+          "canonical_sha256": "22a9cfbd3ae12666721cfc5082380a29b8e7e6c886d078e0de9fe9bed7b052cc",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 8084,
+          "final_bpe_tokens": 2547,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_silhouette/release_01/financial.json",
+          "sha256": "478786a172cdf3c271ef5d7aad7534e4bce0cc58dec2388a6d013facf22f7b67",
+          "canonical_sha256": "691a7eac628364e57bde6bf404172eed81694a1a47b45aef302ed8780fd4ad74",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2030,
+          "final_bpe_tokens": 826,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_silhouette/release_01/formula_1.json",
+          "sha256": "9dbc7b287a65e0e9bce5e76b3b5424f880af092caef0792891c4291322621bfd",
+          "canonical_sha256": "a48c3849473dba7b876813a09af0296115fead99c3d3239dedbfa09063ad3759",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3626,
+          "final_bpe_tokens": 1326,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_silhouette/release_01/student_club.json",
+          "sha256": "0701e828feaf34de437b4580e63c370fde0f0fdd71ffa0395f1b9adaf032124a",
+          "canonical_sha256": "0b706105bcf8c373c1bf6f45ce67c8799383e942cd243bbc3b2ba5396236f2f2",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1291,
+          "final_bpe_tokens": 755,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_silhouette/release_01/superhero.json",
+          "sha256": "39a0748be35b590e5d41a52d9a6b29651ab6d8aef3251829815ff720098d45fb",
+          "canonical_sha256": "dc5d88b77a166f41d4c34f2bf24d1fc7ee85a24000db57a6659cac39da2819d6",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 993,
+          "final_bpe_tokens": 544,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_silhouette/release_01/thrombosis_prediction.json",
+          "sha256": "76ca1f9c4837b1f11cfd146158f9b02e1996f046aa71bffa92f9f207acfd9847",
+          "canonical_sha256": "3e685279bd1b03e70c1cf5d0ac786bfaf7168101df39a1403b17231b6e565947",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 1970,
+          "final_bpe_tokens": 878,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_silhouette/release_01/toxicology.json",
+          "sha256": "32c4a195fe4eb58d390d95c7c34a97390cfacbe48b915b2127830d18a87e7685",
+          "canonical_sha256": "d008d304729e96100e99bf148095efb4f54653db86e13335dcafabc5699c9e49",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 498,
+          "final_bpe_tokens": 257,
+          "truncated": true
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "path": "profiles/tightbpe_silhouette/release_02/california_schools.json",
+          "sha256": "d50e581d5a703ceaa8f3d23731157b8828b0275795d71db875a7b4db1beac428",
+          "canonical_sha256": "4b76e74badf4b7eae77a7a4c38b0a6a7239cd2863eb95d4a52cf059956cc7054",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 3549,
+          "final_bpe_tokens": 1171,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_silhouette/release_02/card_games.json",
+          "sha256": "6a57c80c8280bb248ea3308bbf5bfea36b48fde0abd1c54d33815cea5f754425",
+          "canonical_sha256": "2379fd74702c259b2858588c0cc2da5d80d50f3c32dab10a354950d68276965c",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 4570,
+          "final_bpe_tokens": 1533,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_silhouette/release_02/codebase_community.json",
+          "sha256": "4b6b1f85f920013abed76134eccb001653bbbe9cf22a4f1bf5e61e30850e1b95",
+          "canonical_sha256": "02a0fe96c8ccb536f4a2b370e508cd7aa69b5f2b17d4b55250911a38764bf830",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 2896,
+          "final_bpe_tokens": 1024,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_silhouette/release_02/debit_card_specializing.json",
+          "sha256": "b91f5cee81ee29cb890c13c3e7b6ff09d08932b9773f603dfd9abab2a31dafbd",
+          "canonical_sha256": "c21e91af72c93d8065e62988fd00e12251e971017b6180502b8b0ed97331680d",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 939,
+          "final_bpe_tokens": 369,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_silhouette/release_02/european_football_2.json",
+          "sha256": "5b723ea0ad8a2405a75327423f6df427dcfbb20de13dd819f81c471acf47b82a",
+          "canonical_sha256": "5934826fcf6bb788593e55440ac5908b38ed19e3db61c57996abdcca062e6385",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 8065,
+          "final_bpe_tokens": 2544,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_silhouette/release_02/financial.json",
+          "sha256": "cef4d0159539adb3c2f63dafb835832e1f05f7fb5187b77a6fe713d67eb7a213",
+          "canonical_sha256": "e9a5f8fbdd99746c8856d050c4371f2b8fbc7d4bbcadb97a4913dcb305607b88",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2030,
+          "final_bpe_tokens": 827,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_silhouette/release_02/formula_1.json",
+          "sha256": "b5a2e32e6803df0e977aaf66e05616885d3180fe93e1d72647180927e755a341",
+          "canonical_sha256": "78a45f4bee97774426dc394ea50550a19021aa66338b1b21de77d70c428d9676",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3594,
+          "final_bpe_tokens": 1320,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_silhouette/release_02/student_club.json",
+          "sha256": "0a3a02650fac043e7c204b53b226fe7e974914f08ac571a05e4d5d423f9df4db",
+          "canonical_sha256": "4f6a974b5f0e797f731433c1eeb5a9ce81337edba567eed455588878e6fd7148",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1309,
+          "final_bpe_tokens": 746,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_silhouette/release_02/superhero.json",
+          "sha256": "062cc0519342d34af2cc2c0898719bbbd0fd08b8feecc56ce3db43ec4015f1f3",
+          "canonical_sha256": "91af6a029d637f3819c2103b75586b951c8fb60de3ffb3a885ce92f3c2346c5b",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1003,
+          "final_bpe_tokens": 555,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_silhouette/release_02/thrombosis_prediction.json",
+          "sha256": "816959061a2719725e601b35bc88c7bfb0c4999b4dfd975bc42fd757593aae0e",
+          "canonical_sha256": "a7b4aa6d2c258bece22f0a4e22ba99b44a9f4a53bc9b37d3564c5792613a8680",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 1977,
+          "final_bpe_tokens": 888,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_silhouette/release_02/toxicology.json",
+          "sha256": "d4405a2608149fba349e7bd4f00cb2d8bb3844c96ce6fd1e4cc7f2cd99f78c28",
+          "canonical_sha256": "4017931b2a5e146408fa4fe3f77b5a18ce244a521f3313255bdbf33da16d628e",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 509,
+          "final_bpe_tokens": 257,
+          "truncated": true
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "path": "profiles/tightbpe_silhouette/release_03/california_schools.json",
+          "sha256": "92ae2cfecc65690998cddc8355f4d4c4795b6c9ebdc4f12add00c920008570a3",
+          "canonical_sha256": "60f42ea34f46e712d705430c24bfc5be70b8b8cdedb09436e838a864ac4e8419",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 3591,
+          "final_bpe_tokens": 1176,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_silhouette/release_03/card_games.json",
+          "sha256": "f72db566bff12e8efb2ebb62921da47bc1b38594993fc7526b73dc2147ac7970",
+          "canonical_sha256": "19b1702f6cef3bdeeeb2a1b009fdfd2f5454e56aef468e9d1f1723f2c773219a",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 4526,
+          "final_bpe_tokens": 1524,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_silhouette/release_03/codebase_community.json",
+          "sha256": "8c147661af69d11c61d54e9204920ab16114d3ba41153c145ed895161004a7c1",
+          "canonical_sha256": "09a8f7549ececb24951dd7fa2978595804802bdf0fdab542421908c97160f375",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 2881,
+          "final_bpe_tokens": 1024,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_silhouette/release_03/debit_card_specializing.json",
+          "sha256": "df763d96f4284aae2d0504fbd5d094d7318cd6bfcecc97a30600a6b87364bbe1",
+          "canonical_sha256": "7f07ed04aabddbdd4dd50613328ea722251535aad4987a2a3607882a3b542d7b",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 937,
+          "final_bpe_tokens": 370,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_silhouette/release_03/european_football_2.json",
+          "sha256": "7170e8ea651a8f620c882317e1f5e7a1300061369b3fae667349ee3ee062cc0e",
+          "canonical_sha256": "b96c1e764dccf7558a399d81231ec21e4ba6651ece3db8615ddbeadb69011989",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 8102,
+          "final_bpe_tokens": 2543,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_silhouette/release_03/financial.json",
+          "sha256": "e0af6783e7958e1e8596f9455fa54a4eaf0ee4d50bc00ff848da6f02b5c41df1",
+          "canonical_sha256": "d71cb58b08290c95f2a399a697708d3dc8664aaff482ae11bd6d5bda6da65362",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2024,
+          "final_bpe_tokens": 839,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_silhouette/release_03/formula_1.json",
+          "sha256": "c0975d4195d770338ccb133ad06393d8116d3fc614cc492835b8fc9c52cad227",
+          "canonical_sha256": "d665e057331c39249e7e1a613d96deb7fa91a18aa4550fd3275706fa9ed4afd2",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3586,
+          "final_bpe_tokens": 1318,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_silhouette/release_03/student_club.json",
+          "sha256": "b88a7ffa96ffc792631d76a1849d9c9f7a472a383f87c15cf5afc76511b8629a",
+          "canonical_sha256": "ec2b6c3dc8ae4d485fb558b1f70a7f95b5c0dd8a89662962ba5f6488db35ed60",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1326,
+          "final_bpe_tokens": 740,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_silhouette/release_03/superhero.json",
+          "sha256": "5a6ed67981864dab2a7db3b8dad06464d430005fd352bccb9f614cc77c0e7613",
+          "canonical_sha256": "681bf0bf8179f7be590cf4a6eb99303fb50202f8c7d69efc4a3ab6e312c1f4a3",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1000,
+          "final_bpe_tokens": 543,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_silhouette/release_03/thrombosis_prediction.json",
+          "sha256": "6ac3ae658c050b29681d7da97ddc09792ececf84e0a1dcfd7d17ff795e1d0c46",
+          "canonical_sha256": "e7d9a7ca28374a7a12fbfa87a6436e4d9cf24b0fde5f50889c3e478f1b2c74e6",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 2002,
+          "final_bpe_tokens": 876,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_silhouette/release_03/toxicology.json",
+          "sha256": "f88cc1eaa035a7d2d964f38781cdb284423d5dc0feb7b504db69c4fc77a27d14",
+          "canonical_sha256": "3a7d917da1247942f6e78f2d91eb61a17419f30f01861a5a63b322a0641dd8b8",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 497,
+          "final_bpe_tokens": 267,
+          "truncated": true
+        }
+      }
+    },
+    "tightbpe_ind8_prof": {
+      "release_01": {
+        "california_schools": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/california_schools.json",
+          "sha256": "06ce4ce34ab7eecbee48535ebf902d298ceee97d5f6df843a415689195a67085",
+          "canonical_sha256": "38e074b1409076be2246adade7789431f8392916cfa29358d89b1539b283ee8f",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 4472,
+          "final_bpe_tokens": 1173,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/card_games.json",
+          "sha256": "6cf1fd24d33fddedf110b321fb7bc1a8abc82a3a0016d6369d6d768d819a3873",
+          "canonical_sha256": "28b8415c80eb5eec144e9742a3583853043ea6c4de2c615e6d9fad52f3fd80b7",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 6648,
+          "final_bpe_tokens": 1528,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/codebase_community.json",
+          "sha256": "24f0bcee7273b5f2e8523c2401e8c3a7b13fbc4df7d3951b5149b19b4cea4b28",
+          "canonical_sha256": "d22f433af4e51ed8b74ded4f02ccc9c9216ade1c39db81deb573f54be1227529",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 3393,
+          "final_bpe_tokens": 1021,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/debit_card_specializing.json",
+          "sha256": "90e1cc680f507657373a6973488d0fd1c826c0cdbcf406cc4dc264513897f64c",
+          "canonical_sha256": "9d12bbf301928668574de96c1de0d2c9c6f85a042a2ecdf3daef0806e7ead65b",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 948,
+          "final_bpe_tokens": 370,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/european_football_2.json",
+          "sha256": "f07494e55bdf0496f598643dd5be4b0d3edd575a973f131530d96625e276c5b4",
+          "canonical_sha256": "ccc1d0af65b79f4a53270ee8091b6deddddcd32e4fb7e0851fb7fb8b62568445",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 13187,
+          "final_bpe_tokens": 2533,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/financial.json",
+          "sha256": "db2ba66b640828838895b2dfa9a2e993e551525becd3de494ba936bba9ac96b3",
+          "canonical_sha256": "59550e9305ee614dfa0b06ec70ff784fe33b2c79ae2f423960c8427023e0c025",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2875,
+          "final_bpe_tokens": 826,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/formula_1.json",
+          "sha256": "624cf47de9d01efd78e626b77cc4dced744d92ba34d75b039b532e825694503e",
+          "canonical_sha256": "1611ac4f7d0a241e245c9d953bbacdff1586fc578dbca134b7bf44406cceeb3b",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3911,
+          "final_bpe_tokens": 1317,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/student_club.json",
+          "sha256": "67bee64fac59ffbfb03e76cae71d52aabdab31a820ac35fd0049aebe396a80bc",
+          "canonical_sha256": "3dd4621aae32d4fdd2edab47acaa3c7800c52711d52a6b36bca309859168ee6b",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1409,
+          "final_bpe_tokens": 752,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/superhero.json",
+          "sha256": "a481e663c9c21dfa39c88c56ae708c2184d0a48cb47203ebdc97b26108432766",
+          "canonical_sha256": "47193ba5754b1bb0ea3bce0c554597cc5ca5c7876a3d0c5c3207298e194fe722",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1105,
+          "final_bpe_tokens": 567,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/thrombosis_prediction.json",
+          "sha256": "d238661f7538ee3caa25c5a2a64a26bb43a66ae4a007d5f1730648e112c689ab",
+          "canonical_sha256": "3ef9447c7b149ea6ee4e554b3c5f75d50bd62df415459b1185ba6ec60bdd5ae7",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 3704,
+          "final_bpe_tokens": 886,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_ind8_prof/release_01/toxicology.json",
+          "sha256": "97f5fcaea612304170b3d6e5d800893c074eca89355cea6fa67b87d3d6a7042a",
+          "canonical_sha256": "656ba215817893008e093060bf08db1d7538ff5aebc2cbe4397abd009d543d99",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 431,
+          "final_bpe_tokens": 261,
+          "truncated": true
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/california_schools.json",
+          "sha256": "8d01ed4977a6b1ccfef603704048786a479431997dab337416f8e0c1d4521353",
+          "canonical_sha256": "bc1ae0d97afb0600f658c6b2d7f1ea30111fd43b3293c6091e2e2ddd00ddce37",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 4513,
+          "final_bpe_tokens": 1180,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/card_games.json",
+          "sha256": "96327f9e12b93beaad375564fb61adbcb47342d5a8f959185916e60b4a438b74",
+          "canonical_sha256": "62b11553ebfabbf05f7f01b0ba64096a91d8ee75edf00b16b84ea5d9d5c799e3",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 6266,
+          "final_bpe_tokens": 1516,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/codebase_community.json",
+          "sha256": "f84bc57101f3bad82fe1c3f8ff6e1d9754463f6da831a566d8bdba7d7814c687",
+          "canonical_sha256": "24385be0c7112fdb056c1247d631256a1d7f46500597d8877c9384015fbba216",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 3682,
+          "final_bpe_tokens": 1023,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/debit_card_specializing.json",
+          "sha256": "9e94eec2d79f042ad59a3185aea4e190d278dc45a2674951d0cddd243abccd6f",
+          "canonical_sha256": "887493b000e9b5b1d4e270e74df4c1cd30aedfd11b9bfe47f76ac800a9ac5c45",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 941,
+          "final_bpe_tokens": 374,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/european_football_2.json",
+          "sha256": "f7188822788209686d7fed555895e04bb91970337f73290863e84a18795efb1c",
+          "canonical_sha256": "5c612cca4c02c476b0fae4c472f4cdd568e95f24eb15c47d5787d7e91316b145",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 12881,
+          "final_bpe_tokens": 2531,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/financial.json",
+          "sha256": "104db7b84db5e7fb264dc31633bce9962bc169d31bc00596ff1b7386156653ca",
+          "canonical_sha256": "a6dab4ec4b3ef066146f83054f80f9a57e7c144967df80099c326437a5029859",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2961,
+          "final_bpe_tokens": 831,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/formula_1.json",
+          "sha256": "85c9a78d52fc8815cf745b07a961085581bec3926a40ddd53f361ffc707b125b",
+          "canonical_sha256": "8a3aa8ae8f496c592113e9911e4232f4e24ac0badc6061f2f4c86eeafe41b4f3",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3865,
+          "final_bpe_tokens": 1319,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/student_club.json",
+          "sha256": "62239e8bbeaaac232c55f54262904d3d2b37685d9f7aae18bfd612c9c19048e6",
+          "canonical_sha256": "b74589e808b3ab10a8433c3ed4e61da8ba0c5660ded098eb84537218d7744f65",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1376,
+          "final_bpe_tokens": 755,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/superhero.json",
+          "sha256": "84c39aa39b68d6c630e8d3e93f0dd174f9bc2b0136e9ace8e2cac275d980cbaa",
+          "canonical_sha256": "791992262e44f9fb323b3de39ea03ce2dedeea4e5ee8fbed1206f63732fbfcdf",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1108,
+          "final_bpe_tokens": 567,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/thrombosis_prediction.json",
+          "sha256": "5ef8037f5e1f929ec616d907356207d01f5e73037de659711b224daa650a7db1",
+          "canonical_sha256": "6ee3a30ad0d0ab7cadb083696d2d96fa80539607fa830d05fc0d90a639016400",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 3497,
+          "final_bpe_tokens": 892,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_ind8_prof/release_02/toxicology.json",
+          "sha256": "edd52a25c55cc859e5b752fde41119bde3cda38504edfca3b2cfade35a1e08db",
+          "canonical_sha256": "fd628555cb9ca0001e2f2d08511203109e260c362ccbf8fdb14d78ae8183d239",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 427,
+          "final_bpe_tokens": 259,
+          "truncated": true
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/california_schools.json",
+          "sha256": "b1c89216d7ae65f5477ec3b64b817702d459f989c119617a95d4cfebd56bcb66",
+          "canonical_sha256": "4fef8782efa6eeecfd6913a47f06e84e719e7d8199b9170852260af03121bed0",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 4495,
+          "final_bpe_tokens": 1175,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/card_games.json",
+          "sha256": "c90516f801bee49eb203aa21b2e726e02a5f9a4aab3db5afdf938e6f4ee22b56",
+          "canonical_sha256": "23fa2231fa8f5d4aae5d5c1195e2f26de67e50e587920a41c436bf31a3ff1520",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 6617,
+          "final_bpe_tokens": 1514,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/codebase_community.json",
+          "sha256": "77c5eca2525103ffcfb870db8bf10d6dbdd0843b4f6bff34c1d9c18c54404ec1",
+          "canonical_sha256": "956d33c206b5ec97958dd421dab5d5772dffefe0632cdb09f60495ee59790e77",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 3602,
+          "final_bpe_tokens": 1018,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/debit_card_specializing.json",
+          "sha256": "551529e97335c1ce4f9855cbcb51fe56ebb00b03fce31ce5b71f6e3e55b61f2b",
+          "canonical_sha256": "68433b0e0d17f61ffca67fceaeb562ace66b7b7dead02bcd950989690e3af5ba",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 941,
+          "final_bpe_tokens": 372,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/european_football_2.json",
+          "sha256": "5a7b51af9b9455c00612f7e10a0c0d7c4c46d9e15dbeb64998e69ae413fef3bb",
+          "canonical_sha256": "3dfda815d236ce6d59a359237b037646155cfe88b772fa6136013bdb439228af",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 13035,
+          "final_bpe_tokens": 2531,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/financial.json",
+          "sha256": "8b58d6faea047e50d0d664ae8c37432477ad5cd243cf67f9697d2ce5aefed0d3",
+          "canonical_sha256": "2bff22b36795f6ba64d44a4e7343d8b04d858a185e3ba858083d21b5b630c6af",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2891,
+          "final_bpe_tokens": 833,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/formula_1.json",
+          "sha256": "1da9abebd23106a9f80c21423c9cb35d744223c21cfb5536d095b417c96c6f25",
+          "canonical_sha256": "a4a5748d4528638fe3b851cf790032757720435c0bc7da9fc8afb82a7574a67f",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3949,
+          "final_bpe_tokens": 1318,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/student_club.json",
+          "sha256": "bd526d7ce95d9b10d92b332b1050537ad8ce1ad19fc1cfac537674db6bf651f5",
+          "canonical_sha256": "f1516eed0561a3bc0bad5a454565bc2b32c7254d0443bd028b081e9487e97894",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1437,
+          "final_bpe_tokens": 752,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/superhero.json",
+          "sha256": "3df95c20ebb719e11c55f8ca60349bcc9a1d271d0477f2ee1916814e85c30b8c",
+          "canonical_sha256": "b4d652a5ff10c70f7028ec3e9061160b5c468d584460924973037a0a641ff8dc",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1108,
+          "final_bpe_tokens": 570,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/thrombosis_prediction.json",
+          "sha256": "ef00bd3a251f82758005f76c9071bc3e10dd4b34974f59cc586bf620f3a99c80",
+          "canonical_sha256": "f0aaf03893ec3a02dc52bbe04791ac3dae03b058d1461e4ba417680a4c2bd402",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 3496,
+          "final_bpe_tokens": 887,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_ind8_prof/release_03/toxicology.json",
+          "sha256": "816911e37feb9c2253f742f0c171ca11e8261b289172026fba0b7b277485a327",
+          "canonical_sha256": "59054ac9658b857d052fd470785217316b9a94c886db8e4c573dea2806fff522",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 411,
+          "final_bpe_tokens": 271,
+          "truncated": true
+        }
+      }
+    },
+    "tightbpe_static_synth": {
+      "release_01": {
+        "california_schools": {
+          "path": "profiles/tightbpe_static_synth/release_01/california_schools.txt",
+          "sha256": "f51f7306ffbdb7b6c451eca055282fd2d9cdb729445262dcf3a1be5ccfc47a66",
+          "canonical_sha256": "f51f7306ffbdb7b6c451eca055282fd2d9cdb729445262dcf3a1be5ccfc47a66",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 25736,
+          "final_bpe_tokens": 1191,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_static_synth/release_01/card_games.txt",
+          "sha256": "1d34f3b5b9c23b6ca08701c1eceec368da7f44c0a869f5aea7aaf435e55857bf",
+          "canonical_sha256": "1d34f3b5b9c23b6ca08701c1eceec368da7f44c0a869f5aea7aaf435e55857bf",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 21390,
+          "final_bpe_tokens": 1537,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_static_synth/release_01/codebase_community.txt",
+          "sha256": "a7a53116073d520047be69d5e3c1152ea7ead8b88e50ff081a65052e0af7bc70",
+          "canonical_sha256": "a7a53116073d520047be69d5e3c1152ea7ead8b88e50ff081a65052e0af7bc70",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 10377,
+          "final_bpe_tokens": 1031,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_static_synth/release_01/debit_card_specializing.txt",
+          "sha256": "4649a0e6f48a02e70189f29b12dbeb7de2577e63f874b437e51b88a4c4dcdba5",
+          "canonical_sha256": "4649a0e6f48a02e70189f29b12dbeb7de2577e63f874b437e51b88a4c4dcdba5",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 6686,
+          "final_bpe_tokens": 400,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_static_synth/release_01/european_football_2.txt",
+          "sha256": "5e436cc625ffb9088904c4524748aadfbe7078e5a076cd0dc3a14da5f70ccbfc",
+          "canonical_sha256": "5e436cc625ffb9088904c4524748aadfbe7078e5a076cd0dc3a14da5f70ccbfc",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 59665,
+          "final_bpe_tokens": 2557,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_static_synth/release_01/financial.txt",
+          "sha256": "555a703176d41afd091a9eb985a18ac3fcef3056134e4a883a7e0186f5f70866",
+          "canonical_sha256": "555a703176d41afd091a9eb985a18ac3fcef3056134e4a883a7e0186f5f70866",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 16238,
+          "final_bpe_tokens": 836,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_static_synth/release_01/formula_1.txt",
+          "sha256": "6db45ad04b7e14ad9d00d2167400e344df368402ec293331789a3a0ce437f427",
+          "canonical_sha256": "6db45ad04b7e14ad9d00d2167400e344df368402ec293331789a3a0ce437f427",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 21846,
+          "final_bpe_tokens": 1355,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_static_synth/release_01/student_club.txt",
+          "sha256": "90dd6b4e199f1c837380bd9a41a5eec1e9e9dbff38b87b0d875660162e2ea165",
+          "canonical_sha256": "90dd6b4e199f1c837380bd9a41a5eec1e9e9dbff38b87b0d875660162e2ea165",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 10246,
+          "final_bpe_tokens": 755,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_static_synth/release_01/superhero.txt",
+          "sha256": "7789e14b90763790da87d4ebe7534ef588da09263d0627a1283d8305c4e73f5b",
+          "canonical_sha256": "7789e14b90763790da87d4ebe7534ef588da09263d0627a1283d8305c4e73f5b",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 3692,
+          "final_bpe_tokens": 570,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_static_synth/release_01/thrombosis_prediction.txt",
+          "sha256": "4940205b945caf40ec647927c352ccc0bce2d3f9593e8a8940e6209b810ee313",
+          "canonical_sha256": "4940205b945caf40ec647927c352ccc0bce2d3f9593e8a8940e6209b810ee313",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 17417,
+          "final_bpe_tokens": 889,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_static_synth/release_01/toxicology.txt",
+          "sha256": "5d019503efd8f83e856a1b3498b2970506cc69c09324e42fa0eded541d7d00ec",
+          "canonical_sha256": "5d019503efd8f83e856a1b3498b2970506cc69c09324e42fa0eded541d7d00ec",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 2296,
+          "final_bpe_tokens": 272,
+          "truncated": true
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "path": "profiles/tightbpe_static_synth/release_02/california_schools.txt",
+          "sha256": "30903e4cd7e436f5233b1fe1582d07cdaeaecbaeef0f667b22abeec669a74f7e",
+          "canonical_sha256": "30903e4cd7e436f5233b1fe1582d07cdaeaecbaeef0f667b22abeec669a74f7e",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 25881,
+          "final_bpe_tokens": 1171,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_static_synth/release_02/card_games.txt",
+          "sha256": "792d1f4d79db12904ba47ee705817148687f85f3cfb2bec2ce3c92b3d2bf8b61",
+          "canonical_sha256": "792d1f4d79db12904ba47ee705817148687f85f3cfb2bec2ce3c92b3d2bf8b61",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 20912,
+          "final_bpe_tokens": 1540,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_static_synth/release_02/codebase_community.txt",
+          "sha256": "513744aaf01ae640c15c8a65dbeed011e24c11217b9b1653b3ea82887c7d1118",
+          "canonical_sha256": "513744aaf01ae640c15c8a65dbeed011e24c11217b9b1653b3ea82887c7d1118",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 10441,
+          "final_bpe_tokens": 1030,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_static_synth/release_02/debit_card_specializing.txt",
+          "sha256": "c534b4c68c4cf6a9af990046903fe57082e53bba680130cdfafdf280cfa7fc99",
+          "canonical_sha256": "c534b4c68c4cf6a9af990046903fe57082e53bba680130cdfafdf280cfa7fc99",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 6671,
+          "final_bpe_tokens": 399,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_static_synth/release_02/european_football_2.txt",
+          "sha256": "355a25846848defedbc1076eea96aafabf3d66ee6ffcc34f9ab43756cd686da7",
+          "canonical_sha256": "355a25846848defedbc1076eea96aafabf3d66ee6ffcc34f9ab43756cd686da7",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 59562,
+          "final_bpe_tokens": 2556,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_static_synth/release_02/financial.txt",
+          "sha256": "f1c9be5451b0251428c58c24ee2a06485c51641dbe25d47ab3d0f4e8aac9f957",
+          "canonical_sha256": "f1c9be5451b0251428c58c24ee2a06485c51641dbe25d47ab3d0f4e8aac9f957",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 16449,
+          "final_bpe_tokens": 838,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_static_synth/release_02/formula_1.txt",
+          "sha256": "82ec396c6c374a5989dcd101c93ba54ee4171864dad7517781655ab13f8727c9",
+          "canonical_sha256": "82ec396c6c374a5989dcd101c93ba54ee4171864dad7517781655ab13f8727c9",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 21835,
+          "final_bpe_tokens": 1357,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_static_synth/release_02/student_club.txt",
+          "sha256": "32d90cb3233e0eaaf01a8c25720b5dbffc96c0f6fb743ddf5bb5c3fbf24fab74",
+          "canonical_sha256": "32d90cb3233e0eaaf01a8c25720b5dbffc96c0f6fb743ddf5bb5c3fbf24fab74",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 8451,
+          "final_bpe_tokens": 756,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_static_synth/release_02/superhero.txt",
+          "sha256": "a29ea5be2d429f62cfc2b90504feaee5b948de41f73a71437cd1356e690b2037",
+          "canonical_sha256": "a29ea5be2d429f62cfc2b90504feaee5b948de41f73a71437cd1356e690b2037",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 3724,
+          "final_bpe_tokens": 570,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_static_synth/release_02/thrombosis_prediction.txt",
+          "sha256": "129a2007ae466d767cf8dbaf906e624db3ab97030f0e4612d31cc137b0c7225b",
+          "canonical_sha256": "129a2007ae466d767cf8dbaf906e624db3ab97030f0e4612d31cc137b0c7225b",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 17764,
+          "final_bpe_tokens": 897,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_static_synth/release_02/toxicology.txt",
+          "sha256": "9834dd48fa074735e023644611b5fe871c14d6acdd85ea2ab49c96df51ab8a08",
+          "canonical_sha256": "9834dd48fa074735e023644611b5fe871c14d6acdd85ea2ab49c96df51ab8a08",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 2304,
+          "final_bpe_tokens": 272,
+          "truncated": true
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "path": "profiles/tightbpe_static_synth/release_03/california_schools.txt",
+          "sha256": "14db14706e3c872369a7a840bbbfa758f5174995be4efa1ccef99662223e9133",
+          "canonical_sha256": "14db14706e3c872369a7a840bbbfa758f5174995be4efa1ccef99662223e9133",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 25869,
+          "final_bpe_tokens": 1194,
+          "truncated": true
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_static_synth/release_03/card_games.txt",
+          "sha256": "fd267ae8e3782bd3e4de8ad5b8c042e3dcd1525c53c2ba3bff981dee03b564e3",
+          "canonical_sha256": "fd267ae8e3782bd3e4de8ad5b8c042e3dcd1525c53c2ba3bff981dee03b564e3",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 20539,
+          "final_bpe_tokens": 1538,
+          "truncated": true
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_static_synth/release_03/codebase_community.txt",
+          "sha256": "1b6c825c3a40a7829346b7a727bb8a4409f880047f3d45599f578eca2b5ea315",
+          "canonical_sha256": "1b6c825c3a40a7829346b7a727bb8a4409f880047f3d45599f578eca2b5ea315",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 10307,
+          "final_bpe_tokens": 1031,
+          "truncated": true
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_static_synth/release_03/debit_card_specializing.txt",
+          "sha256": "08cb69d682099e5f34ce2e2d0b482065fa7835769f149ed72a9c6d3b875f6b94",
+          "canonical_sha256": "08cb69d682099e5f34ce2e2d0b482065fa7835769f149ed72a9c6d3b875f6b94",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 6653,
+          "final_bpe_tokens": 402,
+          "truncated": true
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_static_synth/release_03/european_football_2.txt",
+          "sha256": "54c02a6b708fa68b7ab5303857e544629c89d8525d8b13f99fb4fc648e522345",
+          "canonical_sha256": "54c02a6b708fa68b7ab5303857e544629c89d8525d8b13f99fb4fc648e522345",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 59058,
+          "final_bpe_tokens": 2558,
+          "truncated": true
+        },
+        "financial": {
+          "path": "profiles/tightbpe_static_synth/release_03/financial.txt",
+          "sha256": "23b241a985d382c46048ff94928173a1d0dd5c2e979bb5eab9d56a0bc0784914",
+          "canonical_sha256": "23b241a985d382c46048ff94928173a1d0dd5c2e979bb5eab9d56a0bc0784914",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 16363,
+          "final_bpe_tokens": 833,
+          "truncated": true
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_static_synth/release_03/formula_1.txt",
+          "sha256": "3ecac1dfd10e06d6252ff1f8b0a7f650167b859181f08b7ddc652dc0f5740360",
+          "canonical_sha256": "3ecac1dfd10e06d6252ff1f8b0a7f650167b859181f08b7ddc652dc0f5740360",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 21933,
+          "final_bpe_tokens": 1355,
+          "truncated": true
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_static_synth/release_03/student_club.txt",
+          "sha256": "245c468187a78c87ce5adf1a09a0536a64c3323e0ab874d6a81392721c74917d",
+          "canonical_sha256": "245c468187a78c87ce5adf1a09a0536a64c3323e0ab874d6a81392721c74917d",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 9978,
+          "final_bpe_tokens": 753,
+          "truncated": true
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_static_synth/release_03/superhero.txt",
+          "sha256": "b721e35b72e646f3e88563b65130ad884469e2a7b22d79e7e47bfec68584a80b",
+          "canonical_sha256": "b721e35b72e646f3e88563b65130ad884469e2a7b22d79e7e47bfec68584a80b",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 3708,
+          "final_bpe_tokens": 570,
+          "truncated": true
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_static_synth/release_03/thrombosis_prediction.txt",
+          "sha256": "5e581eebd8d751fc939db905afce733c577cd71deec99be9f773f4b7cb316570",
+          "canonical_sha256": "5e581eebd8d751fc939db905afce733c577cd71deec99be9f773f4b7cb316570",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 17362,
+          "final_bpe_tokens": 898,
+          "truncated": true
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_static_synth/release_03/toxicology.txt",
+          "sha256": "21fe12d63c67063f2777c3f0a0a1c28e134f97fd91917161f30cfecb80c0d4ba",
+          "canonical_sha256": "21fe12d63c67063f2777c3f0a0a1c28e134f97fd91917161f30cfecb80c0d4ba",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 2296,
+          "final_bpe_tokens": 272,
+          "truncated": true
+        }
+      }
+    },
+    "tightbpe_valfirst_silhouette": {
+      "release_01": {
+        "california_schools": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/california_schools.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/california_schools.json",
+          "source_sha256": "018210942a70534fa6fbde5b92e26090f7fd4be31a6487ff775e389162bd8af4",
+          "sha256": "192c173c49eb1aa1d5eb13ce909ae51264e4c565aa895bda88e50f8e74b4ba2c",
+          "canonical_sha256": "74e8defcbca88210020ec6ae922156857cb59cf2227b2ac676b94ca8c494d4f1",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 3558,
+          "final_bpe_tokens": 1178,
+          "p6_prompt_bpe_tokens": 1196,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 27,
+          "orig_val_items": 143,
+          "n_tables_kept": 3,
+          "n_cols_kept": 31,
+          "n_val_cols_kept": 27,
+          "n_val_items_kept": 66,
+          "n_compacted_cols": 4
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/card_games.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/card_games.json",
+          "source_sha256": "9736f2b3eadd0daf8a229516feed9e8a9b3d8a1568e18e8fd919ecb806fd6aca",
+          "sha256": "c54dac022a1ec95215024ffcebdb0d7aae01e9c0ade9e040c9f9b65993241398",
+          "canonical_sha256": "570f0f3808cb50a97ab4a8a630a8aeb83d7cfc79582a9c878ab7ea2ab446c2a3",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 4509,
+          "final_bpe_tokens": 1514,
+          "p6_prompt_bpe_tokens": 1532,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 40,
+          "orig_val_items": 169,
+          "n_tables_kept": 6,
+          "n_cols_kept": 42,
+          "n_val_cols_kept": 40,
+          "n_val_items_kept": 89,
+          "n_compacted_cols": 2
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/codebase_community.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/codebase_community.json",
+          "source_sha256": "645fd90e0b60c87cc07a081969625937702d87ab1e39657797d74a9b6446414d",
+          "sha256": "04b2ace2a3dd1f666fd42bb616085a5506b578821c61713852cc63675129a716",
+          "canonical_sha256": "dec3847668804b2609b17fa76d40f0784be8d79a01416d74aeaea6b49fc2e4aa",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 2874,
+          "final_bpe_tokens": 996,
+          "p6_prompt_bpe_tokens": 1014,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step2_compact_zero",
+          "orig_val_cols": 4,
+          "orig_val_items": 40,
+          "n_tables_kept": 8,
+          "n_cols_kept": 71,
+          "n_val_cols_kept": 4,
+          "n_val_items_kept": 17,
+          "n_compacted_cols": 66
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/debit_card_specializing.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/debit_card_specializing.json",
+          "source_sha256": "288c29e0f7c1662e686f2d5211da8358b75b587517e6530cbee35170311fab43",
+          "sha256": "e7e44f104483ad66ad1f13e97283864f6d7d232b6c178be6a9cc3e584188b2d0",
+          "canonical_sha256": "af4317a789a9362aae8b7f4495c19ce311673a06dc9a2afa72e33fd91874b9a2",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 936,
+          "final_bpe_tokens": 379,
+          "p6_prompt_bpe_tokens": 397,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 6,
+          "orig_val_items": 30,
+          "n_tables_kept": 5,
+          "n_cols_kept": 9,
+          "n_val_cols_kept": 6,
+          "n_val_items_kept": 20,
+          "n_compacted_cols": 3
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/european_football_2.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/european_football_2.json",
+          "source_sha256": "ae7fac17823a1a91959770041239877257dbaafe703ce682f62de66af89146de",
+          "sha256": "f2ed0c5155ea3f7c84f4a0ec066facbe88a5ae30118e47a71bea6d49c81e9554",
+          "canonical_sha256": "38cbc4545f226f3888a2c535f5f8d265ba5f94d4296260e5ac818c3259d14ec4",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 8084,
+          "final_bpe_tokens": 2533,
+          "p6_prompt_bpe_tokens": 2551,
+          "truncated": true,
+          "k_val": 2,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 68,
+          "orig_val_items": 327,
+          "n_tables_kept": 7,
+          "n_cols_kept": 76,
+          "n_val_cols_kept": 68,
+          "n_val_items_kept": 126,
+          "n_compacted_cols": 8
+        },
+        "financial": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/financial.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/financial.json",
+          "source_sha256": "a6698b87d79b97ca039650d912ed10e8678b30bd018f21272e465516745eeed8",
+          "sha256": "e657f6052e1da53ffcbd7fdb439d7b080d6217e61af1b3c4d49646fd33427928",
+          "canonical_sha256": "bd301886cce78d330f8b22cac59dc0309ebe2ae7288e81692db2bc5aecbba1c9",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2030,
+          "final_bpe_tokens": 812,
+          "p6_prompt_bpe_tokens": 830,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 12,
+          "orig_val_items": 66,
+          "n_tables_kept": 8,
+          "n_cols_kept": 36,
+          "n_val_cols_kept": 12,
+          "n_val_items_kept": 47,
+          "n_compacted_cols": 24
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/formula_1.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/formula_1.json",
+          "source_sha256": "7b54d1a08485f4ad460834b2fb1d5dc020ef571c2d791a7dd6cd767fa69e8fc8",
+          "sha256": "4f4709340e1975b01580b3e918f3f7728378a288a079e8ebf13dcea0f864627d",
+          "canonical_sha256": "4356da1a1900c2e0fd86a90f59b141a73c7570433f1230a2f1bbb57cae680c84",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3626,
+          "final_bpe_tokens": 1338,
+          "p6_prompt_bpe_tokens": 1356,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 18,
+          "orig_val_items": 221,
+          "n_tables_kept": 13,
+          "n_cols_kept": 66,
+          "n_val_cols_kept": 18,
+          "n_val_items_kept": 83,
+          "n_compacted_cols": 48
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/student_club.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/student_club.json",
+          "source_sha256": "b6dd6c179664fbc93fe9dae70ca7e9c8626d2383787c0ad0d58e5e7e7f1d9776",
+          "sha256": "71e4b0d0a370b358457ce78498163d46c6d6dc4fb6d3d4c3e3f6b5fb2f0282fd",
+          "canonical_sha256": "f380f8be8772af1c8996386d0870c1313a576d6db6094f89be8ba28c3adcd7b4",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1291,
+          "final_bpe_tokens": 733,
+          "p6_prompt_bpe_tokens": 751,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 13,
+          "orig_val_items": 19,
+          "n_tables_kept": 8,
+          "n_cols_kept": 33,
+          "n_val_cols_kept": 13,
+          "n_val_items_kept": 19,
+          "n_compacted_cols": 20
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/superhero.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/superhero.json",
+          "source_sha256": "0e99d554f725223ff3ae2f2958480d0c552d4b47b7fac1a51014fd9f39e4801d",
+          "sha256": "48eb40da22d96fb16c57a699f463f9f700f358fc3dc4b2e985f7b34fbb6d2bc8",
+          "canonical_sha256": "bb612f86cc11de374003854b3989a8585f2f85db420df72bdf52c4f0a26422a4",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 993,
+          "final_bpe_tokens": 553,
+          "p6_prompt_bpe_tokens": 571,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step2_compact_zero",
+          "orig_val_cols": 1,
+          "orig_val_items": 15,
+          "n_tables_kept": 10,
+          "n_cols_kept": 31,
+          "n_val_cols_kept": 1,
+          "n_val_items_kept": 5,
+          "n_compacted_cols": 23
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/thrombosis_prediction.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/thrombosis_prediction.json",
+          "source_sha256": "dcc4b54272b11362d85a2ce3c44a03f4233f81eb0313e71c899c34655c13a69f",
+          "sha256": "5ed86468b464f890f03f65bae92946031d4ad9f2d3df70bb6734386f15f63a57",
+          "canonical_sha256": "182529d8e8d9e49decd22bae75b24f6f00dee8252a1677625c99d6f0d69a54dc",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 1970,
+          "final_bpe_tokens": 877,
+          "p6_prompt_bpe_tokens": 895,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 12,
+          "orig_val_items": 28,
+          "n_tables_kept": 3,
+          "n_cols_kept": 57,
+          "n_val_cols_kept": 12,
+          "n_val_items_kept": 23,
+          "n_compacted_cols": 45
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_01/toxicology.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_01/toxicology.json",
+          "source_sha256": "55f80dc625c3c58b49468b2f761378ec62292c59d36a203d822564193a64a95b",
+          "sha256": "ba8501e2235f2c74c9aca7a9c8bd83bbb6d157bd31831537b62f0b5cdc2c6ca2",
+          "canonical_sha256": "d54b6986b1565da12c11604b61261501f2cbb8448ce2d2f35dc0b44e9a4f32e2",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 498,
+          "final_bpe_tokens": 251,
+          "p6_prompt_bpe_tokens": 269,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 3,
+          "orig_val_items": 14,
+          "n_tables_kept": 4,
+          "n_cols_kept": 7,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 9,
+          "n_compacted_cols": 4
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/california_schools.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/california_schools.json",
+          "source_sha256": "5cd3782bdb363e97b6d493c032c7c54a869c69a288211b13eae37c7ade5581c4",
+          "sha256": "a8553e2a1adc90a3913deef3dc6853075cd9b34f2377aabfd828c079f71bae0e",
+          "canonical_sha256": "25cbc6282c7df33457570b3106ffcb2d108d6ba60a44070c0012bcab877af065",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 3549,
+          "final_bpe_tokens": 1177,
+          "p6_prompt_bpe_tokens": 1195,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 27,
+          "orig_val_items": 144,
+          "n_tables_kept": 3,
+          "n_cols_kept": 31,
+          "n_val_cols_kept": 27,
+          "n_val_items_kept": 66,
+          "n_compacted_cols": 4
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/card_games.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/card_games.json",
+          "source_sha256": "5ff683fc31c6ea33fde5f1922263aba23284af423a25a39de3c924dfc54ee982",
+          "sha256": "879891831a21363ee487b97d30ea414e0961a209e336c0b94d867ccbf79cb966",
+          "canonical_sha256": "00ffafbf3560f60191179bd5f6745513a4420be285a6c5f9b9df6ffaad93b262",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 4570,
+          "final_bpe_tokens": 1515,
+          "p6_prompt_bpe_tokens": 1533,
+          "truncated": true,
+          "k_val": 2,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 42,
+          "orig_val_items": 198,
+          "n_tables_kept": 6,
+          "n_cols_kept": 43,
+          "n_val_cols_kept": 42,
+          "n_val_items_kept": 78,
+          "n_compacted_cols": 1
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/codebase_community.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/codebase_community.json",
+          "source_sha256": "049745c6444ffb0e5be158b623ba1bec3e014730be4b431142bc0b2a931df33b",
+          "sha256": "04b2ace2a3dd1f666fd42bb616085a5506b578821c61713852cc63675129a716",
+          "canonical_sha256": "dec3847668804b2609b17fa76d40f0784be8d79a01416d74aeaea6b49fc2e4aa",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 2896,
+          "final_bpe_tokens": 996,
+          "p6_prompt_bpe_tokens": 1014,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step2_compact_zero",
+          "orig_val_cols": 4,
+          "orig_val_items": 40,
+          "n_tables_kept": 8,
+          "n_cols_kept": 71,
+          "n_val_cols_kept": 4,
+          "n_val_items_kept": 17,
+          "n_compacted_cols": 66
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/debit_card_specializing.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/debit_card_specializing.json",
+          "source_sha256": "685fcb93da962aaf9dff5744c786327650e09ec58b67d2a9011bc61c9010f71c",
+          "sha256": "74c7d847088475291775ae6c7482739ec46bd0106b34a89fb142fd51f7c31b4c",
+          "canonical_sha256": "d8f6b5bce06909b0a207c01a873cd37c51f49342282c5e038f8f71447d2f55fa",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 939,
+          "final_bpe_tokens": 378,
+          "p6_prompt_bpe_tokens": 396,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 6,
+          "orig_val_items": 30,
+          "n_tables_kept": 5,
+          "n_cols_kept": 8,
+          "n_val_cols_kept": 6,
+          "n_val_items_kept": 20,
+          "n_compacted_cols": 2
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/european_football_2.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/european_football_2.json",
+          "source_sha256": "a8d5cbeb8cc80dc8bd3266f0bf68d9903407237fe86e5e9aabb0f16819dbc34f",
+          "sha256": "44f13fb3a7217e9109ce33bc1d5f80307d4377d510006934c2aedfdc44c4fcb9",
+          "canonical_sha256": "258f2cfa25331fa8061fea6f9e127b210ce33aea0c7b3ae9ce10f88892feb0c0",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 8065,
+          "final_bpe_tokens": 2539,
+          "p6_prompt_bpe_tokens": 2557,
+          "truncated": true,
+          "k_val": 2,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 68,
+          "orig_val_items": 319,
+          "n_tables_kept": 7,
+          "n_cols_kept": 77,
+          "n_val_cols_kept": 68,
+          "n_val_items_kept": 126,
+          "n_compacted_cols": 9
+        },
+        "financial": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/financial.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/financial.json",
+          "source_sha256": "47fdeab27607b1934da9f5d4bf09efab4601323336c7341c5b9d490f6723bbeb",
+          "sha256": "f6f99f4b6a52f2867ff8bc1d5e3e6d6d4259ec607adb1b47c2bb992d01084b5e",
+          "canonical_sha256": "66a973962987252ab2b9ca51001d1ab71e30331c4941155596db0717bbcbcd7d",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2030,
+          "final_bpe_tokens": 816,
+          "p6_prompt_bpe_tokens": 834,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 12,
+          "orig_val_items": 66,
+          "n_tables_kept": 8,
+          "n_cols_kept": 36,
+          "n_val_cols_kept": 12,
+          "n_val_items_kept": 47,
+          "n_compacted_cols": 24
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/formula_1.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/formula_1.json",
+          "source_sha256": "bec27abfe90b7706bd6877880cc13bbe816a4c403364b54ee9398ed6bd3fde51",
+          "sha256": "d6c93585f74a175934796d74b4c90a74245686a6d2f4670149bda1ced6a844c7",
+          "canonical_sha256": "b44efd77c2dbf9b49fda5aee1d969196273206ba0ddd0b7e5906d8ccf75cede3",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3594,
+          "final_bpe_tokens": 1332,
+          "p6_prompt_bpe_tokens": 1350,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 17,
+          "orig_val_items": 208,
+          "n_tables_kept": 13,
+          "n_cols_kept": 69,
+          "n_val_cols_kept": 17,
+          "n_val_items_kept": 78,
+          "n_compacted_cols": 52
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/student_club.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/student_club.json",
+          "source_sha256": "f2cb9e069517a58df1f6ee5270bb04cd5e4f60643f70e47e567ff6de9d6147fd",
+          "sha256": "c838f2b54eed798c246ae907e948b81dfd33f24da4f04663a90fb6b1a1f8a78b",
+          "canonical_sha256": "62a57eb672fdc74bf1c0ea59234fabfa3862bd395ce4d72f573007873de46ce7",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1309,
+          "final_bpe_tokens": 736,
+          "p6_prompt_bpe_tokens": 754,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 14,
+          "orig_val_items": 34,
+          "n_tables_kept": 8,
+          "n_cols_kept": 35,
+          "n_val_cols_kept": 14,
+          "n_val_items_kept": 24,
+          "n_compacted_cols": 21
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/superhero.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/superhero.json",
+          "source_sha256": "83bb872f68426a9f92a9e3ef969cc2a42cb30ac3a1030cd17a79254ab2762775",
+          "sha256": "d6117e0a9a06f8bff174f7183a9b225c7dbe77038962a1b664263d6025c0b04c",
+          "canonical_sha256": "414023df51243f35cc1c3947bd9f4acc1bbb2e8685308999b5a14e360ef24d89",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1003,
+          "final_bpe_tokens": 547,
+          "p6_prompt_bpe_tokens": 565,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step2_compact_zero",
+          "orig_val_cols": 1,
+          "orig_val_items": 15,
+          "n_tables_kept": 10,
+          "n_cols_kept": 31,
+          "n_val_cols_kept": 1,
+          "n_val_items_kept": 5,
+          "n_compacted_cols": 24
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/thrombosis_prediction.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/thrombosis_prediction.json",
+          "source_sha256": "26caed55a1b1e337d94a16538add485bd35b78680328321cef890e7b278938a0",
+          "sha256": "867a2298a48270057cb78afa084f8f9caa2f66bca3421499978026d3b4d8b386",
+          "canonical_sha256": "a015dd0b2f5932e2544786f0d325f85a6aef2fdb76f752f7982cb968cece3994",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 1977,
+          "final_bpe_tokens": 880,
+          "p6_prompt_bpe_tokens": 898,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 11,
+          "orig_val_items": 26,
+          "n_tables_kept": 3,
+          "n_cols_kept": 58,
+          "n_val_cols_kept": 11,
+          "n_val_items_kept": 21,
+          "n_compacted_cols": 47
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_02/toxicology.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_02/toxicology.json",
+          "source_sha256": "d699a23a57ecf2339a0ea9b16f98e624c6e56cabd503d7f53ee3919000d8499c",
+          "sha256": "9d21df78a9f0fe7802a96749dbeb2dd2da6daa878f50fbae832916bc90c1c2ff",
+          "canonical_sha256": "49f6a0ae6a1c40680f1afd74faf2a74ec2eba7d38de12c820ea007557bbb2a81",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 509,
+          "final_bpe_tokens": 253,
+          "p6_prompt_bpe_tokens": 271,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 3,
+          "orig_val_items": 14,
+          "n_tables_kept": 4,
+          "n_cols_kept": 7,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 9,
+          "n_compacted_cols": 4
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/california_schools.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/california_schools.json",
+          "source_sha256": "1b718f9a127095bc48266f0155b86791035f8447663d7c0b11ad9d1b72227ed5",
+          "sha256": "ce040e41acb37be4140e00a228e960b26b4ad51a353f2aacd399c89d3f1dced0",
+          "canonical_sha256": "53874b0154f1cd79177f896a63235f6f619504755c582e543c2b0e39bd4bc7b8",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 3591,
+          "final_bpe_tokens": 1178,
+          "p6_prompt_bpe_tokens": 1196,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 28,
+          "orig_val_items": 157,
+          "n_tables_kept": 3,
+          "n_cols_kept": 29,
+          "n_val_cols_kept": 28,
+          "n_val_items_kept": 69,
+          "n_compacted_cols": 1
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/card_games.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/card_games.json",
+          "source_sha256": "3ddc1d1824f29547224e963ee4f94ceb18294f8433513c1616c7ffea296ac0e9",
+          "sha256": "d8db55a271558991d9d173aabb2c3a6f7bca4053107e727cbd15b5e9ccac7a4e",
+          "canonical_sha256": "58f52e730795be41647aa701ea0ca55747d4df69da7bae2d8464a6eb40e55578",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 4526,
+          "final_bpe_tokens": 1521,
+          "p6_prompt_bpe_tokens": 1539,
+          "truncated": true,
+          "k_val": 2,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 41,
+          "orig_val_items": 182,
+          "n_tables_kept": 6,
+          "n_cols_kept": 48,
+          "n_val_cols_kept": 41,
+          "n_val_items_kept": 77,
+          "n_compacted_cols": 7
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/codebase_community.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/codebase_community.json",
+          "source_sha256": "20d3187e3eb217423cd06df0ad1087f4b4c68735a00cc91b0304652aef887191",
+          "sha256": "04b2ace2a3dd1f666fd42bb616085a5506b578821c61713852cc63675129a716",
+          "canonical_sha256": "dec3847668804b2609b17fa76d40f0784be8d79a01416d74aeaea6b49fc2e4aa",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 2881,
+          "final_bpe_tokens": 996,
+          "p6_prompt_bpe_tokens": 1014,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step2_compact_zero",
+          "orig_val_cols": 4,
+          "orig_val_items": 40,
+          "n_tables_kept": 8,
+          "n_cols_kept": 71,
+          "n_val_cols_kept": 4,
+          "n_val_items_kept": 17,
+          "n_compacted_cols": 66
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/debit_card_specializing.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/debit_card_specializing.json",
+          "source_sha256": "0bba285579734dafee81036f4c170cdc64e2590d00d9370bcd11963b39f81811",
+          "sha256": "52bfab2df63081553573f166f2a4d9c4559742fb544fae189ce79d9a1cd37757",
+          "canonical_sha256": "243ccc5001aa9ef1f5ce3e65d2d56b415aae27d602891904cdd1e42a5c530681",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 937,
+          "final_bpe_tokens": 384,
+          "p6_prompt_bpe_tokens": 402,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 6,
+          "orig_val_items": 30,
+          "n_tables_kept": 5,
+          "n_cols_kept": 9,
+          "n_val_cols_kept": 6,
+          "n_val_items_kept": 20,
+          "n_compacted_cols": 3
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/european_football_2.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/european_football_2.json",
+          "source_sha256": "6b82dda1e23af08935866d05e5672859b19920715a0989dd9bf3bc48ab1373e2",
+          "sha256": "7cda733612e5f8ea9a9efd59ecb99f834102fe9c5b1289d9241fe50ec8e13729",
+          "canonical_sha256": "d7c08c1fce676e47ff63258923adcf764d7d70ba8fe050bc4efe5ddc24c823a7",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 8102,
+          "final_bpe_tokens": 2534,
+          "p6_prompt_bpe_tokens": 2552,
+          "truncated": true,
+          "k_val": 2,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 68,
+          "orig_val_items": 337,
+          "n_tables_kept": 7,
+          "n_cols_kept": 77,
+          "n_val_cols_kept": 68,
+          "n_val_items_kept": 126,
+          "n_compacted_cols": 9
+        },
+        "financial": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/financial.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/financial.json",
+          "source_sha256": "e83722f78456365e88b73802812c564f77bc84de46f6c48fc3cd7efae8c889bb",
+          "sha256": "88b73d5f90585b36b415bfaa84452cecd720ce06fe441725cc02a9c970fd80e9",
+          "canonical_sha256": "f301bd26b291a9155e95cc90b50627d8c2968a9f5d356174e41c86765070fe97",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2024,
+          "final_bpe_tokens": 814,
+          "p6_prompt_bpe_tokens": 832,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 12,
+          "orig_val_items": 66,
+          "n_tables_kept": 8,
+          "n_cols_kept": 36,
+          "n_val_cols_kept": 12,
+          "n_val_items_kept": 47,
+          "n_compacted_cols": 24
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/formula_1.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/formula_1.json",
+          "source_sha256": "a02931a6f625867f34dacaa6cd4e17eaa1698d08c983dce8bf1f5d216c926dd0",
+          "sha256": "0b478b19b945634e67f90b297c1081946cb9fb014cedcf05c9b0597bbbd24f42",
+          "canonical_sha256": "b44b369108c8e1431b2018caa828ec3314a285c222289e8c8e7e016b3c835e55",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3586,
+          "final_bpe_tokens": 1333,
+          "p6_prompt_bpe_tokens": 1351,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 17,
+          "orig_val_items": 207,
+          "n_tables_kept": 13,
+          "n_cols_kept": 69,
+          "n_val_cols_kept": 17,
+          "n_val_items_kept": 78,
+          "n_compacted_cols": 52
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/student_club.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/student_club.json",
+          "source_sha256": "f75e3cb97bda2ab074d1deb8b875045f9309cc825830ab4a09de28ca9268a661",
+          "sha256": "c8b7311f8d6f7391fff92fc9055c50c1bca86e72bfcdc3292e6cf6fd755dbd17",
+          "canonical_sha256": "25f80aa7ff2861a9d37a3226b25970602f8acd313232bdbe51987e85a905f710",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1326,
+          "final_bpe_tokens": 731,
+          "p6_prompt_bpe_tokens": 749,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 13,
+          "orig_val_items": 21,
+          "n_tables_kept": 8,
+          "n_cols_kept": 33,
+          "n_val_cols_kept": 13,
+          "n_val_items_kept": 21,
+          "n_compacted_cols": 20
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/superhero.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/superhero.json",
+          "source_sha256": "678b05029a95a42f285c2c866aa0b1cb2bdd41fb3252ae85a4977dce9f6ed64c",
+          "sha256": "dfaff0ab68f2f3d57fe85fe688ae3b9f629bebaa4c63fb65e677dfb2f477d6ed",
+          "canonical_sha256": "3cc37ed71ffd57fe9c0cea49244f249b59bbb3537a984d4bb7240667a44d1a9e",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1000,
+          "final_bpe_tokens": 549,
+          "p6_prompt_bpe_tokens": 567,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step2_compact_zero",
+          "orig_val_cols": 1,
+          "orig_val_items": 15,
+          "n_tables_kept": 10,
+          "n_cols_kept": 31,
+          "n_val_cols_kept": 1,
+          "n_val_items_kept": 5,
+          "n_compacted_cols": 24
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/thrombosis_prediction.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/thrombosis_prediction.json",
+          "source_sha256": "050fa4bab26c5acc906a1c037982d055aeab091af574ead0e49124375e56b680",
+          "sha256": "9e21ea5c4ce625a20fd89c7c3f868d23335cb43bba8407e1b56eb1cdb4186f17",
+          "canonical_sha256": "7cccdf36423557850e802b9bf056d7522062761bec2e1f851e7830bc23d567c8",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 2002,
+          "final_bpe_tokens": 874,
+          "p6_prompt_bpe_tokens": 892,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 12,
+          "orig_val_items": 43,
+          "n_tables_kept": 3,
+          "n_cols_kept": 54,
+          "n_val_cols_kept": 12,
+          "n_val_items_kept": 28,
+          "n_compacted_cols": 42
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_valfirst_silhouette/release_03/toxicology.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase5_accept_20261121/profiles/bird_minidev_dg_v3/eps_8/release_03/toxicology.json",
+          "source_sha256": "2766f6a95f0bce14dd8c800a28290569dbcb7a1c2c65edf8f213a0916f660d55",
+          "sha256": "68daeb3add6e24c6c33ff1f79acab671a384047c442bef4b32242fa4ed3835ee",
+          "canonical_sha256": "2a0ec85caf9ea20e569e44d84839e0c23463810cc03e10e3df703cc4d89c927a",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 497,
+          "final_bpe_tokens": 248,
+          "p6_prompt_bpe_tokens": 266,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 3,
+          "orig_val_items": 14,
+          "n_tables_kept": 4,
+          "n_cols_kept": 7,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 9,
+          "n_compacted_cols": 4
+        }
+      }
+    },
+    "tightbpe_valfirst_ind8_prof": {
+      "release_01": {
+        "california_schools": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/california_schools.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/california_schools.json",
+          "source_sha256": "2d70fd6d46f90ad6ea6f09f0f4c7b881e9c1c1e32f600783e11b46634508681b",
+          "sha256": "e0cf6830f16074d480ceb4c99ac5dfe43b549179755755d62abac2c03f46c4c4",
+          "canonical_sha256": "d0b712415b3d9b923abd1fbb0fbb39b03b68385977c581149d9ef2cdea75dfc9",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 4472,
+          "final_bpe_tokens": 1168,
+          "p6_prompt_bpe_tokens": 1186,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 45,
+          "orig_val_items": 380,
+          "n_tables_kept": 3,
+          "n_cols_kept": 45,
+          "n_val_cols_kept": 45,
+          "n_val_items_kept": 45,
+          "n_compacted_cols": 28
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/card_games.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/card_games.json",
+          "source_sha256": "40bc273c67f259f313c7754d1a63f9701f302510304498e9dda23d9c4b11340d",
+          "sha256": "c540c716498f937c54b8d310eb87b6d31d750a326117bb44accc9000b56b833c",
+          "canonical_sha256": "518dbf7aab005f21d3371a59252b76cfa844d6da46531ac8c7bb102cc074564d",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 6648,
+          "final_bpe_tokens": 1522,
+          "p6_prompt_bpe_tokens": 1540,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 59,
+          "orig_val_items": 416,
+          "n_tables_kept": 6,
+          "n_cols_kept": 59,
+          "n_val_cols_kept": 59,
+          "n_val_items_kept": 59,
+          "n_compacted_cols": 34
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/codebase_community.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/codebase_community.json",
+          "source_sha256": "05bc10cc1bddc84f360dad913dab6b713c939c8d2174b2be5f06e6d557ac749a",
+          "sha256": "21dc3af671a5e6b9c3f0b8486c56ddf8c308955b890e8233f88023a28d434963",
+          "canonical_sha256": "3aea7af641152fc336ab107a4272464b675c453981909721f9aa95d0356451be",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 3393,
+          "final_bpe_tokens": 1012,
+          "p6_prompt_bpe_tokens": 1030,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 19,
+          "orig_val_items": 163,
+          "n_tables_kept": 8,
+          "n_cols_kept": 26,
+          "n_val_cols_kept": 19,
+          "n_val_items_kept": 19,
+          "n_compacted_cols": 7
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/debit_card_specializing.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/debit_card_specializing.json",
+          "source_sha256": "60c3370dfca76a33a537062acfa2176d5407a2d718d74a3ec46ef8e23a88ba6c",
+          "sha256": "f6dbc95523f5531013c35eedf40905c49533ab47b18700bbffc0c2ee1491107a",
+          "canonical_sha256": "69d0ee3be4c51635660609ada42f99d86692eea9d224151ad55b9a7221d03d53",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 948,
+          "final_bpe_tokens": 375,
+          "p6_prompt_bpe_tokens": 393,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 7,
+          "orig_val_items": 46,
+          "n_tables_kept": 5,
+          "n_cols_kept": 7,
+          "n_val_cols_kept": 7,
+          "n_val_items_kept": 19,
+          "n_compacted_cols": 0
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/european_football_2.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/european_football_2.json",
+          "source_sha256": "2d81b30676f2a92a460c19a9b64e111363159440aff12e20ce993767b03c6d09",
+          "sha256": "61623387d9d74768c2f592daf5adfe886820f8dab9cc9689016e5b6c1cedf616",
+          "canonical_sha256": "4f9de96a0be161223cf225d25a9cbc6582309cde3497f38fc4b93e5e495608b7",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 13187,
+          "final_bpe_tokens": 2538,
+          "p6_prompt_bpe_tokens": 2556,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 118,
+          "orig_val_items": 1068,
+          "n_tables_kept": 7,
+          "n_cols_kept": 118,
+          "n_val_cols_kept": 118,
+          "n_val_items_kept": 118,
+          "n_compacted_cols": 85
+        },
+        "financial": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/financial.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/financial.json",
+          "source_sha256": "8f8a157b428c40091dd0237225b3ee1ab2b11c88a4da1b5afd291ad5d4c825ca",
+          "sha256": "51636a4672bc46509676b32f8f354ff9de840186ec6d3836a0cbc75fb904fc47",
+          "canonical_sha256": "1cdc60e4c906fb7d01b2db7bec95cbbfc57e3566b0aa710c5a2241552d5197bb",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2875,
+          "final_bpe_tokens": 820,
+          "p6_prompt_bpe_tokens": 838,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 24,
+          "orig_val_items": 223,
+          "n_tables_kept": 8,
+          "n_cols_kept": 24,
+          "n_val_cols_kept": 24,
+          "n_val_items_kept": 24,
+          "n_compacted_cols": 6
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/formula_1.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/formula_1.json",
+          "source_sha256": "133ad5c2218be162ec96e4555920f30604537d57ffc707aae365d72cdaf58901",
+          "sha256": "35452459c7abec3cbe04f5957597d47b976c6e2300e3eeb9eabe8730934324a4",
+          "canonical_sha256": "d8969d27ab59a3bff6940a541ed181f4449a86a8d30c08e4655785d567e41044",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3911,
+          "final_bpe_tokens": 1339,
+          "p6_prompt_bpe_tokens": 1357,
+          "truncated": true,
+          "k_val": 2,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 31,
+          "orig_val_items": 352,
+          "n_tables_kept": 13,
+          "n_cols_kept": 39,
+          "n_val_cols_kept": 31,
+          "n_val_items_kept": 58,
+          "n_compacted_cols": 8
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/student_club.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/student_club.json",
+          "source_sha256": "95fea8a58db435405506d6861ebbf51ba40287d3e420a3684793776221a51da0",
+          "sha256": "834dc8886f628a60a24e7bfe5507e9475c5815c0d1df66f6f853645935671fe8",
+          "canonical_sha256": "27ec6466b8eb8d09098c7ea915661b62fc00676b6a7f697773824a418b1c6c98",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1409,
+          "final_bpe_tokens": 730,
+          "p6_prompt_bpe_tokens": 748,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 14,
+          "orig_val_items": 38,
+          "n_tables_kept": 8,
+          "n_cols_kept": 21,
+          "n_val_cols_kept": 14,
+          "n_val_items_kept": 32,
+          "n_compacted_cols": 7
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/superhero.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/superhero.json",
+          "source_sha256": "ebd0e492f0d6ed0545d1c6da9e2a1a9777d71abb5066ff254e15c4c4f0562237",
+          "sha256": "ffd388126b05b9fc6e8004759c07851d8a7d8c08227833804b445a30c272564b",
+          "canonical_sha256": "ad77aa863d4c6778bde7f32b8f693cceed9ad3d4c8a1759f1cd3669bf621e3a5",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1105,
+          "final_bpe_tokens": 548,
+          "p6_prompt_bpe_tokens": 566,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 3,
+          "orig_val_items": 45,
+          "n_tables_kept": 10,
+          "n_cols_kept": 28,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 15,
+          "n_compacted_cols": 25
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/thrombosis_prediction.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/thrombosis_prediction.json",
+          "source_sha256": "5fb5164848e2fe6ecc4418ca067be3c3a9cacc10f23134743d8579f980880d34",
+          "sha256": "1ee8b9c8429fbac2552a1c335ba1986de8abdb425e2f05987b0c455766bcdde5",
+          "canonical_sha256": "d1285792be2d673fb01f828a3fdfe041eae8a7b88cdf942f0ab1b63665464f8f",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 3704,
+          "final_bpe_tokens": 859,
+          "p6_prompt_bpe_tokens": 877,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 40,
+          "orig_val_items": 406,
+          "n_tables_kept": 3,
+          "n_cols_kept": 40,
+          "n_val_cols_kept": 40,
+          "n_val_items_kept": 40,
+          "n_compacted_cols": 29
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_01/toxicology.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_01/toxicology.json",
+          "source_sha256": "1a7e22397a44d6ad341ea6e39c4fabd1b4da7a4b09b219c010f4d1926d649eb0",
+          "sha256": "afe9ad21fffe8577c0da201ce3e0ee9f478047fc5e9cd3c661089a3aadef7b28",
+          "canonical_sha256": "c353a87b9947a35444828ac93e7473191f712e1f2c15b33611e2a4bcea1c0ce4",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 431,
+          "final_bpe_tokens": 244,
+          "p6_prompt_bpe_tokens": 262,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 3,
+          "orig_val_items": 14,
+          "n_tables_kept": 4,
+          "n_cols_kept": 6,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 9,
+          "n_compacted_cols": 3
+        }
+      },
+      "release_02": {
+        "california_schools": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/california_schools.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/california_schools.json",
+          "source_sha256": "6bcfa7d036a69c52690500ac8403619ca9b1e2ca923315c17399ef306c64d100",
+          "sha256": "eef3f5ff358c5c18da182cdddbdf545e0a1d70a4dd0ca061f1761f1f2f746c93",
+          "canonical_sha256": "a658e0a79083e1a4fb030004eea5d93dc324ad5a21609307d0691505e374e0b5",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 4513,
+          "final_bpe_tokens": 1168,
+          "p6_prompt_bpe_tokens": 1186,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 45,
+          "orig_val_items": 378,
+          "n_tables_kept": 3,
+          "n_cols_kept": 45,
+          "n_val_cols_kept": 45,
+          "n_val_items_kept": 45,
+          "n_compacted_cols": 28
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/card_games.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/card_games.json",
+          "source_sha256": "2f3a04abcfdbef0426ce94ee26cd954dd64dd021b9d9e86f53f0a02bbd2e9fb4",
+          "sha256": "8c902de0b2b6fecb82c7674b69c220d44a9c2c42f8f1d3d5595716568d615bc6",
+          "canonical_sha256": "f91cb40c018341309d5fd29025a92511c358fe7f509ce7ef178a66e06e991912",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 6266,
+          "final_bpe_tokens": 1519,
+          "p6_prompt_bpe_tokens": 1537,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 58,
+          "orig_val_items": 399,
+          "n_tables_kept": 6,
+          "n_cols_kept": 58,
+          "n_val_cols_kept": 58,
+          "n_val_items_kept": 58,
+          "n_compacted_cols": 32
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/codebase_community.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/codebase_community.json",
+          "source_sha256": "a81386b1e713a83e889a94899f5761e6e9a9f20c65b36b22411f416f9d25ae6a",
+          "sha256": "792c73f87d66a5744fd0d660a7bb65fd33b67408305db011f1208896eb1d1691",
+          "canonical_sha256": "4e175fd5d492a1fbc964f17f8aa310d8f33abb3c3e3b04b917af5bfb4d1be199",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 3682,
+          "final_bpe_tokens": 992,
+          "p6_prompt_bpe_tokens": 1010,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 20,
+          "orig_val_items": 167,
+          "n_tables_kept": 8,
+          "n_cols_kept": 20,
+          "n_val_cols_kept": 20,
+          "n_val_items_kept": 20,
+          "n_compacted_cols": 1
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/debit_card_specializing.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/debit_card_specializing.json",
+          "source_sha256": "cb84df5951d6a58144989175ae73009dd42700b2df364b7312f41d7b8f153905",
+          "sha256": "b75e513628d4b0bc5cb31a7b54928a1ead0ad7fa5b93251f52f16d78f7e12426",
+          "canonical_sha256": "7555c29f2f4ada2f7706c7ded70d0ee31350c0a4dc7f2adabbdf146daca16200",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 941,
+          "final_bpe_tokens": 378,
+          "p6_prompt_bpe_tokens": 396,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 7,
+          "orig_val_items": 45,
+          "n_tables_kept": 5,
+          "n_cols_kept": 7,
+          "n_val_cols_kept": 7,
+          "n_val_items_kept": 19,
+          "n_compacted_cols": 0
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/european_football_2.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/european_football_2.json",
+          "source_sha256": "6d6018ba970d087f05da3a2d50f60a800e70b5edab38ba3cbf2eb86802eebde8",
+          "sha256": "0ac311cb7210ad956b52683d4a9e36ece89204ee7800c2ea3aea253bfa72766a",
+          "canonical_sha256": "33caa6ec8da8bf8febc097a09c8da37ae69142143f6b722c07e7ffa8d6ed71d8",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 12881,
+          "final_bpe_tokens": 2530,
+          "p6_prompt_bpe_tokens": 2548,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 118,
+          "orig_val_items": 1052,
+          "n_tables_kept": 7,
+          "n_cols_kept": 118,
+          "n_val_cols_kept": 118,
+          "n_val_items_kept": 118,
+          "n_compacted_cols": 85
+        },
+        "financial": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/financial.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/financial.json",
+          "source_sha256": "050882de84684a05e3ca62e8387dd7bcd94ae432362c861ec67f67189ce4f336",
+          "sha256": "ba5ed15bd3e10f86484fe052e3cfb4b475054a3e5835eda46d7e68bdbd46dd38",
+          "canonical_sha256": "4b9002a5d257bd8324365e59c49ca2f88e6f124da168855778845caf8acc1ab6",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2961,
+          "final_bpe_tokens": 816,
+          "p6_prompt_bpe_tokens": 834,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 26,
+          "orig_val_items": 227,
+          "n_tables_kept": 8,
+          "n_cols_kept": 26,
+          "n_val_cols_kept": 26,
+          "n_val_items_kept": 26,
+          "n_compacted_cols": 9
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/formula_1.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/formula_1.json",
+          "source_sha256": "dffacbac6fbd0e4badca25a5e7ee6d200c6e843444aaba5b5b4daa0fd6cd30d9",
+          "sha256": "2a160d3aa3fd4cd9bc2ab22f68dd6b841037625c9ce9bde2e68d9bddfb6202c2",
+          "canonical_sha256": "9ff111c4e9c66375ca6670519849b1b2831f060caa598776bf54e8264881935a",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3865,
+          "final_bpe_tokens": 1332,
+          "p6_prompt_bpe_tokens": 1350,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 30,
+          "orig_val_items": 346,
+          "n_tables_kept": 13,
+          "n_cols_kept": 35,
+          "n_val_cols_kept": 30,
+          "n_val_items_kept": 82,
+          "n_compacted_cols": 5
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/student_club.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/student_club.json",
+          "source_sha256": "0ff06c722941d5650bcb496d9639a196b70bbbff62dfa7622537f04976857df7",
+          "sha256": "89dd1532508713d77722bddcc8b8a6a34bcf1f659ce2bc59445d017e9c59aeba",
+          "canonical_sha256": "428676d53ac38d3dab0bde56c2c29295d7d7223923f94a25740fb1474be912e3",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1376,
+          "final_bpe_tokens": 730,
+          "p6_prompt_bpe_tokens": 748,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 13,
+          "orig_val_items": 33,
+          "n_tables_kept": 8,
+          "n_cols_kept": 23,
+          "n_val_cols_kept": 13,
+          "n_val_items_kept": 29,
+          "n_compacted_cols": 10
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/superhero.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/superhero.json",
+          "source_sha256": "3d08f9b1571028e2df5d0c5d76b8f3c31f09849bf64114bf1733d5b638762853",
+          "sha256": "ac12311a233a37a6edbb225fb4d1a692b762211e47dcb46bc89ca726d40f40e7",
+          "canonical_sha256": "b44cdce4e1f2dbe8a5d3b388e7075717f405c2e638d7c424577d058bc495c9df",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1108,
+          "final_bpe_tokens": 549,
+          "p6_prompt_bpe_tokens": 567,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 3,
+          "orig_val_items": 45,
+          "n_tables_kept": 10,
+          "n_cols_kept": 28,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 15,
+          "n_compacted_cols": 25
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/thrombosis_prediction.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/thrombosis_prediction.json",
+          "source_sha256": "1f2693959f0921455cc9ccf3d96df13d598b3331984919e35fecfa101d48e8a3",
+          "sha256": "552ee938a0fc12ef9eecd1a61e393f0641be5a88febe6be113972b672a45cd95",
+          "canonical_sha256": "93e3dd79f4cd53ac4f19cf82efe5841c1545cc42da8b7dcaa5cfa6c4d9207f16",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 3497,
+          "final_bpe_tokens": 876,
+          "p6_prompt_bpe_tokens": 894,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 40,
+          "orig_val_items": 385,
+          "n_tables_kept": 3,
+          "n_cols_kept": 40,
+          "n_val_cols_kept": 40,
+          "n_val_items_kept": 40,
+          "n_compacted_cols": 28
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_02/toxicology.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_02/toxicology.json",
+          "source_sha256": "a0feda0d3a16c8a035982e902f1cddddee21c118203c0dca4a0ae96e9a591e85",
+          "sha256": "95c3fc2d64c65f01023525c471dcf1fbefb989526c2dbaf733255c8dc667748b",
+          "canonical_sha256": "136a2d09e89641c2203fb18a81bcdf37b20f4c41be3763e4681c7dc0ab264856",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 427,
+          "final_bpe_tokens": 253,
+          "p6_prompt_bpe_tokens": 271,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 3,
+          "orig_val_items": 14,
+          "n_tables_kept": 4,
+          "n_cols_kept": 7,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 9,
+          "n_compacted_cols": 4
+        }
+      },
+      "release_03": {
+        "california_schools": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/california_schools.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/california_schools.json",
+          "source_sha256": "1bd0c2385f17d31e26a16fad60b5294c353b048541dec0c91119764d4dbe1cd4",
+          "sha256": "837e621426dc209596a73de45c6504fa521ed049084cde623588944db9090c86",
+          "canonical_sha256": "d51ba9e6bd585df2fc34a4df920e3c01cd390f9a57a1df700d1d2ee33caa9ff3",
+          "cap_tokens": 1198,
+          "orig_bpe_tokens": 4495,
+          "final_bpe_tokens": 1171,
+          "p6_prompt_bpe_tokens": 1189,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 45,
+          "orig_val_items": 374,
+          "n_tables_kept": 3,
+          "n_cols_kept": 45,
+          "n_val_cols_kept": 45,
+          "n_val_items_kept": 45,
+          "n_compacted_cols": 28
+        },
+        "card_games": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/card_games.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/card_games.json",
+          "source_sha256": "fe26d40cd8703930454d8407dee742feb72d2245658c7d27b6ced3a837ccdd1b",
+          "sha256": "a782d01744e48d8936905b4d57b0a4e44e09cbcae7366e0e0b07e920b7fda872",
+          "canonical_sha256": "0bb9986ad2590210c18413678df8253d93e6bd739f33a9e4220970db45e60cb4",
+          "cap_tokens": 1540,
+          "orig_bpe_tokens": 6617,
+          "final_bpe_tokens": 1510,
+          "p6_prompt_bpe_tokens": 1528,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 59,
+          "orig_val_items": 410,
+          "n_tables_kept": 6,
+          "n_cols_kept": 59,
+          "n_val_cols_kept": 59,
+          "n_val_items_kept": 59,
+          "n_compacted_cols": 34
+        },
+        "codebase_community": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/codebase_community.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/codebase_community.json",
+          "source_sha256": "22e6e479af799927e7bcd1d49c0c3d4b2244067613d39109231103a3f71e4ba9",
+          "sha256": "8cecb63ab8582721f723105e9d0df293f43d3842a6f8f6a9046e9a53e6f5b4e2",
+          "canonical_sha256": "1bd146e6f3ab7c86f34235432182a8f34a8d34b3d570e206b63259591e9e0fb2",
+          "cap_tokens": 1032,
+          "orig_bpe_tokens": 3602,
+          "final_bpe_tokens": 1007,
+          "p6_prompt_bpe_tokens": 1025,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 19,
+          "orig_val_items": 176,
+          "n_tables_kept": 8,
+          "n_cols_kept": 25,
+          "n_val_cols_kept": 19,
+          "n_val_items_kept": 19,
+          "n_compacted_cols": 6
+        },
+        "debit_card_specializing": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/debit_card_specializing.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/debit_card_specializing.json",
+          "source_sha256": "62668a79325c35d060f867b14d80cf9735704c3023219b5eedb09f4931bdeb11",
+          "sha256": "73bee4d8ebf06b1b9f2abec63df86ab789e7293ed89aab255bca90d4278a4ff9",
+          "canonical_sha256": "3b595f5d86085354548b3b5577fa56eb165acbb1f63e9d184fb8a5e890d25613",
+          "cap_tokens": 402,
+          "orig_bpe_tokens": 941,
+          "final_bpe_tokens": 377,
+          "p6_prompt_bpe_tokens": 395,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 7,
+          "orig_val_items": 45,
+          "n_tables_kept": 5,
+          "n_cols_kept": 7,
+          "n_val_cols_kept": 7,
+          "n_val_items_kept": 19,
+          "n_compacted_cols": 0
+        },
+        "european_football_2": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/european_football_2.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/european_football_2.json",
+          "source_sha256": "280ebb82566abc9633a4daa278d8a7f96cecb4e55a0b09b03feea808f6a54b1c",
+          "sha256": "6cba07aed85edcc5908f118185f04694628870cb2aa7a4d01e7074af717de90d",
+          "canonical_sha256": "f7a4e013f41cc41d5775781c5eb55ba46d81ff9fb97a8d1e7ffe4a477dda8476",
+          "cap_tokens": 2558,
+          "orig_bpe_tokens": 13035,
+          "final_bpe_tokens": 2533,
+          "p6_prompt_bpe_tokens": 2551,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 118,
+          "orig_val_items": 1069,
+          "n_tables_kept": 7,
+          "n_cols_kept": 118,
+          "n_val_cols_kept": 118,
+          "n_val_items_kept": 118,
+          "n_compacted_cols": 85
+        },
+        "financial": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/financial.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/financial.json",
+          "source_sha256": "3f0dc45bb9368cd9e311b99dd0990e1a401083d2053642c4062c2739b70ca745",
+          "sha256": "647881d8ac876f6ce872353b60f939fd6d900812c2c7cfc3f027b95dc94023dd",
+          "canonical_sha256": "7902f15bed320fd744e1f20d6b371c8caefa6c93b14d252e03192f66d011132c",
+          "cap_tokens": 840,
+          "orig_bpe_tokens": 2891,
+          "final_bpe_tokens": 789,
+          "p6_prompt_bpe_tokens": 807,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 25,
+          "orig_val_items": 220,
+          "n_tables_kept": 8,
+          "n_cols_kept": 25,
+          "n_val_cols_kept": 25,
+          "n_val_items_kept": 25,
+          "n_compacted_cols": 9
+        },
+        "formula_1": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/formula_1.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/formula_1.json",
+          "source_sha256": "73d85c998987c1dbf5871a3b79dd78e073849ca7a7ed88240d95585851984adc",
+          "sha256": "dafe24e2291e973f236b3f109c3bce1d417b84da21db35b7785d8d13a4786b75",
+          "canonical_sha256": "7492949b87f45f281150339d9e2d18cca3d2b346577d794c48cb464b82e34647",
+          "cap_tokens": 1358,
+          "orig_bpe_tokens": 3949,
+          "final_bpe_tokens": 1336,
+          "p6_prompt_bpe_tokens": 1354,
+          "truncated": true,
+          "k_val": 3,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 30,
+          "orig_val_items": 352,
+          "n_tables_kept": 13,
+          "n_cols_kept": 31,
+          "n_val_cols_kept": 30,
+          "n_val_items_kept": 82,
+          "n_compacted_cols": 1
+        },
+        "student_club": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/student_club.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/student_club.json",
+          "source_sha256": "294783834b716eea4dd5aab4ac7f08d80e35d2cf81957929233243b32042e862",
+          "sha256": "6da263a0272130db0461cba53dad7fb5582f5c1e4396dea34ab666371f0c945e",
+          "canonical_sha256": "bee1da2b57e19a45ab02810d31581948158d5fc6ec0d976b5035d1abb22062e3",
+          "cap_tokens": 756,
+          "orig_bpe_tokens": 1437,
+          "final_bpe_tokens": 737,
+          "p6_prompt_bpe_tokens": 755,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 14,
+          "orig_val_items": 40,
+          "n_tables_kept": 8,
+          "n_cols_kept": 20,
+          "n_val_cols_kept": 14,
+          "n_val_items_kept": 33,
+          "n_compacted_cols": 6
+        },
+        "superhero": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/superhero.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/superhero.json",
+          "source_sha256": "11b4535a1846875dcbde49287fea5de4f79a002565211de229d22ec0d9a82ef4",
+          "sha256": "8ee25fcdf0f710640755a89a852bb71956da0c6fa3cbdea19ac06d0406789b36",
+          "canonical_sha256": "1e187b9a64e030ca1fb617e7a1fa79e4aee9d0a54a1e69388fa8c2ea0cb45d97",
+          "cap_tokens": 572,
+          "orig_bpe_tokens": 1108,
+          "final_bpe_tokens": 546,
+          "p6_prompt_bpe_tokens": 564,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3a_drop_zero_nonkey",
+          "orig_val_cols": 3,
+          "orig_val_items": 45,
+          "n_tables_kept": 10,
+          "n_cols_kept": 28,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 15,
+          "n_compacted_cols": 25
+        },
+        "thrombosis_prediction": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/thrombosis_prediction.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/thrombosis_prediction.json",
+          "source_sha256": "c638df35ca2f532975033b4bec292ad43e47fbbaf585df361d2ea78726091739",
+          "sha256": "d01ce85fc19c051c6c75a15f60fab1523fa00b58c943d3481648596d1193e54e",
+          "canonical_sha256": "fe675640ffc2d9c0a4560b500989ffeaa35fbf596057c9aa81b1fb507ad7b53b",
+          "cap_tokens": 898,
+          "orig_bpe_tokens": 3496,
+          "final_bpe_tokens": 859,
+          "p6_prompt_bpe_tokens": 877,
+          "truncated": true,
+          "k_val": 1,
+          "trunc_stage": "step3c_compact_valcols",
+          "orig_val_cols": 39,
+          "orig_val_items": 380,
+          "n_tables_kept": 3,
+          "n_cols_kept": 39,
+          "n_val_cols_kept": 39,
+          "n_val_items_kept": 39,
+          "n_compacted_cols": 28
+        },
+        "toxicology": {
+          "path": "profiles/tightbpe_valfirst_ind8_prof/release_03/toxicology.json",
+          "source_path": "/data/gzl/project/privacy_collab_v6_workflows_20261105/phase7_accept_20261122/profiles/ind8_profile/release_03/toxicology.json",
+          "source_sha256": "e706a2e9a7f78526753ba20b02c5343370a479d7085a4f29cea6c7a5ae5b9731",
+          "sha256": "87aa5bba06c9fd6d1b9dace35b99ba9349e244c1d71cc63cdeeb6435a29922da",
+          "canonical_sha256": "cb5a423e7cea5a464f6c493f6fc57d464fcd75bd467ac2bfb729df1bd6f4c28a",
+          "cap_tokens": 272,
+          "orig_bpe_tokens": 411,
+          "final_bpe_tokens": 244,
+          "p6_prompt_bpe_tokens": 262,
+          "truncated": true,
+          "k_val": 5,
+          "trunc_stage": "step3b_drop_zero_all",
+          "orig_val_cols": 3,
+          "orig_val_items": 14,
+          "n_tables_kept": 4,
+          "n_cols_kept": 6,
+          "n_val_cols_kept": 3,
+          "n_val_items_kept": 9,
+          "n_compacted_cols": 3
+        }
+      }
+    }
+  },
+  "dg8_noval_post_r23": {
+    "release_02": {
+      "california_schools": {
+        "path": "profiles/bird_dg8_noval_post/release_02/california_schools.json",
+        "sha256": "a951f24da32819bf1253a377a39960cac95da4593f62274e1cd72e06b2fc5ce5",
+        "canonical_sha256": "3e63f04afa9cfe52db5f80016ef96168e9dd3e3818caec7c6dba4df26e40c56e"
+      },
+      "card_games": {
+        "path": "profiles/bird_dg8_noval_post/release_02/card_games.json",
+        "sha256": "b0df37d9e5b977ece196801fda71f3024a7a50af0bf67fbb29c30007f554f8c8",
+        "canonical_sha256": "a167cce1dcccba5bb0f1d184944e54c985c1828024d34e502a02dd620874d823"
+      },
+      "codebase_community": {
+        "path": "profiles/bird_dg8_noval_post/release_02/codebase_community.json",
+        "sha256": "7c64f6439957ec21ad76b03fa9041622aa9190b3b9cb88bc0b0a25aeb66469c6",
+        "canonical_sha256": "1989cde499f0516ecb70bbf2aa5b3983699b36c7844a5cedd3837ddb7a3a7ac5"
+      },
+      "debit_card_specializing": {
+        "path": "profiles/bird_dg8_noval_post/release_02/debit_card_specializing.json",
+        "sha256": "a26b5b1a23307aeb07e30a2cb2cb54438ae1ca1ec6a7c72e5bdc40e2180b73e3",
+        "canonical_sha256": "2808716dda738b3ba19b47986af924daf6b3bf6c2d4c450c2eb5142452129191"
+      },
+      "european_football_2": {
+        "path": "profiles/bird_dg8_noval_post/release_02/european_football_2.json",
+        "sha256": "d21e3367c06f58632bda8bc0c4a5aefd6869d75c1e58a0d1ca55cf26044e4463",
+        "canonical_sha256": "efda2045f86a2d243a2a682ca67b863e614cd552593d9e9b573a86bbeec5daa0"
+      },
+      "financial": {
+        "path": "profiles/bird_dg8_noval_post/release_02/financial.json",
+        "sha256": "e8ef6b77f29197b6e46b11ade7f44c5b13727d935cc62ddbacfd95021b82f51f",
+        "canonical_sha256": "c8167616155317117ef5f360e0fecea55095cc855298ba85deb1001f93b90f08"
+      },
+      "formula_1": {
+        "path": "profiles/bird_dg8_noval_post/release_02/formula_1.json",
+        "sha256": "83549230180c73cf6a4256315e3a85a1d332f17255e734d27b8bbc57770b8791",
+        "canonical_sha256": "8b7898155ca018beaec1c36d038678b282a603b10f617ead96147724bff9aa24"
+      },
+      "student_club": {
+        "path": "profiles/bird_dg8_noval_post/release_02/student_club.json",
+        "sha256": "364cf81a0ef91d7f900d723475d56c70e2498e32be2d78296dec794a5bbe369f",
+        "canonical_sha256": "b84b9d59bad7afb8949b21ac441833fbab37f878a354a02fce6862c8b77fb606"
+      },
+      "superhero": {
+        "path": "profiles/bird_dg8_noval_post/release_02/superhero.json",
+        "sha256": "3365ac4bba8b355988b9065aa401021ade3ce8f59f98623aa70d84f31dd4839b",
+        "canonical_sha256": "5a8d0ca7da1bc9067d136b83f817eba56777408665d30815c2ff33f0abe5f6dd"
+      },
+      "thrombosis_prediction": {
+        "path": "profiles/bird_dg8_noval_post/release_02/thrombosis_prediction.json",
+        "sha256": "ee49405a7b7ea24ff412ac32836ed62fe65e2bbbdde2ef57789226ff8dcd5061",
+        "canonical_sha256": "47c5f51b922f8985c4898e4266511d04921a382c061545a3ac40951528e22a21"
+      },
+      "toxicology": {
+        "path": "profiles/bird_dg8_noval_post/release_02/toxicology.json",
+        "sha256": "57c8876d934008a30e07646a052641eaa55acd23b4a72057cde06ba6edac3b43",
+        "canonical_sha256": "c55c71158f25b239bed02574e80fe1fbfc958b3c32cf55634d35907e797c8def"
+      }
+    },
+    "release_03": {
+      "california_schools": {
+        "path": "profiles/bird_dg8_noval_post/release_03/california_schools.json",
+        "sha256": "25d3416ed86b7d984a06be2710bfa6027ec54ab79843437e9ac62e7374e29689",
+        "canonical_sha256": "34099030940cb55c39ee98446dee0218c03f83c0b8340be44a3402901a24a7ce"
+      },
+      "card_games": {
+        "path": "profiles/bird_dg8_noval_post/release_03/card_games.json",
+        "sha256": "4f6a2be6d2016982a21323b03031752961aea3c652be49c367f4bae62ff0e68b",
+        "canonical_sha256": "d05051c1a50eefa45991669a4cede5ab873b2672f9d16c004df4df85289dd80a"
+      },
+      "codebase_community": {
+        "path": "profiles/bird_dg8_noval_post/release_03/codebase_community.json",
+        "sha256": "bce9d64dad8529f353a1de9db11411fec373345f9ee72fc176150ee1d3337214",
+        "canonical_sha256": "d3515aadb0124734cc14a15e145fafce939a0dbda27bff673b3f6d8da1712e02"
+      },
+      "debit_card_specializing": {
+        "path": "profiles/bird_dg8_noval_post/release_03/debit_card_specializing.json",
+        "sha256": "4d610182dc302c9ca8c6d9a0e50947f8702af9a7b66441d311b9391932f5a9d8",
+        "canonical_sha256": "31b518ee383d26467f3f591be223ada932741c87eac8031b0ace39ec37fdfb43"
+      },
+      "european_football_2": {
+        "path": "profiles/bird_dg8_noval_post/release_03/european_football_2.json",
+        "sha256": "f354da5dd557a73fb82058f2bd79c65ff552238ddc836da984d31de0b9f95b4f",
+        "canonical_sha256": "94e8dbc465921178553f254980ac5246ae57213edb1b39a0c5279e83c01c8260"
+      },
+      "financial": {
+        "path": "profiles/bird_dg8_noval_post/release_03/financial.json",
+        "sha256": "382c20e04cd8d0d6ea49c75e8513233b305560fa23f167c3ea74e4d9e409e416",
+        "canonical_sha256": "5869c8310539d92f779330a9118649c81cd5f9cf124989799216f15531bfbb70"
+      },
+      "formula_1": {
+        "path": "profiles/bird_dg8_noval_post/release_03/formula_1.json",
+        "sha256": "6dd78c3d90d37e70658bc31757b562e5c03c747f93955aa170f0f4b38e558e9b",
+        "canonical_sha256": "da698c405db835ec12641c0f8873b8f76be08c2182ae28367916bc15cfea8d98"
+      },
+      "student_club": {
+        "path": "profiles/bird_dg8_noval_post/release_03/student_club.json",
+        "sha256": "63f91af50304449632cc2bbdb37cce850244cfc0d6096111588bb121608711db",
+        "canonical_sha256": "34492bd31723159b2711f68e4014513cae15cc8aa0e006a475d0323fca295c1b"
+      },
+      "superhero": {
+        "path": "profiles/bird_dg8_noval_post/release_03/superhero.json",
+        "sha256": "d494a5c35bc8e4a7d0fcd30fc64445f439d0dd2ecdb5be0ce6f2554595d7ce15",
+        "canonical_sha256": "4fe31141df86ab40a4700f90b478bba15669fa495897ae33718a3d2c7f972035"
+      },
+      "thrombosis_prediction": {
+        "path": "profiles/bird_dg8_noval_post/release_03/thrombosis_prediction.json",
+        "sha256": "447173d2445d1bed55772607153cc0573d76c3bb4bd8cd4c53fc62f5beaf77ae",
+        "canonical_sha256": "abe275c1a5b83d9e2383500c5ce98092791f9d33ddbd14455f39aa25e1d56a91"
+      },
+      "toxicology": {
+        "path": "profiles/bird_dg8_noval_post/release_03/toxicology.json",
+        "sha256": "312351e8b6919d342e626f3221d79690b9d2424f0169881fc4bafb5cab372843",
+        "canonical_sha256": "4f233da50a9521e3b88bcb0d65fbc65daec714e4256def3cb5602ba967475a10"
+      }
+    }
+  },
+  "dg8_noval_post": {
+    "release_01": {
+      "california_schools": {
+        "path": "profiles/bird_dg8_noval_post/release_01/california_schools.json",
+        "sha256": "783903a7a86017fc83ef4a72e6922107ec688ebc2a1675140848de32349348c3",
+        "canonical_sha256": "c7a14021e11f74c2103a881872245764ab774524c87077383c2c4c290e5ba8f8"
+      },
+      "card_games": {
+        "path": "profiles/bird_dg8_noval_post/release_01/card_games.json",
+        "sha256": "e57b45dbc843be9c2653e4387892e476236e3a3ad65693ce531231e6f07f0289",
+        "canonical_sha256": "0cfe976b6470abcd5cc227d2fb28c922d299ba831db7660df81e2a36f67b2994"
+      },
+      "codebase_community": {
+        "path": "profiles/bird_dg8_noval_post/release_01/codebase_community.json",
+        "sha256": "5f629af7ebf913b491e5f69c41ef7f6cea4383dc9e4800cf8779285c51f9a20c",
+        "canonical_sha256": "39417ffaaaad849fff950c1fdb917ac962b9101636fbdd36ddff95d6b52fe480"
+      },
+      "debit_card_specializing": {
+        "path": "profiles/bird_dg8_noval_post/release_01/debit_card_specializing.json",
+        "sha256": "3a44af4bb1e4dc0df788f764f30ed71491e6117c54b07c2a1b5a075bfe0982c9",
+        "canonical_sha256": "bf1e83c2c55c7e8669bff4af742a458d8e06faf66cba9f175b251105da9cb84c"
+      },
+      "european_football_2": {
+        "path": "profiles/bird_dg8_noval_post/release_01/european_football_2.json",
+        "sha256": "e8ef37ba1a46a28529b1a3348aa1842438c0e9d6f9830717e2b760c2862a3cdf",
+        "canonical_sha256": "dce1d5c0e0b96b17b08bebf35b957e62b96ebafac00cf5d14c3a8c0df5c6d9f0"
+      },
+      "financial": {
+        "path": "profiles/bird_dg8_noval_post/release_01/financial.json",
+        "sha256": "64107cf04fc8a7cc85accdafae8515416c36be5b8448459e12712c0de55a13bf",
+        "canonical_sha256": "9e414d6a318a4b60bf40ee8bb715007d9f9a31b3d9bd4629f087a28ae0eb52df"
+      },
+      "formula_1": {
+        "path": "profiles/bird_dg8_noval_post/release_01/formula_1.json",
+        "sha256": "257a369cbae2528fa163823c431f775b7e6c6d7826655f44158b3f5c6b9d1c7a",
+        "canonical_sha256": "f5b0f3dfde1a85796b410397616d9b9a72d6c7fe94c5a3e2a39a89eb57ddd1aa"
+      },
+      "student_club": {
+        "path": "profiles/bird_dg8_noval_post/release_01/student_club.json",
+        "sha256": "1a5272e69148f6115bb10e0f8ce78ac8773f12dd59f03de377362b20180fffbe",
+        "canonical_sha256": "36e097350c42718f8815ac899a1010d7bcb9a6f2743112aaeaf55c8f3ede3826"
+      },
+      "superhero": {
+        "path": "profiles/bird_dg8_noval_post/release_01/superhero.json",
+        "sha256": "238fa8a6cf26b1eab5d596004b73de16761007aeae681dbe0f751ceed686afc9",
+        "canonical_sha256": "af4e03269c2278ae009155c91c4c60971bff3330b441df648f71fd4fe8e0ab24"
+      },
+      "thrombosis_prediction": {
+        "path": "profiles/bird_dg8_noval_post/release_01/thrombosis_prediction.json",
+        "sha256": "00f2933ebe0cd0384303f589008544dba7b1bb10d2eea960798a1a239f31cb9a",
+        "canonical_sha256": "a673b230b9f990681951ef2001b5680f18697e8259e18472c2e8363f6564d440"
+      },
+      "toxicology": {
+        "path": "profiles/bird_dg8_noval_post/release_01/toxicology.json",
+        "sha256": "dc6c79dea1a14d066d316fb0946d15ddaca45746d9db4bbdb47940b6cce6b3ac",
+        "canonical_sha256": "5863fe8897921068b6155da665d1341ad6a18b9ca6362ebc93dc51e9bb29e053"
+      }
+    },
+    "release_02": {
+      "california_schools": {
+        "path": "profiles/bird_dg8_noval_post/release_02/california_schools.json",
+        "sha256": "a951f24da32819bf1253a377a39960cac95da4593f62274e1cd72e06b2fc5ce5",
+        "canonical_sha256": "3e63f04afa9cfe52db5f80016ef96168e9dd3e3818caec7c6dba4df26e40c56e"
+      },
+      "card_games": {
+        "path": "profiles/bird_dg8_noval_post/release_02/card_games.json",
+        "sha256": "b0df37d9e5b977ece196801fda71f3024a7a50af0bf67fbb29c30007f554f8c8",
+        "canonical_sha256": "a167cce1dcccba5bb0f1d184944e54c985c1828024d34e502a02dd620874d823"
+      },
+      "codebase_community": {
+        "path": "profiles/bird_dg8_noval_post/release_02/codebase_community.json",
+        "sha256": "7c64f6439957ec21ad76b03fa9041622aa9190b3b9cb88bc0b0a25aeb66469c6",
+        "canonical_sha256": "1989cde499f0516ecb70bbf2aa5b3983699b36c7844a5cedd3837ddb7a3a7ac5"
+      },
+      "debit_card_specializing": {
+        "path": "profiles/bird_dg8_noval_post/release_02/debit_card_specializing.json",
+        "sha256": "a26b5b1a23307aeb07e30a2cb2cb54438ae1ca1ec6a7c72e5bdc40e2180b73e3",
+        "canonical_sha256": "2808716dda738b3ba19b47986af924daf6b3bf6c2d4c450c2eb5142452129191"
+      },
+      "european_football_2": {
+        "path": "profiles/bird_dg8_noval_post/release_02/european_football_2.json",
+        "sha256": "d21e3367c06f58632bda8bc0c4a5aefd6869d75c1e58a0d1ca55cf26044e4463",
+        "canonical_sha256": "efda2045f86a2d243a2a682ca67b863e614cd552593d9e9b573a86bbeec5daa0"
+      },
+      "financial": {
+        "path": "profiles/bird_dg8_noval_post/release_02/financial.json",
+        "sha256": "e8ef6b77f29197b6e46b11ade7f44c5b13727d935cc62ddbacfd95021b82f51f",
+        "canonical_sha256": "c8167616155317117ef5f360e0fecea55095cc855298ba85deb1001f93b90f08"
+      },
+      "formula_1": {
+        "path": "profiles/bird_dg8_noval_post/release_02/formula_1.json",
+        "sha256": "83549230180c73cf6a4256315e3a85a1d332f17255e734d27b8bbc57770b8791",
+        "canonical_sha256": "8b7898155ca018beaec1c36d038678b282a603b10f617ead96147724bff9aa24"
+      },
+      "student_club": {
+        "path": "profiles/bird_dg8_noval_post/release_02/student_club.json",
+        "sha256": "364cf81a0ef91d7f900d723475d56c70e2498e32be2d78296dec794a5bbe369f",
+        "canonical_sha256": "b84b9d59bad7afb8949b21ac441833fbab37f878a354a02fce6862c8b77fb606"
+      },
+      "superhero": {
+        "path": "profiles/bird_dg8_noval_post/release_02/superhero.json",
+        "sha256": "3365ac4bba8b355988b9065aa401021ade3ce8f59f98623aa70d84f31dd4839b",
+        "canonical_sha256": "5a8d0ca7da1bc9067d136b83f817eba56777408665d30815c2ff33f0abe5f6dd"
+      },
+      "thrombosis_prediction": {
+        "path": "profiles/bird_dg8_noval_post/release_02/thrombosis_prediction.json",
+        "sha256": "ee49405a7b7ea24ff412ac32836ed62fe65e2bbbdde2ef57789226ff8dcd5061",
+        "canonical_sha256": "47c5f51b922f8985c4898e4266511d04921a382c061545a3ac40951528e22a21"
+      },
+      "toxicology": {
+        "path": "profiles/bird_dg8_noval_post/release_02/toxicology.json",
+        "sha256": "57c8876d934008a30e07646a052641eaa55acd23b4a72057cde06ba6edac3b43",
+        "canonical_sha256": "c55c71158f25b239bed02574e80fe1fbfc958b3c32cf55634d35907e797c8def"
+      }
+    },
+    "release_03": {
+      "california_schools": {
+        "path": "profiles/bird_dg8_noval_post/release_03/california_schools.json",
+        "sha256": "25d3416ed86b7d984a06be2710bfa6027ec54ab79843437e9ac62e7374e29689",
+        "canonical_sha256": "34099030940cb55c39ee98446dee0218c03f83c0b8340be44a3402901a24a7ce"
+      },
+      "card_games": {
+        "path": "profiles/bird_dg8_noval_post/release_03/card_games.json",
+        "sha256": "4f6a2be6d2016982a21323b03031752961aea3c652be49c367f4bae62ff0e68b",
+        "canonical_sha256": "d05051c1a50eefa45991669a4cede5ab873b2672f9d16c004df4df85289dd80a"
+      },
+      "codebase_community": {
+        "path": "profiles/bird_dg8_noval_post/release_03/codebase_community.json",
+        "sha256": "bce9d64dad8529f353a1de9db11411fec373345f9ee72fc176150ee1d3337214",
+        "canonical_sha256": "d3515aadb0124734cc14a15e145fafce939a0dbda27bff673b3f6d8da1712e02"
+      },
+      "debit_card_specializing": {
+        "path": "profiles/bird_dg8_noval_post/release_03/debit_card_specializing.json",
+        "sha256": "4d610182dc302c9ca8c6d9a0e50947f8702af9a7b66441d311b9391932f5a9d8",
+        "canonical_sha256": "31b518ee383d26467f3f591be223ada932741c87eac8031b0ace39ec37fdfb43"
+      },
+      "european_football_2": {
+        "path": "profiles/bird_dg8_noval_post/release_03/european_football_2.json",
+        "sha256": "f354da5dd557a73fb82058f2bd79c65ff552238ddc836da984d31de0b9f95b4f",
+        "canonical_sha256": "94e8dbc465921178553f254980ac5246ae57213edb1b39a0c5279e83c01c8260"
+      },
+      "financial": {
+        "path": "profiles/bird_dg8_noval_post/release_03/financial.json",
+        "sha256": "382c20e04cd8d0d6ea49c75e8513233b305560fa23f167c3ea74e4d9e409e416",
+        "canonical_sha256": "5869c8310539d92f779330a9118649c81cd5f9cf124989799216f15531bfbb70"
+      },
+      "formula_1": {
+        "path": "profiles/bird_dg8_noval_post/release_03/formula_1.json",
+        "sha256": "6dd78c3d90d37e70658bc31757b562e5c03c747f93955aa170f0f4b38e558e9b",
+        "canonical_sha256": "da698c405db835ec12641c0f8873b8f76be08c2182ae28367916bc15cfea8d98"
+      },
+      "student_club": {
+        "path": "profiles/bird_dg8_noval_post/release_03/student_club.json",
+        "sha256": "63f91af50304449632cc2bbdb37cce850244cfc0d6096111588bb121608711db",
+        "canonical_sha256": "34492bd31723159b2711f68e4014513cae15cc8aa0e006a475d0323fca295c1b"
+      },
+      "superhero": {
+        "path": "profiles/bird_dg8_noval_post/release_03/superhero.json",
+        "sha256": "d494a5c35bc8e4a7d0fcd30fc64445f439d0dd2ecdb5be0ce6f2554595d7ce15",
+        "canonical_sha256": "4fe31141df86ab40a4700f90b478bba15669fa495897ae33718a3d2c7f972035"
+      },
+      "thrombosis_prediction": {
+        "path": "profiles/bird_dg8_noval_post/release_03/thrombosis_prediction.json",
+        "sha256": "447173d2445d1bed55772607153cc0573d76c3bb4bd8cd4c53fc62f5beaf77ae",
+        "canonical_sha256": "abe275c1a5b83d9e2383500c5ce98092791f9d33ddbd14455f39aa25e1d56a91"
+      },
+      "toxicology": {
+        "path": "profiles/bird_dg8_noval_post/release_03/toxicology.json",
+        "sha256": "312351e8b6919d342e626f3221d79690b9d2424f0169881fc4bafb5cab372843",
+        "canonical_sha256": "4f233da50a9521e3b88bcb0d65fbc65daec714e4256def3cb5602ba967475a10"
+      }
+    }
+  },
+  "fetch1_pubcap_ind8_prof": {
+    "release_01": {
+      "california_schools": {
+        "path": "profiles/pubcap_ind8_profile/release_01/california_schools.json",
+        "file_sha256": "ebd819580baafced3d216b8f77c74d4a492792e8781a7d8d488ff43bf159e223",
+        "canonical_sha256": "4f0320966444778832aa9b6ac5a731dfef7cec18abbfec208bb83b020847c53c",
+        "profile_text_sha256": "f5d8a746866a46b57267e01b4c2e837bdd92b7f195ba91fcb6abb4215f7826ba",
+        "profile_text_bytes": 8312,
+        "profile_text_bpe_tokens": 3773
+      },
+      "card_games": {
+        "path": "profiles/pubcap_ind8_profile/release_01/card_games.json",
+        "file_sha256": "48deb8200b974cdf1dee0561aa5c102befff5ad3e8b357ec927dca9da412ea3d",
+        "canonical_sha256": "79ce40aea460bf651783c45650543a9d88f342dd452432d8a2a7cf821239a8ea",
+        "profile_text_sha256": "96fa8570401118ebebb22c8e0df2d4561cd77d57fdd04e31939bf7d4b94e4832",
+        "profile_text_bytes": 10704,
+        "profile_text_bpe_tokens": 4920
+      },
+      "codebase_community": {
+        "path": "profiles/pubcap_ind8_profile/release_01/codebase_community.json",
+        "file_sha256": "05bc10cc1bddc84f360dad913dab6b713c939c8d2174b2be5f06e6d557ac749a",
+        "canonical_sha256": "6bc0fb4c7d82b4cbc88be2462a4879b045dc335d021944de05cf4899e09854ac",
+        "profile_text_sha256": "672cca1b17a4f01ce8b8dce04aa926b9cc92480f98956064bb70322fdd4ba026",
+        "profile_text_bytes": 6055,
+        "profile_text_bpe_tokens": 3274
+      },
+      "debit_card_specializing": {
+        "path": "profiles/pubcap_ind8_profile/release_01/debit_card_specializing.json",
+        "file_sha256": "60c3370dfca76a33a537062acfa2176d5407a2d718d74a3ec46ef8e23a88ba6c",
+        "canonical_sha256": "6953dcd84874b9dd8990fc0681cc081d7ecb6543e978b56a48c467f2f4182cfc",
+        "profile_text_sha256": "77103b129f8b5c6808043ceddda49850b5ea53b712b4a6b3c9f3796d81832d46",
+        "profile_text_bytes": 1519,
+        "profile_text_bpe_tokens": 829
+      },
+      "european_football_2": {
+        "path": "profiles/pubcap_ind8_profile/release_01/european_football_2.json",
+        "file_sha256": "ebe06d4cb97e9cfb948f5418478f5ad6220ff079b95b50f9a42df6850a677233",
+        "canonical_sha256": "8cb723806e2a2efe44a6326738f0ad2541c57a2d164ce4b8095db42ddcd59e20",
+        "profile_text_sha256": "61aef9f33eed14588a322a5f832a3aeef4314fe56edf0d5b31da6ee4078ec90b",
+        "profile_text_bytes": 16314,
+        "profile_text_bpe_tokens": 8634
+      },
+      "financial": {
+        "path": "profiles/pubcap_ind8_profile/release_01/financial.json",
+        "file_sha256": "8f8a157b428c40091dd0237225b3ee1ab2b11c88a4da1b5afd291ad5d4c825ca",
+        "canonical_sha256": "c31dcafbc83b824ef3ab43f8c15a987d28f29aaf0307e4705d3b016d98f502c3",
+        "profile_text_sha256": "37558d0149655abff2c35c6a64113056f2ba2eff5c885d19320b7cee6114554e",
+        "profile_text_bytes": 4439,
+        "profile_text_bpe_tokens": 2756
+      },
+      "formula_1": {
+        "path": "profiles/pubcap_ind8_profile/release_01/formula_1.json",
+        "file_sha256": "133ad5c2218be162ec96e4555920f30604537d57ffc707aae365d72cdaf58901",
+        "canonical_sha256": "bf716933c9f47989b9c986f3c4d2fc9af7e96ae65abea80a92b77d9e829cd450",
+        "profile_text_sha256": "7b778375295eb3a352c257a1a38e4262f1e4ff91990afb456a4500785973b1e9",
+        "profile_text_bytes": 6652,
+        "profile_text_bpe_tokens": 3792
+      },
+      "student_club": {
+        "path": "profiles/pubcap_ind8_profile/release_01/student_club.json",
+        "file_sha256": "95fea8a58db435405506d6861ebbf51ba40287d3e420a3684793776221a51da0",
+        "canonical_sha256": "1aab4047c79020f5f6eb491e0d29e3e605d29ae33d7bca167db5428a59488ef9",
+        "profile_text_sha256": "19a555c30790172914c6166beab5111f9a0e54734b060e7afa73d26e93e81fd8",
+        "profile_text_bytes": 3212,
+        "profile_text_bpe_tokens": 1290
+      },
+      "superhero": {
+        "path": "profiles/pubcap_ind8_profile/release_01/superhero.json",
+        "file_sha256": "ebd0e492f0d6ed0545d1c6da9e2a1a9777d71abb5066ff254e15c4c4f0562237",
+        "canonical_sha256": "0e803794c1376788adac0c749fcab2543653f1b7475682c608d007dff78ee0f0",
+        "profile_text_sha256": "a91dc93f880f138c8017a9ec9718529612dbec73df87d2b6b6b61aa94bc539a8",
+        "profile_text_bytes": 1818,
+        "profile_text_bpe_tokens": 986
+      },
+      "thrombosis_prediction": {
+        "path": "profiles/pubcap_ind8_profile/release_01/thrombosis_prediction.json",
+        "file_sha256": "8dd444af05f10bfbe16e6fc39d90f9c846e9f5ef27a05ce0d359e01b41aa907d",
+        "canonical_sha256": "5bca585c7f70586c4ea0747673b9b0e4951c904804ffa34fd4b59b3542da53cc",
+        "profile_text_sha256": "8ea7e37b48ff1b69433b4166f4df47fefe297b8706c7e0d25618eeedcf8fd5b5",
+        "profile_text_bytes": 4559,
+        "profile_text_bpe_tokens": 3109
+      },
+      "toxicology": {
+        "path": "profiles/pubcap_ind8_profile/release_01/toxicology.json",
+        "file_sha256": "1a7e22397a44d6ad341ea6e39c4fabd1b4da7a4b09b219c010f4d1926d649eb0",
+        "canonical_sha256": "0390a4cd2b8fecb7d24dd4891982dd69033f83af83f82215419334e2d1af19cb",
+        "profile_text_sha256": "a1917f6351e775b2d89fd7b85edf28e68ee7375b4e6ac83bbb20ae436a74634c",
+        "profile_text_bytes": 647,
+        "profile_text_bpe_tokens": 312
+      }
+    },
+    "release_02": {
+      "california_schools": {
+        "path": "profiles/pubcap_ind8_profile/release_02/california_schools.json",
+        "file_sha256": "bf03f203dcb4289a04a59ce93af20c9be64852f69bd7e4973ebd2de5c544d56b",
+        "canonical_sha256": "cfdedb765bc28db2b1985395de550d49df66271fec33d13b7567cbe259a5caba",
+        "profile_text_sha256": "b720646c7cdc9764e810cc7f0a2deba25ead698f6ed32ca71a75874a3a9600ab",
+        "profile_text_bytes": 8356,
+        "profile_text_bpe_tokens": 3817
+      },
+      "card_games": {
+        "path": "profiles/pubcap_ind8_profile/release_02/card_games.json",
+        "file_sha256": "8529cf5e11f62d698bcd267b26e81420e7aa4f4babc89aa477ac32777fecd16c",
+        "canonical_sha256": "33c5b1d6d90c88ec7d0882e8065cb88a703b4603767ea5dd1925f3a79ba06d13",
+        "profile_text_sha256": "da8c34b4edf4cc60cc6066fae59326be69f7500edbcadee2e7ad533103706305",
+        "profile_text_bytes": 10808,
+        "profile_text_bpe_tokens": 4914
+      },
+      "codebase_community": {
+        "path": "profiles/pubcap_ind8_profile/release_02/codebase_community.json",
+        "file_sha256": "2c15a26b7df3823011188cef781c992779d466955f00ecbccab2d4d3d2aecbdf",
+        "canonical_sha256": "20d0e76717cbb5ddbf4a3f106d2a1d7991e462315c92ab05da58ca218188c0ea",
+        "profile_text_sha256": "63c2c7b27e709079cf465d3b359964cd043f6053ac63799c8733d1be75102fa9",
+        "profile_text_bytes": 5904,
+        "profile_text_bpe_tokens": 3335
+      },
+      "debit_card_specializing": {
+        "path": "profiles/pubcap_ind8_profile/release_02/debit_card_specializing.json",
+        "file_sha256": "cb84df5951d6a58144989175ae73009dd42700b2df364b7312f41d7b8f153905",
+        "canonical_sha256": "483e3ffa4008cd13b46439dd46d77cecd06cd00c28658a3d2003125ee13f9340",
+        "profile_text_sha256": "d3761fa4b0c83c10fde88540b2ab5bbd777bed4f0d9c5b01b12aac49ccae2714",
+        "profile_text_bytes": 1511,
+        "profile_text_bpe_tokens": 822
+      },
+      "european_football_2": {
+        "path": "profiles/pubcap_ind8_profile/release_02/european_football_2.json",
+        "file_sha256": "da1f9c85256e395863528d844c6f63fe34a9086d0f5da4a2fba9a86e6736cf1e",
+        "canonical_sha256": "ade3b48e8999b4cee32eeb7e2ff573b5132755a5309ca423467024ffa755771b",
+        "profile_text_sha256": "592ea5a7d85353fd44c448891f426c240e7ba2f2a179b2411100f7d90f8cc8d6",
+        "profile_text_bytes": 16103,
+        "profile_text_bpe_tokens": 8624
+      },
+      "financial": {
+        "path": "profiles/pubcap_ind8_profile/release_02/financial.json",
+        "file_sha256": "050882de84684a05e3ca62e8387dd7bcd94ae432362c861ec67f67189ce4f336",
+        "canonical_sha256": "ed06e02c6ce5ef0b5610037e7f7f84d8f6a470998145bf11f23afec286815a05",
+        "profile_text_sha256": "1c6aa1814263a9eb56ab28c48e9c93d4918d1d0519832432123e88f54dd0f0b3",
+        "profile_text_bytes": 4538,
+        "profile_text_bpe_tokens": 2842
+      },
+      "formula_1": {
+        "path": "profiles/pubcap_ind8_profile/release_02/formula_1.json",
+        "file_sha256": "dffacbac6fbd0e4badca25a5e7ee6d200c6e843444aaba5b5b4daa0fd6cd30d9",
+        "canonical_sha256": "7660a488e36d6c15a04f5ea641ceb7413cb3560c590c0f66684ca4beb7175e87",
+        "profile_text_sha256": "39d47131d998245710b3440060c2316513aa1dac7625ca86606b6c447036a47b",
+        "profile_text_bytes": 6643,
+        "profile_text_bpe_tokens": 3746
+      },
+      "student_club": {
+        "path": "profiles/pubcap_ind8_profile/release_02/student_club.json",
+        "file_sha256": "0ff06c722941d5650bcb496d9639a196b70bbbff62dfa7622537f04976857df7",
+        "canonical_sha256": "f209ebbbc21a376a7f58dd578188d5fca6ef43af24a48718cd8f960d635f2eeb",
+        "profile_text_sha256": "95488474ff091e5d355a36c2f623c403103150539a312ed6f3d2c661d3130a7d",
+        "profile_text_bytes": 3186,
+        "profile_text_bpe_tokens": 1257
+      },
+      "superhero": {
+        "path": "profiles/pubcap_ind8_profile/release_02/superhero.json",
+        "file_sha256": "3d08f9b1571028e2df5d0c5d76b8f3c31f09849bf64114bf1733d5b638762853",
+        "canonical_sha256": "0035ca921b20ca6088e0de0029adbdcee5a321c9b93601dfdad2257fe0183444",
+        "profile_text_sha256": "5b681d2fc65eb1b8ab90046c1653dde0c892ff71918695ab6e9ae1902249c44b",
+        "profile_text_bytes": 1822,
+        "profile_text_bpe_tokens": 989
+      },
+      "thrombosis_prediction": {
+        "path": "profiles/pubcap_ind8_profile/release_02/thrombosis_prediction.json",
+        "file_sha256": "78587536405f6af0ab4b7cf63d4e0539864cf5edf72b3de5a8cd262c5fee0c2d",
+        "canonical_sha256": "6134ba6b8795a33af8ebcb9633f06aaeb7f5f246f100a9b10abc19a7dd1f0560",
+        "profile_text_sha256": "c31c42d2506d737d96ec0cf864bc15f6ba4b221d134a21712f226ea8e5112373",
+        "profile_text_bytes": 4502,
+        "profile_text_bpe_tokens": 3048
+      },
+      "toxicology": {
+        "path": "profiles/pubcap_ind8_profile/release_02/toxicology.json",
+        "file_sha256": "a0feda0d3a16c8a035982e902f1cddddee21c118203c0dca4a0ae96e9a591e85",
+        "canonical_sha256": "dddcde6cedf091864678e13335c074a40f52b1988a6316a1e6d030cb9e550fa4",
+        "profile_text_sha256": "16e3171bd1765240f06a73a2b5eef072932b5c451f416f2e5c5bca513618d81a",
+        "profile_text_bytes": 643,
+        "profile_text_bpe_tokens": 308
+      }
+    },
+    "release_03": {
+      "california_schools": {
+        "path": "profiles/pubcap_ind8_profile/release_03/california_schools.json",
+        "file_sha256": "30f7392abbee01fd0255a0c70694040128e8d9aa26d741d038b867e8c9af5da2",
+        "canonical_sha256": "73681de65f904e9c9ee7df87eae2bec46be6b172e5e00d47d9e02b9b080cf1ad",
+        "profile_text_sha256": "a83156971081f5e1fca9881c3057032fb4d2767882c9967902eec106091ab207",
+        "profile_text_bytes": 8352,
+        "profile_text_bpe_tokens": 3817
+      },
+      "card_games": {
+        "path": "profiles/pubcap_ind8_profile/release_03/card_games.json",
+        "file_sha256": "5267517d9a2b532678e5e2fe6314cb54263dabfe138eb3e371eabea780abafb7",
+        "canonical_sha256": "1ac0acd600ae96aa1837d796a503daf86476397b26f5176dd1711c86a138e2b7",
+        "profile_text_sha256": "ce6c7b0f78af8f126b3c61a7ffa9acdc014e949898f3781c5a934d12acddb886",
+        "profile_text_bytes": 10877,
+        "profile_text_bpe_tokens": 4978
+      },
+      "codebase_community": {
+        "path": "profiles/pubcap_ind8_profile/release_03/codebase_community.json",
+        "file_sha256": "f1a87692b66355b26c3552ea03e79d2b7985b319fb9a274469c9148dad832ba9",
+        "canonical_sha256": "f6adc7ccbc8acf8ae8abce3db8bebc0ca630c34bf7331a6446568371416d0527",
+        "profile_text_sha256": "ad606f19b1eb738bfa94da4f2c5fe92bbf767648434a66bbadb78354fb93eae2",
+        "profile_text_bytes": 5910,
+        "profile_text_bpe_tokens": 3313
+      },
+      "debit_card_specializing": {
+        "path": "profiles/pubcap_ind8_profile/release_03/debit_card_specializing.json",
+        "file_sha256": "62668a79325c35d060f867b14d80cf9735704c3023219b5eedb09f4931bdeb11",
+        "canonical_sha256": "71613d9e89e0595ab78a975251b5ac130d2cae41aad0d05f153f7a68a7003250",
+        "profile_text_sha256": "b62f9ca20ca16155a7b8c297a8fd922afb9496fcc82ebac54c216772c56b0de2",
+        "profile_text_bytes": 1511,
+        "profile_text_bpe_tokens": 822
+      },
+      "european_football_2": {
+        "path": "profiles/pubcap_ind8_profile/release_03/european_football_2.json",
+        "file_sha256": "043ad43b49d292fb6a291126035ffef318417d17a7843e4081a1a99421b43c9a",
+        "canonical_sha256": "3c24ee37396bf3bcc903e4dadbde723401093267a3fa9f542071f77dad1955dd",
+        "profile_text_sha256": "1792c8629c064b38b684ee3e7bfeb99e4fe5cac644027c6fa9e2b8c8e1b1b5af",
+        "profile_text_bytes": 16177,
+        "profile_text_bpe_tokens": 8638
+      },
+      "financial": {
+        "path": "profiles/pubcap_ind8_profile/release_03/financial.json",
+        "file_sha256": "3f0dc45bb9368cd9e311b99dd0990e1a401083d2053642c4062c2739b70ca745",
+        "canonical_sha256": "665d1bc4a2b74a1a6b97daee09426856d6a4082b1969d3c3541f8dbb705dc837",
+        "profile_text_sha256": "d1d6d6ac70526be0a81c7ac3870ea6637b24165ff0ec46e3cf46229f10b2cd38",
+        "profile_text_bytes": 4489,
+        "profile_text_bpe_tokens": 2772
+      },
+      "formula_1": {
+        "path": "profiles/pubcap_ind8_profile/release_03/formula_1.json",
+        "file_sha256": "73d85c998987c1dbf5871a3b79dd78e073849ca7a7ed88240d95585851984adc",
+        "canonical_sha256": "5dd7c8f47e905c397ea7f6076c47ddb0b60de24c4b68b6ddf6a9cdde5df8b78e",
+        "profile_text_sha256": "9ebd24697322d05874aaaf15b7e490b0ca8a4bef8a91b52bca7ea95caebd7b5d",
+        "profile_text_bytes": 6719,
+        "profile_text_bpe_tokens": 3830
+      },
+      "student_club": {
+        "path": "profiles/pubcap_ind8_profile/release_03/student_club.json",
+        "file_sha256": "294783834b716eea4dd5aab4ac7f08d80e35d2cf81957929233243b32042e862",
+        "canonical_sha256": "0cac6845616ba820bada4677f251216a7b949ee47496ac515ee939335b2579e2",
+        "profile_text_sha256": "70923247d596d2ec1456e0f6da0fe61ee388b91c0e914e002bdc4553863f2bed",
+        "profile_text_bytes": 3258,
+        "profile_text_bpe_tokens": 1318
+      },
+      "superhero": {
+        "path": "profiles/pubcap_ind8_profile/release_03/superhero.json",
+        "file_sha256": "11b4535a1846875dcbde49287fea5de4f79a002565211de229d22ec0d9a82ef4",
+        "canonical_sha256": "f12fa280dcc47760f4f5b1e9c781b2cff91a5516b5f9e639c2e5d04c6565ed52",
+        "profile_text_sha256": "c285ef310f4525d4de38574a6106fd69ea6588a8faea02da7e810042a4d98a77",
+        "profile_text_bytes": 1822,
+        "profile_text_bpe_tokens": 989
+      },
+      "thrombosis_prediction": {
+        "path": "profiles/pubcap_ind8_profile/release_03/thrombosis_prediction.json",
+        "file_sha256": "7f7d26fe1c1d54e329a1c0fab4c3c8d2721118fb2ab0df09e46d414b318cb478",
+        "canonical_sha256": "aafbf698d6699465138906d7ef24f5808c8bd67e0d2c3e49bc5e7339f96574c4",
+        "profile_text_sha256": "aa59802d838e9ec0a24716b0c5a272a12e13c9bc215d5ff596854143f5b95135",
+        "profile_text_bytes": 4518,
+        "profile_text_bpe_tokens": 3063
+      },
+      "toxicology": {
+        "path": "profiles/pubcap_ind8_profile/release_03/toxicology.json",
+        "file_sha256": "e706a2e9a7f78526753ba20b02c5343370a479d7085a4f29cea6c7a5ae5b9731",
+        "canonical_sha256": "faa2ee475905e80913e451af05fa85dae6016d8df2fd79c049ff0201c2bd4b72",
+        "profile_text_sha256": "7a941b985e0547b287170eaf9671f6f7c3778181a1914818c4178bf128433013",
+        "profile_text_bytes": 621,
+        "profile_text_bpe_tokens": 292
+      }
+    }
+  },
+  "valfirst_arm_summaries": {
+    "tightbpe_valfirst_silhouette": {
+      "files": 33,
+      "cap_ok_files": 33,
+      "p6_cap_ok_files": 33,
+      "orig_val_cols": 614,
+      "orig_val_items": 3278,
+      "n_tables_kept": 225,
+      "n_cols_kept": 1389,
+      "n_val_cols_kept": 614,
+      "n_val_items_kept": 1492,
+      "n_compacted_cols": 753,
+      "sum_orig_bpe_tokens": 91282,
+      "sum_final_bpe_tokens": 33495,
+      "sum_p6_bpe_tokens": 34089,
+      "sum_cap_tokens": 34278,
+      "stages": {
+        "k=3:step3a_drop_zero_nonkey": 2,
+        "k=3:step3b_drop_zero_all": 2,
+        "k=5:step2_compact_zero": 6,
+        "k=5:step3b_drop_zero_all": 6,
+        "k=2:step3b_drop_zero_all": 5,
+        "k=5:step3a_drop_zero_nonkey": 12
+      }
+    },
+    "tightbpe_valfirst_ind8_prof": {
+      "files": 33,
+      "cap_ok_files": 33,
+      "p6_cap_ok_files": 33,
+      "orig_val_cols": 1088,
+      "orig_val_items": 9367,
+      "n_tables_kept": 225,
+      "n_cols_kept": 1223,
+      "n_val_cols_kept": 1088,
+      "n_val_items_kept": 1362,
+      "n_compacted_cols": 684,
+      "sum_orig_bpe_tokens": 125582,
+      "sum_final_bpe_tokens": 33407,
+      "sum_p6_bpe_tokens": 34001,
+      "sum_cap_tokens": 34278,
+      "stages": {
+        "k=1:step3c_compact_valcols": 16,
+        "k=1:step3b_drop_zero_all": 2,
+        "k=3:step3b_drop_zero_all": 5,
+        "k=2:step3b_drop_zero_all": 1,
+        "k=5:step3b_drop_zero_all": 6,
+        "k=5:step3a_drop_zero_nonkey": 3
+      }
+    }
+  },
+  "old_tightbpe_stats": {
+    "tightbpe_silhouette": {
+      "files": 33,
+      "n_tables_kept": 139,
+      "n_cols_kept": 1158,
+      "n_val_cols_kept": 0,
+      "n_val_items_kept": 0,
+      "max_bpe_tokens": 2547,
+      "sum_bpe_tokens": 33695
+    },
+    "tightbpe_ind8_prof": {
+      "files": 33,
+      "n_tables_kept": 147,
+      "n_cols_kept": 1181,
+      "n_val_cols_kept": 0,
+      "n_val_items_kept": 0,
+      "max_bpe_tokens": 2533,
+      "sum_bpe_tokens": 33722
+    }
+  }
+}

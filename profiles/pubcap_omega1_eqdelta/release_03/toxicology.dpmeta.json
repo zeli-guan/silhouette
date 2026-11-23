@@ -1,0 +1,301 @@
+{
+  "db_id": "toxicology",
+  "mechanism": "DG-Omega1",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "sha256": "2d8029765a494559a1cbe56485594b2cedb72eff42db2ab5f32d3d9ff39afabd",
+  "parameters": [
+    {
+      "r_j": "74170637892/1",
+      "share": "18542659473/250000000001",
+      "rho": "16221062041833522332063007/250000000001000000000000000",
+      "sigma2": "125000000000500000000000000/16221062041833522332063007",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "120201383690/1",
+      "share": "60100691845/500000000002",
+      "rho": "10515180442097989063041071/100000000000400000000000000",
+      "sigma2": "50000000000200000000000000/10515180442097989063041071",
+      "delta": "1/8000000",
+      "sensitivity2": 1,
+      "tau": 12,
+      "tail_lower": "130707036392447/2500000000000000000000",
+      "tail_upper": "522828145569789/10000000000000000000000",
+      "prev_tail_lower": "597594456254457/1000000000000000000000",
+      "prev_tail_upper": "298797228127229/500000000000000000000"
+    },
+    {
+      "r_j": "84547070302/1",
+      "share": "42273535151/500000000000",
+      "rho": "36980759820913594080680609/500000000000000000000000000",
+      "sigma2": "250000000000000000000000000/36980759820913594080680609",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "136056835962/1",
+      "share": "68028417981/500000000000",
+      "rho": "59511052893161447145078579/500000000000000000000000000",
+      "sigma2": "250000000000000000000000000/59511052893161447145078579",
+      "delta": "1/6000000",
+      "sensitivity2": 1,
+      "tau": 11,
+      "tail_lower": "115694257660679/1000000000000000000000",
+      "tail_upper": "2892356441517/25000000000000000000",
+      "prev_tail_lower": "71724039249091/50000000000000000000",
+      "prev_tail_upper": "143448078498183/100000000000000000000"
+    },
+    {
+      "r_j": "101752887341/1",
+      "share": "101752887341/1000000000000",
+      "rho": "89013115993280896882682819/1000000000000000000000000000",
+      "sigma2": "500000000000000000000000000/89013115993280896882682819",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "163745187765/1",
+      "share": "32749037553/200000000000",
+      "rho": "28648758325690301039105727/200000000000000000000000000",
+      "sigma2": "100000000000000000000000000/28648758325690301039105727",
+      "delta": "1/6000000",
+      "sensitivity2": 1,
+      "tau": 10,
+      "tail_lower": "134951438023663/1000000000000000000000",
+      "tail_upper": "8434464876479/62500000000000000000",
+      "prev_tail_lower": "52170876253021/25000000000000000000",
+      "prev_tail_upper": "41736701002417/20000000000000000000"
+    }
+  ],
+  "tables": {
+    "atom": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "atom_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "atom_id",
+          0
+        ],
+        [
+          "patterns",
+          "atom_id",
+          1
+        ],
+        [
+          "null_count",
+          "molecule_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "molecule_id",
+          0
+        ],
+        [
+          "patterns",
+          "molecule_id",
+          1
+        ],
+        [
+          "null_count",
+          "element",
+          0
+        ],
+        [
+          "distinct_count",
+          "element",
+          0
+        ],
+        [
+          "patterns",
+          "element",
+          1
+        ],
+        [
+          "values",
+          "element",
+          1
+        ]
+      ]
+    },
+    "bond": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "bond_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "bond_id",
+          0
+        ],
+        [
+          "patterns",
+          "bond_id",
+          1
+        ],
+        [
+          "null_count",
+          "molecule_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "molecule_id",
+          0
+        ],
+        [
+          "patterns",
+          "molecule_id",
+          1
+        ],
+        [
+          "null_count",
+          "bond_type",
+          0
+        ],
+        [
+          "distinct_count",
+          "bond_type",
+          0
+        ],
+        [
+          "patterns",
+          "bond_type",
+          1
+        ],
+        [
+          "values",
+          "bond_type",
+          1
+        ]
+      ]
+    },
+    "connected": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "atom_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "atom_id",
+          2
+        ],
+        [
+          "patterns",
+          "atom_id",
+          3
+        ],
+        [
+          "null_count",
+          "atom_id2",
+          2
+        ],
+        [
+          "distinct_count",
+          "atom_id2",
+          2
+        ],
+        [
+          "patterns",
+          "atom_id2",
+          3
+        ],
+        [
+          "null_count",
+          "bond_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "bond_id",
+          2
+        ],
+        [
+          "patterns",
+          "bond_id",
+          3
+        ]
+      ]
+    },
+    "molecule": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "molecule_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "molecule_id",
+          4
+        ],
+        [
+          "patterns",
+          "molecule_id",
+          5
+        ],
+        [
+          "null_count",
+          "label",
+          4
+        ],
+        [
+          "distinct_count",
+          "label",
+          4
+        ],
+        [
+          "patterns",
+          "label",
+          5
+        ],
+        [
+          "values",
+          "label",
+          5
+        ]
+      ]
+    }
+  },
+  "pubcap_tokens": 610,
+  "actual_block_tokens": 431,
+  "truncated_by_pubcap": false
+}

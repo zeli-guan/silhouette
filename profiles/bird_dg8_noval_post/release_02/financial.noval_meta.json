@@ -1,0 +1,6 @@
+{
+  "db_id": "financial",
+  "source_release": "phase4_accept/profiles/bird_dg8_clean/release_02/financial.json",
+  "mode": "No-Values (post-processed DG-v3)",
+  "sha256": "e8ef6b77f29197b6e46b11ade7f44c5b13727d935cc62ddbacfd95021b82f51f"
+}

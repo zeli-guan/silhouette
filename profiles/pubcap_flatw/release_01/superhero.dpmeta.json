@@ -1,0 +1,728 @@
+{
+  "db_id": "superhero",
+  "mechanism": "DG-FlatW",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "sha256": "0e4c34a2ba512005169ca72084757d8a15dab0bcd5e1bbac9bb04385b1fb5454",
+  "parameters": [
+    {
+      "r_j": "1/1",
+      "share": "1/8",
+      "rho": "874796954851759/8000000000000000",
+      "sigma2": "4000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/8",
+      "rho": "874796954851759/8000000000000000",
+      "sigma2": "4000000000000000/874796954851759",
+      "delta": "1/6000000",
+      "sensitivity2": 1,
+      "tau": 12,
+      "tail_lower": "72277604040847/2500000000000000000000",
+      "tail_upper": "289110416163389/10000000000000000000000",
+      "prev_tail_lower": "363530668797697/1000000000000000000000",
+      "prev_tail_upper": "181765334398849/500000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/11",
+      "rho": "874796954851759/11000000000000000",
+      "sigma2": "5500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/11",
+      "rho": "874796954851759/11000000000000000",
+      "sigma2": "5500000000000000/874796954851759",
+      "delta": "1/8000000",
+      "sensitivity2": 1,
+      "tau": 14,
+      "tail_lower": "299945214321081/10000000000000000000000",
+      "tail_upper": "149972607160541/5000000000000000000000",
+      "prev_tail_lower": "261593935482421/1000000000000000000000",
+      "prev_tail_upper": "130796967741211/500000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/7",
+      "rho": "874796954851759/7000000000000000",
+      "sigma2": "3500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/7",
+      "rho": "874796954851759/7000000000000000",
+      "sigma2": "3500000000000000/874796954851759",
+      "delta": "1/4000000",
+      "sensitivity2": 1,
+      "tau": 11,
+      "tail_lower": "572209989534681/10000000000000000000000",
+      "tail_upper": "286104994767341/5000000000000000000000",
+      "prev_tail_lower": "200663401210103/250000000000000000000",
+      "prev_tail_upper": "802653604840413/1000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/40",
+      "rho": "874796954851759/40000000000000000",
+      "sigma2": "20000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/40",
+      "rho": "874796954851759/40000000000000000",
+      "sigma2": "20000000000000000/874796954851759",
+      "delta": "1/30000000",
+      "sensitivity2": 1,
+      "tau": 27,
+      "tail_lower": "141002943629367/10000000000000000000000",
+      "tail_upper": "17625367953671/1250000000000000000000",
+      "prev_tail_lower": "228873806098811/5000000000000000000000",
+      "prev_tail_upper": "457747612197623/10000000000000000000000"
+    }
+  ],
+  "tables": {
+    "alignment": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "alignment",
+          0
+        ],
+        [
+          "distinct_count",
+          "alignment",
+          0
+        ],
+        [
+          "patterns",
+          "alignment",
+          1
+        ],
+        [
+          "values",
+          "alignment",
+          1
+        ]
+      ]
+    },
+    "attribute": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "attribute_name",
+          0
+        ],
+        [
+          "distinct_count",
+          "attribute_name",
+          0
+        ],
+        [
+          "patterns",
+          "attribute_name",
+          1
+        ],
+        [
+          "values",
+          "attribute_name",
+          1
+        ]
+      ]
+    },
+    "colour": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "colour",
+          0
+        ],
+        [
+          "distinct_count",
+          "colour",
+          0
+        ],
+        [
+          "patterns",
+          "colour",
+          1
+        ],
+        [
+          "values",
+          "colour",
+          1
+        ]
+      ]
+    },
+    "gender": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "gender",
+          0
+        ],
+        [
+          "distinct_count",
+          "gender",
+          0
+        ],
+        [
+          "patterns",
+          "gender",
+          1
+        ],
+        [
+          "values",
+          "gender",
+          1
+        ]
+      ]
+    },
+    "hero_attribute": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "hero_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "hero_id",
+          2
+        ],
+        [
+          "bins",
+          "hero_id",
+          3
+        ],
+        [
+          "null_count",
+          "attribute_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "attribute_id",
+          2
+        ],
+        [
+          "bins",
+          "attribute_id",
+          3
+        ],
+        [
+          "null_count",
+          "attribute_value",
+          2
+        ],
+        [
+          "distinct_count",
+          "attribute_value",
+          2
+        ],
+        [
+          "bins",
+          "attribute_value",
+          3
+        ],
+        [
+          "values",
+          "attribute_value",
+          3
+        ]
+      ]
+    },
+    "hero_power": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "hero_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "hero_id",
+          4
+        ],
+        [
+          "bins",
+          "hero_id",
+          5
+        ],
+        [
+          "null_count",
+          "power_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "power_id",
+          4
+        ],
+        [
+          "bins",
+          "power_id",
+          5
+        ]
+      ]
+    },
+    "publisher": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "publisher_name",
+          0
+        ],
+        [
+          "distinct_count",
+          "publisher_name",
+          0
+        ],
+        [
+          "patterns",
+          "publisher_name",
+          1
+        ],
+        [
+          "values",
+          "publisher_name",
+          1
+        ]
+      ]
+    },
+    "race": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "race",
+          0
+        ],
+        [
+          "distinct_count",
+          "race",
+          0
+        ],
+        [
+          "patterns",
+          "race",
+          1
+        ],
+        [
+          "values",
+          "race",
+          1
+        ]
+      ]
+    },
+    "superhero": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          6
+        ],
+        [
+          "null_count",
+          "id",
+          6
+        ],
+        [
+          "distinct_count",
+          "id",
+          6
+        ],
+        [
+          "bins",
+          "id",
+          7
+        ],
+        [
+          "null_count",
+          "superhero_name",
+          6
+        ],
+        [
+          "distinct_count",
+          "superhero_name",
+          6
+        ],
+        [
+          "patterns",
+          "superhero_name",
+          7
+        ],
+        [
+          "values",
+          "superhero_name",
+          7
+        ],
+        [
+          "null_count",
+          "full_name",
+          6
+        ],
+        [
+          "distinct_count",
+          "full_name",
+          6
+        ],
+        [
+          "patterns",
+          "full_name",
+          7
+        ],
+        [
+          "null_count",
+          "gender_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "gender_id",
+          6
+        ],
+        [
+          "bins",
+          "gender_id",
+          7
+        ],
+        [
+          "null_count",
+          "eye_colour_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "eye_colour_id",
+          6
+        ],
+        [
+          "bins",
+          "eye_colour_id",
+          7
+        ],
+        [
+          "null_count",
+          "hair_colour_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "hair_colour_id",
+          6
+        ],
+        [
+          "bins",
+          "hair_colour_id",
+          7
+        ],
+        [
+          "null_count",
+          "skin_colour_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "skin_colour_id",
+          6
+        ],
+        [
+          "bins",
+          "skin_colour_id",
+          7
+        ],
+        [
+          "null_count",
+          "race_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "race_id",
+          6
+        ],
+        [
+          "bins",
+          "race_id",
+          7
+        ],
+        [
+          "null_count",
+          "publisher_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "publisher_id",
+          6
+        ],
+        [
+          "bins",
+          "publisher_id",
+          7
+        ],
+        [
+          "null_count",
+          "alignment_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "alignment_id",
+          6
+        ],
+        [
+          "bins",
+          "alignment_id",
+          7
+        ],
+        [
+          "null_count",
+          "height_cm",
+          6
+        ],
+        [
+          "distinct_count",
+          "height_cm",
+          6
+        ],
+        [
+          "bins",
+          "height_cm",
+          7
+        ],
+        [
+          "values",
+          "height_cm",
+          7
+        ],
+        [
+          "null_count",
+          "weight_kg",
+          6
+        ],
+        [
+          "distinct_count",
+          "weight_kg",
+          6
+        ],
+        [
+          "bins",
+          "weight_kg",
+          7
+        ],
+        [
+          "values",
+          "weight_kg",
+          7
+        ]
+      ]
+    },
+    "superpower": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins",
+          "id",
+          1
+        ],
+        [
+          "null_count",
+          "power_name",
+          0
+        ],
+        [
+          "distinct_count",
+          "power_name",
+          0
+        ],
+        [
+          "patterns",
+          "power_name",
+          1
+        ],
+        [
+          "values",
+          "power_name",
+          1
+        ]
+      ]
+    }
+  },
+  "pubcap_tokens": 1330,
+  "actual_block_tokens": 890,
+  "truncated_by_pubcap": false
+}

@@ -1,0 +1,13 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table frpm(CDSCode,Academic Year,County Code,District Code,School Code,County Name,District Name,School Name,District Type,School Type,Educational Option Type,NSLP Provision Status,Charter School (Y/N),Charter School Number,Charter Funding Type,IRC,Low Grade,High Grade,Enrollment (K-12),Free Meal Count (K-12),Percent (%) Eligible Free (K-12),FRPM Count (K-12),Percent (%) Eligible FRPM (K-12),Enrollment (Ages 5-17),Free Meal Count (Ages 5-17),Percent (%) Eligible Free (Ages 5-17),FRPM Count (Ages 5-17),Percent (%) Eligible FRPM (Ages 5-17),2013-14 CALPADS Fall 1 Certification Status):
+["1","2014-2015","34",68213,null,"Orange",null,null,"Unified School District","Intermediate/Middle Schools (Public)","Traditional",null,0,null,null,0,"K","8",826.9102958910571,738.7274951439837,0.5525108274556443,114.32456912444628,0.7928759477166818,165.19177566789642,31908881.548684467,0.1337829102473368,521.4626444267892,0.08682032108264819,1]
+["167","2014-2015","19",73569,null,"San Bernardino","Santa Ana Unified",null,"Unified School District","Elementary Schools (Public)","Community Day School",null,1,null,null,0,"9","6",516.4239811394813,36.79856535829631,0.2452951717178501,669.0372402629529,1089090.682107095,1073.829862071718,156.5051636205331,-691888.2655752833,71.9979253460973,0.965680730271848,1]
+Table satscores(cds,rtype,sname,dname,cname,enroll12,NumTstTakr,AvgScrRead,AvgScrMath,AvgScrWrite,NumGE1500):
+["1","S",null,null,"Fresno",74,47,null,null,459,247]
+["38","D",null,null,"Los Angeles",63,77,null,438,576,91]
+["75","S",null,null,"San Luis Obispo",53,66,-1198,null,427,null]
+["112","D",null,null,"Sacramento",148,235,null,null,442,null]
+["223","S",null,null,"Fresno",99,27,null,null,481,null]
+Table schools(CDSCode,NCESDist,NCESSchool,StatusType,County,District,School,Street,StreetAbr,City,Zip,State,MailStreet,MailStrAbr,MailCity,MailZip,MailState,Phone,Ext,Website,OpenDate,ClosedDate,Charter,CharterNum,FundingType,DOC,DOCType,SOC,SOCType,EdOpsCode,EdOpsName,EILCode,EILName,GSoffered,GSserved,Virtual,Magnet,Latitude,Longitude,AdmFName1,AdmLName1,AdmEmail1,AdmFName2,AdmLName2,AdmEmail2,AdmFName3,AdmLName3,AdmEmail3,LastUpdate):
+["1",null,null,"Active","Los Angeles",null,null,null,null,"Hanford",null,"CA",null,null,null,null,"CA",null,null,null,null,"1999-06-30",0,null,null,"54","Elementary School District",null,"Adult Education Centers","TRAD","Traditional","ELEM","Elementary","K-5","2-6","N",null,37.548908127393155,-120.76927598283041,"Michael",null,null,null,null,null,null,null,null,null]

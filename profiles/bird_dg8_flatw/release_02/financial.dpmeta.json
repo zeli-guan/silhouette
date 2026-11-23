@@ -1,0 +1,1220 @@
+{
+  "db_id": "financial",
+  "mechanism": "DG-FlatW",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "sha256": "2b624260934759ecdf38c51ca86b4515a28afca2a46f2ec24ac37555600ea288",
+  "parameters": [
+    {
+      "r_j": "1/1",
+      "share": "1/15",
+      "rho": "874796954851759/15000000000000000",
+      "sigma2": "7500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/15",
+      "rho": "874796954851759/15000000000000000",
+      "sigma2": "7500000000000000/874796954851759",
+      "delta": "1/12000000",
+      "sensitivity2": 1,
+      "tau": 16,
+      "tail_lower": "521877517696789/10000000000000000000000",
+      "tail_upper": "52187751769679/1000000000000000000000",
+      "prev_tail_lower": "162398539585861/500000000000000000000",
+      "prev_tail_upper": "324797079171723/1000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/14",
+      "rho": "874796954851759/14000000000000000",
+      "sigma2": "7000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/14",
+      "rho": "874796954851759/14000000000000000",
+      "sigma2": "7000000000000000/874796954851759",
+      "delta": "1/10000000",
+      "sensitivity2": 1,
+      "tau": 16,
+      "tail_lower": "45520866589803/2500000000000000000000",
+      "tail_upper": "182083466359213/10000000000000000000000",
+      "prev_tail_lower": "128734670680651/1000000000000000000000",
+      "prev_tail_upper": "32183667670163/250000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/61",
+      "rho": "874796954851759/61000000000000000",
+      "sigma2": "30500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/61",
+      "rho": "874796954851759/61000000000000000",
+      "sigma2": "30500000000000000/874796954851759",
+      "delta": "1/56000000",
+      "sensitivity2": 1,
+      "tau": 34,
+      "tail_lower": "672639248488231/100000000000000000000000",
+      "tail_upper": "84079906061029/12500000000000000000000",
+      "prev_tail_lower": "178748978639749/10000000000000000000000",
+      "prev_tail_upper": "714995914559/40000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/26",
+      "rho": "874796954851759/26000000000000000",
+      "sigma2": "13000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/26",
+      "rho": "874796954851759/26000000000000000",
+      "sigma2": "13000000000000000/874796954851759",
+      "delta": "1/22000000",
+      "sensitivity2": 1,
+      "tau": 22,
+      "tail_lower": "111774591464909/10000000000000000000000",
+      "tail_upper": "11177459146491/1000000000000000000000",
+      "prev_tail_lower": "30253587110003/625000000000000000000",
+      "prev_tail_upper": "484057393760049/10000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/22",
+      "rho": "874796954851759/22000000000000000",
+      "sigma2": "11000000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/22",
+      "rho": "874796954851759/22000000000000000",
+      "sigma2": "11000000000000000/874796954851759",
+      "delta": "1/18000000",
+      "sensitivity2": 1,
+      "tau": 20,
+      "tail_lower": "86164990490877/5000000000000000000000",
+      "tail_upper": "34465996196351/2000000000000000000000",
+      "prev_tail_lower": "103565808386243/1250000000000000000000",
+      "prev_tail_upper": "165705293417989/2000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/39",
+      "rho": "874796954851759/39000000000000000",
+      "sigma2": "19500000000000000/874796954851759",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/39",
+      "rho": "874796954851759/39000000000000000",
+      "sigma2": "19500000000000000/874796954851759",
+      "delta": "1/36000000",
+      "sensitivity2": 1,
+      "tau": 27,
+      "tail_lower": "46851151256589/5000000000000000000000",
+      "tail_upper": "937023025131781/100000000000000000000000",
+      "prev_tail_lower": "62654685459873/2000000000000000000000",
+      "prev_tail_upper": "156636713649683/5000000000000000000000"
+    }
+  ],
+  "tables": {
+    "account": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "account_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          0
+        ],
+        [
+          "bins",
+          "account_id",
+          1
+        ],
+        [
+          "null_count",
+          "district_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "district_id",
+          0
+        ],
+        [
+          "bins",
+          "district_id",
+          1
+        ],
+        [
+          "null_count",
+          "frequency",
+          0
+        ],
+        [
+          "distinct_count",
+          "frequency",
+          0
+        ],
+        [
+          "patterns",
+          "frequency",
+          1
+        ],
+        [
+          "values",
+          "frequency",
+          1
+        ],
+        [
+          "null_count",
+          "date",
+          0
+        ],
+        [
+          "distinct_count",
+          "date",
+          0
+        ],
+        [
+          "patterns",
+          "date",
+          1
+        ],
+        [
+          "values",
+          "date",
+          1
+        ]
+      ]
+    },
+    "card": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "card_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "card_id",
+          0
+        ],
+        [
+          "bins",
+          "card_id",
+          1
+        ],
+        [
+          "null_count",
+          "disp_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "disp_id",
+          0
+        ],
+        [
+          "bins",
+          "disp_id",
+          1
+        ],
+        [
+          "null_count",
+          "type",
+          0
+        ],
+        [
+          "distinct_count",
+          "type",
+          0
+        ],
+        [
+          "patterns",
+          "type",
+          1
+        ],
+        [
+          "values",
+          "type",
+          1
+        ],
+        [
+          "null_count",
+          "issued",
+          0
+        ],
+        [
+          "distinct_count",
+          "issued",
+          0
+        ],
+        [
+          "patterns",
+          "issued",
+          1
+        ],
+        [
+          "values",
+          "issued",
+          1
+        ]
+      ]
+    },
+    "client": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "client_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "client_id",
+          0
+        ],
+        [
+          "bins",
+          "client_id",
+          1
+        ],
+        [
+          "null_count",
+          "gender",
+          0
+        ],
+        [
+          "distinct_count",
+          "gender",
+          0
+        ],
+        [
+          "patterns",
+          "gender",
+          1
+        ],
+        [
+          "values",
+          "gender",
+          1
+        ],
+        [
+          "null_count",
+          "birth_date",
+          0
+        ],
+        [
+          "distinct_count",
+          "birth_date",
+          0
+        ],
+        [
+          "patterns",
+          "birth_date",
+          1
+        ],
+        [
+          "values",
+          "birth_date",
+          1
+        ],
+        [
+          "null_count",
+          "district_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "district_id",
+          0
+        ],
+        [
+          "bins",
+          "district_id",
+          1
+        ]
+      ]
+    },
+    "disp": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "disp_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "disp_id",
+          2
+        ],
+        [
+          "bins",
+          "disp_id",
+          3
+        ],
+        [
+          "null_count",
+          "client_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "client_id",
+          2
+        ],
+        [
+          "bins",
+          "client_id",
+          3
+        ],
+        [
+          "null_count",
+          "account_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          2
+        ],
+        [
+          "bins",
+          "account_id",
+          3
+        ],
+        [
+          "null_count",
+          "type",
+          2
+        ],
+        [
+          "distinct_count",
+          "type",
+          2
+        ],
+        [
+          "patterns",
+          "type",
+          3
+        ],
+        [
+          "values",
+          "type",
+          3
+        ]
+      ]
+    },
+    "district": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "district_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "district_id",
+          4
+        ],
+        [
+          "bins",
+          "district_id",
+          5
+        ],
+        [
+          "null_count",
+          "A2",
+          4
+        ],
+        [
+          "distinct_count",
+          "A2",
+          4
+        ],
+        [
+          "patterns",
+          "A2",
+          5
+        ],
+        [
+          "values",
+          "A2",
+          5
+        ],
+        [
+          "null_count",
+          "A3",
+          4
+        ],
+        [
+          "distinct_count",
+          "A3",
+          4
+        ],
+        [
+          "patterns",
+          "A3",
+          5
+        ],
+        [
+          "values",
+          "A3",
+          5
+        ],
+        [
+          "null_count",
+          "A4",
+          4
+        ],
+        [
+          "distinct_count",
+          "A4",
+          4
+        ],
+        [
+          "patterns",
+          "A4",
+          5
+        ],
+        [
+          "values",
+          "A4",
+          5
+        ],
+        [
+          "null_count",
+          "A5",
+          4
+        ],
+        [
+          "distinct_count",
+          "A5",
+          4
+        ],
+        [
+          "patterns",
+          "A5",
+          5
+        ],
+        [
+          "values",
+          "A5",
+          5
+        ],
+        [
+          "null_count",
+          "A6",
+          4
+        ],
+        [
+          "distinct_count",
+          "A6",
+          4
+        ],
+        [
+          "patterns",
+          "A6",
+          5
+        ],
+        [
+          "values",
+          "A6",
+          5
+        ],
+        [
+          "null_count",
+          "A7",
+          4
+        ],
+        [
+          "distinct_count",
+          "A7",
+          4
+        ],
+        [
+          "patterns",
+          "A7",
+          5
+        ],
+        [
+          "values",
+          "A7",
+          5
+        ],
+        [
+          "null_count",
+          "A8",
+          4
+        ],
+        [
+          "distinct_count",
+          "A8",
+          4
+        ],
+        [
+          "bins",
+          "A8",
+          5
+        ],
+        [
+          "values",
+          "A8",
+          5
+        ],
+        [
+          "null_count",
+          "A9",
+          4
+        ],
+        [
+          "distinct_count",
+          "A9",
+          4
+        ],
+        [
+          "bins",
+          "A9",
+          5
+        ],
+        [
+          "values",
+          "A9",
+          5
+        ],
+        [
+          "null_count",
+          "A10",
+          4
+        ],
+        [
+          "distinct_count",
+          "A10",
+          4
+        ],
+        [
+          "bins",
+          "A10",
+          5
+        ],
+        [
+          "null_count",
+          "A11",
+          4
+        ],
+        [
+          "distinct_count",
+          "A11",
+          4
+        ],
+        [
+          "bins",
+          "A11",
+          5
+        ],
+        [
+          "values",
+          "A11",
+          5
+        ],
+        [
+          "null_count",
+          "A12",
+          4
+        ],
+        [
+          "distinct_count",
+          "A12",
+          4
+        ],
+        [
+          "bins",
+          "A12",
+          5
+        ],
+        [
+          "null_count",
+          "A13",
+          4
+        ],
+        [
+          "distinct_count",
+          "A13",
+          4
+        ],
+        [
+          "bins",
+          "A13",
+          5
+        ],
+        [
+          "null_count",
+          "A14",
+          4
+        ],
+        [
+          "distinct_count",
+          "A14",
+          4
+        ],
+        [
+          "bins",
+          "A14",
+          5
+        ],
+        [
+          "values",
+          "A14",
+          5
+        ],
+        [
+          "null_count",
+          "A15",
+          4
+        ],
+        [
+          "distinct_count",
+          "A15",
+          4
+        ],
+        [
+          "bins",
+          "A15",
+          5
+        ],
+        [
+          "values",
+          "A15",
+          5
+        ],
+        [
+          "null_count",
+          "A16",
+          4
+        ],
+        [
+          "distinct_count",
+          "A16",
+          4
+        ],
+        [
+          "bins",
+          "A16",
+          5
+        ],
+        [
+          "values",
+          "A16",
+          5
+        ]
+      ]
+    },
+    "loan": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          6
+        ],
+        [
+          "null_count",
+          "loan_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "loan_id",
+          6
+        ],
+        [
+          "bins",
+          "loan_id",
+          7
+        ],
+        [
+          "null_count",
+          "account_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          6
+        ],
+        [
+          "bins",
+          "account_id",
+          7
+        ],
+        [
+          "null_count",
+          "date",
+          6
+        ],
+        [
+          "distinct_count",
+          "date",
+          6
+        ],
+        [
+          "patterns",
+          "date",
+          7
+        ],
+        [
+          "values",
+          "date",
+          7
+        ],
+        [
+          "null_count",
+          "amount",
+          6
+        ],
+        [
+          "distinct_count",
+          "amount",
+          6
+        ],
+        [
+          "bins",
+          "amount",
+          7
+        ],
+        [
+          "values",
+          "amount",
+          7
+        ],
+        [
+          "null_count",
+          "duration",
+          6
+        ],
+        [
+          "distinct_count",
+          "duration",
+          6
+        ],
+        [
+          "bins",
+          "duration",
+          7
+        ],
+        [
+          "values",
+          "duration",
+          7
+        ],
+        [
+          "null_count",
+          "payments",
+          6
+        ],
+        [
+          "distinct_count",
+          "payments",
+          6
+        ],
+        [
+          "bins",
+          "payments",
+          7
+        ],
+        [
+          "null_count",
+          "status",
+          6
+        ],
+        [
+          "distinct_count",
+          "status",
+          6
+        ],
+        [
+          "patterns",
+          "status",
+          7
+        ],
+        [
+          "values",
+          "status",
+          7
+        ]
+      ]
+    },
+    "order": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "order_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "order_id",
+          8
+        ],
+        [
+          "bins",
+          "order_id",
+          9
+        ],
+        [
+          "null_count",
+          "account_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          8
+        ],
+        [
+          "bins",
+          "account_id",
+          9
+        ],
+        [
+          "null_count",
+          "bank_to",
+          8
+        ],
+        [
+          "distinct_count",
+          "bank_to",
+          8
+        ],
+        [
+          "patterns",
+          "bank_to",
+          9
+        ],
+        [
+          "values",
+          "bank_to",
+          9
+        ],
+        [
+          "null_count",
+          "account_to",
+          8
+        ],
+        [
+          "distinct_count",
+          "account_to",
+          8
+        ],
+        [
+          "bins",
+          "account_to",
+          9
+        ],
+        [
+          "values",
+          "account_to",
+          9
+        ],
+        [
+          "null_count",
+          "amount",
+          8
+        ],
+        [
+          "distinct_count",
+          "amount",
+          8
+        ],
+        [
+          "bins",
+          "amount",
+          9
+        ],
+        [
+          "null_count",
+          "k_symbol",
+          8
+        ],
+        [
+          "distinct_count",
+          "k_symbol",
+          8
+        ],
+        [
+          "patterns",
+          "k_symbol",
+          9
+        ],
+        [
+          "values",
+          "k_symbol",
+          9
+        ]
+      ]
+    },
+    "trans": {
+      "rho": "874796954851759/1000000000000000",
+      "delta_threshold": "1/2000000",
+      "queries": [
+        [
+          "row_count",
+          null,
+          10
+        ],
+        [
+          "null_count",
+          "trans_id",
+          10
+        ],
+        [
+          "distinct_count",
+          "trans_id",
+          10
+        ],
+        [
+          "bins",
+          "trans_id",
+          11
+        ],
+        [
+          "null_count",
+          "account_id",
+          10
+        ],
+        [
+          "distinct_count",
+          "account_id",
+          10
+        ],
+        [
+          "bins",
+          "account_id",
+          11
+        ],
+        [
+          "null_count",
+          "date",
+          10
+        ],
+        [
+          "distinct_count",
+          "date",
+          10
+        ],
+        [
+          "patterns",
+          "date",
+          11
+        ],
+        [
+          "values",
+          "date",
+          11
+        ],
+        [
+          "null_count",
+          "type",
+          10
+        ],
+        [
+          "distinct_count",
+          "type",
+          10
+        ],
+        [
+          "patterns",
+          "type",
+          11
+        ],
+        [
+          "values",
+          "type",
+          11
+        ],
+        [
+          "null_count",
+          "operation",
+          10
+        ],
+        [
+          "distinct_count",
+          "operation",
+          10
+        ],
+        [
+          "patterns",
+          "operation",
+          11
+        ],
+        [
+          "values",
+          "operation",
+          11
+        ],
+        [
+          "null_count",
+          "amount",
+          10
+        ],
+        [
+          "distinct_count",
+          "amount",
+          10
+        ],
+        [
+          "bins",
+          "amount",
+          11
+        ],
+        [
+          "values",
+          "amount",
+          11
+        ],
+        [
+          "null_count",
+          "balance",
+          10
+        ],
+        [
+          "distinct_count",
+          "balance",
+          10
+        ],
+        [
+          "bins",
+          "balance",
+          11
+        ],
+        [
+          "values",
+          "balance",
+          11
+        ],
+        [
+          "null_count",
+          "k_symbol",
+          10
+        ],
+        [
+          "distinct_count",
+          "k_symbol",
+          10
+        ],
+        [
+          "patterns",
+          "k_symbol",
+          11
+        ],
+        [
+          "values",
+          "k_symbol",
+          11
+        ],
+        [
+          "null_count",
+          "bank",
+          10
+        ],
+        [
+          "distinct_count",
+          "bank",
+          10
+        ],
+        [
+          "patterns",
+          "bank",
+          11
+        ],
+        [
+          "values",
+          "bank",
+          11
+        ],
+        [
+          "null_count",
+          "account",
+          10
+        ],
+        [
+          "distinct_count",
+          "account",
+          10
+        ],
+        [
+          "bins",
+          "account",
+          11
+        ],
+        [
+          "values",
+          "account",
+          11
+        ]
+      ]
+    }
+  }
+}

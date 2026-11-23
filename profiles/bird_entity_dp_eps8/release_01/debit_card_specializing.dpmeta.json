@@ -1,0 +1,425 @@
+{
+  "db_id": "debit_card_specializing",
+  "version": "c1-entity-dp-v2-direct-star",
+  "mechanism": "Entity-DG-v3",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "cap": 5,
+  "delta_mode": "proportional",
+  "rho_db": "874796954851759/1000000000000000",
+  "rho_budget": "874796954851759/1000000000000000",
+  "delta_threshold_total": "1/2000000",
+  "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+  "table_sensitivity_caps": {
+    "customers": 5,
+    "gasstations": 0,
+    "products": 0,
+    "transactions_1k": 5,
+    "yearmonth": 5
+  },
+  "parameters": [
+    {
+      "r_j": "6535122969/1",
+      "share": "6535122969/1000000000001",
+      "rho": "5716905672862986230952471/1000000000001000000000000000",
+      "sigma2": "500000000000500000000000000/5716905672862986230952471",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "4116869496/1",
+      "share": "4116869496/1000000000001",
+      "rho": "450178112327861978630433/125000000000125000000000000",
+      "sigma2": "62500000000062500000000000/450178112327861978630433",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "12037799432/1",
+      "share": "12037799432/1000000000001",
+      "rho": "1316328785778729266800111/125000000000125000000000000",
+      "sigma2": "1562500000001562500000000000/1316328785778729266800111",
+      "delta": "0/1",
+      "sensitivity2": 25
+    },
+    {
+      "r_j": "12594591088/1",
+      "share": "12594591088/1000000000001",
+      "rho": "688606870711593891407737/62500000000062500000000000",
+      "sigma2": "156250000000156250000000000/688606870711593891407737",
+      "delta": "1/182000000",
+      "sensitivity2": 5,
+      "tau": 91,
+      "tail_lower": "116652483643027/125000000000000000000000",
+      "tail_upper": "933219869144217/1000000000000000000000000",
+      "prev_tail_lower": "140246320535211/100000000000000000000000",
+      "prev_tail_upper": "35061580133803/25000000000000000000000"
+    },
+    {
+      "r_j": "25039631864/1",
+      "share": "25039631864/1000000000001",
+      "rho": "2738074213154534256606097/125000000000125000000000000",
+      "sigma2": "1562500000001562500000000000/2738074213154534256606097",
+      "delta": "0/1",
+      "sensitivity2": 25
+    },
+    {
+      "r_j": "30917916788/1",
+      "share": "30917916788/1000000000001",
+      "rho": "6761724864125619409357523/250000000000250000000000000",
+      "sigma2": "625000000000625000000000000/6761724864125619409357523",
+      "delta": "1/45500000",
+      "sensitivity2": 5,
+      "tau": 56,
+      "tail_lower": "384004664146221/100000000000000000000000",
+      "tail_upper": "192002332073111/50000000000000000000000",
+      "prev_tail_lower": "354349867950993/50000000000000000000000",
+      "prev_tail_upper": "708699735901987/100000000000000000000000"
+    },
+    {
+      "r_j": "62898465076/1",
+      "share": "62898465076/1000000000001",
+      "rho": "13755846428333628054667171/250000000000250000000000000",
+      "sigma2": "625000000000625000000000000/13755846428333628054667171",
+      "delta": "3/45500000",
+      "sensitivity2": 5,
+      "tau": 38,
+      "tail_lower": "128534192706443/10000000000000000000000",
+      "tail_upper": "32133548176611/2500000000000000000000",
+      "prev_tail_lower": "298121100851363/10000000000000000000000",
+      "prev_tail_upper": "74530275212841/2500000000000000000000"
+    },
+    {
+      "r_j": "19738105237/1",
+      "share": "19738105237/1000000000001",
+      "rho": "17266834355871156876561883/1000000000001000000000000000",
+      "sigma2": "2500000000002500000000000000/17266834355871156876561883",
+      "delta": "1/91000000",
+      "sensitivity2": 5,
+      "tau": 72,
+      "tail_lower": "5568393080653/4000000000000000000000",
+      "tail_upper": "69604913508163/50000000000000000000000",
+      "prev_tail_lower": "230445490979709/100000000000000000000000",
+      "prev_tail_upper": "23044549097971/10000000000000000000000"
+    },
+    {
+      "r_j": "19108815482/1",
+      "share": "19108815482/1000000000001",
+      "rho": "8358166797238873697066419/500000000000500000000000000",
+      "sigma2": "6250000000006250000000000000/8358166797238873697066419",
+      "delta": "0/1",
+      "sensitivity2": 25
+    }
+  ],
+  "tables": {
+    "customers": {
+      "mode": "entity_direct",
+      "rho": "250250239884973718736720661/1000000000001000000000000000",
+      "delta_threshold": "33/182000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "CustomerID",
+          1
+        ],
+        [
+          "distinct_count",
+          "CustomerID",
+          2
+        ],
+        [
+          "bins",
+          "CustomerID",
+          3
+        ],
+        [
+          "null_count",
+          "Segment",
+          0
+        ],
+        [
+          "distinct_count",
+          "Segment",
+          4
+        ],
+        [
+          "patterns",
+          "Segment",
+          5
+        ],
+        [
+          "values",
+          "Segment",
+          6
+        ],
+        [
+          "null_count",
+          "Currency",
+          0
+        ],
+        [
+          "distinct_count",
+          "Currency",
+          4
+        ],
+        [
+          "patterns",
+          "Currency",
+          5
+        ],
+        [
+          "values",
+          "Currency",
+          6
+        ]
+      ]
+    },
+    "gasstations": {
+      "mode": "schema_only",
+      "rho": "0/1",
+      "delta_threshold": "0/1",
+      "sensitivity_cap": 0,
+      "queries": []
+    },
+    "products": {
+      "mode": "schema_only",
+      "rho": "0/1",
+      "delta_threshold": "0/1",
+      "sensitivity_cap": 0,
+      "queries": []
+    },
+    "transactions_1k": {
+      "mode": "entity_direct",
+      "rho": "434508120906779398358795059/1000000000001000000000000000",
+      "delta_threshold": "37/182000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "TransactionID",
+          1
+        ],
+        [
+          "distinct_count",
+          "TransactionID",
+          2
+        ],
+        [
+          "bins",
+          "TransactionID",
+          3
+        ],
+        [
+          "null_count",
+          "Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "Date",
+          4
+        ],
+        [
+          "patterns",
+          "Date",
+          5
+        ],
+        [
+          "values",
+          "Date",
+          7
+        ],
+        [
+          "null_count",
+          "Time",
+          0
+        ],
+        [
+          "distinct_count",
+          "Time",
+          4
+        ],
+        [
+          "patterns",
+          "Time",
+          5
+        ],
+        [
+          "values",
+          "Time",
+          6
+        ],
+        [
+          "null_count",
+          "CustomerID",
+          1
+        ],
+        [
+          "distinct_count",
+          "CustomerID",
+          2
+        ],
+        [
+          "bins",
+          "CustomerID",
+          3
+        ],
+        [
+          "null_count",
+          "CardID",
+          1
+        ],
+        [
+          "distinct_count",
+          "CardID",
+          2
+        ],
+        [
+          "bins",
+          "CardID",
+          3
+        ],
+        [
+          "null_count",
+          "GasStationID",
+          1
+        ],
+        [
+          "distinct_count",
+          "GasStationID",
+          2
+        ],
+        [
+          "bins",
+          "GasStationID",
+          3
+        ],
+        [
+          "null_count",
+          "ProductID",
+          1
+        ],
+        [
+          "distinct_count",
+          "ProductID",
+          2
+        ],
+        [
+          "bins",
+          "ProductID",
+          3
+        ],
+        [
+          "null_count",
+          "Amount",
+          0
+        ],
+        [
+          "distinct_count",
+          "Amount",
+          4
+        ],
+        [
+          "bins",
+          "Amount",
+          5
+        ],
+        [
+          "values",
+          "Amount",
+          7
+        ],
+        [
+          "null_count",
+          "Price",
+          0
+        ],
+        [
+          "distinct_count",
+          "Price",
+          8
+        ],
+        [
+          "bins",
+          "Price",
+          5
+        ]
+      ]
+    },
+    "yearmonth": {
+      "mode": "entity_direct",
+      "rho": "190038594060880679859336039/1000000000001000000000000000",
+      "delta_threshold": "3/26000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "CustomerID",
+          1
+        ],
+        [
+          "distinct_count",
+          "CustomerID",
+          2
+        ],
+        [
+          "bins",
+          "CustomerID",
+          3
+        ],
+        [
+          "null_count",
+          "Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "Date",
+          4
+        ],
+        [
+          "patterns",
+          "Date",
+          5
+        ],
+        [
+          "values",
+          "Date",
+          6
+        ],
+        [
+          "null_count",
+          "Consumption",
+          0
+        ],
+        [
+          "distinct_count",
+          "Consumption",
+          8
+        ],
+        [
+          "bins",
+          "Consumption",
+          5
+        ]
+      ]
+    }
+  },
+  "sha256": "b45bc85247db99c1e8002bfec20c06e913a7ea4034bb8a5302fc360697d70ebc"
+}

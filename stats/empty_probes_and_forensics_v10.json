@@ -1,0 +1,1641 @@
+{
+  "empty_probe_stats": {
+    "SYN8_FK_DAG_R1/r0": {
+      "run_sql_probes_total": 646,
+      "run_sql_probes_success": 630,
+      "run_sql_probes_empty": 158,
+      "run_sql_probes_error": 16,
+      "slots_with_run_sql": 268,
+      "slots_with_empty_run_sql": 103,
+      "empty_over_total_pct": 24.46,
+      "empty_over_success_pct": 25.08
+    },
+    "IND8_PROBE_R2/r0": {
+      "run_sql_probes_total": 583,
+      "run_sql_probes_success": 567,
+      "run_sql_probes_empty": 157,
+      "run_sql_probes_error": 16,
+      "slots_with_run_sql": 251,
+      "slots_with_empty_run_sql": 102,
+      "empty_over_total_pct": 26.93,
+      "empty_over_success_pct": 27.69
+    },
+    "IND8_PROBE_R3/r0": {
+      "run_sql_probes_total": 643,
+      "run_sql_probes_success": 627,
+      "run_sql_probes_empty": 168,
+      "run_sql_probes_error": 16,
+      "slots_with_run_sql": 267,
+      "slots_with_empty_run_sql": 117,
+      "empty_over_total_pct": 26.13,
+      "empty_over_success_pct": 26.79
+    },
+    "DP_QUERY_ROW_TP8_V2_R1/r0": {
+      "issued": 218,
+      "succeeded_uncached": 128,
+      "cached": 75,
+      "rejected_public": 9,
+      "budget_exhausted": 6,
+      "empty_group_count": 76,
+      "slots_with_probe": 133,
+      "slots_with_empty_group_count": 60,
+      "empty_over_issued_pct": 34.86,
+      "empty_over_succeeded_pct": 37.44
+    },
+    "DP_QUERY_ROW_TP8_V2_R2/r0": {
+      "issued": 209,
+      "succeeded_uncached": 120,
+      "cached": 80,
+      "rejected_public": 5,
+      "budget_exhausted": 4,
+      "empty_group_count": 71,
+      "slots_with_probe": 132,
+      "slots_with_empty_group_count": 55,
+      "empty_over_issued_pct": 33.97,
+      "empty_over_succeeded_pct": 35.5
+    },
+    "DP_QUERY_ROW_TP8_V2_R3/r0": {
+      "issued": 234,
+      "succeeded_uncached": 130,
+      "cached": 85,
+      "rejected_public": 14,
+      "budget_exhausted": 5,
+      "empty_group_count": 79,
+      "slots_with_probe": 140,
+      "slots_with_empty_group_count": 62,
+      "empty_over_issued_pct": 33.76,
+      "empty_over_succeeded_pct": 36.74
+    },
+    "DP_QUERY_ROW_DB8_V2_R1/r0": {
+      "issued": 212,
+      "succeeded_uncached": 115,
+      "cached": 85,
+      "rejected_public": 5,
+      "budget_exhausted": 7,
+      "empty_group_count": 74,
+      "slots_with_probe": 133,
+      "slots_with_empty_group_count": 59,
+      "empty_over_issued_pct": 34.91,
+      "empty_over_succeeded_pct": 37.0
+    },
+    "IND8/r0": {
+      "slots_checked": 440,
+      "tool_stats": {
+        "try_sql": {
+          "total": 307,
+          "error": 5
+        },
+        "run_sql": {
+          "total": 598,
+          "empty": 163,
+          "error": 8
+        }
+      },
+      "total_probes": 598,
+      "success_probes": 590,
+      "empty_probes": 163,
+      "error_probes": 8,
+      "empty_over_total_pct": 27.26,
+      "empty_over_success_pct": 27.63
+    },
+    "SYN8/r0": {
+      "slots_checked": 440,
+      "tool_stats": {
+        "try_sql": {
+          "total": 324,
+          "error": 13
+        },
+        "run_sql": {
+          "total": 551,
+          "empty": 139,
+          "error": 22
+        }
+      },
+      "total_probes": 551,
+      "success_probes": 529,
+      "empty_probes": 139,
+      "error_probes": 22,
+      "empty_over_total_pct": 25.23,
+      "empty_over_success_pct": 26.28
+    },
+    "SYN8P/r0": {
+      "slots_checked": 600,
+      "tool_stats": {
+        "try_sql": {
+          "total": 273,
+          "error": 5
+        },
+        "run_sql": {
+          "total": 834,
+          "empty": 306,
+          "error": 19
+        }
+      },
+      "total_probes": 834,
+      "success_probes": 815,
+      "empty_probes": 306,
+      "error_probes": 19,
+      "empty_over_total_pct": 36.69,
+      "empty_over_success_pct": 37.55
+    }
+  },
+  "native_multitable_dp_synth": {
+    "total_fk_edges_bird_11_dbs": 105,
+    "by_db": {
+      "california_schools": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "MemoryLimit",
+        "error": "Native relational RSS exceeded 8 GiB operational ceiling; stopped after observed >32 GiB; limit introduced at this point",
+        "elapsed_seconds": 261.15601348876953,
+        "peak_rss_mib": 32291.5703125,
+        "n_tables": 3,
+        "fk_edges": 2
+      },
+      "card_games": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "MultiTableConfig expects a single root table, but found 2: ['cards', 'sets']. All tables must be connected in a single tree hierarchy.",
+        "elapsed_seconds": 0.002631933894008398,
+        "peak_rss_mib": 287.18359375,
+        "n_tables": 6,
+        "fk_edges": 4
+      },
+      "codebase_community": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Child table 'comments' has multiple parents; in-degree must be <= 1.",
+        "elapsed_seconds": 0.0022495051380246878,
+        "peak_rss_mib": 288.078125,
+        "n_tables": 8,
+        "fk_edges": 13
+      },
+      "debit_card_specializing": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Child table 'yearmonth' has multiple parents; in-degree must be <= 1.",
+        "elapsed_seconds": 0.0020742330234497786,
+        "peak_rss_mib": 287.89453125,
+        "n_tables": 5,
+        "fk_edges": 2
+      },
+      "european_football_2": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Child table 'Match' has multiple parents; in-degree must be <= 1.",
+        "elapsed_seconds": 0.0029826320242136717,
+        "peak_rss_mib": 282.8828125,
+        "n_tables": 7,
+        "fk_edges": 31
+      },
+      "financial": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Child table 'disp' has multiple parents; in-degree must be <= 1.",
+        "elapsed_seconds": 0.002315158024430275,
+        "peak_rss_mib": 288.30859375,
+        "n_tables": 8,
+        "fk_edges": 8
+      },
+      "formula_1": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Child table 'constructorResults' has multiple parents; in-degree must be <= 1.",
+        "elapsed_seconds": 0.002689627930521965,
+        "peak_rss_mib": 282.22265625,
+        "n_tables": 13,
+        "fk_edges": 19
+      },
+      "mimic_iv": {
+        "dataset": "ehr",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Child table 'chartevents' has multiple parents; in-degree must be <= 1.",
+        "elapsed_seconds": 0.0028310748748481274,
+        "peak_rss_mib": 286.5078125,
+        "n_tables": 17,
+        "fk_edges": 25
+      },
+      "student_club": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Table 'attendance' schema cannot be empty.",
+        "elapsed_seconds": 0.0018124410416930914,
+        "peak_rss_mib": 287.05859375,
+        "n_tables": 8,
+        "fk_edges": 8
+      },
+      "superhero": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Table 'hero_power' schema cannot be empty.",
+        "elapsed_seconds": 0.0018538448493927717,
+        "peak_rss_mib": 282.44921875,
+        "n_tables": 10,
+        "fk_edges": 11
+      },
+      "thrombosis_prediction": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": null,
+        "error": "8 GiB RSS operational ceiling",
+        "elapsed_seconds": 130.37509644404054,
+        "peak_rss_mib": 8237.4921875,
+        "n_tables": 3,
+        "fk_edges": 2
+      },
+      "toxicology": {
+        "dataset": "bird",
+        "status": "failed",
+        "error_type": "ValueError",
+        "error": "Table 'connected' schema cannot be empty.",
+        "elapsed_seconds": 0.0015067451167851686,
+        "peak_rss_mib": 289.2890625,
+        "n_tables": 4,
+        "fk_edges": 5
+      }
+    }
+  },
+  "bird_remap_token_grounding": {
+    "Seed1_Pred_48": {
+      "REMAP_C0/r0": {
+        "n": 48,
+        "official_set_ex_hits": 0,
+        "official_set_ex_pct": 0.0,
+        "contains_recoded_token_regex": 0,
+        "contains_exact_bijection_recoded_token": 0,
+        "contains_unmapped_english_surface_literal": 19,
+        "contains_both": 0,
+        "contains_neither": 29,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active",
+              "Unified School District"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_IND8_PROMPT/r0": {
+        "n": 48,
+        "official_set_ex_hits": 3,
+        "official_set_ex_pct": 6.25,
+        "contains_recoded_token_regex": 14,
+        "contains_exact_bijection_recoded_token": 14,
+        "contains_unmapped_english_surface_literal": 14,
+        "contains_both": 2,
+        "contains_neither": 22,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 155,
+            "db_id": "debit_card_specializing",
+            "matched_orig": [
+              "CZE"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_DG8_R1/r0": {
+        "n": 48,
+        "official_set_ex_hits": 1,
+        "official_set_ex_pct": 2.08,
+        "contains_recoded_token_regex": 9,
+        "contains_exact_bijection_recoded_token": 9,
+        "contains_unmapped_english_surface_literal": 19,
+        "contains_both": 1,
+        "contains_neither": 21,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active",
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_DG8_R2/r0": {
+        "n": 48,
+        "official_set_ex_hits": 3,
+        "official_set_ex_pct": 6.25,
+        "contains_recoded_token_regex": 8,
+        "contains_exact_bijection_recoded_token": 8,
+        "contains_unmapped_english_surface_literal": 19,
+        "contains_both": 0,
+        "contains_neither": 21,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_DG8_R3/r0": {
+        "n": 48,
+        "official_set_ex_hits": 3,
+        "official_set_ex_pct": 6.25,
+        "contains_recoded_token_regex": 10,
+        "contains_exact_bijection_recoded_token": 10,
+        "contains_unmapped_english_surface_literal": 17,
+        "contains_both": 0,
+        "contains_neither": 21,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 155,
+            "db_id": "debit_card_specializing",
+            "matched_orig": [
+              "CZE"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_C4/r0": {
+        "n": 48,
+        "official_set_ex_hits": 7,
+        "official_set_ex_pct": 14.58,
+        "contains_recoded_token_regex": 26,
+        "contains_exact_bijection_recoded_token": 26,
+        "contains_unmapped_english_surface_literal": 9,
+        "contains_both": 3,
+        "contains_neither": 16,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active",
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 155,
+            "db_id": "debit_card_specializing",
+            "matched_orig": [
+              "CZE"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 175,
+            "db_id": "european_football_2",
+            "matched_orig": [
+              "medium"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_C0/r0": {
+        "n": 48,
+        "official_set_ex_hits": 1,
+        "official_set_ex_pct": 2.08,
+        "contains_recoded_token_regex": 0,
+        "contains_exact_bijection_recoded_token": 0,
+        "contains_unmapped_english_surface_literal": 25,
+        "contains_both": 0,
+        "contains_neither": 23,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged",
+              "Unified School District"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)",
+              "Unified School District"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Preschool",
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_IND8_PROMPT/r0": {
+        "n": 48,
+        "official_set_ex_hits": 20,
+        "official_set_ex_pct": 41.67,
+        "contains_recoded_token_regex": 24,
+        "contains_exact_bijection_recoded_token": 24,
+        "contains_unmapped_english_surface_literal": 14,
+        "contains_both": 1,
+        "contains_neither": 11,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "County Office of Education (COE)",
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_DG8_R1/r0": {
+        "n": 48,
+        "official_set_ex_hits": 22,
+        "official_set_ex_pct": 45.83,
+        "contains_recoded_token_regex": 28,
+        "contains_exact_bijection_recoded_token": 28,
+        "contains_unmapped_english_surface_literal": 12,
+        "contains_both": 1,
+        "contains_neither": 9,
+        "sample_unmapped_english": [
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 13,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "High Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_C4/r0": {
+        "n": 48,
+        "official_set_ex_hits": 26,
+        "official_set_ex_pct": 54.17,
+        "contains_recoded_token_regex": 38,
+        "contains_exact_bijection_recoded_token": 38,
+        "contains_unmapped_english_surface_literal": 3,
+        "contains_both": 1,
+        "contains_neither": 8,
+        "sample_unmapped_english": [
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Preschool"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 13,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "High Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 175,
+            "db_id": "european_football_2",
+            "matched_orig": [
+              "medium"
+            ],
+            "ex": 0
+          }
+        ]
+      }
+    },
+    "Seed1_Fail_50": {
+      "REMAP_C0/r0": {
+        "n": 50,
+        "official_set_ex_hits": 0,
+        "official_set_ex_pct": 0.0,
+        "contains_recoded_token_regex": 0,
+        "contains_exact_bijection_recoded_token": 0,
+        "contains_unmapped_english_surface_literal": 19,
+        "contains_both": 0,
+        "contains_neither": 31,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active",
+              "Unified School District"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_IND8_PROMPT/r0": {
+        "n": 50,
+        "official_set_ex_hits": 4,
+        "official_set_ex_pct": 8.0,
+        "contains_recoded_token_regex": 14,
+        "contains_exact_bijection_recoded_token": 14,
+        "contains_unmapped_english_surface_literal": 14,
+        "contains_both": 2,
+        "contains_neither": 24,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 155,
+            "db_id": "debit_card_specializing",
+            "matched_orig": [
+              "CZE"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_DG8_R1/r0": {
+        "n": 50,
+        "official_set_ex_hits": 2,
+        "official_set_ex_pct": 4.0,
+        "contains_recoded_token_regex": 9,
+        "contains_exact_bijection_recoded_token": 9,
+        "contains_unmapped_english_surface_literal": 19,
+        "contains_both": 1,
+        "contains_neither": 23,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active",
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_DG8_R2/r0": {
+        "n": 50,
+        "official_set_ex_hits": 4,
+        "official_set_ex_pct": 8.0,
+        "contains_recoded_token_regex": 8,
+        "contains_exact_bijection_recoded_token": 8,
+        "contains_unmapped_english_surface_literal": 19,
+        "contains_both": 0,
+        "contains_neither": 23,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_DG8_R3/r0": {
+        "n": 50,
+        "official_set_ex_hits": 3,
+        "official_set_ex_pct": 6.0,
+        "contains_recoded_token_regex": 10,
+        "contains_exact_bijection_recoded_token": 10,
+        "contains_unmapped_english_surface_literal": 17,
+        "contains_both": 0,
+        "contains_neither": 23,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 155,
+            "db_id": "debit_card_specializing",
+            "matched_orig": [
+              "CZE"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_C4/r0": {
+        "n": 50,
+        "official_set_ex_hits": 7,
+        "official_set_ex_pct": 14.0,
+        "contains_recoded_token_regex": 26,
+        "contains_exact_bijection_recoded_token": 26,
+        "contains_unmapped_english_surface_literal": 9,
+        "contains_both": 3,
+        "contains_neither": 18,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active",
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 155,
+            "db_id": "debit_card_specializing",
+            "matched_orig": [
+              "CZE"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 175,
+            "db_id": "european_football_2",
+            "matched_orig": [
+              "medium"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_C0/r0": {
+        "n": 50,
+        "official_set_ex_hits": 2,
+        "official_set_ex_pct": 4.0,
+        "contains_recoded_token_regex": 0,
+        "contains_exact_bijection_recoded_token": 0,
+        "contains_unmapped_english_surface_literal": 25,
+        "contains_both": 0,
+        "contains_neither": 25,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged",
+              "Unified School District"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)",
+              "Unified School District"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Preschool",
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_IND8_PROMPT/r0": {
+        "n": 50,
+        "official_set_ex_hits": 22,
+        "official_set_ex_pct": 44.0,
+        "contains_recoded_token_regex": 24,
+        "contains_exact_bijection_recoded_token": 24,
+        "contains_unmapped_english_surface_literal": 14,
+        "contains_both": 1,
+        "contains_neither": 13,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "County Office of Education (COE)",
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_DG8_R1/r0": {
+        "n": 50,
+        "official_set_ex_hits": 24,
+        "official_set_ex_pct": 48.0,
+        "contains_recoded_token_regex": 28,
+        "contains_exact_bijection_recoded_token": 28,
+        "contains_unmapped_english_surface_literal": 12,
+        "contains_both": 1,
+        "contains_neither": 11,
+        "sample_unmapped_english": [
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 13,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "High Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_C4/r0": {
+        "n": 50,
+        "official_set_ex_hits": 28,
+        "official_set_ex_pct": 56.0,
+        "contains_recoded_token_regex": 38,
+        "contains_exact_bijection_recoded_token": 38,
+        "contains_unmapped_english_surface_literal": 3,
+        "contains_both": 1,
+        "contains_neither": 10,
+        "sample_unmapped_english": [
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Preschool"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 13,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "High Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 175,
+            "db_id": "european_football_2",
+            "matched_orig": [
+              "medium"
+            ],
+            "ex": 0
+          }
+        ]
+      }
+    },
+    "Seed2_Slice_75": {
+      "REMAP_S2_C0/r0": {
+        "n": 75,
+        "official_set_ex_hits": 1,
+        "official_set_ex_pct": 1.33,
+        "contains_recoded_token_regex": 0,
+        "contains_exact_bijection_recoded_token": 0,
+        "contains_unmapped_english_surface_literal": 34,
+        "contains_both": 0,
+        "contains_neither": 41,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_S2_IND8_PROMPT_R1/r0": {
+        "n": 75,
+        "official_set_ex_hits": 5,
+        "official_set_ex_pct": 6.67,
+        "contains_recoded_token_regex": 12,
+        "contains_exact_bijection_recoded_token": 11,
+        "contains_unmapped_english_surface_literal": 30,
+        "contains_both": 1,
+        "contains_neither": 34,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_S2_DG8_R1/r0": {
+        "n": 75,
+        "official_set_ex_hits": 6,
+        "official_set_ex_pct": 8.0,
+        "contains_recoded_token_regex": 9,
+        "contains_exact_bijection_recoded_token": 9,
+        "contains_unmapped_english_surface_literal": 27,
+        "contains_both": 0,
+        "contains_neither": 39,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "REMAP_S2_C4/r0": {
+        "n": 75,
+        "official_set_ex_hits": 15,
+        "official_set_ex_pct": 20.0,
+        "contains_recoded_token_regex": 39,
+        "contains_exact_bijection_recoded_token": 39,
+        "contains_unmapped_english_surface_literal": 12,
+        "contains_both": 1,
+        "contains_neither": 25,
+        "sample_unmapped_english": [
+          {
+            "qid": 29,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Active"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 175,
+            "db_id": "european_football_2",
+            "matched_orig": [
+              "medium"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 177,
+            "db_id": "european_football_2",
+            "matched_orig": [
+              "medium"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_S2_C0/r0": {
+        "n": 75,
+        "official_set_ex_hits": 2,
+        "official_set_ex_pct": 2.67,
+        "contains_recoded_token_regex": 0,
+        "contains_exact_bijection_recoded_token": 0,
+        "contains_unmapped_english_surface_literal": 41,
+        "contains_both": 0,
+        "contains_neither": 34,
+        "sample_unmapped_english": [
+          {
+            "qid": 3,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "ELEM",
+              "Merged",
+              "Unified School District"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)",
+              "Unified School District"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Preschool",
+              "Active"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_S2_IND8_PROMPT_R1/r0": {
+        "n": 75,
+        "official_set_ex_hits": 17,
+        "official_set_ex_pct": 22.67,
+        "contains_recoded_token_regex": 27,
+        "contains_exact_bijection_recoded_token": 27,
+        "contains_unmapped_english_surface_literal": 22,
+        "contains_both": 0,
+        "contains_neither": 26,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 13,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "High Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 18,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "County Office of Education (COE)",
+              "High School District",
+              "ELEM"
+            ],
+            "ex": 0
+          }
+        ]
+      },
+      "SOL_REMAP_S2_DG8_R1/r0": {
+        "n": 75,
+        "official_set_ex_hits": 17,
+        "official_set_ex_pct": 22.67,
+        "contains_recoded_token_regex": 34,
+        "contains_exact_bijection_recoded_token": 34,
+        "contains_unmapped_english_surface_literal": 19,
+        "contains_both": 1,
+        "contains_neither": 23,
+        "sample_unmapped_english": [
+          {
+            "qid": 8,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Intermediate/Middle Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Preschool"
+            ],
+            "ex": 0
+          },
+          {
+            "qid": 13,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "High Schools (Public)"
+            ],
+            "ex": 1
+          }
+        ]
+      },
+      "SOL_REMAP_S2_C4/r0": {
+        "n": 75,
+        "official_set_ex_hits": 37,
+        "official_set_ex_pct": 49.33,
+        "contains_recoded_token_regex": 50,
+        "contains_exact_bijection_recoded_token": 50,
+        "contains_unmapped_english_surface_literal": 10,
+        "contains_both": 2,
+        "contains_neither": 17,
+        "sample_unmapped_english": [
+          {
+            "qid": 11,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "Preschool"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 13,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "High Schools (Public)"
+            ],
+            "ex": 1
+          },
+          {
+            "qid": 18,
+            "db_id": "california_schools",
+            "matched_orig": [
+              "County Office of Education (COE)",
+              "High School District",
+              "ELEM"
+            ],
+            "ex": 0
+          }
+        ]
+      }
+    }
+  },
+  "reviewer_q4_ehrsql_patient_literal_136": {
+    "rates_on_patient_literal_136": {
+      "C0/r0": {
+        "hits": 50,
+        "n": 136,
+        "pct": 36.76
+      },
+      "C0P/r0": {
+        "hits": 53,
+        "n": 136,
+        "pct": 38.97
+      },
+      "EHR_ENT8_V3_R1/r0": {
+        "hits": 60,
+        "n": 136,
+        "pct": 44.12
+      },
+      "EHR_IND8_V3_R1/r0": {
+        "hits": 67,
+        "n": 136,
+        "pct": 49.26
+      },
+      "EHR_DG8P_NOLKP_V3_R1/r0": {
+        "hits": 73,
+        "n": 136,
+        "pct": 53.68
+      },
+      "EHR_DG8P_NOLKP_V3_R2/r0": {
+        "hits": 77,
+        "n": 136,
+        "pct": 56.62
+      },
+      "EHR_DG8P_NOLKP_V3_R3/r0": {
+        "hits": 74,
+        "n": 136,
+        "pct": 54.41
+      },
+      "EHR_DG8P_V3_R1/r0": {
+        "hits": 73,
+        "n": 136,
+        "pct": 53.68
+      },
+      "EHR_DG8P_V3_R2/r0": {
+        "hits": 76,
+        "n": 136,
+        "pct": 55.88
+      },
+      "EHR_DG8P_V3_R3/r0": {
+        "hits": 66,
+        "n": 136,
+        "pct": 48.53
+      },
+      "DG8P_R1/r0": {
+        "hits": 78,
+        "n": 136,
+        "pct": 57.35
+      },
+      "DG8P_R2/r0": {
+        "hits": 76,
+        "n": 136,
+        "pct": 55.88
+      },
+      "DG8P_R3/r0": {
+        "hits": 79,
+        "n": 136,
+        "pct": 58.09
+      },
+      "C4/r0": {
+        "hits": 79,
+        "n": 136,
+        "pct": 58.09
+      }
+    },
+    "rates_on_all_600": {
+      "C0/r0": {
+        "hits": 218,
+        "n": 600,
+        "pct": 36.33
+      },
+      "C0P/r0": {
+        "hits": 270,
+        "n": 600,
+        "pct": 45.0
+      },
+      "EHR_ENT8_V3_R1/r0": {
+        "hits": 298,
+        "n": 600,
+        "pct": 49.67
+      },
+      "EHR_IND8_V3_R1/r0": {
+        "hits": 296,
+        "n": 600,
+        "pct": 49.33
+      },
+      "EHR_DG8P_NOLKP_V3_R1/r0": {
+        "hits": 262,
+        "n": 600,
+        "pct": 43.67
+      },
+      "EHR_DG8P_NOLKP_V3_R2/r0": {
+        "hits": 275,
+        "n": 600,
+        "pct": 45.83
+      },
+      "EHR_DG8P_NOLKP_V3_R3/r0": {
+        "hits": 274,
+        "n": 600,
+        "pct": 45.67
+      },
+      "EHR_DG8P_V3_R1/r0": {
+        "hits": 302,
+        "n": 600,
+        "pct": 50.33
+      },
+      "EHR_DG8P_V3_R2/r0": {
+        "hits": 307,
+        "n": 600,
+        "pct": 51.17
+      },
+      "EHR_DG8P_V3_R3/r0": {
+        "hits": 284,
+        "n": 600,
+        "pct": 47.33
+      },
+      "DG8P_R1/r0": {
+        "hits": 310,
+        "n": 600,
+        "pct": 51.67
+      },
+      "DG8P_R2/r0": {
+        "hits": 304,
+        "n": 600,
+        "pct": 50.67
+      },
+      "DG8P_R3/r0": {
+        "hits": 307,
+        "n": 600,
+        "pct": 51.17
+      },
+      "C4/r0": {
+        "hits": 289,
+        "n": 600,
+        "pct": 48.17
+      }
+    },
+    "ent8_v3_vs_c0p_on_136_note": "On patient_literal_136: EHR_ENT8_V3_R1/r0 achieves 60/136 (44.12%) vs C0P/r0 (Lookup-Only) 53/136 (38.97%) [+7 net wins, +5.15 pp; 18 wins, 11 losses] and vs C0/r0 50/136 (36.76%) [+10 net wins, +7.35 pp]. Across all 600 confirmation queries, EHR_ENT8_V3_R1/r0 achieves 298/600 (49.67%) vs C0P/r0 270/600 (45.00%) [+28 net wins, +4.67 pp]. Meanwhile on patient_literal_136, DG8P_R1 achieves 78/136 (57.35%) vs C0/r0 50/136 (36.76%) [+28 net, +20.59 pp].",
+    "tool_and_profile_usage_136": {
+      "n": 136,
+      "ent8_v3_total_lookup_calls": 26,
+      "ent8_v3_slots_with_lookup": 22,
+      "ent8_v3_slots_with_surviving_profile_val": 0,
+      "c0p_total_lookup_calls": 25,
+      "c0p_slots_with_lookup": 24,
+      "wins_vs_c0p_count": 18,
+      "wins_used_lookup_calls": 2,
+      "wins_used_lookup_code": 0,
+      "wins_matched_surviving_profile_val": 0,
+      "wins_detail": [
+        {
+          "qid": "0cd0b92b050e9e355d9c8775",
+          "idx": 34,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "21725d6a5831671fc4d0dc87",
+          "idx": 89,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "21a26369d82d30e8f8036663",
+          "idx": 90,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "3347c7735b3a39f53f492495",
+          "idx": 117,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "425e31a5bea537ada730003e",
+          "idx": 148,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "44a6d21d8264b4fa98a0113f",
+          "idx": 156,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "4db20b840c3b030a56108b21",
+          "idx": 181,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "53c9148b613c58bca3b23674",
+          "idx": 192,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "81882a684bf6449f672dfca5",
+          "idx": 298,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "84864ac527ad8527348ec48a",
+          "idx": 302,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "a07f951288594d0721e53be7",
+          "idx": 363,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "a39005834defa0da659aa0e9",
+          "idx": 374,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "a5681c4eead8c8b2e1968ab1",
+          "idx": 379,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "ba85b4185b40acf102f505e5",
+          "idx": 428,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "c040519bfaa35e04239eecbd",
+          "idx": 445,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "c3edbb8f5bd0cfd4858c41be",
+          "idx": 452,
+          "official_set_ex": 1,
+          "n_lookup_calls": 1,
+          "n_try_calls": 1,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "f599a974b9f48dd1b8bee774",
+          "idx": 573,
+          "official_set_ex": 1,
+          "n_lookup_calls": 1,
+          "n_try_calls": 2,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        },
+        {
+          "qid": "fb61ff0592412ac1416aee55",
+          "idx": 588,
+          "official_set_ex": 1,
+          "n_lookup_calls": 0,
+          "n_try_calls": 2,
+          "used_lookup_code": false,
+          "matched_surviving_profile_vals": []
+        }
+      ],
+      "losses_vs_c0p_count": 11,
+      "surviving_profile_cols": {
+        "labevents.valueuom": 2,
+        "transfers.eventtype": 1
+      }
+    }
+  }
+}

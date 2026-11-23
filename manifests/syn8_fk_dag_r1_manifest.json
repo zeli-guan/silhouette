@@ -1,0 +1,1074 @@
+{
+  "privacy_guarantee": "Post-processing of IND8_R1 (epsilon_T <= 8, delta = 1e-6 per table)",
+  "dbs": {
+    "california_schools": {
+      "db_id": "california_schools",
+      "sqlite_path": "syn8_fk_dag_r1/california_schools.sqlite",
+      "sha256": "6322b66fd456964e565952b9b82a937fa4b4829676bbb237403c0b437ce96547",
+      "source_ind8_r1_sha256": "812310448b30b36745077b26cf8c5ca8bd2ddfadea2f26d4bab601ee3660cec7",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 2,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "schools",
+        "frpm",
+        "satscores"
+      ],
+      "ind8_r1_rows_by_table": {
+        "schools": 17667,
+        "frpm": 9992,
+        "satscores": 2257
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "schools": 17667,
+        "frpm": 9992,
+        "satscores": 2257
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "frpm.CDSCode -> schools.CDSCode",
+          "nonnull_child_rows": 9992,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "satscores.cds -> schools.CDSCode",
+          "nonnull_child_rows": 2257,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "card_games": {
+      "db_id": "card_games",
+      "sqlite_path": "syn8_fk_dag_r1/card_games.sqlite",
+      "sha256": "ded6021c2a96a714ecfe059e57b51d5392e92fcc6f666cebc31f4f7316a37cec",
+      "source_ind8_r1_sha256": "81efc5e4acfda824da391a3d333052a33913230806d9a5df56a69b45a6d61921",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 4,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "cards",
+        "sets",
+        "foreign_data",
+        "legalities",
+        "rulings",
+        "set_translations"
+      ],
+      "ind8_r1_rows_by_table": {
+        "cards": 56806,
+        "sets": 556,
+        "foreign_data": 229188,
+        "legalities": 427906,
+        "rulings": 87770,
+        "set_translations": 1209
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "cards": 56806,
+        "sets": 556,
+        "foreign_data": 229188,
+        "legalities": 427906,
+        "rulings": 87770,
+        "set_translations": 1209
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "foreign_data.uuid -> cards.uuid",
+          "nonnull_child_rows": 58333,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "legalities.uuid -> cards.uuid",
+          "nonnull_child_rows": 427755,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "rulings.uuid -> cards.uuid",
+          "nonnull_child_rows": 26185,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "set_translations.setCode -> sets.code",
+          "nonnull_child_rows": 1106,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "codebase_community": {
+      "db_id": "codebase_community",
+      "sqlite_path": "syn8_fk_dag_r1/codebase_community.sqlite",
+      "sha256": "520ab8b65a13fa95c94c5d9da7bc02d0528ce58142714b7da117cc46daaf6360",
+      "source_ind8_r1_sha256": "eaf0c27e997359c9f2528fb3a266bbf515b82c17b124ac44d7b9d348c91b52e7",
+      "is_strict_dag": false,
+      "is_maximal_dag": true,
+      "dag_edges_count": 12,
+      "self_loops_count": 1,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "users",
+        "badges",
+        "posts",
+        "comments",
+        "postHistory",
+        "postLinks",
+        "tags",
+        "votes"
+      ],
+      "ind8_r1_rows_by_table": {
+        "users": 40325,
+        "badges": 79852,
+        "posts": 91967,
+        "comments": 174289,
+        "postHistory": 303154,
+        "postLinks": 11103,
+        "tags": 1019,
+        "votes": 38928
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "users": 40325,
+        "badges": 79852,
+        "posts": 91967,
+        "comments": 174289,
+        "postHistory": 303154,
+        "postLinks": 11103,
+        "tags": 1019,
+        "votes": 38928
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "badges.UserId -> users.Id",
+          "nonnull_child_rows": 29458,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "comments.UserId -> users.Id",
+          "nonnull_child_rows": 151534,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "comments.PostId -> posts.Id",
+          "nonnull_child_rows": 25969,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "postHistory.UserId -> users.Id",
+          "nonnull_child_rows": 280641,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "postHistory.PostId -> posts.Id",
+          "nonnull_child_rows": 16636,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "postLinks.RelatedPostId -> posts.Id",
+          "nonnull_child_rows": 2589,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "postLinks.PostId -> posts.Id",
+          "nonnull_child_rows": 86,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "posts.OwnerUserId -> users.Id",
+          "nonnull_child_rows": 47043,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "posts.LastEditorUserId -> users.Id",
+          "nonnull_child_rows": 32202,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "tags.ExcerptPostId -> posts.Id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "votes.UserId -> users.Id",
+          "nonnull_child_rows": 2457,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "votes.PostId -> posts.Id",
+          "nonnull_child_rows": 12105,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "posts.ParentId -> posts.Id",
+          "nonnull_child_rows": 752,
+          "broken_fk_rows": 0,
+          "is_self_loop": true
+        }
+      ]
+    },
+    "debit_card_specializing": {
+      "db_id": "debit_card_specializing",
+      "sqlite_path": "syn8_fk_dag_r1/debit_card_specializing.sqlite",
+      "sha256": "464b9e38e24dee032327ccb8e39733913c870194694de61dce092adf3d288709",
+      "source_ind8_r1_sha256": "1069e3f0267158934ed77027e6410dac4628f9614b018d290326a907f6f64169",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 1,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "customers",
+        "gasstations",
+        "products",
+        "transactions_1k",
+        "yearmonth"
+      ],
+      "ind8_r1_rows_by_table": {
+        "customers": 32461,
+        "gasstations": 5717,
+        "products": 593,
+        "transactions_1k": 998,
+        "yearmonth": 383291
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "customers": 32461,
+        "gasstations": 5717,
+        "products": 593,
+        "transactions_1k": 998,
+        "yearmonth": 383282
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "yearmonth.CustomerID -> customers.CustomerID",
+          "nonnull_child_rows": 383282,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "european_football_2": {
+      "db_id": "european_football_2",
+      "sqlite_path": "syn8_fk_dag_r1/european_football_2.sqlite",
+      "sha256": "cc09b4e1fcb5bd178614daf5786d95424889f8437484feef6bc8b87b616624be",
+      "source_ind8_r1_sha256": "0e3cb0ce9f18a12594bbf5369b8bd36013cfd6a6f01cd54afba68d158fc365f5",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 31,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "Country",
+        "Player",
+        "Team",
+        "League",
+        "Player_Attributes",
+        "Team_Attributes",
+        "Match"
+      ],
+      "ind8_r1_rows_by_table": {
+        "Country": 10,
+        "Player": 11075,
+        "Team": 298,
+        "League": 12,
+        "Player_Attributes": 183986,
+        "Team_Attributes": 1447,
+        "Match": 25974
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "Country": 10,
+        "Player": 11075,
+        "Team": 298,
+        "League": 12,
+        "Player_Attributes": 183986,
+        "Team_Attributes": 1447,
+        "Match": 25974
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "League.country_id -> Country.id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_11 -> Player.player_api_id",
+          "nonnull_child_rows": 3867,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_10 -> Player.player_api_id",
+          "nonnull_child_rows": 2144,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_9 -> Player.player_api_id",
+          "nonnull_child_rows": 1938,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_8 -> Player.player_api_id",
+          "nonnull_child_rows": 1340,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_7 -> Player.player_api_id",
+          "nonnull_child_rows": 2055,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_6 -> Player.player_api_id",
+          "nonnull_child_rows": 1833,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_5 -> Player.player_api_id",
+          "nonnull_child_rows": 6670,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_4 -> Player.player_api_id",
+          "nonnull_child_rows": 5837,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_3 -> Player.player_api_id",
+          "nonnull_child_rows": 6347,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_2 -> Player.player_api_id",
+          "nonnull_child_rows": 7575,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_player_1 -> Player.player_api_id",
+          "nonnull_child_rows": 15403,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_11 -> Player.player_api_id",
+          "nonnull_child_rows": 4705,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_10 -> Player.player_api_id",
+          "nonnull_child_rows": 2718,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_9 -> Player.player_api_id",
+          "nonnull_child_rows": 2173,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_8 -> Player.player_api_id",
+          "nonnull_child_rows": 1614,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_7 -> Player.player_api_id",
+          "nonnull_child_rows": 2912,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_6 -> Player.player_api_id",
+          "nonnull_child_rows": 1986,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_5 -> Player.player_api_id",
+          "nonnull_child_rows": 7562,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_4 -> Player.player_api_id",
+          "nonnull_child_rows": 6398,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_3 -> Player.player_api_id",
+          "nonnull_child_rows": 6464,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_2 -> Player.player_api_id",
+          "nonnull_child_rows": 8160,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_player_1 -> Player.player_api_id",
+          "nonnull_child_rows": 15795,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.away_team_api_id -> Team.team_api_id",
+          "nonnull_child_rows": 24348,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.home_team_api_id -> Team.team_api_id",
+          "nonnull_child_rows": 24137,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.league_id -> League.id",
+          "nonnull_child_rows": 25937,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Match.country_id -> Country.id",
+          "nonnull_child_rows": 25948,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Player_Attributes.player_api_id -> Player.player_api_id",
+          "nonnull_child_rows": 157464,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Player_Attributes.player_fifa_api_id -> Player.player_fifa_api_id",
+          "nonnull_child_rows": 159094,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Team_Attributes.team_api_id -> Team.team_api_id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Team_Attributes.team_fifa_api_id -> Team.team_fifa_api_id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "financial": {
+      "db_id": "financial",
+      "sqlite_path": "syn8_fk_dag_r1/financial.sqlite",
+      "sha256": "8b57e29b8cf0570ecf09ce13e01b08a69d6a596d94ec38852ecc7fd26bcc402b",
+      "source_ind8_r1_sha256": "79f70148b74d09f61b65d60d7e8a0f7f01656b8973aa3cfcc0ebab0d22a543df",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 8,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "district",
+        "account",
+        "client",
+        "loan",
+        "order",
+        "trans",
+        "disp",
+        "card"
+      ],
+      "ind8_r1_rows_by_table": {
+        "district": 78,
+        "account": 4500,
+        "client": 5366,
+        "loan": 680,
+        "order": 6478,
+        "trans": 1056316,
+        "disp": 5370,
+        "card": 893
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "district": 78,
+        "account": 4500,
+        "client": 5366,
+        "loan": 680,
+        "order": 6478,
+        "trans": 1056316,
+        "disp": 5370,
+        "card": 893
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "account.district_id -> district.district_id",
+          "nonnull_child_rows": 4500,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "card.disp_id -> disp.disp_id",
+          "nonnull_child_rows": 893,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "client.district_id -> district.district_id",
+          "nonnull_child_rows": 5366,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "disp.client_id -> client.client_id",
+          "nonnull_child_rows": 5370,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "disp.account_id -> account.account_id",
+          "nonnull_child_rows": 5370,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "loan.account_id -> account.account_id",
+          "nonnull_child_rows": 680,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "order.account_id -> account.account_id",
+          "nonnull_child_rows": 6478,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "trans.account_id -> account.account_id",
+          "nonnull_child_rows": 1056316,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "formula_1": {
+      "db_id": "formula_1",
+      "sqlite_path": "syn8_fk_dag_r1/formula_1.sqlite",
+      "sha256": "c22be7f274cf3f6ce86513a823f76b125e81527e5d902e03ed2b560e64e8c25f",
+      "source_ind8_r1_sha256": "b106463a15ede1ecaca98828977ebb0f390b6956fc663e3bf84d2528ec74a569",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 19,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "circuits",
+        "constructors",
+        "drivers",
+        "seasons",
+        "status",
+        "races",
+        "constructorResults",
+        "constructorStandings",
+        "driverStandings",
+        "lapTimes",
+        "pitStops",
+        "qualifying",
+        "results"
+      ],
+      "ind8_r1_rows_by_table": {
+        "circuits": 70,
+        "constructors": 209,
+        "drivers": 835,
+        "seasons": 67,
+        "status": 135,
+        "races": 934,
+        "constructorResults": 11087,
+        "constructorStandings": 11828,
+        "driverStandings": 31574,
+        "lapTimes": 400517,
+        "pitStops": 5800,
+        "qualifying": 6948,
+        "results": 23189
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "circuits": 70,
+        "constructors": 209,
+        "drivers": 835,
+        "seasons": 67,
+        "status": 135,
+        "races": 934,
+        "constructorResults": 11087,
+        "constructorStandings": 11828,
+        "driverStandings": 31574,
+        "lapTimes": 400517,
+        "pitStops": 5800,
+        "qualifying": 6948,
+        "results": 23189
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "constructorResults.constructorId -> constructors.constructorId",
+          "nonnull_child_rows": 11087,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "constructorResults.raceId -> races.raceId",
+          "nonnull_child_rows": 11087,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "constructorStandings.constructorId -> constructors.constructorId",
+          "nonnull_child_rows": 11828,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "constructorStandings.raceId -> races.raceId",
+          "nonnull_child_rows": 11828,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "driverStandings.driverId -> drivers.driverId",
+          "nonnull_child_rows": 31574,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "driverStandings.raceId -> races.raceId",
+          "nonnull_child_rows": 31574,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "lapTimes.driverId -> drivers.driverId",
+          "nonnull_child_rows": 400517,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "lapTimes.raceId -> races.raceId",
+          "nonnull_child_rows": 400517,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "pitStops.driverId -> drivers.driverId",
+          "nonnull_child_rows": 5800,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "pitStops.raceId -> races.raceId",
+          "nonnull_child_rows": 5800,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "qualifying.constructorId -> constructors.constructorId",
+          "nonnull_child_rows": 6948,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "qualifying.driverId -> drivers.driverId",
+          "nonnull_child_rows": 6948,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "qualifying.raceId -> races.raceId",
+          "nonnull_child_rows": 6948,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "races.circuitId -> circuits.circuitId",
+          "nonnull_child_rows": 934,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "races.year -> seasons.year",
+          "nonnull_child_rows": 934,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "results.statusId -> status.statusId",
+          "nonnull_child_rows": 23189,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "results.constructorId -> constructors.constructorId",
+          "nonnull_child_rows": 23189,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "results.driverId -> drivers.driverId",
+          "nonnull_child_rows": 23189,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "results.raceId -> races.raceId",
+          "nonnull_child_rows": 23189,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "student_club": {
+      "db_id": "student_club",
+      "sqlite_path": "syn8_fk_dag_r1/student_club.sqlite",
+      "sha256": "0441b70215a069fb1c1423922e06c207e893f2f6beac215354f2e741c0483fee",
+      "source_ind8_r1_sha256": "2158215b41dcd5ed15e0c4ca5e6d2c7b81963842171aeed3cec581eecb8837c4",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 8,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "event",
+        "major",
+        "zip_code",
+        "budget",
+        "member",
+        "attendance",
+        "expense",
+        "income"
+      ],
+      "ind8_r1_rows_by_table": {
+        "event": 39,
+        "major": 112,
+        "zip_code": 41877,
+        "budget": 62,
+        "member": 35,
+        "attendance": 327,
+        "expense": 52,
+        "income": 42
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "event": 39,
+        "major": 112,
+        "zip_code": 41877,
+        "budget": 62,
+        "member": 35,
+        "attendance": 327,
+        "expense": 52,
+        "income": 42
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "attendance.link_to_member -> member.member_id",
+          "nonnull_child_rows": 327,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "attendance.link_to_event -> event.event_id",
+          "nonnull_child_rows": 327,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "budget.link_to_event -> event.event_id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "expense.link_to_member -> member.member_id",
+          "nonnull_child_rows": 25,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "expense.link_to_budget -> budget.budget_id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "income.link_to_member -> member.member_id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "member.zip -> zip_code.zip_code",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "member.link_to_major -> major.major_id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "superhero": {
+      "db_id": "superhero",
+      "sqlite_path": "syn8_fk_dag_r1/superhero.sqlite",
+      "sha256": "c49747d5b7d6676b82c2f5993a935e7f67c57e533889379ae736fea6f12cad2c",
+      "source_ind8_r1_sha256": "65e21e5fd015d962de71c877b3b851366165fdf96edd9bfc4ac4328837ef34fa",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 11,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "alignment",
+        "attribute",
+        "colour",
+        "gender",
+        "publisher",
+        "race",
+        "superpower",
+        "superhero",
+        "hero_attribute",
+        "hero_power"
+      ],
+      "ind8_r1_rows_by_table": {
+        "alignment": 3,
+        "attribute": 6,
+        "colour": 35,
+        "gender": 4,
+        "publisher": 24,
+        "race": 62,
+        "superpower": 166,
+        "superhero": 713,
+        "hero_attribute": 3752,
+        "hero_power": 5823
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "alignment": 3,
+        "attribute": 6,
+        "colour": 35,
+        "gender": 4,
+        "publisher": 24,
+        "race": 62,
+        "superpower": 166,
+        "superhero": 713,
+        "hero_attribute": 3752,
+        "hero_power": 5823
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "hero_attribute.hero_id -> superhero.id",
+          "nonnull_child_rows": 783,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "hero_attribute.attribute_id -> attribute.id",
+          "nonnull_child_rows": 3734,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "hero_power.power_id -> superpower.id",
+          "nonnull_child_rows": 5647,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "hero_power.hero_id -> superhero.id",
+          "nonnull_child_rows": 4682,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "superhero.skin_colour_id -> colour.id",
+          "nonnull_child_rows": 701,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "superhero.race_id -> race.id",
+          "nonnull_child_rows": 625,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "superhero.publisher_id -> publisher.id",
+          "nonnull_child_rows": 692,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "superhero.hair_colour_id -> colour.id",
+          "nonnull_child_rows": 689,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "superhero.gender_id -> gender.id",
+          "nonnull_child_rows": 713,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "superhero.eye_colour_id -> colour.id",
+          "nonnull_child_rows": 710,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "superhero.alignment_id -> alignment.id",
+          "nonnull_child_rows": 713,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "thrombosis_prediction": {
+      "db_id": "thrombosis_prediction",
+      "sqlite_path": "syn8_fk_dag_r1/thrombosis_prediction.sqlite",
+      "sha256": "80f72b28828f652364a907650404162494f6678d0db73eb06fe673dde3bf2ab9",
+      "source_ind8_r1_sha256": "0cb0e48f89b50ff246618be1b5109d3279f235518fb9c08a56ea0ff815725708",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 2,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "Patient",
+        "Examination",
+        "Laboratory"
+      ],
+      "ind8_r1_rows_by_table": {
+        "Patient": 1240,
+        "Examination": 117,
+        "Laboratory": 13907
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "Patient": 1240,
+        "Examination": 117,
+        "Laboratory": 1330
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "Examination.ID -> Patient.ID",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "Laboratory.ID -> Patient.ID",
+          "nonnull_child_rows": 1330,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    },
+    "toxicology": {
+      "db_id": "toxicology",
+      "sqlite_path": "syn8_fk_dag_r1/toxicology.sqlite",
+      "sha256": "036350ead3ff7bea8c38ca90a3b6313124232c4ac2fde53437cc69ab8b5a5354",
+      "source_ind8_r1_sha256": "83336ed38a3efb302f34dee41b30a13f019e717158ee4a0b459ea16682bf056b",
+      "is_strict_dag": true,
+      "is_maximal_dag": true,
+      "dag_edges_count": 5,
+      "self_loops_count": 0,
+      "composite_fks_count": 0,
+      "topo_order": [
+        "molecule",
+        "atom",
+        "bond",
+        "connected"
+      ],
+      "ind8_r1_rows_by_table": {
+        "molecule": 344,
+        "atom": 9110,
+        "bond": 9155,
+        "connected": 18315
+      },
+      "syn8_fk_dag_rows_by_table": {
+        "molecule": 344,
+        "atom": 9110,
+        "bond": 9155,
+        "connected": 18315
+      },
+      "total_broken_fk_rows": 0,
+      "edge_checks": [
+        {
+          "edge": "atom.molecule_id -> molecule.molecule_id",
+          "nonnull_child_rows": 9073,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "bond.molecule_id -> molecule.molecule_id",
+          "nonnull_child_rows": 9122,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "connected.bond_id -> bond.bond_id",
+          "nonnull_child_rows": 0,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "connected.atom_id2 -> atom.atom_id",
+          "nonnull_child_rows": 18315,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        },
+        {
+          "edge": "connected.atom_id -> atom.atom_id",
+          "nonnull_child_rows": 18315,
+          "broken_fk_rows": 0,
+          "is_self_loop": false
+        }
+      ]
+    }
+  }
+}

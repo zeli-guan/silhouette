@@ -1,0 +1,28 @@
+Static sample rows from synthetic 1-way DP tables (upfront view):
+
+Table cards(id,artist,asciiName,availability,borderColor,cardKingdomFoilId,cardKingdomId,colorIdentity,colorIndicator,colors,convertedManaCost,duelDeck,edhrecRank,faceConvertedManaCost,faceName,flavorName,flavorText,frameEffects,frameVersion,hand,hasAlternativeDeckLimit,hasContentWarning,hasFoil,hasNonFoil,isAlternative,isFullArt,isOnlineOnly,isOversized,isPromo,isReprint,isReserved,isStarter,isStorySpotlight,isTextless,isTimeshifted,keywords,layout,leadershipSkills,life,loyalty,manaCost,mcmId,mcmMetaId,mtgArenaId,mtgjsonV4Id,mtgoFoilId,mtgoId,multiverseId,name,number,originalReleaseDate,originalText,originalType,otherFaceIds,power,printings,promoTypes,purchaseUrls,rarity,scryfallId,scryfallIllustrationId,scryfallOracleId,setCode,side,subtypes,supertypes,tcgplayerProductId,text,toughness,type,types,uuid,variations,watermark):
+[1,null,null,"mtgo,paper","black",null,null,"B",null,"G,W",5.000437402752106,null,10985,null,null,null,null,null,"2003",null,0,0,0,1,0,0,0,0,1,0,0,0,0,0,0,"Flying","normal",null,null,null,"{1}{G}{G}",null,null,null,null,null,null,null,null,"54",null,null,"Artifact — Equipment",null,null,null,null,null,"rare",null,null,null,"10E",null,null,null,null,null,"5","Enchantment — Aura","Enchantment",null,null,null]
+[947,"Justin Sweet",null,"mtgo,paper","black",null,null,"U",null,"G,U,W",5.000437402752106,null,11733,null,null,null,null,null,"2015",null,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,"Flying","normal",null,null,null,"{R}{R}",null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,"rare",null,null,null,"CN2",null,null,null,null,null,null,"Enchantment — Aura","Enchantment",null,null,null]
+[1893,"Jesper Ejsing",null,"paper","black",null,null,"B",null,null,3.0001590655932406,null,1203,null,null,null,null,null,"2015",null,0,0,0,1,0,0,0,0,0,1,32773,0,0,0,0,"Enchant","normal",null,null,null,"{7}",null,null,null,null,null,null,null,null,"50",null,null,"Creature - Shapeshifter",null,null,null,null,null,"uncommon",null,null,null,"CMR",null,"Troll",null,null,null,"4","Creature — Elemental","Instant",null,null,null]
+[2839,"Dan Frazier",null,"paper","black",null,null,"R",null,null,5.9996520772506186,null,null,null,null,null,null,null,"2015",null,0,0,1,1,0,0,1,0,0,1,0,1,0,0,0,null,"normal",null,null,null,"{2}{B}{G}",null,"4251",null,null,null,null,null,null,"282",null,null,"Instant",null,"3",null,null,null,"mythic",null,null,null,"USG",null,null,"Basic",null,null,null,"Enchantment","Creature",null,null,null]
+Table foreign_data(id,flavorText,language,multiverseid,name,text,type,uuid):
+[1,"","Chinese Traditional",null,null,null,"Beschwörung von Goblins","bc477f1c-abe0-5962-a3b7-278f607164e4"]
+[3820,null,"Japanese",null,null,null,"アーティファクト・クリーチャー — 構築物",null]
+[7639,"","Italian",null,null,null,"Encantamento",null]
+Table legalities(id,format,status,uuid):
+[1,"modern","Legal","32ace6f2-a3a0-5373-a50c-2534f30aaa8c"]
+[7132,"duel","Legal","de599aa8-838e-5e2a-b9b3-b46ba844d7fe"]
+[14263,"pioneer","Legal","8e533e7d-c88b-516a-b8cd-847a832d802b"]
+Table rulings(id,date,text,uuid):
+[1,"2014-04-26",null,"866614dc-c787-5205-bc85-15572825a2a1"]
+[1463,"2020-04-17","Annihilator abilities trigger and resolve during the declare attackers step. The defending player ch",null]
+[2925,"2015-06-22","Other cards and abilities can give a card with devoid color. If that happens, it’s just the new colo",null]
+Table set_translations(id,language,setCode,translation):
+[1,"Spanish","KLD",null]
+[21,"Russian","PCA","Modern Masters"]
+[41,"Russian","CNS",null]
+[61,"Spanish","DDD","Venser vs. Koth"]
+Table sets(id,baseSetSize,block,booster,code,isFoilOnly,isForeignOnly,isNonFoilOnly,isOnlineOnly,isPartialPreview,keyruneCode,mcmId,mcmIdExtras,mcmName,mtgoCode,name,parentCode,releaseDate,tcgplayerGroupId,totalSetSize,type):
+[1,300,null,null,null,0,0,0,267,0,"PMEI",null,null,null,null,null,null,null,null,115,"promo"]
+[10,138,null,null,null,0,0,0,0,0,null,null,null,null,null,null,null,null,null,-2,"expansion"]
+[19,11,null,null,null,0,0,0,267,0,"DEFAULT",null,null,null,null,null,null,null,null,-2,null]

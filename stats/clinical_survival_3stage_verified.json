@@ -1,0 +1,3975 @@
+{
+  "schema_version": "clinical-survival-whole-patient-v8",
+  "resampling_method": "whole_patient_bootstrap_with_replacement",
+  "noise_sampler": "exact_cks_integer_dgauss (silhouette.dg_sampler.sample_dgauss)",
+  "seed_rule": "sha256('stage8_whole_patient_v8:{schedule}:{N}:{m}')",
+  "deid_fixture_sha256": "2399d25dfef0b1a90f00e45e1af24993991dc277344d5ec9717c0704a7a0ad60",
+  "m_cohorts": 200,
+  "n_patients_source": 94,
+  "cap": 5,
+  "n_tables": 13,
+  "n_stats": 346,
+  "n_histograms": 139,
+  "c1_total": 125,
+  "c1_reachable_cap5": 120,
+  "schedules": {
+    "db_global_eps8": {
+      "label": "DB-wide convex (eps=8)",
+      "epsilon": 8,
+      "schedule": "db_global",
+      "cohorts": {
+        "94": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 3.21,
+              "ci95_pct": [
+                0.81,
+                5.83
+              ],
+              "mean_pct_exact": 3.2125,
+              "ci95_pct_exact": [
+                0.8125,
+                5.833333
+              ]
+            },
+            "all_125": {
+              "mean_pct": 3.08,
+              "ci95_pct": [
+                0.78,
+                5.6
+              ],
+              "mean_pct_exact": 3.084,
+              "ci95_pct_exact": [
+                0.78,
+                5.6
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 2.5,
+              "ci95_pct": [
+                0.0,
+                5.83
+              ],
+              "mean_pct_exact": 2.495833,
+              "ci95_pct_exact": [
+                0.0,
+                5.833333
+              ]
+            },
+            "all_125": {
+              "mean_pct": 2.4,
+              "ci95_pct": [
+                0.0,
+                5.6
+              ],
+              "mean_pct_exact": 2.396,
+              "ci95_pct_exact": [
+                0.0,
+                5.6
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 2.5,
+              "ci95_pct": [
+                0.0,
+                5.83
+              ],
+              "mean_pct_exact": 2.495833,
+              "ci95_pct_exact": [
+                0.0,
+                5.833333
+              ]
+            },
+            "all_125": {
+              "mean_pct": 2.4,
+              "ci95_pct": [
+                0.0,
+                5.6
+              ],
+              "mean_pct_exact": 2.396,
+              "ci95_pct_exact": [
+                0.0,
+                5.6
+              ]
+            }
+          }
+        },
+        "1000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 61.21,
+              "ci95_pct": [
+                57.5,
+                65.0
+              ],
+              "mean_pct_exact": 61.208333,
+              "ci95_pct_exact": [
+                57.5,
+                65.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 58.76,
+              "ci95_pct": [
+                55.2,
+                62.4
+              ],
+              "mean_pct_exact": 58.76,
+              "ci95_pct_exact": [
+                55.2,
+                62.4
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 44.13,
+              "ci95_pct": [
+                26.65,
+                58.35
+              ],
+              "mean_pct_exact": 44.129167,
+              "ci95_pct_exact": [
+                26.645833,
+                58.354167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 42.36,
+              "ci95_pct": [
+                25.58,
+                56.02
+              ],
+              "mean_pct_exact": 42.364,
+              "ci95_pct_exact": [
+                25.58,
+                56.02
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 44.13,
+              "ci95_pct": [
+                26.65,
+                58.35
+              ],
+              "mean_pct_exact": 44.129167,
+              "ci95_pct_exact": [
+                26.645833,
+                58.354167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 42.36,
+              "ci95_pct": [
+                25.58,
+                56.02
+              ],
+              "mean_pct_exact": 42.364,
+              "ci95_pct_exact": [
+                25.58,
+                56.02
+              ]
+            }
+          }
+        },
+        "10000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 96.35,
+              "ci95_pct": [
+                93.33,
+                99.17
+              ],
+              "mean_pct_exact": 96.35,
+              "ci95_pct_exact": [
+                93.333333,
+                99.166667
+              ]
+            },
+            "all_125": {
+              "mean_pct": 92.5,
+              "ci95_pct": [
+                89.6,
+                95.2
+              ],
+              "mean_pct_exact": 92.496,
+              "ci95_pct_exact": [
+                89.6,
+                95.2
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 66.91,
+              "ci95_pct": [
+                41.67,
+                92.5
+              ],
+              "mean_pct_exact": 66.9125,
+              "ci95_pct_exact": [
+                41.666667,
+                92.5
+              ]
+            },
+            "all_125": {
+              "mean_pct": 64.24,
+              "ci95_pct": [
+                40.0,
+                88.8
+              ],
+              "mean_pct_exact": 64.236,
+              "ci95_pct_exact": [
+                40.0,
+                88.8
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 62.33,
+              "ci95_pct": [
+                40.0,
+                84.21
+              ],
+              "mean_pct_exact": 62.333333,
+              "ci95_pct_exact": [
+                40.0,
+                84.208333
+              ]
+            },
+            "all_125": {
+              "mean_pct": 59.84,
+              "ci95_pct": [
+                38.4,
+                80.84
+              ],
+              "mean_pct_exact": 59.84,
+              "ci95_pct_exact": [
+                38.4,
+                80.84
+              ]
+            }
+          }
+        },
+        "100000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 100.0,
+              "ci95_pct": [
+                100.0,
+                100.0
+              ],
+              "mean_pct_exact": 100.0,
+              "ci95_pct_exact": [
+                100.0,
+                100.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 96.0,
+              "ci95_pct": [
+                96.0,
+                96.0
+              ],
+              "mean_pct_exact": 96.0,
+              "ci95_pct_exact": [
+                96.0,
+                96.0
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 69.44,
+              "ci95_pct": [
+                42.48,
+                90.85
+              ],
+              "mean_pct_exact": 69.441667,
+              "ci95_pct_exact": [
+                42.479167,
+                90.854167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 66.66,
+              "ci95_pct": [
+                40.78,
+                87.22
+              ],
+              "mean_pct_exact": 66.664,
+              "ci95_pct_exact": [
+                40.78,
+                87.22
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 62.68,
+              "ci95_pct": [
+                40.0,
+                80.02
+              ],
+              "mean_pct_exact": 62.683333,
+              "ci95_pct_exact": [
+                40.0,
+                80.020833
+              ]
+            },
+            "all_125": {
+              "mean_pct": 60.18,
+              "ci95_pct": [
+                38.4,
+                76.82
+              ],
+              "mean_pct_exact": 60.176,
+              "ci95_pct_exact": [
+                38.4,
+                76.82
+              ]
+            }
+          }
+        }
+      }
+    },
+    "db_global_eps1": {
+      "label": "DB-wide convex (eps=1)",
+      "epsilon": 1,
+      "schedule": "db_global",
+      "cohorts": {
+        "94": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 0.0,
+              "ci95_pct": [
+                0.0,
+                0.0
+              ],
+              "mean_pct_exact": 0.0,
+              "ci95_pct_exact": [
+                0.0,
+                0.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 0.0,
+              "ci95_pct": [
+                0.0,
+                0.0
+              ],
+              "mean_pct_exact": 0.0,
+              "ci95_pct_exact": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 0.0,
+              "ci95_pct": [
+                0.0,
+                0.0
+              ],
+              "mean_pct_exact": 0.0,
+              "ci95_pct_exact": [
+                0.0,
+                0.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 0.0,
+              "ci95_pct": [
+                0.0,
+                0.0
+              ],
+              "mean_pct_exact": 0.0,
+              "ci95_pct_exact": [
+                0.0,
+                0.0
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 0.0,
+              "ci95_pct": [
+                0.0,
+                0.0
+              ],
+              "mean_pct_exact": 0.0,
+              "ci95_pct_exact": [
+                0.0,
+                0.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 0.0,
+              "ci95_pct": [
+                0.0,
+                0.0
+              ],
+              "mean_pct_exact": 0.0,
+              "ci95_pct_exact": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "1000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 14.58,
+              "ci95_pct": [
+                11.67,
+                16.67
+              ],
+              "mean_pct_exact": 14.579167,
+              "ci95_pct_exact": [
+                11.666667,
+                16.666667
+              ]
+            },
+            "all_125": {
+              "mean_pct": 14.0,
+              "ci95_pct": [
+                11.2,
+                16.0
+              ],
+              "mean_pct_exact": 13.996,
+              "ci95_pct_exact": [
+                11.2,
+                16.0
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 8.18,
+              "ci95_pct": [
+                3.29,
+                14.19
+              ],
+              "mean_pct_exact": 8.183333,
+              "ci95_pct_exact": [
+                3.291667,
+                14.1875
+              ]
+            },
+            "all_125": {
+              "mean_pct": 7.86,
+              "ci95_pct": [
+                3.16,
+                13.62
+              ],
+              "mean_pct_exact": 7.856,
+              "ci95_pct_exact": [
+                3.16,
+                13.62
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 8.18,
+              "ci95_pct": [
+                3.29,
+                14.19
+              ],
+              "mean_pct_exact": 8.183333,
+              "ci95_pct_exact": [
+                3.291667,
+                14.1875
+              ]
+            },
+            "all_125": {
+              "mean_pct": 7.86,
+              "ci95_pct": [
+                3.16,
+                13.62
+              ],
+              "mean_pct_exact": 7.856,
+              "ci95_pct_exact": [
+                3.16,
+                13.62
+              ]
+            }
+          }
+        },
+        "10000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 71.7,
+              "ci95_pct": [
+                68.33,
+                74.19
+              ],
+              "mean_pct_exact": 71.695833,
+              "ci95_pct_exact": [
+                68.333333,
+                74.1875
+              ]
+            },
+            "all_125": {
+              "mean_pct": 68.83,
+              "ci95_pct": [
+                65.6,
+                71.22
+              ],
+              "mean_pct_exact": 68.828,
+              "ci95_pct_exact": [
+                65.6,
+                71.22
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 39.07,
+              "ci95_pct": [
+                19.15,
+                57.5
+              ],
+              "mean_pct_exact": 39.070833,
+              "ci95_pct_exact": [
+                19.145833,
+                57.5
+              ]
+            },
+            "all_125": {
+              "mean_pct": 37.51,
+              "ci95_pct": [
+                18.38,
+                55.2
+              ],
+              "mean_pct_exact": 37.508,
+              "ci95_pct_exact": [
+                18.38,
+                55.2
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 39.05,
+              "ci95_pct": [
+                19.15,
+                57.5
+              ],
+              "mean_pct_exact": 39.05,
+              "ci95_pct_exact": [
+                19.145833,
+                57.5
+              ]
+            },
+            "all_125": {
+              "mean_pct": 37.49,
+              "ci95_pct": [
+                18.38,
+                55.2
+              ],
+              "mean_pct_exact": 37.488,
+              "ci95_pct_exact": [
+                18.38,
+                55.2
+              ]
+            }
+          }
+        },
+        "100000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 99.98,
+              "ci95_pct": [
+                99.98,
+                100.0
+              ],
+              "mean_pct_exact": 99.979167,
+              "ci95_pct_exact": [
+                99.979167,
+                100.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 95.98,
+              "ci95_pct": [
+                95.98,
+                96.0
+              ],
+              "mean_pct_exact": 95.98,
+              "ci95_pct_exact": [
+                95.98,
+                96.0
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 53.86,
+              "ci95_pct": [
+                24.98,
+                78.35
+              ],
+              "mean_pct_exact": 53.858333,
+              "ci95_pct_exact": [
+                24.979167,
+                78.354167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 51.7,
+              "ci95_pct": [
+                23.98,
+                75.22
+              ],
+              "mean_pct_exact": 51.704,
+              "ci95_pct_exact": [
+                23.98,
+                75.22
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 48.4,
+              "ci95_pct": [
+                24.15,
+                70.83
+              ],
+              "mean_pct_exact": 48.4,
+              "ci95_pct_exact": [
+                24.145833,
+                70.833333
+              ]
+            },
+            "all_125": {
+              "mean_pct": 46.46,
+              "ci95_pct": [
+                23.18,
+                68.0
+              ],
+              "mean_pct_exact": 46.464,
+              "ci95_pct_exact": [
+                23.18,
+                68.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    "db_uniform_eps8": {
+      "label": "DB-wide uniform (eps=8)",
+      "epsilon": 8,
+      "schedule": "db_uniform",
+      "cohorts": {
+        "94": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 4.3,
+              "ci95_pct": [
+                1.67,
+                7.5
+              ],
+              "mean_pct_exact": 4.295833,
+              "ci95_pct_exact": [
+                1.666667,
+                7.5
+              ]
+            },
+            "all_125": {
+              "mean_pct": 4.12,
+              "ci95_pct": [
+                1.6,
+                7.2
+              ],
+              "mean_pct_exact": 4.124,
+              "ci95_pct_exact": [
+                1.6,
+                7.2
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 3.38,
+              "ci95_pct": [
+                0.83,
+                6.67
+              ],
+              "mean_pct_exact": 3.379167,
+              "ci95_pct_exact": [
+                0.833333,
+                6.666667
+              ]
+            },
+            "all_125": {
+              "mean_pct": 3.24,
+              "ci95_pct": [
+                0.8,
+                6.4
+              ],
+              "mean_pct_exact": 3.244,
+              "ci95_pct_exact": [
+                0.8,
+                6.4
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 3.38,
+              "ci95_pct": [
+                0.83,
+                6.67
+              ],
+              "mean_pct_exact": 3.379167,
+              "ci95_pct_exact": [
+                0.833333,
+                6.666667
+              ]
+            },
+            "all_125": {
+              "mean_pct": 3.24,
+              "ci95_pct": [
+                0.8,
+                6.4
+              ],
+              "mean_pct_exact": 3.244,
+              "ci95_pct_exact": [
+                0.8,
+                6.4
+              ]
+            }
+          }
+        },
+        "1000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 56.73,
+              "ci95_pct": [
+                54.17,
+                59.17
+              ],
+              "mean_pct_exact": 56.725,
+              "ci95_pct_exact": [
+                54.166667,
+                59.166667
+              ]
+            },
+            "all_125": {
+              "mean_pct": 54.46,
+              "ci95_pct": [
+                52.0,
+                56.8
+              ],
+              "mean_pct_exact": 54.456,
+              "ci95_pct_exact": [
+                52.0,
+                56.8
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 39.67,
+              "ci95_pct": [
+                23.33,
+                53.35
+              ],
+              "mean_pct_exact": 39.675,
+              "ci95_pct_exact": [
+                23.333333,
+                53.354167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 38.09,
+              "ci95_pct": [
+                22.4,
+                51.22
+              ],
+              "mean_pct_exact": 38.088,
+              "ci95_pct_exact": [
+                22.4,
+                51.22
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 39.67,
+              "ci95_pct": [
+                23.33,
+                53.35
+              ],
+              "mean_pct_exact": 39.675,
+              "ci95_pct_exact": [
+                23.333333,
+                53.354167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 38.09,
+              "ci95_pct": [
+                22.4,
+                51.22
+              ],
+              "mean_pct_exact": 38.088,
+              "ci95_pct_exact": [
+                22.4,
+                51.22
+              ]
+            }
+          }
+        },
+        "10000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 94.81,
+              "ci95_pct": [
+                92.5,
+                97.5
+              ],
+              "mean_pct_exact": 94.8125,
+              "ci95_pct_exact": [
+                92.5,
+                97.5
+              ]
+            },
+            "all_125": {
+              "mean_pct": 91.02,
+              "ci95_pct": [
+                88.8,
+                93.6
+              ],
+              "mean_pct_exact": 91.02,
+              "ci95_pct_exact": [
+                88.8,
+                93.6
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 64.18,
+              "ci95_pct": [
+                38.33,
+                86.69
+              ],
+              "mean_pct_exact": 64.183333,
+              "ci95_pct_exact": [
+                38.333333,
+                86.6875
+              ]
+            },
+            "all_125": {
+              "mean_pct": 61.62,
+              "ci95_pct": [
+                36.8,
+                83.22
+              ],
+              "mean_pct_exact": 61.616,
+              "ci95_pct_exact": [
+                36.8,
+                83.22
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 60.64,
+              "ci95_pct": [
+                37.48,
+                81.67
+              ],
+              "mean_pct_exact": 60.641667,
+              "ci95_pct_exact": [
+                37.479167,
+                81.666667
+              ]
+            },
+            "all_125": {
+              "mean_pct": 58.22,
+              "ci95_pct": [
+                35.98,
+                78.4
+              ],
+              "mean_pct_exact": 58.216,
+              "ci95_pct_exact": [
+                35.98,
+                78.4
+              ]
+            }
+          }
+        },
+        "100000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 100.0,
+              "ci95_pct": [
+                100.0,
+                100.0
+              ],
+              "mean_pct_exact": 100.0,
+              "ci95_pct_exact": [
+                100.0,
+                100.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 96.0,
+              "ci95_pct": [
+                96.0,
+                96.0
+              ],
+              "mean_pct_exact": 96.0,
+              "ci95_pct_exact": [
+                96.0,
+                96.0
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 69.99,
+              "ci95_pct": [
+                42.42,
+                94.23
+              ],
+              "mean_pct_exact": 69.991667,
+              "ci95_pct_exact": [
+                42.416667,
+                94.229167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 67.19,
+              "ci95_pct": [
+                40.72,
+                90.46
+              ],
+              "mean_pct_exact": 67.192,
+              "ci95_pct_exact": [
+                40.72,
+                90.46
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 63.22,
+              "ci95_pct": [
+                39.15,
+                83.35
+              ],
+              "mean_pct_exact": 63.216667,
+              "ci95_pct_exact": [
+                39.145833,
+                83.354167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 60.69,
+              "ci95_pct": [
+                37.58,
+                80.02
+              ],
+              "mean_pct_exact": 60.688,
+              "ci95_pct_exact": [
+                37.58,
+                80.02
+              ]
+            }
+          }
+        }
+      }
+    },
+    "per_table_eps8": {
+      "label": "Per-table (eps_T=8)",
+      "epsilon": 8,
+      "schedule": "per_table",
+      "cohorts": {
+        "94": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 30.72,
+              "ci95_pct": [
+                28.33,
+                33.33
+              ],
+              "mean_pct_exact": 30.720833,
+              "ci95_pct_exact": [
+                28.333333,
+                33.333333
+              ]
+            },
+            "all_125": {
+              "mean_pct": 29.49,
+              "ci95_pct": [
+                27.2,
+                32.0
+              ],
+              "mean_pct_exact": 29.492,
+              "ci95_pct_exact": [
+                27.2,
+                32.0
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 29.52,
+              "ci95_pct": [
+                25.0,
+                32.52
+              ],
+              "mean_pct_exact": 29.516667,
+              "ci95_pct_exact": [
+                25.0,
+                32.520833
+              ]
+            },
+            "all_125": {
+              "mean_pct": 28.34,
+              "ci95_pct": [
+                24.0,
+                31.22
+              ],
+              "mean_pct_exact": 28.336,
+              "ci95_pct_exact": [
+                24.0,
+                31.22
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 29.52,
+              "ci95_pct": [
+                25.0,
+                32.52
+              ],
+              "mean_pct_exact": 29.516667,
+              "ci95_pct_exact": [
+                25.0,
+                32.520833
+              ]
+            },
+            "all_125": {
+              "mean_pct": 28.34,
+              "ci95_pct": [
+                24.0,
+                31.22
+              ],
+              "mean_pct_exact": 28.336,
+              "ci95_pct_exact": [
+                24.0,
+                31.22
+              ]
+            }
+          }
+        },
+        "1000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 85.75,
+              "ci95_pct": [
+                84.15,
+                87.52
+              ],
+              "mean_pct_exact": 85.75,
+              "ci95_pct_exact": [
+                84.145833,
+                87.520833
+              ]
+            },
+            "all_125": {
+              "mean_pct": 82.32,
+              "ci95_pct": [
+                80.78,
+                84.02
+              ],
+              "mean_pct_exact": 82.32,
+              "ci95_pct_exact": [
+                80.78,
+                84.02
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 80.9,
+              "ci95_pct": [
+                67.42,
+                87.5
+              ],
+              "mean_pct_exact": 80.904167,
+              "ci95_pct_exact": [
+                67.416667,
+                87.5
+              ]
+            },
+            "all_125": {
+              "mean_pct": 77.67,
+              "ci95_pct": [
+                64.72,
+                84.0
+              ],
+              "mean_pct_exact": 77.668,
+              "ci95_pct_exact": [
+                64.72,
+                84.0
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 79.82,
+              "ci95_pct": [
+                67.4,
+                85.85
+              ],
+              "mean_pct_exact": 79.816667,
+              "ci95_pct_exact": [
+                67.395833,
+                85.854167
+              ]
+            },
+            "all_125": {
+              "mean_pct": 76.62,
+              "ci95_pct": [
+                64.7,
+                82.42
+              ],
+              "mean_pct_exact": 76.624,
+              "ci95_pct_exact": [
+                64.7,
+                82.42
+              ]
+            }
+          }
+        },
+        "10000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 100.0,
+              "ci95_pct": [
+                100.0,
+                100.0
+              ],
+              "mean_pct_exact": 100.0,
+              "ci95_pct_exact": [
+                100.0,
+                100.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 96.0,
+              "ci95_pct": [
+                96.0,
+                96.0
+              ],
+              "mean_pct_exact": 96.0,
+              "ci95_pct_exact": [
+                96.0,
+                96.0
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 92.63,
+              "ci95_pct": [
+                75.83,
+                100.0
+              ],
+              "mean_pct_exact": 92.629167,
+              "ci95_pct_exact": [
+                75.833333,
+                100.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 88.92,
+              "ci95_pct": [
+                72.8,
+                96.0
+              ],
+              "mean_pct_exact": 88.924,
+              "ci95_pct_exact": [
+                72.8,
+                96.0
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 83.52,
+              "ci95_pct": [
+                67.5,
+                90.83
+              ],
+              "mean_pct_exact": 83.516667,
+              "ci95_pct_exact": [
+                67.5,
+                90.833333
+              ]
+            },
+            "all_125": {
+              "mean_pct": 80.18,
+              "ci95_pct": [
+                64.8,
+                87.2
+              ],
+              "mean_pct_exact": 80.176,
+              "ci95_pct_exact": [
+                64.8,
+                87.2
+              ]
+            }
+          }
+        },
+        "100000": {
+          "stage1_occupied_gt_tau": {
+            "reachable_120": {
+              "mean_pct": 100.0,
+              "ci95_pct": [
+                100.0,
+                100.0
+              ],
+              "mean_pct_exact": 100.0,
+              "ci95_pct_exact": [
+                100.0,
+                100.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 96.0,
+              "ci95_pct": [
+                96.0,
+                96.0
+              ],
+              "mean_pct_exact": 96.0,
+              "ci95_pct_exact": [
+                96.0,
+                96.0
+              ]
+            }
+          },
+          "stage2_dhat_le_50_gate": {
+            "reachable_120": {
+              "mean_pct": 93.46,
+              "ci95_pct": [
+                76.67,
+                100.0
+              ],
+              "mean_pct_exact": 93.458333,
+              "ci95_pct_exact": [
+                76.666667,
+                100.0
+              ]
+            },
+            "all_125": {
+              "mean_pct": 89.72,
+              "ci95_pct": [
+                73.6,
+                96.0
+              ],
+              "mean_pct_exact": 89.72,
+              "ci95_pct_exact": [
+                73.6,
+                96.0
+              ]
+            }
+          },
+          "stage3_eq10_top15_published": {
+            "reachable_120": {
+              "mean_pct": 84.1,
+              "ci95_pct": [
+                69.17,
+                90.83
+              ],
+              "mean_pct_exact": 84.1,
+              "ci95_pct_exact": [
+                69.166667,
+                90.833333
+              ]
+            },
+            "all_125": {
+              "mean_pct": 80.74,
+              "ci95_pct": [
+                66.4,
+                87.2
+              ],
+              "mean_pct_exact": 80.736,
+              "ci95_pct_exact": [
+                66.4,
+                87.2
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "whole_patient_bootstrap": {
+    "schema_version": "clinical-survival-whole-patient-v8",
+    "resampling_method": "whole_patient_bootstrap_with_replacement",
+    "noise_sampler": "exact_cks_integer_dgauss (silhouette.dg_sampler.sample_dgauss)",
+    "seed_rule": "sha256('stage8_whole_patient_v8:{schedule}:{N}:{m}')",
+    "deid_fixture_sha256": "2399d25dfef0b1a90f00e45e1af24993991dc277344d5ec9717c0704a7a0ad60",
+    "m_cohorts": 200,
+    "n_patients_source": 94,
+    "cap": 5,
+    "n_tables": 13,
+    "n_stats": 346,
+    "n_histograms": 139,
+    "c1_total": 125,
+    "c1_reachable_cap5": 120,
+    "schedules": {
+      "db_global_eps8": {
+        "label": "DB-wide convex (eps=8)",
+        "epsilon": 8,
+        "schedule": "db_global",
+        "cohorts": {
+          "94": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 3.21,
+                "ci95_pct": [
+                  0.81,
+                  5.83
+                ],
+                "mean_pct_exact": 3.2125,
+                "ci95_pct_exact": [
+                  0.8125,
+                  5.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 3.08,
+                "ci95_pct": [
+                  0.78,
+                  5.6
+                ],
+                "mean_pct_exact": 3.084,
+                "ci95_pct_exact": [
+                  0.78,
+                  5.6
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 2.5,
+                "ci95_pct": [
+                  0.0,
+                  5.83
+                ],
+                "mean_pct_exact": 2.495833,
+                "ci95_pct_exact": [
+                  0.0,
+                  5.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 2.4,
+                "ci95_pct": [
+                  0.0,
+                  5.6
+                ],
+                "mean_pct_exact": 2.396,
+                "ci95_pct_exact": [
+                  0.0,
+                  5.6
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 2.5,
+                "ci95_pct": [
+                  0.0,
+                  5.83
+                ],
+                "mean_pct_exact": 2.495833,
+                "ci95_pct_exact": [
+                  0.0,
+                  5.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 2.4,
+                "ci95_pct": [
+                  0.0,
+                  5.6
+                ],
+                "mean_pct_exact": 2.396,
+                "ci95_pct_exact": [
+                  0.0,
+                  5.6
+                ]
+              }
+            }
+          },
+          "1000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 61.21,
+                "ci95_pct": [
+                  57.5,
+                  65.0
+                ],
+                "mean_pct_exact": 61.208333,
+                "ci95_pct_exact": [
+                  57.5,
+                  65.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 58.76,
+                "ci95_pct": [
+                  55.2,
+                  62.4
+                ],
+                "mean_pct_exact": 58.76,
+                "ci95_pct_exact": [
+                  55.2,
+                  62.4
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 44.13,
+                "ci95_pct": [
+                  26.65,
+                  58.35
+                ],
+                "mean_pct_exact": 44.129167,
+                "ci95_pct_exact": [
+                  26.645833,
+                  58.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 42.36,
+                "ci95_pct": [
+                  25.58,
+                  56.02
+                ],
+                "mean_pct_exact": 42.364,
+                "ci95_pct_exact": [
+                  25.58,
+                  56.02
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 44.13,
+                "ci95_pct": [
+                  26.65,
+                  58.35
+                ],
+                "mean_pct_exact": 44.129167,
+                "ci95_pct_exact": [
+                  26.645833,
+                  58.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 42.36,
+                "ci95_pct": [
+                  25.58,
+                  56.02
+                ],
+                "mean_pct_exact": 42.364,
+                "ci95_pct_exact": [
+                  25.58,
+                  56.02
+                ]
+              }
+            }
+          },
+          "10000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 96.35,
+                "ci95_pct": [
+                  93.33,
+                  99.17
+                ],
+                "mean_pct_exact": 96.35,
+                "ci95_pct_exact": [
+                  93.333333,
+                  99.166667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 92.5,
+                "ci95_pct": [
+                  89.6,
+                  95.2
+                ],
+                "mean_pct_exact": 92.496,
+                "ci95_pct_exact": [
+                  89.6,
+                  95.2
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 66.91,
+                "ci95_pct": [
+                  41.67,
+                  92.5
+                ],
+                "mean_pct_exact": 66.9125,
+                "ci95_pct_exact": [
+                  41.666667,
+                  92.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 64.24,
+                "ci95_pct": [
+                  40.0,
+                  88.8
+                ],
+                "mean_pct_exact": 64.236,
+                "ci95_pct_exact": [
+                  40.0,
+                  88.8
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 62.33,
+                "ci95_pct": [
+                  40.0,
+                  84.21
+                ],
+                "mean_pct_exact": 62.333333,
+                "ci95_pct_exact": [
+                  40.0,
+                  84.208333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 59.84,
+                "ci95_pct": [
+                  38.4,
+                  80.84
+                ],
+                "mean_pct_exact": 59.84,
+                "ci95_pct_exact": [
+                  38.4,
+                  80.84
+                ]
+              }
+            }
+          },
+          "100000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 100.0,
+                "ci95_pct": [
+                  100.0,
+                  100.0
+                ],
+                "mean_pct_exact": 100.0,
+                "ci95_pct_exact": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 96.0,
+                "ci95_pct": [
+                  96.0,
+                  96.0
+                ],
+                "mean_pct_exact": 96.0,
+                "ci95_pct_exact": [
+                  96.0,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 69.44,
+                "ci95_pct": [
+                  42.48,
+                  90.85
+                ],
+                "mean_pct_exact": 69.441667,
+                "ci95_pct_exact": [
+                  42.479167,
+                  90.854167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 66.66,
+                "ci95_pct": [
+                  40.78,
+                  87.22
+                ],
+                "mean_pct_exact": 66.664,
+                "ci95_pct_exact": [
+                  40.78,
+                  87.22
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 62.68,
+                "ci95_pct": [
+                  40.0,
+                  80.02
+                ],
+                "mean_pct_exact": 62.683333,
+                "ci95_pct_exact": [
+                  40.0,
+                  80.020833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 60.18,
+                "ci95_pct": [
+                  38.4,
+                  76.82
+                ],
+                "mean_pct_exact": 60.176,
+                "ci95_pct_exact": [
+                  38.4,
+                  76.82
+                ]
+              }
+            }
+          }
+        }
+      },
+      "db_global_eps1": {
+        "label": "DB-wide convex (eps=1)",
+        "epsilon": 1,
+        "schedule": "db_global",
+        "cohorts": {
+          "94": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "1000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 14.58,
+                "ci95_pct": [
+                  11.67,
+                  16.67
+                ],
+                "mean_pct_exact": 14.579167,
+                "ci95_pct_exact": [
+                  11.666667,
+                  16.666667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 14.0,
+                "ci95_pct": [
+                  11.2,
+                  16.0
+                ],
+                "mean_pct_exact": 13.996,
+                "ci95_pct_exact": [
+                  11.2,
+                  16.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 8.18,
+                "ci95_pct": [
+                  3.29,
+                  14.19
+                ],
+                "mean_pct_exact": 8.183333,
+                "ci95_pct_exact": [
+                  3.291667,
+                  14.1875
+                ]
+              },
+              "all_125": {
+                "mean_pct": 7.86,
+                "ci95_pct": [
+                  3.16,
+                  13.62
+                ],
+                "mean_pct_exact": 7.856,
+                "ci95_pct_exact": [
+                  3.16,
+                  13.62
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 8.18,
+                "ci95_pct": [
+                  3.29,
+                  14.19
+                ],
+                "mean_pct_exact": 8.183333,
+                "ci95_pct_exact": [
+                  3.291667,
+                  14.1875
+                ]
+              },
+              "all_125": {
+                "mean_pct": 7.86,
+                "ci95_pct": [
+                  3.16,
+                  13.62
+                ],
+                "mean_pct_exact": 7.856,
+                "ci95_pct_exact": [
+                  3.16,
+                  13.62
+                ]
+              }
+            }
+          },
+          "10000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 71.7,
+                "ci95_pct": [
+                  68.33,
+                  74.19
+                ],
+                "mean_pct_exact": 71.695833,
+                "ci95_pct_exact": [
+                  68.333333,
+                  74.1875
+                ]
+              },
+              "all_125": {
+                "mean_pct": 68.83,
+                "ci95_pct": [
+                  65.6,
+                  71.22
+                ],
+                "mean_pct_exact": 68.828,
+                "ci95_pct_exact": [
+                  65.6,
+                  71.22
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 39.07,
+                "ci95_pct": [
+                  19.15,
+                  57.5
+                ],
+                "mean_pct_exact": 39.070833,
+                "ci95_pct_exact": [
+                  19.145833,
+                  57.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 37.51,
+                "ci95_pct": [
+                  18.38,
+                  55.2
+                ],
+                "mean_pct_exact": 37.508,
+                "ci95_pct_exact": [
+                  18.38,
+                  55.2
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 39.05,
+                "ci95_pct": [
+                  19.15,
+                  57.5
+                ],
+                "mean_pct_exact": 39.05,
+                "ci95_pct_exact": [
+                  19.145833,
+                  57.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 37.49,
+                "ci95_pct": [
+                  18.38,
+                  55.2
+                ],
+                "mean_pct_exact": 37.488,
+                "ci95_pct_exact": [
+                  18.38,
+                  55.2
+                ]
+              }
+            }
+          },
+          "100000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 99.98,
+                "ci95_pct": [
+                  99.98,
+                  100.0
+                ],
+                "mean_pct_exact": 99.979167,
+                "ci95_pct_exact": [
+                  99.979167,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 95.98,
+                "ci95_pct": [
+                  95.98,
+                  96.0
+                ],
+                "mean_pct_exact": 95.98,
+                "ci95_pct_exact": [
+                  95.98,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 53.86,
+                "ci95_pct": [
+                  24.98,
+                  78.35
+                ],
+                "mean_pct_exact": 53.858333,
+                "ci95_pct_exact": [
+                  24.979167,
+                  78.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 51.7,
+                "ci95_pct": [
+                  23.98,
+                  75.22
+                ],
+                "mean_pct_exact": 51.704,
+                "ci95_pct_exact": [
+                  23.98,
+                  75.22
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 48.4,
+                "ci95_pct": [
+                  24.15,
+                  70.83
+                ],
+                "mean_pct_exact": 48.4,
+                "ci95_pct_exact": [
+                  24.145833,
+                  70.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 46.46,
+                "ci95_pct": [
+                  23.18,
+                  68.0
+                ],
+                "mean_pct_exact": 46.464,
+                "ci95_pct_exact": [
+                  23.18,
+                  68.0
+                ]
+              }
+            }
+          }
+        }
+      },
+      "db_uniform_eps8": {
+        "label": "DB-wide uniform (eps=8)",
+        "epsilon": 8,
+        "schedule": "db_uniform",
+        "cohorts": {
+          "94": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 4.3,
+                "ci95_pct": [
+                  1.67,
+                  7.5
+                ],
+                "mean_pct_exact": 4.295833,
+                "ci95_pct_exact": [
+                  1.666667,
+                  7.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 4.12,
+                "ci95_pct": [
+                  1.6,
+                  7.2
+                ],
+                "mean_pct_exact": 4.124,
+                "ci95_pct_exact": [
+                  1.6,
+                  7.2
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 3.38,
+                "ci95_pct": [
+                  0.83,
+                  6.67
+                ],
+                "mean_pct_exact": 3.379167,
+                "ci95_pct_exact": [
+                  0.833333,
+                  6.666667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 3.24,
+                "ci95_pct": [
+                  0.8,
+                  6.4
+                ],
+                "mean_pct_exact": 3.244,
+                "ci95_pct_exact": [
+                  0.8,
+                  6.4
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 3.38,
+                "ci95_pct": [
+                  0.83,
+                  6.67
+                ],
+                "mean_pct_exact": 3.379167,
+                "ci95_pct_exact": [
+                  0.833333,
+                  6.666667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 3.24,
+                "ci95_pct": [
+                  0.8,
+                  6.4
+                ],
+                "mean_pct_exact": 3.244,
+                "ci95_pct_exact": [
+                  0.8,
+                  6.4
+                ]
+              }
+            }
+          },
+          "1000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 56.73,
+                "ci95_pct": [
+                  54.17,
+                  59.17
+                ],
+                "mean_pct_exact": 56.725,
+                "ci95_pct_exact": [
+                  54.166667,
+                  59.166667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 54.46,
+                "ci95_pct": [
+                  52.0,
+                  56.8
+                ],
+                "mean_pct_exact": 54.456,
+                "ci95_pct_exact": [
+                  52.0,
+                  56.8
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 39.67,
+                "ci95_pct": [
+                  23.33,
+                  53.35
+                ],
+                "mean_pct_exact": 39.675,
+                "ci95_pct_exact": [
+                  23.333333,
+                  53.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 38.09,
+                "ci95_pct": [
+                  22.4,
+                  51.22
+                ],
+                "mean_pct_exact": 38.088,
+                "ci95_pct_exact": [
+                  22.4,
+                  51.22
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 39.67,
+                "ci95_pct": [
+                  23.33,
+                  53.35
+                ],
+                "mean_pct_exact": 39.675,
+                "ci95_pct_exact": [
+                  23.333333,
+                  53.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 38.09,
+                "ci95_pct": [
+                  22.4,
+                  51.22
+                ],
+                "mean_pct_exact": 38.088,
+                "ci95_pct_exact": [
+                  22.4,
+                  51.22
+                ]
+              }
+            }
+          },
+          "10000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 94.81,
+                "ci95_pct": [
+                  92.5,
+                  97.5
+                ],
+                "mean_pct_exact": 94.8125,
+                "ci95_pct_exact": [
+                  92.5,
+                  97.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 91.02,
+                "ci95_pct": [
+                  88.8,
+                  93.6
+                ],
+                "mean_pct_exact": 91.02,
+                "ci95_pct_exact": [
+                  88.8,
+                  93.6
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 64.18,
+                "ci95_pct": [
+                  38.33,
+                  86.69
+                ],
+                "mean_pct_exact": 64.183333,
+                "ci95_pct_exact": [
+                  38.333333,
+                  86.6875
+                ]
+              },
+              "all_125": {
+                "mean_pct": 61.62,
+                "ci95_pct": [
+                  36.8,
+                  83.22
+                ],
+                "mean_pct_exact": 61.616,
+                "ci95_pct_exact": [
+                  36.8,
+                  83.22
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 60.64,
+                "ci95_pct": [
+                  37.48,
+                  81.67
+                ],
+                "mean_pct_exact": 60.641667,
+                "ci95_pct_exact": [
+                  37.479167,
+                  81.666667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 58.22,
+                "ci95_pct": [
+                  35.98,
+                  78.4
+                ],
+                "mean_pct_exact": 58.216,
+                "ci95_pct_exact": [
+                  35.98,
+                  78.4
+                ]
+              }
+            }
+          },
+          "100000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 100.0,
+                "ci95_pct": [
+                  100.0,
+                  100.0
+                ],
+                "mean_pct_exact": 100.0,
+                "ci95_pct_exact": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 96.0,
+                "ci95_pct": [
+                  96.0,
+                  96.0
+                ],
+                "mean_pct_exact": 96.0,
+                "ci95_pct_exact": [
+                  96.0,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 69.99,
+                "ci95_pct": [
+                  42.42,
+                  94.23
+                ],
+                "mean_pct_exact": 69.991667,
+                "ci95_pct_exact": [
+                  42.416667,
+                  94.229167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 67.19,
+                "ci95_pct": [
+                  40.72,
+                  90.46
+                ],
+                "mean_pct_exact": 67.192,
+                "ci95_pct_exact": [
+                  40.72,
+                  90.46
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 63.22,
+                "ci95_pct": [
+                  39.15,
+                  83.35
+                ],
+                "mean_pct_exact": 63.216667,
+                "ci95_pct_exact": [
+                  39.145833,
+                  83.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 60.69,
+                "ci95_pct": [
+                  37.58,
+                  80.02
+                ],
+                "mean_pct_exact": 60.688,
+                "ci95_pct_exact": [
+                  37.58,
+                  80.02
+                ]
+              }
+            }
+          }
+        }
+      },
+      "per_table_eps8": {
+        "label": "Per-table (eps_T=8)",
+        "epsilon": 8,
+        "schedule": "per_table",
+        "cohorts": {
+          "94": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 30.72,
+                "ci95_pct": [
+                  28.33,
+                  33.33
+                ],
+                "mean_pct_exact": 30.720833,
+                "ci95_pct_exact": [
+                  28.333333,
+                  33.333333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 29.49,
+                "ci95_pct": [
+                  27.2,
+                  32.0
+                ],
+                "mean_pct_exact": 29.492,
+                "ci95_pct_exact": [
+                  27.2,
+                  32.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 29.52,
+                "ci95_pct": [
+                  25.0,
+                  32.52
+                ],
+                "mean_pct_exact": 29.516667,
+                "ci95_pct_exact": [
+                  25.0,
+                  32.520833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 28.34,
+                "ci95_pct": [
+                  24.0,
+                  31.22
+                ],
+                "mean_pct_exact": 28.336,
+                "ci95_pct_exact": [
+                  24.0,
+                  31.22
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 29.52,
+                "ci95_pct": [
+                  25.0,
+                  32.52
+                ],
+                "mean_pct_exact": 29.516667,
+                "ci95_pct_exact": [
+                  25.0,
+                  32.520833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 28.34,
+                "ci95_pct": [
+                  24.0,
+                  31.22
+                ],
+                "mean_pct_exact": 28.336,
+                "ci95_pct_exact": [
+                  24.0,
+                  31.22
+                ]
+              }
+            }
+          },
+          "1000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 85.75,
+                "ci95_pct": [
+                  84.15,
+                  87.52
+                ],
+                "mean_pct_exact": 85.75,
+                "ci95_pct_exact": [
+                  84.145833,
+                  87.520833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 82.32,
+                "ci95_pct": [
+                  80.78,
+                  84.02
+                ],
+                "mean_pct_exact": 82.32,
+                "ci95_pct_exact": [
+                  80.78,
+                  84.02
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 80.9,
+                "ci95_pct": [
+                  67.42,
+                  87.5
+                ],
+                "mean_pct_exact": 80.904167,
+                "ci95_pct_exact": [
+                  67.416667,
+                  87.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 77.67,
+                "ci95_pct": [
+                  64.72,
+                  84.0
+                ],
+                "mean_pct_exact": 77.668,
+                "ci95_pct_exact": [
+                  64.72,
+                  84.0
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 79.82,
+                "ci95_pct": [
+                  67.4,
+                  85.85
+                ],
+                "mean_pct_exact": 79.816667,
+                "ci95_pct_exact": [
+                  67.395833,
+                  85.854167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 76.62,
+                "ci95_pct": [
+                  64.7,
+                  82.42
+                ],
+                "mean_pct_exact": 76.624,
+                "ci95_pct_exact": [
+                  64.7,
+                  82.42
+                ]
+              }
+            }
+          },
+          "10000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 100.0,
+                "ci95_pct": [
+                  100.0,
+                  100.0
+                ],
+                "mean_pct_exact": 100.0,
+                "ci95_pct_exact": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 96.0,
+                "ci95_pct": [
+                  96.0,
+                  96.0
+                ],
+                "mean_pct_exact": 96.0,
+                "ci95_pct_exact": [
+                  96.0,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 92.63,
+                "ci95_pct": [
+                  75.83,
+                  100.0
+                ],
+                "mean_pct_exact": 92.629167,
+                "ci95_pct_exact": [
+                  75.833333,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 88.92,
+                "ci95_pct": [
+                  72.8,
+                  96.0
+                ],
+                "mean_pct_exact": 88.924,
+                "ci95_pct_exact": [
+                  72.8,
+                  96.0
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 83.52,
+                "ci95_pct": [
+                  67.5,
+                  90.83
+                ],
+                "mean_pct_exact": 83.516667,
+                "ci95_pct_exact": [
+                  67.5,
+                  90.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 80.18,
+                "ci95_pct": [
+                  64.8,
+                  87.2
+                ],
+                "mean_pct_exact": 80.176,
+                "ci95_pct_exact": [
+                  64.8,
+                  87.2
+                ]
+              }
+            }
+          },
+          "100000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 100.0,
+                "ci95_pct": [
+                  100.0,
+                  100.0
+                ],
+                "mean_pct_exact": 100.0,
+                "ci95_pct_exact": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 96.0,
+                "ci95_pct": [
+                  96.0,
+                  96.0
+                ],
+                "mean_pct_exact": 96.0,
+                "ci95_pct_exact": [
+                  96.0,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 93.46,
+                "ci95_pct": [
+                  76.67,
+                  100.0
+                ],
+                "mean_pct_exact": 93.458333,
+                "ci95_pct_exact": [
+                  76.666667,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 89.72,
+                "ci95_pct": [
+                  73.6,
+                  96.0
+                ],
+                "mean_pct_exact": 89.72,
+                "ci95_pct_exact": [
+                  73.6,
+                  96.0
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 84.1,
+                "ci95_pct": [
+                  69.17,
+                  90.83
+                ],
+                "mean_pct_exact": 84.1,
+                "ci95_pct_exact": [
+                  69.166667,
+                  90.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 80.74,
+                "ci95_pct": [
+                  66.4,
+                  87.2
+                ],
+                "mean_pct_exact": 80.736,
+                "ci95_pct_exact": [
+                  66.4,
+                  87.2
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "marginal_binomial": {
+    "schema_version": "clinical-survival-marginal-binomial-v8",
+    "resampling_method": "marginal_per_bin_binomial",
+    "noise_sampler": "exact_cks_integer_dgauss (silhouette.dg_sampler.sample_dgauss)",
+    "seed_rule": "sha256('stage8_marginal_binomial_v8:{schedule}:{N}:{m}')",
+    "deid_fixture_sha256": "2399d25dfef0b1a90f00e45e1af24993991dc277344d5ec9717c0704a7a0ad60",
+    "m_cohorts": 200,
+    "n_patients_source": 94,
+    "cap": 5,
+    "n_tables": 13,
+    "n_stats": 346,
+    "n_histograms": 139,
+    "c1_total": 125,
+    "c1_reachable_cap5": 120,
+    "schedules": {
+      "db_global_eps8": {
+        "label": "DB-wide convex (eps=8)",
+        "epsilon": 8,
+        "schedule": "db_global",
+        "cohorts": {
+          "94": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 3.38,
+                "ci95_pct": [
+                  0.83,
+                  5.83
+                ],
+                "mean_pct_exact": 3.383333,
+                "ci95_pct_exact": [
+                  0.833333,
+                  5.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 3.25,
+                "ci95_pct": [
+                  0.8,
+                  5.6
+                ],
+                "mean_pct_exact": 3.248,
+                "ci95_pct_exact": [
+                  0.8,
+                  5.6
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 2.58,
+                "ci95_pct": [
+                  0.0,
+                  5.02
+                ],
+                "mean_pct_exact": 2.575,
+                "ci95_pct_exact": [
+                  0.0,
+                  5.020833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 2.47,
+                "ci95_pct": [
+                  0.0,
+                  4.82
+                ],
+                "mean_pct_exact": 2.472,
+                "ci95_pct_exact": [
+                  0.0,
+                  4.82
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 2.58,
+                "ci95_pct": [
+                  0.0,
+                  5.02
+                ],
+                "mean_pct_exact": 2.575,
+                "ci95_pct_exact": [
+                  0.0,
+                  5.020833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 2.47,
+                "ci95_pct": [
+                  0.0,
+                  4.82
+                ],
+                "mean_pct_exact": 2.472,
+                "ci95_pct_exact": [
+                  0.0,
+                  4.82
+                ]
+              }
+            }
+          },
+          "1000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 61.11,
+                "ci95_pct": [
+                  58.33,
+                  64.17
+                ],
+                "mean_pct_exact": 61.1125,
+                "ci95_pct_exact": [
+                  58.333333,
+                  64.166667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 58.67,
+                "ci95_pct": [
+                  56.0,
+                  61.6
+                ],
+                "mean_pct_exact": 58.668,
+                "ci95_pct_exact": [
+                  56.0,
+                  61.6
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 43.46,
+                "ci95_pct": [
+                  24.13,
+                  58.35
+                ],
+                "mean_pct_exact": 43.4625,
+                "ci95_pct_exact": [
+                  24.125,
+                  58.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 41.72,
+                "ci95_pct": [
+                  23.16,
+                  56.02
+                ],
+                "mean_pct_exact": 41.724,
+                "ci95_pct_exact": [
+                  23.16,
+                  56.02
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 43.46,
+                "ci95_pct": [
+                  24.13,
+                  58.35
+                ],
+                "mean_pct_exact": 43.4625,
+                "ci95_pct_exact": [
+                  24.125,
+                  58.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 41.72,
+                "ci95_pct": [
+                  23.16,
+                  56.02
+                ],
+                "mean_pct_exact": 41.724,
+                "ci95_pct_exact": [
+                  23.16,
+                  56.02
+                ]
+              }
+            }
+          },
+          "10000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 96.41,
+                "ci95_pct": [
+                  94.17,
+                  98.33
+                ],
+                "mean_pct_exact": 96.408333,
+                "ci95_pct_exact": [
+                  94.166667,
+                  98.333333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 92.55,
+                "ci95_pct": [
+                  90.4,
+                  94.4
+                ],
+                "mean_pct_exact": 92.552,
+                "ci95_pct_exact": [
+                  90.4,
+                  94.4
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 68.89,
+                "ci95_pct": [
+                  44.96,
+                  88.35
+                ],
+                "mean_pct_exact": 68.8875,
+                "ci95_pct_exact": [
+                  44.958333,
+                  88.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 66.13,
+                "ci95_pct": [
+                  43.16,
+                  84.82
+                ],
+                "mean_pct_exact": 66.132,
+                "ci95_pct_exact": [
+                  43.16,
+                  84.82
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 64.15,
+                "ci95_pct": [
+                  41.67,
+                  81.67
+                ],
+                "mean_pct_exact": 64.15,
+                "ci95_pct_exact": [
+                  41.666667,
+                  81.666667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 61.58,
+                "ci95_pct": [
+                  40.0,
+                  78.4
+                ],
+                "mean_pct_exact": 61.584,
+                "ci95_pct_exact": [
+                  40.0,
+                  78.4
+                ]
+              }
+            }
+          },
+          "100000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 100.0,
+                "ci95_pct": [
+                  100.0,
+                  100.0
+                ],
+                "mean_pct_exact": 100.0,
+                "ci95_pct_exact": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 96.0,
+                "ci95_pct": [
+                  96.0,
+                  96.0
+                ],
+                "mean_pct_exact": 96.0,
+                "ci95_pct_exact": [
+                  96.0,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 70.29,
+                "ci95_pct": [
+                  46.67,
+                  93.35
+                ],
+                "mean_pct_exact": 70.2875,
+                "ci95_pct_exact": [
+                  46.666667,
+                  93.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 67.48,
+                "ci95_pct": [
+                  44.8,
+                  89.62
+                ],
+                "mean_pct_exact": 67.476,
+                "ci95_pct_exact": [
+                  44.8,
+                  89.62
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 63.45,
+                "ci95_pct": [
+                  42.5,
+                  83.33
+                ],
+                "mean_pct_exact": 63.445833,
+                "ci95_pct_exact": [
+                  42.5,
+                  83.333333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 60.91,
+                "ci95_pct": [
+                  40.8,
+                  80.0
+                ],
+                "mean_pct_exact": 60.908,
+                "ci95_pct_exact": [
+                  40.8,
+                  80.0
+                ]
+              }
+            }
+          }
+        }
+      },
+      "db_global_eps1": {
+        "label": "DB-wide convex (eps=1)",
+        "epsilon": 1,
+        "schedule": "db_global",
+        "cohorts": {
+          "94": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 0.0,
+                "ci95_pct": [
+                  0.0,
+                  0.0
+                ],
+                "mean_pct_exact": 0.0,
+                "ci95_pct_exact": [
+                  0.0,
+                  0.0
+                ]
+              }
+            }
+          },
+          "1000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 14.58,
+                "ci95_pct": [
+                  11.67,
+                  17.5
+                ],
+                "mean_pct_exact": 14.583333,
+                "ci95_pct_exact": [
+                  11.666667,
+                  17.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 14.0,
+                "ci95_pct": [
+                  11.2,
+                  16.8
+                ],
+                "mean_pct_exact": 14.0,
+                "ci95_pct_exact": [
+                  11.2,
+                  16.8
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 7.63,
+                "ci95_pct": [
+                  2.5,
+                  12.52
+                ],
+                "mean_pct_exact": 7.629167,
+                "ci95_pct_exact": [
+                  2.5,
+                  12.520833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 7.32,
+                "ci95_pct": [
+                  2.4,
+                  12.02
+                ],
+                "mean_pct_exact": 7.324,
+                "ci95_pct_exact": [
+                  2.4,
+                  12.02
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 7.63,
+                "ci95_pct": [
+                  2.5,
+                  12.52
+                ],
+                "mean_pct_exact": 7.629167,
+                "ci95_pct_exact": [
+                  2.5,
+                  12.520833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 7.32,
+                "ci95_pct": [
+                  2.4,
+                  12.02
+                ],
+                "mean_pct_exact": 7.324,
+                "ci95_pct_exact": [
+                  2.4,
+                  12.02
+                ]
+              }
+            }
+          },
+          "10000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 71.5,
+                "ci95_pct": [
+                  68.33,
+                  75.0
+                ],
+                "mean_pct_exact": 71.5,
+                "ci95_pct_exact": [
+                  68.333333,
+                  75.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 68.64,
+                "ci95_pct": [
+                  65.6,
+                  72.0
+                ],
+                "mean_pct_exact": 68.64,
+                "ci95_pct_exact": [
+                  65.6,
+                  72.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 40.14,
+                "ci95_pct": [
+                  20.0,
+                  57.6
+                ],
+                "mean_pct_exact": 40.1375,
+                "ci95_pct_exact": [
+                  20.0,
+                  57.604167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 38.53,
+                "ci95_pct": [
+                  19.2,
+                  55.3
+                ],
+                "mean_pct_exact": 38.532,
+                "ci95_pct_exact": [
+                  19.2,
+                  55.3
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 40.12,
+                "ci95_pct": [
+                  20.0,
+                  57.6
+                ],
+                "mean_pct_exact": 40.120833,
+                "ci95_pct_exact": [
+                  20.0,
+                  57.604167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 38.52,
+                "ci95_pct": [
+                  19.2,
+                  55.3
+                ],
+                "mean_pct_exact": 38.516,
+                "ci95_pct_exact": [
+                  19.2,
+                  55.3
+                ]
+              }
+            }
+          },
+          "100000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 99.97,
+                "ci95_pct": [
+                  99.17,
+                  100.0
+                ],
+                "mean_pct_exact": 99.970833,
+                "ci95_pct_exact": [
+                  99.166667,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 95.97,
+                "ci95_pct": [
+                  95.2,
+                  96.0
+                ],
+                "mean_pct_exact": 95.972,
+                "ci95_pct_exact": [
+                  95.2,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 54.73,
+                "ci95_pct": [
+                  26.67,
+                  78.42
+                ],
+                "mean_pct_exact": 54.733333,
+                "ci95_pct_exact": [
+                  26.666667,
+                  78.416667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 52.54,
+                "ci95_pct": [
+                  25.6,
+                  75.28
+                ],
+                "mean_pct_exact": 52.544,
+                "ci95_pct_exact": [
+                  25.6,
+                  75.28
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 48.99,
+                "ci95_pct": [
+                  24.17,
+                  69.19
+                ],
+                "mean_pct_exact": 48.991667,
+                "ci95_pct_exact": [
+                  24.166667,
+                  69.1875
+                ]
+              },
+              "all_125": {
+                "mean_pct": 47.03,
+                "ci95_pct": [
+                  23.2,
+                  66.42
+                ],
+                "mean_pct_exact": 47.032,
+                "ci95_pct_exact": [
+                  23.2,
+                  66.42
+                ]
+              }
+            }
+          }
+        }
+      },
+      "db_uniform_eps8": {
+        "label": "DB-wide uniform (eps=8)",
+        "epsilon": 8,
+        "schedule": "db_uniform",
+        "cohorts": {
+          "94": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 4.13,
+                "ci95_pct": [
+                  1.67,
+                  6.67
+                ],
+                "mean_pct_exact": 4.129167,
+                "ci95_pct_exact": [
+                  1.666667,
+                  6.666667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 3.96,
+                "ci95_pct": [
+                  1.6,
+                  6.4
+                ],
+                "mean_pct_exact": 3.964,
+                "ci95_pct_exact": [
+                  1.6,
+                  6.4
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 3.19,
+                "ci95_pct": [
+                  0.0,
+                  6.67
+                ],
+                "mean_pct_exact": 3.1875,
+                "ci95_pct_exact": [
+                  0.0,
+                  6.666667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 3.06,
+                "ci95_pct": [
+                  0.0,
+                  6.4
+                ],
+                "mean_pct_exact": 3.06,
+                "ci95_pct_exact": [
+                  0.0,
+                  6.4
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 3.19,
+                "ci95_pct": [
+                  0.0,
+                  6.67
+                ],
+                "mean_pct_exact": 3.1875,
+                "ci95_pct_exact": [
+                  0.0,
+                  6.666667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 3.06,
+                "ci95_pct": [
+                  0.0,
+                  6.4
+                ],
+                "mean_pct_exact": 3.06,
+                "ci95_pct_exact": [
+                  0.0,
+                  6.4
+                ]
+              }
+            }
+          },
+          "1000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 56.66,
+                "ci95_pct": [
+                  54.17,
+                  59.17
+                ],
+                "mean_pct_exact": 56.658333,
+                "ci95_pct_exact": [
+                  54.166667,
+                  59.166667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 54.39,
+                "ci95_pct": [
+                  52.0,
+                  56.8
+                ],
+                "mean_pct_exact": 54.392,
+                "ci95_pct_exact": [
+                  52.0,
+                  56.8
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 40.48,
+                "ci95_pct": [
+                  25.83,
+                  53.33
+                ],
+                "mean_pct_exact": 40.483333,
+                "ci95_pct_exact": [
+                  25.833333,
+                  53.333333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 38.86,
+                "ci95_pct": [
+                  24.8,
+                  51.2
+                ],
+                "mean_pct_exact": 38.864,
+                "ci95_pct_exact": [
+                  24.8,
+                  51.2
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 40.48,
+                "ci95_pct": [
+                  25.83,
+                  53.33
+                ],
+                "mean_pct_exact": 40.483333,
+                "ci95_pct_exact": [
+                  25.833333,
+                  53.333333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 38.86,
+                "ci95_pct": [
+                  24.8,
+                  51.2
+                ],
+                "mean_pct_exact": 38.864,
+                "ci95_pct_exact": [
+                  24.8,
+                  51.2
+                ]
+              }
+            }
+          },
+          "10000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 94.93,
+                "ci95_pct": [
+                  92.5,
+                  97.5
+                ],
+                "mean_pct_exact": 94.933333,
+                "ci95_pct_exact": [
+                  92.5,
+                  97.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 91.14,
+                "ci95_pct": [
+                  88.8,
+                  93.6
+                ],
+                "mean_pct_exact": 91.136,
+                "ci95_pct_exact": [
+                  88.8,
+                  93.6
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 65.32,
+                "ci95_pct": [
+                  39.98,
+                  88.38
+                ],
+                "mean_pct_exact": 65.320833,
+                "ci95_pct_exact": [
+                  39.979167,
+                  88.375
+                ]
+              },
+              "all_125": {
+                "mean_pct": 62.71,
+                "ci95_pct": [
+                  38.38,
+                  84.84
+                ],
+                "mean_pct_exact": 62.708,
+                "ci95_pct_exact": [
+                  38.38,
+                  84.84
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 61.54,
+                "ci95_pct": [
+                  37.48,
+                  83.35
+                ],
+                "mean_pct_exact": 61.5375,
+                "ci95_pct_exact": [
+                  37.479167,
+                  83.354167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 59.08,
+                "ci95_pct": [
+                  35.98,
+                  80.02
+                ],
+                "mean_pct_exact": 59.076,
+                "ci95_pct_exact": [
+                  35.98,
+                  80.02
+                ]
+              }
+            }
+          },
+          "100000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 100.0,
+                "ci95_pct": [
+                  100.0,
+                  100.0
+                ],
+                "mean_pct_exact": 100.0,
+                "ci95_pct_exact": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 96.0,
+                "ci95_pct": [
+                  96.0,
+                  96.0
+                ],
+                "mean_pct_exact": 96.0,
+                "ci95_pct_exact": [
+                  96.0,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 67.59,
+                "ci95_pct": [
+                  41.6,
+                  90.88
+                ],
+                "mean_pct_exact": 67.591667,
+                "ci95_pct_exact": [
+                  41.604167,
+                  90.875
+                ]
+              },
+              "all_125": {
+                "mean_pct": 64.89,
+                "ci95_pct": [
+                  39.94,
+                  87.24
+                ],
+                "mean_pct_exact": 64.888,
+                "ci95_pct_exact": [
+                  39.94,
+                  87.24
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 61.28,
+                "ci95_pct": [
+                  37.5,
+                  80.85
+                ],
+                "mean_pct_exact": 61.279167,
+                "ci95_pct_exact": [
+                  37.5,
+                  80.854167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 58.83,
+                "ci95_pct": [
+                  36.0,
+                  77.62
+                ],
+                "mean_pct_exact": 58.828,
+                "ci95_pct_exact": [
+                  36.0,
+                  77.62
+                ]
+              }
+            }
+          }
+        }
+      },
+      "per_table_eps8": {
+        "label": "Per-table (eps_T=8)",
+        "epsilon": 8,
+        "schedule": "per_table",
+        "cohorts": {
+          "94": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 31.11,
+                "ci95_pct": [
+                  29.17,
+                  34.17
+                ],
+                "mean_pct_exact": 31.108333,
+                "ci95_pct_exact": [
+                  29.166667,
+                  34.166667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 29.86,
+                "ci95_pct": [
+                  28.0,
+                  32.8
+                ],
+                "mean_pct_exact": 29.864,
+                "ci95_pct_exact": [
+                  28.0,
+                  32.8
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 29.68,
+                "ci95_pct": [
+                  24.17,
+                  34.17
+                ],
+                "mean_pct_exact": 29.679167,
+                "ci95_pct_exact": [
+                  24.166667,
+                  34.166667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 28.49,
+                "ci95_pct": [
+                  23.2,
+                  32.8
+                ],
+                "mean_pct_exact": 28.492,
+                "ci95_pct_exact": [
+                  23.2,
+                  32.8
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 29.68,
+                "ci95_pct": [
+                  24.17,
+                  34.17
+                ],
+                "mean_pct_exact": 29.679167,
+                "ci95_pct_exact": [
+                  24.166667,
+                  34.166667
+                ]
+              },
+              "all_125": {
+                "mean_pct": 28.49,
+                "ci95_pct": [
+                  23.2,
+                  32.8
+                ],
+                "mean_pct_exact": 28.492,
+                "ci95_pct_exact": [
+                  23.2,
+                  32.8
+                ]
+              }
+            }
+          },
+          "1000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 85.84,
+                "ci95_pct": [
+                  83.33,
+                  87.52
+                ],
+                "mean_pct_exact": 85.8375,
+                "ci95_pct_exact": [
+                  83.333333,
+                  87.520833
+                ]
+              },
+              "all_125": {
+                "mean_pct": 82.4,
+                "ci95_pct": [
+                  80.0,
+                  84.02
+                ],
+                "mean_pct_exact": 82.404,
+                "ci95_pct_exact": [
+                  80.0,
+                  84.02
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 80.1,
+                "ci95_pct": [
+                  64.98,
+                  87.5
+                ],
+                "mean_pct_exact": 80.095833,
+                "ci95_pct_exact": [
+                  64.979167,
+                  87.5
+                ]
+              },
+              "all_125": {
+                "mean_pct": 76.89,
+                "ci95_pct": [
+                  62.38,
+                  84.0
+                ],
+                "mean_pct_exact": 76.892,
+                "ci95_pct_exact": [
+                  62.38,
+                  84.0
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 79.06,
+                "ci95_pct": [
+                  64.98,
+                  85.85
+                ],
+                "mean_pct_exact": 79.058333,
+                "ci95_pct_exact": [
+                  64.979167,
+                  85.854167
+                ]
+              },
+              "all_125": {
+                "mean_pct": 75.9,
+                "ci95_pct": [
+                  62.38,
+                  82.42
+                ],
+                "mean_pct_exact": 75.896,
+                "ci95_pct_exact": [
+                  62.38,
+                  82.42
+                ]
+              }
+            }
+          },
+          "10000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 100.0,
+                "ci95_pct": [
+                  100.0,
+                  100.0
+                ],
+                "mean_pct_exact": 100.0,
+                "ci95_pct_exact": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 96.0,
+                "ci95_pct": [
+                  96.0,
+                  96.0
+                ],
+                "mean_pct_exact": 96.0,
+                "ci95_pct_exact": [
+                  96.0,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 93.16,
+                "ci95_pct": [
+                  76.65,
+                  100.0
+                ],
+                "mean_pct_exact": 93.1625,
+                "ci95_pct_exact": [
+                  76.645833,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 89.44,
+                "ci95_pct": [
+                  73.58,
+                  96.0
+                ],
+                "mean_pct_exact": 89.436,
+                "ci95_pct_exact": [
+                  73.58,
+                  96.0
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 83.91,
+                "ci95_pct": [
+                  69.12,
+                  90.83
+                ],
+                "mean_pct_exact": 83.908333,
+                "ci95_pct_exact": [
+                  69.125,
+                  90.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 80.55,
+                "ci95_pct": [
+                  66.36,
+                  87.2
+                ],
+                "mean_pct_exact": 80.552,
+                "ci95_pct_exact": [
+                  66.36,
+                  87.2
+                ]
+              }
+            }
+          },
+          "100000": {
+            "stage1_occupied_gt_tau": {
+              "reachable_120": {
+                "mean_pct": 100.0,
+                "ci95_pct": [
+                  100.0,
+                  100.0
+                ],
+                "mean_pct_exact": 100.0,
+                "ci95_pct_exact": [
+                  100.0,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 96.0,
+                "ci95_pct": [
+                  96.0,
+                  96.0
+                ],
+                "mean_pct_exact": 96.0,
+                "ci95_pct_exact": [
+                  96.0,
+                  96.0
+                ]
+              }
+            },
+            "stage2_dhat_le_50_gate": {
+              "reachable_120": {
+                "mean_pct": 92.83,
+                "ci95_pct": [
+                  72.4,
+                  100.0
+                ],
+                "mean_pct_exact": 92.833333,
+                "ci95_pct_exact": [
+                  72.395833,
+                  100.0
+                ]
+              },
+              "all_125": {
+                "mean_pct": 89.12,
+                "ci95_pct": [
+                  69.5,
+                  96.0
+                ],
+                "mean_pct_exact": 89.12,
+                "ci95_pct_exact": [
+                  69.5,
+                  96.0
+                ]
+              }
+            },
+            "stage3_eq10_top15_published": {
+              "reachable_120": {
+                "mean_pct": 83.54,
+                "ci95_pct": [
+                  65.83,
+                  90.83
+                ],
+                "mean_pct_exact": 83.5375,
+                "ci95_pct_exact": [
+                  65.833333,
+                  90.833333
+                ]
+              },
+              "all_125": {
+                "mean_pct": 80.2,
+                "ci95_pct": [
+                  63.2,
+                  87.2
+                ],
+                "mean_pct_exact": 80.196,
+                "ci95_pct_exact": [
+                  63.2,
+                  87.2
+                ]
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

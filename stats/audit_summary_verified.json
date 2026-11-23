@@ -1,0 +1,4344 @@
+{
+  "elapsed_s": 209.68,
+  "batch_c_unchanged162_sources": {
+    "1": {
+      "p5_raw": 162,
+      "p2_fallback": 0
+    },
+    "2": {
+      "p5_raw": 162,
+      "p2_fallback": 0
+    },
+    "3": {
+      "p5_raw": 162,
+      "p2_fallback": 0
+    }
+  },
+  "summary": {
+    "BIRD_C0_r0": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 0,
+      "mc_cum": 0,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 0,
+      "ser_raw_cum": 0,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_C0_r2": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 0,
+      "mc_cum": 0,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 0,
+      "ser_raw_cum": 0,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_IND8": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 1717506,
+      "mc_cum": 5094935,
+      "ser_out_unique_sum_across_dbs": 1318494,
+      "ser_out_cum": 2422754,
+      "ser_raw_unique_sum_across_dbs": 1318494,
+      "ser_raw_cum": 2422754,
+      "oob_unique_sum_across_dbs": 1114,
+      "oob_cum": 2363,
+      "slots_nonzero_mc": 112,
+      "slots_nonzero_ser_out": 81,
+      "slots_nonzero_oob": 183,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_IND8_PROMPT": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2245646,
+      "mc_cum": 99625630,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 1000554,
+      "ser_raw_cum": 41498698,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_DP_QUERY_DB8": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 645459,
+      "mc_cum": 798702,
+      "ser_out_unique_sum_across_dbs": 26290,
+      "ser_out_cum": 48215,
+      "ser_raw_unique_sum_across_dbs": 26290,
+      "ser_raw_cum": 48215,
+      "oob_unique_sum_across_dbs": 620,
+      "oob_cum": 1388,
+      "slots_nonzero_mc": 106,
+      "slots_nonzero_ser_out": 12,
+      "slots_nonzero_oob": 130,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_S3": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 210,
+      "copied_cum": 8196,
+      "mc_unique_sum_across_dbs": 960497,
+      "mc_cum": 62433073,
+      "ser_out_unique_sum_across_dbs": 879957,
+      "ser_out_cum": 56279369,
+      "ser_raw_unique_sum_across_dbs": 879957,
+      "ser_raw_cum": 56279369,
+      "oob_unique_sum_across_dbs": 1301,
+      "oob_cum": 63626,
+      "slots_nonzero_mc": 440,
+      "slots_nonzero_ser_out": 440,
+      "slots_nonzero_oob": 440,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 8901
+    },
+    "BIRD_C4_r0": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 198,
+      "copied_cum": 213,
+      "mc_unique_sum_across_dbs": 2093064,
+      "mc_cum": 7668701,
+      "ser_out_unique_sum_across_dbs": 1823826,
+      "ser_out_cum": 6312008,
+      "ser_raw_unique_sum_across_dbs": 1823826,
+      "ser_raw_cum": 6312008,
+      "oob_unique_sum_across_dbs": 5505,
+      "oob_cum": 9671,
+      "slots_nonzero_mc": 242,
+      "slots_nonzero_ser_out": 212,
+      "slots_nonzero_oob": 328,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 5339
+    },
+    "BIRD_C4_r2": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 121,
+      "copied_cum": 126,
+      "mc_unique_sum_across_dbs": 2112255,
+      "mc_cum": 6156922,
+      "ser_out_unique_sum_across_dbs": 1846270,
+      "ser_out_cum": 4250699,
+      "ser_raw_unique_sum_across_dbs": 1846270,
+      "ser_raw_cum": 4250699,
+      "oob_unique_sum_across_dbs": 4806,
+      "oob_cum": 7993,
+      "slots_nonzero_mc": 244,
+      "slots_nonzero_ser_out": 212,
+      "slots_nonzero_oob": 324,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 4614
+    },
+    "BIRD_DG8_CLEAN_R1_full440": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2066783,
+      "mc_cum": 91017971,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 904166,
+      "ser_raw_cum": 36412895,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_DG8_CLEAN_R2_full440": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2083030,
+      "mc_cum": 91264505,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 884085,
+      "ser_raw_cum": 35483062,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_DG8_CLEAN_R3_full440": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2079581,
+      "mc_cum": 91586805,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 913850,
+      "ser_raw_cum": 37120958,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_IND8_PROMPT_R2": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2245282,
+      "mc_cum": 99608769,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 1002776,
+      "ser_raw_cum": 41597474,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_IND8_PROMPT_R3": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2230451,
+      "mc_cum": 98851411,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 999140,
+      "ser_raw_cum": 41434800,
+      "oob_unique_sum_across_dbs": 1,
+      "oob_cum": 1,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 1,
+      "rows_transmitted_in_sql_or_sample": 0
+    }
+  },
+  "per_db": [
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_C0_r0",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_C0_r2",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_IND8",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        19976,
+        162486
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        19122,
+        129753
+      ],
+      "raw_within_marginal_segment_matches": [
+        19122,
+        129753
+      ],
+      "out_of_profile_literals": [
+        175,
+        397
+      ],
+      "slots_nonzero_mc": 20,
+      "slots_nonzero_ser_out": 17,
+      "slots_nonzero_oob": 22,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        29804,
+        1251208
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        18097,
+        750610
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        12854,
+        57146
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        7700,
+        29375
+      ],
+      "raw_within_marginal_segment_matches": [
+        7700,
+        29375
+      ],
+      "out_of_profile_literals": [
+        89,
+        191
+      ],
+      "slots_nonzero_mc": 12,
+      "slots_nonzero_ser_out": 7,
+      "slots_nonzero_oob": 18,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_S3",
+      "slots": 42,
+      "copied_private_tuples": [
+        9,
+        378
+      ],
+      "multi_column_matches": [
+        27371,
+        1398163
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        27266,
+        1390383
+      ],
+      "raw_within_marginal_segment_matches": [
+        27266,
+        1390383
+      ],
+      "out_of_profile_literals": [
+        160,
+        7693
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 42,
+      "slots_nonzero_oob": 42,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 378
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_C4_r0",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        28018,
+        237385
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        27585,
+        204656
+      ],
+      "raw_within_marginal_segment_matches": [
+        27585,
+        204656
+      ],
+      "out_of_profile_literals": [
+        1128,
+        1642
+      ],
+      "slots_nonzero_mc": 35,
+      "slots_nonzero_ser_out": 33,
+      "slots_nonzero_oob": 38,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 770
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_C4_r2",
+      "slots": 42,
+      "copied_private_tuples": [
+        1,
+        1
+      ],
+      "multi_column_matches": [
+        24386,
+        209902
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        19450,
+        187324
+      ],
+      "raw_within_marginal_segment_matches": [
+        19450,
+        187324
+      ],
+      "out_of_profile_literals": [
+        983,
+        1399
+      ],
+      "slots_nonzero_mc": 30,
+      "slots_nonzero_ser_out": 30,
+      "slots_nonzero_oob": 33,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 650
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        28429,
+        1193554
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        12223,
+        489976
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        28464,
+        1195022
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        12571,
+        503902
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "california_schools",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        29524,
+        1238239
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        12952,
+        522966
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_C0_r0",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_C0_r2",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_IND8",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        56839,
+        98951
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        55084,
+        80543
+      ],
+      "raw_within_marginal_segment_matches": [
+        55084,
+        80543
+      ],
+      "out_of_profile_literals": [
+        207,
+        301
+      ],
+      "slots_nonzero_mc": 19,
+      "slots_nonzero_ser_out": 12,
+      "slots_nonzero_oob": 29,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        486896,
+        27584171
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        54545,
+        3154702
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 58,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        42488,
+        72699
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        16587,
+        16587
+      ],
+      "raw_within_marginal_segment_matches": [
+        16587,
+        16587
+      ],
+      "out_of_profile_literals": [
+        197,
+        331
+      ],
+      "slots_nonzero_mc": 25,
+      "slots_nonzero_ser_out": 2,
+      "slots_nonzero_oob": 25,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_S3",
+      "slots": 58,
+      "copied_private_tuples": [
+        8,
+        464
+      ],
+      "multi_column_matches": [
+        222798,
+        14634794
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        222793,
+        14609062
+      ],
+      "raw_within_marginal_segment_matches": [
+        222793,
+        14609062
+      ],
+      "out_of_profile_literals": [
+        200,
+        12362
+      ],
+      "slots_nonzero_mc": 58,
+      "slots_nonzero_ser_out": 58,
+      "slots_nonzero_oob": 58,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 1044
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_C4_r0",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        412252,
+        546687
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        410508,
+        499865
+      ],
+      "raw_within_marginal_segment_matches": [
+        410508,
+        499865
+      ],
+      "out_of_profile_literals": [
+        870,
+        1297
+      ],
+      "slots_nonzero_mc": 41,
+      "slots_nonzero_ser_out": 33,
+      "slots_nonzero_oob": 48,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 611
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_C4_r2",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        407683,
+        563335
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        402943,
+        515965
+      ],
+      "raw_within_marginal_segment_matches": [
+        402943,
+        515965
+      ],
+      "out_of_profile_literals": [
+        791,
+        1103
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 30,
+      "slots_nonzero_oob": 45,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 512
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        485026,
+        27476048
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        46252,
+        2673018
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 58,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        486453,
+        27558692
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        52580,
+        3040084
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 58,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "card_games",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 58,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        486452,
+        27558683
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        52573,
+        3039689
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 58,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_C0_r0",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_C0_r2",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_IND8",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        794,
+        794
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        759,
+        759
+      ],
+      "raw_within_marginal_segment_matches": [
+        759,
+        759
+      ],
+      "out_of_profile_literals": [
+        83,
+        99
+      ],
+      "slots_nonzero_mc": 4,
+      "slots_nonzero_ser_out": 2,
+      "slots_nonzero_oob": 8,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        27792,
+        687756
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        14479,
+        358127
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 25,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        2909,
+        4681
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        194,
+        194
+      ],
+      "raw_within_marginal_segment_matches": [
+        194,
+        194
+      ],
+      "out_of_profile_literals": [
+        63,
+        80
+      ],
+      "slots_nonzero_mc": 3,
+      "slots_nonzero_ser_out": 1,
+      "slots_nonzero_oob": 3,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_S3",
+      "slots": 25,
+      "copied_private_tuples": [
+        19,
+        475
+      ],
+      "multi_column_matches": [
+        23127,
+        666903
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        10990,
+        338895
+      ],
+      "raw_within_marginal_segment_matches": [
+        10990,
+        338895
+      ],
+      "out_of_profile_literals": [
+        153,
+        5263
+      ],
+      "slots_nonzero_mc": 25,
+      "slots_nonzero_ser_out": 25,
+      "slots_nonzero_oob": 25,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 600
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_C4_r0",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        15567,
+        19980
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        6570,
+        9620
+      ],
+      "raw_within_marginal_segment_matches": [
+        6570,
+        9620
+      ],
+      "out_of_profile_literals": [
+        502,
+        601
+      ],
+      "slots_nonzero_mc": 8,
+      "slots_nonzero_ser_out": 8,
+      "slots_nonzero_oob": 11,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 296
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_C4_r2",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        2990,
+        3547
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        2873,
+        3428
+      ],
+      "raw_within_marginal_segment_matches": [
+        2873,
+        3428
+      ],
+      "out_of_profile_literals": [
+        212,
+        250
+      ],
+      "slots_nonzero_mc": 7,
+      "slots_nonzero_ser_out": 7,
+      "slots_nonzero_oob": 13,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 116
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        14091,
+        348179
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        13048,
+        322628
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 25,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        14264,
+        352501
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        13053,
+        322753
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 25,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "codebase_community",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 25,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        14076,
+        347819
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        13051,
+        322703
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 25,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_C0_r0",
+      "slots": 13,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_C0_r2",
+      "slots": 13,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_IND8",
+      "slots": 13,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        95,
+        95
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        75,
+        75
+      ],
+      "raw_within_marginal_segment_matches": [
+        75,
+        75
+      ],
+      "out_of_profile_literals": [
+        31,
+        46
+      ],
+      "slots_nonzero_mc": 1,
+      "slots_nonzero_ser_out": 1,
+      "slots_nonzero_oob": 7,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 13,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        38844,
+        317651
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        301,
+        3804
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 13,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 13,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        32,
+        36
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        21,
+        40
+      ],
+      "slots_nonzero_mc": 3,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 4,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_S3",
+      "slots": 13,
+      "copied_private_tuples": [
+        15,
+        195
+      ],
+      "multi_column_matches": [
+        5736,
+        66130
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        5734,
+        66104
+      ],
+      "raw_within_marginal_segment_matches": [
+        5734,
+        66104
+      ],
+      "out_of_profile_literals": [
+        49,
+        661
+      ],
+      "slots_nonzero_mc": 13,
+      "slots_nonzero_ser_out": 13,
+      "slots_nonzero_oob": 13,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 195
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_C4_r0",
+      "slots": 13,
+      "copied_private_tuples": [
+        55,
+        55
+      ],
+      "multi_column_matches": [
+        700,
+        1051
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        213,
+        389
+      ],
+      "raw_within_marginal_segment_matches": [
+        213,
+        389
+      ],
+      "out_of_profile_literals": [
+        343,
+        490
+      ],
+      "slots_nonzero_mc": 6,
+      "slots_nonzero_ser_out": 6,
+      "slots_nonzero_oob": 12,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 228
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_C4_r2",
+      "slots": 13,
+      "copied_private_tuples": [
+        32,
+        32
+      ],
+      "multi_column_matches": [
+        2456,
+        2456
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        2031,
+        2031
+      ],
+      "raw_within_marginal_segment_matches": [
+        2031,
+        2031
+      ],
+      "out_of_profile_literals": [
+        195,
+        204
+      ],
+      "slots_nonzero_mc": 3,
+      "slots_nonzero_ser_out": 3,
+      "slots_nonzero_oob": 11,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 139
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 13,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        38663,
+        315373
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        201,
+        2523
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 13,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 13,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        38660,
+        315334
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        201,
+        2523
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 13,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "debit_card_specializing",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 13,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        38663,
+        315373
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        201,
+        2523
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 13,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_C0_r0",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_C0_r2",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_IND8",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        178121,
+        219945
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        167948,
+        206296
+      ],
+      "raw_within_marginal_segment_matches": [
+        167948,
+        206296
+      ],
+      "out_of_profile_literals": [
+        35,
+        44
+      ],
+      "slots_nonzero_mc": 4,
+      "slots_nonzero_ser_out": 4,
+      "slots_nonzero_oob": 5,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        208633,
+        5415185
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        194384,
+        5053419
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 26,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        133887,
+        133887
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        22,
+        22
+      ],
+      "slots_nonzero_mc": 1,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 1,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_S3",
+      "slots": 26,
+      "copied_private_tuples": [
+        21,
+        546
+      ],
+      "multi_column_matches": [
+        206675,
+        14970167
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        206269,
+        14750841
+      ],
+      "raw_within_marginal_segment_matches": [
+        206269,
+        14750841
+      ],
+      "out_of_profile_literals": [
+        149,
+        4519
+      ],
+      "slots_nonzero_mc": 26,
+      "slots_nonzero_ser_out": 26,
+      "slots_nonzero_oob": 26,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 546
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_C4_r0",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        183631,
+        532593
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        175212,
+        391697
+      ],
+      "raw_within_marginal_segment_matches": [
+        175212,
+        391697
+      ],
+      "out_of_profile_literals": [
+        111,
+        131
+      ],
+      "slots_nonzero_mc": 7,
+      "slots_nonzero_ser_out": 7,
+      "slots_nonzero_oob": 13,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 96
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_C4_r2",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        208714,
+        547739
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        201002,
+        391308
+      ],
+      "raw_within_marginal_segment_matches": [
+        201002,
+        391308
+      ],
+      "out_of_profile_literals": [
+        167,
+        197
+      ],
+      "slots_nonzero_mc": 11,
+      "slots_nonzero_ser_out": 10,
+      "slots_nonzero_oob": 15,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 107
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        197939,
+        5140447
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        193616,
+        5032837
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 26,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        203218,
+        5272917
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        191467,
+        4964181
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 26,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "european_football_2",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 26,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        204254,
+        5301238
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        192395,
+        4993930
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 26,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_C0_r0",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_C0_r2",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_IND8",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        1056950,
+        3698341
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        1056647,
+        1963344
+      ],
+      "raw_within_marginal_segment_matches": [
+        1056647,
+        1963344
+      ],
+      "out_of_profile_literals": [
+        158,
+        288
+      ],
+      "slots_nonzero_mc": 18,
+      "slots_nonzero_ser_out": 16,
+      "slots_nonzero_oob": 21,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        1065033,
+        44223238
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        436377,
+        17492065
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        436765,
+        436799
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        20,
+        40
+      ],
+      "slots_nonzero_mc": 7,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 7,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_S3",
+      "slots": 42,
+      "copied_private_tuples": [
+        24,
+        1008
+      ],
+      "multi_column_matches": [
+        256871,
+        10763211
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        244236,
+        10240283
+      ],
+      "raw_within_marginal_segment_matches": [
+        244236,
+        10240283
+      ],
+      "out_of_profile_literals": [
+        118,
+        5859
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 42,
+      "slots_nonzero_oob": 42,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 1008
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_C4_r0",
+      "slots": 42,
+      "copied_private_tuples": [
+        12,
+        12
+      ],
+      "multi_column_matches": [
+        1061063,
+        5262225
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        1059483,
+        4808605
+      ],
+      "raw_within_marginal_segment_matches": [
+        1059483,
+        4808605
+      ],
+      "out_of_profile_literals": [
+        683,
+        1213
+      ],
+      "slots_nonzero_mc": 33,
+      "slots_nonzero_ser_out": 32,
+      "slots_nonzero_oob": 36,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 435
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_C4_r2",
+      "slots": 42,
+      "copied_private_tuples": [
+        1,
+        1
+      ],
+      "multi_column_matches": [
+        1057362,
+        3588648
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        1057078,
+        2712628
+      ],
+      "raw_within_marginal_segment_matches": [
+        1057078,
+        2712628
+      ],
+      "out_of_profile_literals": [
+        592,
+        904
+      ],
+      "slots_nonzero_mc": 31,
+      "slots_nonzero_ser_out": 29,
+      "slots_nonzero_oob": 35,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 313
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        1063628,
+        44152411
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        436248,
+        17485885
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        1063609,
+        44151157
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        436248,
+        17485885
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "financial",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 42,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        1063730,
+        44156489
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        436248,
+        17485885
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 42,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_C0_r0",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_C0_r2",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_IND8",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        391654,
+        815894
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        12562,
+        24949
+      ],
+      "raw_within_marginal_segment_matches": [
+        12562,
+        24949
+      ],
+      "out_of_profile_literals": [
+        172,
+        307
+      ],
+      "slots_nonzero_mc": 9,
+      "slots_nonzero_ser_out": 6,
+      "slots_nonzero_oob": 11,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        374774,
+        19075604
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        270581,
+        13763269
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 51,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        4873,
+        9746
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        4,
+        8
+      ],
+      "slots_nonzero_mc": 1,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 1,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_S3",
+      "slots": 51,
+      "copied_private_tuples": [
+        39,
+        1989
+      ],
+      "multi_column_matches": [
+        202749,
+        18292553
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        148273,
+        13442629
+      ],
+      "raw_within_marginal_segment_matches": [
+        148273,
+        13442629
+      ],
+      "out_of_profile_literals": [
+        185,
+        11455
+      ],
+      "slots_nonzero_mc": 51,
+      "slots_nonzero_ser_out": 51,
+      "slots_nonzero_oob": 51,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 1989
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_C4_r0",
+      "slots": 51,
+      "copied_private_tuples": [
+        2,
+        2
+      ],
+      "multi_column_matches": [
+        377384,
+        824375
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        131182,
+        314049
+      ],
+      "raw_within_marginal_segment_matches": [
+        131182,
+        314049
+      ],
+      "out_of_profile_literals": [
+        395,
+        703
+      ],
+      "slots_nonzero_mc": 27,
+      "slots_nonzero_ser_out": 24,
+      "slots_nonzero_oob": 34,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 279
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_C4_r2",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        394763,
+        1056246
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        149597,
+        388359
+      ],
+      "raw_within_marginal_segment_matches": [
+        149597,
+        388359
+      ],
+      "out_of_profile_literals": [
+        473,
+        828
+      ],
+      "slots_nonzero_mc": 30,
+      "slots_nonzero_ser_out": 30,
+      "slots_nonzero_oob": 34,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 297
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        228124,
+        11595918
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        197097,
+        10024487
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 51,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        214210,
+        10886224
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        172386,
+        8773861
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 51,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "formula_1",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 51,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        229997,
+        11691441
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        196642,
+        10002129
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 51,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_C0_r0",
+      "slots": 31,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_C0_r2",
+      "slots": 31,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_IND8",
+      "slots": 31,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        108,
+        157
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        93,
+        129
+      ],
+      "raw_within_marginal_segment_matches": [
+        93,
+        129
+      ],
+      "out_of_profile_literals": [
+        28,
+        72
+      ],
+      "slots_nonzero_mc": 4,
+      "slots_nonzero_ser_out": 4,
+      "slots_nonzero_oob": 13,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 31,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        152,
+        4634
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        8,
+        248
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 31,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 31,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        5,
+        6
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 4,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_S3",
+      "slots": 31,
+      "copied_private_tuples": [
+        24,
+        744
+      ],
+      "multi_column_matches": [
+        2599,
+        80764
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        2542,
+        78997
+      ],
+      "raw_within_marginal_segment_matches": [
+        2542,
+        78997
+      ],
+      "out_of_profile_literals": [
+        120,
+        3947
+      ],
+      "slots_nonzero_mc": 31,
+      "slots_nonzero_ser_out": 31,
+      "slots_nonzero_oob": 31,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 744
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_C4_r0",
+      "slots": 31,
+      "copied_private_tuples": [
+        82,
+        91
+      ],
+      "multi_column_matches": [
+        215,
+        467
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        214,
+        424
+      ],
+      "raw_within_marginal_segment_matches": [
+        214,
+        424
+      ],
+      "out_of_profile_literals": [
+        465,
+        903
+      ],
+      "slots_nonzero_mc": 14,
+      "slots_nonzero_ser_out": 14,
+      "slots_nonzero_oob": 25,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 448
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_C4_r2",
+      "slots": 31,
+      "copied_private_tuples": [
+        50,
+        50
+      ],
+      "multi_column_matches": [
+        111,
+        264
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        106,
+        239
+      ],
+      "raw_within_marginal_segment_matches": [
+        106,
+        239
+      ],
+      "out_of_profile_literals": [
+        310,
+        563
+      ],
+      "slots_nonzero_mc": 15,
+      "slots_nonzero_ser_out": 12,
+      "slots_nonzero_oob": 25,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 326
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 31,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        131,
+        4000
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        2,
+        62
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 31,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 31,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        23131,
+        717000
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        2,
+        62
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 31,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "student_club",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 31,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        141,
+        4310
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        2,
+        62
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 31,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_C0_r0",
+      "slots": 45,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_C0_r2",
+      "slots": 45,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_IND8",
+      "slots": 45,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        879,
+        4248
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        48,
+        176
+      ],
+      "slots_nonzero_mc": 5,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 7,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 45,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        268,
+        11932
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        70,
+        3150
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 45,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 45,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        31,
+        62
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        3,
+        6
+      ],
+      "slots_nonzero_mc": 2,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 2,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_S3",
+      "slots": 45,
+      "copied_private_tuples": [
+        30,
+        1350
+      ],
+      "multi_column_matches": [
+        429,
+        19305
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        248,
+        11160
+      ],
+      "raw_within_marginal_segment_matches": [
+        248,
+        11160
+      ],
+      "out_of_profile_literals": [
+        43,
+        1916
+      ],
+      "slots_nonzero_mc": 45,
+      "slots_nonzero_ser_out": 45,
+      "slots_nonzero_oob": 45,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 1350
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_C4_r0",
+      "slots": 45,
+      "copied_private_tuples": [
+        29,
+        30
+      ],
+      "multi_column_matches": [
+        672,
+        741
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        110,
+        124
+      ],
+      "raw_within_marginal_segment_matches": [
+        110,
+        124
+      ],
+      "out_of_profile_literals": [
+        165,
+        231
+      ],
+      "slots_nonzero_mc": 7,
+      "slots_nonzero_ser_out": 7,
+      "slots_nonzero_oob": 17,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 160
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_C4_r2",
+      "slots": 45,
+      "copied_private_tuples": [
+        25,
+        25
+      ],
+      "multi_column_matches": [
+        698,
+        1196
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        159,
+        280
+      ],
+      "raw_within_marginal_segment_matches": [
+        159,
+        280
+      ],
+      "out_of_profile_literals": [
+        228,
+        286
+      ],
+      "slots_nonzero_mc": 11,
+      "slots_nonzero_ser_out": 9,
+      "slots_nonzero_oob": 23,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 169
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 45,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        101,
+        4486
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        65,
+        2925
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 45,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 45,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        104,
+        4617
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        65,
+        2925
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 45,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "superhero",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 45,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        113,
+        5023
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        65,
+        2925
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 45,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_C0_r0",
+      "slots": 79,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_C0_r2",
+      "slots": 79,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_IND8",
+      "slots": 79,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        12090,
+        94024
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        6204,
+        16906
+      ],
+      "raw_within_marginal_segment_matches": [
+        6204,
+        16906
+      ],
+      "out_of_profile_literals": [
+        165,
+        547
+      ],
+      "slots_nonzero_mc": 28,
+      "slots_nonzero_ser_out": 19,
+      "slots_nonzero_oob": 44,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 79,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        13450,
+        1054251
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        11712,
+        919304
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 79,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 79,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        11620,
+        83646
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        1809,
+        2059
+      ],
+      "raw_within_marginal_segment_matches": [
+        1809,
+        2059
+      ],
+      "out_of_profile_literals": [
+        185,
+        626
+      ],
+      "slots_nonzero_mc": 52,
+      "slots_nonzero_ser_out": 2,
+      "slots_nonzero_oob": 52,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_S3",
+      "slots": 79,
+      "copied_private_tuples": [
+        9,
+        711
+      ],
+      "multi_column_matches": [
+        12105,
+        1540157
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        11599,
+        1350845
+      ],
+      "raw_within_marginal_segment_matches": [
+        11599,
+        1350845
+      ],
+      "out_of_profile_literals": [
+        111,
+        9380
+      ],
+      "slots_nonzero_mc": 79,
+      "slots_nonzero_ser_out": 79,
+      "slots_nonzero_oob": 79,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 711
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_C4_r0",
+      "slots": 79,
+      "copied_private_tuples": [
+        10,
+        10
+      ],
+      "multi_column_matches": [
+        13553,
+        243187
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        12744,
+        82573
+      ],
+      "raw_within_marginal_segment_matches": [
+        12744,
+        82573
+      ],
+      "out_of_profile_literals": [
+        812,
+        2303
+      ],
+      "slots_nonzero_mc": 62,
+      "slots_nonzero_ser_out": 46,
+      "slots_nonzero_oob": 73,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 1849
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_C4_r2",
+      "slots": 79,
+      "copied_private_tuples": [
+        5,
+        5
+      ],
+      "multi_column_matches": [
+        13091,
+        183587
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        11030,
+        49135
+      ],
+      "raw_within_marginal_segment_matches": [
+        11030,
+        49135
+      ],
+      "out_of_profile_literals": [
+        823,
+        2091
+      ],
+      "slots_nonzero_mc": 62,
+      "slots_nonzero_ser_out": 50,
+      "slots_nonzero_oob": 70,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 1809
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 79,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        10651,
+        787555
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        5414,
+        378554
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 79,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 79,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        10917,
+        811041
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        5512,
+        386886
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 79,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "thrombosis_prediction",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 79,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        12631,
+        968190
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        9721,
+        748146
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 79,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_C0_r0",
+      "slots": 28,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_C0_r2",
+      "slots": 28,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_IND8",
+      "slots": 28,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        12,
+        86
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 16,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_IND8_PROMPT",
+      "slots": 28,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_DP_QUERY_DB8",
+      "slots": 28,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        11,
+        38
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 13,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_S3",
+      "slots": 28,
+      "copied_private_tuples": [
+        12,
+        336
+      ],
+      "multi_column_matches": [
+        37,
+        926
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        7,
+        170
+      ],
+      "raw_within_marginal_segment_matches": [
+        7,
+        170
+      ],
+      "out_of_profile_literals": [
+        13,
+        571
+      ],
+      "slots_nonzero_mc": 28,
+      "slots_nonzero_ser_out": 28,
+      "slots_nonzero_oob": 28,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 336
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_C4_r0",
+      "slots": 28,
+      "copied_private_tuples": [
+        8,
+        13
+      ],
+      "multi_column_matches": [
+        9,
+        10
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        5,
+        6
+      ],
+      "raw_within_marginal_segment_matches": [
+        5,
+        6
+      ],
+      "out_of_profile_literals": [
+        31,
+        157
+      ],
+      "slots_nonzero_mc": 2,
+      "slots_nonzero_ser_out": 2,
+      "slots_nonzero_oob": 21,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 167
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_C4_r2",
+      "slots": 28,
+      "copied_private_tuples": [
+        7,
+        12
+      ],
+      "multi_column_matches": [
+        1,
+        2
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        1,
+        2
+      ],
+      "raw_within_marginal_segment_matches": [
+        1,
+        2
+      ],
+      "out_of_profile_literals": [
+        32,
+        168
+      ],
+      "slots_nonzero_mc": 2,
+      "slots_nonzero_ser_out": 2,
+      "slots_nonzero_oob": 20,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 176
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_DG8_CLEAN_R1_full440",
+      "slots": 28,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_DG8_CLEAN_R2_full440",
+      "slots": 28,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    {
+      "db_id": "toxicology",
+      "condition": "BIRD_DG8_CLEAN_R3_full440",
+      "slots": 28,
+      "copied_private_tuples": [
+        0,
+        0
+      ],
+      "multi_column_matches": [
+        0,
+        0
+      ],
+      "serialized_tuple_matches_outside_profile": [
+        0,
+        0
+      ],
+      "raw_within_marginal_segment_matches": [
+        0,
+        0
+      ],
+      "out_of_profile_literals": [
+        0,
+        0
+      ],
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "lookup_tables": {},
+      "rows_transmitted_in_sql_or_sample": 0
+    }
+  ],
+  "reconciled_27_conditions": {
+    "BIRD_1way_Profile_R1": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2245646,
+      "mc_cum": 99625630,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 1000554,
+      "ser_raw_cum": 41498698,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_1way_Profile_R2": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2245282,
+      "mc_cum": 99608769,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 1002776,
+      "ser_raw_cum": 41597474,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_1way_Profile_R3": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2230451,
+      "mc_cum": 98851411,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 999140,
+      "ser_raw_cum": 41434800,
+      "oob_unique_sum_across_dbs": 1,
+      "oob_cum": 1,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 1,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_DP_Query_DBwide": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 645459,
+      "mc_cum": 798702,
+      "ser_out_unique_sum_across_dbs": 26290,
+      "ser_out_cum": 48215,
+      "ser_raw_unique_sum_across_dbs": 26290,
+      "ser_raw_cum": 48215,
+      "oob_unique_sum_across_dbs": 620,
+      "oob_cum": 1388,
+      "slots_nonzero_mc": 106,
+      "slots_nonzero_ser_out": 12,
+      "slots_nonzero_oob": 130,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_Full_access_r0": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 198,
+      "copied_cum": 213,
+      "mc_unique_sum_across_dbs": 2093064,
+      "mc_cum": 7668701,
+      "ser_out_unique_sum_across_dbs": 1823826,
+      "ser_out_cum": 6312008,
+      "ser_raw_unique_sum_across_dbs": 1823826,
+      "ser_raw_cum": 6312008,
+      "oob_unique_sum_across_dbs": 5505,
+      "oob_cum": 9671,
+      "slots_nonzero_mc": 242,
+      "slots_nonzero_ser_out": 212,
+      "slots_nonzero_oob": 328,
+      "rows_transmitted_in_sql_or_sample": 5339
+    },
+    "BIRD_Full_access_r2": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 121,
+      "copied_cum": 126,
+      "mc_unique_sum_across_dbs": 2112255,
+      "mc_cum": 6156922,
+      "ser_out_unique_sum_across_dbs": 1846270,
+      "ser_out_cum": 4250699,
+      "ser_raw_unique_sum_across_dbs": 1846270,
+      "ser_raw_cum": 4250699,
+      "oob_unique_sum_across_dbs": 4806,
+      "oob_cum": 7993,
+      "slots_nonzero_mc": 244,
+      "slots_nonzero_ser_out": 212,
+      "slots_nonzero_oob": 324,
+      "rows_transmitted_in_sql_or_sample": 4614
+    },
+    "BIRD_Schema_only_r0": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 0,
+      "mc_cum": 0,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 0,
+      "ser_raw_cum": 0,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_Schema_only_r2": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 0,
+      "mc_cum": 0,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 0,
+      "ser_raw_cum": 0,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_Select_3": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 210,
+      "copied_cum": 8196,
+      "mc_unique_sum_across_dbs": 960497,
+      "mc_cum": 62433073,
+      "ser_out_unique_sum_across_dbs": 879957,
+      "ser_out_cum": 56279369,
+      "ser_raw_unique_sum_across_dbs": 879957,
+      "ser_raw_cum": 56279369,
+      "oob_unique_sum_across_dbs": 1301,
+      "oob_cum": 63626,
+      "slots_nonzero_mc": 440,
+      "slots_nonzero_ser_out": 440,
+      "slots_nonzero_oob": 440,
+      "rows_transmitted_in_sql_or_sample": 8901
+    },
+    "BIRD_Silhouette_R1": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2066783,
+      "mc_cum": 91017971,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 904166,
+      "ser_raw_cum": 36412895,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_Silhouette_R2": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2083030,
+      "mc_cum": 91264505,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 884085,
+      "ser_raw_cum": 35483062,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_Silhouette_R3": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 2079581,
+      "mc_cum": 91586805,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 913850,
+      "ser_raw_cum": 37120958,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 412,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "BIRD_Synthetic_DB_1way": {
+      "slots": 440,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 1717506,
+      "mc_cum": 5094935,
+      "ser_out_unique_sum_across_dbs": 1318494,
+      "ser_out_cum": 2422754,
+      "ser_raw_unique_sum_across_dbs": 1318494,
+      "ser_raw_cum": 2422754,
+      "oob_unique_sum_across_dbs": 1114,
+      "oob_cum": 2363,
+      "slots_nonzero_mc": 112,
+      "slots_nonzero_ser_out": 81,
+      "slots_nonzero_oob": 183,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR600_1way_Profile": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 22104,
+      "mc_cum": 13222665,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 903,
+      "ser_raw_cum": 533222,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 600,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR600_Demo94_Entity": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 294,
+      "mc_cum": 174922,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 1,
+      "ser_raw_cum": 592,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 600,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR600_Full_access": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 102,
+      "copied_cum": 102,
+      "mc_unique_sum_across_dbs": 50612,
+      "mc_cum": 164621,
+      "ser_out_unique_sum_across_dbs": 43554,
+      "ser_out_cum": 138581,
+      "ser_raw_unique_sum_across_dbs": 43554,
+      "ser_raw_cum": 138581,
+      "oob_unique_sum_across_dbs": 3288,
+      "oob_cum": 6955,
+      "slots_nonzero_mc": 377,
+      "slots_nonzero_ser_out": 355,
+      "slots_nonzero_oob": 473,
+      "rows_transmitted_in_sql_or_sample": 5855
+    },
+    "EHR600_Schema_only": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 0,
+      "mc_cum": 0,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 0,
+      "ser_raw_cum": 0,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR600_Select_3": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 39,
+      "copied_cum": 23400,
+      "mc_unique_sum_across_dbs": 45324,
+      "mc_cum": 32928461,
+      "ser_out_unique_sum_across_dbs": 45256,
+      "ser_out_cum": 32845023,
+      "ser_raw_unique_sum_across_dbs": 45256,
+      "ser_raw_cum": 32845023,
+      "oob_unique_sum_across_dbs": 185,
+      "oob_cum": 137721,
+      "slots_nonzero_mc": 600,
+      "slots_nonzero_ser_out": 600,
+      "slots_nonzero_oob": 600,
+      "rows_transmitted_in_sql_or_sample": 23400
+    },
+    "EHR600_Silhouette_R1": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 16327,
+      "mc_cum": 9755264,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 365,
+      "ser_raw_cum": 218338,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 600,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR600_Silhouette_R2": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 16798,
+      "mc_cum": 10043311,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 835,
+      "ser_raw_cum": 492773,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 600,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR600_Silhouette_R3": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 16438,
+      "mc_cum": 9823427,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 425,
+      "ser_raw_cum": 254082,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 600,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR600_Synthetic_DB_1way": {
+      "slots": 600,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 20804,
+      "mc_cum": 68879,
+      "ser_out_unique_sum_across_dbs": 13814,
+      "ser_out_cum": 33882,
+      "ser_raw_unique_sum_across_dbs": 13814,
+      "ser_raw_cum": 33882,
+      "oob_unique_sum_across_dbs": 1927,
+      "oob_cum": 3881,
+      "slots_nonzero_mc": 198,
+      "slots_nonzero_ser_out": 167,
+      "slots_nonzero_oob": 346,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR874_Full_access": {
+      "slots": 874,
+      "copied_unique_sum_across_dbs": 232,
+      "copied_cum": 246,
+      "mc_unique_sum_across_dbs": 70668,
+      "mc_cum": 318644,
+      "ser_out_unique_sum_across_dbs": 69021,
+      "ser_out_cum": 275654,
+      "ser_raw_unique_sum_across_dbs": 69021,
+      "ser_raw_cum": 275654,
+      "oob_unique_sum_across_dbs": 4374,
+      "oob_cum": 9799,
+      "slots_nonzero_mc": 523,
+      "slots_nonzero_ser_out": 494,
+      "slots_nonzero_oob": 714,
+      "rows_transmitted_in_sql_or_sample": 9450
+    },
+    "EHR874_Noiseless_noLookup": {
+      "slots": 874,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 11429,
+      "mc_cum": 9934775,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 414,
+      "ser_raw_cum": 359972,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 874,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR874_Schema_only": {
+      "slots": 874,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 0,
+      "mc_cum": 0,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 0,
+      "ser_raw_cum": 0,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 0,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR874_Silhouette": {
+      "slots": 874,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 16327,
+      "mc_cum": 14186420,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 365,
+      "ser_raw_cum": 317154,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 874,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    },
+    "EHR874_Silhouette_noLookup": {
+      "slots": 874,
+      "copied_unique_sum_across_dbs": 0,
+      "copied_cum": 0,
+      "mc_unique_sum_across_dbs": 16327,
+      "mc_cum": 14205783,
+      "ser_out_unique_sum_across_dbs": 0,
+      "ser_out_cum": 0,
+      "ser_raw_unique_sum_across_dbs": 365,
+      "ser_raw_cum": 317314,
+      "oob_unique_sum_across_dbs": 0,
+      "oob_cum": 0,
+      "slots_nonzero_mc": 874,
+      "slots_nonzero_ser_out": 0,
+      "slots_nonzero_oob": 0,
+      "rows_transmitted_in_sql_or_sample": 0
+    }
+  }
+}

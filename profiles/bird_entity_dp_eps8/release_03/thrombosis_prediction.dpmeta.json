@@ -1,0 +1,1367 @@
+{
+  "db_id": "thrombosis_prediction",
+  "version": "c1-entity-dp-v2-direct-star",
+  "mechanism": "Entity-DG-v3",
+  "epsilon": 8,
+  "delta": "1/1000000",
+  "cap": 5,
+  "delta_mode": "proportional",
+  "rho_db": "874796954851759/1000000000000000",
+  "rho_budget": "874796954851759/1000000000000000",
+  "delta_threshold_total": "1/2000000",
+  "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+  "table_sensitivity_caps": {
+    "Examination": 5,
+    "Laboratory": 5,
+    "Patient": 5
+  },
+  "parameters": [
+    {
+      "r_j": "1139946973/1",
+      "share": "1139946973/999999999995",
+      "rho": "997222140672880335775507/999999999995000000000000000",
+      "sigma2": "499999999997500000000000000/997222140672880335775507",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "718121594/1",
+      "share": "718121594/999999999995",
+      "rho": "314105291822245603391923/499999999997500000000000000",
+      "sigma2": "249999999998750000000000000/314105291822245603391923",
+      "delta": "0/1",
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "2099800278/1",
+      "share": "2099800278/999999999995",
+      "rho": "918449444495638498494501/499999999997500000000000000",
+      "sigma2": "6249999999968750000000000000/918449444495638498494501",
+      "delta": "0/1",
+      "sensitivity2": 25
+    },
+    {
+      "r_j": "2265702628/1",
+      "share": "2265702628/999999999995",
+      "rho": "495507439893506929180663/249999999998750000000000000",
+      "sigma2": "624999999996875000000000000/495507439893506929180663",
+      "delta": "1/1077000000",
+      "sensitivity2": 5,
+      "tau": 224,
+      "tail_lower": "155414953563881/1000000000000000000000000",
+      "tail_upper": "77707476781941/500000000000000000000000",
+      "prev_tail_lower": "93134204007173/500000000000000000000000",
+      "prev_tail_upper": "186268408014347/1000000000000000000000000"
+    },
+    {
+      "r_j": "4367760590/1",
+      "share": "873552118/199999999999",
+      "rho": "382090366365352225237781/99999999999500000000000000",
+      "sigma2": "1249999999993750000000000000/382090366365352225237781",
+      "delta": "0/1",
+      "sensitivity2": 25
+    },
+    {
+      "r_j": "5574974098/1",
+      "share": "5574974098/999999999995",
+      "rho": "2438485182153915927369191/499999999997500000000000000",
+      "sigma2": "1249999999993750000000000000/2438485182153915927369191",
+      "delta": "1/269250000",
+      "sensitivity2": 5,
+      "tau": 138,
+      "tail_lower": "78192740715979/125000000000000000000000",
+      "tail_upper": "625541925727833/1000000000000000000000000",
+      "prev_tail_lower": "411462889209583/500000000000000000000000",
+      "prev_tail_upper": "822925778419167/1000000000000000000000000"
+    },
+    {
+      "r_j": "3554781411/1",
+      "share": "3554781411/999999999995",
+      "rho": "3109711953506439153851949/999999999995000000000000000",
+      "sigma2": "2499999999987500000000000000/3109711953506439153851949",
+      "delta": "1/538500000",
+      "sensitivity2": 5,
+      "tau": 176,
+      "tail_lower": "300846896593369/1000000000000000000000000",
+      "tail_upper": "30084689659337/100000000000000000000000",
+      "prev_tail_lower": "94015252905689/250000000000000000000000",
+      "prev_tail_upper": "376061011622757/1000000000000000000000000"
+    },
+    {
+      "r_j": "3333225170/1",
+      "share": "666645034/199999999999",
+      "rho": "291589522855123671757403/99999999999500000000000000",
+      "sigma2": "1249999999993750000000000000/291589522855123671757403",
+      "delta": "0/1",
+      "sensitivity2": 25
+    },
+    {
+      "r_j": "11365554877/1",
+      "share": "11365554877/999999999995",
+      "rho": "9942552796600158314478643/999999999995000000000000000",
+      "sigma2": "2499999999987500000000000000/9942552796600158314478643",
+      "delta": "1/89750000",
+      "sensitivity2": 5,
+      "tau": 94,
+      "tail_lower": "92304227828179/50000000000000000000000",
+      "tail_upper": "184608455656359/100000000000000000000000",
+      "prev_tail_lower": "270000980067939/100000000000000000000000",
+      "prev_tail_upper": "13500049003397/5000000000000000000000"
+    },
+    {
+      "r_j": "1443526239/1",
+      "share": "1443526239/999999999995",
+      "rho": "1262792358125812471804401/999999999995000000000000000",
+      "sigma2": "2499999999987500000000000000/1262792358125812471804401",
+      "delta": "1/2154000000",
+      "sensitivity2": 5,
+      "tau": 285,
+      "tail_lower": "806860042935009/10000000000000000000000000",
+      "tail_upper": "80686004293501/1000000000000000000000000",
+      "prev_tail_lower": "233616635281229/2500000000000000000000000",
+      "prev_tail_upper": "934466541124917/10000000000000000000000000"
+    }
+  ],
+  "tables": {
+    "Examination": {
+      "mode": "entity_direct",
+      "rho": "192069663119915625003643489/999999999995000000000000000",
+      "delta_threshold": "43/359000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "ID",
+          1
+        ],
+        [
+          "distinct_count",
+          "ID",
+          2
+        ],
+        [
+          "bins",
+          "ID",
+          3
+        ],
+        [
+          "null_count",
+          "Examination Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "Examination Date",
+          4
+        ],
+        [
+          "patterns",
+          "Examination Date",
+          5
+        ],
+        [
+          "values",
+          "Examination Date",
+          6
+        ],
+        [
+          "null_count",
+          "aCL IgG",
+          0
+        ],
+        [
+          "distinct_count",
+          "aCL IgG",
+          7
+        ],
+        [
+          "bins",
+          "aCL IgG",
+          5
+        ],
+        [
+          "null_count",
+          "aCL IgM",
+          0
+        ],
+        [
+          "distinct_count",
+          "aCL IgM",
+          7
+        ],
+        [
+          "bins",
+          "aCL IgM",
+          5
+        ],
+        [
+          "null_count",
+          "ANA",
+          0
+        ],
+        [
+          "distinct_count",
+          "ANA",
+          4
+        ],
+        [
+          "bins",
+          "ANA",
+          5
+        ],
+        [
+          "values",
+          "ANA",
+          6
+        ],
+        [
+          "null_count",
+          "ANA Pattern",
+          0
+        ],
+        [
+          "distinct_count",
+          "ANA Pattern",
+          4
+        ],
+        [
+          "patterns",
+          "ANA Pattern",
+          5
+        ],
+        [
+          "values",
+          "ANA Pattern",
+          8
+        ],
+        [
+          "null_count",
+          "aCL IgA",
+          0
+        ],
+        [
+          "distinct_count",
+          "aCL IgA",
+          4
+        ],
+        [
+          "bins",
+          "aCL IgA",
+          5
+        ],
+        [
+          "values",
+          "aCL IgA",
+          6
+        ],
+        [
+          "null_count",
+          "Diagnosis",
+          0
+        ],
+        [
+          "distinct_count",
+          "Diagnosis",
+          4
+        ],
+        [
+          "patterns",
+          "Diagnosis",
+          5
+        ],
+        [
+          "values",
+          "Diagnosis",
+          8
+        ],
+        [
+          "null_count",
+          "KCT",
+          0
+        ],
+        [
+          "distinct_count",
+          "KCT",
+          4
+        ],
+        [
+          "patterns",
+          "KCT",
+          5
+        ],
+        [
+          "values",
+          "KCT",
+          8
+        ],
+        [
+          "null_count",
+          "RVVT",
+          0
+        ],
+        [
+          "distinct_count",
+          "RVVT",
+          4
+        ],
+        [
+          "patterns",
+          "RVVT",
+          5
+        ],
+        [
+          "values",
+          "RVVT",
+          8
+        ],
+        [
+          "null_count",
+          "LAC",
+          0
+        ],
+        [
+          "distinct_count",
+          "LAC",
+          4
+        ],
+        [
+          "patterns",
+          "LAC",
+          5
+        ],
+        [
+          "values",
+          "LAC",
+          8
+        ],
+        [
+          "null_count",
+          "Symptoms",
+          0
+        ],
+        [
+          "distinct_count",
+          "Symptoms",
+          4
+        ],
+        [
+          "patterns",
+          "Symptoms",
+          5
+        ],
+        [
+          "values",
+          "Symptoms",
+          8
+        ],
+        [
+          "null_count",
+          "Thrombosis",
+          0
+        ],
+        [
+          "distinct_count",
+          "Thrombosis",
+          4
+        ],
+        [
+          "bins",
+          "Thrombosis",
+          5
+        ],
+        [
+          "values",
+          "Thrombosis",
+          6
+        ]
+      ]
+    },
+    "Laboratory": {
+      "mode": "entity_direct",
+      "rho": "293525217812133290053964243/499999999997500000000000000",
+      "delta_threshold": "347/1077000000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "ID",
+          1
+        ],
+        [
+          "distinct_count",
+          "ID",
+          2
+        ],
+        [
+          "bins",
+          "ID",
+          3
+        ],
+        [
+          "null_count",
+          "Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "Date",
+          4
+        ],
+        [
+          "patterns",
+          "Date",
+          5
+        ],
+        [
+          "values",
+          "Date",
+          6
+        ],
+        [
+          "null_count",
+          "GOT",
+          0
+        ],
+        [
+          "distinct_count",
+          "GOT",
+          4
+        ],
+        [
+          "bins",
+          "GOT",
+          5
+        ],
+        [
+          "values",
+          "GOT",
+          6
+        ],
+        [
+          "null_count",
+          "GPT",
+          0
+        ],
+        [
+          "distinct_count",
+          "GPT",
+          4
+        ],
+        [
+          "bins",
+          "GPT",
+          5
+        ],
+        [
+          "values",
+          "GPT",
+          6
+        ],
+        [
+          "null_count",
+          "LDH",
+          0
+        ],
+        [
+          "distinct_count",
+          "LDH",
+          4
+        ],
+        [
+          "bins",
+          "LDH",
+          5
+        ],
+        [
+          "values",
+          "LDH",
+          6
+        ],
+        [
+          "null_count",
+          "ALP",
+          0
+        ],
+        [
+          "distinct_count",
+          "ALP",
+          4
+        ],
+        [
+          "bins",
+          "ALP",
+          5
+        ],
+        [
+          "values",
+          "ALP",
+          6
+        ],
+        [
+          "null_count",
+          "TP",
+          0
+        ],
+        [
+          "distinct_count",
+          "TP",
+          7
+        ],
+        [
+          "bins",
+          "TP",
+          5
+        ],
+        [
+          "null_count",
+          "ALB",
+          0
+        ],
+        [
+          "distinct_count",
+          "ALB",
+          7
+        ],
+        [
+          "bins",
+          "ALB",
+          5
+        ],
+        [
+          "null_count",
+          "UA",
+          0
+        ],
+        [
+          "distinct_count",
+          "UA",
+          7
+        ],
+        [
+          "bins",
+          "UA",
+          5
+        ],
+        [
+          "null_count",
+          "UN",
+          0
+        ],
+        [
+          "distinct_count",
+          "UN",
+          4
+        ],
+        [
+          "bins",
+          "UN",
+          5
+        ],
+        [
+          "values",
+          "UN",
+          6
+        ],
+        [
+          "null_count",
+          "CRE",
+          0
+        ],
+        [
+          "distinct_count",
+          "CRE",
+          7
+        ],
+        [
+          "bins",
+          "CRE",
+          5
+        ],
+        [
+          "null_count",
+          "T-BIL",
+          0
+        ],
+        [
+          "distinct_count",
+          "T-BIL",
+          7
+        ],
+        [
+          "bins",
+          "T-BIL",
+          5
+        ],
+        [
+          "null_count",
+          "T-CHO",
+          0
+        ],
+        [
+          "distinct_count",
+          "T-CHO",
+          4
+        ],
+        [
+          "bins",
+          "T-CHO",
+          5
+        ],
+        [
+          "values",
+          "T-CHO",
+          6
+        ],
+        [
+          "null_count",
+          "TG",
+          0
+        ],
+        [
+          "distinct_count",
+          "TG",
+          4
+        ],
+        [
+          "bins",
+          "TG",
+          5
+        ],
+        [
+          "values",
+          "TG",
+          6
+        ],
+        [
+          "null_count",
+          "CPK",
+          0
+        ],
+        [
+          "distinct_count",
+          "CPK",
+          4
+        ],
+        [
+          "bins",
+          "CPK",
+          5
+        ],
+        [
+          "values",
+          "CPK",
+          6
+        ],
+        [
+          "null_count",
+          "GLU",
+          0
+        ],
+        [
+          "distinct_count",
+          "GLU",
+          4
+        ],
+        [
+          "bins",
+          "GLU",
+          5
+        ],
+        [
+          "values",
+          "GLU",
+          6
+        ],
+        [
+          "null_count",
+          "WBC",
+          0
+        ],
+        [
+          "distinct_count",
+          "WBC",
+          7
+        ],
+        [
+          "bins",
+          "WBC",
+          5
+        ],
+        [
+          "null_count",
+          "RBC",
+          0
+        ],
+        [
+          "distinct_count",
+          "RBC",
+          7
+        ],
+        [
+          "bins",
+          "RBC",
+          5
+        ],
+        [
+          "null_count",
+          "HGB",
+          0
+        ],
+        [
+          "distinct_count",
+          "HGB",
+          7
+        ],
+        [
+          "bins",
+          "HGB",
+          5
+        ],
+        [
+          "null_count",
+          "HCT",
+          0
+        ],
+        [
+          "distinct_count",
+          "HCT",
+          7
+        ],
+        [
+          "bins",
+          "HCT",
+          5
+        ],
+        [
+          "null_count",
+          "PLT",
+          0
+        ],
+        [
+          "distinct_count",
+          "PLT",
+          4
+        ],
+        [
+          "bins",
+          "PLT",
+          5
+        ],
+        [
+          "values",
+          "PLT",
+          6
+        ],
+        [
+          "null_count",
+          "PT",
+          0
+        ],
+        [
+          "distinct_count",
+          "PT",
+          7
+        ],
+        [
+          "bins",
+          "PT",
+          5
+        ],
+        [
+          "null_count",
+          "APTT",
+          0
+        ],
+        [
+          "distinct_count",
+          "APTT",
+          4
+        ],
+        [
+          "bins",
+          "APTT",
+          5
+        ],
+        [
+          "values",
+          "APTT",
+          6
+        ],
+        [
+          "null_count",
+          "FG",
+          0
+        ],
+        [
+          "distinct_count",
+          "FG",
+          7
+        ],
+        [
+          "bins",
+          "FG",
+          5
+        ],
+        [
+          "null_count",
+          "PIC",
+          0
+        ],
+        [
+          "distinct_count",
+          "PIC",
+          4
+        ],
+        [
+          "bins",
+          "PIC",
+          5
+        ],
+        [
+          "values",
+          "PIC",
+          6
+        ],
+        [
+          "null_count",
+          "TAT",
+          0
+        ],
+        [
+          "distinct_count",
+          "TAT",
+          4
+        ],
+        [
+          "bins",
+          "TAT",
+          5
+        ],
+        [
+          "values",
+          "TAT",
+          6
+        ],
+        [
+          "null_count",
+          "TAT2",
+          0
+        ],
+        [
+          "distinct_count",
+          "TAT2",
+          4
+        ],
+        [
+          "bins",
+          "TAT2",
+          5
+        ],
+        [
+          "values",
+          "TAT2",
+          6
+        ],
+        [
+          "null_count",
+          "U-PRO",
+          0
+        ],
+        [
+          "distinct_count",
+          "U-PRO",
+          4
+        ],
+        [
+          "patterns",
+          "U-PRO",
+          5
+        ],
+        [
+          "values",
+          "U-PRO",
+          8
+        ],
+        [
+          "null_count",
+          "IGG",
+          0
+        ],
+        [
+          "distinct_count",
+          "IGG",
+          4
+        ],
+        [
+          "bins",
+          "IGG",
+          5
+        ],
+        [
+          "values",
+          "IGG",
+          6
+        ],
+        [
+          "null_count",
+          "IGA",
+          0
+        ],
+        [
+          "distinct_count",
+          "IGA",
+          4
+        ],
+        [
+          "bins",
+          "IGA",
+          5
+        ],
+        [
+          "values",
+          "IGA",
+          6
+        ],
+        [
+          "null_count",
+          "IGM",
+          0
+        ],
+        [
+          "distinct_count",
+          "IGM",
+          4
+        ],
+        [
+          "bins",
+          "IGM",
+          5
+        ],
+        [
+          "values",
+          "IGM",
+          6
+        ],
+        [
+          "null_count",
+          "CRP",
+          0
+        ],
+        [
+          "distinct_count",
+          "CRP",
+          4
+        ],
+        [
+          "patterns",
+          "CRP",
+          5
+        ],
+        [
+          "values",
+          "CRP",
+          8
+        ],
+        [
+          "null_count",
+          "RA",
+          0
+        ],
+        [
+          "distinct_count",
+          "RA",
+          4
+        ],
+        [
+          "patterns",
+          "RA",
+          5
+        ],
+        [
+          "values",
+          "RA",
+          8
+        ],
+        [
+          "null_count",
+          "RF",
+          0
+        ],
+        [
+          "distinct_count",
+          "RF",
+          4
+        ],
+        [
+          "patterns",
+          "RF",
+          5
+        ],
+        [
+          "values",
+          "RF",
+          8
+        ],
+        [
+          "null_count",
+          "C3",
+          0
+        ],
+        [
+          "distinct_count",
+          "C3",
+          4
+        ],
+        [
+          "bins",
+          "C3",
+          5
+        ],
+        [
+          "values",
+          "C3",
+          6
+        ],
+        [
+          "null_count",
+          "C4",
+          0
+        ],
+        [
+          "distinct_count",
+          "C4",
+          4
+        ],
+        [
+          "bins",
+          "C4",
+          5
+        ],
+        [
+          "values",
+          "C4",
+          6
+        ],
+        [
+          "null_count",
+          "RNP",
+          0
+        ],
+        [
+          "distinct_count",
+          "RNP",
+          4
+        ],
+        [
+          "patterns",
+          "RNP",
+          5
+        ],
+        [
+          "values",
+          "RNP",
+          8
+        ],
+        [
+          "null_count",
+          "SM",
+          0
+        ],
+        [
+          "distinct_count",
+          "SM",
+          4
+        ],
+        [
+          "patterns",
+          "SM",
+          5
+        ],
+        [
+          "values",
+          "SM",
+          8
+        ],
+        [
+          "null_count",
+          "SC170",
+          0
+        ],
+        [
+          "distinct_count",
+          "SC170",
+          4
+        ],
+        [
+          "patterns",
+          "SC170",
+          5
+        ],
+        [
+          "values",
+          "SC170",
+          8
+        ],
+        [
+          "null_count",
+          "SSA",
+          0
+        ],
+        [
+          "distinct_count",
+          "SSA",
+          4
+        ],
+        [
+          "patterns",
+          "SSA",
+          5
+        ],
+        [
+          "values",
+          "SSA",
+          8
+        ],
+        [
+          "null_count",
+          "SSB",
+          0
+        ],
+        [
+          "distinct_count",
+          "SSB",
+          4
+        ],
+        [
+          "patterns",
+          "SSB",
+          5
+        ],
+        [
+          "values",
+          "SSB",
+          8
+        ],
+        [
+          "null_count",
+          "CENTROMEA",
+          0
+        ],
+        [
+          "distinct_count",
+          "CENTROMEA",
+          4
+        ],
+        [
+          "patterns",
+          "CENTROMEA",
+          5
+        ],
+        [
+          "values",
+          "CENTROMEA",
+          8
+        ],
+        [
+          "null_count",
+          "DNA",
+          0
+        ],
+        [
+          "distinct_count",
+          "DNA",
+          4
+        ],
+        [
+          "patterns",
+          "DNA",
+          5
+        ],
+        [
+          "values",
+          "DNA",
+          8
+        ],
+        [
+          "null_count",
+          "DNA-II",
+          0
+        ],
+        [
+          "distinct_count",
+          "DNA-II",
+          4
+        ],
+        [
+          "bins",
+          "DNA-II",
+          5
+        ],
+        [
+          "values",
+          "DNA-II",
+          6
+        ]
+      ]
+    },
+    "Patient": {
+      "mode": "entity_direct",
+      "rho": "9567685610320281011416923/99999999999500000000000000",
+      "delta_threshold": "1/17232000",
+      "sensitivity_cap": 5,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "ID",
+          1
+        ],
+        [
+          "distinct_count",
+          "ID",
+          2
+        ],
+        [
+          "bins",
+          "ID",
+          3
+        ],
+        [
+          "null_count",
+          "SEX",
+          0
+        ],
+        [
+          "distinct_count",
+          "SEX",
+          4
+        ],
+        [
+          "patterns",
+          "SEX",
+          5
+        ],
+        [
+          "values",
+          "SEX",
+          8
+        ],
+        [
+          "null_count",
+          "Birthday",
+          0
+        ],
+        [
+          "distinct_count",
+          "Birthday",
+          4
+        ],
+        [
+          "patterns",
+          "Birthday",
+          5
+        ],
+        [
+          "values",
+          "Birthday",
+          6
+        ],
+        [
+          "null_count",
+          "Description",
+          1
+        ],
+        [
+          "distinct_count",
+          "Description",
+          2
+        ],
+        [
+          "patterns",
+          "Description",
+          3
+        ],
+        [
+          "values",
+          "Description",
+          9
+        ],
+        [
+          "null_count",
+          "First Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "First Date",
+          4
+        ],
+        [
+          "patterns",
+          "First Date",
+          5
+        ],
+        [
+          "values",
+          "First Date",
+          6
+        ],
+        [
+          "null_count",
+          "Admission",
+          0
+        ],
+        [
+          "distinct_count",
+          "Admission",
+          4
+        ],
+        [
+          "patterns",
+          "Admission",
+          5
+        ],
+        [
+          "values",
+          "Admission",
+          8
+        ],
+        [
+          "null_count",
+          "Diagnosis",
+          0
+        ],
+        [
+          "distinct_count",
+          "Diagnosis",
+          4
+        ],
+        [
+          "patterns",
+          "Diagnosis",
+          5
+        ],
+        [
+          "values",
+          "Diagnosis",
+          8
+        ]
+      ]
+    }
+  },
+  "sha256": "51a573f95135bc83b741a16d81293758646f4e14c0be4732bb0764c7cc63083d"
+}

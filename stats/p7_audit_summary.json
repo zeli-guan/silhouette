@@ -1,0 +1,2117 @@
+{
+  "elapsed_s": 73.42,
+  "definition": "DB-deduplicated TransmissionLedger [unique_across_dbs, cumulative_across_slots]",
+  "conditions": {
+    "BIRD_C0_r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        0,
+        0
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_C0_r2": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        0,
+        0
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_IND8": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1318494,
+        2422754
+      ],
+      "full_payload": [
+        1717506,
+        5094935
+      ],
+      "oob": [
+        1114,
+        2363
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_IND8_PROMPT": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2245646,
+        99625630
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_DP_QUERY_DB8": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        26290,
+        48215
+      ],
+      "full_payload": [
+        645459,
+        798702
+      ],
+      "oob": [
+        620,
+        1388
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_S3": {
+      "slots": 440,
+      "copied": [
+        210,
+        8196
+      ],
+      "ser_out": [
+        879957,
+        56279369
+      ],
+      "full_payload": [
+        960497,
+        62433073
+      ],
+      "oob": [
+        1301,
+        63626
+      ],
+      "rows_transmitted": 8901
+    },
+    "BIRD_C4_r0": {
+      "slots": 440,
+      "copied": [
+        198,
+        213
+      ],
+      "ser_out": [
+        1823826,
+        6312008
+      ],
+      "full_payload": [
+        2093064,
+        7668701
+      ],
+      "oob": [
+        5505,
+        9671
+      ],
+      "rows_transmitted": 5339
+    },
+    "BIRD_C4_r2": {
+      "slots": 440,
+      "copied": [
+        121,
+        126
+      ],
+      "ser_out": [
+        1846270,
+        4250699
+      ],
+      "full_payload": [
+        2112255,
+        6156922
+      ],
+      "oob": [
+        4806,
+        7993
+      ],
+      "rows_transmitted": 4614
+    },
+    "BIRD_DG8_CLEAN_R1_full440": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2066783,
+        91017971
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_DG8_CLEAN_R2_full440": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2083030,
+        91264505
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_DG8_CLEAN_R3_full440": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2079581,
+        91586805
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR600_1way_Profile": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        22104,
+        13222665
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR600_Demo94_Entity": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        294,
+        174922
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR600_Full_access": {
+      "slots": 600,
+      "copied": [
+        102,
+        102
+      ],
+      "ser_out": [
+        43554,
+        138581
+      ],
+      "full_payload": [
+        50612,
+        164621
+      ],
+      "oob": [
+        3288,
+        6955
+      ],
+      "rows_transmitted": 5855
+    },
+    "EHR600_Schema_only": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        0,
+        0
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR600_Select_3": {
+      "slots": 600,
+      "copied": [
+        39,
+        23400
+      ],
+      "ser_out": [
+        45256,
+        32845023
+      ],
+      "full_payload": [
+        45324,
+        32928461
+      ],
+      "oob": [
+        185,
+        137721
+      ],
+      "rows_transmitted": 23400
+    },
+    "EHR600_Silhouette_R1": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16327,
+        9755264
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR600_Silhouette_R2": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16798,
+        10043311
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR600_Silhouette_R3": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16438,
+        9823427
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR600_Synthetic_DB_1way": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        13814,
+        33882
+      ],
+      "full_payload": [
+        20804,
+        68879
+      ],
+      "oob": [
+        1927,
+        3881
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_Full_access": {
+      "slots": 874,
+      "copied": [
+        232,
+        246
+      ],
+      "ser_out": [
+        69021,
+        275654
+      ],
+      "full_payload": [
+        70668,
+        318644
+      ],
+      "oob": [
+        4374,
+        9799
+      ],
+      "rows_transmitted": 9450
+    },
+    "EHR874_Noiseless_noLookup": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        11429,
+        9934775
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_Schema_only": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        0,
+        0
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_Silhouette": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16327,
+        14186420
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_Silhouette_noLookup": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16327,
+        14205783
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "DP_QUERY_ROW_TP8_V2_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        17574,
+        48259
+      ],
+      "full_payload": [
+        40149,
+        155087
+      ],
+      "oob": [
+        533,
+        1230
+      ],
+      "rows_transmitted": 0
+    },
+    "DP_QUERY_ROW_TP8_V2_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        13872,
+        44580
+      ],
+      "full_payload": [
+        59695,
+        168463
+      ],
+      "oob": [
+        528,
+        1296
+      ],
+      "rows_transmitted": 0
+    },
+    "DP_QUERY_ROW_TP8_V2_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        35224,
+        75192
+      ],
+      "full_payload": [
+        86828,
+        240796
+      ],
+      "oob": [
+        722,
+        1535
+      ],
+      "rows_transmitted": 0
+    },
+    "DP_QUERY_ROW_DB8_V2_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        12128,
+        34522
+      ],
+      "full_payload": [
+        47785,
+        174307
+      ],
+      "oob": [
+        663,
+        1410
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_PROBE_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1019408,
+        2276744
+      ],
+      "full_payload": [
+        1109473,
+        3360895
+      ],
+      "oob": [
+        1302,
+        2500
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_PROBE_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1133349,
+        4699521
+      ],
+      "full_payload": [
+        1533808,
+        6226792
+      ],
+      "oob": [
+        1177,
+        2390
+      ],
+      "rows_transmitted": 0
+    },
+    "SYN8/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1148955,
+        4007690
+      ],
+      "full_payload": [
+        1549847,
+        5419096
+      ],
+      "oob": [
+        850,
+        1628
+      ],
+      "rows_transmitted": 0
+    },
+    "SYN8_FK_DAG_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1203754,
+        3481674
+      ],
+      "full_payload": [
+        1574956,
+        5613954
+      ],
+      "oob": [
+        1444,
+        3046
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_STATIC_ROWS_TM_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        0,
+        0
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_STATIC_ROWS_TM_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        0,
+        0
+      ],
+      "oob": [
+        3,
+        3
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_STATIC_ROWS_TM_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        0,
+        0
+      ],
+      "oob": [
+        3,
+        3
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_PROFILE_PRUNED_TM_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1055404,
+        43966444
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_PROFILE_PRUNED_TM_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1046730,
+        43649860
+      ],
+      "oob": [
+        1,
+        1
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_PROFILE_PRUNED_TM_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1038337,
+        43097383
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_PROFILE_TOOL_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1139043,
+        7103330
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_PROFILE_TOOL_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1104013,
+        3099620
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "IND8_PROFILE_TOOL_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1103864,
+        3500576
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_NOISELESS_NOLKP_V3/r0": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16427,
+        14291736
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_NOISELESS_V3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2090546,
+        93786266
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_SILHOUETTE_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2033834,
+        91017971
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_FLATW_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2060257,
+        91875056
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_OMEGA1_EQDELTA_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2041561,
+        91033952
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_UNPRUNED_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2080025,
+        92460197
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_IND8_PROFILE_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1773844,
+        75144472
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_IND8_ROWS_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1916801,
+        84367322
+      ],
+      "full_payload": [
+        2209871,
+        97980128
+      ],
+      "oob": [
+        2132,
+        88872
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_SILHOUETTE_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2050100,
+        91264505
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_FLATW_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2035865,
+        91128037
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_OMEGA1_EQDELTA_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2061159,
+        91941522
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_UNPRUNED_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2080357,
+        92850516
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_IND8_PROFILE_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1774373,
+        75154280
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_IND8_ROWS_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1751902,
+        75974692
+      ],
+      "full_payload": [
+        2205564,
+        97176379
+      ],
+      "oob": [
+        2098,
+        87436
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_SILHOUETTE_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2046575,
+        91586805
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_FLATW_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2065608,
+        92011033
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_OMEGA1_EQDELTA_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2039184,
+        90806093
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_UNPRUNED_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2104961,
+        93573232
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_IND8_PROFILE_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1760457,
+        74412301
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "PUBCAP_IND8_ROWS_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1753407,
+        77146783
+      ],
+      "full_payload": [
+        2227398,
+        98528305
+      ],
+      "oob": [
+        2122,
+        88797
+      ],
+      "rows_transmitted": 0
+    },
+    "SOL_PUBCAP_IND8_ROWS_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        2199925,
+        95019416
+      ],
+      "full_payload": [
+        2455347,
+        105726802
+      ],
+      "oob": [
+        2220,
+        92310
+      ],
+      "rows_transmitted": 0
+    },
+    "SOL_DG8_CLEAN_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2066783,
+        91017971
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "SOL_DG8_CLEAN_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2083030,
+        91264505
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "SOL_DG8_CLEAN_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2079581,
+        91586805
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_IND8_PROMPT_R2": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2245282,
+        99608769
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "BIRD_IND8_PROMPT_R3": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2230451,
+        98851411
+      ],
+      "oob": [
+        1,
+        1
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_DG8P_V3_R1/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16327,
+        9758041
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_ENT8_V3_R1/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        312,
+        185639
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_DG8P_V3_R2/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16798,
+        10035448
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_DG8P_V3_R3/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16438,
+        9821317
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_DG8P_V3_R1/r0": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16327,
+        14183628
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_IND8_V3_R1/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        22097,
+        13219048
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_DG8P_V3_R2/r0": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16798,
+        14596065
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_DG8P_V3_R3/r0": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16438,
+        14274366
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_SILHOUETTE_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        66426,
+        2847352
+      ],
+      "oob": [
+        2,
+        2
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_IND8_PROF_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        104104,
+        3803680
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_STATIC_SYNTH_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        802068,
+        33158748
+      ],
+      "full_payload": [
+        1188432,
+        50613807
+      ],
+      "oob": [
+        720,
+        30102
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_SILHOUETTE_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        67325,
+        2907806
+      ],
+      "oob": [
+        1,
+        1
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_IND8_PROF_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        63682,
+        2756013
+      ],
+      "oob": [
+        1,
+        1
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_STATIC_SYNTH_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1068965,
+        44627579
+      ],
+      "full_payload": [
+        1417337,
+        60735540
+      ],
+      "oob": [
+        727,
+        29714
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_SILHOUETTE_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        67499,
+        2891614
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_IND8_PROF_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        93350,
+        3541942
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_STATIC_SYNTH_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        1052207,
+        43220976
+      ],
+      "full_payload": [
+        1322513,
+        55893595
+      ],
+      "oob": [
+        720,
+        29387
+      ],
+      "rows_transmitted": 0
+    },
+    "DG8_NOVAL_POST_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        91090,
+        4207972
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "DG8_NOVAL_POST_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        121172,
+        4978761
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_DG8P_NOLKP_V3_R1/r0": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16327,
+        14205783
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_DG8P_NOLKP_V3_R2/r0": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16798,
+        14617836
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_DG8P_NOLKP_V3_R3/r0": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16438,
+        14302533
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR874_NOISELESS_LKP_V3/r0": {
+      "slots": 874,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16581,
+        14404158
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_DG8P_NOLKP_V3_R1/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16327,
+        9769154
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_DG8P_NOLKP_V3_R2/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16798,
+        10052028
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_DG8P_NOLKP_V3_R3/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16438,
+        9835552
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_NOISELESS_LKP_V3/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16581,
+        9908512
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "EHR_NOISELESS_NOLKP_V3/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        16581,
+        9921019
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_VALFIRST_SILH_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1696962,
+        70991200
+      ],
+      "oob": [
+        0,
+        0
+      ]
+    },
+    "TIGHTBPE_VALFIRST_IND8_PROF_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1181422,
+        48653098
+      ],
+      "oob": [
+        0,
+        0
+      ]
+    },
+    "FETCH1_PUBCAP_IND8_PROF_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1766727,
+        73306296
+      ],
+      "oob": [
+        1,
+        1
+      ]
+    },
+    "TIGHTBPE_VALFIRST_SILH_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1612527,
+        66116618
+      ],
+      "oob": [
+        0,
+        0
+      ]
+    },
+    "TIGHTBPE_VALFIRST_IND8_PROF_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1168905,
+        47728123
+      ],
+      "oob": [
+        1,
+        1
+      ]
+    },
+    "FETCH1_PUBCAP_IND8_PROF_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1767388,
+        73322198
+      ],
+      "oob": [
+        0,
+        0
+      ]
+    },
+    "TIGHTBPE_VALFIRST_SILH_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1635681,
+        67603677
+      ],
+      "oob": [
+        0,
+        0
+      ]
+    },
+    "TIGHTBPE_VALFIRST_IND8_PROF_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1229523,
+        51129074
+      ],
+      "oob": [
+        0,
+        0
+      ]
+    },
+    "FETCH1_PUBCAP_IND8_PROF_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1751443,
+        72482046
+      ],
+      "oob": [
+        0,
+        0
+      ]
+    }
+  },
+  "total_conditions": 105,
+  "clinical_v3_profile_slots_split": {
+    "total_clinical_v3_profile_slots": 12992,
+    "dp_clinical_profile_slots": 10044,
+    "noiseless_clinical_control_slots": 2948,
+    "dp_clinical_breakdown": {
+      "ehrsql_600::EHR_DG8P_V3_R1..R3/r0": 1800,
+      "ehrsql_600::EHR_DG8P_NOLKP_V3_R1..R3/r0": 1800,
+      "ehrsql_600::EHR_ENT8_V3_R1/r0": 600,
+      "ehrsql_600::EHR_IND8_V3_R1/r0": 600,
+      "ehrsql_874::EHR874_DG8P_V3_R1..R3/r0": 2622,
+      "ehrsql_874::EHR874_DG8P_NOLKP_V3_R1..R3/r0": 2622
+    },
+    "noiseless_clinical_breakdown": {
+      "ehrsql_600::EHR_NOISELESS_LKP_V3/r0": 600,
+      "ehrsql_600::EHR_NOISELESS_NOLKP_V3/r0": 600,
+      "ehrsql_874::EHR874_NOISELESS_LKP_V3/r0": 874,
+      "ehrsql_874::EHR874_NOISELESS_NOLKP_V3/r0": 874
+    }
+  }
+}

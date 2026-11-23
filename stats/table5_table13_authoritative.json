@@ -1,0 +1,1532 @@
+[
+  {
+    "benchmark": "EHRSQL",
+    "setting": "Schema only (C0)",
+    "slots": 600,
+    "runs_with_try_sql": 495,
+    "runs_with_try_sql_pct": 82.5,
+    "try_sql_calls": 516,
+    "calls_per_run": 0.86,
+    "calls_in_error": 9,
+    "calls_in_error_pct": 1.7,
+    "slots_with_try_sql_error": 9,
+    "rewrites_retry_try": 9,
+    "rewrites_changed_final": 9,
+    "rewrites_changed_final_pct": 1.5,
+    "prior_err_failing_over_total": "1/9",
+    "no_prior_err_failing_over_total": "2/591",
+    "submitted_sql_errors_count": 3,
+    "submitted_sql_errors_pct": 0.5,
+    "no_submission_count": 0,
+    "total_non_executing_count": 3,
+    "total_non_executing_pct": 0.5,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "q019 (0702bc77d929f78085010bb0)",
+        "slot": "C0_019_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      },
+      {
+        "id": "q337 (962c0dd05a16f3d046055b17)",
+        "slot": "C0_337_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      },
+      {
+        "id": "q356 (9c85a8ada2ee0422d27bcb39)",
+        "slot": "C0_356_r0",
+        "error": "unknown_column",
+        "had_try_err": true
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "EHRSQL",
+    "setting": "Silhouette-noLookup (DG8_NOLKP_EHR)",
+    "slots": 600,
+    "runs_with_try_sql": 467,
+    "runs_with_try_sql_pct": 77.8,
+    "try_sql_calls": 484,
+    "calls_per_run": 0.81,
+    "calls_in_error": 10,
+    "calls_in_error_pct": 2.1,
+    "slots_with_try_sql_error": 10,
+    "rewrites_retry_try": 10,
+    "rewrites_changed_final": 10,
+    "rewrites_changed_final_pct": 1.7,
+    "prior_err_failing_over_total": "0/10",
+    "no_prior_err_failing_over_total": "5/590",
+    "submitted_sql_errors_count": 5,
+    "submitted_sql_errors_pct": 0.83,
+    "no_submission_count": 1,
+    "total_non_executing_count": 6,
+    "total_non_executing_pct": 1.0,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "q066 (184fc5e11e0bfc9be1a0263c)",
+        "slot": "C1_066_r0",
+        "error": "ambiguous_column",
+        "had_try_err": false
+      },
+      {
+        "id": "q225 (6033e2bfc3a0657f188b7149)",
+        "slot": "C1_225_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      },
+      {
+        "id": "q226 (617d9b7140ffa467be53e5b8)",
+        "slot": "C1_226_r0",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "q320 (8bc83605b6ede35754a1e843)",
+        "slot": "C1_320_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      },
+      {
+        "id": "q377 (a49efc1cdf3ebbe617aa7d26)",
+        "slot": "C1_377_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": [
+      {
+        "id": "q559 (f1501b008c57806e4fdc437f)",
+        "slot": "C1_559_r0",
+        "stop": "unknown_outcome",
+        "pred_status": "no_submission",
+        "had_try_err": false
+      }
+    ]
+  },
+  {
+    "benchmark": "EHRSQL",
+    "setting": "Silhouette, R=3 (DG8P_R1..R3)",
+    "slots": 1800,
+    "runs_with_try_sql": 1147,
+    "runs_with_try_sql_pct": 63.7,
+    "try_sql_calls": 1178,
+    "calls_per_run": 0.65,
+    "calls_in_error": 18,
+    "calls_in_error_pct": 1.5,
+    "slots_with_try_sql_error": 18,
+    "rewrites_retry_try": 18,
+    "rewrites_changed_final": 18,
+    "rewrites_changed_final_pct": 1.0,
+    "prior_err_failing_over_total": "0/18",
+    "no_prior_err_failing_over_total": "7/1782",
+    "submitted_sql_errors_count": 7,
+    "submitted_sql_errors_pct": 0.39,
+    "no_submission_count": 1,
+    "total_non_executing_count": 8,
+    "total_non_executing_pct": 0.44,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "R2:q019 (0702bc77d929f78085010bb0)",
+        "slot": "C1_019_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:q225 (6033e2bfc3a0657f188b7149)",
+        "slot": "C1_225_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:q284 (7c37ccb48483a3d417233092)",
+        "slot": "C1_284_r0",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:q377 (a49efc1cdf3ebbe617aa7d26)",
+        "slot": "C1_377_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:q463 (c88b6042bd98d9ea98a91f19)",
+        "slot": "C1_463_r0",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:q556 (f04c7d3113bb51fa52b5acf5)",
+        "slot": "C1_556_r0",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:q597 (ffc47b7e01463f229eb09bce)",
+        "slot": "C1_597_r0",
+        "error": "unknown_column",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": [
+      {
+        "id": "R1:q492 (d0e1bf41e5fd8ca04ae79ba4)",
+        "slot": "C1_492_r0",
+        "stop": "unknown_outcome",
+        "pred_status": "no_submission",
+        "had_try_err": false
+      }
+    ]
+  },
+  {
+    "benchmark": "EHRSQL",
+    "setting": "Synthetic DB, 1-way (IND8P_EHR)",
+    "slots": 600,
+    "runs_with_try_sql": 254,
+    "runs_with_try_sql_pct": 42.3,
+    "try_sql_calls": 262,
+    "calls_per_run": 0.44,
+    "calls_in_error": 5,
+    "calls_in_error_pct": 1.9,
+    "slots_with_try_sql_error": 5,
+    "rewrites_retry_try": 5,
+    "rewrites_changed_final": 5,
+    "rewrites_changed_final_pct": 0.8,
+    "prior_err_failing_over_total": "0/5",
+    "no_prior_err_failing_over_total": "1/595",
+    "submitted_sql_errors_count": 1,
+    "submitted_sql_errors_pct": 0.17,
+    "no_submission_count": 0,
+    "total_non_executing_count": 1,
+    "total_non_executing_pct": 0.17,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "q347 (99ce32579f34baf63f28f671)",
+        "slot": "C4_347_r0",
+        "error": "syntax_error",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "EHRSQL",
+    "setting": "1-way Profile (EHR_IND8P_PROMPT)",
+    "slots": 600,
+    "runs_with_try_sql": 448,
+    "runs_with_try_sql_pct": 74.7,
+    "try_sql_calls": 460,
+    "calls_per_run": 0.77,
+    "calls_in_error": 4,
+    "calls_in_error_pct": 0.9,
+    "slots_with_try_sql_error": 4,
+    "rewrites_retry_try": 4,
+    "rewrites_changed_final": 4,
+    "rewrites_changed_final_pct": 0.7,
+    "prior_err_failing_over_total": "0/4",
+    "no_prior_err_failing_over_total": "1/596",
+    "submitted_sql_errors_count": 1,
+    "submitted_sql_errors_pct": 0.17,
+    "no_submission_count": 0,
+    "total_non_executing_count": 1,
+    "total_non_executing_pct": 0.17,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "q064 (15e5163ccc3e3c1f766d7f6a)",
+        "slot": "C1_064_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "EHRSQL",
+    "setting": "Entity Demo94 (EHR_ENT8_DEMO94)",
+    "slots": 600,
+    "runs_with_try_sql": 361,
+    "runs_with_try_sql_pct": 60.2,
+    "try_sql_calls": 373,
+    "calls_per_run": 0.62,
+    "calls_in_error": 8,
+    "calls_in_error_pct": 2.1,
+    "slots_with_try_sql_error": 8,
+    "rewrites_retry_try": 8,
+    "rewrites_changed_final": 8,
+    "rewrites_changed_final_pct": 1.3,
+    "prior_err_failing_over_total": "0/8",
+    "no_prior_err_failing_over_total": "2/592",
+    "submitted_sql_errors_count": 2,
+    "submitted_sql_errors_pct": 0.33,
+    "no_submission_count": 0,
+    "total_non_executing_count": 2,
+    "total_non_executing_pct": 0.33,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "q504 (d4255f4b8d7db34c02b8c1c8)",
+        "slot": "C1_504_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      },
+      {
+        "id": "q556 (f04c7d3113bb51fa52b5acf5)",
+        "slot": "C1_556_r0",
+        "error": "unknown_column",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "EHRSQL",
+    "setting": "Full access (C4)",
+    "slots": 600,
+    "runs_with_try_sql": 89,
+    "runs_with_try_sql_pct": 14.8,
+    "try_sql_calls": 89,
+    "calls_per_run": 0.15,
+    "calls_in_error": 0,
+    "calls_in_error_pct": 0.0,
+    "slots_with_try_sql_error": 0,
+    "rewrites_retry_try": 0,
+    "rewrites_changed_final": 0,
+    "rewrites_changed_final_pct": 0.0,
+    "prior_err_failing_over_total": "0/0",
+    "no_prior_err_failing_over_total": "6/600",
+    "submitted_sql_errors_count": 6,
+    "submitted_sql_errors_pct": 1.0,
+    "no_submission_count": 3,
+    "total_non_executing_count": 9,
+    "total_non_executing_pct": 1.5,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "q054 (130ed6628164c3afe9589f2d)",
+        "slot": "C4_054_r0",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "q056 (137633ed86ab2d0d0059f5c2)",
+        "slot": "C4_056_r0",
+        "error": "syntax_error",
+        "had_try_err": false
+      },
+      {
+        "id": "q066 (184fc5e11e0bfc9be1a0263c)",
+        "slot": "C4_066_r0",
+        "error": "ambiguous_column",
+        "had_try_err": false
+      },
+      {
+        "id": "q226 (617d9b7140ffa467be53e5b8)",
+        "slot": "C4_226_r0",
+        "error": "execution_error",
+        "had_try_err": false
+      },
+      {
+        "id": "q312 (871e1ec7efc82f4a5c9d293c)",
+        "slot": "C4_312_r0",
+        "error": "execution_error",
+        "had_try_err": false
+      },
+      {
+        "id": "q337 (962c0dd05a16f3d046055b17)",
+        "slot": "C4_337_r0",
+        "error": "unknown_table",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": [
+      {
+        "id": "q111 (2dab95be5e31c24b8faf79af)",
+        "slot": "C4_111_r0",
+        "stop": "provider_error",
+        "pred_status": "no_submission",
+        "had_try_err": false
+      },
+      {
+        "id": "q276 (799e8f8735eda5e3dfa8855f)",
+        "slot": "C4_276_r0",
+        "stop": "round_limit",
+        "pred_status": "no_submission",
+        "had_try_err": false
+      },
+      {
+        "id": "q366 (a0db7ff03e5bff5fb4b04f91)",
+        "slot": "C4_366_r0",
+        "stop": "provider_error",
+        "pred_status": "no_submission",
+        "had_try_err": false
+      }
+    ]
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Schema only (C0 r0+r2)",
+    "slots": 880,
+    "runs_with_try_sql": 794,
+    "runs_with_try_sql_pct": 90.2,
+    "try_sql_calls": 880,
+    "calls_per_run": 1.0,
+    "calls_in_error": 29,
+    "calls_in_error_pct": 3.3,
+    "slots_with_try_sql_error": 22,
+    "rewrites_retry_try": 21,
+    "rewrites_changed_final": 22,
+    "rewrites_changed_final_pct": 2.5,
+    "prior_err_failing_over_total": "2/22",
+    "no_prior_err_failing_over_total": "9/858",
+    "submitted_sql_errors_count": 11,
+    "submitted_sql_errors_pct": 1.25,
+    "no_submission_count": 0,
+    "total_non_executing_count": 11,
+    "total_non_executing_pct": 1.25,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "r0:Q106",
+        "db_id": "card_games",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q216",
+        "db_id": "financial",
+        "error": "unknown_column",
+        "had_try_err": true
+      },
+      {
+        "id": "r0:Q222",
+        "db_id": "financial",
+        "error": "unknown_column",
+        "had_try_err": true
+      },
+      {
+        "id": "r0:Q486",
+        "db_id": "toxicology",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q058",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q073",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q119",
+        "db_id": "codebase_community",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q219",
+        "db_id": "financial",
+        "error": "timeout",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Silhouette Clean, R=3 (Uniform 440, 60s)",
+    "slots": 1320,
+    "runs_with_try_sql": 1214,
+    "runs_with_try_sql_pct": 92.0,
+    "try_sql_calls": 1314,
+    "calls_per_run": 1.0,
+    "calls_in_error": 39,
+    "calls_in_error_pct": 3.0,
+    "slots_with_try_sql_error": 38,
+    "rewrites_retry_try": 38,
+    "rewrites_changed_final": 38,
+    "rewrites_changed_final_pct": 2.9,
+    "prior_err_failing_over_total": "0/38",
+    "no_prior_err_failing_over_total": "17/1282",
+    "submitted_sql_errors_count": 17,
+    "submitted_sql_errors_pct": 1.29,
+    "no_submission_count": 0,
+    "total_non_executing_count": 17,
+    "total_non_executing_pct": 1.29,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "R1:Q008",
+        "db_id": "california_schools",
+        "error": "syntax_error",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q119",
+        "db_id": "codebase_community",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q153",
+        "db_id": "debit_card_specializing",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q175",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q188",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q193",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q219",
+        "db_id": "financial",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q344",
+        "db_id": "superhero",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "R2:Q119",
+        "db_id": "codebase_community",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R2:Q156",
+        "db_id": "debit_card_specializing",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R2:Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q107",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q193",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q313",
+        "db_id": "student_club",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q491",
+        "db_id": "toxicology",
+        "error": "timeout",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": [],
+    "replay_60s_errors": {
+      "total_slots": 1320,
+      "runtime_errors_total": 17,
+      "runtime_error_rate_pct": 1.29,
+      "runtime_error_breakdown": {
+        "syntax_error": 1,
+        "timeout": 13,
+        "unknown_column": 3
+      },
+      "per_replicate": {
+        "DG8_CLEAN_R1/r0": {
+          "runtime_errors": 8,
+          "breakdown": {
+            "syntax_error": 1,
+            "timeout": 5,
+            "unknown_column": 2
+          }
+        },
+        "DG8_CLEAN_R2/r0": {
+          "runtime_errors": 3,
+          "breakdown": {
+            "timeout": 3
+          }
+        },
+        "DG8_CLEAN_R3/r0": {
+          "runtime_errors": 6,
+          "breakdown": {
+            "timeout": 5,
+            "unknown_column": 1
+          }
+        }
+      },
+      "failing_slots": [
+        {
+          "condition": "DG8_CLEAN_R1/r0",
+          "question_id": 8,
+          "db_id": "california_schools",
+          "error": "syntax_error",
+          "msg": "OperationalError: near \"Type\": syntax error"
+        },
+        {
+          "condition": "DG8_CLEAN_R3/r0",
+          "question_id": 107,
+          "db_id": "card_games",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R1/r0",
+          "question_id": 119,
+          "db_id": "codebase_community",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R2/r0",
+          "question_id": 119,
+          "db_id": "codebase_community",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R1/r0",
+          "question_id": 153,
+          "db_id": "debit_card_specializing",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R2/r0",
+          "question_id": 156,
+          "db_id": "debit_card_specializing",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R3/r0",
+          "question_id": 174,
+          "db_id": "european_football_2",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R1/r0",
+          "question_id": 175,
+          "db_id": "european_football_2",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R2/r0",
+          "question_id": 177,
+          "db_id": "european_football_2",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R3/r0",
+          "question_id": 177,
+          "db_id": "european_football_2",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R1/r0",
+          "question_id": 188,
+          "db_id": "european_football_2",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R1/r0",
+          "question_id": 193,
+          "db_id": "european_football_2",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R3/r0",
+          "question_id": 193,
+          "db_id": "european_football_2",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        },
+        {
+          "condition": "DG8_CLEAN_R1/r0",
+          "question_id": 219,
+          "db_id": "financial",
+          "error": "unknown_column",
+          "msg": "OperationalError: no such column: dname"
+        },
+        {
+          "condition": "DG8_CLEAN_R3/r0",
+          "question_id": 313,
+          "db_id": "student_club",
+          "error": "unknown_column",
+          "msg": "OperationalError: no such column: m.position"
+        },
+        {
+          "condition": "DG8_CLEAN_R1/r0",
+          "question_id": 344,
+          "db_id": "superhero",
+          "error": "unknown_column",
+          "msg": "OperationalError: no such column: sp_holder.hero_id"
+        },
+        {
+          "condition": "DG8_CLEAN_R3/r0",
+          "question_id": 491,
+          "db_id": "toxicology",
+          "error": "timeout",
+          "msg": "OperationalError: interrupted"
+        }
+      ]
+    },
+    "replay_30s_errors": {
+      "total_slots": 1320,
+      "runtime_errors_total": 20,
+      "runtime_error_rate_pct": 1.52,
+      "runtime_error_breakdown": {
+        "syntax_error": 1,
+        "timeout": 16,
+        "unknown_column": 3
+      },
+      "per_replicate": {
+        "DG8_CLEAN_R1/r0": {
+          "runtime_errors": 9,
+          "breakdown": {
+            "syntax_error": 1,
+            "timeout": 6,
+            "unknown_column": 2
+          }
+        },
+        "DG8_CLEAN_R2/r0": {
+          "runtime_errors": 4,
+          "breakdown": {
+            "timeout": 4
+          }
+        },
+        "DG8_CLEAN_R3/r0": {
+          "runtime_errors": 7,
+          "breakdown": {
+            "timeout": 6,
+            "unknown_column": 1
+          }
+        }
+      }
+    }
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Silhouette Pre-clean, R=3 (P2 DG8_R1..R3)",
+    "slots": 1320,
+    "runs_with_try_sql": 1220,
+    "runs_with_try_sql_pct": 92.4,
+    "try_sql_calls": 1318,
+    "calls_per_run": 1.0,
+    "calls_in_error": 37,
+    "calls_in_error_pct": 2.8,
+    "slots_with_try_sql_error": 35,
+    "rewrites_retry_try": 35,
+    "rewrites_changed_final": 35,
+    "rewrites_changed_final_pct": 2.7,
+    "prior_err_failing_over_total": "0/35",
+    "no_prior_err_failing_over_total": "14/1285",
+    "submitted_sql_errors_count": 14,
+    "submitted_sql_errors_pct": 1.06,
+    "no_submission_count": 0,
+    "total_non_executing_count": 14,
+    "total_non_executing_pct": 1.06,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "R1:Q153",
+        "db_id": "debit_card_specializing",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q175",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q193",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R1:Q219",
+        "db_id": "financial",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "R2:Q156",
+        "db_id": "debit_card_specializing",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R2:Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R2:Q188",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q073",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q107",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q119",
+        "db_id": "codebase_community",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q169",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "R3:Q491",
+        "db_id": "toxicology",
+        "error": "timeout",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Silhouette-noSandbox",
+    "slots": 440,
+    "runs_with_try_sql": 0,
+    "runs_with_try_sql_pct": 0.0,
+    "try_sql_calls": 0,
+    "calls_per_run": 0.0,
+    "calls_in_error": 0,
+    "calls_in_error_pct": 0.0,
+    "slots_with_try_sql_error": 0,
+    "rewrites_retry_try": 0,
+    "rewrites_changed_final": 0,
+    "rewrites_changed_final_pct": 0.0,
+    "prior_err_failing_over_total": "0/0",
+    "no_prior_err_failing_over_total": "12/440",
+    "submitted_sql_errors_count": 12,
+    "submitted_sql_errors_pct": 2.73,
+    "no_submission_count": 0,
+    "total_non_executing_count": 12,
+    "total_non_executing_pct": 2.73,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "Q008",
+        "db_id": "california_schools",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q045",
+        "db_id": "california_schools",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q146",
+        "db_id": "codebase_community",
+        "error": "syntax_error",
+        "had_try_err": false
+      },
+      {
+        "id": "Q168",
+        "db_id": "european_football_2",
+        "error": "syntax_error",
+        "had_try_err": false
+      },
+      {
+        "id": "Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q219",
+        "db_id": "financial",
+        "error": "syntax_error",
+        "had_try_err": false
+      },
+      {
+        "id": "Q220",
+        "db_id": "financial",
+        "error": "ambiguous_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q225",
+        "db_id": "financial",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q405",
+        "db_id": "thrombosis_prediction",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q429",
+        "db_id": "thrombosis_prediction",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q462",
+        "db_id": "thrombosis_prediction",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q498",
+        "db_id": "toxicology",
+        "error": "unknown_column",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Silhouette-EQ (legacy)",
+    "slots": 440,
+    "runs_with_try_sql": 416,
+    "runs_with_try_sql_pct": 94.5,
+    "try_sql_calls": 471,
+    "calls_per_run": 1.07,
+    "calls_in_error": 26,
+    "calls_in_error_pct": 5.5,
+    "slots_with_try_sql_error": 22,
+    "rewrites_retry_try": 22,
+    "rewrites_changed_final": 22,
+    "rewrites_changed_final_pct": 5.0,
+    "prior_err_failing_over_total": "0/22",
+    "no_prior_err_failing_over_total": "7/418",
+    "submitted_sql_errors_count": 7,
+    "submitted_sql_errors_pct": 1.59,
+    "no_submission_count": 0,
+    "total_non_executing_count": 7,
+    "total_non_executing_pct": 1.59,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "Q107",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q193",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q219",
+        "db_id": "financial",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q224",
+        "db_id": "financial",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q244",
+        "db_id": "formula_1",
+        "error": "unknown_column",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Silhouette-noVal",
+    "slots": 440,
+    "runs_with_try_sql": 413,
+    "runs_with_try_sql_pct": 93.9,
+    "try_sql_calls": 469,
+    "calls_per_run": 1.07,
+    "calls_in_error": 26,
+    "calls_in_error_pct": 5.5,
+    "slots_with_try_sql_error": 24,
+    "rewrites_retry_try": 24,
+    "rewrites_changed_final": 24,
+    "rewrites_changed_final_pct": 5.5,
+    "prior_err_failing_over_total": "0/24",
+    "no_prior_err_failing_over_total": "6/416",
+    "submitted_sql_errors_count": 6,
+    "submitted_sql_errors_pct": 1.36,
+    "no_submission_count": 0,
+    "total_non_executing_count": 6,
+    "total_non_executing_pct": 1.36,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "Q045",
+        "db_id": "california_schools",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q175",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q193",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q305",
+        "db_id": "student_club",
+        "error": "unknown_column",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Silhouette-Noiseless",
+    "slots": 440,
+    "runs_with_try_sql": 402,
+    "runs_with_try_sql_pct": 91.4,
+    "try_sql_calls": 439,
+    "calls_per_run": 1.0,
+    "calls_in_error": 10,
+    "calls_in_error_pct": 2.3,
+    "slots_with_try_sql_error": 9,
+    "rewrites_retry_try": 9,
+    "rewrites_changed_final": 9,
+    "rewrites_changed_final_pct": 2.0,
+    "prior_err_failing_over_total": "0/9",
+    "no_prior_err_failing_over_total": "6/431",
+    "submitted_sql_errors_count": 6,
+    "submitted_sql_errors_pct": 1.36,
+    "no_submission_count": 0,
+    "total_non_executing_count": 6,
+    "total_non_executing_pct": 1.36,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "Q058",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q193",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q240",
+        "db_id": "formula_1",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q302",
+        "db_id": "student_club",
+        "error": "unknown_column",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "1-way Profile (IND8_PROMPT)",
+    "slots": 440,
+    "runs_with_try_sql": 416,
+    "runs_with_try_sql_pct": 94.5,
+    "try_sql_calls": 468,
+    "calls_per_run": 1.06,
+    "calls_in_error": 24,
+    "calls_in_error_pct": 5.1,
+    "slots_with_try_sql_error": 17,
+    "rewrites_retry_try": 17,
+    "rewrites_changed_final": 17,
+    "rewrites_changed_final_pct": 3.9,
+    "prior_err_failing_over_total": "1/17",
+    "no_prior_err_failing_over_total": "5/423",
+    "submitted_sql_errors_count": 6,
+    "submitted_sql_errors_pct": 1.36,
+    "no_submission_count": 0,
+    "total_non_executing_count": 6,
+    "total_non_executing_pct": 1.36,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "Q119",
+        "db_id": "codebase_community",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q193",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q219",
+        "db_id": "financial",
+        "error": "other_sqlite_error: 1st ORDER BY term does not match any column in the result set",
+        "had_try_err": false
+      },
+      {
+        "id": "Q225",
+        "db_id": "financial",
+        "error": "unknown_column",
+        "had_try_err": true
+      },
+      {
+        "id": "Q404",
+        "db_id": "thrombosis_prediction",
+        "error": "unknown_column",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Select 3 (S3)",
+    "slots": 440,
+    "runs_with_try_sql": 393,
+    "runs_with_try_sql_pct": 89.3,
+    "try_sql_calls": 443,
+    "calls_per_run": 1.01,
+    "calls_in_error": 24,
+    "calls_in_error_pct": 5.4,
+    "slots_with_try_sql_error": 17,
+    "rewrites_retry_try": 17,
+    "rewrites_changed_final": 17,
+    "rewrites_changed_final_pct": 3.9,
+    "prior_err_failing_over_total": "0/17",
+    "no_prior_err_failing_over_total": "4/423",
+    "submitted_sql_errors_count": 4,
+    "submitted_sql_errors_pct": 0.91,
+    "no_submission_count": 1,
+    "total_non_executing_count": 5,
+    "total_non_executing_pct": 1.14,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "Q058",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q132",
+        "db_id": "codebase_community",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q219",
+        "db_id": "financial",
+        "error": "timeout",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": [
+      {
+        "id": "Q294",
+        "db_id": "formula_1",
+        "stop": "provider_error",
+        "had_try_err": false
+      }
+    ]
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Synthetic DB, 2-way (SYN8)",
+    "slots": 440,
+    "runs_with_try_sql": 286,
+    "runs_with_try_sql_pct": 65.0,
+    "try_sql_calls": 324,
+    "calls_per_run": 0.74,
+    "calls_in_error": 13,
+    "calls_in_error_pct": 4.0,
+    "slots_with_try_sql_error": 11,
+    "rewrites_retry_try": 10,
+    "rewrites_changed_final": 11,
+    "rewrites_changed_final_pct": 2.5,
+    "prior_err_failing_over_total": "0/11",
+    "no_prior_err_failing_over_total": "5/429",
+    "submitted_sql_errors_count": 5,
+    "submitted_sql_errors_pct": 1.14,
+    "no_submission_count": 0,
+    "total_non_executing_count": 5,
+    "total_non_executing_pct": 1.14,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "Q066",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q184",
+        "db_id": "european_football_2",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q189",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q395",
+        "db_id": "thrombosis_prediction",
+        "error": "syntax_error",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Synthetic DB, 1-way (IND8)",
+    "slots": 440,
+    "runs_with_try_sql": 290,
+    "runs_with_try_sql_pct": 65.9,
+    "try_sql_calls": 307,
+    "calls_per_run": 0.7,
+    "calls_in_error": 5,
+    "calls_in_error_pct": 1.6,
+    "slots_with_try_sql_error": 5,
+    "rewrites_retry_try": 4,
+    "rewrites_changed_final": 5,
+    "rewrites_changed_final_pct": 1.1,
+    "prior_err_failing_over_total": "1/5",
+    "no_prior_err_failing_over_total": "6/435",
+    "submitted_sql_errors_count": 7,
+    "submitted_sql_errors_pct": 1.59,
+    "no_submission_count": 0,
+    "total_non_executing_count": 7,
+    "total_non_executing_pct": 1.59,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "Q027",
+        "db_id": "california_schools",
+        "error": "unknown_column",
+        "had_try_err": true
+      },
+      {
+        "id": "Q119",
+        "db_id": "codebase_community",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q169",
+        "db_id": "european_football_2",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q177",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q219",
+        "db_id": "financial",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "Q240",
+        "db_id": "formula_1",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "Q313",
+        "db_id": "student_club",
+        "error": "unknown_column",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": []
+  },
+  {
+    "benchmark": "BIRD",
+    "setting": "Full access (C4 r0+r2)",
+    "slots": 880,
+    "runs_with_try_sql": 351,
+    "runs_with_try_sql_pct": 39.9,
+    "try_sql_calls": 380,
+    "calls_per_run": 0.43,
+    "calls_in_error": 11,
+    "calls_in_error_pct": 2.9,
+    "slots_with_try_sql_error": 10,
+    "rewrites_retry_try": 9,
+    "rewrites_changed_final": 10,
+    "rewrites_changed_final_pct": 1.1,
+    "prior_err_failing_over_total": "1/10",
+    "no_prior_err_failing_over_total": "15/870",
+    "submitted_sql_errors_count": 16,
+    "submitted_sql_errors_pct": 1.82,
+    "no_submission_count": 1,
+    "total_non_executing_count": 17,
+    "total_non_executing_pct": 1.93,
+    "submitted_sql_errors_detail": [
+      {
+        "id": "r0:Q011",
+        "db_id": "california_schools",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q058",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q188",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": true
+      },
+      {
+        "id": "r0:Q225",
+        "db_id": "financial",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q239",
+        "db_id": "financial",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q324",
+        "db_id": "student_club",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "r0:Q457",
+        "db_id": "thrombosis_prediction",
+        "error": "unknown_function",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q058",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q099",
+        "db_id": "card_games",
+        "error": "syntax_error",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q108",
+        "db_id": "card_games",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q148",
+        "db_id": "codebase_community",
+        "error": "syntax_error",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q149",
+        "db_id": "debit_card_specializing",
+        "error": "unknown_column",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q174",
+        "db_id": "european_football_2",
+        "error": "timeout",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q395",
+        "db_id": "thrombosis_prediction",
+        "error": "aggregate_misuse",
+        "had_try_err": false
+      },
+      {
+        "id": "r2:Q486",
+        "db_id": "toxicology",
+        "error": "timeout",
+        "had_try_err": false
+      }
+    ],
+    "no_submission_detail": [
+      {
+        "id": "r0:Q407",
+        "db_id": "thrombosis_prediction",
+        "stop": "round_limit",
+        "had_try_err": false
+      }
+    ]
+  }
+]

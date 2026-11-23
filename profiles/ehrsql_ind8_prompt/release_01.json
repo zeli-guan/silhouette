@@ -1,0 +1,1252 @@
+{
+  "admissions": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        20.0,
+        50.0,
+        50.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      1.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      1.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "admittime": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ],
+    "dischtime": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ],
+    "admission_type": [
+      "VARCHAR(50)",
+      0.162,
+      "10^0",
+      [
+        "AA_AAAA.",
+        "AAAAAA",
+        "AAAAAAAA_AAAA_AAA_AAAAAAAAA"
+      ],
+      [
+        "ew emer.",
+        "urgent",
+        "surgical same day admission"
+      ]
+    ],
+    "admission_location": [
+      "VARCHAR(50)",
+      0.009,
+      "10^0",
+      [
+        "AAAAAAAAA_AAAA",
+        "AAAAAAAA_AAAA_AAAAAAAA",
+        "AAAAAAAAA_AAAAAAAA"
+      ],
+      [
+        "emergency room",
+        "transfer from hospital",
+        "physician referral"
+      ]
+    ],
+    "discharge_location": [
+      "VARCHAR(50)",
+      0.396,
+      "10^0",
+      [
+        "AAAA_AAAAAA_AAAA",
+        "AAAA"
+      ],
+      [
+        "home health care",
+        "home"
+      ]
+    ],
+    "insurance": [
+      "VARCHAR(255)",
+      0.054,
+      "10^0",
+      [
+        "AAAAA",
+        "AAAAAAAA"
+      ],
+      [
+        "other",
+        "medicare"
+      ]
+    ],
+    "language": [
+      "VARCHAR(10)",
+      0.0,
+      "10^0",
+      [
+        "AAAAAAA"
+      ],
+      [
+        "english"
+      ]
+    ],
+    "marital_status": [
+      "VARCHAR(50)",
+      0.18,
+      "10^0",
+      [
+        "AAAAAA",
+        "AAAAAAA"
+      ],
+      [
+        "single",
+        "married"
+      ]
+    ],
+    "age": [
+      "INT",
+      0.036,
+      "10^1",
+      [
+        20.0,
+        50.0,
+        50.0
+      ],
+      [
+        47,
+        52,
+        5,
+        56,
+        78,
+        59,
+        60,
+        66,
+        54,
+        62,
+        68,
+        -251,
+        371,
+        -636033637,
+        -8
+      ]
+    ]
+  },
+  "chartevents": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^4",
+      [
+        5000.0,
+        10000.0,
+        20000.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.002,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.002,
+      "10^1",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "stay_id": [
+      "INT",
+      0.002,
+      "10^1",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "itemid": [
+      "INT",
+      0.0,
+      "10^0",
+      [
+        200000.0,
+        200000.0,
+        200000.0
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.825,
+      "10^2",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      null
+    ],
+    "valuenum": [
+      "DOUBLE PRECISION",
+      0.0,
+      "10^1",
+      [
+        20.0,
+        50.0,
+        50.0
+      ],
+      null
+    ],
+    "valueuom": [
+      "VARCHAR(50)",
+      0.001,
+      "10^0",
+      [
+        "AAAA",
+        "AAA",
+        "AAAA/AAA"
+      ],
+      [
+        "mmhg",
+        "bpm",
+        "insp/min",
+        "%",
+        "°c",
+        "kg",
+        "cm"
+      ]
+    ]
+  },
+  "cost": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^4",
+      [
+        5000.0,
+        10000.0,
+        20000.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.002,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.002,
+      "10^2",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "event_type": [
+      "VARCHAR(20)",
+      0.0,
+      "10^0",
+      [
+        "AAAAAAAAA",
+        "AAAAAAAAAAAAA",
+        "AAAAAAAAA?AAA"
+      ],
+      [
+        "labevents",
+        "prescriptions",
+        "diagnoses_icd",
+        "procedures_icd"
+      ]
+    ],
+    "event_id": [
+      "INT",
+      1.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "chargetime": [
+      "TIMESTAMP(0)",
+      0.261,
+      "10^3",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      null
+    ],
+    "cost": [
+      "DOUBLE PRECISION",
+      0.0,
+      "10^1",
+      [
+        5.0,
+        10.0,
+        10.0
+      ],
+      null
+    ]
+  },
+  "diagnoses_icd": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^3",
+      [
+        200.0,
+        500.0,
+        1000.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.097,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.164,
+      "10^1",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "icd_code": [
+      "VARCHAR(10)",
+      0.795,
+      "10^1",
+      [
+        "AAA9?9999",
+        "AAA9?99999",
+        "AAA9?A9999"
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.189,
+      "10^1",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      null
+    ]
+  },
+  "icustays": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^1",
+      [
+        20.0,
+        20.0,
+        50.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      1.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      1.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "stay_id": [
+      "INT",
+      1.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "first_careunit": [
+      "VARCHAR(20)",
+      0.344,
+      "10^0",
+      [
+        "AAAAAAA_AAAAAAAAA_AAAA_AAAA_(AAAA)",
+        "AAAAAAA_AAAAAAAA_AAAAAAAAA_AAAA_AAAA_(AAAAA)",
+        "AAAAAAAA_AAAAAAAAA_AAAA_AAAA_(AAAA)"
+      ],
+      [
+        "medical intensive care unit (micu)",
+        "cardiac vascular intensive care unit (cvicu)",
+        "surgical intensive care unit (sicu)"
+      ]
+    ],
+    "last_careunit": [
+      "VARCHAR(20)",
+      0.289,
+      "10^0",
+      [
+        "AAAAAAA_AAAAAAAAA_AAAA_AAAA_(AAAA)",
+        "AAAAAAAA_AAAAAAAAA_AAAA_AAAA_(AAAA)",
+        "AAAAAAA_AAAAAAAA_AAAAAAAAA_AAAA_AAAA_(AAAAA)"
+      ],
+      [
+        "medical intensive care unit (micu)",
+        "surgical intensive care unit (sicu)",
+        "cardiac vascular intensive care unit (cvicu)"
+      ]
+    ],
+    "intime": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ],
+    "outtime": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ]
+  },
+  "inputevents": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^3",
+      [
+        2000.0,
+        2000.0,
+        5000.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.006,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.006,
+      "10^1",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "stay_id": [
+      "INT",
+      0.01,
+      "10^1",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "starttime": [
+      "TIMESTAMP(0)",
+      0.998,
+      "10^0",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      [
+        "2100-03-19 17:30:00",
+        "2100-07-03 16:08:00"
+      ]
+    ],
+    "itemid": [
+      "INT",
+      0.023,
+      "10^1",
+      [
+        200000.0,
+        200000.0,
+        200000.0
+      ],
+      null
+    ],
+    "totalamount": [
+      "DOUBLE PRECISION",
+      0.0,
+      "10^1",
+      [
+        50.0,
+        50.0,
+        200.0
+      ],
+      null
+    ],
+    "totalamountuom": [
+      "VARCHAR(50)",
+      0.0,
+      "10^0",
+      [
+        "AA"
+      ],
+      [
+        "ml"
+      ]
+    ]
+  },
+  "labevents": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^4",
+      [
+        5000.0,
+        10000.0,
+        10000.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.001,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.002,
+      "10^2",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "itemid": [
+      "INT",
+      0.012,
+      "10^1",
+      [
+        50000.0,
+        50000.0,
+        50000.0
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.166,
+      "10^3",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      null
+    ],
+    "valuenum": [
+      "DOUBLE PRECISION",
+      0.0,
+      "10^1",
+      [
+        5.0,
+        10.0,
+        50.0
+      ],
+      null
+    ],
+    "valueuom": [
+      "VARCHAR(20)",
+      0.005,
+      "10^1",
+      [
+        "AA/AA",
+        "AAA/A",
+        "A/AA"
+      ],
+      [
+        "mg/dl",
+        "meq/l",
+        "%",
+        "k/ul",
+        "g/dl",
+        "fl",
+        "sec",
+        "iu/l",
+        "mm hg",
+        "m/ul",
+        "pg",
+        "units",
+        "mmol/l",
+        "#/hpf",
+        "ng/ml"
+      ]
+    ]
+  },
+  "microbiologyevents": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^3",
+      [
+        200.0,
+        500.0,
+        500.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.123,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.202,
+      "10^1",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.676,
+      "10^1",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      [
+        "2100-06-06 12:53:00",
+        "2100-05-25 19:02:00",
+        "2100-03-05 07:55:00",
+        "2100-10-24 20:37:00",
+        "2100-12-22 13:34:00",
+        "2100-06-02 08:42:00",
+        "2100-02-07 22:04:00",
+        "2100-07-23 03:00:00",
+        "2100-12-11 15:05:00",
+        "2100-02-27 00:34:00",
+        "2100-12-01 21:00:00",
+        "2100-03-06 18:00:00",
+        "2100-08-02 12:30:00",
+        "2100-10-24 20:50:00",
+        "2100-03-26 13:50:00"
+      ]
+    ],
+    "spec_type_desc": [
+      "VARCHAR(100)",
+      0.056,
+      "10^1",
+      [
+        "AAAAA",
+        "AAAAAA",
+        "AAAAA_AAAAAAA"
+      ],
+      [
+        "blood culture",
+        "sputum",
+        "urine",
+        "mrsa screen",
+        "stool",
+        "peritoneal fluid",
+        "swab",
+        "pleural fluid",
+        "bronchial washings",
+        "abscess",
+        "mini-bal",
+        "csf;spinal fluid",
+        "fluid,other",
+        "bronchoalveolar lavage",
+        "serology/blood"
+      ]
+    ],
+    "test_name": [
+      "VARCHAR(100)",
+      0.112,
+      "10^1",
+      [
+        "AAAAA_AAAAAAA",
+        "AAAAA_AAAAAAA?_AAAAAAA",
+        "AAAAAAAAAAA_AAAAAAA"
+      ],
+      [
+        "blood culture, routine",
+        "urine culture",
+        "respiratory culture",
+        "gram stain",
+        "mrsa screen",
+        "wound culture",
+        "fluid culture",
+        "anaerobic culture",
+        "c. difficile pcr",
+        "fungal culture",
+        "acid fast smear",
+        "acid fast culture",
+        "staph aureus screen"
+      ]
+    ],
+    "org_name": [
+      "VARCHAR(100)",
+      0.695,
+      "10^0",
+      [
+        "AAAAAAAAAAA_AAAA",
+        "AAAAA_AAAAAA_AAAA_+",
+        "AAAAAAAAAA_AAAAAAAAAA"
+      ],
+      [
+        "escherichia coli",
+        "staph aureus coag +",
+        "klebsiella pneumoniae",
+        "pseudomonas aeruginosa",
+        "yeast",
+        "enterococcus sp.",
+        "proteus mirabilis"
+      ]
+    ]
+  },
+  "outputevents": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^3",
+      [
+        1000.0,
+        2000.0,
+        2000.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.015,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.018,
+      "10^1",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "stay_id": [
+      "INT",
+      0.015,
+      "10^1",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ],
+    "itemid": [
+      "INT",
+      0.016,
+      "10^1",
+      [
+        200000.0,
+        200000.0,
+        200000.0
+      ],
+      null
+    ],
+    "value": [
+      "DOUBLE PRECISION",
+      0.0,
+      "10^1",
+      [
+        20.0,
+        50.0,
+        100.0
+      ],
+      null
+    ],
+    "valueuom": [
+      "VARCHAR(50)",
+      0.002,
+      "10^0",
+      [
+        "AA"
+      ],
+      [
+        "ml"
+      ]
+    ]
+  },
+  "patients": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^1",
+      [
+        20.0,
+        20.0,
+        50.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      1.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "gender": [
+      "VARCHAR(5)",
+      0.0,
+      "10^0",
+      [
+        "A"
+      ],
+      [
+        "m",
+        "f"
+      ]
+    ],
+    "dob": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ],
+    "dod": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ]
+  },
+  "prescriptions": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^3",
+      [
+        1000.0,
+        2000.0,
+        2000.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.008,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.012,
+      "10^2",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "starttime": [
+      "TIMESTAMP(0)",
+      0.891,
+      "10^1",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      [
+        "2100-10-02 20:00:00",
+        "2100-11-20 12:00:00",
+        "2100-12-04 11:00:00",
+        "2100-03-19 18:00:00",
+        "2100-05-19 17:00:00",
+        "2100-05-21 20:00:00",
+        "2100-10-06 23:00:00",
+        "2100-11-23 06:00:00",
+        "2100-01-15 17:00:00",
+        "2100-05-21 14:00:00",
+        "2100-07-07 03:00:00",
+        "2100-09-15 16:00:00",
+        "2100-10-02 11:00:00",
+        "2100-11-24 15:00:00",
+        "2100-12-08 20:00:00"
+      ]
+    ],
+    "stoptime": [
+      "TIMESTAMP(0)",
+      0.665,
+      "10^1",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      null
+    ],
+    "drug": [
+      "VARCHAR(255)",
+      0.156,
+      "10^1",
+      [
+        "AAAAAAA",
+        "AAAAAAAAAA",
+        "9.9%_AAAAAA_AAAAAAAA"
+      ],
+      null
+    ],
+    "dose_val_rx": [
+      "VARCHAR(100)",
+      0.027,
+      "10^1",
+      [
+        "99.9",
+        "999.9",
+        "9.9"
+      ],
+      [
+        "1.0",
+        "100.0",
+        "1000.0",
+        "10.0",
+        "3.0",
+        "250.0",
+        "20.0",
+        "40.0",
+        "500.0",
+        "5.0",
+        "2.0",
+        "50.0",
+        "0.0",
+        "15.0",
+        "25.0"
+      ]
+    ],
+    "dose_unit_rx": [
+      "VARCHAR(50)",
+      0.013,
+      "10^1",
+      [
+        "AA",
+        "AAAA",
+        "AAA"
+      ],
+      [
+        "mg",
+        "ml",
+        "unit",
+        "bag",
+        "g",
+        "meq",
+        "appl",
+        "neb",
+        "mcg",
+        "tab",
+        "pkt",
+        "vial",
+        "puff",
+        "cap",
+        "syr"
+      ]
+    ],
+    "route": [
+      "VARCHAR(50)",
+      0.013,
+      "10^1",
+      [
+        "AA",
+        "AA/AA",
+        "AA_AAAA"
+      ],
+      [
+        "iv",
+        "po/ng",
+        "po",
+        "sc",
+        "iv drip",
+        "im",
+        "ih",
+        "pr",
+        "tp",
+        "oral",
+        "td",
+        "ng",
+        "ed",
+        "nu",
+        "neb"
+      ]
+    ]
+  },
+  "procedures_icd": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        50.0,
+        100.0,
+        200.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.483,
+      "10^1",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.651,
+      "10^0",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "icd_code": [
+      "VARCHAR(10)",
+      0.869,
+      "10^0",
+      [
+        "AAA9?9999",
+        "AAA9?999"
+      ],
+      null
+    ],
+    "charttime": [
+      "TIMESTAMP(0)",
+      0.95,
+      "10^0",
+      [
+        "9999-99-99_99:99:99"
+      ],
+      [
+        "2100-03-05 00:00:00",
+        "2100-08-21 17:35:00"
+      ]
+    ]
+  },
+  "transfers": {
+    "row_id": [
+      "INT",
+      0.0,
+      "10^2",
+      [
+        100.0,
+        200.0,
+        200.0
+      ],
+      null
+    ],
+    "subject_id": [
+      "INT",
+      0.821,
+      "10^0",
+      [
+        10000000.0,
+        10000000.0,
+        10000000.0
+      ],
+      null
+    ],
+    "hadm_id": [
+      "INT",
+      0.977,
+      "10^0",
+      [
+        20000000.0,
+        20000000.0,
+        20000000.0
+      ],
+      null
+    ],
+    "transfer_id": [
+      "INT",
+      1.0,
+      0,
+      [
+        null,
+        null,
+        null
+      ],
+      null
+    ],
+    "eventtype": [
+      "VARCHAR(20)",
+      0.002,
+      "10^0",
+      [
+        "AAAAAAAA",
+        "AAAAA",
+        "AAAAAAAAA"
+      ],
+      [
+        "transfer",
+        "admit",
+        "discharge",
+        "ed"
+      ]
+    ],
+    "careunit": [
+      "VARCHAR(20)",
+      0.298,
+      "10^1",
+      [
+        "AAAAAAAAA_AAAAAAAAAA",
+        "AAAAAAAAA",
+        "AAA/AAAA"
+      ],
+      [
+        "emergency department",
+        "neurology",
+        "cardiac surgery",
+        "med/surg",
+        "cardiac vascular intensive care unit (cvicu)",
+        "medical intensive care unit (micu)",
+        "medicine",
+        "surgical intensive care unit (sicu)",
+        "medicine/cardiology",
+        "discharge lounge",
+        "transplant",
+        "pacu",
+        "med/surg/trauma",
+        "trauma sicu (tsicu)"
+      ]
+    ],
+    "intime": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ],
+    "outtime": [
+      "TIMESTAMP(0)",
+      1.0,
+      0,
+      [],
+      []
+    ]
+  }
+}
