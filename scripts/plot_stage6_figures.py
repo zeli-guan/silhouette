@@ -108,82 +108,140 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
             vals.append(mean(ts))
         return mean(vals)
 
-    # kind in {"silh", "zero_leak", "dp_synth", "raw_ref"}
+    # Colors & markers by paradigm
+    COL_SILH = "#005AB5"
+    COL_SILH_HALO = "#56B4E9"
+    COL_SILH_TXT = "#004494"
+    COL_1D = "#009E73"
+    COL_1D_TXT = "#005A40"
+    COL_IDP = "#7B3294"
+    COL_IDP_TXT = "#511D66"
+    COL_SYNTH = "#5C6B7A"
+    COL_SYNTH_TXT = "#334155"
+    COL_RAW = "#E69F00"
+    COL_RAW_TXT = "#8A5300"
+    COL_SCHEMA_LINE = "#888888"
+    COL_FULL_LINE = "#334155"
+
+    # Reference bands (horizontal dashed lines, NOT scatter points)
+    pa_schema_y = bm_ex("bird", bird_440, ["C0/r0", "C0/r2"])
+    pa_full_y = bm_ex("bird", bird_440, ["C4/r0", "C4/r2"])
+    pb_schema_y = bm_ex("ehrsql_600", ehr_600, "C0/r0")
+    pb_full_y = bm_ex("ehrsql_600", ehr_600, "C4/r0")
+    pc_schema_y = bm_ex("bird", bird_440, "SOL_C0/r0")
+    pc_full_y = bm_ex("bird", bird_440, "SOL_C4/r0")
+
+    # Clean Table 2 & Table 7 representative points ONLY
+    # tuple: (label, x, y, kind, (dx, dy), ha, va)
+    pa_2way_x = bm_tok("bird", ["SYN8/r0"])
+    pa_2way_y = bm_ex("bird", bird_440, "SYN8/r0")
+    pa_1way_x = bm_tok("bird", ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"])
+    pa_1way_y = bm_ex("bird", bird_440, ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"])
+
     pa_points = [
-        ("Schema only", bm_tok("bird", ["C0/r0", "C0/r2"]), bm_ex("bird", bird_440, ["C0/r0", "C0/r2"]), "zero_leak", (8, -3), "left"),
-        ("DP-Query (DB)", bm_tok("bird", ["DP_QUERY_ROW_DB8_V2_R1/r0"]), bm_ex("bird", bird_440, "DP_QUERY_ROW_DB8_V2_R1/r0"), "dp_synth", (10, 4), "left"),
-        ("DP-Query", bm_tok("bird", ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]), bm_ex("bird", bird_440, ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]), "dp_synth", (10, -13), "left"),
-        ("Profile Tool", bm_tok("bird", ["IND8_PROFILE_TOOL_R1/r0", "IND8_PROFILE_TOOL_R2/r0", "IND8_PROFILE_TOOL_R3/r0"]), bm_ex("bird", bird_440, ["IND8_PROFILE_TOOL_R1/r0", "IND8_PROFILE_TOOL_R2/r0", "IND8_PROFILE_TOOL_R3/r0"]), "zero_leak", (18, -8), "left"),
-        ("1-way Synth", bm_tok("bird", ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"]), bm_ex("bird", bird_440, ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"]), "dp_synth", (-2, 34), "center"),
-        ("2-way Synth", bm_tok("bird", ["SYN8/r0"]), bm_ex("bird", bird_440, "SYN8/r0"), "dp_synth", (-12, -8), "right"),
-        ("FK Synth", bm_tok("bird", ["SYN8_FK_DAG_R1/r0"]), bm_ex("bird", bird_440, "SYN8_FK_DAG_R1/r0"), "dp_synth", (16, -2), "left"),
-        ("Select 3", bm_tok("bird", ["S3/r0"]), bm_ex("bird", bird_440, "S3/r0"), "raw_ref", (8, -2), "left"),
-        ("Full access", bm_tok("bird", ["C4/r0", "C4/r2"]), bm_ex("bird", bird_440, ["C4/r0", "C4/r2"]), "raw_ref", (0, -15), "center"),
-        ("Static Synth", bm_tok("bird", ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"]), "dp_synth", (10, -8), "left"),
-        ("1-way Profile (cap)", bm_tok("bird", ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"]), "zero_leak", (-12, -14), "right"),
-        ("1-way Profile", bm_tok("bird", ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]), bm_ex("bird", bird_440, ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]), "zero_leak", (6, -15), "left"),
-        ("DAWA+DP-SIPS", bm_tok("bird", ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]), bm_ex("bird", bird_440, ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]), "zero_leak", (-12, 14), "right"),
-        ("Silhouette-C", bm_tok("bird", ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"]), "silh", (10, 12), "left"),
-        ("Silhouette", bm_tok("bird", ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]), bm_ex("bird", bird_440, ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]), "silh", (-10, 14), "right"),
+        ("DP-Query", bm_tok("bird", ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]),
+         bm_ex("bird", bird_440, ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]),
+         "idp", (9, -3), "left", "center"),
+        ("1-/2-way Synth", pa_2way_x, pa_2way_y, "synth", (-9, 8), "right", "bottom"),
+        ("", pa_1way_x, pa_1way_y, "synth", (0, 0), "center", "center"),
+        ("FK Synth", bm_tok("bird", ["SYN8_FK_DAG_R1/r0"]), bm_ex("bird", bird_440, "SYN8_FK_DAG_R1/r0"),
+         "synth", (9, -5), "left", "center"),
+        ("Select 3", bm_tok("bird", ["S3/r0"]), bm_ex("bird", bird_440, "S3/r0"),
+         "raw", (8, 5), "left", "bottom"),
+        ("DAWA+DP-SIPS", bm_tok("bird", ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]),
+         bm_ex("bird", bird_440, ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]),
+         "u1d", (-8, -13), "right", "top"),
+        ("1-way Profile", bm_tok("bird", ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]),
+         bm_ex("bird", bird_440, ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]),
+         "u1d", (0, -14), "center", "top"),
+        ("Silhouette", bm_tok("bird", ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]),
+         bm_ex("bird", bird_440, ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]),
+         "silh", (0, 15), "center", "bottom"),
     ]
 
     pb_points = [
-        ("Schema only", bm_tok("ehrsql_600", ["C0/r0"]), bm_ex("ehrsql_600", ehr_600, "C0/r0"), "zero_leak", (8, -3)),
-        ("Lookup only", bm_tok("ehrsql_600", ["C0P/r0"]), bm_ex("ehrsql_600", ehr_600, "C0P/r0"), "zero_leak", (-4, 15), "left"),
-        ("2-way Synth", bm_tok("ehrsql_600", ["SYN8P/r0"]), bm_ex("ehrsql_600", ehr_600, "SYN8P/r0"), "dp_synth", (-10, -18), "right"),
-        ("1-way Synth", bm_tok("ehrsql_600", ["IND8P/r0"]), bm_ex("ehrsql_600", ehr_600, "IND8P/r0"), "dp_synth", (0, -28), "center"),
-        ("Surrogate 3", bm_tok("ehrsql_600", ["SUR3/r0"]), bm_ex("ehrsql_600", ehr_600, "SUR3/r0"), "zero_leak", (8, -20), "left"),
-        ("Select 3", bm_tok("ehrsql_600", ["S3/r0"]), bm_ex("ehrsql_600", ehr_600, "S3/r0"), "raw_ref", (10, -2)),
-        ("Full access", bm_tok("ehrsql_600", ["C4/r0"]), bm_ex("ehrsql_600", ehr_600, "C4/r0"), "raw_ref", (-8, 11), "right"),
-        ("Silhouette-L", bm_tok("ehrsql_600", ["EHR_DG8P_NOLKP_V3_R1/r0", "EHR_DG8P_NOLKP_V3_R2/r0", "EHR_DG8P_NOLKP_V3_R3/r0"]), bm_ex("ehrsql_600", ehr_600, ["EHR_DG8P_NOLKP_V3_R1/r0", "EHR_DG8P_NOLKP_V3_R2/r0", "EHR_DG8P_NOLKP_V3_R3/r0"]), "zero_leak", (12, -18), "left"),
-        ("1-way Profile", bm_tok("ehrsql_600", ["EHR_IND8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_IND8_V3_R1/r0"), "zero_leak", (-10, -17), "center"),
-        ("Silhouette-E", bm_tok("ehrsql_600", ["EHR_ENT8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_ENT8_V3_R1/r0"), "zero_leak", (-4, 15), "center"),
-        ("DAWA+DP-SIPS", bm_tok("ehrsql_600", ["DAWA_CLEAN_EHR600_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "DAWA_CLEAN_EHR600_R1/r0"), "zero_leak", (8, 10), "left"),
-        ("Silhouette", bm_tok("ehrsql_600", ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]), bm_ex("ehrsql_600", ehr_600, ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]), "silh", (8, 11), "left"),
+        ("2-way Synth", bm_tok("ehrsql_600", ["SYN8P/r0"]), bm_ex("ehrsql_600", ehr_600, "SYN8P/r0"),
+         "synth", (-4, 10), "right", "bottom"),
+        ("1-way Synth", bm_tok("ehrsql_600", ["IND8P/r0"]), bm_ex("ehrsql_600", ehr_600, "IND8P/r0"),
+         "synth", (4, -12), "left", "top"),
+        ("Select 3", bm_tok("ehrsql_600", ["S3/r0"]), bm_ex("ehrsql_600", ehr_600, "S3/r0"),
+         "raw", (10, -8), "left", "top"),
+        ("DAWA+DP-SIPS", bm_tok("ehrsql_600", ["DAWA_CLEAN_EHR600_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "DAWA_CLEAN_EHR600_R1/r0"),
+         "u1d", (-6, 10), "right", "bottom"),
+        ("1-way Profile", bm_tok("ehrsql_600", ["EHR_IND8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_IND8_V3_R1/r0"),
+         "u1d", (0, -15), "center", "top"),
+        ("Silhouette", bm_tok("ehrsql_600", ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]),
+         bm_ex("ehrsql_600", ehr_600, ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]),
+         "silh", (-4, 15), "center", "bottom"),
     ]
 
     pc_points = [
-        ("Schema only", bm_tok("bird", ["SOL_C0/r0"]), bm_ex("bird", bird_440, "SOL_C0/r0"), "zero_leak", (10, -3)),
-        ("Static Synth", bm_tok("bird", ["SOL_PUBCAP_IND8_ROWS_R1/r0"]), bm_ex("bird", bird_440, "SOL_PUBCAP_IND8_ROWS_R1/r0"), "dp_synth", (10, -8)),
-        ("1-way Synth", bm_tok("bird", ["SOL_IND8_PROBE_R1/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROBE_R1/r0"), "dp_synth", (-32, -15)),
-        ("1-way Profile", bm_tok("bird", ["SOL_IND8_PROMPT/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROMPT/r0"), "zero_leak", (10, -2)),
-        ("Silhouette", bm_tok("bird", ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]), bm_ex("bird", bird_440, ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]), "silh", (10, 10)),
-        ("Full access", bm_tok("bird", ["SOL_C4/r0"]), bm_ex("bird", bird_440, "SOL_C4/r0"), "raw_ref", (-44, -12)),
+        ("Static Synth", bm_tok("bird", ["SOL_PUBCAP_IND8_ROWS_R1/r0"]), bm_ex("bird", bird_440, "SOL_PUBCAP_IND8_ROWS_R1/r0"),
+         "synth", (4, -13), "left", "top"),
+        ("1-way Synth", bm_tok("bird", ["SOL_IND8_PROBE_R1/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROBE_R1/r0"),
+         "synth", (0, -14), "center", "top"),
+        ("1-way Profile", bm_tok("bird", ["SOL_IND8_PROMPT/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROMPT/r0"),
+         "u1d", (11, 0), "left", "center"),
+        ("Silhouette", bm_tok("bird", ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]),
+         bm_ex("bird", bird_440, ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]),
+         "silh", (10, 12), "left", "bottom"),
     ]
 
-    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.35))
+    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.4))
     panels = [
-        (axes[0], pa_points, "(a) BIRD Mini-Dev (n=440, glm-5.3)", "Mean total tokens / question", "Official Set Execution Accuracy (%)", (-600, 14500), (27, 51)),
-        (axes[1], pb_points, "(b) EHRSQL Confirm. (n=600, glm-5.3)", "Mean total tokens / question", "Official Execution Accuracy (%)", (1400, 19200), (34, 54.5)),
-        (axes[2], pc_points, "(c) BIRD Mini-Dev (n=440, gpt-6.1-sol cached)", "Mean total tokens / question (incl. cached)", "Official Set Execution Accuracy (%)", (48500, 73500), (71, 86)),
+        (axes[0], pa_points, pa_schema_y, (10550, pa_schema_y + 0.42, "right", "bottom"),
+         pa_full_y, (3050, pa_full_y + 0.42, "left", "bottom"),
+         "(a) BIRD Mini-Dev (n=440, glm-5.3)", "Mean total tokens / question", "Official Set Execution Accuracy (%)",
+         (2900, 10800), (28.0, 52.0)),
+        (axes[1], pb_points, pb_schema_y, (15900, pb_schema_y + 0.35, "right", "bottom"),
+         pb_full_y, (6050, pb_full_y + 0.35, "left", "bottom"),
+         "(b) EHRSQL Confirm. (n=600, glm-5.3)", "Mean total tokens / question", "Official Execution Accuracy (%)",
+         (5800, 16200), (34.5, 55.2)),
+        (axes[2], pc_points, pc_schema_y, (66000, pc_schema_y + 0.25, "right", "bottom"),
+         pc_full_y, (66000, pc_full_y + 0.25, "right", "bottom"),
+         "(c) BIRD Mini-Dev (n=440, gpt-6.1-sol cached)", "Mean total tokens / question (incl. cached)", "Official Set Execution Accuracy (%)",
+         (49200, 66500), (71.0, 86.2)),
     ]
 
-    for ax, pts, title, xlabel, ylabel, xlim, ylim in panels:
+    for ax, pts, sch_y, sch_pos, ful_y, ful_pos, title, xlabel, ylabel, xlim, ylim in panels:
         ax.grid(True, linestyle=":", alpha=0.35, zorder=0)
-        for item in pts:
-            if len(item) == 6:
-                label, x, y, kind, (dx, dy), ha = item
-            else:
-                label, x, y, kind, (dx, dy) = item
-                ha = "left"
-            use_arrow = abs(dx) > 12 or abs(dy) > 10 or ha == "right"
-            arrow = dict(arrowstyle="-", color="#999999", lw=0.6, shrinkA=0, shrinkB=3) if use_arrow else None
+        ax.axhline(sch_y, color=COL_SCHEMA_LINE, linestyle="--", linewidth=1.15, zorder=1)
+        ax.axhline(ful_y, color=COL_FULL_LINE, linestyle="--", linewidth=1.25, zorder=1)
+        ax.text(sch_pos[0], sch_pos[1], f"Schema only ({sch_y:.1f}%)", ha=sch_pos[2], va=sch_pos[3],
+                fontsize=8.6, color="#555555", zorder=3,
+                bbox=dict(facecolor="white", alpha=0.88, edgecolor="none", pad=0.8))
+        ax.text(ful_pos[0], ful_pos[1], f"Full access ({ful_y:.1f}%)", ha=ful_pos[2], va=ful_pos[3],
+                fontsize=8.6, fontweight="bold", color=COL_FULL_LINE, zorder=3,
+                bbox=dict(facecolor="white", alpha=0.88, edgecolor="none", pad=0.8))
+
+        for label, x, y, kind, (dx, dy), ha, va in pts:
             if kind == "silh":
-                ax.scatter([x], [y], s=125, marker="*", color=BLUE, edgecolor=DARK, linewidth=0.7, zorder=6)
-                ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha,
-                            fontsize=9.4, fontweight="bold", color=BLUE, zorder=7, arrowprops=arrow)
-            elif kind == "zero_leak":
-                ax.scatter([x], [y], s=44, marker="o", facecolors="white", edgecolors=BLUE, linewidth=1.3, zorder=4)
-                ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha,
-                            fontsize=8.8, color=DARK, zorder=5, arrowprops=arrow)
-            elif kind == "dp_synth":
-                ax.scatter([x], [y], s=48, marker="^", color=ORANGE, edgecolor=DARK, linewidth=0.6, zorder=4)
-                ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha,
-                            fontsize=8.8, color="#663C00", zorder=5, arrowprops=arrow)
+                ax.scatter([x], [y], s=520, marker="o", color=COL_SILH_HALO, alpha=0.22, edgecolor="none", zorder=6)
+                ax.scatter([x], [y], s=230, marker="*", color=COL_SILH, edgecolor="white", linewidth=0.9, zorder=7)
+                if label:
+                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
+                                fontsize=10.0, fontweight="bold", color=COL_SILH_TXT, zorder=8)
+            elif kind == "u1d":
+                ax.scatter([x], [y], s=64, marker="o", color=COL_1D, edgecolor="white", linewidth=0.8, zorder=5)
+                if label:
+                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
+                                fontsize=8.9, color=COL_1D_TXT, zorder=6)
+            elif kind == "idp":
+                ax.scatter([x], [y], s=60, marker="D", color=COL_IDP, edgecolor="white", linewidth=0.8, zorder=5)
+                if label:
+                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
+                                fontsize=8.9, color=COL_IDP_TXT, zorder=6)
+            elif kind == "synth":
+                ax.scatter([x], [y], s=68, marker="^", color=COL_SYNTH, edgecolor="white", linewidth=0.8, zorder=5)
+                if label:
+                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
+                                fontsize=8.9, color=COL_SYNTH_TXT, zorder=6)
             else:
-                ax.scatter([x], [y], s=42, marker="s", color=VERMILION, edgecolor=DARK, linewidth=0.5, zorder=4)
-                ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha,
-                            fontsize=8.8, color="#551A00", zorder=5, arrowprops=arrow)
+                ax.scatter([x], [y], s=60, marker="s", color=COL_RAW, edgecolor="white", linewidth=0.8, zorder=5)
+                if label:
+                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
+                                fontsize=8.9, color=COL_RAW_TXT, zorder=6)
+
         ax.set_title(title, pad=8)
         ax.set_xlabel(xlabel)
         ax.set_ylabel(ylabel)
@@ -195,26 +253,30 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
             ax.xaxis.set_major_formatter(lambda v, _: f"{v/1000:g}k" if v >= 1000 else f"{int(v)}")
 
     legend_handles = [
-        Line2D([0], [0], marker="*", color="w", label="Silhouette (DP profile, zero outside-profile matches)",
-               markerfacecolor=BLUE, markeredgecolor=DARK, markersize=11),
-        Line2D([0], [0], marker="o", color="w", label="DP summary / lookup (zero outside-profile matches)",
-               markerfacecolor="white", markeredgecolor=BLUE, markeredgewidth=1.3, markersize=7),
-        Line2D([0], [0], marker="^", color="w", label="DP interactive / synthetic rows (nonzero post-processed matches)",
-               markerfacecolor=ORANGE, markeredgecolor=DARK, markersize=7.5),
-        Line2D([0], [0], marker="s", color="w", label="Non-private raw-row reference (Select 3, Full access)",
-               markerfacecolor=VERMILION, markeredgecolor=DARK, markersize=6.5),
+        Line2D([0], [0], marker="*", color="w", label="Silhouette (role-allocated 1D DP)",
+               markerfacecolor=COL_SILH, markeredgecolor="white", markersize=13.5),
+        Line2D([0], [0], marker="o", color="w", label="Uniform 1D DP profile",
+               markerfacecolor=COL_1D, markeredgecolor="white", markersize=8.5),
+        Line2D([0], [0], marker="D", color="w", label="Interactive DP",
+               markerfacecolor=COL_IDP, markeredgecolor="white", markersize=7.5),
+        Line2D([0], [0], marker="^", color="w", label="DP synthetic DB",
+               markerfacecolor=COL_SYNTH, markeredgecolor="white", markersize=8.5),
+        Line2D([0], [0], marker="s", color="w", label="Raw sample rows (Select 3)",
+               markerfacecolor=COL_RAW, markeredgecolor="white", markersize=7.8),
     ]
     fig.legend(
         handles=legend_handles,
         loc="upper center",
-        bbox_to_anchor=(0.5, 1.03),
-        ncol=2,
+        bbox_to_anchor=(0.5, 1.01),
+        ncol=5,
         frameon=True,
         facecolor="#F8F9FA",
         edgecolor="#CCCCCC",
-        fontsize=10.1,
+        fontsize=9.3,
+        columnspacing=1.2,
+        handletextpad=0.4,
     )
-    fig.tight_layout(rect=[0, 0, 1, 0.87])
+    fig.tight_layout(rect=[0, 0, 1, 0.90])
     _save_fig(fig, pdf_dir / "fig3_frontier.pdf", png_dir / "fig3_frontier.png" if png_dir else None, dpi=dpi)
 
 
@@ -224,9 +286,9 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     scaling = src["scaling"]
     fig4b = scaling["fig4b_retention_m20"]
 
-    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.2))
+    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.35))
 
-    # Panel a: R=1 Budget Sweep (eps=1,2,4,8 + Noiseless v3) vs Equal Public Cap (R=3) vs Uncapped R=3 noVal
+    # Panel a: R=1 Budget Sweep (eps=1,2,4,8 + Noiseless v3) vs Equal Public Cap (R=3) vs w/o Values
     ax = axes[0]
     ax.grid(True, axis="y", linestyle=":", alpha=0.35, zorder=0)
 
@@ -234,10 +296,12 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     c4_pct = 100.0 * mean(vec(bird_out, ["C4/r0", "C4/r2"], bird_440))
     ax.axhline(c0_pct, color=GRAY, linestyle="--", linewidth=1.0, zorder=1)
     ax.axhline(c4_pct, color=DARK, linestyle="--", linewidth=1.0, zorder=1)
-    ax.text(-0.4, c0_pct + 0.55, f"Schema only ({c0_pct:.1f}%)", ha="left", fontsize=8.6, color=GRAY,
-            bbox=dict(facecolor="white", alpha=0.85, edgecolor="none", pad=0.5))
-    ax.text(0.85, c4_pct + 1.0, f"Full access ({c4_pct:.1f}%)", ha="center", fontsize=8.6, color=DARK,
-            bbox=dict(facecolor="white", alpha=0.85, edgecolor="none", pad=0.5))
+    ax.text(-0.42, c0_pct + 0.55, f"Schema only ({c0_pct:.1f}%)", ha="left", fontsize=8.5, color=GRAY,
+            bbox=dict(facecolor="white", alpha=0.88, edgecolor="none", pad=0.5))
+    ax.annotate(f"Full access ({c4_pct:.1f}%)", (-0.25, c4_pct), xytext=(-0.35, 52.0), ha="left", va="bottom",
+                fontsize=8.5, fontweight="bold", color=DARK, zorder=6,
+                bbox=dict(facecolor="white", alpha=0.90, edgecolor="none", pad=0.6),
+                arrowprops=dict(arrowstyle="-", color=DARK, lw=0.75, shrinkA=0, shrinkB=2))
 
     eps_conds = [(1, "DG1_CLEAN_R1/r0"), (2, "DG2_CLEAN_R1/r0"), (4, "DG4_CLEAN_R1/r0"), (8, "DG8_CLEAN_R1/r0")]
     x_curve = [0, 1, 2, 3]
@@ -258,20 +322,20 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     ax.plot([3, 4], [y_curve[-1], m_nl], linestyle=":", color=SKY, linewidth=1.4, zorder=3)
     ax.errorbar([4], [m_nl], yerr=[[m_nl - 100.0 * lo_nl], [100.0 * hi_nl - m_nl]], fmt="D", color=SKY,
                 markeredgecolor=DARK, markeredgewidth=0.6, capsize=3, markersize=5.5, zorder=5)
-    ax.annotate(f"{m_nl:.1f}%", (4, m_nl), xytext=(-2, 8), textcoords="offset points", ha="center",
-                fontsize=8.7, color=BLUE, fontweight="bold")
+    ax.annotate(f"{m_nl:.1f}%", (4, 100.0 * hi_nl), xytext=(0, 3), textcoords="offset points", ha="center",
+                fontsize=8.6, color=BLUE, fontweight="bold")
 
     ax.axvline(4.65, color="#BBBBBB", linestyle="-", linewidth=1.0, zorder=1)
-    ax.text(2.0, 57.0, "R=1 Budget Sweep", ha="center", fontsize=9.1, fontweight="bold", color=BLUE)
-    ax.text(8.45, 57.0, "Equal Public Cap (R=3, 95% CI)", ha="center", fontsize=9.1, fontweight="bold", color=VERMILION)
+    ax.text(1.95, 59.6, "R=1 Sweep", ha="center", fontsize=8.8, fontweight="bold", color=BLUE)
+    ax.text(8.2, 59.6, "Equal Public Cap (R=3, 95% CI)", ha="center", fontsize=8.8, fontweight="bold", color=VERMILION)
 
     pubcap_specs = [
         ("Static Synth", ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"], ORANGE),
-        ("1-way Prof. (cap)", ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"], GREEN),
-        ("Silh.-C (-K)", ["PUBCAP_UNPRUNED_R1/r0", "PUBCAP_UNPRUNED_R2/r0", "PUBCAP_UNPRUNED_R3/r0"], SKY),
-        ("Silh.-C (-R)", ["PUBCAP_OMEGA1_EQDELTA_R1/r0", "PUBCAP_OMEGA1_EQDELTA_R2/r0", "PUBCAP_OMEGA1_EQDELTA_R3/r0"], PURPLE),
-        ("Silh.-C (-W)", ["PUBCAP_FLATW_R1/r0", "PUBCAP_FLATW_R2/r0", "PUBCAP_FLATW_R3/r0"], VERMILION),
-        ("Silhouette-C", ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"], BLUE),
+        ("1-way Cap", ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"], GREEN),
+        ("w/o Key prune", ["PUBCAP_UNPRUNED_R1/r0", "PUBCAP_UNPRUNED_R2/r0", "PUBCAP_UNPRUNED_R3/r0"], SKY),
+        ("w/o Role wts", ["PUBCAP_OMEGA1_EQDELTA_R1/r0", "PUBCAP_OMEGA1_EQDELTA_R2/r0", "PUBCAP_OMEGA1_EQDELTA_R3/r0"], PURPLE),
+        ("Flat wts", ["PUBCAP_FLATW_R1/r0", "PUBCAP_FLATW_R2/r0", "PUBCAP_FLATW_R3/r0"], VERMILION),
+        ("Silh.-C", ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"], BLUE),
     ]
     x_bars = [5.4, 6.4, 7.4, 8.4, 9.4, 10.4]
     for xb, (lbl, conds, col) in zip(x_bars, pubcap_specs):
@@ -280,11 +344,11 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
         m = 100.0 * mean(v)
         ax.bar([xb], [m], width=0.72, color=col, alpha=0.84 if col != BLUE else 0.96, edgecolor=DARK, linewidth=0.6, zorder=3)
         ax.errorbar([xb], [m], yerr=[[m - 100.0 * lo], [100.0 * hi - m]], fmt="none", ecolor=DARK, capsize=2.5, linewidth=0.9, zorder=4)
-        if lbl == "Silhouette-C":
+        if lbl == "Silh.-C":
             ax.annotate(f"{m:.1f}%", (xb, 100.0 * hi), xytext=(0, 3), textcoords="offset points", ha="center",
-                        fontsize=8.7, color=BLUE, fontweight="bold")
+                        fontsize=8.6, color=BLUE, fontweight="bold")
 
-    # Uncapped R=3 Silhouette-V comparison bar (x=11.7)
+    # Uncapped R=3 w/o Values comparison bar (x=11.7)
     ax.axvline(11.05, color="#CCCCCC", linestyle=":", linewidth=1.0, zorder=1)
     noval_conds = ["DG8_NOVAL_POST_R1/r0", "DG8_NOVAL_POST_R2/r0", "DG8_NOVAL_POST_R3/r0"]
     v_nv = vec(bird_out, noval_conds, bird_440)
@@ -293,25 +357,25 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     ax.bar([11.7], [m_nv], width=0.72, color="#7F8C8D", alpha=0.90, edgecolor=DARK, linewidth=0.6, hatch="//", zorder=3)
     ax.errorbar([11.7], [m_nv], yerr=[[m_nv - 100.0 * lo_nv], [100.0 * hi_nv - m_nv]], fmt="none", ecolor=DARK, capsize=2.5, linewidth=0.9, zorder=4)
     ax.annotate(f"{m_nv:.1f}%", (11.7, 100.0 * hi_nv), xytext=(0, 3), textcoords="offset points", ha="center",
-                fontsize=8.6, color=DARK, fontweight="bold")
-    ax.text(11.7, 52.8, "Uncapped\nSilhouette-V", ha="center", va="bottom", fontsize=8.4, fontweight="bold", color="#555555")
+                fontsize=8.5, color=DARK, fontweight="bold")
+    ax.text(11.7, 52.8, "Uncapped\nw/o Values", ha="center", va="bottom", fontsize=8.3, fontweight="bold", color="#555555")
 
     ax.set_xticks(x_curve + [4] + x_bars + [11.7])
     ax.set_xticklabels(
-        ["$\\varepsilon=1$", "$\\varepsilon=2$", "$\\varepsilon=4$", "$\\varepsilon=8$", "Silhouette-N"] + [s[0] for s in pubcap_specs] + ["Silhouette-V"],
-        fontsize=8.2, rotation=28, ha="right",
+        ["$\\varepsilon_T=1$", "$\\varepsilon_T=2$", "$\\varepsilon_T=4$", "$\\varepsilon_T=8$", "Noiseless"] + [s[0] for s in pubcap_specs] + ["w/o Values"],
+        fontsize=8.1, rotation=32, ha="right",
     )
-    ax.set_xlim(-0.55, 12.35)
-    ax.set_ylim(27, 59.5)
+    ax.set_xlim(-0.55, 12.45)
+    ax.set_ylim(18.5, 62.5)
     ax.set_ylabel("BIRD Official Set EX (%)")
-    ax.set_title("(a) Budget Sweep (R=1), Cap_pub & Silhouette-V")
+    ax.set_title("(a) Budget Sweep (R=1), Cap_pub & w/o Values")
     leg_a = [
         Line2D([0], [0], color=BLUE, marker="o", lw=1.8, markersize=5, label="R=1 curve ($\\varepsilon_T=1..8$)"),
-        Line2D([0], [0], color=SKY, marker="D", lw=1.2, ls=":", markeredgecolor=DARK, markersize=5, label="Silhouette-N ($R=1$)"),
+        Line2D([0], [0], color=SKY, marker="D", lw=1.2, ls=":", markeredgecolor=DARK, markersize=5, label="Noiseless ($R=1$)"),
         Patch(facecolor=BLUE, edgecolor=DARK, alpha=0.92, label="Equal Cap_pub (R=3, 95% CI)"),
-        Patch(facecolor="#7F8C8D", edgecolor=DARK, hatch="//", alpha=0.9, label="Uncapped Silhouette-V (40.5%)"),
+        Patch(facecolor="#7F8C8D", edgecolor=DARK, hatch="//", alpha=0.9, label="Uncapped w/o Values (40.5%)"),
     ]
-    ax.legend(handles=leg_a, loc="lower right", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=8.1)
+    ax.legend(handles=leg_a, loc="lower left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=7.5)
 
     # Panel b: M=20 retention over eps in {1, 2, 4, 8}
     ax = axes[1]
@@ -350,8 +414,8 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     ax.bar(x_idx - w / 2, dg_m, width=w, yerr=dg_sd, capsize=3, color=BLUE, edgecolor=DARK, linewidth=0.6, label="Silhouette", zorder=3)
     ax.bar(x_idx + w / 2, fw_m, width=w, yerr=fw_sd, capsize=3, color=ORANGE, edgecolor=DARK, linewidth=0.6, label="Flat weights", zorder=3)
     for i in range(len(bins)):
-        ax.text(x_idx[i] - w / 2, dg_m[i] + dg_sd[i] + 1.5, f"{dg_m[i]:.1f}%", ha="center", va="bottom", fontsize=9.0, color=BLUE, fontweight="bold")
-        ax.text(x_idx[i] + w / 2, fw_m[i] + fw_sd[i] + 1.5, f"{fw_m[i]:.1f}%", ha="center", va="bottom", fontsize=9.0, color="#A86800", fontweight="bold")
+        ax.text(x_idx[i] - w / 2 - 0.03, dg_m[i] + dg_sd[i] + 1.5, f"{dg_m[i]:.1f}%", ha="center", va="bottom", fontsize=8.6, color=BLUE, fontweight="bold")
+        ax.text(x_idx[i] + w / 2 + 0.03, fw_m[i] + fw_sd[i] + 1.5, f"{fw_m[i]:.1f}%", ha="center", va="bottom", fontsize=8.6, color="#A86800", fontweight="bold")
     x_labels = [f"{b}\n(n={bkt['DG-v3'][b]['n_tables']} tbls)" for b in bins]
     ax.set_xticks(x_idx)
     ax.set_xticklabels(x_labels, fontsize=9.6)
