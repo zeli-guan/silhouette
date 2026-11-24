@@ -142,10 +142,10 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
         ("DP-Query", bm_tok("bird", ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]),
          bm_ex("bird", bird_440, ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]),
          "idp", (9, -3), "left", "center"),
-        ("1-/2-way Synth", pa_2way_x, pa_2way_y, "synth", (-9, 8), "right", "bottom"),
+        ("1-/2-way Synth", pa_2way_x, pa_2way_y, "synth", (4, -13), "center", "top"),
         ("", pa_1way_x, pa_1way_y, "synth", (0, 0), "center", "center"),
         ("FK Synth", bm_tok("bird", ["SYN8_FK_DAG_R1/r0"]), bm_ex("bird", bird_440, "SYN8_FK_DAG_R1/r0"),
-         "synth", (9, -5), "left", "center"),
+         "synth", (9, -3), "left", "center"),
         ("Select 3", bm_tok("bird", ["S3/r0"]), bm_ex("bird", bird_440, "S3/r0"),
          "raw", (8, 5), "left", "bottom"),
         ("DAWA+DP-SIPS", bm_tok("bird", ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]),
@@ -161,7 +161,7 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
 
     pb_points = [
         ("2-way Synth", bm_tok("ehrsql_600", ["SYN8P/r0"]), bm_ex("ehrsql_600", ehr_600, "SYN8P/r0"),
-         "synth", (-4, 10), "right", "bottom"),
+         "synth", (0, 10), "center", "bottom"),
         ("1-way Synth", bm_tok("ehrsql_600", ["IND8P/r0"]), bm_ex("ehrsql_600", ehr_600, "IND8P/r0"),
          "synth", (4, -12), "left", "top"),
         ("Select 3", bm_tok("ehrsql_600", ["S3/r0"]), bm_ex("ehrsql_600", ehr_600, "S3/r0"),
