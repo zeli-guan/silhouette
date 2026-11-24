@@ -131,8 +131,8 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
     pc_schema_y = bm_ex("bird", bird_440, "SOL_C0/r0")
     pc_full_y = bm_ex("bird", bird_440, "SOL_C4/r0")
 
-    # Clean Table 2 & Table 7 representative points ONLY
-    # tuple: (label, x, y, kind, (dx, dy), ha, va)
+    # Clean Table 2 & Table 7 representative points ONLY, with exact 95% CIs
+    # tuple: (label, x, y, lo, hi, kind, anchor_y_mode, (dx, dy), ha, va)
     pa_2way_x = bm_tok("bird", ["SYN8/r0"])
     pa_2way_y = bm_ex("bird", bird_440, "SYN8/r0")
     pa_1way_x = bm_tok("bird", ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"])
@@ -141,66 +141,66 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
     pa_points = [
         ("DP-Query", bm_tok("bird", ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]),
          bm_ex("bird", bird_440, ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]),
-         "idp", (9, -3), "left", "center"),
-        ("1-/2-way Synth", pa_2way_x, pa_2way_y, "synth", (4, -13), "center", "top"),
-        ("", pa_1way_x, pa_1way_y, "synth", (0, 0), "center", "center"),
-        ("FK Synth", bm_tok("bird", ["SYN8_FK_DAG_R1/r0"]), bm_ex("bird", bird_440, "SYN8_FK_DAG_R1/r0"),
-         "synth", (9, -3), "left", "center"),
+         29.4, 36.9, "idp", "pt", (-8, 0), "right", "center"),
+        ("1-/2-way Synth†", pa_2way_x, pa_2way_y, 32.5, 41.6, "synth", "hi", (-3, 4), "right", "bottom"),
+        ("", pa_1way_x, pa_1way_y, 33.3, 40.7, "synth", "pt", (0, 0), "center", "center"),
+        ("FK Synth†", bm_tok("bird", ["SYN8_FK_DAG_R1/r0"]), bm_ex("bird", bird_440, "SYN8_FK_DAG_R1/r0"),
+         33.2, 42.3, "synth", "pt", (10, -21), "left", "top"),
         ("Select 3", bm_tok("bird", ["S3/r0"]), bm_ex("bird", bird_440, "S3/r0"),
-         "raw", (8, 5), "left", "bottom"),
+         35.7, 44.8, "raw", "pt", (9, -2), "left", "center"),
         ("DAWA+DP-SIPS", bm_tok("bird", ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]),
          bm_ex("bird", bird_440, ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]),
-         "u1d", (-8, -13), "right", "top"),
+         41.7, 49.3, "u1d", "hi", (-4, 4), "right", "bottom"),
         ("1-way Profile", bm_tok("bird", ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]),
          bm_ex("bird", bird_440, ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]),
-         "u1d", (0, -14), "center", "top"),
+         42.1, 50.0, "u1d", "lo", (0, -5), "center", "top"),
         ("Silhouette", bm_tok("bird", ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]),
          bm_ex("bird", bird_440, ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]),
-         "silh", (0, 15), "center", "bottom"),
+         43.0, 50.9, "silh", "hi", (0, 4), "center", "bottom"),
     ]
 
     pb_points = [
-        ("2-way Synth", bm_tok("ehrsql_600", ["SYN8P/r0"]), bm_ex("ehrsql_600", ehr_600, "SYN8P/r0"),
-         "synth", (0, 10), "center", "bottom"),
-        ("1-way Synth", bm_tok("ehrsql_600", ["IND8P/r0"]), bm_ex("ehrsql_600", ehr_600, "IND8P/r0"),
-         "synth", (4, -12), "left", "top"),
+        ("2-way Synth†", bm_tok("ehrsql_600", ["SYN8P/r0"]), bm_ex("ehrsql_600", ehr_600, "SYN8P/r0"),
+         41.0, 49.0, "synth", "pt", (-9, 0), "right", "center"),
+        ("1-way Synth†", bm_tok("ehrsql_600", ["IND8P/r0"]), bm_ex("ehrsql_600", ehr_600, "IND8P/r0"),
+         40.5, 48.5, "synth", "lo", (4, -5), "left", "top"),
         ("Select 3", bm_tok("ehrsql_600", ["S3/r0"]), bm_ex("ehrsql_600", ehr_600, "S3/r0"),
-         "raw", (10, -8), "left", "top"),
-        ("DAWA+DP-SIPS", bm_tok("ehrsql_600", ["DAWA_CLEAN_EHR600_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "DAWA_CLEAN_EHR600_R1/r0"),
-         "u1d", (-6, 10), "right", "bottom"),
-        ("1-way Profile", bm_tok("ehrsql_600", ["EHR_IND8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_IND8_V3_R1/r0"),
-         "u1d", (0, -15), "center", "top"),
+         42.5, 50.5, "raw", "pt", (10, -2), "left", "center"),
+        ("DAWA+DP-SIPS†", bm_tok("ehrsql_600", ["DAWA_CLEAN_EHR600_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "DAWA_CLEAN_EHR600_R1/r0"),
+         47.0, 55.0, "u1d", "pt", (-10, 8), "right", "bottom"),
+        ("1-way Profile†", bm_tok("ehrsql_600", ["EHR_IND8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_IND8_V3_R1/r0"),
+         45.3, 53.3, "u1d", "lo", (0, -5), "center", "top"),
         ("Silhouette", bm_tok("ehrsql_600", ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]),
          bm_ex("ehrsql_600", ehr_600, ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]),
-         "silh", (-4, 15), "center", "bottom"),
+         46.0, 53.2, "silh", "hi", (-2, 4), "center", "bottom"),
     ]
 
     pc_points = [
-        ("Static Synth", bm_tok("bird", ["SOL_PUBCAP_IND8_ROWS_R1/r0"]), bm_ex("bird", bird_440, "SOL_PUBCAP_IND8_ROWS_R1/r0"),
-         "synth", (4, -13), "left", "top"),
-        ("1-way Synth", bm_tok("bird", ["SOL_IND8_PROBE_R1/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROBE_R1/r0"),
-         "synth", (0, -14), "center", "top"),
-        ("1-way Profile", bm_tok("bird", ["SOL_IND8_PROMPT/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROMPT/r0"),
-         "u1d", (11, 0), "left", "center"),
+        ("Static Synth†", bm_tok("bird", ["SOL_PUBCAP_IND8_ROWS_R1/r0"]), bm_ex("bird", bird_440, "SOL_PUBCAP_IND8_ROWS_R1/r0"),
+         73.6, 81.4, "synth", "pt", (-9, -10), "right", "top"),
+        ("1-way Synth†", bm_tok("bird", ["SOL_IND8_PROBE_R1/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROBE_R1/r0"),
+         74.8, 82.5, "synth", "lo", (0, -5), "center", "top"),
+        ("1-way Profile†", bm_tok("bird", ["SOL_IND8_PROMPT/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROMPT/r0"),
+         75.0, 82.7, "u1d", "pt", (10, -2), "left", "center"),
         ("Silhouette", bm_tok("bird", ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]),
          bm_ex("bird", bird_440, ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]),
-         "silh", (10, 12), "left", "bottom"),
+         76.5, 83.6, "silh", "pt", (-15, 16), "right", "bottom"),
     ]
 
-    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.4))
+    fig, axes = plt.subplots(1, 3, figsize=(13.6, 4.45))
     panels = [
         (axes[0], pa_points, pa_schema_y, (10550, pa_schema_y + 0.42, "right", "bottom"),
-         pa_full_y, (3050, pa_full_y + 0.42, "left", "bottom"),
+         pa_full_y, (2550, pa_full_y + 0.42, "left", "bottom"),
          "(a) BIRD Mini-Dev (n=440, glm-5.3)", "Mean total tokens / question", "Official Set Execution Accuracy (%)",
-         (2900, 10800), (28.0, 52.0)),
-        (axes[1], pb_points, pb_schema_y, (15900, pb_schema_y + 0.35, "right", "bottom"),
-         pb_full_y, (6050, pb_full_y + 0.35, "left", "bottom"),
+         (2400, 10850), (28.0, 53.8)),
+        (axes[1], pb_points, pb_schema_y, (16200, pb_schema_y + 0.35, "right", "bottom"),
+         pb_full_y, (3850, pb_full_y + 0.35, "left", "bottom"),
          "(b) EHRSQL Confirm. (n=600, glm-5.3)", "Mean total tokens / question", "Official Execution Accuracy (%)",
-         (5800, 16200), (34.5, 55.2)),
-        (axes[2], pc_points, pc_schema_y, (66000, pc_schema_y + 0.25, "right", "bottom"),
-         pc_full_y, (66000, pc_full_y + 0.25, "right", "bottom"),
+         (3600, 16500), (34.8, 56.8)),
+        (axes[2], pc_points, pc_schema_y, (66300, pc_schema_y + 0.25, "right", "bottom"),
+         pc_full_y, (66300, pc_full_y + 0.25, "right", "bottom"),
          "(c) BIRD Mini-Dev (n=440, gpt-6.1-sol cached)", "Mean total tokens / question (incl. cached)", "Official Set Execution Accuracy (%)",
-         (49200, 66500), (71.0, 86.2)),
+         (46200, 66800), (71.2, 86.2)),
     ]
 
     for ax, pts, sch_y, sch_pos, ful_y, ful_pos, title, xlabel, ylabel, xlim, ylim in panels:
@@ -214,33 +214,34 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
                 fontsize=8.6, fontweight="bold", color=COL_FULL_LINE, zorder=3,
                 bbox=dict(facecolor="white", alpha=0.88, edgecolor="none", pad=0.8))
 
-        for label, x, y, kind, (dx, dy), ha, va in pts:
+        style_map = {
+            "silh": (COL_SILH, COL_SILH_TXT),
+            "u1d": (COL_1D, COL_1D_TXT),
+            "idp": (COL_IDP, COL_IDP_TXT),
+            "synth": (COL_SYNTH, COL_SYNTH_TXT),
+            "raw": (COL_RAW, COL_RAW_TXT),
+        }
+
+        for label, x, y, lo, hi, kind, anchor_mode, (dx, dy), ha, va in pts:
+            col, txt_col = style_map[kind]
             if kind == "silh":
+                ax.errorbar([x], [y], yerr=[[y - lo], [hi - y]], fmt="none", ecolor=COL_SILH,
+                            elinewidth=1.35, capsize=2.4, alpha=0.58, zorder=4)
                 ax.scatter([x], [y], s=520, marker="o", color=COL_SILH_HALO, alpha=0.22, edgecolor="none", zorder=6)
                 ax.scatter([x], [y], s=230, marker="*", color=COL_SILH, edgecolor="white", linewidth=0.9, zorder=7)
-                if label:
-                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
-                                fontsize=10.0, fontweight="bold", color=COL_SILH_TXT, zorder=8)
-            elif kind == "u1d":
-                ax.scatter([x], [y], s=64, marker="o", color=COL_1D, edgecolor="white", linewidth=0.8, zorder=5)
-                if label:
-                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
-                                fontsize=8.9, color=COL_1D_TXT, zorder=6)
-            elif kind == "idp":
-                ax.scatter([x], [y], s=60, marker="D", color=COL_IDP, edgecolor="white", linewidth=0.8, zorder=5)
-                if label:
-                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
-                                fontsize=8.9, color=COL_IDP_TXT, zorder=6)
-            elif kind == "synth":
-                ax.scatter([x], [y], s=68, marker="^", color=COL_SYNTH, edgecolor="white", linewidth=0.8, zorder=5)
-                if label:
-                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
-                                fontsize=8.9, color=COL_SYNTH_TXT, zorder=6)
             else:
-                ax.scatter([x], [y], s=60, marker="s", color=COL_RAW, edgecolor="white", linewidth=0.8, zorder=5)
-                if label:
-                    ax.annotate(label, (x, y), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
-                                fontsize=8.9, color=COL_RAW_TXT, zorder=6)
+                ax.errorbar([x], [y], yerr=[[y - lo], [hi - y]], fmt="none", ecolor=col,
+                            elinewidth=1.1, capsize=2.2, alpha=0.40, zorder=2)
+                mk_map = {"u1d": ("o", 64), "idp": ("D", 60), "synth": ("^", 68), "raw": ("s", 60)}
+                mk, sz = mk_map[kind]
+                ax.scatter([x], [y], s=sz, marker=mk, color=col, edgecolor="white", linewidth=0.8, zorder=5)
+
+            if label:
+                ay = hi if anchor_mode == "hi" else (lo if anchor_mode == "lo" else y)
+                fs = 10.0 if kind == "silh" else 8.8
+                fw = "bold" if kind == "silh" else "normal"
+                ax.annotate(label, (x, ay), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
+                            fontsize=fs, fontweight=fw, color=txt_col, zorder=8)
 
         ax.set_title(title, pad=8)
         ax.set_xlabel(xlabel)
