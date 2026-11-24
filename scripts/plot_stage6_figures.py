@@ -142,7 +142,7 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
         ("DP-Query", bm_tok("bird", ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]),
          bm_ex("bird", bird_440, ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]),
          29.4, 36.9, "idp", "pt", (-8, 0), "right", "center"),
-        ("1-/2-way Synth†", pa_2way_x, pa_2way_y, 32.5, 41.6, "synth", "hi", (-3, 4), "right", "bottom"),
+        ("1-/2-way Synth†", pa_2way_x, pa_2way_y, 32.5, 41.6, "synth", (2620, 42.3), (0, 0), "left", "bottom"),
         ("", pa_1way_x, pa_1way_y, 33.3, 40.7, "synth", "pt", (0, 0), "center", "center"),
         ("FK Synth†", bm_tok("bird", ["SYN8_FK_DAG_R1/r0"]), bm_ex("bird", bird_440, "SYN8_FK_DAG_R1/r0"),
          33.2, 42.3, "synth", "pt", (10, -21), "left", "top"),
@@ -237,10 +237,14 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
                 ax.scatter([x], [y], s=sz, marker=mk, color=col, edgecolor="white", linewidth=0.8, zorder=5)
 
             if label:
-                ay = hi if anchor_mode == "hi" else (lo if anchor_mode == "lo" else y)
+                if isinstance(anchor_mode, tuple):
+                    ax_x, ay = anchor_mode
+                else:
+                    ax_x = x
+                    ay = hi if anchor_mode == "hi" else (lo if anchor_mode == "lo" else y)
                 fs = 10.0 if kind == "silh" else 8.8
                 fw = "bold" if kind == "silh" else "normal"
-                ax.annotate(label, (x, ay), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
+                ax.annotate(label, (ax_x, ay), xytext=(dx, dy), textcoords="offset points", ha=ha, va=va,
                             fontsize=fs, fontweight=fw, color=txt_col, zorder=8)
 
         ax.set_title(title, pad=8)
