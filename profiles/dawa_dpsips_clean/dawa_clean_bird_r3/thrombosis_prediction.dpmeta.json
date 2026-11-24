@@ -1,0 +1,1748 @@
+{
+  "db_id": "thrombosis_prediction",
+  "mechanism": "DAWA+DP-SIPS",
+  "epsilon": 8,
+  "epsilon_frac": "8/1",
+  "delta": "1/1000000",
+  "delta_conversion": "1/2000000",
+  "delta_tail_budget": "1/2000000",
+  "rho_table": "874796954851759/1000000000000000",
+  "rho_table_num": 874796954851759,
+  "rho_table_den": 1000000000000000,
+  "rng_source": "os_csprng",
+  "sha256": "b3cc3444f4103611d3d66da1304979caf813a068d2d12837a4c8e067295cd8ab",
+  "parameters": [
+    {
+      "r_j": "3/1",
+      "share": "1/53",
+      "rho": "874796954851759/53000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 53000000000000000,
+      "sigma2": "26500000000000000/874796954851759",
+      "sigma2_num": 26500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/159",
+      "rho": "874796954851759/159000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 159000000000000000,
+      "sigma2": "79500000000000000/874796954851759",
+      "sigma2_num": 79500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/52000000",
+      "delta_num": 1,
+      "delta_den": 52000000,
+      "sensitivity2": 1,
+      "tau": 53,
+      "tail_lower": "89860601873333/5000000000000000000000",
+      "tail_upper": "179721203746667/10000000000000000000000",
+      "prev_tail_lower": "162242400648289/5000000000000000000000",
+      "prev_tail_upper": "324484801296579/10000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/159",
+      "rho": "874796954851759/79500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 79500000000000000,
+      "sigma2": "39750000000000000/874796954851759",
+      "sigma2_num": 39750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/53",
+      "rho": "874796954851759/53000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 53000000000000000,
+      "sigma2": "26500000000000000/874796954851759",
+      "sigma2_num": 26500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/52000000",
+      "delta_num": 1,
+      "delta_den": 52000000,
+      "sensitivity2": 1,
+      "tau": 31,
+      "tail_lower": "143554883556829/10000000000000000000000",
+      "tail_upper": "14355488355683/1000000000000000000000",
+      "prev_tail_lower": "199936032183317/5000000000000000000000",
+      "prev_tail_upper": "79974412873327/2000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/177",
+      "rho": "874796954851759/177000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 177000000000000000,
+      "sigma2": "88500000000000000/874796954851759",
+      "sigma2_num": 88500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/531",
+      "rho": "874796954851759/531000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 531000000000000000,
+      "sigma2": "265500000000000000/874796954851759",
+      "sigma2_num": 265500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/176000000",
+      "delta_num": 1,
+      "delta_den": 176000000,
+      "sensitivity2": 1,
+      "tau": 100,
+      "tail_lower": "557597488065553/100000000000000000000000",
+      "tail_upper": "278798744032777/50000000000000000000000",
+      "prev_tail_lower": "390071578772821/50000000000000000000000",
+      "prev_tail_upper": "780143157545643/100000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/531",
+      "rho": "874796954851759/265500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 265500000000000000,
+      "sigma2": "132750000000000000/874796954851759",
+      "sigma2_num": 132750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/177",
+      "rho": "874796954851759/177000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 177000000000000000,
+      "sigma2": "88500000000000000/874796954851759",
+      "sigma2_num": 88500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/176000000",
+      "delta_num": 1,
+      "delta_den": 176000000,
+      "sensitivity2": 1,
+      "tau": 58,
+      "tail_lower": "26771076481429/5000000000000000000000",
+      "tail_upper": "535421529628581/100000000000000000000000",
+      "prev_tail_lower": "59796562666441/6250000000000000000000",
+      "prev_tail_upper": "956745002663057/100000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/29",
+      "rho": "874796954851759/29000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 29000000000000000,
+      "sigma2": "14500000000000000/874796954851759",
+      "sigma2_num": 14500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/87",
+      "rho": "874796954851759/87000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 87000000000000000,
+      "sigma2": "43500000000000000/874796954851759",
+      "sigma2_num": 43500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/28000000",
+      "delta_num": 1,
+      "delta_den": 28000000,
+      "sensitivity2": 1,
+      "tau": 39,
+      "tail_lower": "232405116680133/10000000000000000000000",
+      "tail_upper": "116202558340067/5000000000000000000000",
+      "prev_tail_lower": "512193003511973/10000000000000000000000",
+      "prev_tail_upper": "256096501755987/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/87",
+      "rho": "874796954851759/43500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 43500000000000000,
+      "sigma2": "21750000000000000/874796954851759",
+      "sigma2_num": 21750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/29",
+      "rho": "874796954851759/29000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 29000000000000000,
+      "sigma2": "14500000000000000/874796954851759",
+      "sigma2_num": 14500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/28000000",
+      "delta_num": 1,
+      "delta_den": 28000000,
+      "sensitivity2": 1,
+      "tau": 23,
+      "tail_lower": "75497663823981/5000000000000000000000",
+      "tail_upper": "150995327647963/10000000000000000000000",
+      "prev_tail_lower": "37384158582823/625000000000000000000",
+      "prev_tail_upper": "598146537325169/10000000000000000000000"
+    }
+  ],
+  "tables": {
+    "Examination": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 53,
+      "n_histograms": 26,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "ID",
+          0
+        ],
+        [
+          "distinct_count",
+          "ID",
+          0
+        ],
+        [
+          "bins_stage1",
+          "ID",
+          1
+        ],
+        [
+          "bins_stage2",
+          "ID",
+          2
+        ],
+        [
+          "values",
+          "ID",
+          3
+        ],
+        [
+          "null_count",
+          "Examination Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "Examination Date",
+          0
+        ],
+        [
+          "patterns",
+          "Examination Date",
+          3
+        ],
+        [
+          "values",
+          "Examination Date",
+          3
+        ],
+        [
+          "null_count",
+          "aCL IgG",
+          0
+        ],
+        [
+          "distinct_count",
+          "aCL IgG",
+          0
+        ],
+        [
+          "bins_stage1",
+          "aCL IgG",
+          1
+        ],
+        [
+          "bins_stage2",
+          "aCL IgG",
+          2
+        ],
+        [
+          "values",
+          "aCL IgG",
+          3
+        ],
+        [
+          "null_count",
+          "aCL IgM",
+          0
+        ],
+        [
+          "distinct_count",
+          "aCL IgM",
+          0
+        ],
+        [
+          "bins_stage1",
+          "aCL IgM",
+          1
+        ],
+        [
+          "bins_stage2",
+          "aCL IgM",
+          2
+        ],
+        [
+          "values",
+          "aCL IgM",
+          3
+        ],
+        [
+          "null_count",
+          "ANA",
+          0
+        ],
+        [
+          "distinct_count",
+          "ANA",
+          0
+        ],
+        [
+          "bins_stage1",
+          "ANA",
+          1
+        ],
+        [
+          "bins_stage2",
+          "ANA",
+          2
+        ],
+        [
+          "values",
+          "ANA",
+          3
+        ],
+        [
+          "null_count",
+          "ANA Pattern",
+          0
+        ],
+        [
+          "distinct_count",
+          "ANA Pattern",
+          0
+        ],
+        [
+          "patterns",
+          "ANA Pattern",
+          3
+        ],
+        [
+          "values",
+          "ANA Pattern",
+          3
+        ],
+        [
+          "null_count",
+          "aCL IgA",
+          0
+        ],
+        [
+          "distinct_count",
+          "aCL IgA",
+          0
+        ],
+        [
+          "bins_stage1",
+          "aCL IgA",
+          1
+        ],
+        [
+          "bins_stage2",
+          "aCL IgA",
+          2
+        ],
+        [
+          "values",
+          "aCL IgA",
+          3
+        ],
+        [
+          "null_count",
+          "Diagnosis",
+          0
+        ],
+        [
+          "distinct_count",
+          "Diagnosis",
+          0
+        ],
+        [
+          "patterns",
+          "Diagnosis",
+          3
+        ],
+        [
+          "values",
+          "Diagnosis",
+          3
+        ],
+        [
+          "null_count",
+          "KCT",
+          0
+        ],
+        [
+          "distinct_count",
+          "KCT",
+          0
+        ],
+        [
+          "patterns",
+          "KCT",
+          3
+        ],
+        [
+          "values",
+          "KCT",
+          3
+        ],
+        [
+          "null_count",
+          "RVVT",
+          0
+        ],
+        [
+          "distinct_count",
+          "RVVT",
+          0
+        ],
+        [
+          "patterns",
+          "RVVT",
+          3
+        ],
+        [
+          "values",
+          "RVVT",
+          3
+        ],
+        [
+          "null_count",
+          "LAC",
+          0
+        ],
+        [
+          "distinct_count",
+          "LAC",
+          0
+        ],
+        [
+          "patterns",
+          "LAC",
+          3
+        ],
+        [
+          "values",
+          "LAC",
+          3
+        ],
+        [
+          "null_count",
+          "Symptoms",
+          0
+        ],
+        [
+          "distinct_count",
+          "Symptoms",
+          0
+        ],
+        [
+          "patterns",
+          "Symptoms",
+          3
+        ],
+        [
+          "values",
+          "Symptoms",
+          3
+        ],
+        [
+          "null_count",
+          "Thrombosis",
+          0
+        ],
+        [
+          "distinct_count",
+          "Thrombosis",
+          0
+        ],
+        [
+          "bins_stage1",
+          "Thrombosis",
+          1
+        ],
+        [
+          "bins_stage2",
+          "Thrombosis",
+          2
+        ],
+        [
+          "values",
+          "Thrombosis",
+          3
+        ]
+      ]
+    },
+    "Laboratory": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 177,
+      "n_histograms": 88,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "ID",
+          4
+        ],
+        [
+          "distinct_count",
+          "ID",
+          4
+        ],
+        [
+          "bins_stage1",
+          "ID",
+          5
+        ],
+        [
+          "bins_stage2",
+          "ID",
+          6
+        ],
+        [
+          "values",
+          "ID",
+          7
+        ],
+        [
+          "null_count",
+          "Date",
+          4
+        ],
+        [
+          "distinct_count",
+          "Date",
+          4
+        ],
+        [
+          "patterns",
+          "Date",
+          7
+        ],
+        [
+          "values",
+          "Date",
+          7
+        ],
+        [
+          "null_count",
+          "GOT",
+          4
+        ],
+        [
+          "distinct_count",
+          "GOT",
+          4
+        ],
+        [
+          "bins_stage1",
+          "GOT",
+          5
+        ],
+        [
+          "bins_stage2",
+          "GOT",
+          6
+        ],
+        [
+          "values",
+          "GOT",
+          7
+        ],
+        [
+          "null_count",
+          "GPT",
+          4
+        ],
+        [
+          "distinct_count",
+          "GPT",
+          4
+        ],
+        [
+          "bins_stage1",
+          "GPT",
+          5
+        ],
+        [
+          "bins_stage2",
+          "GPT",
+          6
+        ],
+        [
+          "values",
+          "GPT",
+          7
+        ],
+        [
+          "null_count",
+          "LDH",
+          4
+        ],
+        [
+          "distinct_count",
+          "LDH",
+          4
+        ],
+        [
+          "bins_stage1",
+          "LDH",
+          5
+        ],
+        [
+          "bins_stage2",
+          "LDH",
+          6
+        ],
+        [
+          "values",
+          "LDH",
+          7
+        ],
+        [
+          "null_count",
+          "ALP",
+          4
+        ],
+        [
+          "distinct_count",
+          "ALP",
+          4
+        ],
+        [
+          "bins_stage1",
+          "ALP",
+          5
+        ],
+        [
+          "bins_stage2",
+          "ALP",
+          6
+        ],
+        [
+          "values",
+          "ALP",
+          7
+        ],
+        [
+          "null_count",
+          "TP",
+          4
+        ],
+        [
+          "distinct_count",
+          "TP",
+          4
+        ],
+        [
+          "bins_stage1",
+          "TP",
+          5
+        ],
+        [
+          "bins_stage2",
+          "TP",
+          6
+        ],
+        [
+          "values",
+          "TP",
+          7
+        ],
+        [
+          "null_count",
+          "ALB",
+          4
+        ],
+        [
+          "distinct_count",
+          "ALB",
+          4
+        ],
+        [
+          "bins_stage1",
+          "ALB",
+          5
+        ],
+        [
+          "bins_stage2",
+          "ALB",
+          6
+        ],
+        [
+          "values",
+          "ALB",
+          7
+        ],
+        [
+          "null_count",
+          "UA",
+          4
+        ],
+        [
+          "distinct_count",
+          "UA",
+          4
+        ],
+        [
+          "bins_stage1",
+          "UA",
+          5
+        ],
+        [
+          "bins_stage2",
+          "UA",
+          6
+        ],
+        [
+          "values",
+          "UA",
+          7
+        ],
+        [
+          "null_count",
+          "UN",
+          4
+        ],
+        [
+          "distinct_count",
+          "UN",
+          4
+        ],
+        [
+          "bins_stage1",
+          "UN",
+          5
+        ],
+        [
+          "bins_stage2",
+          "UN",
+          6
+        ],
+        [
+          "values",
+          "UN",
+          7
+        ],
+        [
+          "null_count",
+          "CRE",
+          4
+        ],
+        [
+          "distinct_count",
+          "CRE",
+          4
+        ],
+        [
+          "bins_stage1",
+          "CRE",
+          5
+        ],
+        [
+          "bins_stage2",
+          "CRE",
+          6
+        ],
+        [
+          "values",
+          "CRE",
+          7
+        ],
+        [
+          "null_count",
+          "T-BIL",
+          4
+        ],
+        [
+          "distinct_count",
+          "T-BIL",
+          4
+        ],
+        [
+          "bins_stage1",
+          "T-BIL",
+          5
+        ],
+        [
+          "bins_stage2",
+          "T-BIL",
+          6
+        ],
+        [
+          "values",
+          "T-BIL",
+          7
+        ],
+        [
+          "null_count",
+          "T-CHO",
+          4
+        ],
+        [
+          "distinct_count",
+          "T-CHO",
+          4
+        ],
+        [
+          "bins_stage1",
+          "T-CHO",
+          5
+        ],
+        [
+          "bins_stage2",
+          "T-CHO",
+          6
+        ],
+        [
+          "values",
+          "T-CHO",
+          7
+        ],
+        [
+          "null_count",
+          "TG",
+          4
+        ],
+        [
+          "distinct_count",
+          "TG",
+          4
+        ],
+        [
+          "bins_stage1",
+          "TG",
+          5
+        ],
+        [
+          "bins_stage2",
+          "TG",
+          6
+        ],
+        [
+          "values",
+          "TG",
+          7
+        ],
+        [
+          "null_count",
+          "CPK",
+          4
+        ],
+        [
+          "distinct_count",
+          "CPK",
+          4
+        ],
+        [
+          "bins_stage1",
+          "CPK",
+          5
+        ],
+        [
+          "bins_stage2",
+          "CPK",
+          6
+        ],
+        [
+          "values",
+          "CPK",
+          7
+        ],
+        [
+          "null_count",
+          "GLU",
+          4
+        ],
+        [
+          "distinct_count",
+          "GLU",
+          4
+        ],
+        [
+          "bins_stage1",
+          "GLU",
+          5
+        ],
+        [
+          "bins_stage2",
+          "GLU",
+          6
+        ],
+        [
+          "values",
+          "GLU",
+          7
+        ],
+        [
+          "null_count",
+          "WBC",
+          4
+        ],
+        [
+          "distinct_count",
+          "WBC",
+          4
+        ],
+        [
+          "bins_stage1",
+          "WBC",
+          5
+        ],
+        [
+          "bins_stage2",
+          "WBC",
+          6
+        ],
+        [
+          "values",
+          "WBC",
+          7
+        ],
+        [
+          "null_count",
+          "RBC",
+          4
+        ],
+        [
+          "distinct_count",
+          "RBC",
+          4
+        ],
+        [
+          "bins_stage1",
+          "RBC",
+          5
+        ],
+        [
+          "bins_stage2",
+          "RBC",
+          6
+        ],
+        [
+          "values",
+          "RBC",
+          7
+        ],
+        [
+          "null_count",
+          "HGB",
+          4
+        ],
+        [
+          "distinct_count",
+          "HGB",
+          4
+        ],
+        [
+          "bins_stage1",
+          "HGB",
+          5
+        ],
+        [
+          "bins_stage2",
+          "HGB",
+          6
+        ],
+        [
+          "values",
+          "HGB",
+          7
+        ],
+        [
+          "null_count",
+          "HCT",
+          4
+        ],
+        [
+          "distinct_count",
+          "HCT",
+          4
+        ],
+        [
+          "bins_stage1",
+          "HCT",
+          5
+        ],
+        [
+          "bins_stage2",
+          "HCT",
+          6
+        ],
+        [
+          "values",
+          "HCT",
+          7
+        ],
+        [
+          "null_count",
+          "PLT",
+          4
+        ],
+        [
+          "distinct_count",
+          "PLT",
+          4
+        ],
+        [
+          "bins_stage1",
+          "PLT",
+          5
+        ],
+        [
+          "bins_stage2",
+          "PLT",
+          6
+        ],
+        [
+          "values",
+          "PLT",
+          7
+        ],
+        [
+          "null_count",
+          "PT",
+          4
+        ],
+        [
+          "distinct_count",
+          "PT",
+          4
+        ],
+        [
+          "bins_stage1",
+          "PT",
+          5
+        ],
+        [
+          "bins_stage2",
+          "PT",
+          6
+        ],
+        [
+          "values",
+          "PT",
+          7
+        ],
+        [
+          "null_count",
+          "APTT",
+          4
+        ],
+        [
+          "distinct_count",
+          "APTT",
+          4
+        ],
+        [
+          "bins_stage1",
+          "APTT",
+          5
+        ],
+        [
+          "bins_stage2",
+          "APTT",
+          6
+        ],
+        [
+          "values",
+          "APTT",
+          7
+        ],
+        [
+          "null_count",
+          "FG",
+          4
+        ],
+        [
+          "distinct_count",
+          "FG",
+          4
+        ],
+        [
+          "bins_stage1",
+          "FG",
+          5
+        ],
+        [
+          "bins_stage2",
+          "FG",
+          6
+        ],
+        [
+          "values",
+          "FG",
+          7
+        ],
+        [
+          "null_count",
+          "PIC",
+          4
+        ],
+        [
+          "distinct_count",
+          "PIC",
+          4
+        ],
+        [
+          "bins_stage1",
+          "PIC",
+          5
+        ],
+        [
+          "bins_stage2",
+          "PIC",
+          6
+        ],
+        [
+          "values",
+          "PIC",
+          7
+        ],
+        [
+          "null_count",
+          "TAT",
+          4
+        ],
+        [
+          "distinct_count",
+          "TAT",
+          4
+        ],
+        [
+          "bins_stage1",
+          "TAT",
+          5
+        ],
+        [
+          "bins_stage2",
+          "TAT",
+          6
+        ],
+        [
+          "values",
+          "TAT",
+          7
+        ],
+        [
+          "null_count",
+          "TAT2",
+          4
+        ],
+        [
+          "distinct_count",
+          "TAT2",
+          4
+        ],
+        [
+          "bins_stage1",
+          "TAT2",
+          5
+        ],
+        [
+          "bins_stage2",
+          "TAT2",
+          6
+        ],
+        [
+          "values",
+          "TAT2",
+          7
+        ],
+        [
+          "null_count",
+          "U-PRO",
+          4
+        ],
+        [
+          "distinct_count",
+          "U-PRO",
+          4
+        ],
+        [
+          "patterns",
+          "U-PRO",
+          7
+        ],
+        [
+          "values",
+          "U-PRO",
+          7
+        ],
+        [
+          "null_count",
+          "IGG",
+          4
+        ],
+        [
+          "distinct_count",
+          "IGG",
+          4
+        ],
+        [
+          "bins_stage1",
+          "IGG",
+          5
+        ],
+        [
+          "bins_stage2",
+          "IGG",
+          6
+        ],
+        [
+          "values",
+          "IGG",
+          7
+        ],
+        [
+          "null_count",
+          "IGA",
+          4
+        ],
+        [
+          "distinct_count",
+          "IGA",
+          4
+        ],
+        [
+          "bins_stage1",
+          "IGA",
+          5
+        ],
+        [
+          "bins_stage2",
+          "IGA",
+          6
+        ],
+        [
+          "values",
+          "IGA",
+          7
+        ],
+        [
+          "null_count",
+          "IGM",
+          4
+        ],
+        [
+          "distinct_count",
+          "IGM",
+          4
+        ],
+        [
+          "bins_stage1",
+          "IGM",
+          5
+        ],
+        [
+          "bins_stage2",
+          "IGM",
+          6
+        ],
+        [
+          "values",
+          "IGM",
+          7
+        ],
+        [
+          "null_count",
+          "CRP",
+          4
+        ],
+        [
+          "distinct_count",
+          "CRP",
+          4
+        ],
+        [
+          "patterns",
+          "CRP",
+          7
+        ],
+        [
+          "values",
+          "CRP",
+          7
+        ],
+        [
+          "null_count",
+          "RA",
+          4
+        ],
+        [
+          "distinct_count",
+          "RA",
+          4
+        ],
+        [
+          "patterns",
+          "RA",
+          7
+        ],
+        [
+          "values",
+          "RA",
+          7
+        ],
+        [
+          "null_count",
+          "RF",
+          4
+        ],
+        [
+          "distinct_count",
+          "RF",
+          4
+        ],
+        [
+          "patterns",
+          "RF",
+          7
+        ],
+        [
+          "values",
+          "RF",
+          7
+        ],
+        [
+          "null_count",
+          "C3",
+          4
+        ],
+        [
+          "distinct_count",
+          "C3",
+          4
+        ],
+        [
+          "bins_stage1",
+          "C3",
+          5
+        ],
+        [
+          "bins_stage2",
+          "C3",
+          6
+        ],
+        [
+          "values",
+          "C3",
+          7
+        ],
+        [
+          "null_count",
+          "C4",
+          4
+        ],
+        [
+          "distinct_count",
+          "C4",
+          4
+        ],
+        [
+          "bins_stage1",
+          "C4",
+          5
+        ],
+        [
+          "bins_stage2",
+          "C4",
+          6
+        ],
+        [
+          "values",
+          "C4",
+          7
+        ],
+        [
+          "null_count",
+          "RNP",
+          4
+        ],
+        [
+          "distinct_count",
+          "RNP",
+          4
+        ],
+        [
+          "patterns",
+          "RNP",
+          7
+        ],
+        [
+          "values",
+          "RNP",
+          7
+        ],
+        [
+          "null_count",
+          "SM",
+          4
+        ],
+        [
+          "distinct_count",
+          "SM",
+          4
+        ],
+        [
+          "patterns",
+          "SM",
+          7
+        ],
+        [
+          "values",
+          "SM",
+          7
+        ],
+        [
+          "null_count",
+          "SC170",
+          4
+        ],
+        [
+          "distinct_count",
+          "SC170",
+          4
+        ],
+        [
+          "patterns",
+          "SC170",
+          7
+        ],
+        [
+          "values",
+          "SC170",
+          7
+        ],
+        [
+          "null_count",
+          "SSA",
+          4
+        ],
+        [
+          "distinct_count",
+          "SSA",
+          4
+        ],
+        [
+          "patterns",
+          "SSA",
+          7
+        ],
+        [
+          "values",
+          "SSA",
+          7
+        ],
+        [
+          "null_count",
+          "SSB",
+          4
+        ],
+        [
+          "distinct_count",
+          "SSB",
+          4
+        ],
+        [
+          "patterns",
+          "SSB",
+          7
+        ],
+        [
+          "values",
+          "SSB",
+          7
+        ],
+        [
+          "null_count",
+          "CENTROMEA",
+          4
+        ],
+        [
+          "distinct_count",
+          "CENTROMEA",
+          4
+        ],
+        [
+          "patterns",
+          "CENTROMEA",
+          7
+        ],
+        [
+          "values",
+          "CENTROMEA",
+          7
+        ],
+        [
+          "null_count",
+          "DNA",
+          4
+        ],
+        [
+          "distinct_count",
+          "DNA",
+          4
+        ],
+        [
+          "patterns",
+          "DNA",
+          7
+        ],
+        [
+          "values",
+          "DNA",
+          7
+        ],
+        [
+          "null_count",
+          "DNA-II",
+          4
+        ],
+        [
+          "distinct_count",
+          "DNA-II",
+          4
+        ],
+        [
+          "bins_stage1",
+          "DNA-II",
+          5
+        ],
+        [
+          "bins_stage2",
+          "DNA-II",
+          6
+        ],
+        [
+          "values",
+          "DNA-II",
+          7
+        ]
+      ]
+    },
+    "Patient": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 29,
+      "n_histograms": 14,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "ID",
+          8
+        ],
+        [
+          "distinct_count",
+          "ID",
+          8
+        ],
+        [
+          "bins_stage1",
+          "ID",
+          9
+        ],
+        [
+          "bins_stage2",
+          "ID",
+          10
+        ],
+        [
+          "values",
+          "ID",
+          11
+        ],
+        [
+          "null_count",
+          "SEX",
+          8
+        ],
+        [
+          "distinct_count",
+          "SEX",
+          8
+        ],
+        [
+          "patterns",
+          "SEX",
+          11
+        ],
+        [
+          "values",
+          "SEX",
+          11
+        ],
+        [
+          "null_count",
+          "Birthday",
+          8
+        ],
+        [
+          "distinct_count",
+          "Birthday",
+          8
+        ],
+        [
+          "patterns",
+          "Birthday",
+          11
+        ],
+        [
+          "values",
+          "Birthday",
+          11
+        ],
+        [
+          "null_count",
+          "Description",
+          8
+        ],
+        [
+          "distinct_count",
+          "Description",
+          8
+        ],
+        [
+          "patterns",
+          "Description",
+          11
+        ],
+        [
+          "values",
+          "Description",
+          11
+        ],
+        [
+          "null_count",
+          "First Date",
+          8
+        ],
+        [
+          "distinct_count",
+          "First Date",
+          8
+        ],
+        [
+          "patterns",
+          "First Date",
+          11
+        ],
+        [
+          "values",
+          "First Date",
+          11
+        ],
+        [
+          "null_count",
+          "Admission",
+          8
+        ],
+        [
+          "distinct_count",
+          "Admission",
+          8
+        ],
+        [
+          "patterns",
+          "Admission",
+          11
+        ],
+        [
+          "values",
+          "Admission",
+          11
+        ],
+        [
+          "null_count",
+          "Diagnosis",
+          8
+        ],
+        [
+          "distinct_count",
+          "Diagnosis",
+          8
+        ],
+        [
+          "patterns",
+          "Diagnosis",
+          11
+        ],
+        [
+          "values",
+          "Diagnosis",
+          11
+        ]
+      ]
+    }
+  }
+}

@@ -1,17 +1,17 @@
 {
   "schema_version": "custody-coverage-manifest-v10",
-  "total_aligned_slots": 78455,
-  "unique_conditions": 185,
-  "unique_benchmark_condition_series": 192,
-  "bird_and_remap_slots": 51493,
-  "ehrsql_slots": 26962,
-  "ehrsql_600_slots": 15600,
+  "total_aligned_slots": 83015,
+  "unique_conditions": 195,
+  "unique_benchmark_condition_series": 202,
+  "bird_and_remap_slots": 55453,
+  "ehrsql_slots": 27562,
+  "ehrsql_600_slots": 16200,
   "ehrsql_874_slots": 11362,
-  "canonical_release_custody_slots": 40664,
-  "canonical_release_custody_conditions": 86,
-  "canonical_release_custody_unique_conditions": 86,
-  "outbound_messages_sha256_slots": 73529,
-  "outbound_messages_sha256_coverage_pct": 93.72,
+  "canonical_release_custody_slots": 45224,
+  "canonical_release_custody_conditions": 96,
+  "canonical_release_custody_unique_conditions": 96,
+  "outbound_messages_sha256_slots": 78089,
+  "outbound_messages_sha256_coverage_pct": 94.07,
   "outbound_messages_sha256_breakdown": {
     "prior_v9_receipts": 23558,
     "stage10_harvested_from_203": 46011,
@@ -38,32 +38,33 @@
         "bird::DG2_CLEAN_R1/r0",
         "bird::DG4_CLEAN_R1/r0"
       ]
-    }
+    },
+    "phase13_dawa_clean_slots": 4560
   },
-  "db_dedup_audit_conditions": 105,
-  "non_empty_predicted_sql_slots": 78356,
+  "db_dedup_audit_conditions": 115,
+  "non_empty_predicted_sql_slots": 82916,
   "empty_submission_slots": 99,
   "tier_series_counts": {
-    "canonical_custody_v3": 86,
+    "canonical_custody_v3": 96,
     "historical_logged_profile": 39,
     "interactive_dp_baseline": 27,
     "legacy_pre_v3_clinical": 9,
     "non_profile_baseline": 31
   },
   "tier_slot_counts": {
-    "canonical_custody_v3": 40664,
+    "canonical_custody_v3": 45224,
     "historical_logged_profile": 13850,
     "interactive_dp_baseline": 4631,
     "legacy_pre_v3_clinical": 6222,
     "non_profile_baseline": 13088
   },
   "profile_inventory_breakdown": {
-    "total_custody_pinned_profile_files": 636,
+    "total_custody_pinned_profile_files": 736,
     "prior_v9_pinned_profile_files": 570,
     "stage10_valfirst_added_profile_files": 66,
     "by_category": {
       "scheduled_dp_profiles": {
-        "count": 227,
+        "count": 261,
         "subdirs": {
           "bird_minidev_dg_v3": 66,
           "bird_dg8_flatw": 33,
@@ -74,11 +75,12 @@
           "ind8_profile": 33,
           "ehrsql_dg8p": 3,
           "ehrsql_ind8_prompt": 1,
-          "ehrsql_entity_demo94": 1
+          "ehrsql_entity_demo94": 1,
+          "dawa_dpsips_clean_os_csprng": 34
         }
       },
       "postprocessed_capped_or_noval_profiles": {
-        "count": 330,
+        "count": 396,
         "subdirs": {
           "pubcap_silhouette": 33,
           "pubcap_flatw": 33,
@@ -89,7 +91,8 @@
           "tightbpe_silhouette": 33,
           "tightbpe_ind8_prof": 33,
           "tightbpe_valfirst_silhouette": 33,
-          "tightbpe_valfirst_ind8_prof": 33
+          "tightbpe_valfirst_ind8_prof": 33,
+          "dawa_dpsips_clean_tightbpe": 66
         }
       },
       "static_synth_row_files": {
@@ -115,16 +118,17 @@
       }
     },
     "sidecar_metadata_files": {
-      "total_sidecars": 354,
+      "total_sidecars": 388,
       "scheduled_dp_certificates": {
-        "count": 189,
+        "count": 223,
         "subdirs": {
           "bird_minidev_dg_v3": 66,
           "bird_dg8_flatw": 33,
           "bird_dg8_omega1": 33,
           "bird_dg8_unpruned_v2": 33,
           "bird_entity_dp_eps8": 12,
-          "entity_ind8_prompt": 12
+          "entity_ind8_prompt": 12,
+          "dawa_dpsips_clean": 34
         }
       },
       "postprocessed_sidecars": {
@@ -139,7 +143,8 @@
           "bird_dg8_noval_post": 33
         }
       }
-    }
+    },
+    "phase13_dawa_clean_added_profile_files": 100
   },
   "prohibited_deployment_artifacts": [
     "profiles/bird_noiseless_clean/*",
@@ -5709,6 +5714,556 @@
         ]
       },
       "has_dp_accountant_certificate": false
+    },
+    "bird::DAWA_CLEAN_BIRD_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DAWA_CLEAN_BIRD_R1/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "7a0e622e3861dc5a2541f2e2f0c019ac15facd677d624c3506f4d4d36094f277",
+        "card_games": "4dbee95687a114f5231e7a54454d014e69a99cd73ef66370c29645f89832d876",
+        "codebase_community": "6b36ef5486d370e4e1bb895a2ae1793ae41e6714d339124523c4be416cff7046",
+        "debit_card_specializing": "1ee12b2f7b728eaf5b31f64a44d9ef338ac259f7280c4bfa99b154ca303f8c85",
+        "european_football_2": "bd65c39b6c72c3ee814a768654b67fd6a511e6e903f24755547820d3a1c55124",
+        "financial": "8299bc0ff9852ae3d607cccbe6085e61787d737bc1690d7b8779710c90655ef9",
+        "formula_1": "43a08587ad9f259622baa376b6566591962fc186b613484ed7b1975b290b1bf2",
+        "student_club": "292b8ea55cafc610e93536ebdf216a7a1fb7ac363cbe2fe161ec8cb0d8c5e142",
+        "superhero": "e0dee9d9be1e57d3251dbb54556f930a5e7d51455e4762bb5ff4c77fb4a0aa5c",
+        "thrombosis_prediction": "7a05e80bb57684713d33f1fab376d5550da0eff06ce226ac3367e3cb7a4e448f",
+        "toxicology": "bfb8f92dd77244056668d7c77eddc706b56f7f8d678508617a1ae0b143fd2fe8"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r1/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "bird::TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "613e280f25358fbddc684cb37a35200f40137b7dbbbe984f31365319b2816821",
+        "card_games": "7633db262ab9015c7a5a030346a19ab8cfe0b968300d878838c40c4e07dc66ba",
+        "codebase_community": "3a40f4ae762d0f5ca6805adfab2d6a3498c245a4694923188381d047ad67f83d",
+        "debit_card_specializing": "f5199cffac5fa35903ee864a515222daa9ebfa0309980cac0a9c3a97a9356b83",
+        "european_football_2": "a0c72ba76fbe522d0cf053366e719cb1a86b4cabb74b29810d8111bdf8d390e3",
+        "financial": "8baa26d1563d407c70b62a0b31e69edee894fbebdff666897135e34e454b2adb",
+        "formula_1": "3086551041089468cee56ac229b1821528405cfbc5aa136b59938930ab23e656",
+        "student_club": "be91d0129e9fe26101725f815a80b87ecf0d7b483d14766eb09cf596efdf449d",
+        "superhero": "c3b359698164a13d5bde920b29d52fcef7f1361316d00dbe9dc9373847899812",
+        "thrombosis_prediction": "ff900174758a6fcf9ab6947968e0fd953dd8616d5687c41b3849367250fb4e9a",
+        "toxicology": "4c40cbc00611735472fc5f780a0329bbf56bf48d16f4fb83ee8736bffb363cd6"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r1/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "bird::TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "579d07a87461faf16f3a2b2924fbbe27bb2d8a0ee8f8c47e7099146aebe4f55a",
+        "card_games": "0ac276d8544fc5a3684434180fd01c9ba6105a378b783bca2a86d10e1a83dc4e",
+        "codebase_community": "3f799356f0150e25b20dd21b6071bd3c0e70b1bbc0d145eead9bed8948f09a2a",
+        "debit_card_specializing": "5ee57f831904497fa6d4a36a3c88e64e22acc15aacdd9eff0fb28b73f65f7582",
+        "european_football_2": "1926b1a5501d88f20017dc33478eb7325d4a38adca602314c766d89cda42bc0b",
+        "financial": "385c3c10cca45be6311b115e0cd8cebe34c074d8d7a047e231f071dec30a2d1b",
+        "formula_1": "489a1e31816aa998e69cd0af63520e007cfe2c3dd2a17dd7bc4dd992da6df4fc",
+        "student_club": "009dd0a99a0af3554d530ee741892684d3eac04884d69fe17e3b98954229d781",
+        "superhero": "dd363fd53ac1cfe3714f9d0e8599cb917dd17136ea3269878758361c9307c52d",
+        "thrombosis_prediction": "6d42c108e3d290c83f84eea93c0a06fb557680ed26eabcbc32a09ca4a5915240",
+        "toxicology": "ba8501e2235f2c74c9aca7a9c8bd83bbb6d157bd31831537b62f0b5cdc2c6ca2"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r1/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "bird::DAWA_CLEAN_BIRD_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DAWA_CLEAN_BIRD_R2/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "68400da4ceff3f3bd347ff40fca27009976a4312f7ce33a69d33636ff784899b",
+        "card_games": "bb3442163bc3486d95dfac2e5bbfe51aa7ef30701515beeb8221b82b9b1b84ec",
+        "codebase_community": "7ed78431656293846be5c8227d96b0e6f154b1bce1d481c26f4b92242d74e2eb",
+        "debit_card_specializing": "cd39bbe23c1bb8edb37bcaf89576051a3a66bea8606121e5910901107b0ba055",
+        "european_football_2": "abb744e8794a11c47445d6c7cf552b025777dac8d85768881b40cf956bbf90a1",
+        "financial": "892d86fbb2fdfe1e9605079a33407ddf0b483a9a630c5cb1c0186b9b16fe0332",
+        "formula_1": "287729c7e4941b3e0328d2c731488a4362ca178641857214ccf6c80dbeabefe4",
+        "student_club": "44378f1d53ea1fa7fb3493627d85df6357223b1318acb0d1938224df7a9e6a32",
+        "superhero": "0fb6c724424f979c3219ff3ab39d8eecbfe11b1b67f8e4f3f4a56299c80a1101",
+        "thrombosis_prediction": "9863cf5d13e14acce30aa7d6ebccfcafdd590400bf018ad96b3ace44c948c933",
+        "toxicology": "54cd5b74147ed42be4cbe6a86e0ee6c9ddb2c68a79ba9b53be76c91b69e307e2"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r2/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "bird::TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "8a8e7878f7595cbe19d277539fba2755a732c51a08d5dd01dd70693a7b874373",
+        "card_games": "6994e8fa83b3ada85c831cf0254afb8834cb7b276a72464f0a2e0b98875cf7c2",
+        "codebase_community": "29bfd2517d8ec9e461d7e03ba8ccb85d3cdcfc4ee47a4504153c2d8996b0fc36",
+        "debit_card_specializing": "1cf5e87d1ddab0821234ad39667712762f4f695dccf6854727d772ca25a2b22b",
+        "european_football_2": "ea1183eff3f233d4cc21a3a9ed9bbcd08393f833786e99569ac2e16ec85a0b6f",
+        "financial": "d8d4d0556f5fd2b9a87fe5f32d4c55f3138895dac4fe0c6496305cae821ee0ee",
+        "formula_1": "86e8c35905a9e39dfa86793f6a1d96fd2d8e605e191baca7433450bbd0726ab6",
+        "student_club": "118e550794967a0b3b7365fd932b4590f8a37275366b0960100d65edff8866f8",
+        "superhero": "a548b3373cd87b7f6d2809d4e64e708778217e36460e34665ec83797f2bf6d57",
+        "thrombosis_prediction": "4d9ad3fdf860453d20a5974626c410025ea76f7adc4bf5bc46c94d3a4380f38a",
+        "toxicology": "4c40cbc00611735472fc5f780a0329bbf56bf48d16f4fb83ee8736bffb363cd6"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r2/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "bird::TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "6a8040ee81724732c74e1646d1397a2c4fd33a409d291e68ff34b9e8d51a4a12",
+        "card_games": "efd5ed3232e9289d9fe0dc31b203292cecb3cb94cad68b77632192c90fe9df67",
+        "codebase_community": "96a7927999b582da36df0cad1199193735baaea0976200cc17860dbc6d315d74",
+        "debit_card_specializing": "7658be897ef11e25c47adf23c38dba172094f2e5df7563a8da5a021e4d6dfc1f",
+        "european_football_2": "ec0c4de4c21c48895da327abe5ab9da7977fbb612b5d7fdb5ed02ced81e111d3",
+        "financial": "a479a514560e5e72da04cecdee288287dadc67277f764ce082393ecfc5bed522",
+        "formula_1": "13b013114b5d73e71db6e88100625352cff3126a084bc4c4946b9e8ed8f2e7b3",
+        "student_club": "2b0c9aeaf073ce4a6ddd0a8e1409852084eeac4a017ab69c1713f095d8e4c767",
+        "superhero": "a53323becbfb87af7d9b9c553cf5ef8dc726f5559e9d9a3be3c421818dc79067",
+        "thrombosis_prediction": "9e3dd2b679c704530d24abfa0137afc3f43ffa5f0324601f3fa7c8134c84c9d8",
+        "toxicology": "791e193f19af4c3d7988e449c5fe22b2d254a4a5bea83a3efb3aad0d40f8dfad"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r2/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "bird::DAWA_CLEAN_BIRD_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DAWA_CLEAN_BIRD_R3/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "7a8c9db82568f7ce1cdc4d7c3b02b25da5f9519a8c1c4aada35b8a3f2f880702",
+        "card_games": "fe7ce558447ae27db8c5f2f96eb83854c318f56890ce5efce2ca5cc98eb338b0",
+        "codebase_community": "bb9e17169e23e75697cacfc8f89a8f1bd10a25b6be1c6708b21eb903ff739f3f",
+        "debit_card_specializing": "e20cfb4afb51ca907d81776c71d047d0cd4d189b054d27680061afba9bc1bf6c",
+        "european_football_2": "7ed5ee6422871eae8354126439d1fe5beceb4330e3062c6eb68c5edd938349e1",
+        "financial": "750c6f3f2e0f18b967e31690775c4c6ef48c258d4170f076f2b41a9e7714b392",
+        "formula_1": "28ed24f46f37d0169cc27cf0d8ce5a223ddf717ec29119eb1acd36d9c62edbae",
+        "student_club": "4af71916ae45952e6fb15301a27f5780edbf5df1553c4bdf1166adabe035e436",
+        "superhero": "388fd3c434d7eb7d578f3d34f65d15292199e5ccfc2d407ecc77099ba84cb1f1",
+        "thrombosis_prediction": "b3cc3444f4103611d3d66da1304979caf813a068d2d12837a4c8e067295cd8ab",
+        "toxicology": "17e42e6308613c4b543d8655dcb3511042dcce7fafa18b1a65d3b57fa843f821"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/dawa_clean_bird_r3/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "bird::TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "9bcd94ef722945932a1bfce80d3225f9031fbd8404889fd855c3cdf79766f277",
+        "card_games": "78b5ebc0c22f3fbec34b5e0d437165a7edd77ad0bcf61e95d099aec5d2dd98ab",
+        "codebase_community": "2979f016535d018bd1a01cd3a918da0d2bbf3f062d0834eeb8387c6ad38d3f58",
+        "debit_card_specializing": "eb884765c78f024b43d0163be9ebb64f642fa3c79b14cc1fc4c3fa51ade53553",
+        "european_football_2": "c469b8b3a5a1847060d511b0c01630419950e29387ed13544861fc323ab868e1",
+        "financial": "992b0e3ff9783c5893f7f8ce91fbbbff67bfbe648704c4747b2778bdd6a8ad1f",
+        "formula_1": "75ce17ce520cffc97470a60d87628a423c7b2d0572e514a476c64a23daf7e34e",
+        "student_club": "f8da3fca5a971b301bcc192c5376fec284666458ad99d621d011134488080b42",
+        "superhero": "a77aeb6cf5c1f7bd2f3a8df2c2b69aea7d30fa021c604e9de00729dc45ce4253",
+        "thrombosis_prediction": "7e277c0f2d56a9a18f5a84d6ec8426f7240bf1cfc38c7a4b5d51afe1ec6b4b33",
+        "toxicology": "4c40cbc00611735472fc5f780a0329bbf56bf48d16f4fb83ee8736bffb363cd6"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/tightbpe_colfirst_dawa_clean_bird_r3/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "bird::TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0",
+      "expected_slots": 440,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 440,
+      "expected_turn0_profile_sha256_slots": 440,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "california_schools": "4c6715d2b72f2ef35519c433d1c2661148c5847ee2fa6d86de5d4782b2c835f1",
+        "card_games": "f23a0f96232195a322e36f16942be20d9077432f017cf42d65e18e3cc70942b4",
+        "codebase_community": "9fd5ea02a1d1288436d01ea9e7113d433f1a9d93c852545e5f57f1fec968e416",
+        "debit_card_specializing": "f81a5387b8eea003c875dcf99d644f0cdc12b53262af09ed6d2f192db54cdb5b",
+        "european_football_2": "760d4baf001ca5adcbbb06433a4bb3181b7d35b7b8edfa473d020b4f0f0c419f",
+        "financial": "11c24cebc592897930ca6b0b79f372c5fa37b79fe4223c9d3ed4be1f6a2c59b1",
+        "formula_1": "950314ddee68fb034e190879a97e0c85dcbef50f880caf3e0f17f9a87f0d7a1c",
+        "student_club": "de97b1c50b0f5a81c5a1d79cecea9a712f89931928a1b17ba2b5df75860fb6fb",
+        "superhero": "1d106cef0a4dbfc9a4076d8d5a811b1bfdb90aadf963290a5175cbb971c8e0a7",
+        "thrombosis_prediction": "1e68b9e68cb60bf84e5a6052003e7188cd4057505e60954bb4def32c6d96d539",
+        "toxicology": "68daeb3add6e24c6c33ff1f79acab671a384047c442bef4b32242fa4ed3835ee"
+      },
+      "expected_profile_paths_by_db": {
+        "california_schools": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/california_schools.json"
+        ],
+        "card_games": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/card_games.json"
+        ],
+        "codebase_community": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/codebase_community.json"
+        ],
+        "debit_card_specializing": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/debit_card_specializing.json"
+        ],
+        "european_football_2": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/european_football_2.json"
+        ],
+        "financial": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/financial.json"
+        ],
+        "formula_1": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/formula_1.json"
+        ],
+        "student_club": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/student_club.json"
+        ],
+        "superhero": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/superhero.json"
+        ],
+        "thrombosis_prediction": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/thrombosis_prediction.json"
+        ],
+        "toxicology": [
+          "profiles/dawa_dpsips_clean/tightbpe_valfirst_dawa_clean_bird_r3/toxicology.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
+    },
+    "ehrsql_600::DAWA_CLEAN_EHR600_R1/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "DAWA_CLEAN_EHR600_R1/r0",
+      "expected_slots": 600,
+      "lineage_tier": "canonical_custody_v3",
+      "has_outbound_sha256": true,
+      "expected_outbound_sha256_slots": 600,
+      "expected_turn0_profile_sha256_slots": 600,
+      "deployment_prohibited": false,
+      "expected_release_sha256_by_db": {
+        "mimic_iv": "84b1df33808796114373b4601e5603b7d49baa85934623f2692c28538a17e0a3"
+      },
+      "expected_profile_paths_by_db": {
+        "mimic_iv": [
+          "profiles/dawa_dpsips_clean/dawa_clean_ehr_r1/mimic_iv.json"
+        ]
+      },
+      "has_dp_accountant_certificate": true
     }
   }
 }

@@ -2092,9 +2092,209 @@
         0,
         0
       ]
+    },
+    "DAWA_CLEAN_BIRD_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2163899,
+        95192465
+      ],
+      "oob": [
+        1,
+        1
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        105,
+        105
+      ],
+      "full_payload": [
+        46705,
+        1767679
+      ],
+      "oob": [
+        3,
+        33
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1697821,
+        70669890
+      ],
+      "oob": [
+        1,
+        1
+      ],
+      "rows_transmitted": 0
+    },
+    "DAWA_CLEAN_BIRD_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2113697,
+        93070654
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        46056,
+        1721278
+      ],
+      "oob": [
+        1,
+        31
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1636551,
+        67836563
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "DAWA_CLEAN_BIRD_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2137987,
+        93859418
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        45168,
+        1657363
+      ],
+      "oob": [
+        1,
+        31
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1655147,
+        68470618
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "DAWA_CLEAN_EHR600_R1/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        49389,
+        29364709
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
     }
   },
-  "total_conditions": 105,
+  "total_conditions": 115,
   "clinical_v3_profile_slots_split": {
     "total_clinical_v3_profile_slots": 12992,
     "dp_clinical_profile_slots": 10044,

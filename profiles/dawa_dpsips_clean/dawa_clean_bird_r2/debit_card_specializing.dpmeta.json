@@ -1,0 +1,862 @@
+{
+  "db_id": "debit_card_specializing",
+  "mechanism": "DAWA+DP-SIPS",
+  "epsilon": 8,
+  "epsilon_frac": "8/1",
+  "delta": "1/1000000",
+  "delta_conversion": "1/2000000",
+  "delta_tail_budget": "1/2000000",
+  "rho_table": "874796954851759/1000000000000000",
+  "rho_table_num": 874796954851759,
+  "rho_table_den": 1000000000000000,
+  "rng_source": "os_csprng",
+  "sha256": "cd39bbe23c1bb8edb37bcaf89576051a3a66bea8606121e5910901107b0ba055",
+  "parameters": [
+    {
+      "r_j": "3/1",
+      "share": "1/13",
+      "rho": "874796954851759/13000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 13000000000000000,
+      "sigma2": "6500000000000000/874796954851759",
+      "sigma2_num": 6500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/39",
+      "rho": "874796954851759/39000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 39000000000000000,
+      "sigma2": "19500000000000000/874796954851759",
+      "sigma2_num": 19500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/12000000",
+      "delta_num": 1,
+      "delta_den": 12000000,
+      "sensitivity2": 1,
+      "tau": 26,
+      "tail_lower": "62654685459873/2000000000000000000000",
+      "tail_upper": "156636713649683/5000000000000000000000",
+      "prev_tail_lower": "25063730310323/250000000000000000000",
+      "prev_tail_upper": "100254921241293/1000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/39",
+      "rho": "874796954851759/19500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 19500000000000000,
+      "sigma2": "9750000000000000/874796954851759",
+      "sigma2_num": 9750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/13",
+      "rho": "874796954851759/13000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 13000000000000000,
+      "sigma2": "6500000000000000/874796954851759",
+      "sigma2_num": 6500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/12000000",
+      "delta_num": 1,
+      "delta_den": 12000000,
+      "sensitivity2": 1,
+      "tau": 15,
+      "tail_lower": "44301565141241/1000000000000000000000",
+      "tail_upper": "443015651412411/10000000000000000000000",
+      "prev_tail_lower": "318074233225321/1000000000000000000000",
+      "prev_tail_upper": "159037116612661/500000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 17000000000000000,
+      "sigma2": "8500000000000000/874796954851759",
+      "sigma2_num": 8500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/51",
+      "rho": "874796954851759/51000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 51000000000000000,
+      "sigma2": "25500000000000000/874796954851759",
+      "sigma2_num": 25500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/16000000",
+      "delta_num": 1,
+      "delta_den": 16000000,
+      "sensitivity2": 1,
+      "tau": 29,
+      "tail_lower": "62433035963931/1000000000000000000000",
+      "tail_upper": "624330359639311/10000000000000000000000",
+      "prev_tail_lower": "42289291240263/250000000000000000000",
+      "prev_tail_upper": "169157164961053/1000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/51",
+      "rho": "874796954851759/25500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 25500000000000000,
+      "sigma2": "12750000000000000/874796954851759",
+      "sigma2_num": 12750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 17000000000000000,
+      "sigma2": "8500000000000000/874796954851759",
+      "sigma2_num": 8500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/16000000",
+      "delta_num": 1,
+      "delta_den": 16000000,
+      "sensitivity2": 1,
+      "tau": 17,
+      "tail_lower": "132824520588473/2500000000000000000000",
+      "tail_upper": "531298082353893/10000000000000000000000",
+      "prev_tail_lower": "148178933815231/500000000000000000000",
+      "prev_tail_upper": "296357867630463/1000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/9",
+      "rho": "874796954851759/9000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 9000000000000000,
+      "sigma2": "4500000000000000/874796954851759",
+      "sigma2_num": 4500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/27",
+      "rho": "874796954851759/27000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 27000000000000000,
+      "sigma2": "13500000000000000/874796954851759",
+      "sigma2_num": 13500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/8000000",
+      "delta_num": 1,
+      "delta_den": 8000000,
+      "sensitivity2": 1,
+      "tau": 21,
+      "tail_lower": "418303671848869/5000000000000000000000",
+      "tail_upper": "836607343697739/10000000000000000000000",
+      "prev_tail_lower": "322584812981001/1000000000000000000000",
+      "prev_tail_upper": "161292406490501/500000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/27",
+      "rho": "874796954851759/13500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 13500000000000000,
+      "sigma2": "6750000000000000/874796954851759",
+      "sigma2_num": 6750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/9",
+      "rho": "874796954851759/9000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 9000000000000000,
+      "sigma2": "4500000000000000/874796954851759",
+      "sigma2_num": 4500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/8000000",
+      "delta_num": 1,
+      "delta_den": 8000000,
+      "sensitivity2": 1,
+      "tau": 13,
+      "tail_lower": "139136762860983/10000000000000000000000",
+      "tail_upper": "17392095357623/1250000000000000000000",
+      "prev_tail_lower": "160652690029957/1000000000000000000000",
+      "prev_tail_upper": "80326345014979/500000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/37",
+      "rho": "874796954851759/37000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37000000000000000,
+      "sigma2": "18500000000000000/874796954851759",
+      "sigma2_num": 18500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/111",
+      "rho": "874796954851759/111000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 111000000000000000,
+      "sigma2": "55500000000000000/874796954851759",
+      "sigma2_num": 55500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/36000000",
+      "delta_num": 1,
+      "delta_den": 36000000,
+      "sensitivity2": 1,
+      "tau": 44,
+      "tail_lower": "3618861612263/156250000000000000000",
+      "tail_upper": "231607143184833/10000000000000000000000",
+      "prev_tail_lower": "93330145254789/2000000000000000000000",
+      "prev_tail_upper": "233325363136973/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/111",
+      "rho": "874796954851759/55500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 55500000000000000,
+      "sigma2": "27750000000000000/874796954851759",
+      "sigma2_num": 27750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/37",
+      "rho": "874796954851759/37000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37000000000000000,
+      "sigma2": "18500000000000000/874796954851759",
+      "sigma2_num": 18500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/36000000",
+      "delta_num": 1,
+      "delta_den": 36000000,
+      "sensitivity2": 1,
+      "tau": 26,
+      "tail_lower": "138076421157087/10000000000000000000000",
+      "tail_upper": "4314888161159/312500000000000000000",
+      "prev_tail_lower": "3758048868971/80000000000000000000",
+      "prev_tail_upper": "7339939197209/156250000000000000000"
+    }
+  ],
+  "tables": {
+    "customers": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 13,
+      "n_histograms": 6,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "CustomerID",
+          0
+        ],
+        [
+          "distinct_count",
+          "CustomerID",
+          0
+        ],
+        [
+          "bins_stage1",
+          "CustomerID",
+          1
+        ],
+        [
+          "bins_stage2",
+          "CustomerID",
+          2
+        ],
+        [
+          "values",
+          "CustomerID",
+          3
+        ],
+        [
+          "null_count",
+          "Segment",
+          0
+        ],
+        [
+          "distinct_count",
+          "Segment",
+          0
+        ],
+        [
+          "patterns",
+          "Segment",
+          3
+        ],
+        [
+          "values",
+          "Segment",
+          3
+        ],
+        [
+          "null_count",
+          "Currency",
+          0
+        ],
+        [
+          "distinct_count",
+          "Currency",
+          0
+        ],
+        [
+          "patterns",
+          "Currency",
+          3
+        ],
+        [
+          "values",
+          "Currency",
+          3
+        ]
+      ]
+    },
+    "gasstations": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 17,
+      "n_histograms": 8,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "GasStationID",
+          4
+        ],
+        [
+          "distinct_count",
+          "GasStationID",
+          4
+        ],
+        [
+          "bins_stage1",
+          "GasStationID",
+          5
+        ],
+        [
+          "bins_stage2",
+          "GasStationID",
+          6
+        ],
+        [
+          "values",
+          "GasStationID",
+          7
+        ],
+        [
+          "null_count",
+          "ChainID",
+          4
+        ],
+        [
+          "distinct_count",
+          "ChainID",
+          4
+        ],
+        [
+          "bins_stage1",
+          "ChainID",
+          5
+        ],
+        [
+          "bins_stage2",
+          "ChainID",
+          6
+        ],
+        [
+          "values",
+          "ChainID",
+          7
+        ],
+        [
+          "null_count",
+          "Country",
+          4
+        ],
+        [
+          "distinct_count",
+          "Country",
+          4
+        ],
+        [
+          "patterns",
+          "Country",
+          7
+        ],
+        [
+          "values",
+          "Country",
+          7
+        ],
+        [
+          "null_count",
+          "Segment",
+          4
+        ],
+        [
+          "distinct_count",
+          "Segment",
+          4
+        ],
+        [
+          "patterns",
+          "Segment",
+          7
+        ],
+        [
+          "values",
+          "Segment",
+          7
+        ]
+      ]
+    },
+    "products": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 9,
+      "n_histograms": 4,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "ProductID",
+          8
+        ],
+        [
+          "distinct_count",
+          "ProductID",
+          8
+        ],
+        [
+          "bins_stage1",
+          "ProductID",
+          9
+        ],
+        [
+          "bins_stage2",
+          "ProductID",
+          10
+        ],
+        [
+          "values",
+          "ProductID",
+          11
+        ],
+        [
+          "null_count",
+          "Description",
+          8
+        ],
+        [
+          "distinct_count",
+          "Description",
+          8
+        ],
+        [
+          "patterns",
+          "Description",
+          11
+        ],
+        [
+          "values",
+          "Description",
+          11
+        ]
+      ]
+    },
+    "transactions_1k": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 37,
+      "n_histograms": 18,
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "TransactionID",
+          12
+        ],
+        [
+          "distinct_count",
+          "TransactionID",
+          12
+        ],
+        [
+          "bins_stage1",
+          "TransactionID",
+          13
+        ],
+        [
+          "bins_stage2",
+          "TransactionID",
+          14
+        ],
+        [
+          "values",
+          "TransactionID",
+          15
+        ],
+        [
+          "null_count",
+          "Date",
+          12
+        ],
+        [
+          "distinct_count",
+          "Date",
+          12
+        ],
+        [
+          "patterns",
+          "Date",
+          15
+        ],
+        [
+          "values",
+          "Date",
+          15
+        ],
+        [
+          "null_count",
+          "Time",
+          12
+        ],
+        [
+          "distinct_count",
+          "Time",
+          12
+        ],
+        [
+          "patterns",
+          "Time",
+          15
+        ],
+        [
+          "values",
+          "Time",
+          15
+        ],
+        [
+          "null_count",
+          "CustomerID",
+          12
+        ],
+        [
+          "distinct_count",
+          "CustomerID",
+          12
+        ],
+        [
+          "bins_stage1",
+          "CustomerID",
+          13
+        ],
+        [
+          "bins_stage2",
+          "CustomerID",
+          14
+        ],
+        [
+          "values",
+          "CustomerID",
+          15
+        ],
+        [
+          "null_count",
+          "CardID",
+          12
+        ],
+        [
+          "distinct_count",
+          "CardID",
+          12
+        ],
+        [
+          "bins_stage1",
+          "CardID",
+          13
+        ],
+        [
+          "bins_stage2",
+          "CardID",
+          14
+        ],
+        [
+          "values",
+          "CardID",
+          15
+        ],
+        [
+          "null_count",
+          "GasStationID",
+          12
+        ],
+        [
+          "distinct_count",
+          "GasStationID",
+          12
+        ],
+        [
+          "bins_stage1",
+          "GasStationID",
+          13
+        ],
+        [
+          "bins_stage2",
+          "GasStationID",
+          14
+        ],
+        [
+          "values",
+          "GasStationID",
+          15
+        ],
+        [
+          "null_count",
+          "ProductID",
+          12
+        ],
+        [
+          "distinct_count",
+          "ProductID",
+          12
+        ],
+        [
+          "bins_stage1",
+          "ProductID",
+          13
+        ],
+        [
+          "bins_stage2",
+          "ProductID",
+          14
+        ],
+        [
+          "values",
+          "ProductID",
+          15
+        ],
+        [
+          "null_count",
+          "Amount",
+          12
+        ],
+        [
+          "distinct_count",
+          "Amount",
+          12
+        ],
+        [
+          "bins_stage1",
+          "Amount",
+          13
+        ],
+        [
+          "bins_stage2",
+          "Amount",
+          14
+        ],
+        [
+          "values",
+          "Amount",
+          15
+        ],
+        [
+          "null_count",
+          "Price",
+          12
+        ],
+        [
+          "distinct_count",
+          "Price",
+          12
+        ],
+        [
+          "bins_stage1",
+          "Price",
+          13
+        ],
+        [
+          "bins_stage2",
+          "Price",
+          14
+        ],
+        [
+          "values",
+          "Price",
+          15
+        ]
+      ]
+    },
+    "yearmonth": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 13,
+      "n_histograms": 6,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "CustomerID",
+          0
+        ],
+        [
+          "distinct_count",
+          "CustomerID",
+          0
+        ],
+        [
+          "bins_stage1",
+          "CustomerID",
+          1
+        ],
+        [
+          "bins_stage2",
+          "CustomerID",
+          2
+        ],
+        [
+          "values",
+          "CustomerID",
+          3
+        ],
+        [
+          "null_count",
+          "Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "Date",
+          0
+        ],
+        [
+          "patterns",
+          "Date",
+          3
+        ],
+        [
+          "values",
+          "Date",
+          3
+        ],
+        [
+          "null_count",
+          "Consumption",
+          0
+        ],
+        [
+          "distinct_count",
+          "Consumption",
+          0
+        ],
+        [
+          "bins_stage1",
+          "Consumption",
+          1
+        ],
+        [
+          "bins_stage2",
+          "Consumption",
+          2
+        ],
+        [
+          "values",
+          "Consumption",
+          3
+        ]
+      ]
+    }
+  }
+}

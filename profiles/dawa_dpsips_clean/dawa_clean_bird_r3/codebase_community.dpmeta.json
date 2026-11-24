@@ -1,0 +1,2257 @@
+{
+  "db_id": "codebase_community",
+  "mechanism": "DAWA+DP-SIPS",
+  "epsilon": 8,
+  "epsilon_frac": "8/1",
+  "delta": "1/1000000",
+  "delta_conversion": "1/2000000",
+  "delta_tail_budget": "1/2000000",
+  "rho_table": "874796954851759/1000000000000000",
+  "rho_table_num": 874796954851759,
+  "rho_table_den": 1000000000000000,
+  "rng_source": "os_csprng",
+  "sha256": "bb9e17169e23e75697cacfc8f89a8f1bd10a25b6be1c6708b21eb903ff739f3f",
+  "parameters": [
+    {
+      "r_j": "3/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 17000000000000000,
+      "sigma2": "8500000000000000/874796954851759",
+      "sigma2_num": 8500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/51",
+      "rho": "874796954851759/51000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 51000000000000000,
+      "sigma2": "25500000000000000/874796954851759",
+      "sigma2_num": 25500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/16000000",
+      "delta_num": 1,
+      "delta_den": 16000000,
+      "sensitivity2": 1,
+      "tau": 29,
+      "tail_lower": "62433035963931/1000000000000000000000",
+      "tail_upper": "624330359639311/10000000000000000000000",
+      "prev_tail_lower": "42289291240263/250000000000000000000",
+      "prev_tail_upper": "169157164961053/1000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/51",
+      "rho": "874796954851759/25500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 25500000000000000,
+      "sigma2": "12750000000000000/874796954851759",
+      "sigma2_num": 12750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 17000000000000000,
+      "sigma2": "8500000000000000/874796954851759",
+      "sigma2_num": 8500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/16000000",
+      "delta_num": 1,
+      "delta_den": 16000000,
+      "sensitivity2": 1,
+      "tau": 17,
+      "tail_lower": "132824520588473/2500000000000000000000",
+      "tail_upper": "531298082353893/10000000000000000000000",
+      "prev_tail_lower": "148178933815231/500000000000000000000",
+      "prev_tail_upper": "296357867630463/1000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/29",
+      "rho": "874796954851759/29000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 29000000000000000,
+      "sigma2": "14500000000000000/874796954851759",
+      "sigma2_num": 14500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/87",
+      "rho": "874796954851759/87000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 87000000000000000,
+      "sigma2": "43500000000000000/874796954851759",
+      "sigma2_num": 43500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/28000000",
+      "delta_num": 1,
+      "delta_den": 28000000,
+      "sensitivity2": 1,
+      "tau": 39,
+      "tail_lower": "232405116680133/10000000000000000000000",
+      "tail_upper": "116202558340067/5000000000000000000000",
+      "prev_tail_lower": "512193003511973/10000000000000000000000",
+      "prev_tail_upper": "256096501755987/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/87",
+      "rho": "874796954851759/43500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 43500000000000000,
+      "sigma2": "21750000000000000/874796954851759",
+      "sigma2_num": 21750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/29",
+      "rho": "874796954851759/29000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 29000000000000000,
+      "sigma2": "14500000000000000/874796954851759",
+      "sigma2_num": 14500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/28000000",
+      "delta_num": 1,
+      "delta_den": 28000000,
+      "sensitivity2": 1,
+      "tau": 23,
+      "tail_lower": "75497663823981/5000000000000000000000",
+      "tail_upper": "150995327647963/10000000000000000000000",
+      "prev_tail_lower": "37384158582823/625000000000000000000",
+      "prev_tail_upper": "598146537325169/10000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/37",
+      "rho": "874796954851759/37000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37000000000000000,
+      "sigma2": "18500000000000000/874796954851759",
+      "sigma2_num": 18500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/111",
+      "rho": "874796954851759/111000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 111000000000000000,
+      "sigma2": "55500000000000000/874796954851759",
+      "sigma2_num": 55500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/36000000",
+      "delta_num": 1,
+      "delta_den": 36000000,
+      "sensitivity2": 1,
+      "tau": 44,
+      "tail_lower": "3618861612263/156250000000000000000",
+      "tail_upper": "231607143184833/10000000000000000000000",
+      "prev_tail_lower": "93330145254789/2000000000000000000000",
+      "prev_tail_upper": "233325363136973/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/111",
+      "rho": "874796954851759/55500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 55500000000000000,
+      "sigma2": "27750000000000000/874796954851759",
+      "sigma2_num": 27750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/37",
+      "rho": "874796954851759/37000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37000000000000000,
+      "sigma2": "18500000000000000/874796954851759",
+      "sigma2_num": 18500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/36000000",
+      "delta_num": 1,
+      "delta_den": 36000000,
+      "sensitivity2": 1,
+      "tau": 26,
+      "tail_lower": "138076421157087/10000000000000000000000",
+      "tail_upper": "4314888161159/312500000000000000000",
+      "prev_tail_lower": "3758048868971/80000000000000000000",
+      "prev_tail_upper": "7339939197209/156250000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/21",
+      "rho": "874796954851759/21000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 21000000000000000,
+      "sigma2": "10500000000000000/874796954851759",
+      "sigma2_num": 10500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/63",
+      "rho": "874796954851759/63000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 63000000000000000,
+      "sigma2": "31500000000000000/874796954851759",
+      "sigma2_num": 31500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/20000000",
+      "delta_num": 1,
+      "delta_den": 20000000,
+      "sensitivity2": 1,
+      "tau": 33,
+      "tail_lower": "14711065905273/500000000000000000000",
+      "tail_upper": "294221318105461/10000000000000000000000",
+      "prev_tail_lower": "92293783914117/1250000000000000000000",
+      "prev_tail_upper": "738350271312937/10000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/63",
+      "rho": "874796954851759/31500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 31500000000000000,
+      "sigma2": "15750000000000000/874796954851759",
+      "sigma2_num": 15750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/21",
+      "rho": "874796954851759/21000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 21000000000000000,
+      "sigma2": "10500000000000000/874796954851759",
+      "sigma2_num": 10500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/20000000",
+      "delta_num": 1,
+      "delta_den": 20000000,
+      "sensitivity2": 1,
+      "tau": 19,
+      "tail_lower": "16813163222023/400000000000000000000",
+      "tail_upper": "26270567534411/625000000000000000000",
+      "prev_tail_lower": "100198014991069/500000000000000000000",
+      "prev_tail_upper": "200396029982139/1000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/85",
+      "rho": "874796954851759/85000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 85000000000000000,
+      "sigma2": "42500000000000000/874796954851759",
+      "sigma2_num": 42500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/255",
+      "rho": "874796954851759/255000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 255000000000000000,
+      "sigma2": "127500000000000000/874796954851759",
+      "sigma2_num": 127500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/84000000",
+      "delta_num": 1,
+      "delta_den": 84000000,
+      "sensitivity2": 1,
+      "tau": 68,
+      "tail_lower": "55871530656833/5000000000000000000000",
+      "tail_upper": "111743061313667/10000000000000000000000",
+      "prev_tail_lower": "179512781968247/10000000000000000000000",
+      "prev_tail_upper": "22439097746031/1250000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/255",
+      "rho": "874796954851759/127500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 127500000000000000,
+      "sigma2": "63750000000000000/874796954851759",
+      "sigma2_num": 63750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/85",
+      "rho": "874796954851759/85000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 85000000000000000,
+      "sigma2": "42500000000000000/874796954851759",
+      "sigma2_num": 42500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/84000000",
+      "delta_num": 1,
+      "delta_den": 84000000,
+      "sensitivity2": 1,
+      "tau": 40,
+      "tail_lower": "706185722615619/100000000000000000000000",
+      "tail_upper": "35309286130781/5000000000000000000000",
+      "prev_tail_lower": "80841124026503/5000000000000000000000",
+      "prev_tail_upper": "161682248053007/10000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/57",
+      "rho": "874796954851759/57000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 57000000000000000,
+      "sigma2": "28500000000000000/874796954851759",
+      "sigma2_num": 28500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/171",
+      "rho": "874796954851759/171000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 171000000000000000,
+      "sigma2": "85500000000000000/874796954851759",
+      "sigma2_num": 85500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/56000000",
+      "delta_num": 1,
+      "delta_den": 56000000,
+      "sensitivity2": 1,
+      "tau": 55,
+      "tail_lower": "8715500372631/500000000000000000000",
+      "tail_upper": "174310007452621/10000000000000000000000",
+      "prev_tail_lower": "154177954872749/5000000000000000000000",
+      "prev_tail_upper": "308355909745499/10000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/171",
+      "rho": "874796954851759/85500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 85500000000000000,
+      "sigma2": "42750000000000000/874796954851759",
+      "sigma2_num": 42750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/57",
+      "rho": "874796954851759/57000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 57000000000000000,
+      "sigma2": "28500000000000000/874796954851759",
+      "sigma2_num": 28500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/56000000",
+      "delta_num": 1,
+      "delta_den": 56000000,
+      "sensitivity2": 1,
+      "tau": 32,
+      "tail_lower": "2562615798603/156250000000000000000",
+      "tail_upper": "164007411110593/10000000000000000000000",
+      "prev_tail_lower": "109720084375491/2500000000000000000000",
+      "prev_tail_upper": "87776067500393/2000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/25",
+      "rho": "874796954851759/25000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 25000000000000000,
+      "sigma2": "12500000000000000/874796954851759",
+      "sigma2_num": 12500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/75",
+      "rho": "874796954851759/75000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 75000000000000000,
+      "sigma2": "37500000000000000/874796954851759",
+      "sigma2_num": 37500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/24000000",
+      "delta_num": 1,
+      "delta_den": 24000000,
+      "sensitivity2": 1,
+      "tau": 36,
+      "tail_lower": "4468850860957/156250000000000000000",
+      "tail_upper": "286006455101249/10000000000000000000000",
+      "prev_tail_lower": "665755236340261/10000000000000000000000",
+      "prev_tail_upper": "332877618170131/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/75",
+      "rho": "874796954851759/37500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37500000000000000,
+      "sigma2": "18750000000000000/874796954851759",
+      "sigma2_num": 18750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/25",
+      "rho": "874796954851759/25000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 25000000000000000,
+      "sigma2": "12500000000000000/874796954851759",
+      "sigma2_num": 12500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/24000000",
+      "delta_num": 1,
+      "delta_den": 24000000,
+      "sensitivity2": 1,
+      "tau": 21,
+      "tail_lower": "268200711886757/10000000000000000000000",
+      "tail_upper": "134100355943379/5000000000000000000000",
+      "prev_tail_lower": "114863479434991/1000000000000000000000",
+      "prev_tail_upper": "7178967464687/62500000000000000000"
+    }
+  ],
+  "tables": {
+    "badges": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 17,
+      "n_histograms": 8,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "Id",
+          0
+        ],
+        [
+          "distinct_count",
+          "Id",
+          0
+        ],
+        [
+          "bins_stage1",
+          "Id",
+          1
+        ],
+        [
+          "bins_stage2",
+          "Id",
+          2
+        ],
+        [
+          "values",
+          "Id",
+          3
+        ],
+        [
+          "null_count",
+          "UserId",
+          0
+        ],
+        [
+          "distinct_count",
+          "UserId",
+          0
+        ],
+        [
+          "bins_stage1",
+          "UserId",
+          1
+        ],
+        [
+          "bins_stage2",
+          "UserId",
+          2
+        ],
+        [
+          "values",
+          "UserId",
+          3
+        ],
+        [
+          "null_count",
+          "Name",
+          0
+        ],
+        [
+          "distinct_count",
+          "Name",
+          0
+        ],
+        [
+          "patterns",
+          "Name",
+          3
+        ],
+        [
+          "values",
+          "Name",
+          3
+        ],
+        [
+          "null_count",
+          "Date",
+          0
+        ],
+        [
+          "distinct_count",
+          "Date",
+          0
+        ],
+        [
+          "patterns",
+          "Date",
+          3
+        ],
+        [
+          "values",
+          "Date",
+          3
+        ]
+      ]
+    },
+    "comments": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 29,
+      "n_histograms": 14,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "Id",
+          4
+        ],
+        [
+          "distinct_count",
+          "Id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "Id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "Id",
+          6
+        ],
+        [
+          "values",
+          "Id",
+          7
+        ],
+        [
+          "null_count",
+          "PostId",
+          4
+        ],
+        [
+          "distinct_count",
+          "PostId",
+          4
+        ],
+        [
+          "bins_stage1",
+          "PostId",
+          5
+        ],
+        [
+          "bins_stage2",
+          "PostId",
+          6
+        ],
+        [
+          "values",
+          "PostId",
+          7
+        ],
+        [
+          "null_count",
+          "Score",
+          4
+        ],
+        [
+          "distinct_count",
+          "Score",
+          4
+        ],
+        [
+          "bins_stage1",
+          "Score",
+          5
+        ],
+        [
+          "bins_stage2",
+          "Score",
+          6
+        ],
+        [
+          "values",
+          "Score",
+          7
+        ],
+        [
+          "null_count",
+          "Text",
+          4
+        ],
+        [
+          "distinct_count",
+          "Text",
+          4
+        ],
+        [
+          "patterns",
+          "Text",
+          7
+        ],
+        [
+          "values",
+          "Text",
+          7
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          4
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          4
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          7
+        ],
+        [
+          "values",
+          "CreationDate",
+          7
+        ],
+        [
+          "null_count",
+          "UserId",
+          4
+        ],
+        [
+          "distinct_count",
+          "UserId",
+          4
+        ],
+        [
+          "bins_stage1",
+          "UserId",
+          5
+        ],
+        [
+          "bins_stage2",
+          "UserId",
+          6
+        ],
+        [
+          "values",
+          "UserId",
+          7
+        ],
+        [
+          "null_count",
+          "UserDisplayName",
+          4
+        ],
+        [
+          "distinct_count",
+          "UserDisplayName",
+          4
+        ],
+        [
+          "patterns",
+          "UserDisplayName",
+          7
+        ],
+        [
+          "values",
+          "UserDisplayName",
+          7
+        ]
+      ]
+    },
+    "postHistory": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 37,
+      "n_histograms": 18,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "Id",
+          8
+        ],
+        [
+          "distinct_count",
+          "Id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "Id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "Id",
+          10
+        ],
+        [
+          "values",
+          "Id",
+          11
+        ],
+        [
+          "null_count",
+          "PostHistoryTypeId",
+          8
+        ],
+        [
+          "distinct_count",
+          "PostHistoryTypeId",
+          8
+        ],
+        [
+          "bins_stage1",
+          "PostHistoryTypeId",
+          9
+        ],
+        [
+          "bins_stage2",
+          "PostHistoryTypeId",
+          10
+        ],
+        [
+          "values",
+          "PostHistoryTypeId",
+          11
+        ],
+        [
+          "null_count",
+          "PostId",
+          8
+        ],
+        [
+          "distinct_count",
+          "PostId",
+          8
+        ],
+        [
+          "bins_stage1",
+          "PostId",
+          9
+        ],
+        [
+          "bins_stage2",
+          "PostId",
+          10
+        ],
+        [
+          "values",
+          "PostId",
+          11
+        ],
+        [
+          "null_count",
+          "RevisionGUID",
+          8
+        ],
+        [
+          "distinct_count",
+          "RevisionGUID",
+          8
+        ],
+        [
+          "patterns",
+          "RevisionGUID",
+          11
+        ],
+        [
+          "values",
+          "RevisionGUID",
+          11
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          8
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          8
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          11
+        ],
+        [
+          "values",
+          "CreationDate",
+          11
+        ],
+        [
+          "null_count",
+          "UserId",
+          8
+        ],
+        [
+          "distinct_count",
+          "UserId",
+          8
+        ],
+        [
+          "bins_stage1",
+          "UserId",
+          9
+        ],
+        [
+          "bins_stage2",
+          "UserId",
+          10
+        ],
+        [
+          "values",
+          "UserId",
+          11
+        ],
+        [
+          "null_count",
+          "Text",
+          8
+        ],
+        [
+          "distinct_count",
+          "Text",
+          8
+        ],
+        [
+          "patterns",
+          "Text",
+          11
+        ],
+        [
+          "values",
+          "Text",
+          11
+        ],
+        [
+          "null_count",
+          "Comment",
+          8
+        ],
+        [
+          "distinct_count",
+          "Comment",
+          8
+        ],
+        [
+          "patterns",
+          "Comment",
+          11
+        ],
+        [
+          "values",
+          "Comment",
+          11
+        ],
+        [
+          "null_count",
+          "UserDisplayName",
+          8
+        ],
+        [
+          "distinct_count",
+          "UserDisplayName",
+          8
+        ],
+        [
+          "patterns",
+          "UserDisplayName",
+          11
+        ],
+        [
+          "values",
+          "UserDisplayName",
+          11
+        ]
+      ]
+    },
+    "postLinks": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 21,
+      "n_histograms": 10,
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "Id",
+          12
+        ],
+        [
+          "distinct_count",
+          "Id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "Id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "Id",
+          14
+        ],
+        [
+          "values",
+          "Id",
+          15
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          12
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          12
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          15
+        ],
+        [
+          "values",
+          "CreationDate",
+          15
+        ],
+        [
+          "null_count",
+          "PostId",
+          12
+        ],
+        [
+          "distinct_count",
+          "PostId",
+          12
+        ],
+        [
+          "bins_stage1",
+          "PostId",
+          13
+        ],
+        [
+          "bins_stage2",
+          "PostId",
+          14
+        ],
+        [
+          "values",
+          "PostId",
+          15
+        ],
+        [
+          "null_count",
+          "RelatedPostId",
+          12
+        ],
+        [
+          "distinct_count",
+          "RelatedPostId",
+          12
+        ],
+        [
+          "bins_stage1",
+          "RelatedPostId",
+          13
+        ],
+        [
+          "bins_stage2",
+          "RelatedPostId",
+          14
+        ],
+        [
+          "values",
+          "RelatedPostId",
+          15
+        ],
+        [
+          "null_count",
+          "LinkTypeId",
+          12
+        ],
+        [
+          "distinct_count",
+          "LinkTypeId",
+          12
+        ],
+        [
+          "bins_stage1",
+          "LinkTypeId",
+          13
+        ],
+        [
+          "bins_stage2",
+          "LinkTypeId",
+          14
+        ],
+        [
+          "values",
+          "LinkTypeId",
+          15
+        ]
+      ]
+    },
+    "posts": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 85,
+      "n_histograms": 42,
+      "queries": [
+        [
+          "row_count",
+          null,
+          16
+        ],
+        [
+          "null_count",
+          "Id",
+          16
+        ],
+        [
+          "distinct_count",
+          "Id",
+          16
+        ],
+        [
+          "bins_stage1",
+          "Id",
+          17
+        ],
+        [
+          "bins_stage2",
+          "Id",
+          18
+        ],
+        [
+          "values",
+          "Id",
+          19
+        ],
+        [
+          "null_count",
+          "PostTypeId",
+          16
+        ],
+        [
+          "distinct_count",
+          "PostTypeId",
+          16
+        ],
+        [
+          "bins_stage1",
+          "PostTypeId",
+          17
+        ],
+        [
+          "bins_stage2",
+          "PostTypeId",
+          18
+        ],
+        [
+          "values",
+          "PostTypeId",
+          19
+        ],
+        [
+          "null_count",
+          "AcceptedAnswerId",
+          16
+        ],
+        [
+          "distinct_count",
+          "AcceptedAnswerId",
+          16
+        ],
+        [
+          "bins_stage1",
+          "AcceptedAnswerId",
+          17
+        ],
+        [
+          "bins_stage2",
+          "AcceptedAnswerId",
+          18
+        ],
+        [
+          "values",
+          "AcceptedAnswerId",
+          19
+        ],
+        [
+          "null_count",
+          "CreaionDate",
+          16
+        ],
+        [
+          "distinct_count",
+          "CreaionDate",
+          16
+        ],
+        [
+          "patterns",
+          "CreaionDate",
+          19
+        ],
+        [
+          "values",
+          "CreaionDate",
+          19
+        ],
+        [
+          "null_count",
+          "Score",
+          16
+        ],
+        [
+          "distinct_count",
+          "Score",
+          16
+        ],
+        [
+          "bins_stage1",
+          "Score",
+          17
+        ],
+        [
+          "bins_stage2",
+          "Score",
+          18
+        ],
+        [
+          "values",
+          "Score",
+          19
+        ],
+        [
+          "null_count",
+          "ViewCount",
+          16
+        ],
+        [
+          "distinct_count",
+          "ViewCount",
+          16
+        ],
+        [
+          "bins_stage1",
+          "ViewCount",
+          17
+        ],
+        [
+          "bins_stage2",
+          "ViewCount",
+          18
+        ],
+        [
+          "values",
+          "ViewCount",
+          19
+        ],
+        [
+          "null_count",
+          "Body",
+          16
+        ],
+        [
+          "distinct_count",
+          "Body",
+          16
+        ],
+        [
+          "patterns",
+          "Body",
+          19
+        ],
+        [
+          "values",
+          "Body",
+          19
+        ],
+        [
+          "null_count",
+          "OwnerUserId",
+          16
+        ],
+        [
+          "distinct_count",
+          "OwnerUserId",
+          16
+        ],
+        [
+          "bins_stage1",
+          "OwnerUserId",
+          17
+        ],
+        [
+          "bins_stage2",
+          "OwnerUserId",
+          18
+        ],
+        [
+          "values",
+          "OwnerUserId",
+          19
+        ],
+        [
+          "null_count",
+          "LasActivityDate",
+          16
+        ],
+        [
+          "distinct_count",
+          "LasActivityDate",
+          16
+        ],
+        [
+          "patterns",
+          "LasActivityDate",
+          19
+        ],
+        [
+          "values",
+          "LasActivityDate",
+          19
+        ],
+        [
+          "null_count",
+          "Title",
+          16
+        ],
+        [
+          "distinct_count",
+          "Title",
+          16
+        ],
+        [
+          "patterns",
+          "Title",
+          19
+        ],
+        [
+          "values",
+          "Title",
+          19
+        ],
+        [
+          "null_count",
+          "Tags",
+          16
+        ],
+        [
+          "distinct_count",
+          "Tags",
+          16
+        ],
+        [
+          "patterns",
+          "Tags",
+          19
+        ],
+        [
+          "values",
+          "Tags",
+          19
+        ],
+        [
+          "null_count",
+          "AnswerCount",
+          16
+        ],
+        [
+          "distinct_count",
+          "AnswerCount",
+          16
+        ],
+        [
+          "bins_stage1",
+          "AnswerCount",
+          17
+        ],
+        [
+          "bins_stage2",
+          "AnswerCount",
+          18
+        ],
+        [
+          "values",
+          "AnswerCount",
+          19
+        ],
+        [
+          "null_count",
+          "CommentCount",
+          16
+        ],
+        [
+          "distinct_count",
+          "CommentCount",
+          16
+        ],
+        [
+          "bins_stage1",
+          "CommentCount",
+          17
+        ],
+        [
+          "bins_stage2",
+          "CommentCount",
+          18
+        ],
+        [
+          "values",
+          "CommentCount",
+          19
+        ],
+        [
+          "null_count",
+          "FavoriteCount",
+          16
+        ],
+        [
+          "distinct_count",
+          "FavoriteCount",
+          16
+        ],
+        [
+          "bins_stage1",
+          "FavoriteCount",
+          17
+        ],
+        [
+          "bins_stage2",
+          "FavoriteCount",
+          18
+        ],
+        [
+          "values",
+          "FavoriteCount",
+          19
+        ],
+        [
+          "null_count",
+          "LastEditorUserId",
+          16
+        ],
+        [
+          "distinct_count",
+          "LastEditorUserId",
+          16
+        ],
+        [
+          "bins_stage1",
+          "LastEditorUserId",
+          17
+        ],
+        [
+          "bins_stage2",
+          "LastEditorUserId",
+          18
+        ],
+        [
+          "values",
+          "LastEditorUserId",
+          19
+        ],
+        [
+          "null_count",
+          "LastEditDate",
+          16
+        ],
+        [
+          "distinct_count",
+          "LastEditDate",
+          16
+        ],
+        [
+          "patterns",
+          "LastEditDate",
+          19
+        ],
+        [
+          "values",
+          "LastEditDate",
+          19
+        ],
+        [
+          "null_count",
+          "CommunityOwnedDate",
+          16
+        ],
+        [
+          "distinct_count",
+          "CommunityOwnedDate",
+          16
+        ],
+        [
+          "patterns",
+          "CommunityOwnedDate",
+          19
+        ],
+        [
+          "values",
+          "CommunityOwnedDate",
+          19
+        ],
+        [
+          "null_count",
+          "ParentId",
+          16
+        ],
+        [
+          "distinct_count",
+          "ParentId",
+          16
+        ],
+        [
+          "bins_stage1",
+          "ParentId",
+          17
+        ],
+        [
+          "bins_stage2",
+          "ParentId",
+          18
+        ],
+        [
+          "values",
+          "ParentId",
+          19
+        ],
+        [
+          "null_count",
+          "ClosedDate",
+          16
+        ],
+        [
+          "distinct_count",
+          "ClosedDate",
+          16
+        ],
+        [
+          "patterns",
+          "ClosedDate",
+          19
+        ],
+        [
+          "values",
+          "ClosedDate",
+          19
+        ],
+        [
+          "null_count",
+          "OwnerDisplayName",
+          16
+        ],
+        [
+          "distinct_count",
+          "OwnerDisplayName",
+          16
+        ],
+        [
+          "patterns",
+          "OwnerDisplayName",
+          19
+        ],
+        [
+          "values",
+          "OwnerDisplayName",
+          19
+        ],
+        [
+          "null_count",
+          "LastEditorDisplayName",
+          16
+        ],
+        [
+          "distinct_count",
+          "LastEditorDisplayName",
+          16
+        ],
+        [
+          "patterns",
+          "LastEditorDisplayName",
+          19
+        ],
+        [
+          "values",
+          "LastEditorDisplayName",
+          19
+        ]
+      ]
+    },
+    "tags": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 21,
+      "n_histograms": 10,
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "Id",
+          12
+        ],
+        [
+          "distinct_count",
+          "Id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "Id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "Id",
+          14
+        ],
+        [
+          "values",
+          "Id",
+          15
+        ],
+        [
+          "null_count",
+          "TagName",
+          12
+        ],
+        [
+          "distinct_count",
+          "TagName",
+          12
+        ],
+        [
+          "patterns",
+          "TagName",
+          15
+        ],
+        [
+          "values",
+          "TagName",
+          15
+        ],
+        [
+          "null_count",
+          "Count",
+          12
+        ],
+        [
+          "distinct_count",
+          "Count",
+          12
+        ],
+        [
+          "bins_stage1",
+          "Count",
+          13
+        ],
+        [
+          "bins_stage2",
+          "Count",
+          14
+        ],
+        [
+          "values",
+          "Count",
+          15
+        ],
+        [
+          "null_count",
+          "ExcerptPostId",
+          12
+        ],
+        [
+          "distinct_count",
+          "ExcerptPostId",
+          12
+        ],
+        [
+          "bins_stage1",
+          "ExcerptPostId",
+          13
+        ],
+        [
+          "bins_stage2",
+          "ExcerptPostId",
+          14
+        ],
+        [
+          "values",
+          "ExcerptPostId",
+          15
+        ],
+        [
+          "null_count",
+          "WikiPostId",
+          12
+        ],
+        [
+          "distinct_count",
+          "WikiPostId",
+          12
+        ],
+        [
+          "bins_stage1",
+          "WikiPostId",
+          13
+        ],
+        [
+          "bins_stage2",
+          "WikiPostId",
+          14
+        ],
+        [
+          "values",
+          "WikiPostId",
+          15
+        ]
+      ]
+    },
+    "users": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 57,
+      "n_histograms": 28,
+      "queries": [
+        [
+          "row_count",
+          null,
+          20
+        ],
+        [
+          "null_count",
+          "Id",
+          20
+        ],
+        [
+          "distinct_count",
+          "Id",
+          20
+        ],
+        [
+          "bins_stage1",
+          "Id",
+          21
+        ],
+        [
+          "bins_stage2",
+          "Id",
+          22
+        ],
+        [
+          "values",
+          "Id",
+          23
+        ],
+        [
+          "null_count",
+          "Reputation",
+          20
+        ],
+        [
+          "distinct_count",
+          "Reputation",
+          20
+        ],
+        [
+          "bins_stage1",
+          "Reputation",
+          21
+        ],
+        [
+          "bins_stage2",
+          "Reputation",
+          22
+        ],
+        [
+          "values",
+          "Reputation",
+          23
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          20
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          20
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          23
+        ],
+        [
+          "values",
+          "CreationDate",
+          23
+        ],
+        [
+          "null_count",
+          "DisplayName",
+          20
+        ],
+        [
+          "distinct_count",
+          "DisplayName",
+          20
+        ],
+        [
+          "patterns",
+          "DisplayName",
+          23
+        ],
+        [
+          "values",
+          "DisplayName",
+          23
+        ],
+        [
+          "null_count",
+          "LastAccessDate",
+          20
+        ],
+        [
+          "distinct_count",
+          "LastAccessDate",
+          20
+        ],
+        [
+          "patterns",
+          "LastAccessDate",
+          23
+        ],
+        [
+          "values",
+          "LastAccessDate",
+          23
+        ],
+        [
+          "null_count",
+          "WebsiteUrl",
+          20
+        ],
+        [
+          "distinct_count",
+          "WebsiteUrl",
+          20
+        ],
+        [
+          "patterns",
+          "WebsiteUrl",
+          23
+        ],
+        [
+          "values",
+          "WebsiteUrl",
+          23
+        ],
+        [
+          "null_count",
+          "Location",
+          20
+        ],
+        [
+          "distinct_count",
+          "Location",
+          20
+        ],
+        [
+          "patterns",
+          "Location",
+          23
+        ],
+        [
+          "values",
+          "Location",
+          23
+        ],
+        [
+          "null_count",
+          "AboutMe",
+          20
+        ],
+        [
+          "distinct_count",
+          "AboutMe",
+          20
+        ],
+        [
+          "patterns",
+          "AboutMe",
+          23
+        ],
+        [
+          "values",
+          "AboutMe",
+          23
+        ],
+        [
+          "null_count",
+          "Views",
+          20
+        ],
+        [
+          "distinct_count",
+          "Views",
+          20
+        ],
+        [
+          "bins_stage1",
+          "Views",
+          21
+        ],
+        [
+          "bins_stage2",
+          "Views",
+          22
+        ],
+        [
+          "values",
+          "Views",
+          23
+        ],
+        [
+          "null_count",
+          "UpVotes",
+          20
+        ],
+        [
+          "distinct_count",
+          "UpVotes",
+          20
+        ],
+        [
+          "bins_stage1",
+          "UpVotes",
+          21
+        ],
+        [
+          "bins_stage2",
+          "UpVotes",
+          22
+        ],
+        [
+          "values",
+          "UpVotes",
+          23
+        ],
+        [
+          "null_count",
+          "DownVotes",
+          20
+        ],
+        [
+          "distinct_count",
+          "DownVotes",
+          20
+        ],
+        [
+          "bins_stage1",
+          "DownVotes",
+          21
+        ],
+        [
+          "bins_stage2",
+          "DownVotes",
+          22
+        ],
+        [
+          "values",
+          "DownVotes",
+          23
+        ],
+        [
+          "null_count",
+          "AccountId",
+          20
+        ],
+        [
+          "distinct_count",
+          "AccountId",
+          20
+        ],
+        [
+          "bins_stage1",
+          "AccountId",
+          21
+        ],
+        [
+          "bins_stage2",
+          "AccountId",
+          22
+        ],
+        [
+          "values",
+          "AccountId",
+          23
+        ],
+        [
+          "null_count",
+          "Age",
+          20
+        ],
+        [
+          "distinct_count",
+          "Age",
+          20
+        ],
+        [
+          "bins_stage1",
+          "Age",
+          21
+        ],
+        [
+          "bins_stage2",
+          "Age",
+          22
+        ],
+        [
+          "values",
+          "Age",
+          23
+        ],
+        [
+          "null_count",
+          "ProfileImageUrl",
+          20
+        ],
+        [
+          "distinct_count",
+          "ProfileImageUrl",
+          20
+        ],
+        [
+          "patterns",
+          "ProfileImageUrl",
+          23
+        ],
+        [
+          "values",
+          "ProfileImageUrl",
+          23
+        ]
+      ]
+    },
+    "votes": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 25,
+      "n_histograms": 12,
+      "queries": [
+        [
+          "row_count",
+          null,
+          24
+        ],
+        [
+          "null_count",
+          "Id",
+          24
+        ],
+        [
+          "distinct_count",
+          "Id",
+          24
+        ],
+        [
+          "bins_stage1",
+          "Id",
+          25
+        ],
+        [
+          "bins_stage2",
+          "Id",
+          26
+        ],
+        [
+          "values",
+          "Id",
+          27
+        ],
+        [
+          "null_count",
+          "PostId",
+          24
+        ],
+        [
+          "distinct_count",
+          "PostId",
+          24
+        ],
+        [
+          "bins_stage1",
+          "PostId",
+          25
+        ],
+        [
+          "bins_stage2",
+          "PostId",
+          26
+        ],
+        [
+          "values",
+          "PostId",
+          27
+        ],
+        [
+          "null_count",
+          "VoteTypeId",
+          24
+        ],
+        [
+          "distinct_count",
+          "VoteTypeId",
+          24
+        ],
+        [
+          "bins_stage1",
+          "VoteTypeId",
+          25
+        ],
+        [
+          "bins_stage2",
+          "VoteTypeId",
+          26
+        ],
+        [
+          "values",
+          "VoteTypeId",
+          27
+        ],
+        [
+          "null_count",
+          "CreationDate",
+          24
+        ],
+        [
+          "distinct_count",
+          "CreationDate",
+          24
+        ],
+        [
+          "patterns",
+          "CreationDate",
+          27
+        ],
+        [
+          "values",
+          "CreationDate",
+          27
+        ],
+        [
+          "null_count",
+          "UserId",
+          24
+        ],
+        [
+          "distinct_count",
+          "UserId",
+          24
+        ],
+        [
+          "bins_stage1",
+          "UserId",
+          25
+        ],
+        [
+          "bins_stage2",
+          "UserId",
+          26
+        ],
+        [
+          "values",
+          "UserId",
+          27
+        ],
+        [
+          "null_count",
+          "BountyAmount",
+          24
+        ],
+        [
+          "distinct_count",
+          "BountyAmount",
+          24
+        ],
+        [
+          "bins_stage1",
+          "BountyAmount",
+          25
+        ],
+        [
+          "bins_stage2",
+          "BountyAmount",
+          26
+        ],
+        [
+          "values",
+          "BountyAmount",
+          27
+        ]
+      ]
+    }
+  }
+}

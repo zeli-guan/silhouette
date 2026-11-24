@@ -258,12 +258,12 @@ def validate_summary_against_receipts(root: Path = ROOT) -> dict[str, Any]:
     assert len(remap_conds) == 19 and remap_slots == 2030, (len(remap_conds), remap_slots)
     bird_outcomes = sum(1 for (bm, _, _) in outcomes_by_bcq if bm == "bird")
     bird_receipts = [r for r in receipts if r.get("benchmark") == "bird"]
-    assert bird_outcomes == len(bird_receipts) == 51493, (bird_outcomes, len(bird_receipts))
-    assert len(by_cond) == 153, len(by_cond)
+    assert bird_outcomes == len(bird_receipts) == 55453, (bird_outcomes, len(bird_receipts))
+    assert len(by_cond) == 162, len(by_cond)
     empty_bird = sum(1 for r in bird_receipts if r.get("deliverable_status") == "empty_submission")
     denied_bird = sum(1 for r in bird_receipts if str(r.get("deliverable_status", "")).startswith("authorizer_denied:"))
     assert empty_bird == 68, empty_bird
-    assert denied_bird == 73, denied_bird
+    assert denied_bird == 78, denied_bird
     for rep in (1, 2, 3):
         assert f"TIGHTBPE_SILHOUETTE_R{rep}/r0" in by_cond
         assert f"TIGHTBPE_IND8_PROF_R{rep}/r0" in by_cond
@@ -272,6 +272,9 @@ def validate_summary_against_receipts(root: Path = ROOT) -> dict[str, Any]:
         assert f"TIGHTBPE_VALFIRST_SILH_R{rep}/r0" in by_cond
         assert f"TIGHTBPE_VALFIRST_IND8_PROF_R{rep}/r0" in by_cond
         assert f"FETCH1_PUBCAP_IND8_PROF_R{rep}/r0" in by_cond
+        assert f"DAWA_CLEAN_BIRD_R{rep}/r0" in by_cond
+        assert f"TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R{rep}/r0" in by_cond
+        assert f"TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R{rep}/r0" in by_cond
 
     # Dual-audit 5-column reconciliation check against stats/executor_transition_summary_v10.json
     et_v10 = json.loads((root / "stats/executor_transition_summary_v10.json").read_text(encoding="utf-8"))

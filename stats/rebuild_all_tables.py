@@ -319,6 +319,9 @@ def _compute_table3_audit(receipts: list[dict[str, Any]]) -> dict[str, Any]:
         "BIRD_TightBPE_ValFirst_Silhouette_R3": pool_r3(["TIGHTBPE_VALFIRST_SILH_R1/r0", "TIGHTBPE_VALFIRST_SILH_R2/r0", "TIGHTBPE_VALFIRST_SILH_R3/r0"]),
         "BIRD_TightBPE_ValFirst_1way_Profile_R3": pool_r3(["TIGHTBPE_VALFIRST_IND8_PROF_R1/r0", "TIGHTBPE_VALFIRST_IND8_PROF_R2/r0", "TIGHTBPE_VALFIRST_IND8_PROF_R3/r0"]),
         "BIRD_Fetch1_PubCap_1way_Profile_R3": pool_r3(["FETCH1_PUBCAP_IND8_PROF_R1/r0", "FETCH1_PUBCAP_IND8_PROF_R2/r0", "FETCH1_PUBCAP_IND8_PROF_R3/r0"]),
+        "BIRD_Uniform_1D_DAWA_R3": pool_r3(["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]),
+        "BIRD_TightBPE_ColFirst_DAWA_R3": pool_r3(["TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0", "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0", "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0"]),
+        "BIRD_TightBPE_ValFirst_DAWA_R3": pool_r3(["TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0", "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0", "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0"]),
         "BIRD_noVal_Post_R23": pool_r3(["DG8_NOVAL_POST_R2/r0", "DG8_NOVAL_POST_R3/r0"]),
         "SOL_PubCap_Static_Synth_R1": conds["SOL_PUBCAP_IND8_ROWS_R1/r0"],
         "SOL_Silhouette_R3": pool_r3(["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]),
@@ -329,6 +332,7 @@ def _compute_table3_audit(receipts: list[dict[str, Any]]) -> dict[str, Any]:
         "EHR600_Noiseless_noLookup_V3": conds["EHR_NOISELESS_NOLKP_V3/r0"],
         "EHR600_1way_Profile_V3": conds["EHR_IND8_V3_R1/r0"],
         "EHR600_Entity_Demo94_V3": conds["EHR_ENT8_V3_R1/r0"],
+        "EHR600_Uniform_1D_DAWA_R1": conds["DAWA_CLEAN_EHR600_R1/r0"],
         "EHR600_Synthetic_DB_1way": conds["EHR600_Synthetic_DB_1way"],
         "EHR600_Select_3": conds["EHR600_Select_3"],
         "EHR600_Full_access": conds["EHR600_Full_access"],
@@ -1017,6 +1021,102 @@ def _compute_stage10_valfirst_and_fetch1(
     }
 
 
+def _compute_uniform_1d_dawa_dpsips(
+    bird_data: dict[str, dict[Any, int]],
+    bird_deliv: dict[str, dict[Any, int]],
+    bird_strict: dict[str, dict[Any, int]],
+    bird_440: list[int],
+    bird_dbs: list[str],
+    e600_data: dict[str, dict[Any, int]],
+    e600_deliv: dict[str, dict[Any, int]],
+    ehr_600: list[str],
+    ehr_tmpl_clusters: dict[str, Any],
+    rec_by_bcq: dict[tuple[str, str, Any], dict[str, Any]],
+) -> dict[str, Any]:
+    """Rebuild Clean Uniform 1D DP (DAWA + DP-SIPS) BIRD & EHRSQL-600 rates and paired inference offline."""
+    dawa_bird = ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]
+    dawa_col = ["TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0", "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0", "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0"]
+    dawa_val = ["TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0", "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0", "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0"]
+    dawa_ehr = ["DAWA_CLEAN_EHR600_R1/r0"]
+
+    dg8_clean = ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]
+    ind8_prompt = ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]
+    tb_silh = ["TIGHTBPE_SILHOUETTE_R1/r0", "TIGHTBPE_SILHOUETTE_R2/r0", "TIGHTBPE_SILHOUETTE_R3/r0"]
+    tb_prof = ["TIGHTBPE_IND8_PROF_R1/r0", "TIGHTBPE_IND8_PROF_R2/r0", "TIGHTBPE_IND8_PROF_R3/r0"]
+    vf_silh = ["TIGHTBPE_VALFIRST_SILH_R1/r0", "TIGHTBPE_VALFIRST_SILH_R2/r0", "TIGHTBPE_VALFIRST_SILH_R3/r0"]
+    vf_prof = ["TIGHTBPE_VALFIRST_IND8_PROF_R1/r0", "TIGHTBPE_VALFIRST_IND8_PROF_R2/r0", "TIGHTBPE_VALFIRST_IND8_PROF_R3/r0"]
+
+    ehr_tpls = [ehr_tmpl_clusters["ehr600_by_id"][q] for q in ehr_600]
+
+    bird_arms = {
+        "DAWA_CLEAN_BIRD_R1..R3": dawa_bird,
+        "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1..R3": dawa_col,
+        "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1..R3": dawa_val,
+    }
+    rates = {
+        "bird_official_set_ex": {
+            lbl: rate_with_cluster(bird_data, conds, bird_440, bird_dbs, bird_strict, rec_by_bcq=rec_by_bcq, benchmark="bird", per_rep_cluster=True)
+            for lbl, conds in bird_arms.items()
+        },
+        "bird_deliverable_set_ex": {
+            lbl: rate_with_cluster(bird_deliv, conds, bird_440, bird_dbs, rec_by_bcq=rec_by_bcq, benchmark="bird", per_rep_cluster=True)
+            for lbl, conds in bird_arms.items()
+        },
+        "ehrsql_600_official_set_ex": {
+            "DAWA_CLEAN_EHR600_R1": rate_with_cluster(e600_data, dawa_ehr, ehr_600, ehr_tpls, rec_by_bcq=rec_by_bcq, benchmark="ehrsql_600")
+        },
+        "ehrsql_600_deliverable_set_ex": {
+            "DAWA_CLEAN_EHR600_R1": rate_with_cluster(e600_deliv, dawa_ehr, ehr_600, ehr_tpls, rec_by_bcq=rec_by_bcq, benchmark="ehrsql_600")
+        },
+    }
+
+    prim_specs = [
+        ("Silhouette_vs_DAWA_Uncapped_BIRD_R3", bird_data, dg8_clean, dawa_bird, bird_440, bird_dbs, True),
+        ("TightBPE_ColFirst_Silhouette_vs_DAWA_R3", bird_data, tb_silh, dawa_col, bird_440, bird_dbs, True),
+        ("TightBPE_ValFirst_Silhouette_vs_DAWA_R3", bird_data, vf_silh, dawa_val, bird_440, bird_dbs, True),
+        ("EHR_DG8P_V3_R1_vs_DAWA_CLEAN_EHR600_R1", e600_data, ["EHR_DG8P_V3_R1/r0"], dawa_ehr, ehr_600, ehr_tpls, False),
+    ]
+    prim_cmps = []
+    for lbl, dmap, ca, cb, ids, cids, is_bird in prim_specs:
+        r = full_compare(dmap, ca, cb, ids, cids, exact_2powk=is_bird, mc_cluster=not is_bird)
+        r["comparison"] = lbl
+        r["cluster_p"] = r["exact_2powK_cluster_p"] if is_bird else r["mc_cluster_p"]
+        prim_cmps.append(r)
+    for r, hq, hc in zip(prim_cmps, holm([x["p"] for x in prim_cmps]), holm([x["cluster_p"] for x in prim_cmps])):
+        r["holm_p"] = hq
+        r["holm_cluster_p"] = hc
+
+    ow_specs = [
+        ("1way_Profile_vs_DAWA_Uncapped_BIRD_R3", bird_data, ind8_prompt, dawa_bird, bird_440, bird_dbs, True),
+        ("TightBPE_ColFirst_1way_vs_DAWA_R3", bird_data, tb_prof, dawa_col, bird_440, bird_dbs, True),
+        ("TightBPE_ValFirst_1way_vs_DAWA_R3", bird_data, vf_prof, dawa_val, bird_440, bird_dbs, True),
+        ("EHR_IND8_V3_R1_vs_DAWA_CLEAN_EHR600_R1", e600_data, ["EHR_IND8_V3_R1/r0"], dawa_ehr, ehr_600, ehr_tpls, False),
+    ]
+    ow_cmps = []
+    for lbl, dmap, ca, cb, ids, cids, is_bird in ow_specs:
+        r = full_compare(dmap, ca, cb, ids, cids, exact_2powk=is_bird, mc_cluster=not is_bird)
+        r["comparison"] = lbl
+        r["cluster_p"] = r["exact_2powK_cluster_p"] if is_bird else r["mc_cluster_p"]
+        ow_cmps.append(r)
+    for r, hq, hc in zip(ow_cmps, holm([x["p"] for x in ow_cmps]), holm([x["cluster_p"] for x in ow_cmps])):
+        r["holm_p"] = hq
+        r["holm_cluster_p"] = hc
+
+    return {
+        "rates": rates,
+        "paired_comparisons": {
+            "primary_silhouette_vs_dawa_holm": prim_cmps,
+            "oneway_vs_dawa_holm": ow_cmps,
+            "EHR_DG8P_V3_R1_R3_vs_DAWA_CLEAN_EHR600_R1": full_compare(
+                e600_data, ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"], dawa_ehr, ehr_600, ehr_tpls, mc_cluster=True
+            ),
+            "TightBPE_ValFirst_DAWA_minus_ColFirst_DAWA": full_compare(
+                bird_data, dawa_val, dawa_col, bird_440, bird_dbs, exact_2powk=True
+            ),
+        },
+    }
+
+
 def _compute_leave_one_db_out_sensitivity(
     bird_data: dict[str, dict[Any, int]],
     bird_440: list[int],
@@ -1077,6 +1177,7 @@ def build_all_tables() -> dict[str, Any]:
     bird_deliv = deliv_bm["bird"]
     bird_strict = strict_bm["bird"]
     e600_data = data_bm["ehrsql_600"]
+    e600_deliv = deliv_bm["ehrsql_600"]
     e874_data = data_bm["ehrsql_874"]
 
     bird_man = json.loads((ROOT / "manifests/bird_minidev_2026_manifest.json").read_text(encoding="utf-8"))
@@ -1203,6 +1304,13 @@ def build_all_tables() -> dict[str, Any]:
         benchmark="bird",
     )
     bird_rates["DG8_noVal_Post_R3"] = tightbpe_noval["dg8_noval_post"]["rates"]["DG8_NOVAL_POST_R1_R3"]
+    uniform_1d_dp_dawa_clean = _compute_uniform_1d_dawa_dpsips(
+        bird_data, bird_deliv, bird_strict, bird_440, bird_dbs,
+        e600_data, e600_deliv, ehr_600, ehr_tmpl_clusters, rec_by_bcq,
+    )
+    bird_rates["Uniform_1D_DAWA_R3"] = uniform_1d_dp_dawa_clean["rates"]["bird_official_set_ex"]["DAWA_CLEAN_BIRD_R1..R3"]
+    bird_rates["TightBPE_ColFirst_DAWA_R3"] = uniform_1d_dp_dawa_clean["rates"]["bird_official_set_ex"]["TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1..R3"]
+    bird_rates["TightBPE_ValFirst_DAWA_R3"] = uniform_1d_dp_dawa_clean["rates"]["bird_official_set_ex"]["TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1..R3"]
 
     def run_holm_bird(target_conds: list[str], specs: list[tuple[str, list[str]]]) -> list[dict[str, Any]]:
         cmps = [full_compare(bird_data, target_conds, conds, bird_440, bird_dbs, exact_2powk=True) for _lbl, conds in specs]
@@ -2028,6 +2136,7 @@ def build_all_tables() -> dict[str, Any]:
         "tightbpe_and_noval": tightbpe_noval,
         "scaling_and_survival": scaling_and_survival,
         "stage10_valfirst_and_fetch1": stage10_valfirst_and_fetch1,
+        "uniform_1d_dp_dawa_clean": uniform_1d_dp_dawa_clean,
         "leave_one_db_out_sensitivity": leave_one_db_out_sensitivity,
         "dual_audit_reconciliation": dual_audit_reconciliation,
     }
@@ -2043,15 +2152,16 @@ def run_self_test(stats: dict[str, Any]) -> None:
         "tr_table15_strata", "tr_table16_holm", "tr_table17_sandbox_full",
         "tr_table18_entity_perdb", "tr_table19_survival",
         "tightbpe_and_noval", "scaling_and_survival",
-        "stage10_valfirst_and_fetch1", "leave_one_db_out_sensitivity", "dual_audit_reconciliation",
+        "stage10_valfirst_and_fetch1", "uniform_1d_dp_dawa_clean",
+        "leave_one_db_out_sensitivity", "dual_audit_reconciliation",
     }
     assert expected_keys <= set(stats), expected_keys - set(stats)
     assert stats["schema_version"] == "authoritative-paper-stats-v10"
-    assert stats["meta"]["total_outcomes"] == 78455
-    assert stats["meta"]["total_receipts"] == 78455
-    assert stats["meta"]["unique_conditions"] == 185
-    assert stats["meta"]["unique_benchmark_condition_series"] == 192
-    assert stats["meta"]["outbound_messages_sha256_slots"] == 73529
+    assert stats["meta"]["total_outcomes"] == 83015
+    assert stats["meta"]["total_receipts"] == 83015
+    assert stats["meta"]["unique_conditions"] == 195
+    assert stats["meta"]["unique_benchmark_condition_series"] == 202
+    assert stats["meta"]["outbound_messages_sha256_slots"] == 78089
 
     t2 = stats["paper_table2_main"]
     br = t2["bird_440"]["rates"]
@@ -2105,7 +2215,7 @@ def run_self_test(stats: dict[str, Any]) -> None:
     assert stats["tr_table13_ehrfull"]["official_vs_uncapped_ex_parity"]["gt100_distinct_questions_total"] == 8
 
     t3 = stats["paper_table3_audit"]
-    assert t3["total_conditions"] == 105
+    assert t3["total_conditions"] == 115
     assert t3["clinical_v3_profile_slots_split"]["total_clinical_v3_profile_slots"] == 12992
     assert t3["clinical_v3_profile_slots_split"]["dp_clinical_profile_slots"] == 10044
     assert t3["clinical_v3_profile_slots_split"]["noiseless_clinical_control_slots"] == 2948
@@ -2192,12 +2302,22 @@ def run_self_test(stats: dict[str, Any]) -> None:
         assert lval["min_diff_pp"] <= lval["full_diff_pp"] <= lval["max_diff_pp"], lname
 
     da_rec = stats["dual_audit_reconciliation"]["reconciliation_5col_table"]
-    assert da_rec["BIRD"]["n"] == 51493
-    assert da_rec["EHRSQL-600"]["n"] == 15600
+    assert da_rec["BIRD"]["n"] == 55453
+    assert da_rec["EHRSQL-600"]["n"] == 16200
     assert da_rec["EHRSQL-874"]["n"] == 11362
-    assert da_rec["total"]["n"] == 78455
+    assert da_rec["total"]["n"] == 83015
     assert da_rec["total"]["status_invalid_total"] == 44
     assert da_rec["total"]["status_invalid_with_raw_hit"] == 21
+
+    dawa = stats["uniform_1d_dp_dawa_clean"]["rates"]
+    assert dawa["bird_official_set_ex"]["DAWA_CLEAN_BIRD_R1..R3"]["hits_total"] == 600
+    assert dawa["bird_official_set_ex"]["TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1..R3"]["hits_total"] == 455
+    assert dawa["bird_official_set_ex"]["TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1..R3"]["hits_total"] == 538
+    assert dawa["ehrsql_600_official_set_ex"]["DAWA_CLEAN_EHR600_R1"]["hits_total"] == 306
+    assert dawa["bird_deliverable_set_ex"]["DAWA_CLEAN_BIRD_R1..R3"]["hits_total"] == 599
+    assert dawa["bird_deliverable_set_ex"]["TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1..R3"]["hits_total"] == 455
+    assert dawa["bird_deliverable_set_ex"]["TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1..R3"]["hits_total"] == 538
+    assert dawa["ehrsql_600_deliverable_set_ex"]["DAWA_CLEAN_EHR600_R1"]["hits_total"] == 306
 
     tm = stats["table_manifest"]
     expected_tr_numbers = {

@@ -1,0 +1,2805 @@
+{
+  "db_id": "mimic_iv",
+  "mechanism": "DAWA+DP-SIPS",
+  "epsilon": 8,
+  "epsilon_frac": "8/1",
+  "delta": "1/1000000",
+  "delta_conversion": "1/2000000",
+  "delta_tail_budget": "1/2000000",
+  "rho_table": "874796954851759/1000000000000000",
+  "rho_table_num": 874796954851759,
+  "rho_table_den": 1000000000000000,
+  "rng_source": "os_csprng",
+  "sha256": "84b1df33808796114373b4601e5603b7d49baa85934623f2692c28538a17e0a3",
+  "parameters": [
+    {
+      "r_j": "3/1",
+      "share": "1/49",
+      "rho": "874796954851759/49000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 49000000000000000,
+      "sigma2": "24500000000000000/874796954851759",
+      "sigma2_num": 24500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/147",
+      "rho": "874796954851759/147000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 147000000000000000,
+      "sigma2": "73500000000000000/874796954851759",
+      "sigma2_num": 73500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/48000000",
+      "delta_num": 1,
+      "delta_den": 48000000,
+      "sensitivity2": 1,
+      "tau": 51,
+      "tail_lower": "88649778641751/5000000000000000000000",
+      "tail_upper": "177299557283503/10000000000000000000000",
+      "prev_tail_lower": "327788366773809/10000000000000000000000",
+      "prev_tail_upper": "32778836677381/1000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/147",
+      "rho": "874796954851759/73500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 73500000000000000,
+      "sigma2": "36750000000000000/874796954851759",
+      "sigma2_num": 36750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/49",
+      "rho": "874796954851759/49000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 49000000000000000,
+      "sigma2": "24500000000000000/874796954851759",
+      "sigma2_num": 24500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/48000000",
+      "delta_num": 1,
+      "delta_den": 48000000,
+      "sensitivity2": 1,
+      "tau": 30,
+      "tail_lower": "11849387160839/1000000000000000000000",
+      "tail_upper": "118493871608391/10000000000000000000000",
+      "prev_tail_lower": "172902748743239/5000000000000000000000",
+      "prev_tail_upper": "345805497486479/10000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/33",
+      "rho": "874796954851759/33000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 33000000000000000,
+      "sigma2": "16500000000000000/874796954851759",
+      "sigma2_num": 16500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/99",
+      "rho": "874796954851759/99000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 99000000000000000,
+      "sigma2": "49500000000000000/874796954851759",
+      "sigma2_num": 49500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/32000000",
+      "delta_num": 1,
+      "delta_den": 32000000,
+      "sensitivity2": 1,
+      "tau": 42,
+      "tail_lower": "168536365632787/10000000000000000000000",
+      "tail_upper": "42134091408197/2500000000000000000000",
+      "prev_tail_lower": "356297155748253/10000000000000000000000",
+      "prev_tail_upper": "178148577874127/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/99",
+      "rho": "874796954851759/49500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 49500000000000000,
+      "sigma2": "24750000000000000/874796954851759",
+      "sigma2_num": 24750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/33",
+      "rho": "874796954851759/33000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 33000000000000000,
+      "sigma2": "16500000000000000/874796954851759",
+      "sigma2_num": 16500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/32000000",
+      "delta_num": 1,
+      "delta_den": 32000000,
+      "sensitivity2": 1,
+      "tau": 24,
+      "tail_lower": "73308152580071/2500000000000000000000",
+      "tail_upper": "58646522064057/2000000000000000000000",
+      "prev_tail_lower": "649690404509/6250000000000000000",
+      "prev_tail_upper": "103950464721441/1000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/29",
+      "rho": "874796954851759/29000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 29000000000000000,
+      "sigma2": "14500000000000000/874796954851759",
+      "sigma2_num": 14500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/87",
+      "rho": "874796954851759/87000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 87000000000000000,
+      "sigma2": "43500000000000000/874796954851759",
+      "sigma2_num": 43500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/28000000",
+      "delta_num": 1,
+      "delta_den": 28000000,
+      "sensitivity2": 1,
+      "tau": 39,
+      "tail_lower": "232405116680133/10000000000000000000000",
+      "tail_upper": "116202558340067/5000000000000000000000",
+      "prev_tail_lower": "512193003511973/10000000000000000000000",
+      "prev_tail_upper": "256096501755987/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/87",
+      "rho": "874796954851759/43500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 43500000000000000,
+      "sigma2": "21750000000000000/874796954851759",
+      "sigma2_num": 21750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/29",
+      "rho": "874796954851759/29000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 29000000000000000,
+      "sigma2": "14500000000000000/874796954851759",
+      "sigma2_num": 14500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/28000000",
+      "delta_num": 1,
+      "delta_den": 28000000,
+      "sensitivity2": 1,
+      "tau": 23,
+      "tail_lower": "75497663823981/5000000000000000000000",
+      "tail_upper": "150995327647963/10000000000000000000000",
+      "prev_tail_lower": "37384158582823/625000000000000000000",
+      "prev_tail_upper": "598146537325169/10000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/21",
+      "rho": "874796954851759/21000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 21000000000000000,
+      "sigma2": "10500000000000000/874796954851759",
+      "sigma2_num": 10500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/63",
+      "rho": "874796954851759/63000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 63000000000000000,
+      "sigma2": "31500000000000000/874796954851759",
+      "sigma2_num": 31500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/20000000",
+      "delta_num": 1,
+      "delta_den": 20000000,
+      "sensitivity2": 1,
+      "tau": 33,
+      "tail_lower": "14711065905273/500000000000000000000",
+      "tail_upper": "294221318105461/10000000000000000000000",
+      "prev_tail_lower": "92293783914117/1250000000000000000000",
+      "prev_tail_upper": "738350271312937/10000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/63",
+      "rho": "874796954851759/31500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 31500000000000000,
+      "sigma2": "15750000000000000/874796954851759",
+      "sigma2_num": 15750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/21",
+      "rho": "874796954851759/21000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 21000000000000000,
+      "sigma2": "10500000000000000/874796954851759",
+      "sigma2_num": 10500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/20000000",
+      "delta_num": 1,
+      "delta_den": 20000000,
+      "sensitivity2": 1,
+      "tau": 19,
+      "tail_lower": "16813163222023/400000000000000000000",
+      "tail_upper": "26270567534411/625000000000000000000",
+      "prev_tail_lower": "100198014991069/500000000000000000000",
+      "prev_tail_upper": "200396029982139/1000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/37",
+      "rho": "874796954851759/37000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37000000000000000,
+      "sigma2": "18500000000000000/874796954851759",
+      "sigma2_num": 18500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/111",
+      "rho": "874796954851759/111000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 111000000000000000,
+      "sigma2": "55500000000000000/874796954851759",
+      "sigma2_num": 55500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/36000000",
+      "delta_num": 1,
+      "delta_den": 36000000,
+      "sensitivity2": 1,
+      "tau": 44,
+      "tail_lower": "3618861612263/156250000000000000000",
+      "tail_upper": "231607143184833/10000000000000000000000",
+      "prev_tail_lower": "93330145254789/2000000000000000000000",
+      "prev_tail_upper": "233325363136973/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/111",
+      "rho": "874796954851759/55500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 55500000000000000,
+      "sigma2": "27750000000000000/874796954851759",
+      "sigma2_num": 27750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/37",
+      "rho": "874796954851759/37000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37000000000000000,
+      "sigma2": "18500000000000000/874796954851759",
+      "sigma2_num": 18500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/36000000",
+      "delta_num": 1,
+      "delta_den": 36000000,
+      "sensitivity2": 1,
+      "tau": 26,
+      "tail_lower": "138076421157087/10000000000000000000000",
+      "tail_upper": "4314888161159/312500000000000000000",
+      "prev_tail_lower": "3758048868971/80000000000000000000",
+      "prev_tail_upper": "7339939197209/156250000000000000000"
+    }
+  ],
+  "tables": {
+    "admissions": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 49,
+      "n_histograms": 24,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "row_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          0
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          1
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          2
+        ],
+        [
+          "values",
+          "row_id",
+          3
+        ],
+        [
+          "null_count",
+          "subject_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          0
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          1
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          2
+        ],
+        [
+          "values",
+          "subject_id",
+          3
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          0
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          0
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          1
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          2
+        ],
+        [
+          "values",
+          "hadm_id",
+          3
+        ],
+        [
+          "null_count",
+          "admittime",
+          0
+        ],
+        [
+          "distinct_count",
+          "admittime",
+          0
+        ],
+        [
+          "patterns",
+          "admittime",
+          3
+        ],
+        [
+          "values",
+          "admittime",
+          3
+        ],
+        [
+          "null_count",
+          "dischtime",
+          0
+        ],
+        [
+          "distinct_count",
+          "dischtime",
+          0
+        ],
+        [
+          "patterns",
+          "dischtime",
+          3
+        ],
+        [
+          "values",
+          "dischtime",
+          3
+        ],
+        [
+          "null_count",
+          "admission_type",
+          0
+        ],
+        [
+          "distinct_count",
+          "admission_type",
+          0
+        ],
+        [
+          "patterns",
+          "admission_type",
+          3
+        ],
+        [
+          "values",
+          "admission_type",
+          3
+        ],
+        [
+          "null_count",
+          "admission_location",
+          0
+        ],
+        [
+          "distinct_count",
+          "admission_location",
+          0
+        ],
+        [
+          "patterns",
+          "admission_location",
+          3
+        ],
+        [
+          "values",
+          "admission_location",
+          3
+        ],
+        [
+          "null_count",
+          "discharge_location",
+          0
+        ],
+        [
+          "distinct_count",
+          "discharge_location",
+          0
+        ],
+        [
+          "patterns",
+          "discharge_location",
+          3
+        ],
+        [
+          "values",
+          "discharge_location",
+          3
+        ],
+        [
+          "null_count",
+          "insurance",
+          0
+        ],
+        [
+          "distinct_count",
+          "insurance",
+          0
+        ],
+        [
+          "patterns",
+          "insurance",
+          3
+        ],
+        [
+          "values",
+          "insurance",
+          3
+        ],
+        [
+          "null_count",
+          "language",
+          0
+        ],
+        [
+          "distinct_count",
+          "language",
+          0
+        ],
+        [
+          "patterns",
+          "language",
+          3
+        ],
+        [
+          "values",
+          "language",
+          3
+        ],
+        [
+          "null_count",
+          "marital_status",
+          0
+        ],
+        [
+          "distinct_count",
+          "marital_status",
+          0
+        ],
+        [
+          "patterns",
+          "marital_status",
+          3
+        ],
+        [
+          "values",
+          "marital_status",
+          3
+        ],
+        [
+          "null_count",
+          "age",
+          0
+        ],
+        [
+          "distinct_count",
+          "age",
+          0
+        ],
+        [
+          "bins_stage1",
+          "age",
+          1
+        ],
+        [
+          "bins_stage2",
+          "age",
+          2
+        ],
+        [
+          "values",
+          "age",
+          3
+        ]
+      ]
+    },
+    "chartevents": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 33,
+      "n_histograms": 16,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "row_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          6
+        ],
+        [
+          "values",
+          "row_id",
+          7
+        ],
+        [
+          "null_count",
+          "subject_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          6
+        ],
+        [
+          "values",
+          "subject_id",
+          7
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          6
+        ],
+        [
+          "values",
+          "hadm_id",
+          7
+        ],
+        [
+          "null_count",
+          "stay_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "stay_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "stay_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "stay_id",
+          6
+        ],
+        [
+          "values",
+          "stay_id",
+          7
+        ],
+        [
+          "null_count",
+          "itemid",
+          4
+        ],
+        [
+          "distinct_count",
+          "itemid",
+          4
+        ],
+        [
+          "bins_stage1",
+          "itemid",
+          5
+        ],
+        [
+          "bins_stage2",
+          "itemid",
+          6
+        ],
+        [
+          "values",
+          "itemid",
+          7
+        ],
+        [
+          "null_count",
+          "charttime",
+          4
+        ],
+        [
+          "distinct_count",
+          "charttime",
+          4
+        ],
+        [
+          "patterns",
+          "charttime",
+          7
+        ],
+        [
+          "values",
+          "charttime",
+          7
+        ],
+        [
+          "null_count",
+          "valuenum",
+          4
+        ],
+        [
+          "distinct_count",
+          "valuenum",
+          4
+        ],
+        [
+          "bins_stage1",
+          "valuenum",
+          5
+        ],
+        [
+          "bins_stage2",
+          "valuenum",
+          6
+        ],
+        [
+          "values",
+          "valuenum",
+          7
+        ],
+        [
+          "null_count",
+          "valueuom",
+          4
+        ],
+        [
+          "distinct_count",
+          "valueuom",
+          4
+        ],
+        [
+          "patterns",
+          "valueuom",
+          7
+        ],
+        [
+          "values",
+          "valueuom",
+          7
+        ]
+      ]
+    },
+    "cost": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 29,
+      "n_histograms": 14,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "row_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          10
+        ],
+        [
+          "values",
+          "row_id",
+          11
+        ],
+        [
+          "null_count",
+          "subject_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          10
+        ],
+        [
+          "values",
+          "subject_id",
+          11
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          10
+        ],
+        [
+          "values",
+          "hadm_id",
+          11
+        ],
+        [
+          "null_count",
+          "event_type",
+          8
+        ],
+        [
+          "distinct_count",
+          "event_type",
+          8
+        ],
+        [
+          "patterns",
+          "event_type",
+          11
+        ],
+        [
+          "values",
+          "event_type",
+          11
+        ],
+        [
+          "null_count",
+          "event_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "event_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "event_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "event_id",
+          10
+        ],
+        [
+          "values",
+          "event_id",
+          11
+        ],
+        [
+          "null_count",
+          "chargetime",
+          8
+        ],
+        [
+          "distinct_count",
+          "chargetime",
+          8
+        ],
+        [
+          "patterns",
+          "chargetime",
+          11
+        ],
+        [
+          "values",
+          "chargetime",
+          11
+        ],
+        [
+          "null_count",
+          "cost",
+          8
+        ],
+        [
+          "distinct_count",
+          "cost",
+          8
+        ],
+        [
+          "bins_stage1",
+          "cost",
+          9
+        ],
+        [
+          "bins_stage2",
+          "cost",
+          10
+        ],
+        [
+          "values",
+          "cost",
+          11
+        ]
+      ]
+    },
+    "diagnoses_icd": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 21,
+      "n_histograms": 10,
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "row_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          14
+        ],
+        [
+          "values",
+          "row_id",
+          15
+        ],
+        [
+          "null_count",
+          "subject_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          14
+        ],
+        [
+          "values",
+          "subject_id",
+          15
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          14
+        ],
+        [
+          "values",
+          "hadm_id",
+          15
+        ],
+        [
+          "null_count",
+          "icd_code",
+          12
+        ],
+        [
+          "distinct_count",
+          "icd_code",
+          12
+        ],
+        [
+          "patterns",
+          "icd_code",
+          15
+        ],
+        [
+          "values",
+          "icd_code",
+          15
+        ],
+        [
+          "null_count",
+          "charttime",
+          12
+        ],
+        [
+          "distinct_count",
+          "charttime",
+          12
+        ],
+        [
+          "patterns",
+          "charttime",
+          15
+        ],
+        [
+          "values",
+          "charttime",
+          15
+        ]
+      ]
+    },
+    "icustays": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 33,
+      "n_histograms": 16,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "row_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          6
+        ],
+        [
+          "values",
+          "row_id",
+          7
+        ],
+        [
+          "null_count",
+          "subject_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          6
+        ],
+        [
+          "values",
+          "subject_id",
+          7
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          6
+        ],
+        [
+          "values",
+          "hadm_id",
+          7
+        ],
+        [
+          "null_count",
+          "stay_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "stay_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "stay_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "stay_id",
+          6
+        ],
+        [
+          "values",
+          "stay_id",
+          7
+        ],
+        [
+          "null_count",
+          "first_careunit",
+          4
+        ],
+        [
+          "distinct_count",
+          "first_careunit",
+          4
+        ],
+        [
+          "patterns",
+          "first_careunit",
+          7
+        ],
+        [
+          "values",
+          "first_careunit",
+          7
+        ],
+        [
+          "null_count",
+          "last_careunit",
+          4
+        ],
+        [
+          "distinct_count",
+          "last_careunit",
+          4
+        ],
+        [
+          "patterns",
+          "last_careunit",
+          7
+        ],
+        [
+          "values",
+          "last_careunit",
+          7
+        ],
+        [
+          "null_count",
+          "intime",
+          4
+        ],
+        [
+          "distinct_count",
+          "intime",
+          4
+        ],
+        [
+          "patterns",
+          "intime",
+          7
+        ],
+        [
+          "values",
+          "intime",
+          7
+        ],
+        [
+          "null_count",
+          "outtime",
+          4
+        ],
+        [
+          "distinct_count",
+          "outtime",
+          4
+        ],
+        [
+          "patterns",
+          "outtime",
+          7
+        ],
+        [
+          "values",
+          "outtime",
+          7
+        ]
+      ]
+    },
+    "inputevents": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 33,
+      "n_histograms": 16,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "row_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          6
+        ],
+        [
+          "values",
+          "row_id",
+          7
+        ],
+        [
+          "null_count",
+          "subject_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          6
+        ],
+        [
+          "values",
+          "subject_id",
+          7
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          6
+        ],
+        [
+          "values",
+          "hadm_id",
+          7
+        ],
+        [
+          "null_count",
+          "stay_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "stay_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "stay_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "stay_id",
+          6
+        ],
+        [
+          "values",
+          "stay_id",
+          7
+        ],
+        [
+          "null_count",
+          "starttime",
+          4
+        ],
+        [
+          "distinct_count",
+          "starttime",
+          4
+        ],
+        [
+          "patterns",
+          "starttime",
+          7
+        ],
+        [
+          "values",
+          "starttime",
+          7
+        ],
+        [
+          "null_count",
+          "itemid",
+          4
+        ],
+        [
+          "distinct_count",
+          "itemid",
+          4
+        ],
+        [
+          "bins_stage1",
+          "itemid",
+          5
+        ],
+        [
+          "bins_stage2",
+          "itemid",
+          6
+        ],
+        [
+          "values",
+          "itemid",
+          7
+        ],
+        [
+          "null_count",
+          "totalamount",
+          4
+        ],
+        [
+          "distinct_count",
+          "totalamount",
+          4
+        ],
+        [
+          "bins_stage1",
+          "totalamount",
+          5
+        ],
+        [
+          "bins_stage2",
+          "totalamount",
+          6
+        ],
+        [
+          "values",
+          "totalamount",
+          7
+        ],
+        [
+          "null_count",
+          "totalamountuom",
+          4
+        ],
+        [
+          "distinct_count",
+          "totalamountuom",
+          4
+        ],
+        [
+          "patterns",
+          "totalamountuom",
+          7
+        ],
+        [
+          "values",
+          "totalamountuom",
+          7
+        ]
+      ]
+    },
+    "labevents": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 29,
+      "n_histograms": 14,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "row_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          10
+        ],
+        [
+          "values",
+          "row_id",
+          11
+        ],
+        [
+          "null_count",
+          "subject_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          10
+        ],
+        [
+          "values",
+          "subject_id",
+          11
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          10
+        ],
+        [
+          "values",
+          "hadm_id",
+          11
+        ],
+        [
+          "null_count",
+          "itemid",
+          8
+        ],
+        [
+          "distinct_count",
+          "itemid",
+          8
+        ],
+        [
+          "bins_stage1",
+          "itemid",
+          9
+        ],
+        [
+          "bins_stage2",
+          "itemid",
+          10
+        ],
+        [
+          "values",
+          "itemid",
+          11
+        ],
+        [
+          "null_count",
+          "charttime",
+          8
+        ],
+        [
+          "distinct_count",
+          "charttime",
+          8
+        ],
+        [
+          "patterns",
+          "charttime",
+          11
+        ],
+        [
+          "values",
+          "charttime",
+          11
+        ],
+        [
+          "null_count",
+          "valuenum",
+          8
+        ],
+        [
+          "distinct_count",
+          "valuenum",
+          8
+        ],
+        [
+          "bins_stage1",
+          "valuenum",
+          9
+        ],
+        [
+          "bins_stage2",
+          "valuenum",
+          10
+        ],
+        [
+          "values",
+          "valuenum",
+          11
+        ],
+        [
+          "null_count",
+          "valueuom",
+          8
+        ],
+        [
+          "distinct_count",
+          "valueuom",
+          8
+        ],
+        [
+          "patterns",
+          "valueuom",
+          11
+        ],
+        [
+          "values",
+          "valueuom",
+          11
+        ]
+      ]
+    },
+    "microbiologyevents": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 29,
+      "n_histograms": 14,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "row_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          10
+        ],
+        [
+          "values",
+          "row_id",
+          11
+        ],
+        [
+          "null_count",
+          "subject_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          10
+        ],
+        [
+          "values",
+          "subject_id",
+          11
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          8
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          10
+        ],
+        [
+          "values",
+          "hadm_id",
+          11
+        ],
+        [
+          "null_count",
+          "charttime",
+          8
+        ],
+        [
+          "distinct_count",
+          "charttime",
+          8
+        ],
+        [
+          "patterns",
+          "charttime",
+          11
+        ],
+        [
+          "values",
+          "charttime",
+          11
+        ],
+        [
+          "null_count",
+          "spec_type_desc",
+          8
+        ],
+        [
+          "distinct_count",
+          "spec_type_desc",
+          8
+        ],
+        [
+          "patterns",
+          "spec_type_desc",
+          11
+        ],
+        [
+          "values",
+          "spec_type_desc",
+          11
+        ],
+        [
+          "null_count",
+          "test_name",
+          8
+        ],
+        [
+          "distinct_count",
+          "test_name",
+          8
+        ],
+        [
+          "patterns",
+          "test_name",
+          11
+        ],
+        [
+          "values",
+          "test_name",
+          11
+        ],
+        [
+          "null_count",
+          "org_name",
+          8
+        ],
+        [
+          "distinct_count",
+          "org_name",
+          8
+        ],
+        [
+          "patterns",
+          "org_name",
+          11
+        ],
+        [
+          "values",
+          "org_name",
+          11
+        ]
+      ]
+    },
+    "outputevents": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 33,
+      "n_histograms": 16,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "row_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          6
+        ],
+        [
+          "values",
+          "row_id",
+          7
+        ],
+        [
+          "null_count",
+          "subject_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          6
+        ],
+        [
+          "values",
+          "subject_id",
+          7
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          6
+        ],
+        [
+          "values",
+          "hadm_id",
+          7
+        ],
+        [
+          "null_count",
+          "stay_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "stay_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "stay_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "stay_id",
+          6
+        ],
+        [
+          "values",
+          "stay_id",
+          7
+        ],
+        [
+          "null_count",
+          "charttime",
+          4
+        ],
+        [
+          "distinct_count",
+          "charttime",
+          4
+        ],
+        [
+          "patterns",
+          "charttime",
+          7
+        ],
+        [
+          "values",
+          "charttime",
+          7
+        ],
+        [
+          "null_count",
+          "itemid",
+          4
+        ],
+        [
+          "distinct_count",
+          "itemid",
+          4
+        ],
+        [
+          "bins_stage1",
+          "itemid",
+          5
+        ],
+        [
+          "bins_stage2",
+          "itemid",
+          6
+        ],
+        [
+          "values",
+          "itemid",
+          7
+        ],
+        [
+          "null_count",
+          "value",
+          4
+        ],
+        [
+          "distinct_count",
+          "value",
+          4
+        ],
+        [
+          "bins_stage1",
+          "value",
+          5
+        ],
+        [
+          "bins_stage2",
+          "value",
+          6
+        ],
+        [
+          "values",
+          "value",
+          7
+        ],
+        [
+          "null_count",
+          "valueuom",
+          4
+        ],
+        [
+          "distinct_count",
+          "valueuom",
+          4
+        ],
+        [
+          "patterns",
+          "valueuom",
+          7
+        ],
+        [
+          "values",
+          "valueuom",
+          7
+        ]
+      ]
+    },
+    "patients": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 21,
+      "n_histograms": 10,
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "row_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          14
+        ],
+        [
+          "values",
+          "row_id",
+          15
+        ],
+        [
+          "null_count",
+          "subject_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          14
+        ],
+        [
+          "values",
+          "subject_id",
+          15
+        ],
+        [
+          "null_count",
+          "gender",
+          12
+        ],
+        [
+          "distinct_count",
+          "gender",
+          12
+        ],
+        [
+          "patterns",
+          "gender",
+          15
+        ],
+        [
+          "values",
+          "gender",
+          15
+        ],
+        [
+          "null_count",
+          "dob",
+          12
+        ],
+        [
+          "distinct_count",
+          "dob",
+          12
+        ],
+        [
+          "patterns",
+          "dob",
+          15
+        ],
+        [
+          "values",
+          "dob",
+          15
+        ],
+        [
+          "null_count",
+          "dod",
+          12
+        ],
+        [
+          "distinct_count",
+          "dod",
+          12
+        ],
+        [
+          "patterns",
+          "dod",
+          15
+        ],
+        [
+          "values",
+          "dod",
+          15
+        ]
+      ]
+    },
+    "prescriptions": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 37,
+      "n_histograms": 18,
+      "queries": [
+        [
+          "row_count",
+          null,
+          16
+        ],
+        [
+          "null_count",
+          "row_id",
+          16
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          16
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          17
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          18
+        ],
+        [
+          "values",
+          "row_id",
+          19
+        ],
+        [
+          "null_count",
+          "subject_id",
+          16
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          16
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          17
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          18
+        ],
+        [
+          "values",
+          "subject_id",
+          19
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          16
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          16
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          17
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          18
+        ],
+        [
+          "values",
+          "hadm_id",
+          19
+        ],
+        [
+          "null_count",
+          "starttime",
+          16
+        ],
+        [
+          "distinct_count",
+          "starttime",
+          16
+        ],
+        [
+          "patterns",
+          "starttime",
+          19
+        ],
+        [
+          "values",
+          "starttime",
+          19
+        ],
+        [
+          "null_count",
+          "stoptime",
+          16
+        ],
+        [
+          "distinct_count",
+          "stoptime",
+          16
+        ],
+        [
+          "patterns",
+          "stoptime",
+          19
+        ],
+        [
+          "values",
+          "stoptime",
+          19
+        ],
+        [
+          "null_count",
+          "drug",
+          16
+        ],
+        [
+          "distinct_count",
+          "drug",
+          16
+        ],
+        [
+          "patterns",
+          "drug",
+          19
+        ],
+        [
+          "values",
+          "drug",
+          19
+        ],
+        [
+          "null_count",
+          "dose_val_rx",
+          16
+        ],
+        [
+          "distinct_count",
+          "dose_val_rx",
+          16
+        ],
+        [
+          "patterns",
+          "dose_val_rx",
+          19
+        ],
+        [
+          "values",
+          "dose_val_rx",
+          19
+        ],
+        [
+          "null_count",
+          "dose_unit_rx",
+          16
+        ],
+        [
+          "distinct_count",
+          "dose_unit_rx",
+          16
+        ],
+        [
+          "patterns",
+          "dose_unit_rx",
+          19
+        ],
+        [
+          "values",
+          "dose_unit_rx",
+          19
+        ],
+        [
+          "null_count",
+          "route",
+          16
+        ],
+        [
+          "distinct_count",
+          "route",
+          16
+        ],
+        [
+          "patterns",
+          "route",
+          19
+        ],
+        [
+          "values",
+          "route",
+          19
+        ]
+      ]
+    },
+    "procedures_icd": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 21,
+      "n_histograms": 10,
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "row_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          14
+        ],
+        [
+          "values",
+          "row_id",
+          15
+        ],
+        [
+          "null_count",
+          "subject_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          14
+        ],
+        [
+          "values",
+          "subject_id",
+          15
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          14
+        ],
+        [
+          "values",
+          "hadm_id",
+          15
+        ],
+        [
+          "null_count",
+          "icd_code",
+          12
+        ],
+        [
+          "distinct_count",
+          "icd_code",
+          12
+        ],
+        [
+          "patterns",
+          "icd_code",
+          15
+        ],
+        [
+          "values",
+          "icd_code",
+          15
+        ],
+        [
+          "null_count",
+          "charttime",
+          12
+        ],
+        [
+          "distinct_count",
+          "charttime",
+          12
+        ],
+        [
+          "patterns",
+          "charttime",
+          15
+        ],
+        [
+          "values",
+          "charttime",
+          15
+        ]
+      ]
+    },
+    "transfers": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 33,
+      "n_histograms": 16,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "row_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "row_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "row_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "row_id",
+          6
+        ],
+        [
+          "values",
+          "row_id",
+          7
+        ],
+        [
+          "null_count",
+          "subject_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "subject_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "subject_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "subject_id",
+          6
+        ],
+        [
+          "values",
+          "subject_id",
+          7
+        ],
+        [
+          "null_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "hadm_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "hadm_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "hadm_id",
+          6
+        ],
+        [
+          "values",
+          "hadm_id",
+          7
+        ],
+        [
+          "null_count",
+          "transfer_id",
+          4
+        ],
+        [
+          "distinct_count",
+          "transfer_id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "transfer_id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "transfer_id",
+          6
+        ],
+        [
+          "values",
+          "transfer_id",
+          7
+        ],
+        [
+          "null_count",
+          "eventtype",
+          4
+        ],
+        [
+          "distinct_count",
+          "eventtype",
+          4
+        ],
+        [
+          "patterns",
+          "eventtype",
+          7
+        ],
+        [
+          "values",
+          "eventtype",
+          7
+        ],
+        [
+          "null_count",
+          "careunit",
+          4
+        ],
+        [
+          "distinct_count",
+          "careunit",
+          4
+        ],
+        [
+          "patterns",
+          "careunit",
+          7
+        ],
+        [
+          "values",
+          "careunit",
+          7
+        ],
+        [
+          "null_count",
+          "intime",
+          4
+        ],
+        [
+          "distinct_count",
+          "intime",
+          4
+        ],
+        [
+          "patterns",
+          "intime",
+          7
+        ],
+        [
+          "values",
+          "intime",
+          7
+        ],
+        [
+          "null_count",
+          "outtime",
+          4
+        ],
+        [
+          "distinct_count",
+          "outtime",
+          4
+        ],
+        [
+          "patterns",
+          "outtime",
+          7
+        ],
+        [
+          "values",
+          "outtime",
+          7
+        ]
+      ]
+    }
+  }
+}

@@ -138,8 +138,8 @@ def verify_audit_and_sandbox() -> dict:
         assert c in dpq_audit_doc["conditions"] and c in p7_conds, c
         assert p7_conds[c]["copied"] == [0, 0], c
 
-    # Verify Stage-9/Stage-10 DB-dedup audit invariants (96 + 9 Stage-10 -> 105 total in p7_audit_summary.json)
-    assert p7_audit_doc["total_conditions"] == len(p7_conds) == 105, p7_audit_doc["total_conditions"]
+    # Verify Stage-9/Stage-10/Phase-13 DB-dedup audit invariants (105 + 10 Phase-13 -> 115 total in p7_audit_summary.json)
+    assert p7_audit_doc["total_conditions"] == len(p7_conds) == 115, p7_audit_doc["total_conditions"]
     v3_split = p7_audit_doc["clinical_v3_profile_slots_split"]
     assert v3_split["total_clinical_v3_profile_slots"] == 12992
     assert v3_split["dp_clinical_profile_slots"] == 10044
@@ -251,7 +251,23 @@ def verify_audit_and_sandbox() -> dict:
     for r in receipts:
         if r.get("outbound_messages_sha256"):
             outbound_sha_slots += 1
-    assert outbound_sha_slots == 73529, f"Expected 73529 outbound_messages_sha256 slots, got {outbound_sha_slots}"
+    assert outbound_sha_slots == 78089, f"Expected 78089 outbound_messages_sha256 slots, got {outbound_sha_slots}"
+    for rep in (1, 2, 3):
+        for c in (
+            f"DAWA_CLEAN_BIRD_R{rep}/r0",
+            f"TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R{rep}/r0",
+            f"TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R{rep}/r0",
+        ):
+            assert p7_conds[c]["slots"] == 440 and p7_conds[c]["copied"] == [0, 0], c
+            for r in by_cond[c]:
+                assert r["copied_private_tuples"] == [0, 0], (c, r["question_id"])
+                assert r.get("raw_tools_exposed", 0) == 0 and r.get("raw_tools_invoked", 0) == 0
+                checked_receipt_slots += 1
+    assert p7_conds["DAWA_CLEAN_EHR600_R1/r0"]["slots"] == 600 and p7_conds["DAWA_CLEAN_EHR600_R1/r0"]["copied"] == [0, 0]
+    for r in by_cond["DAWA_CLEAN_EHR600_R1/r0"]:
+        assert r["copied_private_tuples"] == [0, 0] and r["outside_profile_serialized_tuples"] == [0, 0] and r["out_of_profile_literals"] == [0, 0]
+        assert r.get("raw_tools_exposed", 0) == 0 and r.get("raw_tools_invoked", 0) == 0
+        checked_receipt_slots += 1
     for cond in profile_receipt_conds:
         for r in by_cond[cond]:
             aud = r.get("audit")
@@ -318,9 +334,9 @@ def verify_audit_and_sandbox() -> dict:
     )
     assert ehr_v3_err == 9 and ehr_v3_nosub == 0, (ehr_v3_err, ehr_v3_nosub)
 
-    # Verify turn-ordered sandbox telemetry invariants (DG8_CLEAN_R1..R3 1,320/1,320; DG1/2/4 440/440; EHR_DG8P_V3 1,800/1,800; Stage-10 3,960/3,960)
+    # Verify turn-ordered sandbox telemetry invariants (83,015 total slots)
     te_doc = json.loads((STATS / "sandbox_turn_order_telemetry_v10.json").read_text(encoding="utf-8"))
-    assert te_doc["total_slots"] == 78455, te_doc["total_slots"]
+    assert te_doc["total_slots"] == 83015, te_doc["total_slots"]
     for c in (
         "DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0",
         "DG1_CLEAN_R1/r0", "DG2_CLEAN_R1/r0", "DG4_CLEAN_R1/r0",

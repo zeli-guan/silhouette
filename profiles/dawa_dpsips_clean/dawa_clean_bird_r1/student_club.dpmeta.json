@@ -1,0 +1,1429 @@
+{
+  "db_id": "student_club",
+  "mechanism": "DAWA+DP-SIPS",
+  "epsilon": 8,
+  "epsilon_frac": "8/1",
+  "delta": "1/1000000",
+  "delta_conversion": "1/2000000",
+  "delta_tail_budget": "1/2000000",
+  "rho_table": "874796954851759/1000000000000000",
+  "rho_table_num": 874796954851759,
+  "rho_table_den": 1000000000000000,
+  "rng_source": "os_csprng",
+  "sha256": "292b8ea55cafc610e93536ebdf216a7a1fb7ac363cbe2fe161ec8cb0d8c5e142",
+  "parameters": [
+    {
+      "r_j": "3/1",
+      "share": "1/9",
+      "rho": "874796954851759/9000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 9000000000000000,
+      "sigma2": "4500000000000000/874796954851759",
+      "sigma2_num": 4500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/9",
+      "rho": "874796954851759/9000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 9000000000000000,
+      "sigma2": "4500000000000000/874796954851759",
+      "sigma2_num": 4500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/8000000",
+      "delta_num": 1,
+      "delta_den": 8000000,
+      "sensitivity2": 1,
+      "tau": 13,
+      "tail_lower": "139136762860983/10000000000000000000000",
+      "tail_upper": "17392095357623/1250000000000000000000",
+      "prev_tail_lower": "160652690029957/1000000000000000000000",
+      "prev_tail_upper": "80326345014979/500000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/29",
+      "rho": "874796954851759/29000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 29000000000000000,
+      "sigma2": "14500000000000000/874796954851759",
+      "sigma2_num": 14500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/29",
+      "rho": "874796954851759/29000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 29000000000000000,
+      "sigma2": "14500000000000000/874796954851759",
+      "sigma2_num": 14500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/28000000",
+      "delta_num": 1,
+      "delta_den": 28000000,
+      "sensitivity2": 1,
+      "tau": 23,
+      "tail_lower": "75497663823981/5000000000000000000000",
+      "tail_upper": "150995327647963/10000000000000000000000",
+      "prev_tail_lower": "37384158582823/625000000000000000000",
+      "prev_tail_upper": "598146537325169/10000000000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/87",
+      "rho": "874796954851759/87000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 87000000000000000,
+      "sigma2": "43500000000000000/874796954851759",
+      "sigma2_num": 43500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/28000000",
+      "delta_num": 1,
+      "delta_den": 28000000,
+      "sensitivity2": 1,
+      "tau": 39,
+      "tail_lower": "232405116680133/10000000000000000000000",
+      "tail_upper": "116202558340067/5000000000000000000000",
+      "prev_tail_lower": "512193003511973/10000000000000000000000",
+      "prev_tail_upper": "256096501755987/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/87",
+      "rho": "874796954851759/43500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 43500000000000000,
+      "sigma2": "21750000000000000/874796954851759",
+      "sigma2_num": 21750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/25",
+      "rho": "874796954851759/25000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 25000000000000000,
+      "sigma2": "12500000000000000/874796954851759",
+      "sigma2_num": 12500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/25",
+      "rho": "874796954851759/25000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 25000000000000000,
+      "sigma2": "12500000000000000/874796954851759",
+      "sigma2_num": 12500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/24000000",
+      "delta_num": 1,
+      "delta_den": 24000000,
+      "sensitivity2": 1,
+      "tau": 21,
+      "tail_lower": "268200711886757/10000000000000000000000",
+      "tail_upper": "134100355943379/5000000000000000000000",
+      "prev_tail_lower": "114863479434991/1000000000000000000000",
+      "prev_tail_upper": "7178967464687/62500000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/75",
+      "rho": "874796954851759/75000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 75000000000000000,
+      "sigma2": "37500000000000000/874796954851759",
+      "sigma2_num": 37500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/24000000",
+      "delta_num": 1,
+      "delta_den": 24000000,
+      "sensitivity2": 1,
+      "tau": 36,
+      "tail_lower": "4468850860957/156250000000000000000",
+      "tail_upper": "286006455101249/10000000000000000000000",
+      "prev_tail_lower": "665755236340261/10000000000000000000000",
+      "prev_tail_upper": "332877618170131/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/75",
+      "rho": "874796954851759/37500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37500000000000000,
+      "sigma2": "18750000000000000/874796954851759",
+      "sigma2_num": 18750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 17000000000000000,
+      "sigma2": "8500000000000000/874796954851759",
+      "sigma2_num": 8500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 17000000000000000,
+      "sigma2": "8500000000000000/874796954851759",
+      "sigma2_num": 8500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/16000000",
+      "delta_num": 1,
+      "delta_den": 16000000,
+      "sensitivity2": 1,
+      "tau": 17,
+      "tail_lower": "132824520588473/2500000000000000000000",
+      "tail_upper": "531298082353893/10000000000000000000000",
+      "prev_tail_lower": "148178933815231/500000000000000000000",
+      "prev_tail_upper": "296357867630463/1000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/37",
+      "rho": "874796954851759/37000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37000000000000000,
+      "sigma2": "18500000000000000/874796954851759",
+      "sigma2_num": 18500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/37",
+      "rho": "874796954851759/37000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 37000000000000000,
+      "sigma2": "18500000000000000/874796954851759",
+      "sigma2_num": 18500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/36000000",
+      "delta_num": 1,
+      "delta_den": 36000000,
+      "sensitivity2": 1,
+      "tau": 26,
+      "tail_lower": "138076421157087/10000000000000000000000",
+      "tail_upper": "4314888161159/312500000000000000000",
+      "prev_tail_lower": "3758048868971/80000000000000000000",
+      "prev_tail_upper": "7339939197209/156250000000000000000"
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/111",
+      "rho": "874796954851759/111000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 111000000000000000,
+      "sigma2": "55500000000000000/874796954851759",
+      "sigma2_num": 55500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/36000000",
+      "delta_num": 1,
+      "delta_den": 36000000,
+      "sensitivity2": 1,
+      "tau": 44,
+      "tail_lower": "3618861612263/156250000000000000000",
+      "tail_upper": "231607143184833/10000000000000000000000",
+      "prev_tail_lower": "93330145254789/2000000000000000000000",
+      "prev_tail_upper": "233325363136973/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/111",
+      "rho": "874796954851759/55500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 55500000000000000,
+      "sigma2": "27750000000000000/874796954851759",
+      "sigma2_num": 27750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    }
+  ],
+  "tables": {
+    "attendance": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 9,
+      "n_histograms": 4,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "link_to_event",
+          0
+        ],
+        [
+          "distinct_count",
+          "link_to_event",
+          0
+        ],
+        [
+          "patterns",
+          "link_to_event",
+          1
+        ],
+        [
+          "values",
+          "link_to_event",
+          1
+        ],
+        [
+          "null_count",
+          "link_to_member",
+          0
+        ],
+        [
+          "distinct_count",
+          "link_to_member",
+          0
+        ],
+        [
+          "patterns",
+          "link_to_member",
+          1
+        ],
+        [
+          "values",
+          "link_to_member",
+          1
+        ]
+      ]
+    },
+    "budget": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 29,
+      "n_histograms": 14,
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "budget_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "budget_id",
+          2
+        ],
+        [
+          "patterns",
+          "budget_id",
+          3
+        ],
+        [
+          "values",
+          "budget_id",
+          3
+        ],
+        [
+          "null_count",
+          "category",
+          2
+        ],
+        [
+          "distinct_count",
+          "category",
+          2
+        ],
+        [
+          "patterns",
+          "category",
+          3
+        ],
+        [
+          "values",
+          "category",
+          3
+        ],
+        [
+          "null_count",
+          "spent",
+          2
+        ],
+        [
+          "distinct_count",
+          "spent",
+          2
+        ],
+        [
+          "bins_stage1",
+          "spent",
+          4
+        ],
+        [
+          "bins_stage2",
+          "spent",
+          5
+        ],
+        [
+          "values",
+          "spent",
+          3
+        ],
+        [
+          "null_count",
+          "remaining",
+          2
+        ],
+        [
+          "distinct_count",
+          "remaining",
+          2
+        ],
+        [
+          "bins_stage1",
+          "remaining",
+          4
+        ],
+        [
+          "bins_stage2",
+          "remaining",
+          5
+        ],
+        [
+          "values",
+          "remaining",
+          3
+        ],
+        [
+          "null_count",
+          "amount",
+          2
+        ],
+        [
+          "distinct_count",
+          "amount",
+          2
+        ],
+        [
+          "bins_stage1",
+          "amount",
+          4
+        ],
+        [
+          "bins_stage2",
+          "amount",
+          5
+        ],
+        [
+          "values",
+          "amount",
+          3
+        ],
+        [
+          "null_count",
+          "event_status",
+          2
+        ],
+        [
+          "distinct_count",
+          "event_status",
+          2
+        ],
+        [
+          "patterns",
+          "event_status",
+          3
+        ],
+        [
+          "values",
+          "event_status",
+          3
+        ],
+        [
+          "null_count",
+          "link_to_event",
+          2
+        ],
+        [
+          "distinct_count",
+          "link_to_event",
+          2
+        ],
+        [
+          "patterns",
+          "link_to_event",
+          3
+        ],
+        [
+          "values",
+          "link_to_event",
+          3
+        ]
+      ]
+    },
+    "event": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 29,
+      "n_histograms": 14,
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "event_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "event_id",
+          2
+        ],
+        [
+          "patterns",
+          "event_id",
+          3
+        ],
+        [
+          "values",
+          "event_id",
+          3
+        ],
+        [
+          "null_count",
+          "event_name",
+          2
+        ],
+        [
+          "distinct_count",
+          "event_name",
+          2
+        ],
+        [
+          "patterns",
+          "event_name",
+          3
+        ],
+        [
+          "values",
+          "event_name",
+          3
+        ],
+        [
+          "null_count",
+          "event_date",
+          2
+        ],
+        [
+          "distinct_count",
+          "event_date",
+          2
+        ],
+        [
+          "patterns",
+          "event_date",
+          3
+        ],
+        [
+          "values",
+          "event_date",
+          3
+        ],
+        [
+          "null_count",
+          "type",
+          2
+        ],
+        [
+          "distinct_count",
+          "type",
+          2
+        ],
+        [
+          "patterns",
+          "type",
+          3
+        ],
+        [
+          "values",
+          "type",
+          3
+        ],
+        [
+          "null_count",
+          "notes",
+          2
+        ],
+        [
+          "distinct_count",
+          "notes",
+          2
+        ],
+        [
+          "patterns",
+          "notes",
+          3
+        ],
+        [
+          "values",
+          "notes",
+          3
+        ],
+        [
+          "null_count",
+          "location",
+          2
+        ],
+        [
+          "distinct_count",
+          "location",
+          2
+        ],
+        [
+          "patterns",
+          "location",
+          3
+        ],
+        [
+          "values",
+          "location",
+          3
+        ],
+        [
+          "null_count",
+          "status",
+          2
+        ],
+        [
+          "distinct_count",
+          "status",
+          2
+        ],
+        [
+          "patterns",
+          "status",
+          3
+        ],
+        [
+          "values",
+          "status",
+          3
+        ]
+      ]
+    },
+    "expense": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 29,
+      "n_histograms": 14,
+      "queries": [
+        [
+          "row_count",
+          null,
+          2
+        ],
+        [
+          "null_count",
+          "expense_id",
+          2
+        ],
+        [
+          "distinct_count",
+          "expense_id",
+          2
+        ],
+        [
+          "patterns",
+          "expense_id",
+          3
+        ],
+        [
+          "values",
+          "expense_id",
+          3
+        ],
+        [
+          "null_count",
+          "expense_description",
+          2
+        ],
+        [
+          "distinct_count",
+          "expense_description",
+          2
+        ],
+        [
+          "patterns",
+          "expense_description",
+          3
+        ],
+        [
+          "values",
+          "expense_description",
+          3
+        ],
+        [
+          "null_count",
+          "expense_date",
+          2
+        ],
+        [
+          "distinct_count",
+          "expense_date",
+          2
+        ],
+        [
+          "patterns",
+          "expense_date",
+          3
+        ],
+        [
+          "values",
+          "expense_date",
+          3
+        ],
+        [
+          "null_count",
+          "cost",
+          2
+        ],
+        [
+          "distinct_count",
+          "cost",
+          2
+        ],
+        [
+          "bins_stage1",
+          "cost",
+          4
+        ],
+        [
+          "bins_stage2",
+          "cost",
+          5
+        ],
+        [
+          "values",
+          "cost",
+          3
+        ],
+        [
+          "null_count",
+          "approved",
+          2
+        ],
+        [
+          "distinct_count",
+          "approved",
+          2
+        ],
+        [
+          "patterns",
+          "approved",
+          3
+        ],
+        [
+          "values",
+          "approved",
+          3
+        ],
+        [
+          "null_count",
+          "link_to_member",
+          2
+        ],
+        [
+          "distinct_count",
+          "link_to_member",
+          2
+        ],
+        [
+          "patterns",
+          "link_to_member",
+          3
+        ],
+        [
+          "values",
+          "link_to_member",
+          3
+        ],
+        [
+          "null_count",
+          "link_to_budget",
+          2
+        ],
+        [
+          "distinct_count",
+          "link_to_budget",
+          2
+        ],
+        [
+          "patterns",
+          "link_to_budget",
+          3
+        ],
+        [
+          "values",
+          "link_to_budget",
+          3
+        ]
+      ]
+    },
+    "income": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 25,
+      "n_histograms": 12,
+      "queries": [
+        [
+          "row_count",
+          null,
+          6
+        ],
+        [
+          "null_count",
+          "income_id",
+          6
+        ],
+        [
+          "distinct_count",
+          "income_id",
+          6
+        ],
+        [
+          "patterns",
+          "income_id",
+          7
+        ],
+        [
+          "values",
+          "income_id",
+          7
+        ],
+        [
+          "null_count",
+          "date_received",
+          6
+        ],
+        [
+          "distinct_count",
+          "date_received",
+          6
+        ],
+        [
+          "patterns",
+          "date_received",
+          7
+        ],
+        [
+          "values",
+          "date_received",
+          7
+        ],
+        [
+          "null_count",
+          "amount",
+          6
+        ],
+        [
+          "distinct_count",
+          "amount",
+          6
+        ],
+        [
+          "bins_stage1",
+          "amount",
+          8
+        ],
+        [
+          "bins_stage2",
+          "amount",
+          9
+        ],
+        [
+          "values",
+          "amount",
+          7
+        ],
+        [
+          "null_count",
+          "source",
+          6
+        ],
+        [
+          "distinct_count",
+          "source",
+          6
+        ],
+        [
+          "patterns",
+          "source",
+          7
+        ],
+        [
+          "values",
+          "source",
+          7
+        ],
+        [
+          "null_count",
+          "notes",
+          6
+        ],
+        [
+          "distinct_count",
+          "notes",
+          6
+        ],
+        [
+          "patterns",
+          "notes",
+          7
+        ],
+        [
+          "values",
+          "notes",
+          7
+        ],
+        [
+          "null_count",
+          "link_to_member",
+          6
+        ],
+        [
+          "distinct_count",
+          "link_to_member",
+          6
+        ],
+        [
+          "patterns",
+          "link_to_member",
+          7
+        ],
+        [
+          "values",
+          "link_to_member",
+          7
+        ]
+      ]
+    },
+    "major": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 17,
+      "n_histograms": 8,
+      "queries": [
+        [
+          "row_count",
+          null,
+          10
+        ],
+        [
+          "null_count",
+          "major_id",
+          10
+        ],
+        [
+          "distinct_count",
+          "major_id",
+          10
+        ],
+        [
+          "patterns",
+          "major_id",
+          11
+        ],
+        [
+          "values",
+          "major_id",
+          11
+        ],
+        [
+          "null_count",
+          "major_name",
+          10
+        ],
+        [
+          "distinct_count",
+          "major_name",
+          10
+        ],
+        [
+          "patterns",
+          "major_name",
+          11
+        ],
+        [
+          "values",
+          "major_name",
+          11
+        ],
+        [
+          "null_count",
+          "department",
+          10
+        ],
+        [
+          "distinct_count",
+          "department",
+          10
+        ],
+        [
+          "patterns",
+          "department",
+          11
+        ],
+        [
+          "values",
+          "department",
+          11
+        ],
+        [
+          "null_count",
+          "college",
+          10
+        ],
+        [
+          "distinct_count",
+          "college",
+          10
+        ],
+        [
+          "patterns",
+          "college",
+          11
+        ],
+        [
+          "values",
+          "college",
+          11
+        ]
+      ]
+    },
+    "member": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 37,
+      "n_histograms": 18,
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "member_id",
+          12
+        ],
+        [
+          "distinct_count",
+          "member_id",
+          12
+        ],
+        [
+          "patterns",
+          "member_id",
+          13
+        ],
+        [
+          "values",
+          "member_id",
+          13
+        ],
+        [
+          "null_count",
+          "first_name",
+          12
+        ],
+        [
+          "distinct_count",
+          "first_name",
+          12
+        ],
+        [
+          "patterns",
+          "first_name",
+          13
+        ],
+        [
+          "values",
+          "first_name",
+          13
+        ],
+        [
+          "null_count",
+          "last_name",
+          12
+        ],
+        [
+          "distinct_count",
+          "last_name",
+          12
+        ],
+        [
+          "patterns",
+          "last_name",
+          13
+        ],
+        [
+          "values",
+          "last_name",
+          13
+        ],
+        [
+          "null_count",
+          "email",
+          12
+        ],
+        [
+          "distinct_count",
+          "email",
+          12
+        ],
+        [
+          "patterns",
+          "email",
+          13
+        ],
+        [
+          "values",
+          "email",
+          13
+        ],
+        [
+          "null_count",
+          "position",
+          12
+        ],
+        [
+          "distinct_count",
+          "position",
+          12
+        ],
+        [
+          "patterns",
+          "position",
+          13
+        ],
+        [
+          "values",
+          "position",
+          13
+        ],
+        [
+          "null_count",
+          "t_shirt_size",
+          12
+        ],
+        [
+          "distinct_count",
+          "t_shirt_size",
+          12
+        ],
+        [
+          "patterns",
+          "t_shirt_size",
+          13
+        ],
+        [
+          "values",
+          "t_shirt_size",
+          13
+        ],
+        [
+          "null_count",
+          "phone",
+          12
+        ],
+        [
+          "distinct_count",
+          "phone",
+          12
+        ],
+        [
+          "patterns",
+          "phone",
+          13
+        ],
+        [
+          "values",
+          "phone",
+          13
+        ],
+        [
+          "null_count",
+          "zip",
+          12
+        ],
+        [
+          "distinct_count",
+          "zip",
+          12
+        ],
+        [
+          "bins_stage1",
+          "zip",
+          14
+        ],
+        [
+          "bins_stage2",
+          "zip",
+          15
+        ],
+        [
+          "values",
+          "zip",
+          13
+        ],
+        [
+          "null_count",
+          "link_to_major",
+          12
+        ],
+        [
+          "distinct_count",
+          "link_to_major",
+          12
+        ],
+        [
+          "patterns",
+          "link_to_major",
+          13
+        ],
+        [
+          "values",
+          "link_to_major",
+          13
+        ]
+      ]
+    },
+    "zip_code": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 25,
+      "n_histograms": 12,
+      "queries": [
+        [
+          "row_count",
+          null,
+          6
+        ],
+        [
+          "null_count",
+          "zip_code",
+          6
+        ],
+        [
+          "distinct_count",
+          "zip_code",
+          6
+        ],
+        [
+          "bins_stage1",
+          "zip_code",
+          8
+        ],
+        [
+          "bins_stage2",
+          "zip_code",
+          9
+        ],
+        [
+          "values",
+          "zip_code",
+          7
+        ],
+        [
+          "null_count",
+          "type",
+          6
+        ],
+        [
+          "distinct_count",
+          "type",
+          6
+        ],
+        [
+          "patterns",
+          "type",
+          7
+        ],
+        [
+          "values",
+          "type",
+          7
+        ],
+        [
+          "null_count",
+          "city",
+          6
+        ],
+        [
+          "distinct_count",
+          "city",
+          6
+        ],
+        [
+          "patterns",
+          "city",
+          7
+        ],
+        [
+          "values",
+          "city",
+          7
+        ],
+        [
+          "null_count",
+          "county",
+          6
+        ],
+        [
+          "distinct_count",
+          "county",
+          6
+        ],
+        [
+          "patterns",
+          "county",
+          7
+        ],
+        [
+          "values",
+          "county",
+          7
+        ],
+        [
+          "null_count",
+          "state",
+          6
+        ],
+        [
+          "distinct_count",
+          "state",
+          6
+        ],
+        [
+          "patterns",
+          "state",
+          7
+        ],
+        [
+          "values",
+          "state",
+          7
+        ],
+        [
+          "null_count",
+          "short_state",
+          6
+        ],
+        [
+          "distinct_count",
+          "short_state",
+          6
+        ],
+        [
+          "patterns",
+          "short_state",
+          7
+        ],
+        [
+          "values",
+          "short_state",
+          7
+        ]
+      ]
+    }
+  }
+}

@@ -1,0 +1,2871 @@
+{
+  "db_id": "card_games",
+  "mechanism": "DAWA+DP-SIPS",
+  "epsilon": 8,
+  "epsilon_frac": "8/1",
+  "delta": "1/1000000",
+  "delta_conversion": "1/2000000",
+  "delta_tail_budget": "1/2000000",
+  "rho_table": "874796954851759/1000000000000000",
+  "rho_table_num": 874796954851759,
+  "rho_table_den": 1000000000000000,
+  "rng_source": "os_csprng",
+  "sha256": "bb3442163bc3486d95dfac2e5bbfe51aa7ef30701515beeb8221b82b9b1b84ec",
+  "parameters": [
+    {
+      "r_j": "3/1",
+      "share": "1/297",
+      "rho": "874796954851759/297000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 297000000000000000,
+      "sigma2": "148500000000000000/874796954851759",
+      "sigma2_num": 148500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/891",
+      "rho": "874796954851759/891000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 891000000000000000,
+      "sigma2": "445500000000000000/874796954851759",
+      "sigma2_num": 445500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/296000000",
+      "delta_num": 1,
+      "delta_den": 296000000,
+      "sensitivity2": 1,
+      "tau": 132,
+      "tail_lower": "281121104794233/100000000000000000000000",
+      "tail_upper": "140560552397117/50000000000000000000000",
+      "prev_tail_lower": "91560955842413/25000000000000000000000",
+      "prev_tail_upper": "366243823369653/100000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/891",
+      "rho": "874796954851759/445500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 445500000000000000,
+      "sigma2": "222750000000000000/874796954851759",
+      "sigma2_num": 222750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/297",
+      "rho": "874796954851759/297000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 297000000000000000,
+      "sigma2": "148500000000000000/874796954851759",
+      "sigma2_num": 148500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/296000000",
+      "delta_num": 1,
+      "delta_den": 296000000,
+      "sensitivity2": 1,
+      "tau": 77,
+      "tail_lower": "1070094662077/500000000000000000000",
+      "tail_upper": "214018932415401/100000000000000000000000",
+      "prev_tail_lower": "169579712195023/50000000000000000000000",
+      "prev_tail_upper": "339159424390047/100000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/33",
+      "rho": "874796954851759/33000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 33000000000000000,
+      "sigma2": "16500000000000000/874796954851759",
+      "sigma2_num": 16500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/99",
+      "rho": "874796954851759/99000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 99000000000000000,
+      "sigma2": "49500000000000000/874796954851759",
+      "sigma2_num": 49500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/32000000",
+      "delta_num": 1,
+      "delta_den": 32000000,
+      "sensitivity2": 1,
+      "tau": 42,
+      "tail_lower": "168536365632787/10000000000000000000000",
+      "tail_upper": "42134091408197/2500000000000000000000",
+      "prev_tail_lower": "356297155748253/10000000000000000000000",
+      "prev_tail_upper": "178148577874127/5000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/99",
+      "rho": "874796954851759/49500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 49500000000000000,
+      "sigma2": "24750000000000000/874796954851759",
+      "sigma2_num": 24750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/33",
+      "rho": "874796954851759/33000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 33000000000000000,
+      "sigma2": "16500000000000000/874796954851759",
+      "sigma2_num": 16500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/32000000",
+      "delta_num": 1,
+      "delta_den": 32000000,
+      "sensitivity2": 1,
+      "tau": 24,
+      "tail_lower": "73308152580071/2500000000000000000000",
+      "tail_upper": "58646522064057/2000000000000000000000",
+      "prev_tail_lower": "649690404509/6250000000000000000",
+      "prev_tail_upper": "103950464721441/1000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 17000000000000000,
+      "sigma2": "8500000000000000/874796954851759",
+      "sigma2_num": 8500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/51",
+      "rho": "874796954851759/51000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 51000000000000000,
+      "sigma2": "25500000000000000/874796954851759",
+      "sigma2_num": 25500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/16000000",
+      "delta_num": 1,
+      "delta_den": 16000000,
+      "sensitivity2": 1,
+      "tau": 29,
+      "tail_lower": "62433035963931/1000000000000000000000",
+      "tail_upper": "624330359639311/10000000000000000000000",
+      "prev_tail_lower": "42289291240263/250000000000000000000",
+      "prev_tail_upper": "169157164961053/1000000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/51",
+      "rho": "874796954851759/25500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 25500000000000000,
+      "sigma2": "12750000000000000/874796954851759",
+      "sigma2_num": 12750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/17",
+      "rho": "874796954851759/17000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 17000000000000000,
+      "sigma2": "8500000000000000/874796954851759",
+      "sigma2_num": 8500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/16000000",
+      "delta_num": 1,
+      "delta_den": 16000000,
+      "sensitivity2": 1,
+      "tau": 17,
+      "tail_lower": "132824520588473/2500000000000000000000",
+      "tail_upper": "531298082353893/10000000000000000000000",
+      "prev_tail_lower": "148178933815231/500000000000000000000",
+      "prev_tail_upper": "296357867630463/1000000000000000000000"
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/85",
+      "rho": "874796954851759/85000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 85000000000000000,
+      "sigma2": "42500000000000000/874796954851759",
+      "sigma2_num": 42500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "1/1",
+      "share": "1/255",
+      "rho": "874796954851759/255000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 255000000000000000,
+      "sigma2": "127500000000000000/874796954851759",
+      "sigma2_num": 127500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/84000000",
+      "delta_num": 1,
+      "delta_den": 84000000,
+      "sensitivity2": 1,
+      "tau": 68,
+      "tail_lower": "55871530656833/5000000000000000000000",
+      "tail_upper": "111743061313667/10000000000000000000000",
+      "prev_tail_lower": "179512781968247/10000000000000000000000",
+      "prev_tail_upper": "22439097746031/1250000000000000000000"
+    },
+    {
+      "r_j": "2/1",
+      "share": "2/255",
+      "rho": "874796954851759/127500000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 127500000000000000,
+      "sigma2": "63750000000000000/874796954851759",
+      "sigma2_num": 63750000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "0/1",
+      "delta_num": 0,
+      "delta_den": 1,
+      "sensitivity2": 1
+    },
+    {
+      "r_j": "3/1",
+      "share": "1/85",
+      "rho": "874796954851759/85000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 85000000000000000,
+      "sigma2": "42500000000000000/874796954851759",
+      "sigma2_num": 42500000000000000,
+      "sigma2_den": 874796954851759,
+      "delta": "1/84000000",
+      "delta_num": 1,
+      "delta_den": 84000000,
+      "sensitivity2": 1,
+      "tau": 40,
+      "tail_lower": "706185722615619/100000000000000000000000",
+      "tail_upper": "35309286130781/5000000000000000000000",
+      "prev_tail_lower": "80841124026503/5000000000000000000000",
+      "prev_tail_upper": "161682248053007/10000000000000000000000"
+    }
+  ],
+  "tables": {
+    "cards": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 297,
+      "n_histograms": 148,
+      "queries": [
+        [
+          "row_count",
+          null,
+          0
+        ],
+        [
+          "null_count",
+          "id",
+          0
+        ],
+        [
+          "distinct_count",
+          "id",
+          0
+        ],
+        [
+          "bins_stage1",
+          "id",
+          1
+        ],
+        [
+          "bins_stage2",
+          "id",
+          2
+        ],
+        [
+          "values",
+          "id",
+          3
+        ],
+        [
+          "null_count",
+          "artist",
+          0
+        ],
+        [
+          "distinct_count",
+          "artist",
+          0
+        ],
+        [
+          "patterns",
+          "artist",
+          3
+        ],
+        [
+          "values",
+          "artist",
+          3
+        ],
+        [
+          "null_count",
+          "asciiName",
+          0
+        ],
+        [
+          "distinct_count",
+          "asciiName",
+          0
+        ],
+        [
+          "patterns",
+          "asciiName",
+          3
+        ],
+        [
+          "values",
+          "asciiName",
+          3
+        ],
+        [
+          "null_count",
+          "availability",
+          0
+        ],
+        [
+          "distinct_count",
+          "availability",
+          0
+        ],
+        [
+          "patterns",
+          "availability",
+          3
+        ],
+        [
+          "values",
+          "availability",
+          3
+        ],
+        [
+          "null_count",
+          "borderColor",
+          0
+        ],
+        [
+          "distinct_count",
+          "borderColor",
+          0
+        ],
+        [
+          "patterns",
+          "borderColor",
+          3
+        ],
+        [
+          "values",
+          "borderColor",
+          3
+        ],
+        [
+          "null_count",
+          "cardKingdomFoilId",
+          0
+        ],
+        [
+          "distinct_count",
+          "cardKingdomFoilId",
+          0
+        ],
+        [
+          "patterns",
+          "cardKingdomFoilId",
+          3
+        ],
+        [
+          "values",
+          "cardKingdomFoilId",
+          3
+        ],
+        [
+          "null_count",
+          "cardKingdomId",
+          0
+        ],
+        [
+          "distinct_count",
+          "cardKingdomId",
+          0
+        ],
+        [
+          "patterns",
+          "cardKingdomId",
+          3
+        ],
+        [
+          "values",
+          "cardKingdomId",
+          3
+        ],
+        [
+          "null_count",
+          "colorIdentity",
+          0
+        ],
+        [
+          "distinct_count",
+          "colorIdentity",
+          0
+        ],
+        [
+          "patterns",
+          "colorIdentity",
+          3
+        ],
+        [
+          "values",
+          "colorIdentity",
+          3
+        ],
+        [
+          "null_count",
+          "colorIndicator",
+          0
+        ],
+        [
+          "distinct_count",
+          "colorIndicator",
+          0
+        ],
+        [
+          "patterns",
+          "colorIndicator",
+          3
+        ],
+        [
+          "values",
+          "colorIndicator",
+          3
+        ],
+        [
+          "null_count",
+          "colors",
+          0
+        ],
+        [
+          "distinct_count",
+          "colors",
+          0
+        ],
+        [
+          "patterns",
+          "colors",
+          3
+        ],
+        [
+          "values",
+          "colors",
+          3
+        ],
+        [
+          "null_count",
+          "convertedManaCost",
+          0
+        ],
+        [
+          "distinct_count",
+          "convertedManaCost",
+          0
+        ],
+        [
+          "bins_stage1",
+          "convertedManaCost",
+          1
+        ],
+        [
+          "bins_stage2",
+          "convertedManaCost",
+          2
+        ],
+        [
+          "values",
+          "convertedManaCost",
+          3
+        ],
+        [
+          "null_count",
+          "duelDeck",
+          0
+        ],
+        [
+          "distinct_count",
+          "duelDeck",
+          0
+        ],
+        [
+          "patterns",
+          "duelDeck",
+          3
+        ],
+        [
+          "values",
+          "duelDeck",
+          3
+        ],
+        [
+          "null_count",
+          "edhrecRank",
+          0
+        ],
+        [
+          "distinct_count",
+          "edhrecRank",
+          0
+        ],
+        [
+          "bins_stage1",
+          "edhrecRank",
+          1
+        ],
+        [
+          "bins_stage2",
+          "edhrecRank",
+          2
+        ],
+        [
+          "values",
+          "edhrecRank",
+          3
+        ],
+        [
+          "null_count",
+          "faceConvertedManaCost",
+          0
+        ],
+        [
+          "distinct_count",
+          "faceConvertedManaCost",
+          0
+        ],
+        [
+          "bins_stage1",
+          "faceConvertedManaCost",
+          1
+        ],
+        [
+          "bins_stage2",
+          "faceConvertedManaCost",
+          2
+        ],
+        [
+          "values",
+          "faceConvertedManaCost",
+          3
+        ],
+        [
+          "null_count",
+          "faceName",
+          0
+        ],
+        [
+          "distinct_count",
+          "faceName",
+          0
+        ],
+        [
+          "patterns",
+          "faceName",
+          3
+        ],
+        [
+          "values",
+          "faceName",
+          3
+        ],
+        [
+          "null_count",
+          "flavorName",
+          0
+        ],
+        [
+          "distinct_count",
+          "flavorName",
+          0
+        ],
+        [
+          "patterns",
+          "flavorName",
+          3
+        ],
+        [
+          "values",
+          "flavorName",
+          3
+        ],
+        [
+          "null_count",
+          "flavorText",
+          0
+        ],
+        [
+          "distinct_count",
+          "flavorText",
+          0
+        ],
+        [
+          "patterns",
+          "flavorText",
+          3
+        ],
+        [
+          "values",
+          "flavorText",
+          3
+        ],
+        [
+          "null_count",
+          "frameEffects",
+          0
+        ],
+        [
+          "distinct_count",
+          "frameEffects",
+          0
+        ],
+        [
+          "patterns",
+          "frameEffects",
+          3
+        ],
+        [
+          "values",
+          "frameEffects",
+          3
+        ],
+        [
+          "null_count",
+          "frameVersion",
+          0
+        ],
+        [
+          "distinct_count",
+          "frameVersion",
+          0
+        ],
+        [
+          "patterns",
+          "frameVersion",
+          3
+        ],
+        [
+          "values",
+          "frameVersion",
+          3
+        ],
+        [
+          "null_count",
+          "hand",
+          0
+        ],
+        [
+          "distinct_count",
+          "hand",
+          0
+        ],
+        [
+          "patterns",
+          "hand",
+          3
+        ],
+        [
+          "values",
+          "hand",
+          3
+        ],
+        [
+          "null_count",
+          "hasAlternativeDeckLimit",
+          0
+        ],
+        [
+          "distinct_count",
+          "hasAlternativeDeckLimit",
+          0
+        ],
+        [
+          "bins_stage1",
+          "hasAlternativeDeckLimit",
+          1
+        ],
+        [
+          "bins_stage2",
+          "hasAlternativeDeckLimit",
+          2
+        ],
+        [
+          "values",
+          "hasAlternativeDeckLimit",
+          3
+        ],
+        [
+          "null_count",
+          "hasContentWarning",
+          0
+        ],
+        [
+          "distinct_count",
+          "hasContentWarning",
+          0
+        ],
+        [
+          "bins_stage1",
+          "hasContentWarning",
+          1
+        ],
+        [
+          "bins_stage2",
+          "hasContentWarning",
+          2
+        ],
+        [
+          "values",
+          "hasContentWarning",
+          3
+        ],
+        [
+          "null_count",
+          "hasFoil",
+          0
+        ],
+        [
+          "distinct_count",
+          "hasFoil",
+          0
+        ],
+        [
+          "bins_stage1",
+          "hasFoil",
+          1
+        ],
+        [
+          "bins_stage2",
+          "hasFoil",
+          2
+        ],
+        [
+          "values",
+          "hasFoil",
+          3
+        ],
+        [
+          "null_count",
+          "hasNonFoil",
+          0
+        ],
+        [
+          "distinct_count",
+          "hasNonFoil",
+          0
+        ],
+        [
+          "bins_stage1",
+          "hasNonFoil",
+          1
+        ],
+        [
+          "bins_stage2",
+          "hasNonFoil",
+          2
+        ],
+        [
+          "values",
+          "hasNonFoil",
+          3
+        ],
+        [
+          "null_count",
+          "isAlternative",
+          0
+        ],
+        [
+          "distinct_count",
+          "isAlternative",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isAlternative",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isAlternative",
+          2
+        ],
+        [
+          "values",
+          "isAlternative",
+          3
+        ],
+        [
+          "null_count",
+          "isFullArt",
+          0
+        ],
+        [
+          "distinct_count",
+          "isFullArt",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isFullArt",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isFullArt",
+          2
+        ],
+        [
+          "values",
+          "isFullArt",
+          3
+        ],
+        [
+          "null_count",
+          "isOnlineOnly",
+          0
+        ],
+        [
+          "distinct_count",
+          "isOnlineOnly",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isOnlineOnly",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isOnlineOnly",
+          2
+        ],
+        [
+          "values",
+          "isOnlineOnly",
+          3
+        ],
+        [
+          "null_count",
+          "isOversized",
+          0
+        ],
+        [
+          "distinct_count",
+          "isOversized",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isOversized",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isOversized",
+          2
+        ],
+        [
+          "values",
+          "isOversized",
+          3
+        ],
+        [
+          "null_count",
+          "isPromo",
+          0
+        ],
+        [
+          "distinct_count",
+          "isPromo",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isPromo",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isPromo",
+          2
+        ],
+        [
+          "values",
+          "isPromo",
+          3
+        ],
+        [
+          "null_count",
+          "isReprint",
+          0
+        ],
+        [
+          "distinct_count",
+          "isReprint",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isReprint",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isReprint",
+          2
+        ],
+        [
+          "values",
+          "isReprint",
+          3
+        ],
+        [
+          "null_count",
+          "isReserved",
+          0
+        ],
+        [
+          "distinct_count",
+          "isReserved",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isReserved",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isReserved",
+          2
+        ],
+        [
+          "values",
+          "isReserved",
+          3
+        ],
+        [
+          "null_count",
+          "isStarter",
+          0
+        ],
+        [
+          "distinct_count",
+          "isStarter",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isStarter",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isStarter",
+          2
+        ],
+        [
+          "values",
+          "isStarter",
+          3
+        ],
+        [
+          "null_count",
+          "isStorySpotlight",
+          0
+        ],
+        [
+          "distinct_count",
+          "isStorySpotlight",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isStorySpotlight",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isStorySpotlight",
+          2
+        ],
+        [
+          "values",
+          "isStorySpotlight",
+          3
+        ],
+        [
+          "null_count",
+          "isTextless",
+          0
+        ],
+        [
+          "distinct_count",
+          "isTextless",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isTextless",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isTextless",
+          2
+        ],
+        [
+          "values",
+          "isTextless",
+          3
+        ],
+        [
+          "null_count",
+          "isTimeshifted",
+          0
+        ],
+        [
+          "distinct_count",
+          "isTimeshifted",
+          0
+        ],
+        [
+          "bins_stage1",
+          "isTimeshifted",
+          1
+        ],
+        [
+          "bins_stage2",
+          "isTimeshifted",
+          2
+        ],
+        [
+          "values",
+          "isTimeshifted",
+          3
+        ],
+        [
+          "null_count",
+          "keywords",
+          0
+        ],
+        [
+          "distinct_count",
+          "keywords",
+          0
+        ],
+        [
+          "patterns",
+          "keywords",
+          3
+        ],
+        [
+          "values",
+          "keywords",
+          3
+        ],
+        [
+          "null_count",
+          "layout",
+          0
+        ],
+        [
+          "distinct_count",
+          "layout",
+          0
+        ],
+        [
+          "patterns",
+          "layout",
+          3
+        ],
+        [
+          "values",
+          "layout",
+          3
+        ],
+        [
+          "null_count",
+          "leadershipSkills",
+          0
+        ],
+        [
+          "distinct_count",
+          "leadershipSkills",
+          0
+        ],
+        [
+          "patterns",
+          "leadershipSkills",
+          3
+        ],
+        [
+          "values",
+          "leadershipSkills",
+          3
+        ],
+        [
+          "null_count",
+          "life",
+          0
+        ],
+        [
+          "distinct_count",
+          "life",
+          0
+        ],
+        [
+          "patterns",
+          "life",
+          3
+        ],
+        [
+          "values",
+          "life",
+          3
+        ],
+        [
+          "null_count",
+          "loyalty",
+          0
+        ],
+        [
+          "distinct_count",
+          "loyalty",
+          0
+        ],
+        [
+          "patterns",
+          "loyalty",
+          3
+        ],
+        [
+          "values",
+          "loyalty",
+          3
+        ],
+        [
+          "null_count",
+          "manaCost",
+          0
+        ],
+        [
+          "distinct_count",
+          "manaCost",
+          0
+        ],
+        [
+          "patterns",
+          "manaCost",
+          3
+        ],
+        [
+          "values",
+          "manaCost",
+          3
+        ],
+        [
+          "null_count",
+          "mcmId",
+          0
+        ],
+        [
+          "distinct_count",
+          "mcmId",
+          0
+        ],
+        [
+          "patterns",
+          "mcmId",
+          3
+        ],
+        [
+          "values",
+          "mcmId",
+          3
+        ],
+        [
+          "null_count",
+          "mcmMetaId",
+          0
+        ],
+        [
+          "distinct_count",
+          "mcmMetaId",
+          0
+        ],
+        [
+          "patterns",
+          "mcmMetaId",
+          3
+        ],
+        [
+          "values",
+          "mcmMetaId",
+          3
+        ],
+        [
+          "null_count",
+          "mtgArenaId",
+          0
+        ],
+        [
+          "distinct_count",
+          "mtgArenaId",
+          0
+        ],
+        [
+          "patterns",
+          "mtgArenaId",
+          3
+        ],
+        [
+          "values",
+          "mtgArenaId",
+          3
+        ],
+        [
+          "null_count",
+          "mtgjsonV4Id",
+          0
+        ],
+        [
+          "distinct_count",
+          "mtgjsonV4Id",
+          0
+        ],
+        [
+          "patterns",
+          "mtgjsonV4Id",
+          3
+        ],
+        [
+          "values",
+          "mtgjsonV4Id",
+          3
+        ],
+        [
+          "null_count",
+          "mtgoFoilId",
+          0
+        ],
+        [
+          "distinct_count",
+          "mtgoFoilId",
+          0
+        ],
+        [
+          "patterns",
+          "mtgoFoilId",
+          3
+        ],
+        [
+          "values",
+          "mtgoFoilId",
+          3
+        ],
+        [
+          "null_count",
+          "mtgoId",
+          0
+        ],
+        [
+          "distinct_count",
+          "mtgoId",
+          0
+        ],
+        [
+          "patterns",
+          "mtgoId",
+          3
+        ],
+        [
+          "values",
+          "mtgoId",
+          3
+        ],
+        [
+          "null_count",
+          "multiverseId",
+          0
+        ],
+        [
+          "distinct_count",
+          "multiverseId",
+          0
+        ],
+        [
+          "patterns",
+          "multiverseId",
+          3
+        ],
+        [
+          "values",
+          "multiverseId",
+          3
+        ],
+        [
+          "null_count",
+          "name",
+          0
+        ],
+        [
+          "distinct_count",
+          "name",
+          0
+        ],
+        [
+          "patterns",
+          "name",
+          3
+        ],
+        [
+          "values",
+          "name",
+          3
+        ],
+        [
+          "null_count",
+          "number",
+          0
+        ],
+        [
+          "distinct_count",
+          "number",
+          0
+        ],
+        [
+          "patterns",
+          "number",
+          3
+        ],
+        [
+          "values",
+          "number",
+          3
+        ],
+        [
+          "null_count",
+          "originalReleaseDate",
+          0
+        ],
+        [
+          "distinct_count",
+          "originalReleaseDate",
+          0
+        ],
+        [
+          "patterns",
+          "originalReleaseDate",
+          3
+        ],
+        [
+          "values",
+          "originalReleaseDate",
+          3
+        ],
+        [
+          "null_count",
+          "originalText",
+          0
+        ],
+        [
+          "distinct_count",
+          "originalText",
+          0
+        ],
+        [
+          "patterns",
+          "originalText",
+          3
+        ],
+        [
+          "values",
+          "originalText",
+          3
+        ],
+        [
+          "null_count",
+          "originalType",
+          0
+        ],
+        [
+          "distinct_count",
+          "originalType",
+          0
+        ],
+        [
+          "patterns",
+          "originalType",
+          3
+        ],
+        [
+          "values",
+          "originalType",
+          3
+        ],
+        [
+          "null_count",
+          "otherFaceIds",
+          0
+        ],
+        [
+          "distinct_count",
+          "otherFaceIds",
+          0
+        ],
+        [
+          "patterns",
+          "otherFaceIds",
+          3
+        ],
+        [
+          "values",
+          "otherFaceIds",
+          3
+        ],
+        [
+          "null_count",
+          "power",
+          0
+        ],
+        [
+          "distinct_count",
+          "power",
+          0
+        ],
+        [
+          "patterns",
+          "power",
+          3
+        ],
+        [
+          "values",
+          "power",
+          3
+        ],
+        [
+          "null_count",
+          "printings",
+          0
+        ],
+        [
+          "distinct_count",
+          "printings",
+          0
+        ],
+        [
+          "patterns",
+          "printings",
+          3
+        ],
+        [
+          "values",
+          "printings",
+          3
+        ],
+        [
+          "null_count",
+          "promoTypes",
+          0
+        ],
+        [
+          "distinct_count",
+          "promoTypes",
+          0
+        ],
+        [
+          "patterns",
+          "promoTypes",
+          3
+        ],
+        [
+          "values",
+          "promoTypes",
+          3
+        ],
+        [
+          "null_count",
+          "purchaseUrls",
+          0
+        ],
+        [
+          "distinct_count",
+          "purchaseUrls",
+          0
+        ],
+        [
+          "patterns",
+          "purchaseUrls",
+          3
+        ],
+        [
+          "values",
+          "purchaseUrls",
+          3
+        ],
+        [
+          "null_count",
+          "rarity",
+          0
+        ],
+        [
+          "distinct_count",
+          "rarity",
+          0
+        ],
+        [
+          "patterns",
+          "rarity",
+          3
+        ],
+        [
+          "values",
+          "rarity",
+          3
+        ],
+        [
+          "null_count",
+          "scryfallId",
+          0
+        ],
+        [
+          "distinct_count",
+          "scryfallId",
+          0
+        ],
+        [
+          "patterns",
+          "scryfallId",
+          3
+        ],
+        [
+          "values",
+          "scryfallId",
+          3
+        ],
+        [
+          "null_count",
+          "scryfallIllustrationId",
+          0
+        ],
+        [
+          "distinct_count",
+          "scryfallIllustrationId",
+          0
+        ],
+        [
+          "patterns",
+          "scryfallIllustrationId",
+          3
+        ],
+        [
+          "values",
+          "scryfallIllustrationId",
+          3
+        ],
+        [
+          "null_count",
+          "scryfallOracleId",
+          0
+        ],
+        [
+          "distinct_count",
+          "scryfallOracleId",
+          0
+        ],
+        [
+          "patterns",
+          "scryfallOracleId",
+          3
+        ],
+        [
+          "values",
+          "scryfallOracleId",
+          3
+        ],
+        [
+          "null_count",
+          "setCode",
+          0
+        ],
+        [
+          "distinct_count",
+          "setCode",
+          0
+        ],
+        [
+          "patterns",
+          "setCode",
+          3
+        ],
+        [
+          "values",
+          "setCode",
+          3
+        ],
+        [
+          "null_count",
+          "side",
+          0
+        ],
+        [
+          "distinct_count",
+          "side",
+          0
+        ],
+        [
+          "patterns",
+          "side",
+          3
+        ],
+        [
+          "values",
+          "side",
+          3
+        ],
+        [
+          "null_count",
+          "subtypes",
+          0
+        ],
+        [
+          "distinct_count",
+          "subtypes",
+          0
+        ],
+        [
+          "patterns",
+          "subtypes",
+          3
+        ],
+        [
+          "values",
+          "subtypes",
+          3
+        ],
+        [
+          "null_count",
+          "supertypes",
+          0
+        ],
+        [
+          "distinct_count",
+          "supertypes",
+          0
+        ],
+        [
+          "patterns",
+          "supertypes",
+          3
+        ],
+        [
+          "values",
+          "supertypes",
+          3
+        ],
+        [
+          "null_count",
+          "tcgplayerProductId",
+          0
+        ],
+        [
+          "distinct_count",
+          "tcgplayerProductId",
+          0
+        ],
+        [
+          "patterns",
+          "tcgplayerProductId",
+          3
+        ],
+        [
+          "values",
+          "tcgplayerProductId",
+          3
+        ],
+        [
+          "null_count",
+          "text",
+          0
+        ],
+        [
+          "distinct_count",
+          "text",
+          0
+        ],
+        [
+          "patterns",
+          "text",
+          3
+        ],
+        [
+          "values",
+          "text",
+          3
+        ],
+        [
+          "null_count",
+          "toughness",
+          0
+        ],
+        [
+          "distinct_count",
+          "toughness",
+          0
+        ],
+        [
+          "patterns",
+          "toughness",
+          3
+        ],
+        [
+          "values",
+          "toughness",
+          3
+        ],
+        [
+          "null_count",
+          "type",
+          0
+        ],
+        [
+          "distinct_count",
+          "type",
+          0
+        ],
+        [
+          "patterns",
+          "type",
+          3
+        ],
+        [
+          "values",
+          "type",
+          3
+        ],
+        [
+          "null_count",
+          "types",
+          0
+        ],
+        [
+          "distinct_count",
+          "types",
+          0
+        ],
+        [
+          "patterns",
+          "types",
+          3
+        ],
+        [
+          "values",
+          "types",
+          3
+        ],
+        [
+          "null_count",
+          "uuid",
+          0
+        ],
+        [
+          "distinct_count",
+          "uuid",
+          0
+        ],
+        [
+          "patterns",
+          "uuid",
+          3
+        ],
+        [
+          "values",
+          "uuid",
+          3
+        ],
+        [
+          "null_count",
+          "variations",
+          0
+        ],
+        [
+          "distinct_count",
+          "variations",
+          0
+        ],
+        [
+          "patterns",
+          "variations",
+          3
+        ],
+        [
+          "values",
+          "variations",
+          3
+        ],
+        [
+          "null_count",
+          "watermark",
+          0
+        ],
+        [
+          "distinct_count",
+          "watermark",
+          0
+        ],
+        [
+          "patterns",
+          "watermark",
+          3
+        ],
+        [
+          "values",
+          "watermark",
+          3
+        ]
+      ]
+    },
+    "foreign_data": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 33,
+      "n_histograms": 16,
+      "queries": [
+        [
+          "row_count",
+          null,
+          4
+        ],
+        [
+          "null_count",
+          "id",
+          4
+        ],
+        [
+          "distinct_count",
+          "id",
+          4
+        ],
+        [
+          "bins_stage1",
+          "id",
+          5
+        ],
+        [
+          "bins_stage2",
+          "id",
+          6
+        ],
+        [
+          "values",
+          "id",
+          7
+        ],
+        [
+          "null_count",
+          "flavorText",
+          4
+        ],
+        [
+          "distinct_count",
+          "flavorText",
+          4
+        ],
+        [
+          "patterns",
+          "flavorText",
+          7
+        ],
+        [
+          "values",
+          "flavorText",
+          7
+        ],
+        [
+          "null_count",
+          "language",
+          4
+        ],
+        [
+          "distinct_count",
+          "language",
+          4
+        ],
+        [
+          "patterns",
+          "language",
+          7
+        ],
+        [
+          "values",
+          "language",
+          7
+        ],
+        [
+          "null_count",
+          "multiverseid",
+          4
+        ],
+        [
+          "distinct_count",
+          "multiverseid",
+          4
+        ],
+        [
+          "bins_stage1",
+          "multiverseid",
+          5
+        ],
+        [
+          "bins_stage2",
+          "multiverseid",
+          6
+        ],
+        [
+          "values",
+          "multiverseid",
+          7
+        ],
+        [
+          "null_count",
+          "name",
+          4
+        ],
+        [
+          "distinct_count",
+          "name",
+          4
+        ],
+        [
+          "patterns",
+          "name",
+          7
+        ],
+        [
+          "values",
+          "name",
+          7
+        ],
+        [
+          "null_count",
+          "text",
+          4
+        ],
+        [
+          "distinct_count",
+          "text",
+          4
+        ],
+        [
+          "patterns",
+          "text",
+          7
+        ],
+        [
+          "values",
+          "text",
+          7
+        ],
+        [
+          "null_count",
+          "type",
+          4
+        ],
+        [
+          "distinct_count",
+          "type",
+          4
+        ],
+        [
+          "patterns",
+          "type",
+          7
+        ],
+        [
+          "values",
+          "type",
+          7
+        ],
+        [
+          "null_count",
+          "uuid",
+          4
+        ],
+        [
+          "distinct_count",
+          "uuid",
+          4
+        ],
+        [
+          "patterns",
+          "uuid",
+          7
+        ],
+        [
+          "values",
+          "uuid",
+          7
+        ]
+      ]
+    },
+    "legalities": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 17,
+      "n_histograms": 8,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "id",
+          8
+        ],
+        [
+          "distinct_count",
+          "id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "id",
+          10
+        ],
+        [
+          "values",
+          "id",
+          11
+        ],
+        [
+          "null_count",
+          "format",
+          8
+        ],
+        [
+          "distinct_count",
+          "format",
+          8
+        ],
+        [
+          "patterns",
+          "format",
+          11
+        ],
+        [
+          "values",
+          "format",
+          11
+        ],
+        [
+          "null_count",
+          "status",
+          8
+        ],
+        [
+          "distinct_count",
+          "status",
+          8
+        ],
+        [
+          "patterns",
+          "status",
+          11
+        ],
+        [
+          "values",
+          "status",
+          11
+        ],
+        [
+          "null_count",
+          "uuid",
+          8
+        ],
+        [
+          "distinct_count",
+          "uuid",
+          8
+        ],
+        [
+          "patterns",
+          "uuid",
+          11
+        ],
+        [
+          "values",
+          "uuid",
+          11
+        ]
+      ]
+    },
+    "rulings": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 17,
+      "n_histograms": 8,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "id",
+          8
+        ],
+        [
+          "distinct_count",
+          "id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "id",
+          10
+        ],
+        [
+          "values",
+          "id",
+          11
+        ],
+        [
+          "null_count",
+          "date",
+          8
+        ],
+        [
+          "distinct_count",
+          "date",
+          8
+        ],
+        [
+          "patterns",
+          "date",
+          11
+        ],
+        [
+          "values",
+          "date",
+          11
+        ],
+        [
+          "null_count",
+          "text",
+          8
+        ],
+        [
+          "distinct_count",
+          "text",
+          8
+        ],
+        [
+          "patterns",
+          "text",
+          11
+        ],
+        [
+          "values",
+          "text",
+          11
+        ],
+        [
+          "null_count",
+          "uuid",
+          8
+        ],
+        [
+          "distinct_count",
+          "uuid",
+          8
+        ],
+        [
+          "patterns",
+          "uuid",
+          11
+        ],
+        [
+          "values",
+          "uuid",
+          11
+        ]
+      ]
+    },
+    "set_translations": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 17,
+      "n_histograms": 8,
+      "queries": [
+        [
+          "row_count",
+          null,
+          8
+        ],
+        [
+          "null_count",
+          "id",
+          8
+        ],
+        [
+          "distinct_count",
+          "id",
+          8
+        ],
+        [
+          "bins_stage1",
+          "id",
+          9
+        ],
+        [
+          "bins_stage2",
+          "id",
+          10
+        ],
+        [
+          "values",
+          "id",
+          11
+        ],
+        [
+          "null_count",
+          "language",
+          8
+        ],
+        [
+          "distinct_count",
+          "language",
+          8
+        ],
+        [
+          "patterns",
+          "language",
+          11
+        ],
+        [
+          "values",
+          "language",
+          11
+        ],
+        [
+          "null_count",
+          "setCode",
+          8
+        ],
+        [
+          "distinct_count",
+          "setCode",
+          8
+        ],
+        [
+          "patterns",
+          "setCode",
+          11
+        ],
+        [
+          "values",
+          "setCode",
+          11
+        ],
+        [
+          "null_count",
+          "translation",
+          8
+        ],
+        [
+          "distinct_count",
+          "translation",
+          8
+        ],
+        [
+          "patterns",
+          "translation",
+          11
+        ],
+        [
+          "values",
+          "translation",
+          11
+        ]
+      ]
+    },
+    "sets": {
+      "rho": "874796954851759/1000000000000000",
+      "rho_num": 874796954851759,
+      "rho_den": 1000000000000000,
+      "delta_threshold": "1/2000000",
+      "delta_tail_total": "1/2000000",
+      "delta_tail_num": 1,
+      "delta_tail_den": 2000000,
+      "epsilon_converted_upper": "7.999999999999987028112748982260976951893772146865842784955465072918360504161560464877015073485066992",
+      "n_logical_queries": 85,
+      "n_histograms": 42,
+      "queries": [
+        [
+          "row_count",
+          null,
+          12
+        ],
+        [
+          "null_count",
+          "id",
+          12
+        ],
+        [
+          "distinct_count",
+          "id",
+          12
+        ],
+        [
+          "bins_stage1",
+          "id",
+          13
+        ],
+        [
+          "bins_stage2",
+          "id",
+          14
+        ],
+        [
+          "values",
+          "id",
+          15
+        ],
+        [
+          "null_count",
+          "baseSetSize",
+          12
+        ],
+        [
+          "distinct_count",
+          "baseSetSize",
+          12
+        ],
+        [
+          "bins_stage1",
+          "baseSetSize",
+          13
+        ],
+        [
+          "bins_stage2",
+          "baseSetSize",
+          14
+        ],
+        [
+          "values",
+          "baseSetSize",
+          15
+        ],
+        [
+          "null_count",
+          "block",
+          12
+        ],
+        [
+          "distinct_count",
+          "block",
+          12
+        ],
+        [
+          "patterns",
+          "block",
+          15
+        ],
+        [
+          "values",
+          "block",
+          15
+        ],
+        [
+          "null_count",
+          "booster",
+          12
+        ],
+        [
+          "distinct_count",
+          "booster",
+          12
+        ],
+        [
+          "patterns",
+          "booster",
+          15
+        ],
+        [
+          "values",
+          "booster",
+          15
+        ],
+        [
+          "null_count",
+          "code",
+          12
+        ],
+        [
+          "distinct_count",
+          "code",
+          12
+        ],
+        [
+          "patterns",
+          "code",
+          15
+        ],
+        [
+          "values",
+          "code",
+          15
+        ],
+        [
+          "null_count",
+          "isFoilOnly",
+          12
+        ],
+        [
+          "distinct_count",
+          "isFoilOnly",
+          12
+        ],
+        [
+          "bins_stage1",
+          "isFoilOnly",
+          13
+        ],
+        [
+          "bins_stage2",
+          "isFoilOnly",
+          14
+        ],
+        [
+          "values",
+          "isFoilOnly",
+          15
+        ],
+        [
+          "null_count",
+          "isForeignOnly",
+          12
+        ],
+        [
+          "distinct_count",
+          "isForeignOnly",
+          12
+        ],
+        [
+          "bins_stage1",
+          "isForeignOnly",
+          13
+        ],
+        [
+          "bins_stage2",
+          "isForeignOnly",
+          14
+        ],
+        [
+          "values",
+          "isForeignOnly",
+          15
+        ],
+        [
+          "null_count",
+          "isNonFoilOnly",
+          12
+        ],
+        [
+          "distinct_count",
+          "isNonFoilOnly",
+          12
+        ],
+        [
+          "bins_stage1",
+          "isNonFoilOnly",
+          13
+        ],
+        [
+          "bins_stage2",
+          "isNonFoilOnly",
+          14
+        ],
+        [
+          "values",
+          "isNonFoilOnly",
+          15
+        ],
+        [
+          "null_count",
+          "isOnlineOnly",
+          12
+        ],
+        [
+          "distinct_count",
+          "isOnlineOnly",
+          12
+        ],
+        [
+          "bins_stage1",
+          "isOnlineOnly",
+          13
+        ],
+        [
+          "bins_stage2",
+          "isOnlineOnly",
+          14
+        ],
+        [
+          "values",
+          "isOnlineOnly",
+          15
+        ],
+        [
+          "null_count",
+          "isPartialPreview",
+          12
+        ],
+        [
+          "distinct_count",
+          "isPartialPreview",
+          12
+        ],
+        [
+          "bins_stage1",
+          "isPartialPreview",
+          13
+        ],
+        [
+          "bins_stage2",
+          "isPartialPreview",
+          14
+        ],
+        [
+          "values",
+          "isPartialPreview",
+          15
+        ],
+        [
+          "null_count",
+          "keyruneCode",
+          12
+        ],
+        [
+          "distinct_count",
+          "keyruneCode",
+          12
+        ],
+        [
+          "patterns",
+          "keyruneCode",
+          15
+        ],
+        [
+          "values",
+          "keyruneCode",
+          15
+        ],
+        [
+          "null_count",
+          "mcmId",
+          12
+        ],
+        [
+          "distinct_count",
+          "mcmId",
+          12
+        ],
+        [
+          "bins_stage1",
+          "mcmId",
+          13
+        ],
+        [
+          "bins_stage2",
+          "mcmId",
+          14
+        ],
+        [
+          "values",
+          "mcmId",
+          15
+        ],
+        [
+          "null_count",
+          "mcmIdExtras",
+          12
+        ],
+        [
+          "distinct_count",
+          "mcmIdExtras",
+          12
+        ],
+        [
+          "bins_stage1",
+          "mcmIdExtras",
+          13
+        ],
+        [
+          "bins_stage2",
+          "mcmIdExtras",
+          14
+        ],
+        [
+          "values",
+          "mcmIdExtras",
+          15
+        ],
+        [
+          "null_count",
+          "mcmName",
+          12
+        ],
+        [
+          "distinct_count",
+          "mcmName",
+          12
+        ],
+        [
+          "patterns",
+          "mcmName",
+          15
+        ],
+        [
+          "values",
+          "mcmName",
+          15
+        ],
+        [
+          "null_count",
+          "mtgoCode",
+          12
+        ],
+        [
+          "distinct_count",
+          "mtgoCode",
+          12
+        ],
+        [
+          "patterns",
+          "mtgoCode",
+          15
+        ],
+        [
+          "values",
+          "mtgoCode",
+          15
+        ],
+        [
+          "null_count",
+          "name",
+          12
+        ],
+        [
+          "distinct_count",
+          "name",
+          12
+        ],
+        [
+          "patterns",
+          "name",
+          15
+        ],
+        [
+          "values",
+          "name",
+          15
+        ],
+        [
+          "null_count",
+          "parentCode",
+          12
+        ],
+        [
+          "distinct_count",
+          "parentCode",
+          12
+        ],
+        [
+          "patterns",
+          "parentCode",
+          15
+        ],
+        [
+          "values",
+          "parentCode",
+          15
+        ],
+        [
+          "null_count",
+          "releaseDate",
+          12
+        ],
+        [
+          "distinct_count",
+          "releaseDate",
+          12
+        ],
+        [
+          "patterns",
+          "releaseDate",
+          15
+        ],
+        [
+          "values",
+          "releaseDate",
+          15
+        ],
+        [
+          "null_count",
+          "tcgplayerGroupId",
+          12
+        ],
+        [
+          "distinct_count",
+          "tcgplayerGroupId",
+          12
+        ],
+        [
+          "bins_stage1",
+          "tcgplayerGroupId",
+          13
+        ],
+        [
+          "bins_stage2",
+          "tcgplayerGroupId",
+          14
+        ],
+        [
+          "values",
+          "tcgplayerGroupId",
+          15
+        ],
+        [
+          "null_count",
+          "totalSetSize",
+          12
+        ],
+        [
+          "distinct_count",
+          "totalSetSize",
+          12
+        ],
+        [
+          "bins_stage1",
+          "totalSetSize",
+          13
+        ],
+        [
+          "bins_stage2",
+          "totalSetSize",
+          14
+        ],
+        [
+          "values",
+          "totalSetSize",
+          15
+        ],
+        [
+          "null_count",
+          "type",
+          12
+        ],
+        [
+          "distinct_count",
+          "type",
+          12
+        ],
+        [
+          "patterns",
+          "type",
+          15
+        ],
+        [
+          "values",
+          "type",
+          15
+        ]
+      ]
+    }
+  }
+}

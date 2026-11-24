@@ -259,6 +259,7 @@ def verify():
                         require(set(ledger[eps]) == set(tables))
     verify_entity_db(load(HERE / "bird_entity_dp_certificates.json"), role_map)
     verify_pubcap_and_ablation_dpmetas(role_map)
+    verify_dawa_dpsips_clean_dpmetas(role_map)
 
 
 def verify_pubcap_and_ablation_dpmetas(role_map):
@@ -300,6 +301,34 @@ def verify_pubcap_and_ablation_dpmetas(role_map):
                 cap = int(meta["pubcap_tokens"])
                 actual = estimate_prompt_tokens(render_profile_prompt_block(prof))
                 require(actual == int(meta["actual_block_tokens"]) and actual <= cap)
+
+
+def verify_dawa_dpsips_clean_dpmetas(role_map):
+    """Verify exact rational certificates, OS-CSPRNG provenance, & SHA-256 digests for all 34 DAWA+DP-SIPS clean releases."""
+    from silhouette.sandbox import PUBLIC_TABLES
+
+    dawa_root = ROOT / "profiles/dawa_dpsips_clean"
+    dpmetas = sorted(dawa_root.rglob("*.dpmeta.json"))
+    require(len(dpmetas) == 34)  # 11 BIRD DBs x 3 releases + 1 MIMIC-IV release
+    for mpath in dpmetas:
+        meta = load(mpath)
+        db = meta["db_id"]
+        jpath = mpath.with_name(db + ".json")
+        require(jpath.exists())
+        require(meta["mechanism"] == "DAWA+DP-SIPS")
+        require(meta.get("rng_source") == "os_csprng" and "seed" not in meta)
+        require(meta["sha256"] == hashlib.sha256(jpath.read_bytes()).hexdigest())
+        budget = rational_rho_budget(int(meta["epsilon"]), HALF)
+        require(F(meta["rho_table"]) == budget)
+        params = [check_parameter(q) for q in meta["parameters"]]
+        prof = load(jpath)
+        exp_tables = (set(role_map["mimic_iv"]) - PUBLIC_TABLES) if db == "mimic_iv" else set(role_map[db])
+        require(set(meta["tables"]) == set(prof) == exp_tables)
+        for t, tinfo in meta["tables"].items():
+            rho_sum = sum((params[idx][0] for _, _, idx in tinfo["queries"]), Fraction(0))
+            delta_sum = sum((params[idx][2] for _, _, idx in tinfo["queries"]), Fraction(0))
+            require(rho_sum == F(tinfo["rho"]) and rho_sum <= budget)
+            require(delta_sum == F(tinfo["delta_threshold"]) and delta_sum <= HALF)
 
 
 if __name__ == "__main__":

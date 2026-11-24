@@ -110,6 +110,15 @@ DEFAULT_PRIMARY_CLEAN_CONDITIONS: Tuple[str, ...] = (
     "FETCH1_PUBCAP_IND8_PROF_R1/r0",
     "FETCH1_PUBCAP_IND8_PROF_R2/r0",
     "FETCH1_PUBCAP_IND8_PROF_R3/r0",
+    "DAWA_CLEAN_BIRD_R1/r0",
+    "DAWA_CLEAN_BIRD_R2/r0",
+    "DAWA_CLEAN_BIRD_R3/r0",
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0",
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0",
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0",
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0",
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0",
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0",
 )
 
 STRICT_CLINICAL_EXTRA_CONDITIONS: Tuple[str, ...] = (
@@ -130,6 +139,7 @@ STRICT_CLINICAL_EXTRA_CONDITIONS: Tuple[str, ...] = (
     "EHR874_NOISELESS_LKP_V3/r0",
     "EHR_ENT8_V3_R1/r0",
     "EHR_IND8_V3_R1/r0",
+    "DAWA_CLEAN_EHR600_R1/r0",
 )
 
 
@@ -184,6 +194,7 @@ def verify_manifests(root: Path, *, require_all_manifests: bool = False) -> Dict
     ]
     optional_manifests = [
         "tightbpe_and_noval_manifest.json",
+        "phase13_dawa_clean_manifest.json",
         "bird_profiles_manifest.json",
         "entity_profiles_manifest.json",
     ]
@@ -232,6 +243,14 @@ def verify_manifests(root: Path, *, require_all_manifests: bool = False) -> Dict
                     if not rel or "sha256" not in info:
                         raise ChainOfCustodyError(f"Incomplete noval manifest entry: {info!r}")
                     entries.append((rel, info["sha256"]))
+        elif mname == "phase13_dawa_clean_manifest.json":
+            for sec in ("uncapped_bird", "tightbpe_colfirst", "tightbpe_valfirst", "uncapped_ehr"):
+                for _rep, dbs in doc.get(sec, {}).items():
+                    for _db, info in dbs.items():
+                        rel = info.get("path")
+                        if not rel or "sha256" not in info:
+                            raise ChainOfCustodyError(f"Incomplete phase13 manifest entry: {info!r}")
+                        entries.append((rel, info["sha256"]))
         else:
             entries.extend(_iter_generic_manifest_entries(doc))
 
@@ -253,8 +272,10 @@ def verify_manifests(root: Path, *, require_all_manifests: bool = False) -> Dict
 def _validate_five_field_profile_structure(obj: Any, rel_path: str) -> None:
     if not isinstance(obj, dict) or not obj:
         raise ChainOfCustodyError(f"Profile JSON must be a non-empty object: {rel_path}")
-    allow_empty_table = "tightbpe_valfirst" in rel_path
+    allow_empty_table = "tightbpe_valfirst" in rel_path or "tightbpe_colfirst" in rel_path
     for tbl, cols in obj.items():
+        if tbl == "truncated_hard" and isinstance(cols, bool) and "tightbpe" in rel_path:
+            continue
         if not isinstance(tbl, str) or not isinstance(cols, dict) or (not cols and not allow_empty_table):
             raise ChainOfCustodyError(f"Invalid table entry {tbl!r} in profile: {rel_path}")
         for col, entry in cols.items():
@@ -347,6 +368,15 @@ def verify_profiles_and_certificates(root: Path) -> Dict[str, Any]:
                 exp = cert["ind8_prompt_schedules"][str(meta["epsilon"])][meta["db_id"]]
                 if meta["parameters"] != exp["parameters"] or meta["tables"] != exp["tables"]:
                     raise ChainOfCustodyError(f"Entity IND8 certificate mismatch for {rel}")
+            elif group_dir == "dawa_dpsips_clean":
+                if meta.get("rng_source") != "os_csprng" or "seed" in meta:
+                    raise ChainOfCustodyError(f"DAWA+DP-SIPS sidecar must use os_csprng without seed in {rel}")
+                if cert_verifier is not None:
+                    for q in meta.get("parameters", ()):
+                        try:
+                            cert_verifier.check_parameter(q)
+                        except Exception as exc:
+                            raise ChainOfCustodyError(f"DAWA+DP-SIPS parameter check failed in {rel}: {exc}") from exc
 
             dpmeta_checked += 1
             continue

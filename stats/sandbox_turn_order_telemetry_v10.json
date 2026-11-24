@@ -1,7 +1,7 @@
 {
   "schema_version": "stage10-sandbox-turn-order-telemetry-v10",
-  "total_slots": 78455,
-  "slots_with_telemetry": 68303,
+  "total_slots": 83015,
+  "slots_with_telemetry": 72863,
   "slots_without_telemetry": 10152,
   "elapsed_s": 89.88,
   "ehr_dg8p_v3_stage8_reconciliation": {
@@ -3469,6 +3469,206 @@
       "slots_zero_error_revision": 113,
       "fetch_calls_sum": 0,
       "slots_with_fetch_call": 0
+    },
+    "bird::DAWA_CLEAN_BIRD_R1/r0": {
+      "benchmark": "bird",
+      "condition": "DAWA_CLEAN_BIRD_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 271,
+      "sandbox_error_calls_sum": 9,
+      "slots_with_sandbox_error": 8,
+      "slots_error_then_rewrite": 8,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 5,
+      "slots_any_sql_revision": 68,
+      "slots_zero_error_revision": 60,
+      "legacy_adjacent_rewrites_sum": 71,
+      "slots_with_legacy_rewrite": 68
+    },
+    "bird::TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 329,
+      "sandbox_error_calls_sum": 12,
+      "slots_with_sandbox_error": 9,
+      "slots_error_then_rewrite": 9,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 94,
+      "slots_zero_error_revision": 85,
+      "legacy_adjacent_rewrites_sum": 107,
+      "slots_with_legacy_rewrite": 94
+    },
+    "bird::TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 303,
+      "sandbox_error_calls_sum": 16,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 11,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 80,
+      "slots_zero_error_revision": 68,
+      "legacy_adjacent_rewrites_sum": 101,
+      "slots_with_legacy_rewrite": 80
+    },
+    "bird::DAWA_CLEAN_BIRD_R2/r0": {
+      "benchmark": "bird",
+      "condition": "DAWA_CLEAN_BIRD_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 283,
+      "sandbox_error_calls_sum": 13,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 10,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 74,
+      "slots_zero_error_revision": 64,
+      "legacy_adjacent_rewrites_sum": 83,
+      "slots_with_legacy_rewrite": 74
+    },
+    "bird::TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 308,
+      "sandbox_error_calls_sum": 11,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 8,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 106,
+      "slots_zero_error_revision": 96,
+      "legacy_adjacent_rewrites_sum": 118,
+      "slots_with_legacy_rewrite": 106
+    },
+    "bird::TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 291,
+      "sandbox_error_calls_sum": 14,
+      "slots_with_sandbox_error": 10,
+      "slots_error_then_rewrite": 10,
+      "slots_error_then_exec_ok": 9,
+      "slots_error_then_ex1": 2,
+      "slots_any_sql_revision": 81,
+      "slots_zero_error_revision": 71,
+      "legacy_adjacent_rewrites_sum": 99,
+      "slots_with_legacy_rewrite": 81
+    },
+    "bird::DAWA_CLEAN_BIRD_R3/r0": {
+      "benchmark": "bird",
+      "condition": "DAWA_CLEAN_BIRD_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 283,
+      "sandbox_error_calls_sum": 8,
+      "slots_with_sandbox_error": 8,
+      "slots_error_then_rewrite": 8,
+      "slots_error_then_exec_ok": 6,
+      "slots_error_then_ex1": 1,
+      "slots_any_sql_revision": 74,
+      "slots_zero_error_revision": 66,
+      "legacy_adjacent_rewrites_sum": 87,
+      "slots_with_legacy_rewrite": 74
+    },
+    "bird::TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 304,
+      "sandbox_error_calls_sum": 15,
+      "slots_with_sandbox_error": 14,
+      "slots_error_then_rewrite": 14,
+      "slots_error_then_exec_ok": 13,
+      "slots_error_then_ex1": 3,
+      "slots_any_sql_revision": 89,
+      "slots_zero_error_revision": 75,
+      "legacy_adjacent_rewrites_sum": 103,
+      "slots_with_legacy_rewrite": 89
+    },
+    "bird::TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "benchmark": "bird",
+      "condition": "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0",
+      "n_slots": 440,
+      "telemetry_available": true,
+      "n_telemetry_slots": 440,
+      "source_formats": {
+        "tool_events.json": 440
+      },
+      "sandbox_calls_sum": 299,
+      "sandbox_error_calls_sum": 18,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 87,
+      "slots_zero_error_revision": 75,
+      "legacy_adjacent_rewrites_sum": 107,
+      "slots_with_legacy_rewrite": 87
+    },
+    "ehrsql_600::DAWA_CLEAN_EHR600_R1/r0": {
+      "benchmark": "ehrsql_600",
+      "condition": "DAWA_CLEAN_EHR600_R1/r0",
+      "n_slots": 600,
+      "telemetry_available": true,
+      "n_telemetry_slots": 600,
+      "source_formats": {
+        "tool_events.json": 600
+      },
+      "sandbox_calls_sum": 237,
+      "sandbox_error_calls_sum": 20,
+      "slots_with_sandbox_error": 12,
+      "slots_error_then_rewrite": 12,
+      "slots_error_then_exec_ok": 12,
+      "slots_error_then_ex1": 4,
+      "slots_any_sql_revision": 51,
+      "slots_zero_error_revision": 39,
+      "legacy_adjacent_rewrites_sum": 66,
+      "slots_with_legacy_rewrite": 51
     }
   }
 }

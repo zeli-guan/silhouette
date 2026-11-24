@@ -1,0 +1,1 @@
+{"atom":{"atom_id":["TEXT",0.0,"10^3",[],null],"molecule_id":["TEXT",0.0,"10^2",[],null]},"bond":{"bond_id":["TEXT",0.0,"10^3",[],null],"molecule_id":["TEXT",0.0,"10^2",[],null]},"connected":{"atom_id":["TEXT",0.0,"10^3",[],null],"atom_id2":["TEXT",0.0,"10^3",[],null]},"truncated_hard":true}

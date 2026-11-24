@@ -699,21 +699,21 @@ def test_dual_scorer_self_test():
     assert res["q199_fixture"]["official_set_ex"] == 1
     assert res["q199_fixture"]["strict_ex"] == 0
     assert res["q199_fixture"]["strict_mode"] == "ordered"
-    assert res["validated_conditions"] == 153
+    assert res["validated_conditions"] == 162
     assert res["remap_slots_verified"] == 2030
     assert res["timeout_outcome_conflicts"] == 0
 
 
 def test_ehrsql_official_scorer_self_test():
     res = score_ehrsql_official.run_self_test()
-    assert res["ehrsql_conditions_verified"] == 39
-    assert res["ehrsql_slots_verified"] == 26962
+    assert res["ehrsql_conditions_verified"] == 40
+    assert res["ehrsql_slots_verified"] == 27562
     assert res["ehr874_noiseless_v3_hits"] == 429
     assert res["ehr_dg8p_v3_600_hits"] == 893
     assert res["ehr874_dg8p_v3_hits"] == 1368
     assert res["ehr874_v3_unseen235_hits"] == [115, 128, 129]
     assert res["gt100_distinct_questions"] == 8
-    assert res["gt100_slots_verified"] == 130
+    assert res["gt100_slots_verified"] == 132
     assert res["gt100_slots_verified"] > 0
 
 
@@ -852,10 +852,14 @@ def test_statistical_manifest_alignment():
         cond_counts[row["condition"]] += 1
         bm_cond_counts[(row["benchmark"], row["condition"])] += 1
         cond_sums[row["condition"]] += row["outcome"]
-    assert sum(cond_counts.values()) == 78455
-    assert len(cond_counts) == 185
-    assert len(bm_cond_counts) == 192
+    assert sum(cond_counts.values()) == 83015
+    assert len(cond_counts) == 195
+    assert len(bm_cond_counts) == 202
     assert (cond_sums["DG8_CLEAN_R1/r0"], cond_sums["DG8_CLEAN_R2/r0"], cond_sums["DG8_CLEAN_R3/r0"]) == (205, 207, 208)
+    assert sum(cond_sums[f"DAWA_CLEAN_BIRD_R{r}/r0"] for r in (1, 2, 3)) == 600
+    assert sum(cond_sums[f"TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R{r}/r0"] for r in (1, 2, 3)) == 455
+    assert sum(cond_sums[f"TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R{r}/r0"] for r in (1, 2, 3)) == 538
+    assert cond_sums["DAWA_CLEAN_EHR600_R1/r0"] == 306
     assert cond_sums["EHR874_NOISELESS_NOLKP_V3/r0"] == 429
     assert cond_sums["EHR874_NOISELESS_LKP_V3/r0"] == 457
     assert cond_sums["EHR874_NOISELESS_NOLKP/r0"] == 377
@@ -911,15 +915,15 @@ def test_strata_remap_manifest_and_receipts():
 
     with open_jsonl(ROOT / "stats/sql_and_audit_receipts.jsonl") as fh:
         receipts = [line for line in fh if line.strip()]
-    assert len(receipts) == 78455
+    assert len(receipts) == 83015
     parsed_r = [json.loads(line) for line in receipts]
     reconciled_audit_rows = [r for r in parsed_r if r.get("audit_condition")]
     assert len(reconciled_audit_rows) == 4840
     assert len({r["audit_condition"] for r in reconciled_audit_rows}) == 11
     outbound_sha_rows = [r for r in parsed_r if r.get("outbound_messages_sha256")]
-    assert len(outbound_sha_rows) == 73529
+    assert len(outbound_sha_rows) == 78089
     p7_aud = read(ROOT/"stats/p7_audit_summary.json")
-    assert p7_aud["total_conditions"] == 105
+    assert p7_aud["total_conditions"] == 115
     first = parsed_r[0]
     assert {"benchmark", "question_id", "db_id", "condition", "predicted_sql", "tool_calls", "total_tokens", "status", "official_set_ex"}.issubset(first)
     # 100% of LLM receipts have non-null predicted_sql and total_tokens
@@ -1655,8 +1659,8 @@ def test_verify_chain_of_custody_cli_and_tamper_detection(tmp_path):
         text=True,
     )
     assert out_strict.returncode == 0, out_strict.stderr
-    assert "86 conditions" in out_strict.stdout
-    assert "40664" in out_strict.stdout
+    assert "96 conditions" in out_strict.stdout
+    assert "45224" in out_strict.stdout
     out_legacy = subprocess.run(
         [sys.executable, "-B", str(ROOT / "certificates/verify_chain_of_custody.py"), "--conditions", "DG8P_R1/r0"],
         capture_output=True,
@@ -1923,13 +1927,13 @@ def test_chain_of_custody_tamper_and_deployment_prohibited(tmp_path):
     assert deid.get("deployment_prohibited") is True
 
     cov = read(ROOT / "manifests/custody_coverage_manifest_v10.json")
-    assert cov["total_aligned_slots"] == 78455
-    assert cov["unique_benchmark_condition_series"] == 192
-    assert cov["canonical_release_custody_slots"] == 40664
-    assert cov["canonical_release_custody_conditions"] == 86
-    assert cov["outbound_messages_sha256_slots"] == 73529
-    assert cov["profile_inventory_breakdown"]["total_custody_pinned_profile_files"] == 636
-    assert cov["profile_inventory_breakdown"]["sidecar_metadata_files"]["total_sidecars"] == 354
+    assert cov["total_aligned_slots"] == 83015
+    assert cov["unique_benchmark_condition_series"] == 202
+    assert cov["canonical_release_custody_slots"] == 45224
+    assert cov["canonical_release_custody_conditions"] == 96
+    assert cov["outbound_messages_sha256_slots"] == 78089
+    assert cov["profile_inventory_breakdown"]["total_custody_pinned_profile_files"] == 736
+    assert cov["profile_inventory_breakdown"]["sidecar_metadata_files"]["total_sidecars"] == 388
 
     # 2. Semantic (benchmark, condition, db_id) cross-release swap & dropped-slot tamper tests
     (tmp_path / "manifests").mkdir()
@@ -2022,7 +2026,7 @@ def test_unbalanced_exact_rademacher_and_manifest_doc_parity():
 
     readme_txt = (ROOT / "README.md").read_text(encoding="utf-8")
     repro_txt = (ROOT / "docs/TIER1_TIER2_REPRODUCIBILITY.md").read_text(encoding="utf-8")
-    for required in ("78,455", "73,529", "105", "86", "192", "185", "40,664"):
+    for required in ("83,015", "78,089", "115", "96", "202", "195", "45,224"):
         assert required in readme_txt and required in repro_txt, required
 
 

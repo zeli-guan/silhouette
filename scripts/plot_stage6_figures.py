@@ -58,7 +58,7 @@ def load_sources() -> dict:
         dbs[r["question_id"]] = r["db_id"]
 
     toks_by_bm_cond = defaultdict(list)
-    for r in iter_jsonl(ROOT / "stats/sql_and_audit_receipts.jsonl"):
+    for r in iter_jsonl(ROOT / "stats/sql_and_audit_receipts.jsonl.gz"):
         if r.get("total_tokens") is not None:
             toks_by_bm_cond[(r["benchmark"], r["condition"])].append(r["total_tokens"])
 
@@ -111,41 +111,43 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
     # kind in {"silh", "zero_leak", "dp_synth", "raw_ref"}
     pa_points = [
         ("Schema only", bm_tok("bird", ["C0/r0", "C0/r2"]), bm_ex("bird", bird_440, ["C0/r0", "C0/r2"]), "zero_leak", (8, -3), "left"),
-        ("DP-Query v2 DB", bm_tok("bird", ["DP_QUERY_ROW_DB8_V2_R1/r0"]), bm_ex("bird", bird_440, "DP_QUERY_ROW_DB8_V2_R1/r0"), "dp_synth", (10, 3), "left"),
-        ("DP-Query v2 TP (R=3)", bm_tok("bird", ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]), bm_ex("bird", bird_440, ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]), "dp_synth", (10, -13), "left"),
-        ("On-Demand Profile Tool", bm_tok("bird", ["IND8_PROFILE_TOOL_R1/r0", "IND8_PROFILE_TOOL_R2/r0", "IND8_PROFILE_TOOL_R3/r0"]), bm_ex("bird", bird_440, ["IND8_PROFILE_TOOL_R1/r0", "IND8_PROFILE_TOOL_R2/r0", "IND8_PROFILE_TOOL_R3/r0"]), "zero_leak", (18, -8), "left"),
-        ("1-way Synth Probe (R=3)", bm_tok("bird", ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"]), bm_ex("bird", bird_440, ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"]), "dp_synth", (-2, 34), "center"),
+        ("DP-Query (DB)", bm_tok("bird", ["DP_QUERY_ROW_DB8_V2_R1/r0"]), bm_ex("bird", bird_440, "DP_QUERY_ROW_DB8_V2_R1/r0"), "dp_synth", (10, 4), "left"),
+        ("DP-Query", bm_tok("bird", ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]), bm_ex("bird", bird_440, ["DP_QUERY_ROW_TP8_V2_R1/r0", "DP_QUERY_ROW_TP8_V2_R2/r0", "DP_QUERY_ROW_TP8_V2_R3/r0"]), "dp_synth", (10, -13), "left"),
+        ("Profile Tool", bm_tok("bird", ["IND8_PROFILE_TOOL_R1/r0", "IND8_PROFILE_TOOL_R2/r0", "IND8_PROFILE_TOOL_R3/r0"]), bm_ex("bird", bird_440, ["IND8_PROFILE_TOOL_R1/r0", "IND8_PROFILE_TOOL_R2/r0", "IND8_PROFILE_TOOL_R3/r0"]), "zero_leak", (18, -8), "left"),
+        ("1-way Synth", bm_tok("bird", ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"]), bm_ex("bird", bird_440, ["IND8/r0", "IND8_PROBE_R2/r0", "IND8_PROBE_R3/r0"]), "dp_synth", (-2, 34), "center"),
         ("2-way Synth", bm_tok("bird", ["SYN8/r0"]), bm_ex("bird", bird_440, "SYN8/r0"), "dp_synth", (-12, -8), "right"),
-        ("FK-DAG Synth Probe", bm_tok("bird", ["SYN8_FK_DAG_R1/r0"]), bm_ex("bird", bird_440, "SYN8_FK_DAG_R1/r0"), "dp_synth", (16, -2), "left"),
+        ("FK Synth", bm_tok("bird", ["SYN8_FK_DAG_R1/r0"]), bm_ex("bird", bird_440, "SYN8_FK_DAG_R1/r0"), "dp_synth", (16, -2), "left"),
         ("Select 3", bm_tok("bird", ["S3/r0"]), bm_ex("bird", bird_440, "S3/r0"), "raw_ref", (8, -2), "left"),
         ("Full access", bm_tok("bird", ["C4/r0", "C4/r2"]), bm_ex("bird", bird_440, ["C4/r0", "C4/r2"]), "raw_ref", (0, -15), "center"),
-        ("PubCap Static Synth", bm_tok("bird", ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"]), "dp_synth", (10, -8), "left"),
-        ("PubCap 1-way Profile", bm_tok("bird", ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"]), "zero_leak", (-12, -13), "right"),
-        ("Unpruned 1-way Profile", bm_tok("bird", ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]), bm_ex("bird", bird_440, ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]), "zero_leak", (6, -15), "left"),
-        ("PubCap Silhouette (R=3)", bm_tok("bird", ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"]), "silh", (10, 12), "left"),
-        ("Silhouette (R=3)", bm_tok("bird", ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]), bm_ex("bird", bird_440, ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]), "silh", (-10, 13), "right"),
+        ("Static Synth", bm_tok("bird", ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"]), "dp_synth", (10, -8), "left"),
+        ("1-way Profile (cap)", bm_tok("bird", ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"]), "zero_leak", (-12, -14), "right"),
+        ("1-way Profile", bm_tok("bird", ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]), bm_ex("bird", bird_440, ["IND8_PROMPT/r0", "IND8_PROMPT_R2/r0", "IND8_PROMPT_R3/r0"]), "zero_leak", (6, -15), "left"),
+        ("DAWA+DP-SIPS", bm_tok("bird", ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]), bm_ex("bird", bird_440, ["DAWA_CLEAN_BIRD_R1/r0", "DAWA_CLEAN_BIRD_R2/r0", "DAWA_CLEAN_BIRD_R3/r0"]), "zero_leak", (-12, 14), "right"),
+        ("Silhouette-C", bm_tok("bird", ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"]), bm_ex("bird", bird_440, ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"]), "silh", (10, 12), "left"),
+        ("Silhouette", bm_tok("bird", ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]), bm_ex("bird", bird_440, ["DG8_CLEAN_R1/r0", "DG8_CLEAN_R2/r0", "DG8_CLEAN_R3/r0"]), "silh", (-10, 14), "right"),
     ]
 
     pb_points = [
         ("Schema only", bm_tok("ehrsql_600", ["C0/r0"]), bm_ex("ehrsql_600", ehr_600, "C0/r0"), "zero_leak", (8, -3)),
-        ("LookupOnly", bm_tok("ehrsql_600", ["C0P/r0"]), bm_ex("ehrsql_600", ehr_600, "C0P/r0"), "zero_leak", (-4, 15), "left"),
+        ("Lookup only", bm_tok("ehrsql_600", ["C0P/r0"]), bm_ex("ehrsql_600", ehr_600, "C0P/r0"), "zero_leak", (-4, 15), "left"),
         ("2-way Synth", bm_tok("ehrsql_600", ["SYN8P/r0"]), bm_ex("ehrsql_600", ehr_600, "SYN8P/r0"), "dp_synth", (-10, -18), "right"),
         ("1-way Synth", bm_tok("ehrsql_600", ["IND8P/r0"]), bm_ex("ehrsql_600", ehr_600, "IND8P/r0"), "dp_synth", (0, -28), "center"),
         ("Surrogate 3", bm_tok("ehrsql_600", ["SUR3/r0"]), bm_ex("ehrsql_600", ehr_600, "SUR3/r0"), "zero_leak", (8, -20), "left"),
         ("Select 3", bm_tok("ehrsql_600", ["S3/r0"]), bm_ex("ehrsql_600", ehr_600, "S3/r0"), "raw_ref", (10, -2)),
         ("Full access", bm_tok("ehrsql_600", ["C4/r0"]), bm_ex("ehrsql_600", ehr_600, "C4/r0"), "raw_ref", (-8, 11), "right"),
-        ("Silhouette w/o Lookup (v3, R=3)", bm_tok("ehrsql_600", ["EHR_DG8P_NOLKP_V3_R1/r0", "EHR_DG8P_NOLKP_V3_R2/r0", "EHR_DG8P_NOLKP_V3_R3/r0"]), bm_ex("ehrsql_600", ehr_600, ["EHR_DG8P_NOLKP_V3_R1/r0", "EHR_DG8P_NOLKP_V3_R2/r0", "EHR_DG8P_NOLKP_V3_R3/r0"]), "zero_leak", (12, -18), "left"),
-        ("1-way Profile v3", bm_tok("ehrsql_600", ["EHR_IND8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_IND8_V3_R1/r0"), "zero_leak", (-10, -17), "center"),
-        ("Entity Demo94 v3", bm_tok("ehrsql_600", ["EHR_ENT8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_ENT8_V3_R1/r0"), "zero_leak", (-4, 15), "center"),
-        ("Silhouette v3 (R=3)", bm_tok("ehrsql_600", ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]), bm_ex("ehrsql_600", ehr_600, ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]), "silh", (8, 11), "left"),
+        ("Silhouette-L", bm_tok("ehrsql_600", ["EHR_DG8P_NOLKP_V3_R1/r0", "EHR_DG8P_NOLKP_V3_R2/r0", "EHR_DG8P_NOLKP_V3_R3/r0"]), bm_ex("ehrsql_600", ehr_600, ["EHR_DG8P_NOLKP_V3_R1/r0", "EHR_DG8P_NOLKP_V3_R2/r0", "EHR_DG8P_NOLKP_V3_R3/r0"]), "zero_leak", (12, -18), "left"),
+        ("1-way Profile", bm_tok("ehrsql_600", ["EHR_IND8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_IND8_V3_R1/r0"), "zero_leak", (-10, -17), "center"),
+        ("Silhouette-E", bm_tok("ehrsql_600", ["EHR_ENT8_V3_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "EHR_ENT8_V3_R1/r0"), "zero_leak", (-4, 15), "center"),
+        ("DAWA+DP-SIPS", bm_tok("ehrsql_600", ["DAWA_CLEAN_EHR600_R1/r0"]), bm_ex("ehrsql_600", ehr_600, "DAWA_CLEAN_EHR600_R1/r0"), "zero_leak", (8, 10), "left"),
+        ("Silhouette", bm_tok("ehrsql_600", ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]), bm_ex("ehrsql_600", ehr_600, ["EHR_DG8P_V3_R1/r0", "EHR_DG8P_V3_R2/r0", "EHR_DG8P_V3_R3/r0"]), "silh", (8, 11), "left"),
     ]
 
     pc_points = [
         ("Schema only", bm_tok("bird", ["SOL_C0/r0"]), bm_ex("bird", bird_440, "SOL_C0/r0"), "zero_leak", (10, -3)),
-        ("PubCap Static Synth", bm_tok("bird", ["SOL_PUBCAP_IND8_ROWS_R1/r0"]), bm_ex("bird", bird_440, "SOL_PUBCAP_IND8_ROWS_R1/r0"), "dp_synth", (10, -8)),
-        ("1-way Synth Probe", bm_tok("bird", ["SOL_IND8_PROBE_R1/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROBE_R1/r0"), "dp_synth", (-32, -15)),
+        ("Static Synth", bm_tok("bird", ["SOL_PUBCAP_IND8_ROWS_R1/r0"]), bm_ex("bird", bird_440, "SOL_PUBCAP_IND8_ROWS_R1/r0"), "dp_synth", (10, -8)),
+        ("1-way Synth", bm_tok("bird", ["SOL_IND8_PROBE_R1/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROBE_R1/r0"), "dp_synth", (-32, -15)),
         ("1-way Profile", bm_tok("bird", ["SOL_IND8_PROMPT/r0"]), bm_ex("bird", bird_440, "SOL_IND8_PROMPT/r0"), "zero_leak", (10, -2)),
-        ("Silhouette Clean (R=3)", bm_tok("bird", ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]), bm_ex("bird", bird_440, ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]), "silh", (10, 10)),
+        ("Silhouette", bm_tok("bird", ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]), bm_ex("bird", bird_440, ["SOL_DG8_CLEAN_R1/r0", "SOL_DG8_CLEAN_R2/r0", "SOL_DG8_CLEAN_R3/r0"]), "silh", (10, 10)),
         ("Full access", bm_tok("bird", ["SOL_C4/r0"]), bm_ex("bird", bird_440, "SOL_C4/r0"), "raw_ref", (-44, -12)),
     ]
 
@@ -265,11 +267,11 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
 
     pubcap_specs = [
         ("Static Synth", ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"], ORANGE),
-        ("1w-Prof", ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"], GREEN),
-        ("Unpruned", ["PUBCAP_UNPRUNED_R1/r0", "PUBCAP_UNPRUNED_R2/r0", "PUBCAP_UNPRUNED_R3/r0"], SKY),
-        ("$\\omega{=}1$", ["PUBCAP_OMEGA1_EQDELTA_R1/r0", "PUBCAP_OMEGA1_EQDELTA_R2/r0", "PUBCAP_OMEGA1_EQDELTA_R3/r0"], PURPLE),
-        ("FlatW", ["PUBCAP_FLATW_R1/r0", "PUBCAP_FLATW_R2/r0", "PUBCAP_FLATW_R3/r0"], VERMILION),
-        ("PubCap Silh.", ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"], BLUE),
+        ("1-way Prof. (cap)", ["PUBCAP_IND8_PROFILE_R1/r0", "PUBCAP_IND8_PROFILE_R2/r0", "PUBCAP_IND8_PROFILE_R3/r0"], GREEN),
+        ("Silh.-C (-K)", ["PUBCAP_UNPRUNED_R1/r0", "PUBCAP_UNPRUNED_R2/r0", "PUBCAP_UNPRUNED_R3/r0"], SKY),
+        ("Silh.-C (-R)", ["PUBCAP_OMEGA1_EQDELTA_R1/r0", "PUBCAP_OMEGA1_EQDELTA_R2/r0", "PUBCAP_OMEGA1_EQDELTA_R3/r0"], PURPLE),
+        ("Silh.-C (-W)", ["PUBCAP_FLATW_R1/r0", "PUBCAP_FLATW_R2/r0", "PUBCAP_FLATW_R3/r0"], VERMILION),
+        ("Silhouette-C", ["PUBCAP_SILHOUETTE_R1/r0", "PUBCAP_SILHOUETTE_R2/r0", "PUBCAP_SILHOUETTE_R3/r0"], BLUE),
     ]
     x_bars = [5.4, 6.4, 7.4, 8.4, 9.4, 10.4]
     for xb, (lbl, conds, col) in zip(x_bars, pubcap_specs):
@@ -278,11 +280,11 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
         m = 100.0 * mean(v)
         ax.bar([xb], [m], width=0.72, color=col, alpha=0.84 if col != BLUE else 0.96, edgecolor=DARK, linewidth=0.6, zorder=3)
         ax.errorbar([xb], [m], yerr=[[m - 100.0 * lo], [100.0 * hi - m]], fmt="none", ecolor=DARK, capsize=2.5, linewidth=0.9, zorder=4)
-        if lbl == "PubCap Silh.":
+        if lbl == "Silhouette-C":
             ax.annotate(f"{m:.1f}%", (xb, 100.0 * hi), xytext=(0, 3), textcoords="offset points", ha="center",
                         fontsize=8.7, color=BLUE, fontweight="bold")
 
-    # Uncapped R=3 noVal comparison bar (x=11.7)
+    # Uncapped R=3 Silhouette-V comparison bar (x=11.7)
     ax.axvline(11.05, color="#CCCCCC", linestyle=":", linewidth=1.0, zorder=1)
     noval_conds = ["DG8_NOVAL_POST_R1/r0", "DG8_NOVAL_POST_R2/r0", "DG8_NOVAL_POST_R3/r0"]
     v_nv = vec(bird_out, noval_conds, bird_440)
@@ -292,22 +294,22 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     ax.errorbar([11.7], [m_nv], yerr=[[m_nv - 100.0 * lo_nv], [100.0 * hi_nv - m_nv]], fmt="none", ecolor=DARK, capsize=2.5, linewidth=0.9, zorder=4)
     ax.annotate(f"{m_nv:.1f}%", (11.7, 100.0 * hi_nv), xytext=(0, 3), textcoords="offset points", ha="center",
                 fontsize=8.6, color=DARK, fontweight="bold")
-    ax.text(11.7, 52.8, "Uncapped\nnoVal R=3", ha="center", va="bottom", fontsize=8.4, fontweight="bold", color="#555555")
+    ax.text(11.7, 52.8, "Uncapped\nSilhouette-V", ha="center", va="bottom", fontsize=8.4, fontweight="bold", color="#555555")
 
     ax.set_xticks(x_curve + [4] + x_bars + [11.7])
     ax.set_xticklabels(
-        ["$\\varepsilon=1$", "$\\varepsilon=2$", "$\\varepsilon=4$", "$\\varepsilon=8$", "Noiseless"] + [s[0] for s in pubcap_specs] + ["noVal R=3"],
-        fontsize=8.4, rotation=28, ha="right",
+        ["$\\varepsilon=1$", "$\\varepsilon=2$", "$\\varepsilon=4$", "$\\varepsilon=8$", "Silhouette-N"] + [s[0] for s in pubcap_specs] + ["Silhouette-V"],
+        fontsize=8.2, rotation=28, ha="right",
     )
     ax.set_xlim(-0.55, 12.35)
     ax.set_ylim(27, 59.5)
     ax.set_ylabel("BIRD Official Set EX (%)")
-    ax.set_title("(a) Budget Sweep (R=1), Cap_pub & noVal (R=3)")
+    ax.set_title("(a) Budget Sweep (R=1), Cap_pub & Silhouette-V")
     leg_a = [
         Line2D([0], [0], color=BLUE, marker="o", lw=1.8, markersize=5, label="R=1 curve ($\\varepsilon_T=1..8$)"),
-        Line2D([0], [0], color=SKY, marker="D", lw=1.2, ls=":", markeredgecolor=DARK, markersize=5, label="Noiseless v3 ($R=1$)"),
+        Line2D([0], [0], color=SKY, marker="D", lw=1.2, ls=":", markeredgecolor=DARK, markersize=5, label="Silhouette-N ($R=1$)"),
         Patch(facecolor=BLUE, edgecolor=DARK, alpha=0.92, label="Equal Cap_pub (R=3, 95% CI)"),
-        Patch(facecolor="#7F8C8D", edgecolor=DARK, hatch="//", alpha=0.9, label="Uncapped R=3 noVal (40.5%)"),
+        Patch(facecolor="#7F8C8D", edgecolor=DARK, hatch="//", alpha=0.9, label="Uncapped Silhouette-V (40.5%)"),
     ]
     ax.legend(handles=leg_a, loc="lower right", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=8.1)
 
@@ -485,8 +487,8 @@ def plot_fig6_interactive(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: i
     qps = [5, 15, 50, 200]
     f55_means = [100.0 * mean(vec(bird_out, [f"DPQ_FIXED55_QP{q}_R{r}/r0" for r in (1, 2, 3)], fixed_55)) for q in qps]
     silh_55 = 100.0 * mean(vec(bird_out, dg8_clean, fixed_55))
-    ax_a1.axhline(silh_55, color=BLUE, linestyle="--", linewidth=1.3, label=f"Silhouette R=3 ({silh_55:.1f}%)")
-    ax_a1.plot(range(len(qps)), f55_means, "-s", color=VERMILION, linewidth=1.6, markersize=5, label="DP-Query TP8 (R=3)")
+    ax_a1.axhline(silh_55, color=BLUE, linestyle="--", linewidth=1.3, label=f"Silhouette ({silh_55:.1f}%)")
+    ax_a1.plot(range(len(qps)), f55_means, "-s", color=VERMILION, linewidth=1.6, markersize=5, label="DP-Query")
     for i, m in enumerate(f55_means):
         ax_a1.annotate(f"{m:.1f}%", (i, m), xytext=(0, -14), textcoords="offset points", ha="center", fontsize=8.9, color=VERMILION, fontweight="bold")
     ax_a1.set_xticks(range(len(qps)))
@@ -502,8 +504,8 @@ def plot_fig6_interactive(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: i
     silh_p = [100.0 * mean(vec(bird_out, dg8_clean, qset)) for _, qset in prefixes]
     tp8_p = [100.0 * mean(vec(bird_out, tp8_v2, qset)) for _, qset in prefixes]
     px = np.arange(len(prefixes))
-    ax_a2.plot(px, silh_p, "-o", color=BLUE, linewidth=1.8, markersize=5.2, label="Silhouette (R=3)")
-    ax_a2.plot(px, tp8_p, "-s", color=VERMILION, linewidth=1.8, markersize=5.2, label="DP-Query v2 TP8 (R=3)")
+    ax_a2.plot(px, silh_p, "-o", color=BLUE, linewidth=1.8, markersize=5.2, label="Silhouette")
+    ax_a2.plot(px, tp8_p, "-s", color=VERMILION, linewidth=1.8, markersize=5.2, label="DP-Query")
     for i in range(len(prefixes)):
         ax_a2.annotate(f"{silh_p[i]:.1f}%", (px[i], silh_p[i]), xytext=(0, 6), textcoords="offset points", ha="center", fontsize=8.9, color=BLUE, fontweight="bold")
         ax_a2.annotate(f"{tp8_p[i]:.1f}%", (px[i], tp8_p[i]), xytext=(0, -14), textcoords="offset points", ha="center", fontsize=8.9, color=VERMILION, fontweight="bold")
@@ -511,7 +513,7 @@ def plot_fig6_interactive(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: i
     ax_a2.set_xticklabels([p[0] for p in prefixes], fontsize=9.6)
     ax_a2.set_ylim(24, 72)
     ax_a2.set_ylabel("Set EX (%)")
-    ax_a2.set_title("(a2) Nested Stream Prefixes (DP-Query v2)", fontsize=10.9)
+    ax_a2.set_title("(a2) Nested Stream Prefixes", fontsize=10.9)
     ax_a2.legend(loc="lower left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=8.6)
 
     # Panel b (full height middle): Whole-Patient Bootstrap 3-stage Clinical Survival (M=200 cohorts, C=5)
@@ -587,8 +589,8 @@ def plot_fig6_interactive(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: i
     sil_vals = [100.0 * mean(vec(bird_out, dg8_clean, qids)) for _, qids in strata_groups]
 
     ax_c.bar(gx - bw, c0_vals, width=bw, color=GRAY, edgecolor=DARK, linewidth=0.5, label="Schema only", zorder=3)
-    ax_c.bar(gx, ind_vals, width=bw, color=ORANGE, edgecolor=DARK, linewidth=0.5, label="1-way Synth (R=3)", zorder=3)
-    ax_c.bar(gx + bw, sil_vals, width=bw, color=BLUE, edgecolor=DARK, linewidth=0.5, label="Silhouette (R=3)", zorder=3)
+    ax_c.bar(gx, ind_vals, width=bw, color=ORANGE, edgecolor=DARK, linewidth=0.5, label="1-way Synth", zorder=3)
+    ax_c.bar(gx + bw, sil_vals, width=bw, color=BLUE, edgecolor=DARK, linewidth=0.5, label="Silhouette", zorder=3)
     for i in range(len(strata_groups)):
         ax_c.text(gx[i] + bw, sil_vals[i] + 1.0, f"{sil_vals[i]:.1f}", ha="center", va="bottom", fontsize=8.6, color=BLUE, fontweight="bold")
     ax_c.axvline(1.5, color="#BBBBBB", linestyle="-", linewidth=1.0)

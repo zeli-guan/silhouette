@@ -1,0 +1,2109 @@
+{
+  "schema_version": "phase13-dawa-clean-summary-v1",
+  "generated_at": "2026-11-24 09:21:33",
+  "elapsed_s": 1147.38,
+  "sqlite_version": "3.53.2",
+  "total_conditions": 10,
+  "total_slots": 4560,
+  "unique_sql_replayed": 4330,
+  "replay_parity_mismatches_vs_result_json": 0,
+  "all_fw_errors": 0,
+  "all_copied_private_tuples_unique": 0,
+  "all_ser_out_unique": 105,
+  "all_oob_unique": 7,
+  "all_raw_tools_exposed": 0,
+  "all_raw_tools_invoked": 0,
+  "canonical_v10_reference_rates": {
+    "DG8_CLEAN_R1_R3": {
+      "hits_total": 620,
+      "slots_total": 1320,
+      "mean_pct": 46.97,
+      "ci95_pct": [
+        43.03,
+        50.91
+      ],
+      "cluster_ci95_pct": [
+        40.59,
+        52.81
+      ]
+    },
+    "IND8_PROMPT_R1_R3": {
+      "hits_total": 608,
+      "slots_total": 1320,
+      "mean_pct": 46.06,
+      "ci95_pct": [
+        42.12,
+        50.0
+      ],
+      "cluster_ci95_pct": [
+        41.52,
+        50.92
+      ]
+    },
+    "TIGHTBPE_SILHOUETTE_R1_R3": {
+      "hits_total": 422,
+      "slots_total": 1320,
+      "mean_pct": 31.97,
+      "ci95_pct": [
+        28.26,
+        35.83
+      ],
+      "cluster_ci95_pct": [
+        27.33,
+        37.2
+      ]
+    },
+    "TIGHTBPE_IND8_PROF_R1_R3": {
+      "hits_total": 428,
+      "slots_total": 1320,
+      "mean_pct": 32.42,
+      "ci95_pct": [
+        28.79,
+        36.21
+      ],
+      "cluster_ci95_pct": [
+        26.78,
+        38.22
+      ]
+    },
+    "TIGHTBPE_VALFIRST_SILH_R1_R3": {
+      "hits_total": 517,
+      "slots_total": 1320,
+      "mean_pct": 39.17,
+      "ci95_pct": [
+        35.45,
+        43.11
+      ],
+      "cluster_ci95_pct": [
+        33.52,
+        45.01
+      ]
+    },
+    "TIGHTBPE_VALFIRST_IND8_PROF_R1_R3": {
+      "hits_total": 575,
+      "slots_total": 1320,
+      "mean_pct": 43.56,
+      "ci95_pct": [
+        39.77,
+        47.35
+      ],
+      "cluster_ci95_pct": [
+        39.11,
+        48.38
+      ]
+    },
+    "EHR_DG8P_V3_R1": {
+      "hits_total": 302,
+      "slots_total": 600,
+      "mean_pct": 50.33,
+      "ci95_pct": [
+        46.33,
+        54.33
+      ],
+      "cluster_ci95_pct": [
+        42.07,
+        58.6
+      ]
+    },
+    "EHR_DG8P_V3_R1_R3": {
+      "hits_total": 893,
+      "slots_total": 1800,
+      "mean_pct": 49.61,
+      "ci95_pct": [
+        46.0,
+        53.22
+      ],
+      "cluster_ci95_pct": [
+        41.61,
+        57.67
+      ]
+    },
+    "EHR_IND8_V3_R1": {
+      "hits_total": 296,
+      "slots_total": 600,
+      "mean_pct": 49.33,
+      "ci95_pct": [
+        45.33,
+        53.33
+      ],
+      "cluster_ci95_pct": [
+        41.29,
+        57.12
+      ]
+    }
+  },
+  "conditions": {
+    "DAWA_CLEAN_BIRD_R1/r0": {
+      "arm": "dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 1,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 204,
+      "official_set_ex_pct": 46.36,
+      "strict_ex": 196,
+      "strict_ex_pct": 44.55,
+      "deliverable_set_ex": 203,
+      "deliverable_set_ex_pct": 46.14,
+      "deliverable_strict_ex": 195,
+      "deliverable_strict_ex_pct": 44.32,
+      "runtime_errors_total": 10,
+      "runtime_error_breakdown": {
+        "aggregate_misuse": 1,
+        "syntax_error": 2,
+        "timeout": 4,
+        "unknown_column": 3
+      },
+      "authorizer_denials": 1,
+      "timeout_flags": 4,
+      "legacy_nocte_denied": 71,
+      "mean_total_tokens": 6605.4,
+      "mean_prompt_tokens": 6346.2,
+      "mean_completion_tokens": 259.2,
+      "mean_latency_s": 4.47,
+      "mean_tool_calls": 1.616,
+      "mean_sandbox_calls": 0.616,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 2816.82,
+        "mean_bpe_p6": 2834.82,
+        "mean_retained_values": 115.64,
+        "mean_val_cols": 20.36
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          2163899,
+          95192465
+        ],
+        "oob": [
+          1,
+          1
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 412,
+        "slots_nonzero_oob": 1,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 255,
+        "sandbox_calls_sum": 271,
+        "sandbox_error_calls_sum": 9,
+        "slots_with_sandbox_error": 8,
+        "slots_error_then_rewrite": 8,
+        "slots_error_then_exec_ok": 8,
+        "slots_error_then_ex1": 5,
+        "slots_any_sql_revision": 68,
+        "slots_zero_error_revision": 60,
+        "legacy_adjacent_rewrites_sum": 71,
+        "slots_with_legacy_rewrite": 68
+      }
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "arm": "tightbpe_colfirst_dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 1,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 166,
+      "official_set_ex_pct": 37.73,
+      "strict_ex": 157,
+      "strict_ex_pct": 35.68,
+      "deliverable_set_ex": 166,
+      "deliverable_set_ex_pct": 37.73,
+      "deliverable_strict_ex": 157,
+      "deliverable_strict_ex_pct": 35.68,
+      "runtime_errors_total": 8,
+      "runtime_error_breakdown": {
+        "ambiguous_column": 1,
+        "timeout": 6,
+        "unknown_column": 1
+      },
+      "authorizer_denials": 1,
+      "timeout_flags": 6,
+      "legacy_nocte_denied": 75,
+      "mean_total_tokens": 4274.1,
+      "mean_prompt_tokens": 3980.1,
+      "mean_completion_tokens": 294.0,
+      "mean_latency_s": 5.13,
+      "mean_tool_calls": 1.748,
+      "mean_sandbox_calls": 0.748,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 1012.82,
+        "mean_bpe_p6": 1030.82,
+        "mean_retained_values": 0,
+        "mean_val_cols": 0
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          105,
+          105
+        ],
+        "full_payload": [
+          46705,
+          1767679
+        ],
+        "oob": [
+          3,
+          33
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 1,
+        "slots_nonzero_mc": 318,
+        "slots_nonzero_oob": 32,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 292,
+        "sandbox_calls_sum": 329,
+        "sandbox_error_calls_sum": 12,
+        "slots_with_sandbox_error": 9,
+        "slots_error_then_rewrite": 9,
+        "slots_error_then_exec_ok": 9,
+        "slots_error_then_ex1": 3,
+        "slots_any_sql_revision": 94,
+        "slots_zero_error_revision": 85,
+        "legacy_adjacent_rewrites_sum": 107,
+        "slots_with_legacy_rewrite": 94
+      }
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "arm": "tightbpe_valfirst_dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 1,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 180,
+      "official_set_ex_pct": 40.91,
+      "strict_ex": 172,
+      "strict_ex_pct": 39.09,
+      "deliverable_set_ex": 180,
+      "deliverable_set_ex_pct": 40.91,
+      "deliverable_strict_ex": 172,
+      "deliverable_strict_ex_pct": 39.09,
+      "runtime_errors_total": 5,
+      "runtime_error_breakdown": {
+        "syntax_error": 1,
+        "timeout": 4
+      },
+      "authorizer_denials": 0,
+      "timeout_flags": 4,
+      "legacy_nocte_denied": 67,
+      "mean_total_tokens": 4262.6,
+      "mean_prompt_tokens": 3983.3,
+      "mean_completion_tokens": 279.4,
+      "mean_latency_s": 4.8,
+      "mean_tool_calls": 1.689,
+      "mean_sandbox_calls": 0.689,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 1015.09,
+        "mean_bpe_p6": 1033.09,
+        "mean_retained_values": 46.64,
+        "mean_val_cols": 20.36
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          1697821,
+          70669890
+        ],
+        "oob": [
+          1,
+          1
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 412,
+        "slots_nonzero_oob": 1,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 264,
+        "sandbox_calls_sum": 303,
+        "sandbox_error_calls_sum": 16,
+        "slots_with_sandbox_error": 12,
+        "slots_error_then_rewrite": 12,
+        "slots_error_then_exec_ok": 11,
+        "slots_error_then_ex1": 3,
+        "slots_any_sql_revision": 80,
+        "slots_zero_error_revision": 68,
+        "legacy_adjacent_rewrites_sum": 101,
+        "slots_with_legacy_rewrite": 80
+      }
+    },
+    "DAWA_CLEAN_BIRD_R2/r0": {
+      "arm": "dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 2,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 203,
+      "official_set_ex_pct": 46.14,
+      "strict_ex": 196,
+      "strict_ex_pct": 44.55,
+      "deliverable_set_ex": 203,
+      "deliverable_set_ex_pct": 46.14,
+      "deliverable_strict_ex": 196,
+      "deliverable_strict_ex_pct": 44.55,
+      "runtime_errors_total": 8,
+      "runtime_error_breakdown": {
+        "other_sqlite_error": 2,
+        "syntax_error": 1,
+        "timeout": 3,
+        "unknown_column": 2
+      },
+      "authorizer_denials": 1,
+      "timeout_flags": 3,
+      "legacy_nocte_denied": 75,
+      "mean_total_tokens": 6576.0,
+      "mean_prompt_tokens": 6311.8,
+      "mean_completion_tokens": 264.2,
+      "mean_latency_s": 4.65,
+      "mean_tool_calls": 1.643,
+      "mean_sandbox_calls": 0.643,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 2818.64,
+        "mean_bpe_p6": 2836.64,
+        "mean_retained_values": 114.82,
+        "mean_val_cols": 20.45
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          2113697,
+          93070654
+        ],
+        "oob": [
+          0,
+          0
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 412,
+        "slots_nonzero_oob": 0,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 261,
+        "sandbox_calls_sum": 283,
+        "sandbox_error_calls_sum": 13,
+        "slots_with_sandbox_error": 10,
+        "slots_error_then_rewrite": 10,
+        "slots_error_then_exec_ok": 10,
+        "slots_error_then_ex1": 3,
+        "slots_any_sql_revision": 74,
+        "slots_zero_error_revision": 64,
+        "legacy_adjacent_rewrites_sum": 83,
+        "slots_with_legacy_rewrite": 74
+      }
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "arm": "tightbpe_colfirst_dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 2,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 145,
+      "official_set_ex_pct": 32.95,
+      "strict_ex": 139,
+      "strict_ex_pct": 31.59,
+      "deliverable_set_ex": 145,
+      "deliverable_set_ex_pct": 32.95,
+      "deliverable_strict_ex": 139,
+      "deliverable_strict_ex_pct": 31.59,
+      "runtime_errors_total": 8,
+      "runtime_error_breakdown": {
+        "aggregate_misuse": 1,
+        "other_sqlite_error": 1,
+        "syntax_error": 1,
+        "timeout": 4,
+        "unknown_column": 1
+      },
+      "authorizer_denials": 1,
+      "timeout_flags": 4,
+      "legacy_nocte_denied": 69,
+      "mean_total_tokens": 4191.4,
+      "mean_prompt_tokens": 3902.6,
+      "mean_completion_tokens": 288.8,
+      "mean_latency_s": 5.16,
+      "mean_tool_calls": 1.7,
+      "mean_sandbox_calls": 0.7,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 1012,
+        "mean_bpe_p6": 1030,
+        "mean_retained_values": 0,
+        "mean_val_cols": 0
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          46056,
+          1721278
+        ],
+        "oob": [
+          1,
+          31
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 319,
+        "slots_nonzero_oob": 31,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 276,
+        "sandbox_calls_sum": 308,
+        "sandbox_error_calls_sum": 11,
+        "slots_with_sandbox_error": 10,
+        "slots_error_then_rewrite": 10,
+        "slots_error_then_exec_ok": 8,
+        "slots_error_then_ex1": 1,
+        "slots_any_sql_revision": 106,
+        "slots_zero_error_revision": 96,
+        "legacy_adjacent_rewrites_sum": 118,
+        "slots_with_legacy_rewrite": 106
+      }
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "arm": "tightbpe_valfirst_dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 2,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 189,
+      "official_set_ex_pct": 42.95,
+      "strict_ex": 180,
+      "strict_ex_pct": 40.91,
+      "deliverable_set_ex": 189,
+      "deliverable_set_ex_pct": 42.95,
+      "deliverable_strict_ex": 180,
+      "deliverable_strict_ex_pct": 40.91,
+      "runtime_errors_total": 5,
+      "runtime_error_breakdown": {
+        "ambiguous_column": 1,
+        "other_sqlite_error": 1,
+        "syntax_error": 1,
+        "timeout": 1,
+        "unknown_column": 1
+      },
+      "authorizer_denials": 0,
+      "timeout_flags": 1,
+      "legacy_nocte_denied": 71,
+      "mean_total_tokens": 4161.8,
+      "mean_prompt_tokens": 3884.7,
+      "mean_completion_tokens": 277.2,
+      "mean_latency_s": 4.95,
+      "mean_tool_calls": 1.661,
+      "mean_sandbox_calls": 0.661,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 1016.64,
+        "mean_bpe_p6": 1034.64,
+        "mean_retained_values": 43.09,
+        "mean_val_cols": 20.45
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          1636551,
+          67836563
+        ],
+        "oob": [
+          0,
+          0
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 412,
+        "slots_nonzero_oob": 0,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 259,
+        "sandbox_calls_sum": 291,
+        "sandbox_error_calls_sum": 14,
+        "slots_with_sandbox_error": 10,
+        "slots_error_then_rewrite": 10,
+        "slots_error_then_exec_ok": 9,
+        "slots_error_then_ex1": 2,
+        "slots_any_sql_revision": 81,
+        "slots_zero_error_revision": 71,
+        "legacy_adjacent_rewrites_sum": 99,
+        "slots_with_legacy_rewrite": 81
+      }
+    },
+    "DAWA_CLEAN_BIRD_R3/r0": {
+      "arm": "dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 3,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 193,
+      "official_set_ex_pct": 43.86,
+      "strict_ex": 186,
+      "strict_ex_pct": 42.27,
+      "deliverable_set_ex": 193,
+      "deliverable_set_ex_pct": 43.86,
+      "deliverable_strict_ex": 186,
+      "deliverable_strict_ex_pct": 42.27,
+      "runtime_errors_total": 9,
+      "runtime_error_breakdown": {
+        "timeout": 9
+      },
+      "authorizer_denials": 0,
+      "timeout_flags": 9,
+      "legacy_nocte_denied": 61,
+      "mean_total_tokens": 6588.9,
+      "mean_prompt_tokens": 6334.1,
+      "mean_completion_tokens": 254.8,
+      "mean_latency_s": 4.5,
+      "mean_tool_calls": 1.643,
+      "mean_sandbox_calls": 0.643,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 2806.09,
+        "mean_bpe_p6": 2824.09,
+        "mean_retained_values": 115,
+        "mean_val_cols": 20.36
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          2137987,
+          93859418
+        ],
+        "oob": [
+          0,
+          0
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 412,
+        "slots_nonzero_oob": 0,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 257,
+        "sandbox_calls_sum": 283,
+        "sandbox_error_calls_sum": 8,
+        "slots_with_sandbox_error": 8,
+        "slots_error_then_rewrite": 8,
+        "slots_error_then_exec_ok": 6,
+        "slots_error_then_ex1": 1,
+        "slots_any_sql_revision": 74,
+        "slots_zero_error_revision": 66,
+        "legacy_adjacent_rewrites_sum": 87,
+        "slots_with_legacy_rewrite": 74
+      }
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "arm": "tightbpe_colfirst_dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 3,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 144,
+      "official_set_ex_pct": 32.73,
+      "strict_ex": 138,
+      "strict_ex_pct": 31.36,
+      "deliverable_set_ex": 144,
+      "deliverable_set_ex_pct": 32.73,
+      "deliverable_strict_ex": 138,
+      "deliverable_strict_ex_pct": 31.36,
+      "runtime_errors_total": 10,
+      "runtime_error_breakdown": {
+        "syntax_error": 2,
+        "timeout": 5,
+        "unknown_column": 2,
+        "unknown_table": 1
+      },
+      "authorizer_denials": 1,
+      "timeout_flags": 5,
+      "legacy_nocte_denied": 61,
+      "mean_total_tokens": 4142.1,
+      "mean_prompt_tokens": 3859.3,
+      "mean_completion_tokens": 282.8,
+      "mean_latency_s": 4.85,
+      "mean_tool_calls": 1.691,
+      "mean_sandbox_calls": 0.691,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 1011.18,
+        "mean_bpe_p6": 1029.18,
+        "mean_retained_values": 0,
+        "mean_val_cols": 0
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          45168,
+          1657363
+        ],
+        "oob": [
+          1,
+          31
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 280,
+        "slots_nonzero_oob": 31,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 269,
+        "sandbox_calls_sum": 304,
+        "sandbox_error_calls_sum": 15,
+        "slots_with_sandbox_error": 14,
+        "slots_error_then_rewrite": 14,
+        "slots_error_then_exec_ok": 13,
+        "slots_error_then_ex1": 3,
+        "slots_any_sql_revision": 89,
+        "slots_zero_error_revision": 75,
+        "legacy_adjacent_rewrites_sum": 103,
+        "slots_with_legacy_rewrite": 89
+      }
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "arm": "tightbpe_valfirst_dawa_clean_bird",
+      "benchmark": "bird",
+      "mode": "bird_profile",
+      "rep": 3,
+      "n": 440,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 169,
+      "official_set_ex_pct": 38.41,
+      "strict_ex": 162,
+      "strict_ex_pct": 36.82,
+      "deliverable_set_ex": 169,
+      "deliverable_set_ex_pct": 38.41,
+      "deliverable_strict_ex": 162,
+      "deliverable_strict_ex_pct": 36.82,
+      "runtime_errors_total": 7,
+      "runtime_error_breakdown": {
+        "syntax_error": 2,
+        "timeout": 4,
+        "unknown_column": 1
+      },
+      "authorizer_denials": 0,
+      "timeout_flags": 4,
+      "legacy_nocte_denied": 73,
+      "mean_total_tokens": 4253.1,
+      "mean_prompt_tokens": 3963.9,
+      "mean_completion_tokens": 289.2,
+      "mean_latency_s": 5.06,
+      "mean_tool_calls": 1.68,
+      "mean_sandbox_calls": 0.68,
+      "mean_lookup_calls": 0,
+      "profile_stats": {
+        "n_profiles": 11,
+        "mean_bpe_s8": 1014.45,
+        "mean_bpe_p6": 1032.45,
+        "mean_retained_values": 41.09,
+        "mean_val_cols": 20.36
+      },
+      "db_dedup_audit": {
+        "slots": 440,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          1655147,
+          68470618
+        ],
+        "oob": [
+          0,
+          0
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 412,
+        "slots_nonzero_oob": 0,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 440,
+        "runs_with_sandbox_call": 259,
+        "sandbox_calls_sum": 299,
+        "sandbox_error_calls_sum": 18,
+        "slots_with_sandbox_error": 12,
+        "slots_error_then_rewrite": 12,
+        "slots_error_then_exec_ok": 12,
+        "slots_error_then_ex1": 4,
+        "slots_any_sql_revision": 87,
+        "slots_zero_error_revision": 75,
+        "legacy_adjacent_rewrites_sum": 107,
+        "slots_with_legacy_rewrite": 87
+      }
+    },
+    "DAWA_CLEAN_EHR600_R1/r0": {
+      "arm": "dawa_clean_ehr600",
+      "benchmark": "ehrsql_600",
+      "mode": "ehr_profile",
+      "rep": 1,
+      "n": 600,
+      "fw_errors": 0,
+      "no_submission": 0,
+      "official_set_ex": 306,
+      "official_set_ex_pct": 51.0,
+      "strict_ex": 306,
+      "strict_ex_pct": 51.0,
+      "deliverable_set_ex": 306,
+      "deliverable_set_ex_pct": 51.0,
+      "deliverable_strict_ex": 306,
+      "deliverable_strict_ex_pct": 51.0,
+      "runtime_errors_total": 8,
+      "runtime_error_breakdown": {
+        "ambiguous_column": 2,
+        "syntax_error": 1,
+        "unknown_column": 4,
+        "unknown_table": 1
+      },
+      "authorizer_denials": 0,
+      "timeout_flags": 0,
+      "legacy_nocte_denied": 11,
+      "mean_total_tokens": 11470.8,
+      "mean_prompt_tokens": 11308.8,
+      "mean_completion_tokens": 162.0,
+      "mean_latency_s": 4.25,
+      "mean_tool_calls": 1.908,
+      "mean_sandbox_calls": 0.395,
+      "mean_lookup_calls": 0.513,
+      "profile_stats": {
+        "n_profiles": 1,
+        "mean_bpe_s8": 4414,
+        "mean_bpe_p6": 4432,
+        "mean_retained_values": 109,
+        "mean_val_cols": 21
+      },
+      "db_dedup_audit": {
+        "slots": 600,
+        "copied": [
+          0,
+          0
+        ],
+        "ser_out": [
+          0,
+          0
+        ],
+        "full_payload": [
+          49389,
+          29364709
+        ],
+        "oob": [
+          0,
+          0
+        ],
+        "slots_nonzero_copied": 0,
+        "slots_nonzero_ser_out": 0,
+        "slots_nonzero_mc": 600,
+        "slots_nonzero_oob": 0,
+        "raw_tools_exposed_total": 0,
+        "raw_tools_invoked_total": 0
+      },
+      "turn_ordered_telemetry": {
+        "n_slots": 600,
+        "runs_with_sandbox_call": 214,
+        "sandbox_calls_sum": 237,
+        "sandbox_error_calls_sum": 20,
+        "slots_with_sandbox_error": 12,
+        "slots_error_then_rewrite": 12,
+        "slots_error_then_exec_ok": 12,
+        "slots_error_then_ex1": 4,
+        "slots_any_sql_revision": 51,
+        "slots_zero_error_revision": 39,
+        "legacy_adjacent_rewrites_sum": 66,
+        "slots_with_legacy_rewrite": 51
+      }
+    }
+  },
+  "pooled_summaries": {
+    "DAWA_CLEAN_BIRD_R1_R3": {
+      "conditions": [
+        "DAWA_CLEAN_BIRD_R1/r0",
+        "DAWA_CLEAN_BIRD_R2/r0",
+        "DAWA_CLEAN_BIRD_R3/r0"
+      ],
+      "benchmark": "bird",
+      "n_per_rep": 440,
+      "total_slots": 1320,
+      "fw_errors_total": 0,
+      "no_submission_total": 0,
+      "set_ex_hits_total": 600,
+      "strict_ex_hits_total": 578,
+      "deliverable_set_ex_hits_total": 599,
+      "deliverable_strict_ex_hits_total": 577,
+      "per_rep_set_ex": [
+        204,
+        203,
+        193
+      ],
+      "per_rep_set_ex_pct": [
+        46.36,
+        46.14,
+        43.86
+      ],
+      "per_rep_strict_ex": [
+        196,
+        196,
+        186
+      ],
+      "per_rep_strict_ex_pct": [
+        44.55,
+        44.55,
+        42.27
+      ],
+      "per_rep_deliverable_set_ex": [
+        203,
+        203,
+        193
+      ],
+      "per_rep_deliverable_set_ex_pct": [
+        46.14,
+        46.14,
+        43.86
+      ],
+      "per_rep_deliverable_strict_ex": [
+        195,
+        196,
+        186
+      ],
+      "per_rep_deliverable_strict_ex_pct": [
+        44.32,
+        44.55,
+        42.27
+      ],
+      "mean_set_ex_pct": 45.45,
+      "ci95_pct": [
+        41.67,
+        49.32
+      ],
+      "cluster_ci95_pct": [
+        39.19,
+        51.76
+      ],
+      "sd_set_ex_pp": 1.38,
+      "mean_strict_ex_pct": 43.79,
+      "mean_deliverable_set_ex_pct": 45.38,
+      "mean_deliverable_strict_ex_pct": 43.71,
+      "mean_total_tokens": 6590.1,
+      "mean_profile_bpe_s8": 2813.85,
+      "mean_profile_bpe_p6": 2831.85,
+      "mean_retained_values": 115.15,
+      "audit_copied_unique_sum": 0,
+      "audit_copied_cum_sum": 0,
+      "audit_ser_out_unique_sum": 0,
+      "audit_ser_out_cum_sum": 0,
+      "audit_full_payload_unique_sum": 6415583,
+      "audit_full_payload_cum_sum": 282122537,
+      "audit_oob_unique_sum": 1,
+      "audit_oob_cum_sum": 1,
+      "raw_tools_exposed_total": 0,
+      "raw_tools_invoked_total": 0
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1_R3": {
+      "conditions": [
+        "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0",
+        "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0",
+        "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0"
+      ],
+      "benchmark": "bird",
+      "n_per_rep": 440,
+      "total_slots": 1320,
+      "fw_errors_total": 0,
+      "no_submission_total": 0,
+      "set_ex_hits_total": 455,
+      "strict_ex_hits_total": 434,
+      "deliverable_set_ex_hits_total": 455,
+      "deliverable_strict_ex_hits_total": 434,
+      "per_rep_set_ex": [
+        166,
+        145,
+        144
+      ],
+      "per_rep_set_ex_pct": [
+        37.73,
+        32.95,
+        32.73
+      ],
+      "per_rep_strict_ex": [
+        157,
+        139,
+        138
+      ],
+      "per_rep_strict_ex_pct": [
+        35.68,
+        31.59,
+        31.36
+      ],
+      "per_rep_deliverable_set_ex": [
+        166,
+        145,
+        144
+      ],
+      "per_rep_deliverable_set_ex_pct": [
+        37.73,
+        32.95,
+        32.73
+      ],
+      "per_rep_deliverable_strict_ex": [
+        157,
+        139,
+        138
+      ],
+      "per_rep_deliverable_strict_ex_pct": [
+        35.68,
+        31.59,
+        31.36
+      ],
+      "mean_set_ex_pct": 34.47,
+      "ci95_pct": [
+        30.83,
+        38.18
+      ],
+      "cluster_ci95_pct": [
+        27.74,
+        41.48
+      ],
+      "sd_set_ex_pp": 2.83,
+      "mean_strict_ex_pct": 32.88,
+      "mean_deliverable_set_ex_pct": 34.47,
+      "mean_deliverable_strict_ex_pct": 32.88,
+      "mean_total_tokens": 4202.5,
+      "mean_profile_bpe_s8": 1012.0,
+      "mean_profile_bpe_p6": 1030.0,
+      "mean_retained_values": 0,
+      "audit_copied_unique_sum": 0,
+      "audit_copied_cum_sum": 0,
+      "audit_ser_out_unique_sum": 105,
+      "audit_ser_out_cum_sum": 105,
+      "audit_full_payload_unique_sum": 137929,
+      "audit_full_payload_cum_sum": 5146320,
+      "audit_oob_unique_sum": 5,
+      "audit_oob_cum_sum": 95,
+      "raw_tools_exposed_total": 0,
+      "raw_tools_invoked_total": 0
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1_R3": {
+      "conditions": [
+        "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0",
+        "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0",
+        "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0"
+      ],
+      "benchmark": "bird",
+      "n_per_rep": 440,
+      "total_slots": 1320,
+      "fw_errors_total": 0,
+      "no_submission_total": 0,
+      "set_ex_hits_total": 538,
+      "strict_ex_hits_total": 514,
+      "deliverable_set_ex_hits_total": 538,
+      "deliverable_strict_ex_hits_total": 514,
+      "per_rep_set_ex": [
+        180,
+        189,
+        169
+      ],
+      "per_rep_set_ex_pct": [
+        40.91,
+        42.95,
+        38.41
+      ],
+      "per_rep_strict_ex": [
+        172,
+        180,
+        162
+      ],
+      "per_rep_strict_ex_pct": [
+        39.09,
+        40.91,
+        36.82
+      ],
+      "per_rep_deliverable_set_ex": [
+        180,
+        189,
+        169
+      ],
+      "per_rep_deliverable_set_ex_pct": [
+        40.91,
+        42.95,
+        38.41
+      ],
+      "per_rep_deliverable_strict_ex": [
+        172,
+        180,
+        162
+      ],
+      "per_rep_deliverable_strict_ex_pct": [
+        39.09,
+        40.91,
+        36.82
+      ],
+      "mean_set_ex_pct": 40.76,
+      "ci95_pct": [
+        36.97,
+        44.62
+      ],
+      "cluster_ci95_pct": [
+        35.12,
+        46.84
+      ],
+      "sd_set_ex_pp": 2.27,
+      "mean_strict_ex_pct": 38.94,
+      "mean_deliverable_set_ex_pct": 40.76,
+      "mean_deliverable_strict_ex_pct": 38.94,
+      "mean_total_tokens": 4225.8,
+      "mean_profile_bpe_s8": 1015.39,
+      "mean_profile_bpe_p6": 1033.39,
+      "mean_retained_values": 43.61,
+      "audit_copied_unique_sum": 0,
+      "audit_copied_cum_sum": 0,
+      "audit_ser_out_unique_sum": 0,
+      "audit_ser_out_cum_sum": 0,
+      "audit_full_payload_unique_sum": 4989519,
+      "audit_full_payload_cum_sum": 206977071,
+      "audit_oob_unique_sum": 1,
+      "audit_oob_cum_sum": 1,
+      "raw_tools_exposed_total": 0,
+      "raw_tools_invoked_total": 0
+    },
+    "DAWA_CLEAN_EHR600_R1": {
+      "conditions": [
+        "DAWA_CLEAN_EHR600_R1/r0"
+      ],
+      "benchmark": "ehrsql_600",
+      "n_per_rep": 600,
+      "total_slots": 600,
+      "fw_errors_total": 0,
+      "no_submission_total": 0,
+      "set_ex_hits_total": 306,
+      "strict_ex_hits_total": 306,
+      "deliverable_set_ex_hits_total": 306,
+      "deliverable_strict_ex_hits_total": 306,
+      "per_rep_set_ex": [
+        306
+      ],
+      "per_rep_set_ex_pct": [
+        51.0
+      ],
+      "per_rep_strict_ex": [
+        306
+      ],
+      "per_rep_strict_ex_pct": [
+        51.0
+      ],
+      "per_rep_deliverable_set_ex": [
+        306
+      ],
+      "per_rep_deliverable_set_ex_pct": [
+        51.0
+      ],
+      "per_rep_deliverable_strict_ex": [
+        306
+      ],
+      "per_rep_deliverable_strict_ex_pct": [
+        51.0
+      ],
+      "mean_set_ex_pct": 51.0,
+      "ci95_pct": [
+        47.0,
+        55.0
+      ],
+      "cluster_ci95_pct": [
+        43.32,
+        58.44
+      ],
+      "sd_set_ex_pp": 0.0,
+      "mean_strict_ex_pct": 51.0,
+      "mean_deliverable_set_ex_pct": 51.0,
+      "mean_deliverable_strict_ex_pct": 51.0,
+      "mean_total_tokens": 11470.8,
+      "mean_profile_bpe_s8": 4414,
+      "mean_profile_bpe_p6": 4432,
+      "mean_retained_values": 109,
+      "audit_copied_unique_sum": 0,
+      "audit_copied_cum_sum": 0,
+      "audit_ser_out_unique_sum": 0,
+      "audit_ser_out_cum_sum": 0,
+      "audit_full_payload_unique_sum": 49389,
+      "audit_full_payload_cum_sum": 29364709,
+      "audit_oob_unique_sum": 0,
+      "audit_oob_cum_sum": 0,
+      "raw_tools_exposed_total": 0,
+      "raw_tools_invoked_total": 0
+    }
+  },
+  "p7_audit_rows": {
+    "DAWA_CLEAN_BIRD_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2163899,
+        95192465
+      ],
+      "oob": [
+        1,
+        1
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        105,
+        105
+      ],
+      "full_payload": [
+        46705,
+        1767679
+      ],
+      "oob": [
+        3,
+        33
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R1/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1697821,
+        70669890
+      ],
+      "oob": [
+        1,
+        1
+      ],
+      "rows_transmitted": 0
+    },
+    "DAWA_CLEAN_BIRD_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2113697,
+        93070654
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        46056,
+        1721278
+      ],
+      "oob": [
+        1,
+        31
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R2/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1636551,
+        67836563
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "DAWA_CLEAN_BIRD_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        2137987,
+        93859418
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_COLFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        45168,
+        1657363
+      ],
+      "oob": [
+        1,
+        31
+      ],
+      "rows_transmitted": 0
+    },
+    "TIGHTBPE_VALFIRST_DAWA_CLEAN_BIRD_R3/r0": {
+      "slots": 440,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        1655147,
+        68470618
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    },
+    "DAWA_CLEAN_EHR600_R1/r0": {
+      "slots": 600,
+      "copied": [
+        0,
+        0
+      ],
+      "ser_out": [
+        0,
+        0
+      ],
+      "full_payload": [
+        49389,
+        29364709
+      ],
+      "oob": [
+        0,
+        0
+      ],
+      "rows_transmitted": 0
+    }
+  },
+  "paired_inference": {
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 20261114,
+    "primary_silhouette_vs_dawa_holm": [
+      {
+        "comparison": "Silhouette vs DAWA+DP-SIPS (BIRD Uncapped R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 46.97,
+        "b_pct": 45.45,
+        "diff_pp": 1.52,
+        "ci95_pp": [
+          -1.44,
+          4.47
+        ],
+        "cluster_ci95_pp": [
+          -1.35,
+          4.76
+        ],
+        "wlt": [
+          101,
+          91,
+          248
+        ],
+        "p": 0.33664659677483216,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.4013671875,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.8297593997830395,
+        "holm_cluster_p": 0.8671875
+      },
+      {
+        "comparison": "TightBPE ColFirst Silhouette vs DAWA+DP-SIPS (R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 31.97,
+        "b_pct": 34.47,
+        "diff_pp": -2.5,
+        "ci95_pp": [
+          -5.15,
+          0.15
+        ],
+        "cluster_ci95_pp": [
+          -5.69,
+          0.71
+        ],
+        "wlt": [
+          75,
+          103,
+          262
+        ],
+        "p": 0.07932637405675416,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.216796875,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.31730549622701665,
+        "holm_cluster_p": 0.8671875
+      },
+      {
+        "comparison": "TightBPE ValFirst Silhouette vs DAWA+DP-SIPS (R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 39.17,
+        "b_pct": 40.76,
+        "diff_pp": -1.59,
+        "ci95_pp": [
+          -4.24,
+          1.21
+        ],
+        "cluster_ci95_pp": [
+          -3.92,
+          1.04
+        ],
+        "wlt": [
+          81,
+          91,
+          268
+        ],
+        "p": 0.2765864665943465,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.2705078125,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.8297593997830395,
+        "holm_cluster_p": 0.8671875
+      },
+      {
+        "comparison": "EHR_DG8P_V3_R1 vs DAWA_CLEAN_EHR600_R1",
+        "n": 600,
+        "r_a": 1,
+        "r_b": 1,
+        "a_pct": 50.33,
+        "b_pct": 51.0,
+        "diff_pp": -0.67,
+        "ci95_pp": [
+          -4.17,
+          2.83
+        ],
+        "cluster_ci95_pp": [
+          -5.05,
+          3.62
+        ],
+        "wlt": [
+          56,
+          60,
+          484
+        ],
+        "p": 0.7807391284762694,
+        "p_method": "1-vs-1 exact McNemar",
+        "cluster_p": 0.8292817071829282,
+        "cluster_p_method": "MC 100k 120-template cluster sign-flip",
+        "holm_p": 0.8297593997830395,
+        "holm_cluster_p": 0.8671875
+      }
+    ],
+    "oneway_vs_dawa_holm": [
+      {
+        "comparison": "1-way Profile vs DAWA+DP-SIPS (BIRD Uncapped R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 46.06,
+        "b_pct": 45.45,
+        "diff_pp": 0.61,
+        "ci95_pp": [
+          -2.95,
+          4.02
+        ],
+        "cluster_ci95_pp": [
+          -3.27,
+          5.0
+        ],
+        "wlt": [
+          115,
+          104,
+          221
+        ],
+        "p": 0.7673532577010621,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.8017578125,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.8069393993106233,
+        "holm_cluster_p": 0.9277107228927711
+      },
+      {
+        "comparison": "TightBPE ColFirst 1-way Profile vs DAWA+DP-SIPS (R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 32.42,
+        "b_pct": 34.47,
+        "diff_pp": -2.05,
+        "ci95_pp": [
+          -4.77,
+          0.61
+        ],
+        "cluster_ci95_pp": [
+          -3.57,
+          -0.64
+        ],
+        "wlt": [
+          72,
+          95,
+          273
+        ],
+        "p": 0.1456126748392474,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.03125,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.4368380245177422,
+        "holm_cluster_p": 0.125
+      },
+      {
+        "comparison": "TightBPE ValFirst 1-way Profile vs DAWA+DP-SIPS (R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 43.56,
+        "b_pct": 40.76,
+        "diff_pp": 2.8,
+        "ci95_pp": [
+          -0.53,
+          6.06
+        ],
+        "cluster_ci95_pp": [
+          -1.18,
+          7.25
+        ],
+        "wlt": [
+          124,
+          96,
+          220
+        ],
+        "p": 0.1042099866504918,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.296875,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.4168399466019672,
+        "holm_cluster_p": 0.890625
+      },
+      {
+        "comparison": "EHR_IND8_V3_R1 vs DAWA_CLEAN_EHR600_R1",
+        "n": 600,
+        "r_a": 1,
+        "r_b": 1,
+        "a_pct": 49.33,
+        "b_pct": 51.0,
+        "diff_pp": -1.67,
+        "ci95_pp": [
+          -5.17,
+          1.83
+        ],
+        "cluster_ci95_pp": [
+          -5.65,
+          2.3
+        ],
+        "wlt": [
+          53,
+          63,
+          484
+        ],
+        "p": 0.40346969965531165,
+        "p_method": "1-vs-1 exact McNemar",
+        "cluster_p": 0.46385536144638556,
+        "cluster_p_method": "MC 100k 120-template cluster sign-flip",
+        "holm_p": 0.8069393993106233,
+        "holm_cluster_p": 0.9277107228927711
+      }
+    ],
+    "combined_8family_holm": [
+      {
+        "comparison": "Silhouette vs DAWA+DP-SIPS (BIRD Uncapped R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 46.97,
+        "b_pct": 45.45,
+        "diff_pp": 1.52,
+        "ci95_pp": [
+          -1.44,
+          4.47
+        ],
+        "cluster_ci95_pp": [
+          -1.35,
+          4.76
+        ],
+        "wlt": [
+          101,
+          91,
+          248
+        ],
+        "p": 0.33664659677483216,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.4013671875,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.8297593997830395,
+        "holm_cluster_p": 0.8671875,
+        "holm_8family_p": 1.0,
+        "holm_8family_cluster_p": 1.0
+      },
+      {
+        "comparison": "TightBPE ColFirst Silhouette vs DAWA+DP-SIPS (R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 31.97,
+        "b_pct": 34.47,
+        "diff_pp": -2.5,
+        "ci95_pp": [
+          -5.15,
+          0.15
+        ],
+        "cluster_ci95_pp": [
+          -5.69,
+          0.71
+        ],
+        "wlt": [
+          75,
+          103,
+          262
+        ],
+        "p": 0.07932637405675416,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.216796875,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.31730549622701665,
+        "holm_cluster_p": 0.8671875,
+        "holm_8family_p": 0.6346109924540333,
+        "holm_8family_cluster_p": 1.0
+      },
+      {
+        "comparison": "TightBPE ValFirst Silhouette vs DAWA+DP-SIPS (R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 39.17,
+        "b_pct": 40.76,
+        "diff_pp": -1.59,
+        "ci95_pp": [
+          -4.24,
+          1.21
+        ],
+        "cluster_ci95_pp": [
+          -3.92,
+          1.04
+        ],
+        "wlt": [
+          81,
+          91,
+          268
+        ],
+        "p": 0.2765864665943465,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.2705078125,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.8297593997830395,
+        "holm_cluster_p": 0.8671875,
+        "holm_8family_p": 1.0,
+        "holm_8family_cluster_p": 1.0
+      },
+      {
+        "comparison": "EHR_DG8P_V3_R1 vs DAWA_CLEAN_EHR600_R1",
+        "n": 600,
+        "r_a": 1,
+        "r_b": 1,
+        "a_pct": 50.33,
+        "b_pct": 51.0,
+        "diff_pp": -0.67,
+        "ci95_pp": [
+          -4.17,
+          2.83
+        ],
+        "cluster_ci95_pp": [
+          -5.05,
+          3.62
+        ],
+        "wlt": [
+          56,
+          60,
+          484
+        ],
+        "p": 0.7807391284762694,
+        "p_method": "1-vs-1 exact McNemar",
+        "cluster_p": 0.8292817071829282,
+        "cluster_p_method": "MC 100k 120-template cluster sign-flip",
+        "holm_p": 0.8297593997830395,
+        "holm_cluster_p": 0.8671875,
+        "holm_8family_p": 1.0,
+        "holm_8family_cluster_p": 1.0
+      },
+      {
+        "comparison": "1-way Profile vs DAWA+DP-SIPS (BIRD Uncapped R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 46.06,
+        "b_pct": 45.45,
+        "diff_pp": 0.61,
+        "ci95_pp": [
+          -2.95,
+          4.02
+        ],
+        "cluster_ci95_pp": [
+          -3.27,
+          5.0
+        ],
+        "wlt": [
+          115,
+          104,
+          221
+        ],
+        "p": 0.7673532577010621,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.8017578125,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.8069393993106233,
+        "holm_cluster_p": 0.9277107228927711,
+        "holm_8family_p": 1.0,
+        "holm_8family_cluster_p": 1.0
+      },
+      {
+        "comparison": "TightBPE ColFirst 1-way Profile vs DAWA+DP-SIPS (R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 32.42,
+        "b_pct": 34.47,
+        "diff_pp": -2.05,
+        "ci95_pp": [
+          -4.77,
+          0.61
+        ],
+        "cluster_ci95_pp": [
+          -3.57,
+          -0.64
+        ],
+        "wlt": [
+          72,
+          95,
+          273
+        ],
+        "p": 0.1456126748392474,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.03125,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.4368380245177422,
+        "holm_cluster_p": 0.125,
+        "holm_8family_p": 0.8736760490354843,
+        "holm_8family_cluster_p": 0.25
+      },
+      {
+        "comparison": "TightBPE ValFirst 1-way Profile vs DAWA+DP-SIPS (R=3)",
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 43.56,
+        "b_pct": 40.76,
+        "diff_pp": 2.8,
+        "ci95_pp": [
+          -0.53,
+          6.06
+        ],
+        "cluster_ci95_pp": [
+          -1.18,
+          7.25
+        ],
+        "wlt": [
+          124,
+          96,
+          220
+        ],
+        "p": 0.1042099866504918,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.296875,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "holm_p": 0.4168399466019672,
+        "holm_cluster_p": 0.890625,
+        "holm_8family_p": 0.7294699065534427,
+        "holm_8family_cluster_p": 1.0
+      },
+      {
+        "comparison": "EHR_IND8_V3_R1 vs DAWA_CLEAN_EHR600_R1",
+        "n": 600,
+        "r_a": 1,
+        "r_b": 1,
+        "a_pct": 49.33,
+        "b_pct": 51.0,
+        "diff_pp": -1.67,
+        "ci95_pp": [
+          -5.17,
+          1.83
+        ],
+        "cluster_ci95_pp": [
+          -5.65,
+          2.3
+        ],
+        "wlt": [
+          53,
+          63,
+          484
+        ],
+        "p": 0.40346969965531165,
+        "p_method": "1-vs-1 exact McNemar",
+        "cluster_p": 0.46385536144638556,
+        "cluster_p_method": "MC 100k 120-template cluster sign-flip",
+        "holm_p": 0.8069393993106233,
+        "holm_cluster_p": 0.9277107228927711,
+        "holm_8family_p": 1.0,
+        "holm_8family_cluster_p": 1.0
+      }
+    ],
+    "extra_comparisons": {
+      "DAWA_CLEAN_BIRD_R1_R3_minus_C0": {
+        "n": 440,
+        "r_a": 3,
+        "r_b": 2,
+        "a_pct": 45.45,
+        "b_pct": 30.11,
+        "diff_pp": 15.34,
+        "ci95_pp": [
+          11.78,
+          18.9
+        ],
+        "cluster_ci95_pp": [
+          9.79,
+          21.16
+        ],
+        "wlt": [
+          172,
+          63,
+          205
+        ],
+        "p": 3.565587676761585e-16,
+        "p_method": "3-vs-2 all-release exact Rademacher",
+        "cluster_p": 0.001953125,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "matched_minR_diff_pp": 16.14,
+        "matched_minR_ci95_pp": [
+          12.39,
+          19.89
+        ],
+        "matched_minR_cluster_ci95_pp": [
+          10.26,
+          22.83
+        ],
+        "matched_minR_p": 6.206971904671513e-16,
+        "matched_minR_cluster_p": 0.0009765625
+      },
+      "DAWA_CLEAN_BIRD_R1_R3_minus_C4": {
+        "n": 440,
+        "r_a": 3,
+        "r_b": 2,
+        "a_pct": 45.45,
+        "b_pct": 46.48,
+        "diff_pp": -1.02,
+        "ci95_pp": [
+          -4.77,
+          2.73
+        ],
+        "cluster_ci95_pp": [
+          -5.96,
+          4.52
+        ],
+        "wlt": [
+          115,
+          126,
+          199
+        ],
+        "p": 0.6075063495437745,
+        "p_method": "3-vs-2 all-release exact Rademacher",
+        "cluster_p": 0.7509765625,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip",
+        "matched_minR_diff_pp": -0.23,
+        "matched_minR_ci95_pp": [
+          -4.2,
+          3.75
+        ],
+        "matched_minR_cluster_ci95_pp": [
+          -5.94,
+          6.64
+        ],
+        "matched_minR_p": 0.955353311397728,
+        "matched_minR_cluster_p": 0.970703125
+      },
+      "TIGHTBPE_VALFIRST_DAWA_minus_COLFIRST_DAWA": {
+        "n": 440,
+        "r_a": 3,
+        "r_b": 3,
+        "a_pct": 40.76,
+        "b_pct": 34.47,
+        "diff_pp": 6.29,
+        "ci95_pp": [
+          3.11,
+          9.47
+        ],
+        "cluster_ci95_pp": [
+          1.28,
+          12.08
+        ],
+        "wlt": [
+          119,
+          78,
+          243
+        ],
+        "p": 0.00012154369958303268,
+        "p_method": "3-vs-3 exact question Rademacher",
+        "cluster_p": 0.0546875,
+        "cluster_p_method": "exact 2^11 DB-cluster sign-flip"
+      },
+      "EHR_DG8P_V3_R1_R3_vs_DAWA_CLEAN_EHR600_R1": {
+        "n": 600,
+        "r_a": 3,
+        "r_b": 1,
+        "a_pct": 49.61,
+        "b_pct": 51.0,
+        "diff_pp": -1.39,
+        "ci95_pp": [
+          -4.17,
+          1.44
+        ],
+        "cluster_ci95_pp": [
+          -4.85,
+          2.02
+        ],
+        "wlt": [
+          75,
+          97,
+          428
+        ],
+        "p": 0.35704656183867134,
+        "p_method": "3-vs-1 all-release exact Rademacher",
+        "cluster_p": 0.4591854081459185,
+        "cluster_p_method": "MC 100k 120-template cluster sign-flip",
+        "matched_minR_diff_pp": -0.67,
+        "matched_minR_ci95_pp": [
+          -4.17,
+          2.83
+        ],
+        "matched_minR_cluster_ci95_pp": [
+          -5.05,
+          3.62
+        ],
+        "matched_minR_p": 0.7807391284762694,
+        "matched_minR_cluster_p": 0.8292817071829282
+      },
+      "DAWA_CLEAN_EHR600_R1_minus_C0": {
+        "n": 600,
+        "r_a": 1,
+        "r_b": 1,
+        "a_pct": 51.0,
+        "b_pct": 36.33,
+        "diff_pp": 14.67,
+        "ci95_pp": [
+          11.0,
+          18.5
+        ],
+        "cluster_ci95_pp": [
+          9.76,
+          19.97
+        ],
+        "wlt": [
+          118,
+          30,
+          452
+        ],
+        "p": 1.5349024359569593e-13,
+        "p_method": "1-vs-1 exact McNemar",
+        "cluster_p": 9.99990000099999e-06,
+        "cluster_p_method": "MC 100k 120-template cluster sign-flip"
+      },
+      "DAWA_CLEAN_EHR600_R1_minus_C4": {
+        "n": 600,
+        "r_a": 1,
+        "r_b": 1,
+        "a_pct": 51.0,
+        "b_pct": 48.17,
+        "diff_pp": 2.83,
+        "ci95_pp": [
+          -1.0,
+          6.67
+        ],
+        "cluster_ci95_pp": [
+          -1.78,
+          7.4
+        ],
+        "wlt": [
+          79,
+          62,
+          459
+        ],
+        "p": 0.1776298367511035,
+        "p_method": "1-vs-1 exact McNemar",
+        "cluster_p": 0.26068739312606876,
+        "cluster_p_method": "MC 100k 120-template cluster sign-flip"
+      }
+    }
+  }
+}

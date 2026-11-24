@@ -273,10 +273,10 @@ def validate_ehrsql_receipts_against_outcomes(root: Path = ROOT) -> dict[str, An
             uncapped_checked += 1
 
     assert gt100_none == 0, f"Expected 0 None uncapped_ex among >100-row slots, got {gt100_none}"
-    assert gt100_checked == 130, f"Expected 130/130 >100-row slot instances verified, got {gt100_checked}"
+    assert gt100_checked == 132, f"Expected 132/132 >100-row slot instances verified, got {gt100_checked}"
 
-    assert len(outcomes_by_cond) == 39, f"Expected 39 EHRSQL conditions, got {len(outcomes_by_cond)}"
-    assert len(outcomes_by_bcq) == 26962, f"Expected 26962 EHRSQL slots, got {len(outcomes_by_bcq)}"
+    assert len(outcomes_by_cond) == 40, f"Expected 40 EHRSQL conditions, got {len(outcomes_by_cond)}"
+    assert len(outcomes_by_bcq) == 27562, f"Expected 27562 EHRSQL slots, got {len(outcomes_by_bcq)}"
     assert gt100_distinct_qids == (GT100_GOLD_QIDS_600 | GT100_GOLD_QIDS_874), gt100_distinct_qids
 
     gold_doc = json.loads((root / "manifests/ehrsql_gold_queries.json").read_text(encoding="utf-8"))
@@ -286,6 +286,7 @@ def validate_ehrsql_receipts_against_outcomes(root: Path = ROOT) -> dict[str, An
     denied_ehrsql = sum(1 for rec in receipts_by_bcq.values() if str(rec.get("deliverable_status", "")).startswith("authorizer_denied:"))
     assert empty_ehrsql == 31, empty_ehrsql
     assert denied_ehrsql == 0, denied_ehrsql
+    assert sum(outcomes_by_cond[("ehrsql_600", "DAWA_CLEAN_EHR600_R1/r0")].values()) == 306
 
     # Assert canonical v3 clinical totals and EHR874_NOISELESS_NOLKP_V3/r0 == 429/874
     v3_nl = outcomes_by_cond[("ehrsql_874", "EHR874_NOISELESS_NOLKP_V3/r0")]
