@@ -191,15 +191,15 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
     panels = [
         (axes[0], pa_points, pa_schema_y, (10550, pa_schema_y + 0.42, "right", "bottom"),
          pa_full_y, (2550, pa_full_y + 0.42, "left", "bottom"),
-         "(a) BIRD Mini-Dev (n=440, glm-5.3)", "Mean total tokens / question", "Official Set Execution Accuracy (%)",
+         "(a) BIRD, Uncached", "Mean total tokens / question", "Execution Accuracy (%)",
          (2400, 10850), (28.0, 53.8)),
         (axes[1], pb_points, pb_schema_y, (16200, pb_schema_y + 0.35, "right", "bottom"),
          pb_full_y, (3850, pb_full_y + 0.35, "left", "bottom"),
-         "(b) EHRSQL Confirm. (n=600, glm-5.3)", "Mean total tokens / question", "Official Execution Accuracy (%)",
+         "(b) EHRSQL, Uncached", "Mean total tokens / question", "Execution Accuracy (%)",
          (3600, 16500), (34.8, 56.8)),
         (axes[2], pc_points, pc_schema_y, (66300, pc_schema_y + 0.25, "right", "bottom"),
          pc_full_y, (66300, pc_full_y + 0.25, "right", "bottom"),
-         "(c) BIRD Mini-Dev (n=440, gpt-6.1-sol cached)", "Mean total tokens / question (incl. cached)", "Official Set Execution Accuracy (%)",
+         "(c) BIRD, Prefix-Cached", "Mean total tokens / question", "Execution Accuracy (%)",
          (46200, 66800), (71.2, 86.2)),
     ]
 
@@ -258,7 +258,7 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
             ax.xaxis.set_major_formatter(lambda v, _: f"{v/1000:g}k" if v >= 1000 else f"{int(v)}")
 
     legend_handles = [
-        Line2D([0], [0], marker="*", color="w", label="Silhouette (role-allocated 1D DP)",
+        Line2D([0], [0], marker="*", color="w", label="Silhouette",
                markerfacecolor=COL_SILH, markeredgecolor="white", markersize=13.5),
         Line2D([0], [0], marker="o", color="w", label="Uniform 1D DP profile",
                markerfacecolor=COL_1D, markeredgecolor="white", markersize=8.5),
@@ -266,7 +266,7 @@ def plot_fig3_frontier(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int 
                markerfacecolor=COL_IDP, markeredgecolor="white", markersize=7.5),
         Line2D([0], [0], marker="^", color="w", label="DP synthetic DB",
                markerfacecolor=COL_SYNTH, markeredgecolor="white", markersize=8.5),
-        Line2D([0], [0], marker="s", color="w", label="Raw sample rows (Select 3)",
+        Line2D([0], [0], marker="s", color="w", label="Raw sample rows",
                markerfacecolor=COL_RAW, markeredgecolor="white", markersize=7.8),
     ]
     fig.legend(
@@ -331,8 +331,8 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
                 fontsize=8.6, color=BLUE, fontweight="bold")
 
     ax.axvline(4.65, color="#BBBBBB", linestyle="-", linewidth=1.0, zorder=1)
-    ax.text(1.95, 59.6, "R=1 Sweep", ha="center", fontsize=8.8, fontweight="bold", color=BLUE)
-    ax.text(8.2, 59.6, "Equal Public Cap (R=3, 95% CI)", ha="center", fontsize=8.8, fontweight="bold", color=VERMILION)
+    ax.text(1.95, 59.6, "Budget Sweep", ha="center", fontsize=8.8, fontweight="bold", color=BLUE)
+    ax.text(8.2, 59.6, "Equal Token Cap", ha="center", fontsize=8.8, fontweight="bold", color=VERMILION)
 
     pubcap_specs = [
         ("Static Synth", ["PUBCAP_IND8_ROWS_R1/r0", "PUBCAP_IND8_ROWS_R2/r0", "PUBCAP_IND8_ROWS_R3/r0"], ORANGE),
@@ -372,13 +372,13 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     )
     ax.set_xlim(-0.55, 12.45)
     ax.set_ylim(18.5, 62.5)
-    ax.set_ylabel("BIRD Official Set EX (%)")
-    ax.set_title("(a) Budget Sweep (R=1), Cap_pub & w/o Values")
+    ax.set_ylabel("Execution Accuracy (%)")
+    ax.set_title("(a) Budget Sweep & Equal-Cap Ablations")
     leg_a = [
-        Line2D([0], [0], color=BLUE, marker="o", lw=1.8, markersize=5, label="R=1 curve ($\\varepsilon_T=1..8$)"),
-        Line2D([0], [0], color=SKY, marker="D", lw=1.2, ls=":", markeredgecolor=DARK, markersize=5, label="Noiseless ($R=1$)"),
-        Patch(facecolor=BLUE, edgecolor=DARK, alpha=0.92, label="Equal Cap_pub (R=3, 95% CI)"),
-        Patch(facecolor="#7F8C8D", edgecolor=DARK, hatch="//", alpha=0.9, label="Uncapped w/o Values (40.5%)"),
+        Line2D([0], [0], color=BLUE, marker="o", lw=1.8, markersize=5, label="Budget curve ($\\varepsilon_T = 1..8$)"),
+        Line2D([0], [0], color=SKY, marker="D", lw=1.2, ls=":", markeredgecolor=DARK, markersize=5, label="Noiseless"),
+        Patch(facecolor=BLUE, edgecolor=DARK, alpha=0.92, label="Equal token cap"),
+        Patch(facecolor="#7F8C8D", edgecolor=DARK, hatch="//", alpha=0.9, label="Uncapped w/o Values"),
     ]
     ax.legend(handles=leg_a, loc="lower left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=7.5)
 
@@ -392,7 +392,7 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     ]:
         means = [fig4b["by_epsilon"][str(e)][mode]["mean_pct"] for e in eps_vals]
         sds = [fig4b["by_epsilon"][str(e)][mode]["sd_pp"] for e in eps_vals]
-        ax.errorbar(eps_vals, means, yerr=sds, fmt=f"{ls}{mk}", color=col, capsize=3.5, linewidth=1.8, markersize=5.5, label=f"{label_mode} (mean $\\pm$ SD, M=20)")
+        ax.errorbar(eps_vals, means, yerr=sds, fmt=f"{ls}{mk}", color=col, capsize=3.5, linewidth=1.8, markersize=5.5, label=label_mode)
         for e, m in zip(eps_vals, means):
             ax.annotate(f"{m:.1f}%", (e, m), xytext=(0, 10 if mode == "DG-v3" else -15), textcoords="offset points", ha="center", fontsize=9.0, color=col, fontweight="bold")
     ax.set_xscale("log", base=2)
@@ -402,7 +402,7 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     ax.set_ylim(26, 74)
     ax.set_xlabel("Privacy budget $\\varepsilon_T$ per table")
     ax.set_ylabel("Target Frequent-Value Retention (%)")
-    ax.set_title(f"(b) Frequent-Value Retention (n={fig4b['n_target_c1_values']:,} targets)")
+    ax.set_title("(b) Frequent-Value Retention vs. Budget")
     ax.legend(loc="upper left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=9.1)
 
     # Panel c: Table-size bucket retention (75 BIRD tables, M=20, eps=8)
@@ -421,12 +421,13 @@ def plot_fig4_budget(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int = 
     for i in range(len(bins)):
         ax.text(x_idx[i] - w / 2 - 0.03, dg_m[i] + dg_sd[i] + 1.5, f"{dg_m[i]:.1f}%", ha="center", va="bottom", fontsize=8.6, color=BLUE, fontweight="bold")
         ax.text(x_idx[i] + w / 2 + 0.03, fw_m[i] + fw_sd[i] + 1.5, f"{fw_m[i]:.1f}%", ha="center", va="bottom", fontsize=8.6, color="#A86800", fontweight="bold")
-    x_labels = [f"{b}\n(n={bkt['DG-v3'][b]['n_tables']} tbls)" for b in bins]
+    bin_disp = {"<1k": "<1k", "1k-100k": "1k\u2013100k", ">100k": ">100k"}
+    x_labels = [f"{bin_disp[b]}\n{bkt['DG-v3'][b]['n_tables']} tables" for b in bins]
     ax.set_xticks(x_idx)
     ax.set_xticklabels(x_labels, fontsize=9.6)
     ax.set_ylim(0, 108)
     ax.set_ylabel("Target Frequent-Value Retention (%)")
-    ax.set_title("(c) Retention by Table Size ($\\varepsilon_T=8$, 75 tables)")
+    ax.set_title("(c) Retention by Table Size")
     ax.legend(loc="upper left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=9.3)
 
     fig.tight_layout()
@@ -452,9 +453,9 @@ def plot_fig5_scaling(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int =
     q1 = [raw_row[k]["tokens"]["iqr"][0] for k in fkey]
     q3 = [raw_row[k]["tokens"]["iqr"][1] for k in fkey]
     p95 = [raw_row[k]["tokens"]["p95"] for k in fkey]
-    ax.fill_between(fracs, q1, q3, color=BLUE, alpha=0.22, label="IQR [Q1, Q3]")
+    ax.fill_between(fracs, q1, q3, color=BLUE, alpha=0.22, label="IQR")
     ax.plot(fracs, p95, linestyle="--", color=SKY, linewidth=1.3, label="P95")
-    ax.plot(fracs, p50, "-o", color=BLUE, linewidth=1.8, markersize=4.8, label="Median (P50)")
+    ax.plot(fracs, p50, "-o", color=BLUE, linewidth=1.8, markersize=4.8, label="Median")
     ax.annotate(f"{int(p50[0]):,}", (fracs[0], p50[0]), xytext=(4, 7), textcoords="offset points", fontsize=9.1, color=BLUE, fontweight="bold")
     ax.annotate(f"{int(p50[-1]):,}", (fracs[-1], p50[-1]), xytext=(-24, 7), textcoords="offset points", fontsize=9.1, color=BLUE, fontweight="bold")
     ax.set_xscale("log")
@@ -473,9 +474,9 @@ def plot_fig5_scaling(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int =
     cmin = [cov_row[k]["cov_min_pct"] for k in fkey]
     cmax = [cov_row[k]["cov_max_pct"] for k in fkey]
     base_cov = sc["fig5_baseline_cov_pct"]
-    ax.axhline(base_cov, color=GRAY, linestyle="--", linewidth=1.1, label=f"Schema only ({base_cov:.1f}%)")
+    ax.axhline(base_cov, color=GRAY, linestyle="--", linewidth=1.1, label="Schema only")
     ax.fill_between(fracs, cmin, cmax, color=BLUE, alpha=0.20)
-    ax.plot(fracs, cmed, "-o", color=BLUE, linewidth=1.8, markersize=4.8, label="Silhouette ($\\varepsilon_T=8$)")
+    ax.plot(fracs, cmed, "-o", color=BLUE, linewidth=1.8, markersize=4.8, label="Silhouette")
     ax.annotate(f"{cmed[0]:.1f}%", (fracs[0], cmed[0]), xytext=(0, 9), textcoords="offset points", fontsize=9.1, color=BLUE, fontweight="bold")
     ax.annotate(f"{cmed[-1]:.1f}%", (fracs[-1], cmed[-1]), xytext=(-24, 6), textcoords="offset points", fontsize=9.1, color=BLUE, fontweight="bold")
     ax.set_xscale("log")
@@ -497,19 +498,19 @@ def plot_fig5_scaling(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int =
     tau_v = [col_p[k]["tau_median"] for k in col_keys]
     tau_q1 = [col_p[k]["tau_q1"] for k in col_keys]
     tau_q3 = [col_p[k]["tau_q3"] for k in col_keys]
-    ax.plot(cx, tau_h, "-o", color=BLUE, linewidth=1.8, markersize=4.8, label="Table-median $\\tau$ (int)")
-    ax.plot(cx, tau_pool, ":^", color=SKY, linewidth=1.4, markersize=4.2, label="Pooled-hist. $\\tau$ (int)")
+    ax.plot(cx, tau_h, "-o", color=BLUE, linewidth=1.8, markersize=4.8, label="Table median $\\tau$")
+    ax.plot(cx, tau_pool, ":^", color=SKY, linewidth=1.4, markersize=4.2, label="Pooled $\\tau$")
     ax.fill_between(cx, tau_q1, tau_q3, color=ORANGE, alpha=0.18)
-    ax.plot(cx, tau_v, "--s", color=ORANGE, linewidth=1.4, markersize=4.2, label="Val. $\\tau$ (median + IQR)")
+    ax.plot(cx, tau_v, "--s", color=ORANGE, linewidth=1.4, markersize=4.2, label="Value $\\tau$")
     ax.annotate(f"{int(tau_h[0])}", (cx[0], tau_h[0]), xytext=(2, 9), textcoords="offset points", fontsize=9.1, color=BLUE, fontweight="bold")
     ax.annotate(f"{int(tau_h[-1])}", (cx[-1], tau_h[-1]), xytext=(-18, -14), textcoords="offset points", fontsize=9.1, color=BLUE, fontweight="bold")
     ax.annotate(f"{int(tau_pool[-1])}", (cx[-1], tau_pool[-1]), xytext=(-18, 5), textcoords="offset points", fontsize=8.9, color=BLUE)
     ax.set_xticks(cx)
-    ax.set_xticklabels(["4", "8", "16", "32", "all\n(115)"])
+    ax.set_xticklabels(["4", "8", "16", "32", "115"])
     ax.set_ylim(5, 58)
     ax.set_xlabel("Column prefix")
     ax.set_ylabel("Median integer threshold $\\tau$")
-    ax.set_title("(c) Exact Integer $\\tau$ vs. Width")
+    ax.set_title("(c) Threshold $\\tau$ vs. Width")
     ax.legend(loc="upper left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=8.3)
 
     # Panel d: Column-prefix table tokens
@@ -518,12 +519,12 @@ def plot_fig5_scaling(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: int =
     tmed = [col_p[k]["tokens_median"] for k in col_keys]
     tq1 = [col_p[k]["tokens_q1"] for k in col_keys]
     tq3 = [col_p[k]["tokens_q3"] for k in col_keys]
-    ax.fill_between(cx, tq1, tq3, color=BLUE, alpha=0.22, label="IQR [Q1, Q3]")
+    ax.fill_between(cx, tq1, tq3, color=BLUE, alpha=0.22, label="IQR")
     ax.plot(cx, tmed, "-o", color=BLUE, linewidth=1.8, markersize=4.8, label="Median tokens")
     ax.annotate(f"{tmed[0]}", (cx[0], tmed[0]), xytext=(4, 7), textcoords="offset points", fontsize=9.1, color=BLUE, fontweight="bold")
     ax.annotate(f"{tmed[-1]:,}", (cx[-1], tmed[-1]), xytext=(-12, -17), textcoords="offset points", ha="center", fontsize=9.1, color=BLUE, fontweight="bold")
     ax.set_xticks(cx)
-    ax.set_xticklabels(["4", "8", "16", "32", "all\n(115)"])
+    ax.set_xticklabels(["4", "8", "16", "32", "115"])
     ax.set_ylim(0, 1850)
     ax.set_xlabel("Column prefix")
     ax.set_ylabel("Table profile tokens")
@@ -563,13 +564,13 @@ def plot_fig6_interactive(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: i
     ax_a1.set_xticks(range(len(qps)))
     ax_a1.set_xticklabels([f"$Q_p$={q}" for q in qps], fontsize=9.3)
     ax_a1.set_ylim(45, 70)
-    ax_a1.set_ylabel("Set EX (%)")
-    ax_a1.set_title("(a1) Fixed-55 Horizon Sweep (n=55)", fontsize=10.9)
+    ax_a1.set_ylabel("EX (%)")
+    ax_a1.set_title("(a1) Fixed-Subset Horizon Sweep", fontsize=10.9)
     ax_a1.legend(loc="lower left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=8.6)
 
     ax_a2 = fig.add_subplot(gs[1, 0])
     ax_a2.grid(True, linestyle=":", alpha=0.35, zorder=0)
-    prefixes = [("n=55", fixed_55), ("n=163", q15_163), ("n=440", bird_440)]
+    prefixes = [("55 Qs", fixed_55), ("163 Qs", q15_163), ("440 Qs", bird_440)]
     silh_p = [100.0 * mean(vec(bird_out, dg8_clean, qset)) for _, qset in prefixes]
     tp8_p = [100.0 * mean(vec(bird_out, tp8_v2, qset)) for _, qset in prefixes]
     px = np.arange(len(prefixes))
@@ -581,11 +582,11 @@ def plot_fig6_interactive(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: i
     ax_a2.set_xticks(px)
     ax_a2.set_xticklabels([p[0] for p in prefixes], fontsize=9.6)
     ax_a2.set_ylim(24, 72)
-    ax_a2.set_ylabel("Set EX (%)")
-    ax_a2.set_title("(a2) Nested Stream Prefixes", fontsize=10.9)
+    ax_a2.set_ylabel("EX (%)")
+    ax_a2.set_title("(a2) Nested Query-Stream Prefixes", fontsize=10.9)
     ax_a2.legend(loc="lower left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=8.6)
 
-    # Panel b (full height middle): Whole-Patient Bootstrap 3-stage Clinical Survival (M=200 cohorts, C=5)
+    # Panel b (full height middle): Whole-Patient Bootstrap 3-stage Clinical Survival
     ax_b = fig.add_subplot(gs[:, 1])
     ax_b.grid(True, linestyle=":", alpha=0.35, zorder=0)
     cohorts = ["94", "1000", "10000", "100000"]
@@ -606,50 +607,49 @@ def plot_fig6_interactive(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: i
     s1_y, s1_lo, s1_hi = extract_surv("db_global_eps8", "stage1_occupied_gt_tau", "all_125")
     s2_y, s2_lo, s2_hi = extract_surv("db_global_eps8", "stage2_dhat_le_50_gate", "all_125")
     s3_y, s3_lo, s3_hi = extract_surv("db_global_eps8", "stage3_eq10_top15_published", "all_125")
-    s3_r, _, _ = extract_surv("db_global_eps8", "stage3_eq10_top15_published", "reachable_120")
     pt_y, pt_lo, pt_hi = extract_surv("per_table_eps8", "stage3_eq10_top15_published", "all_125")
     pt_r, _, _ = extract_surv("per_table_eps8", "stage3_eq10_top15_published", "reachable_120")
 
     ax_b.fill_between(cx_b, s1_lo, s1_hi, color=SKY, alpha=0.20)
-    ax_b.plot(cx_b, s1_y, "--^", color=BLUE, linewidth=1.6, markersize=5, label="Stage-1 Threshold (db_global $\\varepsilon=8$)")
+    ax_b.plot(cx_b, s1_y, "--^", color=BLUE, linewidth=1.6, markersize=5, label="Stage 1: > $\\tau$, Entity DP")
     ax_b.fill_between(cx_b, s2_lo, s2_hi, color=ORANGE, alpha=0.16)
-    ax_b.plot(cx_b, s2_y, "-.d", color=ORANGE, linewidth=1.5, markersize=4.8, label="Stage-2 Card.$\\leq$50 (db_global $\\varepsilon=8$)")
+    ax_b.plot(cx_b, s2_y, "-.d", color=ORANGE, linewidth=1.5, markersize=4.8, label="Stage 2: $\\hat{d}_c \\leq 50$, Entity DP")
     ax_b.fill_between(cx_b, s3_lo, s3_hi, color=VERMILION, alpha=0.18)
-    ax_b.plot(cx_b, s3_y, "-o", color=VERMILION, linewidth=1.8, markersize=5.2, label="Stage-3 Published (db_global $\\varepsilon=8$)")
+    ax_b.plot(cx_b, s3_y, "-o", color=VERMILION, linewidth=1.8, markersize=5.2, label="Stage 3: Published, Entity DP")
     ax_b.fill_between(cx_b, pt_lo, pt_hi, color=GREEN, alpha=0.16)
-    ax_b.plot(cx_b, pt_y, "-s", color=GREEN, linewidth=1.5, markersize=4.8, label="Stage-3 Published (per_table $\\varepsilon_T=8$)")
-    ax_b.plot(cx_b, pt_r, ":s", color=GREEN, linewidth=1.1, markersize=3.5, alpha=0.85, label="Reachable 120 (per_table $\\varepsilon_T=8$)")
+    ax_b.plot(cx_b, pt_y, "-s", color=GREEN, linewidth=1.5, markersize=4.8, label="Stage 3: Published, Row DP")
+    ax_b.plot(cx_b, pt_r, ":s", color=GREEN, linewidth=1.1, markersize=3.5, alpha=0.85, label="Capped support, Row DP")
 
-    ax_b.annotate(f"{s3_y[0]:.1f}% ({s3_r[0]:.1f}% reach.)", (cx_b[0], s3_y[0]), xytext=(6, -13), textcoords="offset points", ha="left", fontsize=8.3, color=VERMILION, fontweight="bold")
-    ax_b.annotate(f"{pt_y[0]:.1f}%", (cx_b[0], pt_y[0]), xytext=(2, 11), textcoords="offset points", ha="center", fontsize=8.5, color=GREEN, fontweight="bold")
-    ax_b.annotate(f"{s1_y[-1]:.1f}%", (cx_b[-1], s1_y[-1]), xytext=(-10, 5), textcoords="offset points", ha="right", fontsize=8.7, color=BLUE, fontweight="bold")
-    ax_b.annotate(f"{s2_y[-1]:.1f}%", (cx_b[-1], s2_y[-1]), xytext=(-10, 4), textcoords="offset points", ha="right", fontsize=8.6, color="#A86800", fontweight="bold")
-    ax_b.annotate(f"{s3_y[-1]:.1f}% ({s3_r[-1]:.1f}% reach.)", (cx_b[-1], s3_y[-1]), xytext=(-8, -14), textcoords="offset points", ha="right", fontsize=8.4, color=VERMILION, fontweight="bold")
-    ax_b.annotate(f"{pt_r[-1]:.1f}% reach. ({pt_y[-1]:.1f}%)", (cx_b[-1], pt_y[-1]), xytext=(-8, -12), textcoords="offset points", ha="right", fontsize=8.4, color=GREEN, fontweight="bold")
+    ax_b.annotate(f"{s3_y[0]:.1f}%", (cx_b[0], s3_y[0]), xytext=(6, -12), textcoords="offset points", ha="left", fontsize=8.5, color=VERMILION, fontweight="bold")
+    ax_b.annotate(f"{pt_y[0]:.1f}%", (cx_b[0], pt_y[0]), xytext=(4, 10), textcoords="offset points", ha="center", fontsize=8.5, color=GREEN, fontweight="bold")
+    ax_b.annotate(f"{s1_y[-1]:.1f}%", (cx_b[-1], s1_y[-1]), xytext=(-8, 5), textcoords="offset points", ha="right", fontsize=8.7, color=BLUE, fontweight="bold")
+    ax_b.annotate(f"{pt_y[-1]:.1f}%", (cx_b[-1], pt_y[-1]), xytext=(-8, 5), textcoords="offset points", ha="right", fontsize=8.6, color=GREEN, fontweight="bold")
+    ax_b.annotate(f"{s2_y[-1]:.1f}%", (cx_b[-1], s2_y[-1]), xytext=(-8, 5), textcoords="offset points", ha="right", fontsize=8.6, color="#A86800", fontweight="bold")
+    ax_b.annotate(f"{s3_y[-1]:.1f}%", (cx_b[-1], s3_y[-1]), xytext=(-8, -13), textcoords="offset points", ha="right", fontsize=8.6, color=VERMILION, fontweight="bold")
 
     ax_b.set_xticks(cx_b)
-    ax_b.set_xticklabels(["94\n(demo)", "1k", "10k", "100k"])
+    ax_b.set_xticklabels(["94", "1k", "10k", "100k"])
     ax_b.set_xlim(-0.28, 3.25)
     ax_b.set_ylim(-6, 130)
-    ax_b.set_xlabel("Clinical Cohort Size $N$ (patients)")
+    ax_b.set_xlabel("Clinical cohort size $N$")
     ax_b.set_ylabel("Projected Target-Value Survival (%)")
-    ax_b.set_title("(b) Clinical Survival (Whole-Patient M=200, C=5)", fontsize=10.6)
+    ax_b.set_title("(b) Projected Clinical Value Survival", fontsize=10.6)
     handles_b, labels_b = ax_b.get_legend_handles_labels()
-    handles_b.append(Patch(facecolor=GRAY, alpha=0.22, edgecolor="none", label="Shaded bands: 2.5–97.5th trial percentiles"))
+    handles_b.append(Patch(facecolor=GRAY, alpha=0.22, edgecolor="none", label="95% cohort band"))
     ax_b.legend(handles=handles_b, loc="upper left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=7.6)
 
-    # Panel c (full height right): Gold Hidden Literals & Parsed Base Tables (with R=3 1-way Synth)
+    # Panel c (full height right): Gold Hidden Literals & Parsed Base Tables
     ax_c = fig.add_subplot(gs[:, 2])
     ax_c.grid(True, axis="y", linestyle=":", alpha=0.35, zorder=0)
     hidden_106 = strata["gold_hidden_literal_106"]["hidden_106"]
     no_hidden_334 = strata["gold_hidden_literal_106"]["no_hidden_334"]
     pb = strata["parsed_base_tables"]
     strata_groups = [
-        ("Hidden\nLit.\n(n=106)", hidden_106),
-        ("No-Hidden\nLit.\n(n=334)", no_hidden_334),
-        ("1 Base\nTable\n(n=50)", pb["1_base_table"]),
-        ("2 Base\nTables\n(n=242)", pb["2_base_tables"]),
-        ("3+ Base\nTables\n(n=148)", pb["3+_base_tables"]),
+        ("Hidden\nLiteral", hidden_106),
+        ("No Hidden\nLiteral", no_hidden_334),
+        ("1\nTable", pb["1_base_table"]),
+        ("2\nTables", pb["2_base_tables"]),
+        ("3+\nTables", pb["3+_base_tables"]),
     ]
     gx = np.arange(len(strata_groups))
     bw = 0.25
@@ -666,8 +666,8 @@ def plot_fig6_interactive(src: dict, pdf_dir: Path, png_dir: Path | None, dpi: i
     ax_c.set_xticks(gx)
     ax_c.set_xticklabels([g[0] for g in strata_groups], fontsize=8.9)
     ax_c.set_ylim(0, 62)
-    ax_c.set_ylabel("BIRD Official Set EX (%)")
-    ax_c.set_title("(c) Gold Literal & Parsed Table Strata")
+    ax_c.set_ylabel("Execution Accuracy (%)")
+    ax_c.set_title("(c) Stratified BIRD Accuracy")
     ax_c.legend(loc="upper left", frameon=True, facecolor="white", edgecolor="#CCCCCC", fontsize=8.7)
 
     fig.subplots_adjust(left=0.055, right=0.985, top=0.90, bottom=0.14)
