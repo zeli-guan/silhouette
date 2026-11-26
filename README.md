@@ -2,6 +2,8 @@
 
 **Repository:** https://github.com/zeli-guan/silhouette
 
+**Companion Technical Report (Full Proofs & Appendices A–B):** [Technical_Report.pdf](Technical_Report.pdf)
+
 Reproducibility and supplementary artifact for PVLDB Vol. 20. This repository contains the `DG-v3` one-shot profile publisher, frozen BIRD and EHRSQL releases, public privacy certificates, benchmark splits, BIRD dual-comparator (with deterministic `BIRD-Remap` builder) and EHRSQL official CC-BY-4.0 gold-SQL scorers, semantic `(benchmark, condition, db_id, release)` chain-of-custody verification, fail-closed `generate_sql` release-bundle and A9 `SingleReleaseReceiverLedger` enforcement, uniform DB-deduplicated and slot-level `TransmissionLedger` audit summaries, turn-ordered `SchemaSandbox` telemetry, and reconciled per-question execution outcomes (**`83,015`** 1:1 aligned slots across **`195`** unique conditions / **`202`** `(benchmark, condition)` series).
 
 All Tier-1 verification suites run locally on Python 3.8+ with `SQLite >= 3.35.0` (required for `AS MATERIALIZED` CTE support; paper evaluated on `SQLite 3.53.1`) and `numpy` (`requirements.txt`; plus `pytest` for the regression test suite; zero external directory imports, zero network calls, and zero non-deterministic `hash()` seeds). All JSONL readers transparently support both uncompressed `.jsonl` and gzip-compressed `.jsonl.gz` (`sql_and_audit_receipts.jsonl.gz`). See [docs/TIER1_TIER2_REPRODUCIBILITY.md](docs/TIER1_TIER2_REPRODUCIBILITY.md) for the full Table 1–21 mapping, 5-column `raw` vs. `protocol_audited` execution reconciliation, and `outbound_messages_sha256` audit coverage table.
